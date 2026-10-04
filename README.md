@@ -10,103 +10,26 @@ Dự án local để đưa mô hình nhận diện 43 lớp biển báo GTSRB t�
 - Tên artifact trên Drive là `VGG16_model.h5`. Tuy nhiên code notebook xây một CNN tuần tự lấy cảm hứng từ VGG với hai lớp convolution 32/64 filters; nó không gọi `keras.applications.VGG16` và không phải kiến trúc VGG16 nguyên bản.
 - Đánh giá 12.630 ảnh GTSRB test đạt accuracy `86,82%`, macro-F1 `79,21%`; model **không hiệu quả cho giao thông Việt Nam** vì chưa có dữ liệu/đánh giá Việt Nam, chưa có detector và có lỗi augmentation đảo trái/phải. Xem `docs/initial_model_assessment.md`.
 
-## Cài đặt bằng uv
+## Chạy ứng dụng
 
-Yêu cầu duy nhất: cài `uv` trên macOS/Linux. Python 3.12 và toàn bộ dependency được
-khóa trong project; `uv run` sẽ tự tạo/cập nhật môi trường trước khi chạy lệnh. Notebook
-gốc được huấn luyện bằng TensorFlow 2.20/Python 3.13; runtime local dùng Python 3.12 và
-vẫn đọc được model Keras 3.
-
-Thiết lập lần đầu, bao gồm kernel Jupyter riêng cho CPV301:
+Yêu cầu duy nhất là máy đã cài [`uv`](https://docs.astral.sh/uv/). Tại thư mục gốc của dự án, chạy đúng hai lệnh:
 
 ```bash
-./scripts/bootstrap.sh
-```
-
-Hoặc đồng bộ thủ công:
-
-```bash
-./scripts/uv-project.sh sync --all-extras --all-groups
-./scripts/uv-project.sh run cpv301 info
-./scripts/uv-project.sh run pytest
-```
-
-JupyterLab, kernel, Matplotlib, pandas và công cụ test nằm trong nhóm `dev`; UV đồng bộ
-nhóm này theo mặc định. Toàn bộ môi trường Python nằm trong một thư mục `.venv/` chuẩn;
-script bootstrap đồng bộ dependency rồi đăng ký kernel `Python (CPV301 AutoDrive)`.
-
-Ultralytics/PyTorch được để ngoài lockfile nền tảng cho tới milestone detection. Khi bắt
-đầu milestone đó, thêm dependency bằng:
-
-```bash
-uv add --optional detector ultralytics
-uv sync --extra detector
-```
-
-CARLA không được khóa trong `pyproject.toml` vì simulator và Python API của CARLA phụ thuộc phiên bản hệ điều hành/binary cụ thể. Chỉ thêm CARLA sau khi chốt môi trường simulator.
-
-## Chạy Streamlit webapp
-
-Entry point đơn giản nhất tự đồng bộ mọi dependency rồi mở webapp:
-
-```bash
+uv sync
 python main.py
 ```
 
-Có thể đổi host/port hoặc chạy headless bằng cách chuyển tiếp tham số CLI:
+`uv sync` chuẩn bị môi trường và các thư viện cần thiết. `python main.py` khởi động toàn bộ webapp tại [http://127.0.0.1:8501](http://127.0.0.1:8501).
 
-```bash
-python main.py --host 127.0.0.1 --port 8511
-python main.py --headless
-```
+Không cần chạy API hoặc CLI riêng. Nhấn `Ctrl+C` trong Terminal để dừng ứng dụng.
 
-Lệnh shell tương đương:
-
-```bash
-./scripts/run-web.sh
-```
-
-Hoặc sau khi đã bootstrap:
-
-```bash
-uv run cpv301 web
-```
-
-Mặc định app chạy tại `http://127.0.0.1:8501`. App nhận một/nhiều ảnh hoặc webcam
-snapshot, phân loại biển báo và hiển thị lệnh điều khiển xe mô phỏng. MVP hiện yêu cầu
-ảnh biển đã crop; nó chưa phải detector tìm biển trong camera frame toàn cảnh.
-
-## Chạy API
-
-```bash
-uv run cpv301 serve
-```
-
-Sau đó mở `http://127.0.0.1:8000/docs` hoặc kiểm tra:
-
-```bash
-curl http://127.0.0.1:8000/health
-curl -F 'file=@/duong/dan/bien-bao.png' http://127.0.0.1:8000/v1/predict
-```
-
-Lệnh CLI cho một ảnh đã crop:
-
-```bash
-uv run cpv301 predict /duong/dan/bien-bao.png
-```
-
-Đánh giá lại toàn bộ GTSRB test và xuất artifact:
-
-```bash
-uv run cpv301 evaluate
-```
-
-`accepted=false` chỉ là cơ chế từ chối sơ bộ theo ngưỡng confidence cấu hình. Ngưỡng mặc định `0.50` chưa được calibration trên validation set và không được xem là kết quả open-set/OOD đã kiểm chứng.
+Webapp nhận một hoặc nhiều ảnh và ảnh chụp từ webcam, sau đó phân loại biển báo và hiển thị lệnh điều khiển xe mô phỏng. MVP hiện yêu cầu ảnh biển đã crop; nó chưa phải detector tìm biển trong camera frame toàn cảnh.
 
 ## Cấu trúc
 
 ```text
 Traffic_Sign_Detector/
+├── main.py               # Điểm chạy duy nhất cho toàn bộ webapp
 ├── data/                 # raw ZIP và train/valid/test pickle; không commit Git
 ├── docs/                 # planning, slide và paper được export/tải từ Drive
 ├── models/               # model HDF5; không commit Git
