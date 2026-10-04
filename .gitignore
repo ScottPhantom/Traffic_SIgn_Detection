@@ -1,0 +1,35 @@
+.DS_Store
+.env
+.idea/
+.vscode/
+.venv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Downloaded datasets and trained artifacts stay local.
+data/raw/*
+data/processed/*
+models/*.h5
+models/*.keras
+models/*.tflite
+artifacts/*.db
+artifacts/incomplete-downloads/
+
+# Local runtime output.
+logs/
+tmp/
+
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/
+
+# Streamlit local credentials and per-user state.
+.streamlit/secrets.toml
+
+# Local Claude/Graft agent wiring. Codex uses the tracked root AGENTS.md contract.
+/.claude/

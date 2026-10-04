@@ -1,0 +1,10 @@
+Tổng ảnh: 51,839.
+train: 34,799 ảnh (67.13%), 43/43 lớp.
+valid: 4,410 ảnh (8.51%), 43/43 lớp.
+test: 12,630 ảnh (24.36%), 43/43 lớp.
+Train max/min = 2010/180 = 11.17.
+Lớp nhiều nhất: ID 2; tỷ trọng 5.78%.
+Lớp ít nhất: ID 0,19,37.
+Độ sáng train: min=0.024, median=0.292, max=0.974.
+Tổng hash trùng giữa các cặp split: 0 (không kiểm tra track).
+Chưa huấn luyện/đánh giá mô hình trong notebook này. Không có số accuracy hoặc macro-F1 đã đo.

@@ -1,0 +1,4 @@
+split,n_images,shape,dtype,pixel_min,pixel_max,n_classes_present,missing_class_ids,percent_total
+train,34799,"(34799, 32, 32, 3)",uint8,0,255,43,None,67.12899554389551
+valid,4410,"(4410, 32, 32, 3)",uint8,0,255,43,None,8.50710854761859
+test,12630,"(12630, 32, 32, 3)",uint8,0,255,43,None,24.363895908485887

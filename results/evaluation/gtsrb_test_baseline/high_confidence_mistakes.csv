@@ -1,0 +1,1666 @@
+sample_index,true_class_id,true_label,predicted_class_id,predicted_label,confidence
+8337,39,Keep left,38,Keep right,0.999821914523643
+8544,39,Keep left,38,Keep right,0.9997873282409235
+3341,39,Keep left,38,Keep right,0.999747558373131
+8869,39,Keep left,38,Keep right,0.9997359588061456
+9183,39,Keep left,38,Keep right,0.9996670247604394
+10837,39,Keep left,38,Keep right,0.9996059711505104
+12039,39,Keep left,38,Keep right,0.9993679001426571
+2880,39,Keep left,38,Keep right,0.9992832895075928
+2891,39,Keep left,38,Keep right,0.9992792100396293
+10056,39,Keep left,38,Keep right,0.9992751400581088
+8861,39,Keep left,38,Keep right,0.9992302193255449
+5555,39,Keep left,38,Keep right,0.9991828753312351
+2814,39,Keep left,38,Keep right,0.999174192034691
+781,39,Keep left,38,Keep right,0.9991354126009231
+12262,39,Keep left,38,Keep right,0.9990916104722768
+2503,39,Keep left,38,Keep right,0.99902891058529
+6778,39,Keep left,38,Keep right,0.999003417375807
+5161,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9989713884863288
+12482,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9987953143249795
+9852,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9987607335413095
+4257,5,Speed limit (80km/h),2,Speed limit (50km/h),0.998668835146098
+1073,39,Keep left,38,Keep right,0.9986014547697157
+363,39,Keep left,38,Keep right,0.998596313481136
+1212,39,Keep left,38,Keep right,0.9985815767124361
+3109,39,Keep left,38,Keep right,0.998578522154429
+6221,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9985243531500453
+10845,39,Keep left,38,Keep right,0.9984775125239477
+8382,39,Keep left,38,Keep right,0.9984487000543754
+1884,5,Speed limit (80km/h),2,Speed limit (50km/h),0.998290690805218
+1746,39,Keep left,38,Keep right,0.9980397080022946
+6530,22,Bumpy road,25,Road work,0.9979755969483244
+2995,20,Dangerous curve to the right,26,Traffic signals,0.9976167116967398
+9687,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9975041318848848
+10572,22,Bumpy road,25,Road work,0.9970540220163964
+5892,13,Yield,7,Speed limit (100km/h),0.9969791229890201
+12182,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9968855187979248
+10124,11,Right-of-way at the next intersection,25,Road work,0.9967547832240199
+9611,20,Dangerous curve to the right,26,Traffic signals,0.9967061043250306
+11976,22,Bumpy road,25,Road work,0.9966797974715516
+11990,11,Right-of-way at the next intersection,25,Road work,0.9965664280689883
+10263,22,Bumpy road,25,Road work,0.9963933303122721
+2494,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9960957567152324
+1889,39,Keep left,38,Keep right,0.9953290529348606
+7147,31,Wild animals crossing,20,Dangerous curve to the right,0.9952248488790758
+7252,22,Bumpy road,25,Road work,0.9951489320111601
+2432,35,Ahead only,40,Roundabout mandatory,0.9948418417711197
+8556,35,Ahead only,40,Roundabout mandatory,0.9947379441472305
+9659,22,Bumpy road,25,Road work,0.9946096247864216
+513,22,Bumpy road,25,Road work,0.9945714592248013
+2388,31,Wild animals crossing,20,Dangerous curve to the right,0.9945390818000692
+6262,4,Speed limit (70km/h),1,Speed limit (30km/h),0.9943189470350485
+883,30,Beware of ice/snow,29,Bicycles crossing,0.994099954595132
+5774,24,Road narrows on the right,18,General caution,0.9936503410774766
+3857,5,Speed limit (80km/h),4,Speed limit (70km/h),0.9936076132268419
+938,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.9930851083310493
+1231,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9929344312838764
+2700,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9921793351009537
+9797,11,Right-of-way at the next intersection,25,Road work,0.9915691480668096
+3796,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9906481586922458
+12530,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9905572173942611
+1389,18,General caution,26,Traffic signals,0.9901840611760325
+8731,38,Keep right,39,Keep left,0.9900835855015658
+12008,22,Bumpy road,25,Road work,0.9896533152461138
+805,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9895081024603815
+4422,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9894487712449974
+7851,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9893633022129911
+11536,20,Dangerous curve to the right,26,Traffic signals,0.988803207192828
+3835,20,Dangerous curve to the right,26,Traffic signals,0.9885139922089391
+9926,22,Bumpy road,25,Road work,0.9882902979390573
+9832,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9881599295070077
+2434,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9881351688113663
+8738,22,Bumpy road,25,Road work,0.9880490990134996
+8074,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9879373257908948
+551,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9866042201022615
+12579,20,Dangerous curve to the right,26,Traffic signals,0.9865932386579709
+12209,38,Keep right,39,Keep left,0.9865554444024685
+2833,17,No entry,7,Speed limit (100km/h),0.9859463841200184
+4812,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9859337518064422
+9048,22,Bumpy road,25,Road work,0.9854503429493533
+2758,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9854479516760294
+9757,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9847301074792854
+11268,11,Right-of-way at the next intersection,25,Road work,0.9846328278137129
+9935,17,No entry,7,Speed limit (100km/h),0.9844823432356151
+3815,35,Ahead only,40,Roundabout mandatory,0.984424790003812
+1088,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9842145387473904
+8150,35,Ahead only,40,Roundabout mandatory,0.983718674703622
+10002,20,Dangerous curve to the right,26,Traffic signals,0.98359190337223
+8679,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9833444745058127
+3250,27,Pedestrians,21,Double curve,0.9833157314792833
+1402,30,Beware of ice/snow,4,Speed limit (70km/h),0.9832066320625457
+904,27,Pedestrians,21,Double curve,0.9831394128990418
+9509,27,Pedestrians,23,Slippery road,0.9827810693962588
+6870,17,No entry,7,Speed limit (100km/h),0.9819258493449919
+4333,0,Speed limit (20km/h),1,Speed limit (30km/h),0.9814706623381588
+10691,20,Dangerous curve to the right,19,Dangerous curve to the left,0.9814551592152749
+1469,20,Dangerous curve to the right,26,Traffic signals,0.9803458014192716
+4365,38,Keep right,39,Keep left,0.9799898904787271
+542,5,Speed limit (80km/h),2,Speed limit (50km/h),0.979769129696108
+339,22,Bumpy road,25,Road work,0.9787609246728095
+5352,11,Right-of-way at the next intersection,28,Children crossing,0.9782397657671236
+7974,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9782114128708066
+430,11,Right-of-way at the next intersection,25,Road work,0.9767423091468238
+1280,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9762811400443464
+997,38,Keep right,39,Keep left,0.9759750981966446
+6922,17,No entry,7,Speed limit (100km/h),0.9758521910733806
+8802,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9752504497583078
+2288,30,Beware of ice/snow,28,Children crossing,0.974977883040545
+11150,33,Turn right ahead,34,Turn left ahead,0.9748240812320857
+10586,31,Wild animals crossing,20,Dangerous curve to the right,0.9746412599480313
+4429,20,Dangerous curve to the right,26,Traffic signals,0.9745207528689623
+12278,38,Keep right,39,Keep left,0.9742822384546946
+2379,12,Priority road,40,Roundabout mandatory,0.9736790332569228
+8777,38,Keep right,6,End of speed limit (80km/h),0.973590492920874
+586,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9730106260091117
+2547,17,No entry,7,Speed limit (100km/h),0.9726829784468197
+8345,7,Speed limit (100km/h),8,Speed limit (120km/h),0.9726687752047842
+6688,38,Keep right,39,Keep left,0.9726149048440762
+2235,8,Speed limit (120km/h),2,Speed limit (50km/h),0.9725474989489944
+10334,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9723840895790888
+708,18,General caution,26,Traffic signals,0.9719897574146455
+5357,17,No entry,7,Speed limit (100km/h),0.9714894175442178
+11435,30,Beware of ice/snow,4,Speed limit (70km/h),0.9714844532387946
+242,20,Dangerous curve to the right,26,Traffic signals,0.9712154789176284
+8452,20,Dangerous curve to the right,26,Traffic signals,0.970475526016961
+2076,33,Turn right ahead,34,Turn left ahead,0.9703501564128498
+4055,22,Bumpy road,25,Road work,0.970289963760577
+7658,17,No entry,7,Speed limit (100km/h),0.9700751518608125
+12006,22,Bumpy road,25,Road work,0.9699349511124716
+17,20,Dangerous curve to the right,26,Traffic signals,0.9695728962764275
+6832,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9693279065842562
+5108,35,Ahead only,40,Roundabout mandatory,0.968140649715944
+951,31,Wild animals crossing,20,Dangerous curve to the right,0.9676890352306593
+7597,31,Wild animals crossing,20,Dangerous curve to the right,0.9674631959111574
+11394,20,Dangerous curve to the right,26,Traffic signals,0.9668263125455858
+11168,33,Turn right ahead,34,Turn left ahead,0.9667796857409973
+6739,25,Road work,28,Children crossing,0.9665709653310816
+6901,22,Bumpy road,25,Road work,0.9661762403425027
+7833,39,Keep left,38,Keep right,0.9660866390522629
+5095,22,Bumpy road,25,Road work,0.9656748683789804
+19,38,Keep right,39,Keep left,0.9654867921529938
+8462,20,Dangerous curve to the right,26,Traffic signals,0.9641296083412776
+12224,20,Dangerous curve to the right,26,Traffic signals,0.9631567797378952
+6702,20,Dangerous curve to the right,26,Traffic signals,0.9631385307669064
+8172,38,Keep right,39,Keep left,0.96308373733996
+1363,11,Right-of-way at the next intersection,28,Children crossing,0.9630757174663683
+4456,27,Pedestrians,21,Double curve,0.9630327178263055
+12380,33,Turn right ahead,34,Turn left ahead,0.9625437905715756
+10564,39,Keep left,38,Keep right,0.9624695892997498
+3713,11,Right-of-way at the next intersection,25,Road work,0.9622400211185322
+211,38,Keep right,6,End of speed limit (80km/h),0.9620946153440157
+1751,20,Dangerous curve to the right,26,Traffic signals,0.96187011632939
+959,20,Dangerous curve to the right,26,Traffic signals,0.9617512378308786
+10277,38,Keep right,39,Keep left,0.9615007862121275
+2353,4,Speed limit (70km/h),8,Speed limit (120km/h),0.9610852048947306
+1867,33,Turn right ahead,34,Turn left ahead,0.9608465462040727
+859,11,Right-of-way at the next intersection,25,Road work,0.9606896187403737
+7660,38,Keep right,6,End of speed limit (80km/h),0.9589931146976806
+5337,22,Bumpy road,25,Road work,0.958502849638145
+3389,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9584533703772299
+10709,5,Speed limit (80km/h),8,Speed limit (120km/h),0.9581409491795801
+1935,17,No entry,7,Speed limit (100km/h),0.9581314908033924
+10566,11,Right-of-way at the next intersection,25,Road work,0.9574787646618136
+5057,27,Pedestrians,21,Double curve,0.9571074085212354
+12537,28,Children crossing,25,Road work,0.9567369187961596
+1760,20,Dangerous curve to the right,19,Dangerous curve to the left,0.9565527796316757
+443,30,Beware of ice/snow,29,Bicycles crossing,0.9563444845774127
+11849,5,Speed limit (80km/h),8,Speed limit (120km/h),0.9559503966155388
+10729,35,Ahead only,5,Speed limit (80km/h),0.9555851346265131
+10180,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9552566324164884
+3986,17,No entry,7,Speed limit (100km/h),0.95516765510361
+1323,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9550175983993794
+7578,22,Bumpy road,25,Road work,0.9548768259832646
+9546,18,General caution,26,Traffic signals,0.9547945636565951
+11094,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9541809305345199
+1622,38,Keep right,39,Keep left,0.953964573189447
+11858,33,Turn right ahead,34,Turn left ahead,0.9537772759614592
+6939,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.9537389777133334
+6700,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9537036221413016
+2841,38,Keep right,39,Keep left,0.9536601792216046
+5714,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9528081127730821
+2635,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9527715917416125
+8983,33,Turn right ahead,34,Turn left ahead,0.9525603877358347
+6957,3,Speed limit (60km/h),2,Speed limit (50km/h),0.950449980227193
+6295,38,Keep right,40,Roundabout mandatory,0.9504296099421592
+11415,27,Pedestrians,21,Double curve,0.9503620524345808
+3143,20,Dangerous curve to the right,26,Traffic signals,0.9489568841919267
+8444,34,Turn left ahead,33,Turn right ahead,0.9484807622982072
+10989,17,No entry,7,Speed limit (100km/h),0.9479965728320203
+12134,8,Speed limit (120km/h),5,Speed limit (80km/h),0.9465770055621808
+10604,25,Road work,31,Wild animals crossing,0.9465407283052447
+6515,38,Keep right,39,Keep left,0.9462948155063533
+11793,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.9461668250273693
+759,23,Slippery road,31,Wild animals crossing,0.9456833700171509
+4219,13,Yield,7,Speed limit (100km/h),0.945677856235718
+8068,22,Bumpy road,25,Road work,0.9451717683431491
+237,30,Beware of ice/snow,4,Speed limit (70km/h),0.9449754937330676
+745,17,No entry,7,Speed limit (100km/h),0.9444790176973972
+10967,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9442839355523397
+4820,11,Right-of-way at the next intersection,25,Road work,0.9431850490756156
+6143,11,Right-of-way at the next intersection,25,Road work,0.9430331781910843
+9085,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9427798240987844
+6451,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9425617437368544
+5847,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9424630987485063
+7787,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.9418961979222492
+7889,38,Keep right,39,Keep left,0.941771408568183
+6687,20,Dangerous curve to the right,19,Dangerous curve to the left,0.941495988085907
+7695,40,Roundabout mandatory,36,Go straight or right,0.9411623472025891
+11711,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9406961493823088
+5693,27,Pedestrians,21,Double curve,0.9406915208245701
+5346,33,Turn right ahead,34,Turn left ahead,0.9406125396597672
+10086,7,Speed limit (100km/h),4,Speed limit (70km/h),0.940524017288656
+1312,8,Speed limit (120km/h),4,Speed limit (70km/h),0.9395102785855224
+11616,38,Keep right,40,Roundabout mandatory,0.9392224237716873
+4830,4,Speed limit (70km/h),1,Speed limit (30km/h),0.9384107028263424
+7225,27,Pedestrians,21,Double curve,0.9374969806004141
+9961,31,Wild animals crossing,20,Dangerous curve to the right,0.937156583600873
+2585,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9368121317789722
+11462,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9363534220601721
+4341,12,Priority road,26,Traffic signals,0.9360735991383573
+5635,17,No entry,7,Speed limit (100km/h),0.9358200686345246
+4560,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9356793713854903
+4833,30,Beware of ice/snow,29,Bicycles crossing,0.9356490501372181
+7073,27,Pedestrians,21,Double curve,0.9354312460362944
+2704,38,Keep right,39,Keep left,0.9351735746243983
+12388,38,Keep right,39,Keep left,0.9349798956508742
+3025,30,Beware of ice/snow,29,Bicycles crossing,0.9343651135110803
+344,38,Keep right,39,Keep left,0.9341827060040291
+5560,7,Speed limit (100km/h),5,Speed limit (80km/h),0.9340941302008859
+5667,27,Pedestrians,21,Double curve,0.9340436516259468
+8238,17,No entry,7,Speed limit (100km/h),0.9336877598992109
+2751,24,Road narrows on the right,35,Ahead only,0.9331291695533076
+1662,17,No entry,7,Speed limit (100km/h),0.9328291467034399
+944,38,Keep right,39,Keep left,0.9324159563763337
+6848,17,No entry,7,Speed limit (100km/h),0.9322839902350329
+4562,27,Pedestrians,21,Double curve,0.9321756389942046
+8720,4,Speed limit (70km/h),1,Speed limit (30km/h),0.9318516463955343
+11918,20,Dangerous curve to the right,26,Traffic signals,0.9312676742364137
+8941,33,Turn right ahead,34,Turn left ahead,0.9310278258612744
+11114,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.9309407274022191
+2337,38,Keep right,39,Keep left,0.9305819850257889
+5041,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9300951184896047
+3088,38,Keep right,39,Keep left,0.9300001367759604
+3704,40,Roundabout mandatory,4,Speed limit (70km/h),0.9289652521752402
+10319,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.9287715402451502
+4693,38,Keep right,39,Keep left,0.9286883394979526
+5428,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9277601251171635
+2157,27,Pedestrians,21,Double curve,0.9276545785996868
+10165,33,Turn right ahead,34,Turn left ahead,0.9268245479201792
+3838,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9266120773165237
+9536,20,Dangerous curve to the right,25,Road work,0.9265100501984583
+6873,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9263850477906681
+7378,33,Turn right ahead,38,Keep right,0.9261681114322858
+6612,27,Pedestrians,21,Double curve,0.9260226761217459
+8595,38,Keep right,40,Roundabout mandatory,0.9251698656883695
+6546,33,Turn right ahead,34,Turn left ahead,0.9249996509021088
+11785,38,Keep right,39,Keep left,0.9246799492212996
+3752,28,Children crossing,25,Road work,0.9243798270016453
+8780,2,Speed limit (50km/h),1,Speed limit (30km/h),0.924214574421653
+3520,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9238801809088509
+9103,22,Bumpy road,25,Road work,0.9237523325913749
+11611,4,Speed limit (70km/h),1,Speed limit (30km/h),0.9236933828435445
+5558,33,Turn right ahead,34,Turn left ahead,0.9229543222401805
+6146,30,Beware of ice/snow,25,Road work,0.9229045729789586
+8644,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9228857455750464
+6854,0,Speed limit (20km/h),1,Speed limit (30km/h),0.9224691042445118
+8895,24,Road narrows on the right,18,General caution,0.922291289637185
+11730,17,No entry,7,Speed limit (100km/h),0.922042529431215
+1713,30,Beware of ice/snow,29,Bicycles crossing,0.9219486211940504
+9416,38,Keep right,39,Keep left,0.9216783809990369
+8710,17,No entry,7,Speed limit (100km/h),0.9213704919048216
+9792,21,Double curve,19,Dangerous curve to the left,0.9205808573213774
+1762,17,No entry,7,Speed limit (100km/h),0.9205657058878192
+2615,12,Priority road,38,Keep right,0.9198323539933267
+10931,12,Priority road,40,Roundabout mandatory,0.9198226031131362
+7461,30,Beware of ice/snow,29,Bicycles crossing,0.9190591182148716
+2725,35,Ahead only,2,Speed limit (50km/h),0.918937049045474
+8383,38,Keep right,39,Keep left,0.9187400062162305
+3455,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9172454946334804
+11191,1,Speed limit (30km/h),2,Speed limit (50km/h),0.9170516989312762
+11366,27,Pedestrians,21,Double curve,0.9167352354081579
+12529,38,Keep right,39,Keep left,0.9162609294130221
+3457,22,Bumpy road,25,Road work,0.9160421083138235
+1961,20,Dangerous curve to the right,23,Slippery road,0.9160244575423245
+6781,38,Keep right,39,Keep left,0.915048281781678
+7035,18,General caution,26,Traffic signals,0.9135614114856981
+11962,34,Turn left ahead,33,Turn right ahead,0.9135494059166454
+2352,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9134689244011831
+7854,38,Keep right,39,Keep left,0.9134087626299062
+8528,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9131756211012804
+5832,38,Keep right,39,Keep left,0.9124278321256615
+4611,33,Turn right ahead,34,Turn left ahead,0.9121016919788065
+6504,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.9112850616003244
+7353,38,Keep right,39,Keep left,0.9109462644006174
+7937,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9109333525388121
+8422,27,Pedestrians,21,Double curve,0.9106928859856671
+2054,18,General caution,26,Traffic signals,0.9089570642655915
+3783,23,Slippery road,20,Dangerous curve to the right,0.9083665088145825
+9391,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9078461346965607
+9928,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9077923651830383
+675,0,Speed limit (20km/h),8,Speed limit (120km/h),0.9076765544847534
+10156,22,Bumpy road,25,Road work,0.907097626589584
+7306,18,General caution,26,Traffic signals,0.9070478140430692
+10443,36,Go straight or right,37,Go straight or left,0.9069460971303213
+8355,31,Wild animals crossing,20,Dangerous curve to the right,0.906656700741829
+757,12,Priority road,2,Speed limit (50km/h),0.9061355169726081
+1038,35,Ahead only,34,Turn left ahead,0.9055593411349412
+1939,5,Speed limit (80km/h),2,Speed limit (50km/h),0.9050393603992101
+1122,35,Ahead only,36,Go straight or right,0.9047168740719618
+1209,11,Right-of-way at the next intersection,25,Road work,0.9041141198857268
+2834,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.9037899415278496
+6823,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9031482795526661
+7279,12,Priority road,40,Roundabout mandatory,0.9030144274325477
+9364,33,Turn right ahead,35,Ahead only,0.9027831828752559
+11266,20,Dangerous curve to the right,26,Traffic signals,0.9026316841192196
+3777,11,Right-of-way at the next intersection,25,Road work,0.9020989044185401
+9398,2,Speed limit (50km/h),1,Speed limit (30km/h),0.9020870472336759
+1774,4,Speed limit (70km/h),1,Speed limit (30km/h),0.902052638246914
+10905,17,No entry,7,Speed limit (100km/h),0.9018790648311952
+232,33,Turn right ahead,34,Turn left ahead,0.9016800435936636
+4122,20,Dangerous curve to the right,25,Road work,0.9015774175684094
+6098,23,Slippery road,31,Wild animals crossing,0.901056492504747
+6485,38,Keep right,39,Keep left,0.9009202802908378
+5514,38,Keep right,39,Keep left,0.9003860339094444
+9372,33,Turn right ahead,35,Ahead only,0.9001393836794516
+867,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.8999894069857169
+11508,8,Speed limit (120km/h),2,Speed limit (50km/h),0.8997636551534846
+345,38,Keep right,39,Keep left,0.8996349620514196
+1780,33,Turn right ahead,34,Turn left ahead,0.8995126697848516
+10099,38,Keep right,6,End of speed limit (80km/h),0.8994212449184088
+576,3,Speed limit (60km/h),2,Speed limit (50km/h),0.8988569963107249
+4186,20,Dangerous curve to the right,25,Road work,0.8986459860030208
+11286,22,Bumpy road,25,Road work,0.8983934539645586
+12103,4,Speed limit (70km/h),8,Speed limit (120km/h),0.8980194935826228
+10799,33,Turn right ahead,34,Turn left ahead,0.8979760252576867
+11384,34,Turn left ahead,33,Turn right ahead,0.8977768665299184
+7633,11,Right-of-way at the next intersection,25,Road work,0.8971465223062802
+10362,17,No entry,7,Speed limit (100km/h),0.895870316663967
+12374,11,Right-of-way at the next intersection,25,Road work,0.8957063287171815
+5779,30,Beware of ice/snow,29,Bicycles crossing,0.8956846757202619
+4509,30,Beware of ice/snow,29,Bicycles crossing,0.8954983900061152
+7770,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.8943360105966734
+9784,1,Speed limit (30km/h),2,Speed limit (50km/h),0.8935953951062519
+11152,17,No entry,7,Speed limit (100km/h),0.8934442644612506
+2138,36,Go straight or right,37,Go straight or left,0.8931799885715842
+404,38,Keep right,39,Keep left,0.8920356771447457
+8981,38,Keep right,39,Keep left,0.8915827507587755
+9340,38,Keep right,39,Keep left,0.8907569710554453
+4522,34,Turn left ahead,33,Turn right ahead,0.8905277963640461
+5315,38,Keep right,39,Keep left,0.8903281939339254
+2045,0,Speed limit (20km/h),1,Speed limit (30km/h),0.8902242421045372
+12594,12,Priority road,2,Speed limit (50km/h),0.8893997182115418
+10519,35,Ahead only,40,Roundabout mandatory,0.8893531612655026
+8860,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.8889886755803804
+3337,20,Dangerous curve to the right,19,Dangerous curve to the left,0.8885966260081358
+7785,33,Turn right ahead,34,Turn left ahead,0.8884307062880433
+9165,12,Priority road,40,Roundabout mandatory,0.8881606946800473
+1966,7,Speed limit (100km/h),8,Speed limit (120km/h),0.8878355499437144
+1640,33,Turn right ahead,34,Turn left ahead,0.8877048675770828
+6248,3,Speed limit (60km/h),2,Speed limit (50km/h),0.8876858236296978
+7270,34,Turn left ahead,33,Turn right ahead,0.887506549658595
+8507,38,Keep right,39,Keep left,0.887149149492792
+2881,2,Speed limit (50km/h),1,Speed limit (30km/h),0.88606963250821
+7260,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8848935084341897
+336,7,Speed limit (100km/h),8,Speed limit (120km/h),0.8837664041945203
+3745,30,Beware of ice/snow,29,Bicycles crossing,0.8837305172580732
+3896,22,Bumpy road,25,Road work,0.8836043294089447
+7526,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8834181456447956
+2787,31,Wild animals crossing,25,Road work,0.8832680100568707
+5239,18,General caution,26,Traffic signals,0.8829963446305793
+2025,4,Speed limit (70km/h),1,Speed limit (30km/h),0.88285800393476
+7136,38,Keep right,39,Keep left,0.8821466176947427
+1148,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8817709508657393
+11756,12,Priority road,26,Traffic signals,0.8809969120172625
+4887,11,Right-of-way at the next intersection,25,Road work,0.8799257287517416
+7222,2,Speed limit (50km/h),1,Speed limit (30km/h),0.8798461742159298
+8436,1,Speed limit (30km/h),2,Speed limit (50km/h),0.8777756137101594
+12432,33,Turn right ahead,34,Turn left ahead,0.8773797481019096
+1725,38,Keep right,39,Keep left,0.8769516435602002
+4914,23,Slippery road,20,Dangerous curve to the right,0.8769476478192798
+213,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8766159817340068
+1637,2,Speed limit (50km/h),1,Speed limit (30km/h),0.8758882445407161
+9880,39,Keep left,36,Go straight or right,0.8754517369090382
+5844,18,General caution,26,Traffic signals,0.8752678415012043
+2204,33,Turn right ahead,34,Turn left ahead,0.8750605646252431
+2427,33,Turn right ahead,34,Turn left ahead,0.8749595067127743
+1262,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.874902647383228
+4037,2,Speed limit (50km/h),1,Speed limit (30km/h),0.8744129560918862
+8647,38,Keep right,39,Keep left,0.8738660537537329
+12410,35,Ahead only,36,Go straight or right,0.873809062941546
+5895,27,Pedestrians,21,Double curve,0.8737266657172941
+7531,38,Keep right,39,Keep left,0.8731449015611461
+1957,7,Speed limit (100km/h),8,Speed limit (120km/h),0.8729790612068306
+4700,33,Turn right ahead,34,Turn left ahead,0.8721995630041975
+11710,33,Turn right ahead,34,Turn left ahead,0.8721156275554725
+10540,4,Speed limit (70km/h),1,Speed limit (30km/h),0.8720801265632802
+600,2,Speed limit (50km/h),1,Speed limit (30km/h),0.8717978833291781
+2921,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.8706690842054463
+2502,23,Slippery road,20,Dangerous curve to the right,0.8697187973855045
+8005,38,Keep right,39,Keep left,0.8696610531658246
+8053,38,Keep right,39,Keep left,0.8693945351256565
+7164,18,General caution,26,Traffic signals,0.8689777193377146
+3296,3,Speed limit (60km/h),2,Speed limit (50km/h),0.8687868992438982
+8928,3,Speed limit (60km/h),25,Road work,0.8661620099582364
+1173,34,Turn left ahead,33,Turn right ahead,0.8660327850136615
+2608,33,Turn right ahead,34,Turn left ahead,0.8655221751637703
+5293,20,Dangerous curve to the right,19,Dangerous curve to the left,0.8647892229604565
+4153,33,Turn right ahead,34,Turn left ahead,0.8646515510960311
+755,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.8644236456995968
+779,33,Turn right ahead,34,Turn left ahead,0.8643498342726489
+10018,38,Keep right,39,Keep left,0.8642969745870557
+3572,38,Keep right,39,Keep left,0.8634664911128087
+5338,31,Wild animals crossing,20,Dangerous curve to the right,0.8627405545155359
+9484,10,No passing for vehicles over 3.5 metric tons,31,Wild animals crossing,0.8622702456472925
+515,33,Turn right ahead,34,Turn left ahead,0.862152024944349
+11947,20,Dangerous curve to the right,19,Dangerous curve to the left,0.8607340829698394
+9974,11,Right-of-way at the next intersection,25,Road work,0.8606550529115883
+496,30,Beware of ice/snow,23,Slippery road,0.8604291181266295
+2112,18,General caution,26,Traffic signals,0.8593133063534354
+4621,38,Keep right,39,Keep left,0.8589056626822633
+6336,34,Turn left ahead,33,Turn right ahead,0.8588191099193007
+12496,33,Turn right ahead,34,Turn left ahead,0.8586806213476688
+9254,18,General caution,26,Traffic signals,0.8586229622741852
+2460,11,Right-of-way at the next intersection,25,Road work,0.8586069333861465
+7963,38,Keep right,39,Keep left,0.8583805188822866
+3008,21,Double curve,23,Slippery road,0.8565264086258328
+2248,38,Keep right,6,End of speed limit (80km/h),0.856114214824498
+5913,33,Turn right ahead,34,Turn left ahead,0.8560206648640406
+9055,37,Go straight or left,36,Go straight or right,0.8556092557908979
+6136,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.8554853562170089
+6090,30,Beware of ice/snow,20,Dangerous curve to the right,0.8550216039204559
+5289,23,Slippery road,25,Road work,0.8546414315746919
+5302,33,Turn right ahead,34,Turn left ahead,0.8542012052156931
+624,7,Speed limit (100km/h),5,Speed limit (80km/h),0.8532673976294827
+8173,11,Right-of-way at the next intersection,25,Road work,0.8529305979659747
+11284,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8521528502605317
+427,20,Dangerous curve to the right,25,Road work,0.8520291060224845
+3231,23,Slippery road,20,Dangerous curve to the right,0.8514977168036364
+7671,5,Speed limit (80km/h),1,Speed limit (30km/h),0.8513692927371387
+9191,12,Priority road,2,Speed limit (50km/h),0.8510629585264706
+10559,31,Wild animals crossing,20,Dangerous curve to the right,0.8508000806815071
+9862,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.8506727967292322
+12053,20,Dangerous curve to the right,26,Traffic signals,0.8505610649176525
+4271,6,End of speed limit (80km/h),38,Keep right,0.850414680151395
+3162,33,Turn right ahead,39,Keep left,0.8479440874615487
+11251,38,Keep right,39,Keep left,0.8479358567104202
+9537,35,Ahead only,37,Go straight or left,0.8479316925500808
+5284,17,No entry,7,Speed limit (100km/h),0.8479256864336561
+10672,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8478614329097283
+4252,18,General caution,26,Traffic signals,0.8478271095742091
+8852,33,Turn right ahead,35,Ahead only,0.8470284437523772
+4984,2,Speed limit (50km/h),1,Speed limit (30km/h),0.8469455049895251
+10410,17,No entry,7,Speed limit (100km/h),0.8468647165489774
+8215,38,Keep right,39,Keep left,0.8467744262928121
+12174,4,Speed limit (70km/h),1,Speed limit (30km/h),0.8460619505644638
+2360,30,Beware of ice/snow,28,Children crossing,0.8456015134567135
+3744,12,Priority road,26,Traffic signals,0.8453332298548514
+5113,5,Speed limit (80km/h),1,Speed limit (30km/h),0.8444177992588
+11637,3,Speed limit (60km/h),2,Speed limit (50km/h),0.8439916618316519
+727,11,Right-of-way at the next intersection,25,Road work,0.8425527135429768
+5280,30,Beware of ice/snow,25,Road work,0.8424150173747543
+10100,27,Pedestrians,11,Right-of-way at the next intersection,0.8423072971456835
+10563,23,Slippery road,31,Wild animals crossing,0.8418153499400078
+9881,23,Slippery road,20,Dangerous curve to the right,0.8417464534692602
+8974,30,Beware of ice/snow,29,Bicycles crossing,0.8415816726247303
+4136,33,Turn right ahead,34,Turn left ahead,0.8406196286988369
+5805,37,Go straight or left,36,Go straight or right,0.840364362636294
+2577,4,Speed limit (70km/h),1,Speed limit (30km/h),0.8393401180131986
+10313,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.8389617414947823
+12214,12,Priority road,40,Roundabout mandatory,0.8389073309933447
+9052,2,Speed limit (50km/h),1,Speed limit (30km/h),0.8387067783734379
+3834,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8383827834688722
+7603,17,No entry,7,Speed limit (100km/h),0.8383292152298195
+5736,23,Slippery road,20,Dangerous curve to the right,0.8379191998654777
+1259,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8368886331616855
+7715,20,Dangerous curve to the right,25,Road work,0.8364448615062599
+7741,20,Dangerous curve to the right,19,Dangerous curve to the left,0.8363096092113056
+5934,12,Priority road,38,Keep right,0.836197790303218
+2477,12,Priority road,2,Speed limit (50km/h),0.8361475027239773
+11403,18,General caution,26,Traffic signals,0.8353842489882524
+7468,3,Speed limit (60km/h),5,Speed limit (80km/h),0.8351891215704111
+3416,23,Slippery road,31,Wild animals crossing,0.8346735103484773
+8162,33,Turn right ahead,34,Turn left ahead,0.834358905737659
+5313,30,Beware of ice/snow,29,Bicycles crossing,0.8340345150363225
+9076,3,Speed limit (60km/h),2,Speed limit (50km/h),0.8340339708280844
+3567,30,Beware of ice/snow,4,Speed limit (70km/h),0.8322519666524132
+6968,18,General caution,27,Pedestrians,0.8317280699111466
+10318,18,General caution,26,Traffic signals,0.8316676594383385
+3793,12,Priority road,26,Traffic signals,0.8314677153735417
+12569,11,Right-of-way at the next intersection,25,Road work,0.8307719620947388
+11346,3,Speed limit (60km/h),5,Speed limit (80km/h),0.8304935278648514
+1832,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8298330922494552
+8761,23,Slippery road,31,Wild animals crossing,0.8297550066212815
+11848,33,Turn right ahead,34,Turn left ahead,0.8292261360990764
+7917,22,Bumpy road,25,Road work,0.8287192449292493
+4483,33,Turn right ahead,34,Turn left ahead,0.828610183901754
+11248,38,Keep right,39,Keep left,0.828428379223411
+5499,33,Turn right ahead,34,Turn left ahead,0.827876087492539
+7063,33,Turn right ahead,34,Turn left ahead,0.8274961067455814
+7285,12,Priority road,2,Speed limit (50km/h),0.8271695622165147
+4310,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.8270129705739115
+9366,8,Speed limit (120km/h),4,Speed limit (70km/h),0.8267353430226442
+9889,33,Turn right ahead,35,Ahead only,0.825943635913022
+8168,37,Go straight or left,36,Go straight or right,0.8258989925354531
+948,34,Turn left ahead,33,Turn right ahead,0.8258898623068437
+5134,22,Bumpy road,25,Road work,0.8256640601090983
+7330,7,Speed limit (100km/h),8,Speed limit (120km/h),0.8252461145944385
+9042,3,Speed limit (60km/h),2,Speed limit (50km/h),0.8250885869299046
+3595,3,Speed limit (60km/h),2,Speed limit (50km/h),0.8250088342735272
+5737,4,Speed limit (70km/h),1,Speed limit (30km/h),0.8243095706118403
+8332,31,Wild animals crossing,20,Dangerous curve to the right,0.8235936801345239
+10620,3,Speed limit (60km/h),25,Road work,0.8233127633883137
+7559,30,Beware of ice/snow,29,Bicycles crossing,0.8228499888880074
+1053,34,Turn left ahead,33,Turn right ahead,0.8213442552756169
+3564,27,Pedestrians,21,Double curve,0.8210039808968044
+3761,6,End of speed limit (80km/h),39,Keep left,0.8207910663822889
+4878,33,Turn right ahead,34,Turn left ahead,0.820300265286576
+2483,17,No entry,7,Speed limit (100km/h),0.8202427871283638
+1005,5,Speed limit (80km/h),8,Speed limit (120km/h),0.8202217450346249
+11512,20,Dangerous curve to the right,25,Road work,0.819370854906727
+2035,35,Ahead only,37,Go straight or left,0.8193013165781095
+7459,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8192983764244804
+767,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8179612063469136
+2655,30,Beware of ice/snow,39,Keep left,0.817385051997449
+9111,11,Right-of-way at the next intersection,28,Children crossing,0.8173122783985414
+4821,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.8172678819673787
+1512,18,General caution,26,Traffic signals,0.8153426523495878
+4130,39,Keep left,38,Keep right,0.8152483761742048
+3313,33,Turn right ahead,34,Turn left ahead,0.815052395151387
+3672,33,Turn right ahead,39,Keep left,0.8128488739511611
+9834,19,Dangerous curve to the left,20,Dangerous curve to the right,0.8124448872792963
+2397,3,Speed limit (60km/h),2,Speed limit (50km/h),0.8119389701225541
+2824,38,Keep right,39,Keep left,0.8118188199459898
+2703,38,Keep right,39,Keep left,0.8112669467299353
+3490,11,Right-of-way at the next intersection,25,Road work,0.8112504551405787
+6006,2,Speed limit (50km/h),1,Speed limit (30km/h),0.8110625672006068
+12151,2,Speed limit (50km/h),1,Speed limit (30km/h),0.8101471146428182
+10823,18,General caution,26,Traffic signals,0.8099049831611762
+1105,5,Speed limit (80km/h),2,Speed limit (50km/h),0.8096159808576991
+9239,22,Bumpy road,25,Road work,0.8094030429851603
+11238,8,Speed limit (120km/h),2,Speed limit (50km/h),0.8083629013848329
+7993,11,Right-of-way at the next intersection,23,Slippery road,0.8081571554316237
+10304,1,Speed limit (30km/h),8,Speed limit (120km/h),0.8074667247506052
+9158,27,Pedestrians,21,Double curve,0.8073760973291404
+1969,40,Roundabout mandatory,36,Go straight or right,0.8069988455740662
+12382,11,Right-of-way at the next intersection,31,Wild animals crossing,0.806789989771019
+3230,31,Wild animals crossing,20,Dangerous curve to the right,0.8053416632418532
+10200,33,Turn right ahead,35,Ahead only,0.804860637392449
+11167,36,Go straight or right,37,Go straight or left,0.803822875796136
+7685,38,Keep right,39,Keep left,0.8037862892676214
+5641,3,Speed limit (60km/h),5,Speed limit (80km/h),0.8033842481890238
+5073,13,Yield,7,Speed limit (100km/h),0.8033082338994951
+9864,33,Turn right ahead,34,Turn left ahead,0.8032986344138052
+11810,33,Turn right ahead,35,Ahead only,0.8019513531566407
+9383,18,General caution,26,Traffic signals,0.8014988858141483
+11617,30,Beware of ice/snow,29,Bicycles crossing,0.8007967271807683
+12352,33,Turn right ahead,34,Turn left ahead,0.800472832638617
+3906,38,Keep right,39,Keep left,0.7995418407379488
+11458,38,Keep right,40,Roundabout mandatory,0.7975403360012169
+5518,27,Pedestrians,21,Double curve,0.7974470491277433
+8030,35,Ahead only,40,Roundabout mandatory,0.7968142452279466
+6996,18,General caution,26,Traffic signals,0.796784712098705
+4585,27,Pedestrians,21,Double curve,0.7967111075519774
+2376,4,Speed limit (70km/h),1,Speed limit (30km/h),0.7965943883296346
+12092,38,Keep right,6,End of speed limit (80km/h),0.7959347000208391
+7957,8,Speed limit (120km/h),38,Keep right,0.7959325056091289
+928,3,Speed limit (60km/h),2,Speed limit (50km/h),0.7958560172466936
+12229,28,Children crossing,11,Right-of-way at the next intersection,0.7954348051610507
+8375,20,Dangerous curve to the right,19,Dangerous curve to the left,0.7936393188547369
+5839,23,Slippery road,20,Dangerous curve to the right,0.7936340279922454
+1524,30,Beware of ice/snow,28,Children crossing,0.7934382227170943
+9527,3,Speed limit (60km/h),5,Speed limit (80km/h),0.792953365947746
+5644,20,Dangerous curve to the right,19,Dangerous curve to the left,0.7924957990682813
+7988,10,No passing for vehicles over 3.5 metric tons,20,Dangerous curve to the right,0.7924902357493168
+11736,23,Slippery road,29,Bicycles crossing,0.792376718954299
+740,3,Speed limit (60km/h),28,Children crossing,0.7920124571898238
+10243,23,Slippery road,20,Dangerous curve to the right,0.7915160812496349
+5718,33,Turn right ahead,34,Turn left ahead,0.7911204815099645
+8006,20,Dangerous curve to the right,26,Traffic signals,0.7910111811990025
+114,30,Beware of ice/snow,23,Slippery road,0.790503949371481
+7861,5,Speed limit (80km/h),2,Speed limit (50km/h),0.7900200542475456
+7877,37,Go straight or left,36,Go straight or right,0.7889151975272273
+5519,28,Children crossing,25,Road work,0.7885384823435487
+12193,35,Ahead only,34,Turn left ahead,0.7883525673732903
+11438,6,End of speed limit (80km/h),38,Keep right,0.7878759443665846
+9023,3,Speed limit (60km/h),2,Speed limit (50km/h),0.7876848912721837
+7506,6,End of speed limit (80km/h),39,Keep left,0.7874927704292801
+6921,36,Go straight or right,37,Go straight or left,0.7862559773052556
+5515,19,Dangerous curve to the left,4,Speed limit (70km/h),0.7851874886467088
+1278,5,Speed limit (80km/h),2,Speed limit (50km/h),0.784966958152778
+1904,36,Go straight or right,33,Turn right ahead,0.7840334893925098
+5677,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.783675276090315
+507,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.7824664198859237
+4075,1,Speed limit (30km/h),2,Speed limit (50km/h),0.7814862122575884
+4471,33,Turn right ahead,34,Turn left ahead,0.7812387800436742
+309,38,Keep right,1,Speed limit (30km/h),0.7811048521611578
+2819,38,Keep right,39,Keep left,0.7810556179106822
+8055,18,General caution,26,Traffic signals,0.7809093172638433
+4251,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.7802113153574802
+3824,17,No entry,7,Speed limit (100km/h),0.7799979348007532
+11068,23,Slippery road,19,Dangerous curve to the left,0.7799593484561601
+2090,31,Wild animals crossing,20,Dangerous curve to the right,0.7799356791611459
+6360,36,Go straight or right,37,Go straight or left,0.7795011752824397
+7323,5,Speed limit (80km/h),1,Speed limit (30km/h),0.7794845482752891
+371,18,General caution,26,Traffic signals,0.7793122085062781
+517,1,Speed limit (30km/h),2,Speed limit (50km/h),0.7792750324528532
+1025,30,Beware of ice/snow,28,Children crossing,0.7790659041458072
+6966,23,Slippery road,19,Dangerous curve to the left,0.7785930298300154
+7730,5,Speed limit (80km/h),2,Speed limit (50km/h),0.7784091477602897
+9472,1,Speed limit (30km/h),2,Speed limit (50km/h),0.7783164443857346
+10269,38,Keep right,39,Keep left,0.7773340556363642
+10024,18,General caution,26,Traffic signals,0.7763332820130804
+10149,17,No entry,13,Yield,0.7746308603275444
+5820,3,Speed limit (60km/h),25,Road work,0.7743948150116835
+8308,12,Priority road,26,Traffic signals,0.7737286485121853
+1871,33,Turn right ahead,34,Turn left ahead,0.7727715105172084
+10255,38,Keep right,39,Keep left,0.7720852730346022
+4874,1,Speed limit (30km/h),2,Speed limit (50km/h),0.7705105919624189
+6343,5,Speed limit (80km/h),7,Speed limit (100km/h),0.7702441379030749
+1562,38,Keep right,39,Keep left,0.7701231788194769
+6751,34,Turn left ahead,33,Turn right ahead,0.770048422542885
+465,38,Keep right,39,Keep left,0.7698457322069078
+4889,19,Dangerous curve to the left,4,Speed limit (70km/h),0.7694561137843721
+2597,25,Road work,31,Wild animals crossing,0.76941411796858
+2692,38,Keep right,39,Keep left,0.7686660192651341
+4267,3,Speed limit (60km/h),2,Speed limit (50km/h),0.7685668042986747
+12128,38,Keep right,39,Keep left,0.7684333129762057
+11812,0,Speed limit (20km/h),1,Speed limit (30km/h),0.7681414888002827
+8740,27,Pedestrians,26,Traffic signals,0.7676672479131977
+2896,12,Priority road,38,Keep right,0.7675351301365306
+2309,3,Speed limit (60km/h),2,Speed limit (50km/h),0.7670783390192858
+6639,0,Speed limit (20km/h),1,Speed limit (30km/h),0.766128951681388
+7702,12,Priority road,2,Speed limit (50km/h),0.7660032969107047
+11170,21,Double curve,18,General caution,0.7658194844167975
+10223,30,Beware of ice/snow,25,Road work,0.765401942508747
+9233,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.7652728684389339
+7997,18,General caution,26,Traffic signals,0.765114915467649
+4993,3,Speed limit (60km/h),25,Road work,0.7648949942390147
+10314,33,Turn right ahead,34,Turn left ahead,0.7648137974429713
+492,4,Speed limit (70km/h),2,Speed limit (50km/h),0.7635326690199012
+2331,38,Keep right,39,Keep left,0.7635320538798804
+6138,17,No entry,13,Yield,0.7627754328357406
+8460,21,Double curve,18,General caution,0.7623839327417292
+10045,8,Speed limit (120km/h),2,Speed limit (50km/h),0.7621991543456483
+4147,21,Double curve,18,General caution,0.7621875569076425
+3067,35,Ahead only,33,Turn right ahead,0.7621773935676531
+5794,34,Turn left ahead,33,Turn right ahead,0.761222246280493
+1169,20,Dangerous curve to the right,26,Traffic signals,0.7603009745876885
+7185,29,Bicycles crossing,2,Speed limit (50km/h),0.7599573820012903
+2977,38,Keep right,39,Keep left,0.7589227092845094
+4067,2,Speed limit (50km/h),25,Road work,0.7587000460530197
+3028,12,Priority road,2,Speed limit (50km/h),0.7567707363648044
+9270,21,Double curve,18,General caution,0.7559144923047495
+4117,36,Go straight or right,18,General caution,0.755419045900392
+10037,33,Turn right ahead,34,Turn left ahead,0.7554014613797126
+8519,18,General caution,26,Traffic signals,0.7541507851637231
+1462,42,End of no passing by vehicles over 3.5 metric tons,32,End of all speed and passing limits,0.7541083554116872
+4149,3,Speed limit (60km/h),5,Speed limit (80km/h),0.7539775514332898
+3324,35,Ahead only,38,Keep right,0.7538594125211464
+11766,3,Speed limit (60km/h),2,Speed limit (50km/h),0.7529608141021751
+7248,33,Turn right ahead,39,Keep left,0.752470726712195
+5458,12,Priority road,2,Speed limit (50km/h),0.7516098261349122
+433,34,Turn left ahead,33,Turn right ahead,0.7502127244780984
+11968,38,Keep right,6,End of speed limit (80km/h),0.7501794280367649
+7884,30,Beware of ice/snow,25,Road work,0.7495271428764744
+11181,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.7486840932632091
+4112,23,Slippery road,31,Wild animals crossing,0.7486469619780044
+3161,10,No passing for vehicles over 3.5 metric tons,20,Dangerous curve to the right,0.7486259569887587
+1663,31,Wild animals crossing,20,Dangerous curve to the right,0.7479430703614107
+8784,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.7477360820345037
+5014,3,Speed limit (60km/h),5,Speed limit (80km/h),0.7472867580304062
+9039,23,Slippery road,20,Dangerous curve to the right,0.7472254919124084
+8881,12,Priority road,2,Speed limit (50km/h),0.7458944162792264
+12565,2,Speed limit (50km/h),1,Speed limit (30km/h),0.7453121670325242
+10983,23,Slippery road,20,Dangerous curve to the right,0.7443913983714509
+1812,12,Priority road,38,Keep right,0.7438303993132341
+8193,34,Turn left ahead,33,Turn right ahead,0.743730311336
+2449,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.7435535297413942
+12567,23,Slippery road,20,Dangerous curve to the right,0.7425728710765931
+5233,27,Pedestrians,21,Double curve,0.7424465280807012
+2980,41,End of no passing,9,No passing,0.7424388616599523
+3584,38,Keep right,39,Keep left,0.7418762454982978
+2050,39,Keep left,38,Keep right,0.7415223991884179
+8925,10,No passing for vehicles over 3.5 metric tons,20,Dangerous curve to the right,0.7408993147664903
+11697,18,General caution,27,Pedestrians,0.7404271037553388
+8186,38,Keep right,39,Keep left,0.7396713239857406
+5548,34,Turn left ahead,33,Turn right ahead,0.7377450746849908
+5109,25,Road work,31,Wild animals crossing,0.7376973581115163
+5172,23,Slippery road,19,Dangerous curve to the left,0.7368226931013258
+12339,22,Bumpy road,25,Road work,0.7365560060920523
+1338,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.7357360143136229
+11377,36,Go straight or right,37,Go straight or left,0.7350938862459978
+1177,18,General caution,26,Traffic signals,0.73507737814979
+7005,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.7349373262336228
+11867,34,Turn left ahead,33,Turn right ahead,0.7347119142951333
+5022,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.7345162933824988
+1853,0,Speed limit (20km/h),8,Speed limit (120km/h),0.7339110343957467
+9473,23,Slippery road,31,Wild animals crossing,0.7332807905256175
+5475,4,Speed limit (70km/h),1,Speed limit (30km/h),0.7330532510810771
+4985,30,Beware of ice/snow,29,Bicycles crossing,0.7324171991479846
+10607,3,Speed limit (60km/h),2,Speed limit (50km/h),0.7317596790391943
+4659,5,Speed limit (80km/h),2,Speed limit (50km/h),0.7314968338505495
+7143,33,Turn right ahead,34,Turn left ahead,0.731200542542613
+4372,18,General caution,26,Traffic signals,0.7311097275923517
+2346,5,Speed limit (80km/h),2,Speed limit (50km/h),0.7303682953876758
+3019,38,Keep right,39,Keep left,0.7298275078490243
+5149,18,General caution,20,Dangerous curve to the right,0.7295680130633321
+6900,35,Ahead only,36,Go straight or right,0.7295022028447748
+5985,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.7291110223410444
+1279,0,Speed limit (20km/h),1,Speed limit (30km/h),0.7287801150843505
+2404,38,Keep right,39,Keep left,0.7284115922568389
+6010,36,Go straight or right,37,Go straight or left,0.7279187630957344
+11358,5,Speed limit (80km/h),7,Speed limit (100km/h),0.727825430428475
+2308,34,Turn left ahead,33,Turn right ahead,0.7265329509037095
+5347,5,Speed limit (80km/h),2,Speed limit (50km/h),0.7255082815544434
+7885,20,Dangerous curve to the right,19,Dangerous curve to the left,0.7254401226715258
+9330,25,Road work,39,Keep left,0.7254101475803151
+2468,5,Speed limit (80km/h),7,Speed limit (100km/h),0.7252846295566356
+365,11,Right-of-way at the next intersection,23,Slippery road,0.7249842277493354
+9410,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.7245180852121053
+10343,33,Turn right ahead,34,Turn left ahead,0.7242830141913473
+7636,38,Keep right,6,End of speed limit (80km/h),0.7235810102351363
+429,34,Turn left ahead,33,Turn right ahead,0.7229071774477634
+11173,30,Beware of ice/snow,20,Dangerous curve to the right,0.7225689273844155
+11827,33,Turn right ahead,34,Turn left ahead,0.7224543086576328
+3778,30,Beware of ice/snow,20,Dangerous curve to the right,0.7219220368486304
+5319,18,General caution,26,Traffic signals,0.7215232831959867
+10330,18,General caution,26,Traffic signals,0.7212408657899296
+2476,23,Slippery road,25,Road work,0.7204411976314512
+9892,33,Turn right ahead,35,Ahead only,0.7204151368134581
+7481,33,Turn right ahead,34,Turn left ahead,0.7203445644799377
+9095,24,Road narrows on the right,35,Ahead only,0.7200828219134141
+8254,41,End of no passing,42,End of no passing by vehicles over 3.5 metric tons,0.7200106416742286
+6434,31,Wild animals crossing,10,No passing for vehicles over 3.5 metric tons,0.719529894860641
+12573,17,No entry,13,Yield,0.7192588176563641
+12191,36,Go straight or right,37,Go straight or left,0.7190734702499298
+4683,13,Yield,2,Speed limit (50km/h),0.718992565174623
+4756,18,General caution,26,Traffic signals,0.7181883339734018
+8144,12,Priority road,2,Speed limit (50km/h),0.7179889169950348
+5727,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.7171471794443274
+1682,17,No entry,13,Yield,0.7164423253627743
+9231,36,Go straight or right,37,Go straight or left,0.7162914258495526
+2179,12,Priority road,2,Speed limit (50km/h),0.7148921981988559
+7725,18,General caution,20,Dangerous curve to the right,0.7138994373120323
+7413,5,Speed limit (80km/h),7,Speed limit (100km/h),0.712692516144456
+3194,24,Road narrows on the right,18,General caution,0.711817634791541
+9811,35,Ahead only,40,Roundabout mandatory,0.7103999888131197
+1841,33,Turn right ahead,34,Turn left ahead,0.709816163960002
+10731,33,Turn right ahead,34,Turn left ahead,0.7092439699231073
+5507,25,Road work,20,Dangerous curve to the right,0.7090602956989157
+3577,8,Speed limit (120km/h),1,Speed limit (30km/h),0.7087303846960425
+11391,21,Double curve,18,General caution,0.7081259985170203
+11232,33,Turn right ahead,38,Keep right,0.7079814777302588
+11529,18,General caution,11,Right-of-way at the next intersection,0.7070611677163525
+2003,11,Right-of-way at the next intersection,23,Slippery road,0.706808209630739
+1109,12,Priority road,2,Speed limit (50km/h),0.7067979548578041
+8302,38,Keep right,39,Keep left,0.7065415892714946
+4603,34,Turn left ahead,33,Turn right ahead,0.7062807370138339
+4678,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.7062555425566964
+7016,34,Turn left ahead,33,Turn right ahead,0.7061256541990467
+12558,35,Ahead only,37,Go straight or left,0.7052901481678236
+32,34,Turn left ahead,33,Turn right ahead,0.7047906623873336
+3222,6,End of speed limit (80km/h),39,Keep left,0.7045514363052979
+7090,30,Beware of ice/snow,29,Bicycles crossing,0.7042858977376996
+8250,35,Ahead only,5,Speed limit (80km/h),0.7035080240927123
+4045,24,Road narrows on the right,18,General caution,0.7025995455816161
+8585,27,Pedestrians,21,Double curve,0.701948094987593
+8341,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.7016986757129439
+2791,38,Keep right,40,Roundabout mandatory,0.7016402452577426
+12264,18,General caution,26,Traffic signals,0.7014479035091462
+2744,5,Speed limit (80km/h),2,Speed limit (50km/h),0.7009393337907314
+1827,23,Slippery road,22,Bumpy road,0.7004733208972272
+11773,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.7002361089794239
+273,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.7001185453677373
+956,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.6999863720238588
+145,25,Road work,39,Keep left,0.6997614568046403
+7329,22,Bumpy road,26,Traffic signals,0.699542031819054
+8604,17,No entry,10,No passing for vehicles over 3.5 metric tons,0.6993569247480271
+11084,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.6993459520792831
+8028,3,Speed limit (60km/h),2,Speed limit (50km/h),0.6987259860414878
+12218,39,Keep left,38,Keep right,0.6970451400122856
+11668,38,Keep right,39,Keep left,0.6969258685969705
+501,30,Beware of ice/snow,29,Bicycles crossing,0.6965001768249566
+3043,30,Beware of ice/snow,29,Bicycles crossing,0.6962110500839304
+5241,38,Keep right,39,Keep left,0.6959148702809749
+5406,34,Turn left ahead,33,Turn right ahead,0.6957882966050191
+4636,33,Turn right ahead,34,Turn left ahead,0.6956413331225763
+10779,21,Double curve,2,Speed limit (50km/h),0.695449722340604
+12591,5,Speed limit (80km/h),2,Speed limit (50km/h),0.6952905295693933
+10648,34,Turn left ahead,33,Turn right ahead,0.6947678061544562
+3562,5,Speed limit (80km/h),7,Speed limit (100km/h),0.6945239522019657
+3725,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.6937647170263556
+9185,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.693700237622267
+1022,11,Right-of-way at the next intersection,28,Children crossing,0.6936072300556116
+1731,33,Turn right ahead,34,Turn left ahead,0.6934371449554597
+8305,35,Ahead only,34,Turn left ahead,0.6929094498853343
+3560,17,No entry,13,Yield,0.6928161368582112
+2618,34,Turn left ahead,33,Turn right ahead,0.6921132196135076
+1008,12,Priority road,38,Keep right,0.6911434660990374
+3470,8,Speed limit (120km/h),5,Speed limit (80km/h),0.6908641897650759
+8917,38,Keep right,37,Go straight or left,0.6907151122138168
+421,4,Speed limit (70km/h),1,Speed limit (30km/h),0.6905727890494111
+4869,39,Keep left,38,Keep right,0.6903717440525734
+6836,30,Beware of ice/snow,28,Children crossing,0.6902093868116611
+159,4,Speed limit (70km/h),1,Speed limit (30km/h),0.6900474669303007
+1638,23,Slippery road,22,Bumpy road,0.689700834210558
+9311,4,Speed limit (70km/h),1,Speed limit (30km/h),0.6892744470363761
+11941,5,Speed limit (80km/h),2,Speed limit (50km/h),0.6886980959852735
+10300,7,Speed limit (100km/h),8,Speed limit (120km/h),0.688044504729698
+4966,39,Keep left,38,Keep right,0.6874311885952104
+8991,19,Dangerous curve to the left,20,Dangerous curve to the right,0.6872706053052466
+4312,20,Dangerous curve to the right,19,Dangerous curve to the left,0.6866835375389084
+737,38,Keep right,39,Keep left,0.6861780381175229
+5409,38,Keep right,39,Keep left,0.6850786183188227
+10016,30,Beware of ice/snow,29,Bicycles crossing,0.6850438858594455
+8097,34,Turn left ahead,33,Turn right ahead,0.6849046643981453
+7119,3,Speed limit (60km/h),2,Speed limit (50km/h),0.6847276980981684
+8087,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.6844035300745464
+6617,33,Turn right ahead,34,Turn left ahead,0.6833348361399129
+7830,1,Speed limit (30km/h),8,Speed limit (120km/h),0.6833139008750384
+3086,8,Speed limit (120km/h),38,Keep right,0.6831229135682111
+4244,38,Keep right,7,Speed limit (100km/h),0.6830177331356174
+4617,21,Double curve,18,General caution,0.6828522364201017
+1583,21,Double curve,19,Dangerous curve to the left,0.6827170863542601
+8625,34,Turn left ahead,33,Turn right ahead,0.6826146397957716
+5171,38,Keep right,39,Keep left,0.6822541002462706
+3159,5,Speed limit (80km/h),2,Speed limit (50km/h),0.6806057935154652
+12522,18,General caution,26,Traffic signals,0.6803141075753995
+5633,35,Ahead only,34,Turn left ahead,0.6802577538958043
+3954,38,Keep right,39,Keep left,0.6798022190604984
+9215,5,Speed limit (80km/h),2,Speed limit (50km/h),0.6793261404513009
+3082,34,Turn left ahead,33,Turn right ahead,0.6785735344952568
+6150,3,Speed limit (60km/h),2,Speed limit (50km/h),0.6781774106674957
+4620,19,Dangerous curve to the left,25,Road work,0.6781707689100679
+12598,35,Ahead only,34,Turn left ahead,0.6781244975691707
+5521,6,End of speed limit (80km/h),38,Keep right,0.6779457503921821
+6916,33,Turn right ahead,34,Turn left ahead,0.6778058467182181
+10377,38,Keep right,39,Keep left,0.6776091806612652
+3006,34,Turn left ahead,33,Turn right ahead,0.677374358728123
+6704,33,Turn right ahead,35,Ahead only,0.6773582816809517
+2052,25,Road work,28,Children crossing,0.6771413853880507
+1308,23,Slippery road,31,Wild animals crossing,0.6768967318618894
+3442,3,Speed limit (60km/h),2,Speed limit (50km/h),0.6765813129651508
+11826,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.6764751045475312
+5182,12,Priority road,26,Traffic signals,0.6750356025379606
+6672,3,Speed limit (60km/h),2,Speed limit (50km/h),0.6749917594042572
+2762,38,Keep right,39,Keep left,0.6745394820063739
+10204,21,Double curve,18,General caution,0.6742004127852674
+7653,33,Turn right ahead,34,Turn left ahead,0.6741579023870815
+11229,20,Dangerous curve to the right,26,Traffic signals,0.6740008507504676
+520,18,General caution,27,Pedestrians,0.6726509064549705
+2300,6,End of speed limit (80km/h),39,Keep left,0.672471657564828
+733,38,Keep right,40,Roundabout mandatory,0.6715125414423927
+4550,38,Keep right,39,Keep left,0.67130177543019
+11597,1,Speed limit (30km/h),8,Speed limit (120km/h),0.6711768940607956
+1872,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.6709000336227118
+9597,38,Keep right,39,Keep left,0.6704716679721168
+1151,3,Speed limit (60km/h),25,Road work,0.6701518500396302
+8027,38,Keep right,36,Go straight or right,0.6693765597491302
+5732,38,Keep right,40,Roundabout mandatory,0.6691706226213536
+9835,21,Double curve,19,Dangerous curve to the left,0.668626795804703
+536,38,Keep right,39,Keep left,0.6683357875115176
+6641,20,Dangerous curve to the right,19,Dangerous curve to the left,0.6675887981966803
+184,20,Dangerous curve to the right,26,Traffic signals,0.6674685038409194
+50,25,Road work,20,Dangerous curve to the right,0.6673954133451376
+6338,26,Traffic signals,18,General caution,0.667060457768784
+448,38,Keep right,39,Keep left,0.6669580078958787
+7108,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.6664547066025347
+5628,37,Go straight or left,36,Go straight or right,0.6653253558021591
+5712,20,Dangerous curve to the right,26,Traffic signals,0.6651825047247648
+11204,3,Speed limit (60km/h),1,Speed limit (30km/h),0.6636032157216237
+435,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.6630580059879834
+764,12,Priority road,38,Keep right,0.6629067402627061
+1612,42,End of no passing by vehicles over 3.5 metric tons,41,End of no passing,0.6627013755303288
+6946,0,Speed limit (20km/h),1,Speed limit (30km/h),0.662674050054393
+10418,35,Ahead only,39,Keep left,0.6626324943740788
+6698,34,Turn left ahead,33,Turn right ahead,0.6626174790137632
+9547,27,Pedestrians,26,Traffic signals,0.6621389948787922
+3973,36,Go straight or right,37,Go straight or left,0.6612800800540362
+3776,0,Speed limit (20km/h),1,Speed limit (30km/h),0.6607526716026523
+9200,7,Speed limit (100km/h),8,Speed limit (120km/h),0.6600846765886328
+4133,30,Beware of ice/snow,11,Right-of-way at the next intersection,0.6594738770975171
+2748,27,Pedestrians,21,Double curve,0.6584124719247305
+2617,5,Speed limit (80km/h),2,Speed limit (50km/h),0.6568447539321924
+6269,23,Slippery road,22,Bumpy road,0.6559010115284176
+12329,20,Dangerous curve to the right,19,Dangerous curve to the left,0.654879089949985
+8624,30,Beware of ice/snow,6,End of speed limit (80km/h),0.6548784461433992
+1797,31,Wild animals crossing,20,Dangerous curve to the right,0.6548322191704348
+294,5,Speed limit (80km/h),8,Speed limit (120km/h),0.6540197987865598
+11808,19,Dangerous curve to the left,20,Dangerous curve to the right,0.6539973900043197
+11543,12,Priority road,26,Traffic signals,0.6535197386061604
+6958,39,Keep left,38,Keep right,0.6532014409294776
+3092,33,Turn right ahead,34,Turn left ahead,0.652454152400229
+2472,2,Speed limit (50km/h),1,Speed limit (30km/h),0.6524162985119745
+7927,35,Ahead only,40,Roundabout mandatory,0.6522566443110627
+2467,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.6522297877163218
+2810,19,Dangerous curve to the left,20,Dangerous curve to the right,0.651765005885452
+6095,5,Speed limit (80km/h),8,Speed limit (120km/h),0.6513824213306166
+1431,27,Pedestrians,21,Double curve,0.6509043201363056
+7300,2,Speed limit (50km/h),1,Speed limit (30km/h),0.6508895611029343
+6862,39,Keep left,5,Speed limit (80km/h),0.6508242696493034
+829,27,Pedestrians,21,Double curve,0.6506155704535914
+6874,3,Speed limit (60km/h),5,Speed limit (80km/h),0.6503445682121435
+3770,18,General caution,27,Pedestrians,0.6492350206707834
+10842,3,Speed limit (60km/h),2,Speed limit (50km/h),0.6488591759073803
+12076,37,Go straight or left,36,Go straight or right,0.6487746225594311
+11804,0,Speed limit (20km/h),8,Speed limit (120km/h),0.6476184878237239
+2124,11,Right-of-way at the next intersection,25,Road work,0.6473587841555746
+9609,36,Go straight or right,32,End of all speed and passing limits,0.646920663402598
+6869,5,Speed limit (80km/h),2,Speed limit (50km/h),0.6461761108490142
+73,34,Turn left ahead,33,Turn right ahead,0.6460863760948351
+3596,38,Keep right,40,Roundabout mandatory,0.6458512080764498
+5924,6,End of speed limit (80km/h),38,Keep right,0.6454657120422727
+5768,33,Turn right ahead,34,Turn left ahead,0.6453712875139811
+8574,27,Pedestrians,26,Traffic signals,0.6440888132412639
+10210,6,End of speed limit (80km/h),39,Keep left,0.6431579967391169
+7175,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.6429876847661564
+5489,35,Ahead only,36,Go straight or right,0.6424605364559123
+5268,18,General caution,26,Traffic signals,0.642235829361705
+6677,25,Road work,31,Wild animals crossing,0.6419279108989371
+163,25,Road work,39,Keep left,0.6408280865302797
+882,10,No passing for vehicles over 3.5 metric tons,20,Dangerous curve to the right,0.6407150756268836
+9458,23,Slippery road,20,Dangerous curve to the right,0.640694109090866
+1297,33,Turn right ahead,34,Turn left ahead,0.6403651620391018
+9635,38,Keep right,39,Keep left,0.6402998948179252
+6657,33,Turn right ahead,34,Turn left ahead,0.6401120605214451
+11239,23,Slippery road,20,Dangerous curve to the right,0.6400879239781029
+924,19,Dangerous curve to the left,20,Dangerous curve to the right,0.6392777975054552
+12528,33,Turn right ahead,34,Turn left ahead,0.6385114967151351
+2809,38,Keep right,39,Keep left,0.6378115358163376
+11853,25,Road work,31,Wild animals crossing,0.6370787827745409
+2869,1,Speed limit (30km/h),2,Speed limit (50km/h),0.6367169740876912
+11519,38,Keep right,39,Keep left,0.6365280232142708
+8045,36,Go straight or right,37,Go straight or left,0.6363792766466352
+8779,35,Ahead only,34,Turn left ahead,0.6346615383988302
+10182,38,Keep right,39,Keep left,0.633913112014631
+10613,34,Turn left ahead,33,Turn right ahead,0.6336023087612943
+10425,21,Double curve,23,Slippery road,0.6334800343927524
+6289,33,Turn right ahead,34,Turn left ahead,0.6324682656977755
+4819,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.6322952380846608
+8979,23,Slippery road,22,Bumpy road,0.6322559963781614
+12279,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.632093839736094
+10866,25,Road work,39,Keep left,0.6318896345806783
+4079,18,General caution,26,Traffic signals,0.631823200828938
+4437,20,Dangerous curve to the right,22,Bumpy road,0.631269789541992
+368,19,Dangerous curve to the left,20,Dangerous curve to the right,0.6310046951177802
+8561,23,Slippery road,25,Road work,0.6300381466926921
+11240,38,Keep right,39,Keep left,0.6299834324205471
+3027,8,Speed limit (120km/h),4,Speed limit (70km/h),0.6299179424598376
+4413,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.6297993233853127
+11600,8,Speed limit (120km/h),4,Speed limit (70km/h),0.6296606481953786
+6106,5,Speed limit (80km/h),8,Speed limit (120km/h),0.629435412313483
+9386,34,Turn left ahead,33,Turn right ahead,0.6293899634129239
+809,0,Speed limit (20km/h),1,Speed limit (30km/h),0.6287688361249996
+9702,33,Turn right ahead,34,Turn left ahead,0.628429492846423
+2632,1,Speed limit (30km/h),2,Speed limit (50km/h),0.6279876885765964
+9638,3,Speed limit (60km/h),2,Speed limit (50km/h),0.6277468324933072
+6013,23,Slippery road,25,Road work,0.6275248212286698
+3695,41,End of no passing,42,End of no passing by vehicles over 3.5 metric tons,0.6261171994509552
+9805,38,Keep right,40,Roundabout mandatory,0.6248438178190714
+8700,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.6245555745617777
+7747,36,Go straight or right,37,Go straight or left,0.6242486741427092
+4785,38,Keep right,39,Keep left,0.6240977899035061
+11128,6,End of speed limit (80km/h),39,Keep left,0.6239866088887283
+2357,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.6232376969853404
+8747,33,Turn right ahead,39,Keep left,0.6226555731436941
+12350,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.6226366262122883
+1898,21,Double curve,18,General caution,0.6223699258019206
+6496,23,Slippery road,20,Dangerous curve to the right,0.6213230021652101
+11593,18,General caution,25,Road work,0.6213084159659757
+11478,4,Speed limit (70km/h),1,Speed limit (30km/h),0.6208472012078543
+10708,4,Speed limit (70km/h),1,Speed limit (30km/h),0.6203665170307923
+10977,17,No entry,7,Speed limit (100km/h),0.6202703420570295
+9442,38,Keep right,39,Keep left,0.6199676165052278
+5189,20,Dangerous curve to the right,19,Dangerous curve to the left,0.6199055371794646
+9216,24,Road narrows on the right,18,General caution,0.6197518802716165
+6931,33,Turn right ahead,34,Turn left ahead,0.6188371749777918
+6800,37,Go straight or left,36,Go straight or right,0.6188119990236265
+4786,23,Slippery road,25,Road work,0.6182330129486182
+63,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.6178064205261468
+3628,5,Speed limit (80km/h),2,Speed limit (50km/h),0.6176471164899354
+11133,16,Vehicles over 3.5 metric tons prohibited,10,No passing for vehicles over 3.5 metric tons,0.6173782700905704
+10030,21,Double curve,18,General caution,0.6165280310639065
+12413,3,Speed limit (60km/h),2,Speed limit (50km/h),0.6152221431760135
+8205,42,End of no passing by vehicles over 3.5 metric tons,41,End of no passing,0.6146130663675456
+143,18,General caution,25,Road work,0.6144074432517842
+11938,3,Speed limit (60km/h),5,Speed limit (80km/h),0.6143545450823905
+8727,41,End of no passing,42,End of no passing by vehicles over 3.5 metric tons,0.6139992554624387
+6069,5,Speed limit (80km/h),2,Speed limit (50km/h),0.6139236104766477
+861,6,End of speed limit (80km/h),39,Keep left,0.6135099820363402
+6222,4,Speed limit (70km/h),1,Speed limit (30km/h),0.613149855241189
+5529,12,Priority road,26,Traffic signals,0.6131281890102214
+6155,25,Road work,28,Children crossing,0.6131241693469108
+6228,13,Yield,4,Speed limit (70km/h),0.6131159344732627
+10367,27,Pedestrians,21,Double curve,0.6130532292802335
+12205,5,Speed limit (80km/h),2,Speed limit (50km/h),0.6125086506769623
+5927,29,Bicycles crossing,2,Speed limit (50km/h),0.6121301245847716
+6791,24,Road narrows on the right,18,General caution,0.612098845618965
+7907,30,Beware of ice/snow,29,Bicycles crossing,0.6110411344910927
+12506,34,Turn left ahead,35,Ahead only,0.6104208399559478
+11599,21,Double curve,20,Dangerous curve to the right,0.6101417654267441
+9062,34,Turn left ahead,33,Turn right ahead,0.6096063039008554
+9791,20,Dangerous curve to the right,19,Dangerous curve to the left,0.6094537032363476
+4162,29,Bicycles crossing,31,Wild animals crossing,0.6091995394031213
+790,2,Speed limit (50km/h),1,Speed limit (30km/h),0.6072747462684804
+3386,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.6070975750912613
+9848,37,Go straight or left,36,Go straight or right,0.6060694731116816
+653,5,Speed limit (80km/h),1,Speed limit (30km/h),0.6060573312722618
+8335,38,Keep right,39,Keep left,0.6057767532555169
+4601,4,Speed limit (70km/h),12,Priority road,0.6057046394104615
+5261,38,Keep right,39,Keep left,0.6055097705482255
+682,35,Ahead only,34,Turn left ahead,0.6053480315813257
+8044,25,Road work,28,Children crossing,0.6049776008264209
+2342,18,General caution,20,Dangerous curve to the right,0.6043435481282338
+10233,38,Keep right,39,Keep left,0.6042347810348065
+5012,38,Keep right,39,Keep left,0.6039355417766402
+12621,5,Speed limit (80km/h),2,Speed limit (50km/h),0.6023411564576575
+2406,34,Turn left ahead,33,Turn right ahead,0.6018929597933002
+7160,7,Speed limit (100km/h),8,Speed limit (120km/h),0.6017680983462761
+1395,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.6014491035042682
+6023,4,Speed limit (70km/h),1,Speed limit (30km/h),0.601341560796283
+6161,6,End of speed limit (80km/h),39,Keep left,0.6010440023644124
+8051,3,Speed limit (60km/h),1,Speed limit (30km/h),0.6010023304939831
+7473,3,Speed limit (60km/h),2,Speed limit (50km/h),0.6006645975312995
+7824,24,Road narrows on the right,18,General caution,0.600647630049731
+1714,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.6005762400222926
+7627,31,Wild animals crossing,20,Dangerous curve to the right,0.6004848974080306
+1489,12,Priority road,26,Traffic signals,0.6002833392767188
+4443,21,Double curve,19,Dangerous curve to the left,0.6000992637206997
+10230,1,Speed limit (30km/h),8,Speed limit (120km/h),0.5999567457689383
+4903,7,Speed limit (100km/h),8,Speed limit (120km/h),0.5997357708777463
+11794,1,Speed limit (30km/h),8,Speed limit (120km/h),0.5991412343232014
+5597,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.5982717884422328
+828,38,Keep right,39,Keep left,0.5977730422488191
+2281,5,Speed limit (80km/h),2,Speed limit (50km/h),0.5977663913846325
+10359,12,Priority road,2,Speed limit (50km/h),0.5973095714860264
+272,34,Turn left ahead,33,Turn right ahead,0.5963012810865023
+3837,6,End of speed limit (80km/h),38,Keep right,0.5959153141367425
+10653,18,General caution,25,Road work,0.5950415143429618
+4674,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.5945553526134866
+6177,3,Speed limit (60km/h),5,Speed limit (80km/h),0.5937413219696018
+2326,19,Dangerous curve to the left,26,Traffic signals,0.5920187096030785
+5093,23,Slippery road,20,Dangerous curve to the right,0.5918131885425295
+4111,17,No entry,7,Speed limit (100km/h),0.591733975992151
+9064,11,Right-of-way at the next intersection,23,Slippery road,0.5915764752638492
+2760,30,Beware of ice/snow,28,Children crossing,0.591348332796615
+7033,5,Speed limit (80km/h),2,Speed limit (50km/h),0.5909250056389067
+10894,17,No entry,13,Yield,0.5906055949408203
+5838,11,Right-of-way at the next intersection,23,Slippery road,0.5901333724710215
+8520,36,Go straight or right,37,Go straight or left,0.5901002987918774
+10774,35,Ahead only,37,Go straight or left,0.5896557492520018
+9876,4,Speed limit (70km/h),1,Speed limit (30km/h),0.5894445897234709
+327,38,Keep right,39,Keep left,0.5889220563866447
+12369,24,Road narrows on the right,28,Children crossing,0.588719443537454
+8539,5,Speed limit (80km/h),8,Speed limit (120km/h),0.5882742607227319
+8488,11,Right-of-way at the next intersection,23,Slippery road,0.5882280300839283
+8749,18,General caution,26,Traffic signals,0.5878318691374363
+1985,25,Road work,31,Wild animals crossing,0.587558159290183
+11382,36,Go straight or right,37,Go straight or left,0.5868068183205155
+7337,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.5867043476217563
+2078,38,Keep right,39,Keep left,0.5864836293205584
+3981,18,General caution,11,Right-of-way at the next intersection,0.5863638087262546
+10169,40,Roundabout mandatory,39,Keep left,0.5859763189185634
+9370,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.585890804817279
+7925,37,Go straight or left,36,Go straight or right,0.5858132246949256
+1391,38,Keep right,39,Keep left,0.5857997088557542
+2012,38,Keep right,39,Keep left,0.5842681276833551
+5464,23,Slippery road,25,Road work,0.5838949602677856
+7989,35,Ahead only,40,Roundabout mandatory,0.5837767941165245
+11517,5,Speed limit (80km/h),2,Speed limit (50km/h),0.5832160003749429
+10324,12,Priority road,2,Speed limit (50km/h),0.5827659766666529
+1200,5,Speed limit (80km/h),2,Speed limit (50km/h),0.582342131534552
+2987,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.5821666394397098
+12441,15,No vehicles,4,Speed limit (70km/h),0.5820569741019518
+8283,31,Wild animals crossing,20,Dangerous curve to the right,0.5818886076970679
+3700,35,Ahead only,34,Turn left ahead,0.5815845959102337
+5270,5,Speed limit (80km/h),1,Speed limit (30km/h),0.5813839648467606
+6447,17,No entry,7,Speed limit (100km/h),0.5813338578271586
+6678,33,Turn right ahead,34,Turn left ahead,0.5811746748025292
+6082,3,Speed limit (60km/h),5,Speed limit (80km/h),0.579639381027664
+3639,38,Keep right,39,Keep left,0.5791806848965882
+6708,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.5790982385196277
+917,38,Keep right,7,Speed limit (100km/h),0.5788778093075212
+4762,20,Dangerous curve to the right,25,Road work,0.5788634976404878
+3861,23,Slippery road,31,Wild animals crossing,0.5788599404257995
+7216,3,Speed limit (60km/h),2,Speed limit (50km/h),0.578475998560961
+6116,0,Speed limit (20km/h),1,Speed limit (30km/h),0.5784530870569575
+10078,42,End of no passing by vehicles over 3.5 metric tons,41,End of no passing,0.5783647595502969
+4767,17,No entry,10,No passing for vehicles over 3.5 metric tons,0.5782232242789161
+7525,30,Beware of ice/snow,20,Dangerous curve to the right,0.5778234356951893
+11089,18,General caution,19,Dangerous curve to the left,0.5773343286953803
+108,33,Turn right ahead,34,Turn left ahead,0.577228162463426
+988,7,Speed limit (100km/h),8,Speed limit (120km/h),0.5769929520780477
+6528,24,Road narrows on the right,18,General caution,0.5764882234102606
+2667,3,Speed limit (60km/h),2,Speed limit (50km/h),0.5763042310797293
+7745,18,General caution,26,Traffic signals,0.5762778592015781
+4269,17,No entry,10,No passing for vehicles over 3.5 metric tons,0.575386469716654
+6768,24,Road narrows on the right,25,Road work,0.5740950155481173
+10137,21,Double curve,19,Dangerous curve to the left,0.5738568203612154
+2046,38,Keep right,40,Roundabout mandatory,0.573409574873056
+6433,2,Speed limit (50km/h),1,Speed limit (30km/h),0.5733458557299781
+1228,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.573169670545598
+5264,10,No passing for vehicles over 3.5 metric tons,20,Dangerous curve to the right,0.5726165235403038
+12192,23,Slippery road,31,Wild animals crossing,0.5719898731841268
+9389,20,Dangerous curve to the right,25,Road work,0.5712311396967736
+3590,17,No entry,7,Speed limit (100km/h),0.5707224248310309
+6829,3,Speed limit (60km/h),2,Speed limit (50km/h),0.5704362985567535
+10546,1,Speed limit (30km/h),8,Speed limit (120km/h),0.5702523995374221
+7010,19,Dangerous curve to the left,25,Road work,0.5702006484196125
+12345,19,Dangerous curve to the left,4,Speed limit (70km/h),0.5696851365173038
+9993,17,No entry,10,No passing for vehicles over 3.5 metric tons,0.5696713838276901
+1819,6,End of speed limit (80km/h),39,Keep left,0.5688804860828169
+4300,23,Slippery road,20,Dangerous curve to the right,0.5685719018355091
+4163,11,Right-of-way at the next intersection,27,Pedestrians,0.5681298634987951
+8210,19,Dangerous curve to the left,20,Dangerous curve to the right,0.5679397317402323
+7609,33,Turn right ahead,34,Turn left ahead,0.5675499492311264
+2669,18,General caution,26,Traffic signals,0.5673409943926766
+3828,7,Speed limit (100km/h),8,Speed limit (120km/h),0.5673257417098281
+164,18,General caution,26,Traffic signals,0.5668537562212361
+5225,6,End of speed limit (80km/h),39,Keep left,0.5662603423158689
+10117,38,Keep right,39,Keep left,0.5648516148084197
+12099,38,Keep right,39,Keep left,0.5633834626570793
+9593,42,End of no passing by vehicles over 3.5 metric tons,32,End of all speed and passing limits,0.5628329784740143
+6971,38,Keep right,40,Roundabout mandatory,0.5628123186850502
+5542,5,Speed limit (80km/h),7,Speed limit (100km/h),0.5627667251545497
+4945,19,Dangerous curve to the left,20,Dangerous curve to the right,0.5625828447404243
+5799,6,End of speed limit (80km/h),39,Keep left,0.5625808543329095
+4175,17,No entry,13,Yield,0.5618289757697725
+10928,5,Speed limit (80km/h),2,Speed limit (50km/h),0.5606586531657833
+393,2,Speed limit (50km/h),3,Speed limit (60km/h),0.5604785797384707
+9011,3,Speed limit (60km/h),28,Children crossing,0.5603896922379883
+1456,38,Keep right,6,End of speed limit (80km/h),0.5599454443299774
+1601,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.5597967501398362
+12032,21,Double curve,18,General caution,0.5591270843060127
+10009,23,Slippery road,31,Wild animals crossing,0.5591024253936036
+6543,38,Keep right,39,Keep left,0.5589316463386957
+4897,4,Speed limit (70km/h),7,Speed limit (100km/h),0.558900829027392
+2954,23,Slippery road,20,Dangerous curve to the right,0.5586621977873768
+9719,3,Speed limit (60km/h),2,Speed limit (50km/h),0.5582740526107499
+4449,3,Speed limit (60km/h),2,Speed limit (50km/h),0.5574676480583732
+8365,23,Slippery road,20,Dangerous curve to the right,0.5572931352647026
+4908,16,Vehicles over 3.5 metric tons prohibited,10,No passing for vehicles over 3.5 metric tons,0.5565522212170998
+1537,39,Keep left,38,Keep right,0.5561907415322258
+6644,23,Slippery road,20,Dangerous curve to the right,0.555952144161285
+12111,21,Double curve,19,Dangerous curve to the left,0.5543435051865406
+1274,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.5541908029110885
+10293,33,Turn right ahead,34,Turn left ahead,0.5535612416915884
+1579,28,Children crossing,25,Road work,0.5532724203052083
+8449,24,Road narrows on the right,27,Pedestrians,0.5525246838363306
+9267,21,Double curve,2,Speed limit (50km/h),0.5524228008803334
+6130,5,Speed limit (80km/h),2,Speed limit (50km/h),0.5523419291853698
+3626,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.5522267072324188
+11313,38,Keep right,39,Keep left,0.5519628190866013
+7259,5,Speed limit (80km/h),8,Speed limit (120km/h),0.5514342119664924
+4868,32,End of all speed and passing limits,13,Yield,0.5512310953581043
+6111,41,End of no passing,42,End of no passing by vehicles over 3.5 metric tons,0.5511882678571143
+6301,2,Speed limit (50km/h),1,Speed limit (30km/h),0.5504625456095313
+5658,37,Go straight or left,36,Go straight or right,0.5499702057228315
+9506,11,Right-of-way at the next intersection,23,Slippery road,0.5497977718868545
+8243,7,Speed limit (100km/h),5,Speed limit (80km/h),0.54967971252632
+12519,3,Speed limit (60km/h),25,Road work,0.5496078769678151
+8627,7,Speed limit (100km/h),5,Speed limit (80km/h),0.5492847482747819
+8517,5,Speed limit (80km/h),2,Speed limit (50km/h),0.5491762996246624
+3935,38,Keep right,40,Roundabout mandatory,0.549161172323541
+8198,3,Speed limit (60km/h),2,Speed limit (50km/h),0.5488073656952968
+33,23,Slippery road,20,Dangerous curve to the right,0.5478109076704627
+6674,38,Keep right,40,Roundabout mandatory,0.5474244238431193
+10878,27,Pedestrians,21,Double curve,0.5473374451934268
+21,33,Turn right ahead,34,Turn left ahead,0.5471629400192562
+1824,30,Beware of ice/snow,39,Keep left,0.5464793368354903
+4195,5,Speed limit (80km/h),2,Speed limit (50km/h),0.5463209019030711
+12363,8,Speed limit (120km/h),4,Speed limit (70km/h),0.5452532597216039
+2370,21,Double curve,19,Dangerous curve to the left,0.5450657233519155
+4434,0,Speed limit (20km/h),4,Speed limit (70km/h),0.5450605999997175
+5878,18,General caution,26,Traffic signals,0.5446620848052063
+1254,37,Go straight or left,36,Go straight or right,0.544594163279226
+9164,37,Go straight or left,36,Go straight or right,0.5439611991687923
+8357,33,Turn right ahead,34,Turn left ahead,0.5430656286949137
+7867,4,Speed limit (70km/h),1,Speed limit (30km/h),0.5428299060109447
+1552,5,Speed limit (80km/h),2,Speed limit (50km/h),0.5427951465800115
+4613,37,Go straight or left,36,Go straight or right,0.5425490941636368
+2660,30,Beware of ice/snow,29,Bicycles crossing,0.5425074952059338
+6478,35,Ahead only,34,Turn left ahead,0.5424288882587821
+7793,2,Speed limit (50km/h),1,Speed limit (30km/h),0.5423924358866362
+794,1,Speed limit (30km/h),2,Speed limit (50km/h),0.5420433307514123
+10276,21,Double curve,31,Wild animals crossing,0.5420036036798728
+9063,13,Yield,32,End of all speed and passing limits,0.5416873752483394
+2517,29,Bicycles crossing,28,Children crossing,0.540895833110941
+12497,38,Keep right,39,Keep left,0.5400256227159058
+10526,21,Double curve,23,Slippery road,0.5396522506423854
+7448,30,Beware of ice/snow,28,Children crossing,0.5389939592203546
+820,4,Speed limit (70km/h),1,Speed limit (30km/h),0.5386034899279074
+335,6,End of speed limit (80km/h),12,Priority road,0.5383674693167302
+834,28,Children crossing,1,Speed limit (30km/h),0.5379674769497067
+8009,21,Double curve,31,Wild animals crossing,0.5374038371906831
+7254,38,Keep right,39,Keep left,0.5373451982438914
+10048,4,Speed limit (70km/h),8,Speed limit (120km/h),0.5372945783784127
+3145,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.536932295890725
+9405,38,Keep right,39,Keep left,0.5368960030780779
+10610,33,Turn right ahead,34,Turn left ahead,0.5368754620586889
+6077,33,Turn right ahead,35,Ahead only,0.5365912548198214
+7009,1,Speed limit (30km/h),2,Speed limit (50km/h),0.5363212671565777
+10922,23,Slippery road,20,Dangerous curve to the right,0.5361350357825474
+2879,7,Speed limit (100km/h),8,Speed limit (120km/h),0.5359566186403248
+12513,3,Speed limit (60km/h),25,Road work,0.5348862132250314
+6213,4,Speed limit (70km/h),1,Speed limit (30km/h),0.5346850673393504
+1165,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.533928702162306
+3535,35,Ahead only,12,Priority road,0.5338541172008251
+3714,19,Dangerous curve to the left,20,Dangerous curve to the right,0.5338449322615076
+9074,33,Turn right ahead,34,Turn left ahead,0.5338088963741474
+11985,7,Speed limit (100km/h),5,Speed limit (80km/h),0.5334476381534777
+2378,25,Road work,28,Children crossing,0.5330211809139038
+6369,25,Road work,28,Children crossing,0.5324367126896223
+3715,33,Turn right ahead,34,Turn left ahead,0.5324157757431837
+6956,38,Keep right,39,Keep left,0.5322386917937012
+2601,38,Keep right,6,End of speed limit (80km/h),0.5318805562763248
+8362,31,Wild animals crossing,30,Beware of ice/snow,0.5317448880892542
+6483,11,Right-of-way at the next intersection,23,Slippery road,0.5314616972613905
+127,30,Beware of ice/snow,20,Dangerous curve to the right,0.5312025892960255
+8729,33,Turn right ahead,34,Turn left ahead,0.5311983915131946
+749,30,Beware of ice/snow,29,Bicycles crossing,0.5309454334330297
+11745,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.5307731952216131
+2907,17,No entry,10,No passing for vehicles over 3.5 metric tons,0.5303341937975975
+10109,25,Road work,31,Wild animals crossing,0.5303277902668725
+12320,36,Go straight or right,37,Go straight or left,0.5299215189392397
+10396,23,Slippery road,20,Dangerous curve to the right,0.5298026729432572
+10489,30,Beware of ice/snow,29,Bicycles crossing,0.5297125375257831
+8372,33,Turn right ahead,34,Turn left ahead,0.5295902167326224
+9730,5,Speed limit (80km/h),1,Speed limit (30km/h),0.5285812358301787
+3919,12,Priority road,40,Roundabout mandatory,0.5284474620793339
+3238,23,Slippery road,20,Dangerous curve to the right,0.5279051484406765
+2946,5,Speed limit (80km/h),2,Speed limit (50km/h),0.5278155409527497
+12511,33,Turn right ahead,34,Turn left ahead,0.5275493146631512
+4520,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.5271242587385591
+7712,0,Speed limit (20km/h),4,Speed limit (70km/h),0.527050021076419
+839,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.5251298693858727
+8428,24,Road narrows on the right,28,Children crossing,0.5250222038948326
+2000,34,Turn left ahead,33,Turn right ahead,0.5248858757890216
+458,39,Keep left,38,Keep right,0.5247460269872531
+152,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.5245773786223042
+12627,6,End of speed limit (80km/h),39,Keep left,0.5243772304177826
+176,3,Speed limit (60km/h),5,Speed limit (80km/h),0.5238699934026038
+4383,30,Beware of ice/snow,20,Dangerous curve to the right,0.5237942058877708
+1747,12,Priority road,26,Traffic signals,0.5231467163726049
+11871,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.523036653543044
+3272,35,Ahead only,34,Turn left ahead,0.5228983261763137
+8770,6,End of speed limit (80km/h),39,Keep left,0.5228971791877729
+11759,21,Double curve,23,Slippery road,0.5225696785597292
+5021,33,Turn right ahead,34,Turn left ahead,0.5224785832149332
+9646,42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),0.5224046115097366
+3599,38,Keep right,39,Keep left,0.522194386059372
+2428,5,Speed limit (80km/h),38,Keep right,0.5220764089613222
+2188,6,End of speed limit (80km/h),38,Keep right,0.5220436706548264
+12,23,Slippery road,25,Road work,0.5216049897404276
+8603,23,Slippery road,21,Double curve,0.5211395536056291
+6418,36,Go straight or right,32,End of all speed and passing limits,0.5207817637293873
+5306,38,Keep right,39,Keep left,0.5203454089470719
+1235,34,Turn left ahead,33,Turn right ahead,0.5201714674943999
+3114,23,Slippery road,25,Road work,0.5199500935595943
+10209,1,Speed limit (30km/h),8,Speed limit (120km/h),0.5194383415746185
+8879,23,Slippery road,19,Dangerous curve to the left,0.518964521430394
+382,38,Keep right,39,Keep left,0.5189115084826149
+5669,7,Speed limit (100km/h),5,Speed limit (80km/h),0.5180125940746201
+3059,20,Dangerous curve to the right,25,Road work,0.5179771756428057
+11650,3,Speed limit (60km/h),38,Keep right,0.5177922474508534
+8763,38,Keep right,40,Roundabout mandatory,0.5176845474176718
+11069,5,Speed limit (80km/h),2,Speed limit (50km/h),0.5174066214656716
+7044,11,Right-of-way at the next intersection,23,Slippery road,0.5172149102284702
+1189,12,Priority road,26,Traffic signals,0.5168875848525343
+804,12,Priority road,38,Keep right,0.5167470999538509
+4132,33,Turn right ahead,34,Turn left ahead,0.5167090688180211
+1361,3,Speed limit (60km/h),2,Speed limit (50km/h),0.5163865729020478
+5381,20,Dangerous curve to the right,19,Dangerous curve to the left,0.5151664907375383
+6192,21,Double curve,23,Slippery road,0.5139313732365626
+4643,19,Dangerous curve to the left,25,Road work,0.513680270579723
+6853,3,Speed limit (60km/h),5,Speed limit (80km/h),0.5136788781084809
+4185,21,Double curve,18,General caution,0.5136481740068621
+1091,33,Turn right ahead,34,Turn left ahead,0.5135725879961448
+11956,7,Speed limit (100km/h),5,Speed limit (80km/h),0.5123115183225442
+878,3,Speed limit (60km/h),5,Speed limit (80km/h),0.512210973523087
+12407,41,End of no passing,42,End of no passing by vehicles over 3.5 metric tons,0.5121851032483506
+7497,18,General caution,26,Traffic signals,0.5121520431582928
+12002,2,Speed limit (50km/h),1,Speed limit (30km/h),0.5121038838136773
+12082,10,No passing for vehicles over 3.5 metric tons,20,Dangerous curve to the right,0.5113141498475247
+2807,13,Yield,2,Speed limit (50km/h),0.5110741509525758
+3817,18,General caution,27,Pedestrians,0.5109942616698833
+3444,8,Speed limit (120km/h),4,Speed limit (70km/h),0.5105774131741818
+6157,6,End of speed limit (80km/h),32,End of all speed and passing limits,0.5104126992052574
+8423,39,Keep left,38,Keep right,0.5102823647076897
+10426,38,Keep right,39,Keep left,0.5096349741799117
+5902,1,Speed limit (30km/h),4,Speed limit (70km/h),0.5089066804315808
+1135,5,Speed limit (80km/h),1,Speed limit (30km/h),0.5088885909099266
+9511,38,Keep right,39,Keep left,0.5088635840197785
+5195,36,Go straight or right,37,Go straight or left,0.5086718179373404
+2753,5,Speed limit (80km/h),38,Keep right,0.5085393180355187
+9700,5,Speed limit (80km/h),2,Speed limit (50km/h),0.5078687457032882
+8703,33,Turn right ahead,39,Keep left,0.5073913864564517
+5977,7,Speed limit (100km/h),5,Speed limit (80km/h),0.5073343282475106
+10050,4,Speed limit (70km/h),1,Speed limit (30km/h),0.5069356492853088
+689,34,Turn left ahead,33,Turn right ahead,0.5067619173814537
+9720,33,Turn right ahead,34,Turn left ahead,0.5067513361737178
+3991,42,End of no passing by vehicles over 3.5 metric tons,12,Priority road,0.5067058961318988
+7273,12,Priority road,2,Speed limit (50km/h),0.5064730645979798
+1854,29,Bicycles crossing,25,Road work,0.5056688124445095
+9762,25,Road work,28,Children crossing,0.5055633006193898
+2812,7,Speed limit (100km/h),8,Speed limit (120km/h),0.5053784533909496
+8123,18,General caution,26,Traffic signals,0.5051405211856383
+6732,35,Ahead only,37,Go straight or left,0.505096791466839
+10398,21,Double curve,19,Dangerous curve to the left,0.504083386976537
+11507,5,Speed limit (80km/h),3,Speed limit (60km/h),0.5040815308557446
+10665,38,Keep right,39,Keep left,0.5037644886334373
+6379,34,Turn left ahead,33,Turn right ahead,0.503545553822882
+3732,3,Speed limit (60km/h),2,Speed limit (50km/h),0.5033082284827184
+5566,38,Keep right,39,Keep left,0.5030081161380123
+1061,12,Priority road,38,Keep right,0.5024791572440999
+11870,18,General caution,25,Road work,0.5021581328281296
+8765,38,Keep right,39,Keep left,0.501051413984553
+9071,21,Double curve,2,Speed limit (50km/h),0.5009863757065416
+886,33,Turn right ahead,35,Ahead only,0.5009336265546361
+1477,35,Ahead only,38,Keep right,0.500191108777507
+5637,21,Double curve,19,Dangerous curve to the left,0.4997466177598044
+7659,8,Speed limit (120km/h),5,Speed limit (80km/h),0.4996259515528071
+3474,0,Speed limit (20km/h),1,Speed limit (30km/h),0.4994153788938808
+11044,31,Wild animals crossing,20,Dangerous curve to the right,0.4988648466910425
+1390,8,Speed limit (120km/h),4,Speed limit (70km/h),0.4984513030648752
+9931,8,Speed limit (120km/h),4,Speed limit (70km/h),0.4978739940326582
+1234,3,Speed limit (60km/h),25,Road work,0.49752766670405674
+6341,25,Road work,28,Children crossing,0.49750665058818394
+10701,9,No passing,10,No passing for vehicles over 3.5 metric tons,0.49748081871965455
+1384,7,Speed limit (100km/h),5,Speed limit (80km/h),0.49706581462773386
+11370,5,Speed limit (80km/h),2,Speed limit (50km/h),0.4969406117344517
+7990,7,Speed limit (100km/h),5,Speed limit (80km/h),0.49670935709530256
+11893,7,Speed limit (100km/h),5,Speed limit (80km/h),0.4966242537982633
+8918,6,End of speed limit (80km/h),38,Keep right,0.49655470611963604
+9006,23,Slippery road,20,Dangerous curve to the right,0.49557485355344705
+569,23,Slippery road,31,Wild animals crossing,0.4951790707663013
+2100,29,Bicycles crossing,25,Road work,0.4948301939020442
+11074,30,Beware of ice/snow,40,Roundabout mandatory,0.4947794570777575
+3303,6,End of speed limit (80km/h),38,Keep right,0.4947293119267675
+2808,38,Keep right,40,Roundabout mandatory,0.4941470586158162
+2473,38,Keep right,39,Keep left,0.49412060774743016
+11913,23,Slippery road,31,Wild animals crossing,0.4940458353928395
+5510,38,Keep right,40,Roundabout mandatory,0.49320793693587855
+3408,1,Speed limit (30km/h),35,Ahead only,0.49277171365853295
+3962,1,Speed limit (30km/h),8,Speed limit (120km/h),0.49261602467197396
+11718,0,Speed limit (20km/h),4,Speed limit (70km/h),0.49192950487293635
+9222,21,Double curve,18,General caution,0.4912861719115481
+10957,36,Go straight or right,33,Turn right ahead,0.4911210829794728
+4415,11,Right-of-way at the next intersection,23,Slippery road,0.4910475807758684
+6693,41,End of no passing,42,End of no passing by vehicles over 3.5 metric tons,0.4909447883462229
+6323,3,Speed limit (60km/h),25,Road work,0.4902390875307642
+7476,33,Turn right ahead,34,Turn left ahead,0.49012248308363543
+9255,18,General caution,27,Pedestrians,0.48992237844558356
+12601,38,Keep right,39,Keep left,0.4897742438362879
+10826,7,Speed limit (100km/h),8,Speed limit (120km/h),0.48972566976448123
+3021,6,End of speed limit (80km/h),39,Keep left,0.48908379972358196
+3380,38,Keep right,32,End of all speed and passing limits,0.48851294811319
+7737,20,Dangerous curve to the right,19,Dangerous curve to the left,0.4878047438824837
+10119,20,Dangerous curve to the right,25,Road work,0.48749940950378867
+1252,8,Speed limit (120km/h),1,Speed limit (30km/h),0.4870755885005824
+10389,33,Turn right ahead,38,Keep right,0.48604743058466365
+10584,30,Beware of ice/snow,20,Dangerous curve to the right,0.4850418851302234
+9434,23,Slippery road,20,Dangerous curve to the right,0.4849559129841501
+3,33,Turn right ahead,34,Turn left ahead,0.4847114527442297
+10067,25,Road work,20,Dangerous curve to the right,0.48470725822363764
+7941,1,Speed limit (30km/h),8,Speed limit (120km/h),0.4841016423451662
+4588,3,Speed limit (60km/h),5,Speed limit (80km/h),0.4836100165153836
+1943,10,No passing for vehicles over 3.5 metric tons,20,Dangerous curve to the right,0.48345777810415613
+11487,3,Speed limit (60km/h),2,Speed limit (50km/h),0.48344776185076244
+9810,6,End of speed limit (80km/h),39,Keep left,0.48310814105697414
+11330,38,Keep right,40,Roundabout mandatory,0.4826304478899705
+12412,21,Double curve,19,Dangerous curve to the left,0.48154581747047054
+3630,35,Ahead only,2,Speed limit (50km/h),0.48138249295973434
+235,19,Dangerous curve to the left,4,Speed limit (70km/h),0.481282768181649
+2167,16,Vehicles over 3.5 metric tons prohibited,23,Slippery road,0.4802157528546077
+6183,38,Keep right,36,Go straight or right,0.4798196295706187
+10573,21,Double curve,19,Dangerous curve to the left,0.4797539181733893
+2684,33,Turn right ahead,34,Turn left ahead,0.47948915104756346
+7295,36,Go straight or right,33,Turn right ahead,0.478315548282305
+1289,34,Turn left ahead,33,Turn right ahead,0.4779719460385705
+5456,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.47753131160627477
+3840,23,Slippery road,20,Dangerous curve to the right,0.47663605349665294
+4711,3,Speed limit (60km/h),28,Children crossing,0.47621487541537344
+11122,3,Speed limit (60km/h),2,Speed limit (50km/h),0.4754897408251594
+4497,5,Speed limit (80km/h),2,Speed limit (50km/h),0.4752026890283271
+11243,11,Right-of-way at the next intersection,21,Double curve,0.47468894456896255
+8684,41,End of no passing,32,End of all speed and passing limits,0.4733888277824099
+6810,13,Yield,4,Speed limit (70km/h),0.47327492978099117
+984,31,Wild animals crossing,20,Dangerous curve to the right,0.4732665139356396
+5854,23,Slippery road,20,Dangerous curve to the right,0.471841816743181
+12367,38,Keep right,39,Keep left,0.4704447267254494
+3055,31,Wild animals crossing,20,Dangerous curve to the right,0.4704030367862986
+11866,21,Double curve,18,General caution,0.4695975049868785
+12333,20,Dangerous curve to the right,26,Traffic signals,0.4691085087950332
+1759,21,Double curve,19,Dangerous curve to the left,0.4690717006206556
+7713,6,End of speed limit (80km/h),39,Keep left,0.4687672318650899
+11200,42,End of no passing by vehicles over 3.5 metric tons,32,End of all speed and passing limits,0.4686085134914631
+6910,7,Speed limit (100km/h),8,Speed limit (120km/h),0.46856592639507105
+8258,33,Turn right ahead,34,Turn left ahead,0.4684376365706166
+908,38,Keep right,6,End of speed limit (80km/h),0.4682087755785443
+12051,1,Speed limit (30km/h),2,Speed limit (50km/h),0.4679091219967038
+10844,18,General caution,25,Road work,0.4667159294030722
+11002,19,Dangerous curve to the left,20,Dangerous curve to the right,0.4662461225953215
+5495,38,Keep right,40,Roundabout mandatory,0.465811914956833
+1336,34,Turn left ahead,35,Ahead only,0.4645466073770998
+8824,30,Beware of ice/snow,28,Children crossing,0.46437474800351675
+8536,1,Speed limit (30km/h),2,Speed limit (50km/h),0.46435623469155823
+8821,42,End of no passing by vehicles over 3.5 metric tons,12,Priority road,0.46411850775442737
+10676,6,End of speed limit (80km/h),39,Keep left,0.4634096191754933
+8013,21,Double curve,23,Slippery road,0.46318039317293336
+7928,6,End of speed limit (80km/h),12,Priority road,0.46283519910450527
+715,6,End of speed limit (80km/h),38,Keep right,0.46229469154454267
+2518,17,No entry,10,No passing for vehicles over 3.5 metric tons,0.4614894584663689
+7034,31,Wild animals crossing,10,No passing for vehicles over 3.5 metric tons,0.4613604397461505
+3112,23,Slippery road,20,Dangerous curve to the right,0.46123478153650777
+6616,42,End of no passing by vehicles over 3.5 metric tons,41,End of no passing,0.46077623702837844
+7837,3,Speed limit (60km/h),6,End of speed limit (80km/h),0.46013647635793564
+4332,0,Speed limit (20km/h),1,Speed limit (30km/h),0.4598966624500891
+11361,8,Speed limit (120km/h),38,Keep right,0.45913570865150194
+4484,5,Speed limit (80km/h),7,Speed limit (100km/h),0.4591073100039847
+11486,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.45680923347733066
+10401,1,Speed limit (30km/h),8,Speed limit (120km/h),0.4567174335628702
+6613,3,Speed limit (60km/h),2,Speed limit (50km/h),0.4565572566894903
+9952,12,Priority road,40,Roundabout mandatory,0.45572575763283235
+3561,6,End of speed limit (80km/h),38,Keep right,0.4553797011749927
+2347,29,Bicycles crossing,31,Wild animals crossing,0.45511104309919453
+12175,18,General caution,26,Traffic signals,0.45482041184592176
+2918,23,Slippery road,20,Dangerous curve to the right,0.45234030719590773
+459,6,End of speed limit (80km/h),39,Keep left,0.4520861923397162
+8818,30,Beware of ice/snow,20,Dangerous curve to the right,0.4516355938215779
+2847,27,Pedestrians,21,Double curve,0.450521753030991
+8859,24,Road narrows on the right,18,General caution,0.45027779189450706
+2212,35,Ahead only,36,Go straight or right,0.44964803593791436
+3960,18,General caution,20,Dangerous curve to the right,0.44952472732562015
+11910,20,Dangerous curve to the right,25,Road work,0.44945939808846014
+6255,6,End of speed limit (80km/h),39,Keep left,0.4493369007182181
+5271,23,Slippery road,25,Road work,0.4490705639412478
+2545,17,No entry,10,No passing for vehicles over 3.5 metric tons,0.44754256617009447
+222,5,Speed limit (80km/h),2,Speed limit (50km/h),0.44657581120719186
+6980,22,Bumpy road,23,Slippery road,0.4459609756538636
+4144,35,Ahead only,36,Go straight or right,0.44490982894259135
+760,3,Speed limit (60km/h),5,Speed limit (80km/h),0.4445744390430724
+11132,25,Road work,20,Dangerous curve to the right,0.44442959033068014
+10295,10,No passing for vehicles over 3.5 metric tons,31,Wild animals crossing,0.44434578119127327
+7341,33,Turn right ahead,34,Turn left ahead,0.4441728968290179
+3979,35,Ahead only,37,Go straight or left,0.4437571990680582
+1573,3,Speed limit (60km/h),5,Speed limit (80km/h),0.4435214103567567
+4935,5,Speed limit (80km/h),2,Speed limit (50km/h),0.44218582407168766
+11725,23,Slippery road,30,Beware of ice/snow,0.4421418107981513
+12479,3,Speed limit (60km/h),2,Speed limit (50km/h),0.44211397481348025
+6537,38,Keep right,6,End of speed limit (80km/h),0.4419087745182613
+1079,21,Double curve,26,Traffic signals,0.4416502463462226
+7245,11,Right-of-way at the next intersection,30,Beware of ice/snow,0.4412874989907082
+4532,10,No passing for vehicles over 3.5 metric tons,9,No passing,0.44117213345422945
+4732,19,Dangerous curve to the left,4,Speed limit (70km/h),0.4407853396001104
+10629,3,Speed limit (60km/h),2,Speed limit (50km/h),0.43960574078626014
+281,35,Ahead only,40,Roundabout mandatory,0.43913809816187577
+12563,30,Beware of ice/snow,11,Right-of-way at the next intersection,0.43891416587177173
+1628,21,Double curve,23,Slippery road,0.43849828348248754
+10851,10,No passing for vehicles over 3.5 metric tons,20,Dangerous curve to the right,0.43802894171665635
+10696,12,Priority road,2,Speed limit (50km/h),0.43735320229549185
+2931,1,Speed limit (30km/h),4,Speed limit (70km/h),0.4363943142454792
+6310,30,Beware of ice/snow,4,Speed limit (70km/h),0.4362270538781903
+1272,3,Speed limit (60km/h),28,Children crossing,0.43609767221790574
+8972,20,Dangerous curve to the right,19,Dangerous curve to the left,0.4356108866331288
+10838,3,Speed limit (60km/h),2,Speed limit (50km/h),0.43548534097889435
+3056,19,Dangerous curve to the left,20,Dangerous curve to the right,0.4350518508243021
+7943,38,Keep right,40,Roundabout mandatory,0.43476052120409314
+10256,17,No entry,13,Yield,0.43455519898910233
+9029,5,Speed limit (80km/h),8,Speed limit (120km/h),0.4339489545770673
+579,0,Speed limit (20km/h),1,Speed limit (30km/h),0.433319319782006
+9504,38,Keep right,40,Roundabout mandatory,0.43308372309336196
+8159,38,Keep right,33,Turn right ahead,0.4329565757385666
+12227,21,Double curve,19,Dangerous curve to the left,0.43254971285978416
+7098,25,Road work,28,Children crossing,0.43247613123455075
+8953,34,Turn left ahead,33,Turn right ahead,0.431847469776263
+10173,26,Traffic signals,25,Road work,0.43052091494399597
+6509,27,Pedestrians,38,Keep right,0.43006511102221084
+6766,18,General caution,19,Dangerous curve to the left,0.42910262927516946
+8785,7,Speed limit (100km/h),5,Speed limit (80km/h),0.4284171258714201
+10015,6,End of speed limit (80km/h),42,End of no passing by vehicles over 3.5 metric tons,0.428146695708062
+532,23,Slippery road,31,Wild animals crossing,0.42781507646817624
+1784,35,Ahead only,34,Turn left ahead,0.4276872574684841
+9809,38,Keep right,6,End of speed limit (80km/h),0.4276380060584068
+6976,38,Keep right,39,Keep left,0.42738810666403265
+7553,27,Pedestrians,38,Keep right,0.42612402410779854
+3373,23,Slippery road,20,Dangerous curve to the right,0.425707240600121
+5823,7,Speed limit (100km/h),1,Speed limit (30km/h),0.42512155165712984
+4001,34,Turn left ahead,33,Turn right ahead,0.42500240008690937
+2509,5,Speed limit (80km/h),4,Speed limit (70km/h),0.4249835106483877
+12004,2,Speed limit (50km/h),1,Speed limit (30km/h),0.42486251007702064
+7316,23,Slippery road,31,Wild animals crossing,0.4235163603286481
+939,12,Priority road,38,Keep right,0.42346402265969413
+6529,30,Beware of ice/snow,25,Road work,0.4224018574331879
+5967,19,Dangerous curve to the left,20,Dangerous curve to the right,0.42182261075417476
+10513,1,Speed limit (30km/h),8,Speed limit (120km/h),0.42162354034762495
+6913,23,Slippery road,25,Road work,0.42069682036330563
+12240,35,Ahead only,36,Go straight or right,0.4206197166912768
+7905,3,Speed limit (60km/h),28,Children crossing,0.4200398417482273
+8320,34,Turn left ahead,33,Turn right ahead,0.4197796530431828
+475,12,Priority road,38,Keep right,0.41915705938463554
+9688,23,Slippery road,20,Dangerous curve to the right,0.4183476776777752
+8208,6,End of speed limit (80km/h),39,Keep left,0.4182413841443567
+5565,8,Speed limit (120km/h),38,Keep right,0.4181366720569296
+3675,25,Road work,31,Wild animals crossing,0.41688914811418576
+11999,23,Slippery road,20,Dangerous curve to the right,0.41659152463895915
+8938,42,End of no passing by vehicles over 3.5 metric tons,12,Priority road,0.41621582397392765
+7568,23,Slippery road,25,Road work,0.41566219253482267
+9339,23,Slippery road,20,Dangerous curve to the right,0.4153612695617852
+5629,23,Slippery road,20,Dangerous curve to the right,0.4150131991686403
+1643,19,Dangerous curve to the left,20,Dangerous curve to the right,0.4142095528519318
+858,3,Speed limit (60km/h),5,Speed limit (80km/h),0.4136860180846729
+12468,3,Speed limit (60km/h),2,Speed limit (50km/h),0.4124830120046549
+11817,21,Double curve,26,Traffic signals,0.4119319064006405
+2607,33,Turn right ahead,38,Keep right,0.4112774053276029
+469,7,Speed limit (100km/h),4,Speed limit (70km/h),0.4111570582852427
+5696,33,Turn right ahead,38,Keep right,0.4093584155103439
+9778,18,General caution,26,Traffic signals,0.40872519610200275
+10666,5,Speed limit (80km/h),1,Speed limit (30km/h),0.40693545360279626
+2860,5,Speed limit (80km/h),7,Speed limit (100km/h),0.4060304948107353
+9087,18,General caution,13,Yield,0.40595735036453
+4479,21,Double curve,20,Dangerous curve to the right,0.4059204577694838
+12616,18,General caution,19,Dangerous curve to the left,0.40562612883610466
+5036,32,End of all speed and passing limits,13,Yield,0.4053831365673428
+243,0,Speed limit (20km/h),8,Speed limit (120km/h),0.4049288718265389
+10344,33,Turn right ahead,34,Turn left ahead,0.40345157251653374
+11709,30,Beware of ice/snow,29,Bicycles crossing,0.4020707047437003
+8781,1,Speed limit (30km/h),8,Speed limit (120km/h),0.40187271342366965
+1141,33,Turn right ahead,35,Ahead only,0.3993929305985455
+10728,38,Keep right,6,End of speed limit (80km/h),0.39915929553986496
+7275,42,End of no passing by vehicles over 3.5 metric tons,32,End of all speed and passing limits,0.39874582866276637
+7714,25,Road work,39,Keep left,0.3983437053136599
+4581,15,No vehicles,1,Speed limit (30km/h),0.39700950526374085
+6244,23,Slippery road,31,Wild animals crossing,0.39660518817795054
+1370,33,Turn right ahead,39,Keep left,0.3960558920222692
+10283,42,End of no passing by vehicles over 3.5 metric tons,12,Priority road,0.3934335651230878
+2065,18,General caution,26,Traffic signals,0.3932963775199426
+11842,42,End of no passing by vehicles over 3.5 metric tons,32,End of all speed and passing limits,0.3926489328497458
+7485,21,Double curve,23,Slippery road,0.392322659549269
+7052,38,Keep right,39,Keep left,0.39225623267111215
+8361,20,Dangerous curve to the right,19,Dangerous curve to the left,0.3918754487182448
+10667,7,Speed limit (100km/h),5,Speed limit (80km/h),0.3908150910829376
+4306,15,No vehicles,9,No passing,0.38974096141632625
+3004,11,Right-of-way at the next intersection,21,Double curve,0.38918429367036195
+5217,17,No entry,10,No passing for vehicles over 3.5 metric tons,0.3887583658525441
+11771,0,Speed limit (20km/h),4,Speed limit (70km/h),0.38866550624842927
+3242,7,Speed limit (100km/h),8,Speed limit (120km/h),0.3884102631213705
+6291,8,Speed limit (120km/h),1,Speed limit (30km/h),0.38750930201086065
+72,30,Beware of ice/snow,11,Right-of-way at the next intersection,0.38557516549404297
+5193,17,No entry,10,No passing for vehicles over 3.5 metric tons,0.3854195801071911
+6466,2,Speed limit (50km/h),1,Speed limit (30km/h),0.38527330214237654
+7579,2,Speed limit (50km/h),38,Keep right,0.3840207215942415
+1307,19,Dangerous curve to the left,20,Dangerous curve to the right,0.38328108623296914
+3644,17,No entry,10,No passing for vehicles over 3.5 metric tons,0.38207236770540637
+8352,21,Double curve,19,Dangerous curve to the left,0.3806842962501125
+899,42,End of no passing by vehicles over 3.5 metric tons,41,End of no passing,0.38032249412588126
+6352,23,Slippery road,20,Dangerous curve to the right,0.38021467551000926
+7501,3,Speed limit (60km/h),2,Speed limit (50km/h),0.37944317109333964
+2559,23,Slippery road,20,Dangerous curve to the right,0.3771860578485371
+11192,21,Double curve,31,Wild animals crossing,0.3771327968917712
+8398,19,Dangerous curve to the left,25,Road work,0.3762986133474397
+8932,38,Keep right,7,Speed limit (100km/h),0.3757462178608663
+4803,4,Speed limit (70km/h),1,Speed limit (30km/h),0.3752100148391866
+11070,6,End of speed limit (80km/h),12,Priority road,0.3746402960353047
+3907,17,No entry,10,No passing for vehicles over 3.5 metric tons,0.373752615297347
+7504,42,End of no passing by vehicles over 3.5 metric tons,12,Priority road,0.37336200235503836
+10026,38,Keep right,6,End of speed limit (80km/h),0.3719216854210805
+11020,33,Turn right ahead,39,Keep left,0.371872393836506
+7995,23,Slippery road,19,Dangerous curve to the left,0.3713596560810477
+11728,35,Ahead only,40,Roundabout mandatory,0.37091649117498543
+9314,5,Speed limit (80km/h),8,Speed limit (120km/h),0.37029864280732616
+6210,19,Dangerous curve to the left,4,Speed limit (70km/h),0.36935800660859813
+2520,3,Speed limit (60km/h),20,Dangerous curve to the right,0.3691501183803
+3132,1,Speed limit (30km/h),2,Speed limit (50km/h),0.3684567764538718
+5668,5,Speed limit (80km/h),2,Speed limit (50km/h),0.3676882445002513
+2038,25,Road work,31,Wild animals crossing,0.3672875682086335
+660,5,Speed limit (80km/h),13,Yield,0.3670371944908517
+6199,6,End of speed limit (80km/h),39,Keep left,0.3669227635981784
+6068,36,Go straight or right,32,End of all speed and passing limits,0.36598222310823303
+4794,25,Road work,39,Keep left,0.3656226022768081
+11161,2,Speed limit (50km/h),1,Speed limit (30km/h),0.36419946865523317
+10187,19,Dangerous curve to the left,4,Speed limit (70km/h),0.36396369068308954
+10528,20,Dangerous curve to the right,22,Bumpy road,0.3633718386229575
+3580,24,Road narrows on the right,18,General caution,0.36271110082156605
+10995,18,General caution,20,Dangerous curve to the right,0.36229370347924916
+6405,10,No passing for vehicles over 3.5 metric tons,23,Slippery road,0.362182599009913
+8240,23,Slippery road,20,Dangerous curve to the right,0.36074305697845743
+2651,12,Priority road,2,Speed limit (50km/h),0.35938180336220776
+10290,16,Vehicles over 3.5 metric tons prohibited,10,No passing for vehicles over 3.5 metric tons,0.3576638122802934
+3677,0,Speed limit (20km/h),2,Speed limit (50km/h),0.3572834019465226
+6391,25,Road work,39,Keep left,0.35718965278921894
+860,5,Speed limit (80km/h),7,Speed limit (100km/h),0.35565898347990066
+9545,6,End of speed limit (80km/h),38,Keep right,0.35553191506606996
+4492,38,Keep right,40,Roundabout mandatory,0.35429034535686554
+1896,23,Slippery road,22,Bumpy road,0.35364345888312154
+11449,11,Right-of-way at the next intersection,25,Road work,0.3523463850319125
+1104,23,Slippery road,20,Dangerous curve to the right,0.35183743166814596
+310,19,Dangerous curve to the left,20,Dangerous curve to the right,0.3513847089336452
+2682,30,Beware of ice/snow,11,Right-of-way at the next intersection,0.35007789112056714
+3552,19,Dangerous curve to the left,25,Road work,0.3483759107173088
+7396,17,No entry,13,Yield,0.3481222492119385
+12474,3,Speed limit (60km/h),5,Speed limit (80km/h),0.347727669502263
+2032,38,Keep right,6,End of speed limit (80km/h),0.3475666751700697
+3207,31,Wild animals crossing,16,Vehicles over 3.5 metric tons prohibited,0.3473766284293554
+8032,7,Speed limit (100km/h),5,Speed limit (80km/h),0.34720300058307213
+7571,21,Double curve,18,General caution,0.34650556660669335
+1861,42,End of no passing by vehicles over 3.5 metric tons,32,End of all speed and passing limits,0.3460180882203987
+7674,17,No entry,13,Yield,0.3438066109392237
+8499,6,End of speed limit (80km/h),39,Keep left,0.34371863772154565
+3994,35,Ahead only,36,Go straight or right,0.3433490456977867
+5945,0,Speed limit (20km/h),1,Speed limit (30km/h),0.3428541289971574
+10812,12,Priority road,38,Keep right,0.34145594986320715
+10908,24,Road narrows on the right,1,Speed limit (30km/h),0.340598916295803
+879,23,Slippery road,31,Wild animals crossing,0.34003733244297407
+5295,20,Dangerous curve to the right,22,Bumpy road,0.33952605101809913
+3224,11,Right-of-way at the next intersection,21,Double curve,0.3391831317647685
+537,6,End of speed limit (80km/h),12,Priority road,0.3378550134008193
+9173,38,Keep right,36,Go straight or right,0.3371583072046059
+10251,35,Ahead only,34,Turn left ahead,0.33598292333248836
+3739,18,General caution,19,Dangerous curve to the left,0.33552938049903924
+4384,12,Priority road,40,Roundabout mandatory,0.3353548828303124
+11872,35,Ahead only,2,Speed limit (50km/h),0.3327585676155742
+11895,23,Slippery road,20,Dangerous curve to the right,0.33058537160865165
+7790,38,Keep right,6,End of speed limit (80km/h),0.3299511888201814
+5557,25,Road work,28,Children crossing,0.32970872109334476
+380,19,Dangerous curve to the left,25,Road work,0.3284782692666899
+9734,2,Speed limit (50km/h),1,Speed limit (30km/h),0.3265569787124885
+11797,38,Keep right,6,End of speed limit (80km/h),0.3261801832936435
+2135,35,Ahead only,36,Go straight or right,0.3239202759677872
+957,36,Go straight or right,18,General caution,0.3171669261354419
+12105,19,Dangerous curve to the left,26,Traffic signals,0.31590002591221544
+12143,5,Speed limit (80km/h),2,Speed limit (50km/h),0.314486551011159
+4363,3,Speed limit (60km/h),2,Speed limit (50km/h),0.31046362808503775
+1434,23,Slippery road,10,No passing for vehicles over 3.5 metric tons,0.30907425189874477
+5413,18,General caution,28,Children crossing,0.30437272073988186
+8278,8,Speed limit (120km/h),38,Keep right,0.2993162365224428
+8248,38,Keep right,40,Roundabout mandatory,0.2977818046574198
+603,19,Dangerous curve to the left,4,Speed limit (70km/h),0.2976961631937643
+6324,6,End of speed limit (80km/h),39,Keep left,0.297471426367583
+5033,18,General caution,25,Road work,0.29662348748782585
+4575,8,Speed limit (120km/h),20,Dangerous curve to the right,0.2954600884751097
+4011,30,Beware of ice/snow,39,Keep left,0.2943665916274656
+3598,20,Dangerous curve to the right,27,Pedestrians,0.29252477940389227
+1496,38,Keep right,6,End of speed limit (80km/h),0.2911325354618397
+5307,2,Speed limit (50km/h),38,Keep right,0.2893151733197427
+3039,42,End of no passing by vehicles over 3.5 metric tons,41,End of no passing,0.2864701080397645
+2425,18,General caution,11,Right-of-way at the next intersection,0.2804271621877038
+5972,38,Keep right,7,Speed limit (100km/h),0.27027830702988564
+6004,30,Beware of ice/snow,20,Dangerous curve to the right,0.2695261857044257
+9628,18,General caution,11,Right-of-way at the next intersection,0.2670722407476387
+2757,18,General caution,27,Pedestrians,0.26658540383317875
+849,23,Slippery road,29,Bicycles crossing,0.26472541540729677
+7596,36,Go straight or right,37,Go straight or left,0.2637233786761196
+11564,30,Beware of ice/snow,26,Traffic signals,0.25957772713804333
+4853,12,Priority road,38,Keep right,0.25951629605822674
+2913,18,General caution,27,Pedestrians,0.2579901400006539
+287,30,Beware of ice/snow,28,Children crossing,0.24731645663461482
+5430,31,Wild animals crossing,10,No passing for vehicles over 3.5 metric tons,0.2466806124547347
+8622,12,Priority road,19,Dangerous curve to the left,0.24227481643106577
+8427,15,No vehicles,35,Ahead only,0.23862015413337972
+9411,30,Beware of ice/snow,27,Pedestrians,0.22438159309132027
+6402,20,Dangerous curve to the right,26,Traffic signals,0.2201457260984168
+3294,21,Double curve,23,Slippery road,0.2169840555676569
+265,12,Priority road,2,Speed limit (50km/h),0.20357348147575854
+10477,18,General caution,20,Dangerous curve to the right,0.19780908615719542
+12396,3,Speed limit (60km/h),7,Speed limit (100km/h),0.18806362657487707

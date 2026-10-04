@@ -1,0 +1,89 @@
+{
+  "run_utc": "2026-09-15T13:13:53.968167+00:00",
+  "seed": 42,
+  "source_url": "https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5898cd6f_traffic-signs-data/traffic-signs-data.zip",
+  "class_mapping_source": "https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/signnames.csv",
+  "data_path": "/content/drive/MyDrive/CPV/data/raw_data",
+  "files": {
+    "train": {
+      "name": "train.p",
+      "bytes": 107146452,
+      "sha256": "5c319e00df7f45a18761e65dfd47341779c310798a71ea3f371659cc4a63da44"
+    },
+    "valid": {
+      "name": "valid.p",
+      "bytes": 13578712,
+      "sha256": "7d92b991f95cf3bfcc6e35b88bad506b89e562992c1eb6c1034462a9604b6948"
+    },
+    "test": {
+      "name": "test.p",
+      "bytes": 38888118,
+      "sha256": "60b6450ffdb227042eb32f28d15fe77f98ad24dd550cc85eb445b8c0e502e470"
+    }
+  },
+  "figures": [
+    "01_split_pie.png",
+    "02_class_counts_by_split.png",
+    "03_train_all_classes_ranked.png",
+    "04_train_top_bottom_5.png",
+    "05_class_proportion_heatmap.png",
+    "06_gallery_43_classes.png",
+    "07_brightness_contrast.png",
+    "08_quality_examples.png",
+    "09_rgb_histogram.png",
+    "10_cross_split_duplicates.png"
+  ],
+  "versions": {
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.0"
+  },
+  "gallery_train_indices": {
+    "0": 9976,
+    "1": 3752,
+    "2": 32754,
+    "3": 5922,
+    "4": 7576,
+    "5": 13776,
+    "6": 21480,
+    "7": 24629,
+    "8": 16123,
+    "9": 11164,
+    "10": 18077,
+    "11": 9721,
+    "12": 28719,
+    "13": 23271,
+    "14": 29714,
+    "15": 30333,
+    "16": 5194,
+    "17": 30575,
+    "18": 21276,
+    "19": 6711,
+    "20": 26100,
+    "21": 25780,
+    "22": 4560,
+    "23": 2187,
+    "24": 10987,
+    "25": 34318,
+    "26": 1447,
+    "27": 10522,
+    "28": 27110,
+    "29": 10666,
+    "30": 25195,
+    "31": 366,
+    "32": 10159,
+    "33": 26582,
+    "34": 20329,
+    "35": 18998,
+    "36": 1183,
+    "37": 4978,
+    "38": 14524,
+    "39": 25580,
+    "40": 4249,
+    "41": 159,
+    "42": 9897
+  },
+  "rgb_sample_size": 2000,
+  "scope": "Raw split audit; class counts for all splits; image-quality EDA on train only; no model training."
+}

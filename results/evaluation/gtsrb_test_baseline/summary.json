@@ -1,0 +1,101 @@
+{
+  "created_utc": "2026-10-03T14:53:41.703467+00:00",
+  "scope": "Closed-set evaluation on the downloaded GTSRB test split",
+  "model": {
+    "path": "/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector/models/VGG16_model.h5",
+    "sha256": "745cf3f6e9f5edfe32954866d93f07d9504f6bc2d4f3667c8b8f99f1c924b565"
+  },
+  "dataset": {
+    "path": "/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector/data/processed/test.p",
+    "sha256": "60b6450ffdb227042eb32f28d15fe77f98ad24dd550cc85eb445b8c0e502e470",
+    "samples": 12630,
+    "classes": 43
+  },
+  "metrics": {
+    "accuracy": 0.8681710213776722,
+    "macro_f1": 0.7921327842473767,
+    "weighted_f1": 0.8704904173229969,
+    "balanced_accuracy": 0.79492905691844,
+    "negative_log_loss": 0.47991519711470293,
+    "top_label_ece_10_bins": 0.04048761730188699,
+    "mean_confidence": 0.9085875029313645,
+    "wrong_predictions": 1665,
+    "wrong_predictions_confidence_ge_0_90": 324,
+    "threshold": 0.5,
+    "coverage_at_threshold": 0.9581155977830562,
+    "accepted_accuracy": 0.8910007437401868
+  },
+  "top_confusions": [
+    {
+      "count": 117,
+      "true_class_id": 38,
+      "true_label": "Keep right",
+      "predicted_class_id": 39,
+      "predicted_label": "Keep left"
+    },
+    {
+      "count": 86,
+      "true_class_id": 33,
+      "true_label": "Turn right ahead",
+      "predicted_class_id": 34,
+      "predicted_label": "Turn left ahead"
+    },
+    {
+      "count": 85,
+      "true_class_id": 5,
+      "true_label": "Speed limit (80km/h)",
+      "predicted_class_id": 2,
+      "predicted_label": "Speed limit (50km/h)"
+    },
+    {
+      "count": 46,
+      "true_class_id": 2,
+      "true_label": "Speed limit (50km/h)",
+      "predicted_class_id": 1,
+      "predicted_label": "Speed limit (30km/h)"
+    },
+    {
+      "count": 42,
+      "true_class_id": 18,
+      "true_label": "General caution",
+      "predicted_class_id": 26,
+      "predicted_label": "Traffic signals"
+    },
+    {
+      "count": 42,
+      "true_class_id": 34,
+      "true_label": "Turn left ahead",
+      "predicted_class_id": 33,
+      "predicted_label": "Turn right ahead"
+    },
+    {
+      "count": 41,
+      "true_class_id": 3,
+      "true_label": "Speed limit (60km/h)",
+      "predicted_class_id": 2,
+      "predicted_label": "Speed limit (50km/h)"
+    },
+    {
+      "count": 39,
+      "true_class_id": 23,
+      "true_label": "Slippery road",
+      "predicted_class_id": 20,
+      "predicted_label": "Dangerous curve to the right"
+    },
+    {
+      "count": 36,
+      "true_class_id": 39,
+      "true_label": "Keep left",
+      "predicted_class_id": 38,
+      "predicted_label": "Keep right"
+    },
+    {
+      "count": 30,
+      "true_class_id": 17,
+      "true_label": "No entry",
+      "predicted_class_id": 7,
+      "predicted_label": "Speed limit (100km/h)"
+    }
+  ],
+  "evidence_boundary": "These metrics measure cropped German GTSRB signs only. They do not establish performance on Vietnamese signs, full camera scenes, unknown signs, or driving safety."
+}
