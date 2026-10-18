@@ -159,6 +159,10 @@ def verifier_specs(raw_root: Path) -> list[Verifier]:
         Verifier("wp36", ("scripts/build_wp36_group_split.py", "verify", "--repo-root", ".")),
         Verifier("m1-yolo", ("scripts/build_m1_yolo_dataset.py", "verify", "--repo-root", ".")),
         Verifier(
+            "d1-cascade",
+            ("scripts/build_d1_cascade_detector_dataset.py", "verify", "--repo-root", "."),
+        ),
+        Verifier(
             "dataset01-crops",
             ("scripts/build_dataset01_crops.py", "verify", "--repo-root", ".", "--raw-root", raw),
         ),

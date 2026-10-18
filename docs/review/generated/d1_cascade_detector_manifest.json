@@ -1,0 +1,38 @@
+{
+  "allowed_splits": [
+    "train",
+    "val"
+  ],
+  "classes": {
+    "count": 1,
+    "names": {
+      "0": "traffic_sign"
+    }
+  },
+  "counts": {
+    "raw_train_boxes": 5415,
+    "raw_train_frames": 1912,
+    "raw_val_boxes": 560,
+    "raw_val_frames": 376,
+    "wp35_train_images": 1800
+  },
+  "package": "D1-CASCADE-ONE-CLASS-DETECTOR",
+  "sealed_test_policy": "No test export route. Owner-approved cascade gate addendum is required before sealed-test eligibility.",
+  "source_bindings": {
+    "m1_class_map_sha256": "7cda296a95bd8512a1bb2e85109ce9a1574fb882e692b11d4d0ee6a1cb58d242",
+    "m1_manifest_sha256": "8a8df5f242829277fb86cfd55490dd4284e42a6c09f7ace6a509e42feb179d71",
+    "owner_decision_sha256": "39f26b0e29a2a60a5972ea07e6e0dcf04ce5e53f722a3c92b3a69b267934a0b2",
+    "sealed_test_stem_list_sha256": "afa03d4b6deb7567c5784b29122966d84599d4eb81fdbad37c3b20adaf7524bc",
+    "train_stem_list_sha256": "6ac767509def899071f6d6dc0da1e98e62a2a19eb0e62292970e8273b4c99372",
+    "val_stem_list_sha256": "ae3f3509319fbb301012e9fbeb7431caacfcd4035c9d2f9167f24e3ed2b8f593"
+  },
+  "status": "D1_CASCADE_ONE_CLASS_DETECTOR_DATASET",
+  "test_included": false,
+  "transform": {
+    "class_rewrite": "every train-eligible box class -> 0; coordinates byte-preserved",
+    "horizontal_flip": 0.0,
+    "source": "M1 54-class train/val labels",
+    "wp35": "train only"
+  },
+  "validation_boundary": "Detector localization may be selected on val. Classifier taxonomy, thresholds, cascade metrics and sealed-test gates remain unapproved."
+}

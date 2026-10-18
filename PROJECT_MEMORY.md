@@ -1081,6 +1081,12 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
   4. M4/D1 starts with a one-epoch Colab smoke, then a 1-seed pilot on val, then 3 seeds, then one
      sealed-test evaluation. The 54-class baseline stays under current D-05; the one-class-plus-
      classifier baseline needs a gate addendum before sealed-test use.
+     The one-class detector dataset R1 failed independent QA on a CLI output-symlink bypass. R2
+     preserves the lexical output path and guards every existing component with `lstat`; it
+     received independent QA PASS with 0 findings on 2026-10-19
+     (`docs/review/d1_cascade_dataset_r2_independent_qa_record.md`; 12/12 targeted tests, 52/52
+     package verifiers and 54/54 detector tests). The gate addendum remains an unapproved proposal;
+     no cascade classifier, run, training or sealed-test use exists.
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 

@@ -170,7 +170,11 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
   controls. Bundle đã được upload riêng tư và đọc lại trên Drive ngày 2026-10-19; record tại
   `docs/review/m1_colab_private_upload_record.md`. Smoke GPU thật vẫn chưa chạy.
 - Owner chọn chạy cả hai baseline: YOLO 54 lớp và detector một lớp + classifier. Baseline 54 lớp
-  giữ gate D-05 hiện tại; baseline thứ hai cần addendum metric/gate trước khi dùng sealed test.
+  giữ gate D-05 hiện tại. Dataset detector một lớp R1 FAIL QA do CLI output-symlink bypass; R2 đã
+  thêm lexical-path/lstat guards và nhận independent QA PASS ngày 2026-10-19 với 0 finding
+  (`docs/review/d1_cascade_dataset_r2_independent_qa_record.md`). Classifier 54 lớp và runner chưa
+  được xây. Addendum metric/gate vẫn là đề xuất chưa được Owner duyệt; baseline thứ hai chưa đủ
+  điều kiện dùng sealed test.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
   DATASET01-derived review renders và raw/processed/model files không được đưa vào checkpoint.
 - Canonical records: `docs/review/m1_pretrained_weights_owner_response_record.md`,
