@@ -64,3 +64,39 @@ def test_pickles_match_gtsrb_keys() -> None:
     assert set(data) == {"features", "labels", "sizes", "coords"}
     assert data["features"].shape[1:] == (32, 32, 3)
     assert len(data["labels"]) == len(data["features"]) == 560
+
+
+def test_verify_rejects_missing_materialised_outputs(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    empty = {
+        "features": np.zeros((0, 32, 32, 3), dtype=np.uint8),
+        "labels": np.zeros((0,), dtype=np.uint8),
+        "sizes": np.zeros((0, 2), dtype=np.uint16),
+        "coords": np.zeros((0, 4), dtype=np.uint16),
+    }
+    built = {"train": (empty, []), "val": (empty, [])}
+    summary = {
+        split: crops.summarise(split, arrays, index)
+        for split, (arrays, index) in built.items()
+    }
+    manifest = {"synthetic": True}
+    monkeypatch.setattr(crops, "render", lambda *_args: (summary, built))
+    monkeypatch.setattr(crops, "manifest_payload", lambda *_args: manifest)
+    monkeypatch.setattr(crops, "signnames", lambda *_args: b"synthetic\n")
+    monkeypatch.setattr(crops.m1, "verify_pins", lambda *_args: None)
+    monkeypatch.setattr(crops, "MANIFEST_PATH", Path("manifest.json"))
+    (tmp_path / "manifest.json").write_text(
+        json.dumps(manifest, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    result = crops.verify(tmp_path, tmp_path, tmp_path, tmp_path / "missing")
+    assert result["valid"] is False
+    assert any("materialised crop file missing" in error for error in result["errors"])
+
+    out = tmp_path / "complete"
+    crops.write(out, built, tmp_path)
+    (out / "unexpected.bin").write_bytes(b"extra")
+    result = crops.verify(tmp_path, tmp_path, tmp_path, out)
+    assert result["valid"] is False
+    assert any("crop roster differs" in error for error in result["errors"])

@@ -1056,8 +1056,18 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
 - **Gate 0 OPEN (2026-10-18)**: D-05 approved (`docs/review/d05_owner_decision_record.md`).
   Training of the VN detector is authorized under D-05 once M1 exists; no VN model trained yet.
 - **Next, by owner priority (detector first):**
-  1. PyTorch/Ultralytics are owner-approved in the separate `detector/` project; independent M1 QA is still required.
-  2. Owner selected Colab with private train/val upload and dual baselines. Q1 remains ambiguous, so no pretrained weight download is authorized yet.
+  1. PyTorch/Ultralytics are owner-approved in the separate `detector/` project. Initial M1 QA,
+     M1-R1 and M1-R2 all FAILed fail-closed. R2 closed the prior registry/threshold/data-roster
+     bypasses. R3 closed primitive numeric/schema attacks but QA found two High cross-field gaps:
+     metric/gate claims could contradict confusion/AP evidence, and latency could use a different
+     image size/conf/NMS. M1-R4 adds primary integer counts, confusion/AP reconciliation and an
+     exact per-seed latency-to-test configuration binding, with 53 detector tests. M1-R4 received
+     independent QA PASS with 0 findings (`docs/review/m1_r4_independent_qa_record.md`, SHA-256
+     `2c5416ebfb041ea13ec5f6eab0582c37d0e5257f07b6cdc73dd097466a30d0e9`). The M1 QA blocker is
+     closed; next is the Owner-authorized source checkpoint, then the private train/val Colab path.
+  2. Owner selected Colab with private train/val upload and dual baselines. Q1 was clarified as
+     `Có` on 2026-10-18. Official Ultralytics `yolo11s.pt` was downloaded locally, kept outside
+     Git, loaded successfully and pinned by SHA-256 `85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5`.
   3. M4/D1 starts with a 1-seed pilot on val, then 3 seeds, then one sealed-test evaluation. The 54-class baseline stays under current D-05; the one-class-plus-classifier baseline needs a gate addendum before sealed-test use.
   4. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
@@ -1111,7 +1121,7 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
 Gate 0 is **OPEN** for the VN detector track (D-05 approved 2026-10-18). Before the first training run:
 
 1. Independently QA the M1 YOLO export, Dataset01 crop export and detector package.
-2. Clarify Q1. The literal owner response `Có/Không` is not download authorization.
+2. Use only the locally pinned official `yolo11s.pt`; do not publish it or silently replace it.
 3. Implement the owner-approved private Colab train/val path with auditable logging; the sealed
    test remains local and unopened.
 4. M1 must enforce:
@@ -1121,9 +1131,11 @@ Gate 0 is **OPEN** for the VN detector track (D-05 approved 2026-10-18). Before 
    - no horizontal flip.
 
 Owner follow-up records dated 2026-10-18:
-`m1_pretrained_weights_owner_response_record.md`, `m1_colab_training_owner_decision_record.md`,
-`d1_dual_baseline_owner_decision_record.md`, `m1_dependency_decision_record.md` and
-`git_checkpoint_owner_decision_record.md` under `docs/review/`.
+`m1_pretrained_weights_owner_response_record.md`,
+`m1_pretrained_weights_owner_decision_record.md`,
+`m1_colab_training_owner_decision_record.md`, `d1_dual_baseline_owner_decision_record.md`,
+`m1_dependency_decision_record.md` and `git_checkpoint_owner_decision_record.md` under
+`docs/review/`.
 
 Do not commit, push, deploy, upload or publish unless the user requests that action separately.
 

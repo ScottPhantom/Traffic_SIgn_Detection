@@ -9,7 +9,8 @@
     "docs/review/generated/wp33_derived_taxonomy.csv": "199ddd322aa05d4875af809c1c7c1459198ebf91ada24f406cbf039c406fa5ad",
     "docs/review/generated/wp35_enrichment_lineage.csv": "e802fc264feff5168c28b531801af04051a36accc3c893ad5ab2e72975d38fed",
     "docs/review/generated/wp36_r1_split_frames.csv": "8e197d9c7103ac5dc6b7ffc8a3d1aeb30bb6034048d470e4887dd868df95823a",
-    "docs/review/generated/wp36_r1_split_manifest.json": "064259941895d35054e87a550bf69199c4cae8ffeb4c83b4d7cdf608673438d9"
+    "docs/review/generated/wp36_r1_split_manifest.json": "064259941895d35054e87a550bf69199c4cae8ffeb4c83b4d7cdf608673438d9",
+    "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022"
   },
   "splits": {
     "test": {

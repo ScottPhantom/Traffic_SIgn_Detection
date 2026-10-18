@@ -147,6 +147,12 @@ def signnames(repo_root: Path) -> bytes:
     return buffer.getvalue().encode("utf-8")
 
 
+def pickle_bytes(arrays: dict[str, np.ndarray]) -> bytes:
+    buffer = io.BytesIO()
+    pickle.dump(arrays, buffer, protocol=pickle.HIGHEST_PROTOCOL)
+    return buffer.getvalue()
+
+
 def summarise(split: str, arrays: dict[str, np.ndarray], index: list[dict[str, Any]]) -> dict[str, Any]:
     small = int(np.sum(np.minimum(arrays["coords"][:, 2] - arrays["coords"][:, 0], arrays["coords"][:, 3] - arrays["coords"][:, 1]) < 16))
     return {
@@ -188,8 +194,7 @@ def manifest_payload(repo_root: Path, summary: dict[str, Any]) -> dict[str, Any]
 def write(out: Path, built: dict[str, tuple[dict[str, np.ndarray], list[dict[str, Any]]]], repo_root: Path) -> None:
     out.mkdir(parents=True, exist_ok=True)
     for split, (arrays, index) in built.items():
-        with (out / FILES[split]).open("wb") as handle:
-            pickle.dump(arrays, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        (out / FILES[split]).write_bytes(pickle_bytes(arrays))
         (out / f"{Path(FILES[split]).stem}_index.csv").write_bytes(index_csv(index))
     (out / "signnames.csv").write_bytes(signnames(repo_root))
 
@@ -199,18 +204,60 @@ def export(repo_root: Path, raw_root: Path, wp35_root: Path, out: Path) -> dict[
     summary, built = render(repo_root, raw_root, wp35_root, ("train", "val"))
     write(out, built, repo_root)
     (repo_root / MANIFEST_PATH).write_text(json.dumps(manifest_payload(repo_root, summary), indent=2, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")
-    return {"status": STATUS, "out": str(out), **{s: summary[s]["samples"] for s in summary}}
+    verification = verify(repo_root, raw_root, wp35_root, out)
+    if not verification["valid"]:
+        raise ValueError(f"crop export failed verification: {verification['errors']}")
+    return {
+        "status": STATUS,
+        "out": str(out),
+        "verified": True,
+        **{s: summary[s]["samples"] for s in summary},
+    }
 
 
-def verify(repo_root: Path, raw_root: Path, wp35_root: Path) -> dict[str, Any]:
+def verify(
+    repo_root: Path,
+    raw_root: Path,
+    wp35_root: Path,
+    out: Path = DEFAULT_OUT,
+) -> dict[str, Any]:
     errors: list[str] = []
     try:
         m1.verify_pins(repo_root)
-        summary, _built = render(repo_root, raw_root, wp35_root, ("train", "val"))
+        summary, built = render(repo_root, raw_root, wp35_root, ("train", "val"))
         expected = (json.dumps(manifest_payload(repo_root, summary), indent=2, sort_keys=True, ensure_ascii=False) + "\n").encode("utf-8")
         if not (repo_root / MANIFEST_PATH).is_file() or (repo_root / MANIFEST_PATH).read_bytes() != expected:
             errors.append(f"manifest differs: {MANIFEST_PATH}")
-    except (ValueError, OSError, KeyError) as error:
+        for split, (arrays, index) in built.items():
+            pickle_path = out / FILES[split]
+            index_path = out / f"{Path(FILES[split]).stem}_index.csv"
+            if not pickle_path.is_file() or pickle_path.is_symlink():
+                errors.append(f"materialised crop file missing or symlinked: {pickle_path}")
+            elif pickle_path.read_bytes() != pickle_bytes(arrays):
+                errors.append(f"materialised crop bytes differ: {pickle_path}")
+            if not index_path.is_file() or index_path.is_symlink():
+                errors.append(f"materialised crop index missing or symlinked: {index_path}")
+            elif index_path.read_bytes() != index_csv(index):
+                errors.append(f"materialised crop index differs: {index_path}")
+        signnames_path = out / "signnames.csv"
+        if not signnames_path.is_file() or signnames_path.is_symlink():
+            errors.append(f"materialised signnames missing or symlinked: {signnames_path}")
+        elif signnames_path.read_bytes() != signnames(repo_root):
+            errors.append(f"materialised signnames differs: {signnames_path}")
+        expected_roster = {
+            "train.p",
+            "valid.p",
+            "train_index.csv",
+            "valid_index.csv",
+            "signnames.csv",
+        }
+        actual_roster = {path.name for path in out.iterdir()} if out.is_dir() else set()
+        if actual_roster != expected_roster:
+            errors.append(
+                f"materialised crop roster differs: expected {sorted(expected_roster)}, "
+                f"found {sorted(actual_roster)}"
+            )
+    except (ValueError, OSError, KeyError, pickle.PickleError) as error:
         errors.append(str(error))
     return {"status": STATUS, "valid": not errors, "errors": errors}
 
@@ -231,7 +278,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "export":
         result, ok = export(repo_root, args.raw_root, args.wp35_root, args.out), True
     elif args.command == "verify":
-        result = verify(repo_root, args.raw_root, args.wp35_root)
+        result = verify(repo_root, args.raw_root, args.wp35_root, args.out)
         ok = result["valid"]
     else:
         if not args.final_eval or not args.reason.strip():

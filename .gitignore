@@ -17,6 +17,7 @@ data/processed/*
 models/*.h5
 models/*.keras
 models/*.tflite
+/models/pretrained/
 artifacts/*.db
 artifacts/incomplete-downloads/
 
