@@ -34,6 +34,7 @@ tmp/
 
 # Local Claude/Graft agent wiring. Codex uses the tracked root AGENTS.md contract.
 /.claude/
+/.agents/skills/
 
 # Review renders contain DATASET01-derived image content. The public repository keeps
 # their manifests, hashes, reports, and builders, but not the rendered pixels themselves.
