@@ -1278,6 +1278,38 @@ template giữ toàn bộ quyết định ở `PENDING`. Packet không mở Gate
 
 ## Technical backlog — nonblocking
 
+### Legacy successor-test compatibility R1 — independent QA FAIL; R2 QA PASS
+
+- Seven immutable WP26–WP29 tests still assert that WP27/WP28/WP29/WP30 do not exist. Their
+  predecessor hashes remain unchanged; those assertions are now historical because the successor
+  packages were legitimately created and reviewed.
+- `tests/conftest.py` now maps only the seven exact full nodeids to exact SHA-256-pinned successor
+  manifests and applies `xfail(strict=True)` only while that proof matches. There is no glob or
+  substring suppression. Missing/tampered proof and unknown nodeids are not marked.
+- `tests/test_legacy_successor_compatibility.py` independently checks mapping exactness, proof
+  hashes, all seven predecessor hashes, tamper fail-closed behavior and an unrelated nodeid.
+- Final PM gate: targeted `4 passed, 7 xfailed`; full parallel runner `126` serial PASS plus
+  `1,413` parallel PASS / `7` strict XFAIL; package verifiers `52/52`; Ruff, root/detector locks
+  and diff check PASS. Implementation record:
+  `docs/review/legacy_successor_tests_r1_implementation_record.md`.
+- Independent QA of R1 returned **FAIL, 0 P0 / 1 P1 / 0 P2 / 0 P3**: the proof check followed a
+  final-component symlink to a valid manifest. The immutable QA record is
+  `docs/review/legacy_successor_tests_r1_independent_qa_record.md` (SHA-256
+  `83c725afe1bd50d6d53fb7572193b16a766076847f8ac4310a03e93509f735d6`).
+- R2 uses no-follow descriptor traversal for root, every parent and the final proof, requires a
+  regular `fstat`, hashes through the opened fd, and re-checks file/parent bindings after hashing.
+  New tests reject final/parent/root symlinks, FIFO, directory, missing/tamper, same-byte file
+  replacement, parent replacement and unknown nodeids. R1 records/tests and the seven historical
+  tests remain unchanged. Targeted is `12 passed, 7 xfailed`; full runner is `126` serial PASS plus
+  `1,421` parallel PASS / `7` strict XFAIL; all `52/52` package verifiers and static/lock gates
+  pass. Independent QA reproduced the R1 final-symlink acceptance, confirmed R2 refuses it plus
+  linked roots/parents and replacement races, verified all seven exact nodeids collect once, and
+  found no broad masking. Status: **R2 INDEPENDENT QA PASS, 0 findings**; canonical verdict:
+  `docs/review/legacy_successor_tests_r2_independent_qa_record.md` (SHA-256
+  `d289a31d7c3379a52c418be7acbb44b2ad098b9c418d61aed795d395350d8f02`).
+- This routing repair does not change model, dataset, gate, split, training authorization or
+  sealed-test state.
+
 - **P3 — Parameterize inherited atlas diagnostic:** verifier kế thừa trong
   `scripts/build_wp12_cross_split_review_batch.py` vẫn ghi “WP12 / exact 51-file contract” khi
   WP15 thực thi exact 37-file roster. Đây chỉ là wording chẩn đoán, không phải functional/package

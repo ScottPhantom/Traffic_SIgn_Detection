@@ -1671,6 +1671,24 @@ Readback on 2026-10-11:
   residual PENDING edges remain outside overlays including two quarantine edges. All 589
   sequences and canonical WP5 remain `PENDING`; D-02/Gate 0 remain blocked; split/training remain
   unauthorized and no final/transitive group truth exists. No WP28 work has started.
+- Legacy successor-test compatibility R1 **FAILED independent QA (0 P0 / 1 P1 / 0 P2 / 0 P3)**.
+  Exact mapping, predecessor preservation and normal-file behavior passed, but `Path.is_file()` and
+  `Path.open()` followed a final symlink to a valid manifest and incorrectly allowed strict xfail.
+  The immutable verdict is `docs/review/legacy_successor_tests_r1_independent_qa_record.md` at
+  SHA-256 `83c725afe1bd50d6d53fb7572193b16a766076847f8ac4310a03e93509f735d6`.
+- Legacy successor-test compatibility R2 is **INDEPENDENT QA PASS (0 findings)**. It keeps
+  both R1 records, the R1 regression file and all seven historical tests byte-identical. Proofs now
+  use a descriptor-bound no-follow root/parent/file traversal, require an opened regular file,
+  hash through its fd, then re-check file and parent identities/states. R2 attacks cover final,
+  parent and root symlinks; missing/directory/FIFO/tamper; same-byte file replacement; parent
+  replacement; and unknown nodeids. Targeted is 12 PASS / 7 strict XFAIL; full runner is 126 PASS
+  serial plus 1,421 PASS / 7 strict XFAIL parallel; all 52 package verifiers and static/lock gates
+  pass. Independent QA reproduced the R1 final-symlink exploit and confirmed R2 refuses it plus
+  root/parent links and replacement races; the exact seven nodeids each collect once and no broad
+  masking was found. Canonical verdict:
+  `docs/review/legacy_successor_tests_r2_independent_qa_record.md` at SHA-256
+  `d289a31d7c3379a52c418be7acbb44b2ad098b9c418d61aed795d395350d8f02`. This changes test routing
+  only, not package evidence, D-05, training state or sealed-test state.
 - Nonblocking P3 backlog: the inherited diagnostic in
   `scripts/build_wp12_cross_split_review_batch.py` still says “WP12 / exact 51-file contract” when
   WP15 enforces 37 files. Do not mutate the hash-pinned WP12–WP15 builders in place; parameterize
