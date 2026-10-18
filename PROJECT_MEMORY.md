@@ -1073,8 +1073,11 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      `docs/review/m1_colab_r3_independent_qa_record.md`, SHA-256
      `4b3ddcfebcb7b055dc42c229cd890234bf6decd32e8fe2a965d372732a5503c0`. It binds an exact
      eight-file result package, both checkpoint hashes, token-exact train command, frozen sync,
-     train/val-only archive, SQLite/text logs and exact CUDA identity. This PASS is package-only:
-     no upload, Colab run or training has occurred yet.
+     train/val-only archive, SQLite/text logs and exact CUDA identity. The verified bundle was
+     uploaded to the Owner's private Drive on 2026-10-19 (archive SHA-256 `eb5226e...e191`,
+     sidecar SHA-256 `2c43d5fd...8d3b`; see
+     `docs/review/m1_colab_private_upload_record.md`). This PASS remains package-only: no Colab
+     cell, GPU smoke or training has occurred yet.
   4. M4/D1 starts with a one-epoch Colab smoke, then a 1-seed pilot on val, then 3 seeds, then one
      sealed-test evaluation. The 54-class baseline stays under current D-05; the one-class-plus-
      classifier baseline needs a gate addendum before sealed-test use.
@@ -1132,9 +1135,9 @@ Gate 0 is **OPEN** for the VN detector track (D-05 approved 2026-10-18). Before 
 1. M1 YOLO export, Dataset01 crop export, detector package and Colab-R3 controls are independently
    QA PASS.
 2. Use only the locally pinned official `yolo11s.pt`; do not publish it or silently replace it.
-3. Build the train/val-only bundle from a clean committed checkpoint, upload it to the Owner's
-   private Drive, run the one-epoch Colab smoke with auditable SQLite/text logs, download the result
-   package and verify it locally. The sealed test remains local and unopened.
+3. The train/val-only bundle was built from clean commit `1842a1b...` and uploaded to the Owner's
+   private Drive. Remaining: run the one-epoch Colab smoke with auditable SQLite/text logs,
+   download the result package and verify it locally. The sealed test remains local and unopened.
 4. M1 must enforce:
    - the WP36-R1 `check-candidate` / list hashes;
    - test access only in a logged final evaluation;
@@ -1145,7 +1148,8 @@ Owner follow-up records dated 2026-10-18:
 `m1_pretrained_weights_owner_response_record.md`,
 `m1_pretrained_weights_owner_decision_record.md`,
 `m1_colab_training_owner_decision_record.md`, `d1_dual_baseline_owner_decision_record.md`,
-`m1_dependency_decision_record.md` and `git_checkpoint_owner_decision_record.md` under
+`m1_dependency_decision_record.md`, `git_checkpoint_owner_decision_record.md` and
+`m1_colab_private_upload_record.md` under
 `docs/review/`.
 
 Do not commit, push, deploy, upload or publish unless the user requests that action separately.
