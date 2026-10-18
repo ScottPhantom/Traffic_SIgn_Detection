@@ -1,6 +1,6 @@
 # Project Memory — CPV301 AutoDrive
 
-Last updated: 2026-10-18 (Asia/Ho_Chi_Minh)
+Last updated: 2026-10-19 (Asia/Ho_Chi_Minh)
 Checkout: `/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector`  
 Role: PM — Project Management and Structure
 
@@ -1064,12 +1064,21 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      exact per-seed latency-to-test configuration binding, with 53 detector tests. M1-R4 received
      independent QA PASS with 0 findings (`docs/review/m1_r4_independent_qa_record.md`, SHA-256
      `2c5416ebfb041ea13ec5f6eab0582c37d0e5257f07b6cdc73dd097466a30d0e9`). The M1 QA blocker is
-     closed; next is the Owner-authorized source checkpoint, then the private train/val Colab path.
+     closed.
   2. Owner selected Colab with private train/val upload and dual baselines. Q1 was clarified as
      `Có` on 2026-10-18. Official Ultralytics `yolo11s.pt` was downloaded locally, kept outside
      Git, loaded successfully and pinned by SHA-256 `85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5`.
-  3. M4/D1 starts with a 1-seed pilot on val, then 3 seeds, then one sealed-test evaluation. The 54-class baseline stays under current D-05; the one-class-plus-classifier baseline needs a gate addendum before sealed-test use.
-  4. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
+  3. The private train/val Colab package is **M1-Colab-R3 independent QA PASS** (2026-10-19,
+     0 findings; 13 positive controls and 86 adversarial rejections). Canonical record:
+     `docs/review/m1_colab_r3_independent_qa_record.md`, SHA-256
+     `4b3ddcfebcb7b055dc42c229cd890234bf6decd32e8fe2a965d372732a5503c0`. It binds an exact
+     eight-file result package, both checkpoint hashes, token-exact train command, frozen sync,
+     train/val-only archive, SQLite/text logs and exact CUDA identity. This PASS is package-only:
+     no upload, Colab run or training has occurred yet.
+  4. M4/D1 starts with a one-epoch Colab smoke, then a 1-seed pilot on val, then 3 seeds, then one
+     sealed-test evaluation. The 54-class baseline stays under current D-05; the one-class-plus-
+     classifier baseline needs a gate addendum before sealed-test use.
+  5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 
 ## Durable decisions
@@ -1111,19 +1120,21 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
 - 24 negatives with unlabelled signs are quarantined until a derived relabel exists. Only 0544 is background.
 - About 37 % of boxes are smaller than 0.1 % of the image area; detector input size must handle small signs.
 - PyTorch/Ultralytics are installed only in the separately pinned `detector/uv.lock`; the root
-  TensorFlow lock remains the E0 environment. Independent M1 QA is still pending.
+  TensorFlow lock remains the E0 environment. M1 and M1-Colab-R3 are independently QA PASS, but
+  the real Colab GPU/runtime and one-epoch result remain unverified until the authorized smoke runs.
 - 7 obsolete "no successor package" tests fail because later WPs now exist.
-- More than 130 files are changed and uncommitted.
 - Behaviour output is simulation only. The E0 classifier is GTSRB-only and is not valid for Vietnam.
 
 ## Immediate PM gate
 
 Gate 0 is **OPEN** for the VN detector track (D-05 approved 2026-10-18). Before the first training run:
 
-1. Independently QA the M1 YOLO export, Dataset01 crop export and detector package.
+1. M1 YOLO export, Dataset01 crop export, detector package and Colab-R3 controls are independently
+   QA PASS.
 2. Use only the locally pinned official `yolo11s.pt`; do not publish it or silently replace it.
-3. Implement the owner-approved private Colab train/val path with auditable logging; the sealed
-   test remains local and unopened.
+3. Build the train/val-only bundle from a clean committed checkpoint, upload it to the Owner's
+   private Drive, run the one-epoch Colab smoke with auditable SQLite/text logs, download the result
+   package and verify it locally. The sealed test remains local and unopened.
 4. M1 must enforce:
    - the WP36-R1 `check-candidate` / list hashes;
    - test access only in a logged final evaluation;

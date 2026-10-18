@@ -48,6 +48,23 @@ GATES = {
 CRITICAL_KEYS = ("0", "2", "7", "32", "13", "22", "45", "39", "40", "41")
 LATENCY_WARMUP, LATENCY_ITERATIONS = 50, 300
 FORBIDDEN_OVERRIDES = {"fliplr": 0.0}  # no semantic horizontal flip (left/right signs)
+ENVIRONMENT_KEYS = {
+    "git_commit",
+    "git_dirty_files",
+    "detector_lock_sha256",
+    "python",
+    "platform",
+    "machine",
+    "hardware_chip",
+    "torch",
+    "ultralytics",
+    "mps_available",
+    "cuda_available",
+    "cuda_version",
+    "gpu_name",
+    "nvidia_driver",
+    "runtime_backend",
+}
 
 
 def sha256_file(path: Path) -> str:
@@ -243,30 +260,18 @@ def inspect_run_weights(weights: str) -> dict[str, Any]:
     }
     if any(train_args.get(key) != value for key, value in required_train.items()):
         raise RuntimeError("run contract training invariants differ")
-    _exact_keys(
-        record["environment"],
-        {
-            "git_commit",
-            "git_dirty_files",
-            "detector_lock_sha256",
-            "python",
-            "platform",
-            "machine",
-            "hardware_chip",
-            "torch",
-            "ultralytics",
-            "mps_available",
-        },
-        "run environment",
-    )
-    if record["environment"]["detector_lock_sha256"] != DETECTOR_LOCK_SHA256:
-        raise RuntimeError("run contract detector lock differs")
+    validate_environment_record(record["environment"], "run environment", require_clean=True)
     if set(artifacts) != {"best.pt", "last.pt"}:
         raise RuntimeError("run contract must bind exactly best.pt and last.pt")
     for name, artifact in artifacts.items():
         _exact_keys(artifact, {"path", "sha256"}, f"run weight artifact {name}")
         if Path(artifact["path"]).name != name:
             raise RuntimeError(f"run weight artifact path differs: {name}")
+        canonical_weight = run_dir / "weights" / name
+        if not canonical_weight.is_file() or canonical_weight.is_symlink():
+            raise RuntimeError(f"run weight artifact is missing or linked: {name}")
+        if sha256_file(canonical_weight) != artifact["sha256"]:
+            raise RuntimeError(f"run weight artifact SHA-256 differs: {name}")
     claim = {
         "path": str(path),
         "sha256": actual,
@@ -436,6 +441,53 @@ def unknown_boxes() -> dict[str, list[tuple[float, float, float, float]]]:
     return result
 
 
+def validate_environment_record(
+    record: Any, label: str, *, require_clean: bool = False
+) -> dict[str, Any]:
+    _exact_keys(record, ENVIRONMENT_KEYS, label)
+    string_fields = (
+        "git_commit",
+        "detector_lock_sha256",
+        "python",
+        "platform",
+        "machine",
+        "hardware_chip",
+        "torch",
+        "ultralytics",
+        "gpu_name",
+        "runtime_backend",
+    )
+    if any(type(record[key]) is not str or not record[key].strip() for key in string_fields):
+        raise RuntimeError(f"{label} contains a blank or non-string identity field")
+    if type(record["git_dirty_files"]) is not int or record["git_dirty_files"] < 0:
+        raise RuntimeError(f"{label} git_dirty_files must be a non-negative integer")
+    if require_clean and record["git_dirty_files"] != 0:
+        raise RuntimeError(f"{label} must bind a clean Git checkout")
+    for key in ("mps_available", "cuda_available"):
+        if type(record[key]) is not bool:
+            raise RuntimeError(f"{label} {key} must be a boolean")
+    for key in ("cuda_version", "nvidia_driver"):
+        if record[key] is not None and (type(record[key]) is not str or not record[key].strip()):
+            raise RuntimeError(f"{label} {key} must be null or a non-empty string")
+    expected_backend = (
+        "cuda" if record["cuda_available"] else "mps" if record["mps_available"] else "cpu"
+    )
+    if record["runtime_backend"] != expected_backend:
+        raise RuntimeError(f"{label} runtime backend contradicts accelerator availability")
+    if record["cuda_available"]:
+        if record["cuda_version"] is None or record["nvidia_driver"] is None:
+            raise RuntimeError(f"{label} CUDA runs must record CUDA and NVIDIA driver versions")
+        placeholders = {"UNKNOWN", "N/A", "NONE", "NULL", "UNAVAILABLE"}
+        for key in ("cuda_version", "gpu_name", "nvidia_driver"):
+            if record[key].strip().upper() in placeholders:
+                raise RuntimeError(f"{label} CUDA {key} must be an exact observed value")
+    elif record["cuda_version"] is not None or record["nvidia_driver"] is not None:
+        raise RuntimeError(f"{label} non-CUDA runs must use null CUDA/driver fields")
+    if record["detector_lock_sha256"] != DETECTOR_LOCK_SHA256:
+        raise RuntimeError(f"{label} detector lock differs")
+    return record
+
+
 def environment() -> dict[str, Any]:
     import torch
     import ultralytics
@@ -463,18 +515,43 @@ def environment() -> dict[str, Any]:
                 return line.split("Chip:", 1)[1].strip()
         return "UNKNOWN"
 
-    return {
+    chip = hardware_chip()
+    cuda_available = bool(torch.cuda.is_available())
+    mps_available = bool(torch.backends.mps.is_available())
+    cuda_version = str(torch.version.cuda) if cuda_available and torch.version.cuda else None
+    if cuda_available:
+        gpu_name = str(torch.cuda.get_device_name(0))
+        try:
+            driver_output = subprocess.run(
+                ["nvidia-smi", "--query-gpu=driver_version", "--format=csv,noheader"],
+                capture_output=True,
+                text=True,
+                check=True,
+            ).stdout.strip()
+            nvidia_driver = driver_output.splitlines()[0].strip() or "UNKNOWN"
+        except (OSError, subprocess.CalledProcessError):
+            nvidia_driver = "UNKNOWN"
+    else:
+        gpu_name = chip if mps_available else "CPU"
+        nvidia_driver = None
+    record = {
         "git_commit": git("rev-parse", "HEAD"),
         "git_dirty_files": len(git("status", "--porcelain").splitlines()),
         "detector_lock_sha256": sha256_file(DETECTOR_ROOT / "uv.lock"),
         "python": platform.python_version(),
         "platform": platform.platform(),
         "machine": platform.machine(),
-        "hardware_chip": hardware_chip(),
-        "torch": torch.__version__,
-        "ultralytics": ultralytics.__version__,
-        "mps_available": bool(torch.backends.mps.is_available()),
+        "hardware_chip": chip,
+        "torch": str(torch.__version__),
+        "ultralytics": str(ultralytics.__version__),
+        "mps_available": mps_available,
+        "cuda_available": cuda_available,
+        "cuda_version": cuda_version,
+        "gpu_name": gpu_name,
+        "nvidia_driver": nvidia_driver,
+        "runtime_backend": "cuda" if cuda_available else "mps" if mps_available else "cpu",
     }
+    return validate_environment_record(record, "observed environment")
 
 
 def disable_telemetry() -> None:

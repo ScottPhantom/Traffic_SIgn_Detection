@@ -169,6 +169,11 @@ def test_run_weight_requires_independent_registry_anchor(
         "torch": "2.14.1",
         "ultralytics": "8.4.172",
         "mps_available": False,
+        "cuda_available": True,
+        "cuda_version": "13.0",
+        "gpu_name": "NVIDIA L4",
+        "nvidia_driver": "580.00",
+        "runtime_backend": "cuda",
     }
     record = {
         "experiment": "D1",
@@ -215,6 +220,9 @@ def test_run_weight_requires_independent_registry_anchor(
     assert contract.bind_run_weights(str(best))["run_attestation_sha256"] == claim[
         "run_attestation_sha256"
     ]
+    last.write_bytes(b"tampered last checkpoint")
+    with pytest.raises(RuntimeError, match="last.pt"):
+        contract.inspect_run_weights(str(best))
 
 
 def test_final_aggregate_rejects_one_weight_relabelled_as_three_seeds(
@@ -391,6 +399,11 @@ def valid_latency_report(weight: dict[str, object]) -> dict[str, object]:
             "torch": "2.14.1",
             "ultralytics": "8.4.172",
             "mps_available": True,
+            "cuda_available": False,
+            "cuda_version": None,
+            "gpu_name": "Apple M1 Pro",
+            "nvidia_driver": None,
+            "runtime_backend": "mps",
         },
     }
 
@@ -421,6 +434,33 @@ def test_final_report_and_latency_domain_positive_path(
     assert cli._validate_test_report(tmp_path / "test.json", report) == (weight, locked)
     latency = valid_latency_report(weight)
     assert cli._validate_latency_report(tmp_path / "latency.json", latency) == (weight, locked)
+
+
+def test_environment_contract_records_cuda_gpu_driver_and_rejects_contradictions() -> None:
+    cuda = {
+        "git_commit": "a" * 40,
+        "git_dirty_files": 0,
+        "detector_lock_sha256": contract.DETECTOR_LOCK_SHA256,
+        "python": "3.12.0",
+        "platform": "Linux-6-x86_64",
+        "machine": "x86_64",
+        "hardware_chip": "UNKNOWN",
+        "torch": "2.14.1",
+        "ultralytics": "8.4.172",
+        "mps_available": False,
+        "cuda_available": True,
+        "cuda_version": "13.0",
+        "gpu_name": "NVIDIA L4",
+        "nvidia_driver": "580.00",
+        "runtime_backend": "cuda",
+    }
+    assert contract.validate_environment_record(cuda, "synthetic", require_clean=True) is cuda
+    cuda["nvidia_driver"] = None
+    with pytest.raises(RuntimeError, match="must record CUDA"):
+        contract.validate_environment_record(cuda, "synthetic")
+    cuda["nvidia_driver"] = "UNKNOWN"
+    with pytest.raises(RuntimeError, match="exact observed value"):
+        contract.validate_environment_record(cuda, "synthetic")
 
 
 @pytest.mark.parametrize(

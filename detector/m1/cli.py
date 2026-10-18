@@ -972,34 +972,9 @@ def _validate_latency_report(
     passed = _report_bool(report["passed"], f"latency passed flag: {path}")
     if passed != (p95 <= contract.GATES["latency_p95_ms"]):
         raise RuntimeError(f"latency passed flag differs from p95: {path}")
-    environment = _exact_object(
-        report["environment"],
-        {
-            "git_commit",
-            "git_dirty_files",
-            "detector_lock_sha256",
-            "python",
-            "platform",
-            "machine",
-            "hardware_chip",
-            "torch",
-            "ultralytics",
-            "mps_available",
-        },
-        f"latency environment: {path}",
+    environment = contract.validate_environment_record(
+        report["environment"], f"latency environment: {path}"
     )
-    for key in (
-        "git_commit",
-        "python",
-        "platform",
-        "machine",
-        "hardware_chip",
-        "torch",
-        "ultralytics",
-    ):
-        _report_string(environment[key], f"latency environment {key}: {path}")
-    _report_count(environment["git_dirty_files"], f"latency environment dirty files: {path}")
-    _report_bool(environment["mps_available"], f"latency environment MPS flag: {path}")
     if not (
         report["device"] == "mps"
         and environment.get("hardware_chip") == "Apple M1 Pro"

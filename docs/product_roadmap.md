@@ -148,7 +148,7 @@ sample nhỏ hoặc class hiếm, báo confidence interval/repeated seeds và su
 | Milestone | Phạm vi/deliverable | Gate hoàn thành | Trạng thái |
 | --- | --- | --- | --- |
 | M0 — Data governance | WP1–WP37-R1 (chi tiết từng WP trong `PROJECT_MEMORY.md`). Đã duyệt D-01…D-04; split WP36-R1 được owner chấp nhận (test niêm phong `afa03d4b…`); dataset card WP37-R1. D-05 đã duyệt (`docs/review/d05_owner_decision_record.md`) | Gate 0 PASS | **GATE 0 MỞ (2026-10-18): G0.1–G0.9 PASS + D-05 ĐÃ DUYỆT** |
-| M1 — Training package | dataset loader crop, config/seed/logging, corrected augmentation, reproducible train/eval CLI. Track detector: loader YOLO kiểm hash split WP36-R1, nhãn WP33, ảnh WP35 chỉ train, không lật ngang | Clean rerun tạo cùng artifact class/metric tolerance; không còn input-exhaust warning | **M1-R4 QA PASS (2026-10-19, 0 findings)** — R4 bind primary counts/confusion/AP/class hits và latency theo threshold lock/cấu hình test từng seed. Independent matrix: 30 positive + 24 negative đúng kỳ vọng; PM/QA gates: 51/51 verifier, root M1/crop 16/16, detector 53/53, Ruff/locks/Graft PASS. Chưa train hoặc mở test; bước tiếp theo là checkpoint source rồi dựng đường Colab train/val riêng tư |
+| M1 — Training package | dataset loader crop, config/seed/logging, corrected augmentation, reproducible train/eval CLI. Track detector: loader YOLO kiểm hash split WP36-R1, nhãn WP33, ảnh WP35 chỉ train, không lật ngang; Colab train/val-only bundle + SQLite/text logging + hashed result package | Clean rerun tạo cùng artifact class/metric tolerance; không còn input-exhaust warning | **M1-R4 + M1-Colab-R3 QA PASS (2026-10-19, 0 findings)** — R4 khóa metric/evaluation contract. Colab-R3 khóa exact 8 result artifacts, cả hai checkpoint, token-exact train command, frozen sync, CUDA identity và sealed-test exclusion. QA matrix Colab: 13 positive + 86 adversarial đúng kỳ vọng; gates: root targeted 38/38, detector 54/54, verifier 51/51, Ruff/locks/Graft PASS. Chưa upload, chạy Colab, train hoặc mở test; bước tiếp theo là commit/push rồi one-epoch smoke |
 | M2 — Classifier study | E1, E2, E3 theo experiment matrix | Independent classifier holdout + toàn bộ metrics/artifacts | PROPOSAL |
 | M3 — Calibration/OOD | E4 MSP/temperature baseline và ablation OOD | Selective/OOD report; threshold được chọn trên validation, không trên test | PROPOSAL |
 | M4 — Full-scene detector | D1 bbox training/evaluation, detector -> crop contract | Detector metrics pass ngưỡng được duyệt; error analysis hoàn chỉnh | PROPOSAL — **ƯU TIÊN KẾ TIẾP** (owner 2026-10-17: detector VN trước, prototype sau) |
@@ -164,6 +164,10 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
   `v8.4.0`, lưu local ngoài Git, load PASS và pin SHA-256 `85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5`.
 - Owner chọn Colab và cho phép upload riêng tư chỉ train/val; test không upload. Colab phải lưu
   log/run artifacts có thể audit theo notebook VGG16 mà owner chỉ định.
+- Đường Colab đã đạt independent QA PASS ở R3; canonical record
+  `docs/review/m1_colab_r3_independent_qa_record.md`, SHA-256
+  `4b3ddcfebcb7b055dc42c229cd890234bf6decd32e8fe2a965d372732a5503c0`. Đây là PASS của package
+  controls; smoke GPU thật vẫn chưa chạy.
 - Owner chọn chạy cả hai baseline: YOLO 54 lớp và detector một lớp + classifier. Baseline 54 lớp
   giữ gate D-05 hiện tại; baseline thứ hai cần addendum metric/gate trước khi dùng sealed test.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
