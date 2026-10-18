@@ -187,6 +187,23 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
   Gates đạt 31/31 targeted, 43/43 cascade kết hợp, 79/79 detector và 52/52 verifiers.
   Canonical record: `docs/review/d1_cascade_colab_r2_independent_qa_record.md`. PASS này chỉ
   duyệt package/control; chưa chạy Colab smoke, training, result hay sealed test.
+- Hướng dẫn Owner tự vận hành smoke/pilot YOLO 54 lớp nằm tại
+  `docs/d1_colab_operator_guide.md`. Tài liệu mô tả log text + SQLite + execution JSON trên Drive,
+  run label bất biến, kiểm result archive và xử lý lỗi; nó không thay thế QA smoke và không mở
+  quyền dùng sealed test.
+  Guide R1 nhận independent QA FAIL (1 High, 1 Medium, 1 Low). R2 bắt buộc hash lại chính
+  archive/sidecar đang mount trước khi đọc manifest, khóa batch recovery xuyên smoke/pilot/seeds
+  và yêu cầu Owner duyệt gate successor; R2 đang chờ independent QA.
+  R2 đóng High/Medium nhưng independent QA FAIL còn 1 Low do guide chưa nói rõ `append-only`.
+  R3 đóng lỗi đó nhưng independent QA FAIL còn 1 Medium do đặt threshold-lock trước khi có đủ ba
+  validation report. R4 đóng lỗi thứ tự nhưng independent QA FAIL còn 1 Medium vì thiếu run
+  registry đã review + commit sạch, khiến validation evaluate bị CLI từ chối. R5 thêm registry
+  gate cho cả pilot và ba final weights, complete-run placement dưới repository-level
+  `results/experiments/`, QA/commit registry không đổi, ba final `eval_val.json`, rồi mới tạo một
+  confidence/NMS lock duy nhất. R5 nhận **independent QA PASS 2026-10-19 với 0 finding**
+  (`docs/review/d1_colab_operator_guide_r5_independent_qa_record.md`, SHA-256
+  `d6bb156fa196caf03dfed07eca465748189266ee43a666921e1dae9653632be0`). PASS này chỉ duyệt guide
+  và local controls; chưa có Colab run, training, registry, threshold lock hay sealed-test access.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
   DATASET01-derived review renders và raw/processed/model files không được đưa vào checkpoint.
 - Canonical records: `docs/review/m1_pretrained_weights_owner_response_record.md`,

@@ -1107,6 +1107,29 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      `docs/review/d1_cascade_classifier_r2_independent_qa_record.md`. No architecture was selected
      and no classifier run, training or sealed-test use exists; the cascade gate addendum remains
      unapproved.
+     Owner self-operation for the primary D1 Colab path is documented in
+     `docs/d1_colab_operator_guide.md`: it covers the Drive bundle, L4 setup, one-epoch smoke,
+     continuously persisted text/SQLite/execution logs, unique run labels, failure recovery,
+     result verification and the pilot/three-seed/sealed-test sequence. The guide does not change
+     authorization or prove that any Colab cell has run.
+     Guide R1 failed independent QA because it did not require hashing the mounted Drive bytes,
+     gave inconsistent batch-4 OOM/pilot advice and omitted explicit Owner approval for a gate
+     successor. R2 adds those controls and is awaiting independent QA; R1 remains FAIL evidence.
+     R2 closed the High/Medium findings but failed QA on one Low wording ambiguity: the guide did
+     not itself say the gate successor must be append-only. R3 closed that wording gap but failed
+     independent QA on one Medium workflow contradiction: it placed a threshold-lock step before
+     the required three final validation reports. R4 removed the premature lock but failed
+     independent QA on one Medium executable-gap finding: it omitted the mandatory committed clean
+     `d1_run_registry.json`, so `evaluate --split val` would fail closed. R5 adds the exact
+     pilot and final `register-runs` gates, complete-run placement under the repository-level
+     `results/experiments/`, independent registry review, unchanged clean commits, three final
+     `eval_val.json` reports and the single confidence/NMS lock before any sealed-test access.
+     R5 received **independent QA PASS with 0 findings** on 2026-10-19; canonical record
+     `docs/review/d1_colab_operator_guide_r5_independent_qa_record.md`, SHA-256
+     `d6bb156fa196caf03dfed07eca465748189266ee43a666921e1dae9653632be0`.
+     This is documentation/control approval only: no Colab cell, smoke, training, run registry,
+     threshold lock or sealed-test evaluation has occurred. All earlier FAIL records remain
+     immutable.
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 
