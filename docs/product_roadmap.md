@@ -172,9 +172,21 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
 - Owner chọn chạy cả hai baseline: YOLO 54 lớp và detector một lớp + classifier. Baseline 54 lớp
   giữ gate D-05 hiện tại. Dataset detector một lớp R1 FAIL QA do CLI output-symlink bypass; R2 đã
   thêm lexical-path/lstat guards và nhận independent QA PASS ngày 2026-10-19 với 0 finding
-  (`docs/review/d1_cascade_dataset_r2_independent_qa_record.md`). Classifier 54 lớp và runner chưa
-  được xây. Addendum metric/gate vẫn là đề xuất chưa được Owner duyệt; baseline thứ hai chưa đủ
-  điều kiện dùng sealed test.
+  (`docs/review/d1_cascade_dataset_r2_independent_qa_record.md`). Gói classifier 54 lớp R1 nhận
+  independent QA FAIL (1 High, 1 Medium) vì report symlink và metadata symlink. R2 đã thêm lexical
+  containment, kiểm `lstat`, regular-file guard và atomic report writes; independent QA **PASS với
+  0 finding** ngày 2026-10-19 sau 25/25 targeted, 79/79 detector và 14/14 kiểm tra tấn công độc lập
+  (`docs/review/d1_cascade_classifier_r2_independent_qa_record.md`). Chưa train hay chọn kiến trúc.
+  Addendum metric/gate vẫn là đề xuất chưa được Owner duyệt; baseline thứ hai chưa đủ điều kiện dùng
+  sealed test.
+- Đường Colab của detector một lớp R1 **FAIL independent QA** (0 Critical, 3 High, 1 Low) do
+  standalone verifier, run contract và partial-output symlink. R2 đã thêm semantic archive replay,
+  exact data/model/CUDA/command contract, exclusive no-follow partial creation và notebook sạch
+  Ruff; independent QA **PASS 2026-10-19 với 0 finding** sau khi replay package 8 file, thử
+  contract/checkpoint giả đã re-hash, symlink output và verify đủ bundle lịch sử 5.888 file.
+  Gates đạt 31/31 targeted, 43/43 cascade kết hợp, 79/79 detector và 52/52 verifiers.
+  Canonical record: `docs/review/d1_cascade_colab_r2_independent_qa_record.md`. PASS này chỉ
+  duyệt package/control; chưa chạy Colab smoke, training, result hay sealed test.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
   DATASET01-derived review renders và raw/processed/model files không được đưa vào checkpoint.
 - Canonical records: `docs/review/m1_pretrained_weights_owner_response_record.md`,

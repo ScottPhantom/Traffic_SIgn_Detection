@@ -1085,8 +1085,28 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      preserves the lexical output path and guards every existing component with `lstat`; it
      received independent QA PASS with 0 findings on 2026-10-19
      (`docs/review/d1_cascade_dataset_r2_independent_qa_record.md`; 12/12 targeted tests, 52/52
-     package verifiers and 54/54 detector tests). The gate addendum remains an unapproved proposal;
-     no cascade classifier, run, training or sealed-test use exists.
+     package verifiers and 54/54 detector tests). The gate addendum remains an unapproved proposal.
+     Cascade-detector Colab R1 then failed independent QA with 0 Critical, 3 High and 1 Low: its
+     standalone verifier trusted a self-consistent sidecar, its run contract accepted contradictory
+     data/model/CUDA claims, its packager followed a partial-output symlink and its notebook had six
+     Ruff findings. R2 preserves both R1 records, semantically replays archived contracts/SQLite,
+     binds the exact live data/model/environment and token-exact command, creates output partials
+     exclusively with no-follow guards, and fixes notebook Ruff. Its 31/31 targeted, 43/43 combined
+     cascade, 79/79 detector and 52/52 verifier gates pass. Independent QA then returned **PASS
+     with 0 findings** on 2026-10-19 after standalone semantic replay, re-hashed contract/checkpoint
+     forgeries, no-follow output attacks, exact 5,888-member historical-bundle verification and all
+     mechanical gates. Canonical verdict:
+     `docs/review/d1_cascade_colab_r2_independent_qa_record.md`. This is package/control approval
+     only; no Colab smoke, training, result or sealed-test access has occurred.
+     Crop-classifier R1 then received independent QA FAIL (0 Critical, 1 High, 1 Medium): report
+     symlinks could overwrite external files and run metadata could resolve outside the run. R2
+     adds lexical containment, component-wise `lstat`, regular-file enforcement and atomic report
+     writes. Independent QA returned **PASS with 0 findings** on 2026-10-19 after 25/25 targeted,
+     79/79 detector and 14/14 independent output/provenance attack assertions, including the real
+     evaluate/latency CLI external-target controls. Canonical verdict:
+     `docs/review/d1_cascade_classifier_r2_independent_qa_record.md`. No architecture was selected
+     and no classifier run, training or sealed-test use exists; the cascade gate addendum remains
+     unapproved.
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 
