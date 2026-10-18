@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-10",
+  "status": {
+    "source_candidate": "VERIFIED_BY_EXACT_FILE_HASHES",
+    "license": "CONFLICTING_AND_BLOCKED",
+    "gate0_1": "BLOCKED"
+  },
+  "local": {
+    "archive_path": "/Users/nguyentantai/Library/Mobile Documents/com~apple~CloudDocs/FALL 2026 KỲ 4/CPV301/Data/DATASET01/archive.zip",
+    "archive_sha256": "052bc980a7206f8ddd1ec2e59098dbd60a42036d3c7f7384ace4fe6416cbaa76",
+    "embedded_license_files": [],
+    "zip_comment": "",
+    "images_with_exif": 0,
+    "images_with_gps": 0
+  },
+  "remote_candidate": {
+    "provider": "Hugging Face",
+    "dataset": "thanhhiepvos/vietnam_traffic_sign",
+    "dataset_url": "https://huggingface.co/datasets/thanhhiepvos/vietnam_traffic_sign",
+    "commit": "d869116a5f89e9ba2aa36b1c0582a39c310e3d0c",
+    "commit_url": "https://huggingface.co/datasets/thanhhiepvos/vietnam_traffic_sign/commit/d869116a5f89e9ba2aa36b1c0582a39c310e3d0c",
+    "creator_claim": "Data Palpating Team",
+    "metadata_license": "cc-by-sa-3.0",
+    "card_prose_license": "CC-BY-SA-4.0",
+    "license_conflict": true
+  },
+  "exact_file_matches": [
+    {
+      "path": "archive/classes_en.txt",
+      "local_sha256": "64eb7592cf256765ee691e734499dab7488090e0142bc68672db39ee93e0e9b1",
+      "remote_sha256": "64eb7592cf256765ee691e734499dab7488090e0142bc68672db39ee93e0e9b1",
+      "match": true
+    },
+    {
+      "path": "archive/labels/0001.txt",
+      "local_sha256": "12b615e4b6b928137ccb7edf59b05f332f7d9c9ccf53c8fc822d595bb6070a6c",
+      "remote_sha256": "12b615e4b6b928137ccb7edf59b05f332f7d9c9ccf53c8fc822d595bb6070a6c",
+      "match": true
+    },
+    {
+      "path": "archive/images/0001.jpg",
+      "local_sha256": "f8b74d8d3d639966c51ce337581153ef1b7485385c099ae2e8d8cff4f8d1aedb",
+      "remote_sha256": "f8b74d8d3d639966c51ce337581153ef1b7485385c099ae2e8d8cff4f8d1aedb",
+      "match": true
+    }
+  ],
+  "attempted_paths": [
+    {
+      "method": "exact archive sha256 web search",
+      "result": "no public match"
+    },
+    {
+      "method": "exact English and Vietnamese class string web search",
+      "result": "matched Hugging Face dataset and Roboflow derivatives"
+    },
+    {
+      "method": "local ZIP metadata and comment",
+      "result": "empty comment; file timestamps but no owner or license evidence"
+    },
+    {
+      "method": "EXIF and GPS scan across 3216 images",
+      "result": "no EXIF or GPS metadata"
+    },
+    {
+      "method": "linked augmentation repository",
+      "url": "https://github.com/nguyenmai333/Image-Augmentation",
+      "result": "describes augmentation tooling; does not establish capture/group lineage"
+    }
+  ],
+  "unresolved": [
+    "Which license version controls: CC-BY-SA-3.0 metadata or CC-BY-SA-4.0 card prose?",
+    "Who owns the original images and has authority to license them?",
+    "Who generated the local train/test split files?",
+    "What video, route, scene, session, or physical-sign groups produced the images?"
+  ],
+  "evidence_boundary": "Source identity is strongly supported by exact file hashes. License and capture/group provenance remain unresolved, so training is not authorized."
+}

@@ -1,0 +1,2250 @@
+{
+  "batch_id": "M0-WP16-D02-C-SEQUENCE-BATCH-A",
+  "decision_count": 100,
+  "decisions": [
+    {
+      "batch_position": 1,
+      "canonical_review_order": 1,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_001.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0003",
+        "0004"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0001",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 2,
+      "canonical_review_order": 2,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_002.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0007",
+        "0008"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0002",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 3,
+      "canonical_review_order": 3,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_003.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0009",
+        "0010"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0003",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 4,
+      "canonical_review_order": 4,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_004.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0011",
+        "0012"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0004",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 5,
+      "canonical_review_order": 5,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_005.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0014",
+        "0015"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0005",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 6,
+      "canonical_review_order": 6,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_006.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0018",
+        "0019",
+        "0020"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0006",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 7,
+      "canonical_review_order": 7,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_007.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0021",
+        "0022"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0007",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 8,
+      "canonical_review_order": 8,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_008.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 8,
+      "members": [
+        "0027",
+        "0028",
+        "0029",
+        "0030",
+        "0031",
+        "0032",
+        "0033",
+        "0034"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0008",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 9,
+      "canonical_review_order": 9,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_009.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0036",
+        "0037",
+        "0038",
+        "0039"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0009",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 10,
+      "canonical_review_order": 10,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_010.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0040",
+        "0041"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0010",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 11,
+      "canonical_review_order": 11,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_011.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0042",
+        "0043"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0011",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 12,
+      "canonical_review_order": 12,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_012.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0047",
+        "0048"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0012",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 13,
+      "canonical_review_order": 13,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_013.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0049",
+        "0050",
+        "0051"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0013",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 14,
+      "canonical_review_order": 14,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_014.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "0052",
+        "0053",
+        "0054",
+        "0055",
+        "0056"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0014",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 15,
+      "canonical_review_order": 15,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_015.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0057",
+        "0058",
+        "0059"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0015",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 16,
+      "canonical_review_order": 16,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_016.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0062",
+        "0063",
+        "0064",
+        "0065"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0016",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 17,
+      "canonical_review_order": 17,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_017.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0066",
+        "0067"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0017",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 18,
+      "canonical_review_order": 18,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_018.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0070",
+        "0071"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0018",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 19,
+      "canonical_review_order": 19,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_019.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 13,
+      "members": [
+        "0072",
+        "0073",
+        "0074",
+        "0075",
+        "0076",
+        "0077",
+        "0078",
+        "0079",
+        "0080",
+        "0081",
+        "0082",
+        "0083",
+        "0084"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0019",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 20,
+      "canonical_review_order": 20,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_020.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 7,
+      "members": [
+        "0085",
+        "0086",
+        "0087",
+        "0088",
+        "0089",
+        "0090",
+        "0091"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0020",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 21,
+      "canonical_review_order": 21,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_021.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0098",
+        "0099"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0021",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 22,
+      "canonical_review_order": 22,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_022.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0101",
+        "0102",
+        "0103"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0022",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 23,
+      "canonical_review_order": 23,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_023.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0113",
+        "0114",
+        "0115"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0023",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 24,
+      "canonical_review_order": 24,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_024.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0116",
+        "0117"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0024",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 25,
+      "canonical_review_order": 25,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_025.jpg",
+        "docs/review/assets/wp3/grouping/batch_001.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0118",
+        "0119",
+        "0120"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0025",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 26,
+      "canonical_review_order": 26,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_026.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0121",
+        "0122"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0026",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 27,
+      "canonical_review_order": 27,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_027.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 8,
+      "members": [
+        "0123",
+        "0124",
+        "0125",
+        "0126",
+        "0127",
+        "0128",
+        "0129",
+        "0130"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0027",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 28,
+      "canonical_review_order": 28,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_028.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0132",
+        "0133"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0028",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 29,
+      "canonical_review_order": 29,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_029.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0135",
+        "0136"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0029",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 30,
+      "canonical_review_order": 30,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_030.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0141",
+        "0142",
+        "0143",
+        "0144"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0030",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 31,
+      "canonical_review_order": 31,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_031.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0145",
+        "0146"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0031",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 32,
+      "canonical_review_order": 32,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_032.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0148",
+        "0149",
+        "0150"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0032",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 33,
+      "canonical_review_order": 33,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_033.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0151",
+        "0152",
+        "0153",
+        "0154"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0033",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 34,
+      "canonical_review_order": 34,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_034.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0158",
+        "0159",
+        "0160"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0034",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 35,
+      "canonical_review_order": 35,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_035.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0162",
+        "0163",
+        "0164"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0035",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 36,
+      "canonical_review_order": 36,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_036.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0169",
+        "0170"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0036",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 37,
+      "canonical_review_order": 37,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_037.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0173",
+        "0174"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0037",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 38,
+      "canonical_review_order": 38,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_038.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 6,
+      "members": [
+        "0189",
+        "0190",
+        "0191",
+        "0192",
+        "0193",
+        "0194"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0038",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 39,
+      "canonical_review_order": 39,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_039.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 9,
+      "members": [
+        "0196",
+        "0197",
+        "0198",
+        "0199",
+        "0200",
+        "0201",
+        "0202",
+        "0203",
+        "0204"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0039",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 40,
+      "canonical_review_order": 40,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_040.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0205",
+        "0206",
+        "0207",
+        "0208"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0040",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 41,
+      "canonical_review_order": 41,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_041.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0209",
+        "0210"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0041",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 42,
+      "canonical_review_order": 42,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_042.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0211",
+        "0212",
+        "0213"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0042",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 43,
+      "canonical_review_order": 43,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_043.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 7,
+      "members": [
+        "0214",
+        "0215",
+        "0216",
+        "0217",
+        "0218",
+        "0219",
+        "0220"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0043",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 44,
+      "canonical_review_order": 44,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_044.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 6,
+      "members": [
+        "0222",
+        "0223",
+        "0224",
+        "0225",
+        "0226",
+        "0227"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0044",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 45,
+      "canonical_review_order": 45,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_045.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0232",
+        "0233"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0045",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 46,
+      "canonical_review_order": 46,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_046.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0234",
+        "0235"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0046",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 47,
+      "canonical_review_order": 47,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_047.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 6,
+      "members": [
+        "0236",
+        "0237",
+        "0238",
+        "0239",
+        "0240",
+        "0241"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0047",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 48,
+      "canonical_review_order": 48,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_048.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0242",
+        "0243"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0048",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 49,
+      "canonical_review_order": 49,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_049.jpg",
+        "docs/review/assets/wp3/grouping/batch_002.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0244",
+        "0245"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0049",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 50,
+      "canonical_review_order": 51,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_050.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0252",
+        "0253"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0051",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 51,
+      "canonical_review_order": 52,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_051.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0254",
+        "0255"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0052",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 52,
+      "canonical_review_order": 53,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_052.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0259",
+        "0260"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0053",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 53,
+      "canonical_review_order": 54,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_053.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0261",
+        "0262",
+        "0263"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0054",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 54,
+      "canonical_review_order": 55,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_054.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 10,
+      "members": [
+        "0269",
+        "0270",
+        "0271",
+        "0272",
+        "0273",
+        "0274",
+        "0275",
+        "0276",
+        "0277",
+        "0278"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0055",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 55,
+      "canonical_review_order": 56,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_055.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 13,
+      "members": [
+        "0279",
+        "0280",
+        "0281",
+        "0282",
+        "0283",
+        "0284",
+        "0285",
+        "0286",
+        "0287",
+        "0288",
+        "0289",
+        "0290",
+        "0291"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0056",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 56,
+      "canonical_review_order": 57,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_056.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "0292",
+        "0293",
+        "0294",
+        "0295",
+        "0296"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0057",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 57,
+      "canonical_review_order": 58,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_057.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0297",
+        "0298"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0058",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 58,
+      "canonical_review_order": 59,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_058.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0299",
+        "0300"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0059",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 59,
+      "canonical_review_order": 60,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_059.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0301",
+        "0302"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0060",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 60,
+      "canonical_review_order": 61,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_060.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0305",
+        "0306"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0061",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 61,
+      "canonical_review_order": 62,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_061.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0309",
+        "0310"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0062",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 62,
+      "canonical_review_order": 63,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_062.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0314",
+        "0315",
+        "0316"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0063",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 63,
+      "canonical_review_order": 64,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_063.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0317",
+        "0318"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0064",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 64,
+      "canonical_review_order": 65,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_064.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0319",
+        "0320"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0065",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 65,
+      "canonical_review_order": 66,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_065.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0322",
+        "0323"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0066",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 66,
+      "canonical_review_order": 67,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_066.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0326",
+        "0327"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0067",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 67,
+      "canonical_review_order": 68,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_067.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0329",
+        "0330",
+        "0331"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0068",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 68,
+      "canonical_review_order": 69,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_068.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "0332",
+        "0333",
+        "0334",
+        "0335",
+        "0336"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0069",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 69,
+      "canonical_review_order": 70,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_069.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0340",
+        "0341",
+        "0342"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0070",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 70,
+      "canonical_review_order": 71,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_070.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0343",
+        "0344",
+        "0345",
+        "0346"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0071",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 71,
+      "canonical_review_order": 72,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_071.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 6,
+      "members": [
+        "0347",
+        "0348",
+        "0349",
+        "0350",
+        "0351",
+        "0352"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0072",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 72,
+      "canonical_review_order": 73,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_072.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0354",
+        "0355",
+        "0356"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0073",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 73,
+      "canonical_review_order": 74,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_073.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 6,
+      "members": [
+        "0357",
+        "0358",
+        "0359",
+        "0360",
+        "0361",
+        "0362"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0074",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 74,
+      "canonical_review_order": 75,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_074.jpg",
+        "docs/review/assets/wp3/grouping/batch_003.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0363",
+        "0364",
+        "0365"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0075",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 75,
+      "canonical_review_order": 76,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_075.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0367",
+        "0368"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0076",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 76,
+      "canonical_review_order": 77,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_076.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0369",
+        "0370",
+        "0371"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0077",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 77,
+      "canonical_review_order": 78,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_077.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 6,
+      "members": [
+        "0372",
+        "0373",
+        "0374",
+        "0375",
+        "0376",
+        "0377"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0078",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 78,
+      "canonical_review_order": 79,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_078.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0378",
+        "0379"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0079",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 79,
+      "canonical_review_order": 80,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_079.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0380",
+        "0381",
+        "0382"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0080",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 80,
+      "canonical_review_order": 81,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_080.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0383",
+        "0384"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0081",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 81,
+      "canonical_review_order": 82,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_081.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0385",
+        "0386",
+        "0387"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0082",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 82,
+      "canonical_review_order": 83,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_082.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0388",
+        "0389",
+        "0390"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0083",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 83,
+      "canonical_review_order": 84,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_083.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0391",
+        "0392",
+        "0393",
+        "0394"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0084",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 84,
+      "canonical_review_order": 85,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_084.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0397",
+        "0398"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0085",
+      "rationale": "All member frames preserve one capture trajectory and one annotated physical sign under small viewpoint changes.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 85,
+      "canonical_review_order": 86,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_085.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0405",
+        "0406"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0086",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 86,
+      "canonical_review_order": 87,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_086.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0407",
+        "0408"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0087",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 87,
+      "canonical_review_order": 88,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_087.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "0409",
+        "0410",
+        "0411",
+        "0412",
+        "0413"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0088",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 88,
+      "canonical_review_order": 89,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_088.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0414",
+        "0415"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0089",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 89,
+      "canonical_review_order": 90,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_089.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0418",
+        "0419",
+        "0420",
+        "0421"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0090",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 90,
+      "canonical_review_order": 91,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_090.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0427",
+        "0428"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0091",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 91,
+      "canonical_review_order": 92,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_091.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0439",
+        "0440"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0092",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 92,
+      "canonical_review_order": 93,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_092.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0445",
+        "0446",
+        "0447"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0093",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 93,
+      "canonical_review_order": 94,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_093.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0449",
+        "0450",
+        "0451"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0094",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 94,
+      "canonical_review_order": 95,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_094.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0454",
+        "0455"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0095",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 95,
+      "canonical_review_order": 96,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_095.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0471",
+        "0472"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0096",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 96,
+      "canonical_review_order": 97,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_096.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0473",
+        "0474",
+        "0475",
+        "0476"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0097",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 97,
+      "canonical_review_order": 98,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_097.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0478",
+        "0479"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0098",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 98,
+      "canonical_review_order": 99,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_098.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0480",
+        "0481",
+        "0482"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0099",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 99,
+      "canonical_review_order": 100,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_099.jpg",
+        "docs/review/assets/wp3/grouping/batch_004.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "0483",
+        "0484",
+        "0485",
+        "0486",
+        "0487"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0100",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 100,
+      "canonical_review_order": 101,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp16/sequence_batch_a/page_100.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0491",
+        "0492"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0101",
+      "rationale": "All member frames preserve one capture trajectory while showing multiple annotated physical sign instances.",
+      "reviewed_at": "2026-10-11T17:08:50+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    }
+  ],
+  "evidence_boundary": "SEQUENCE_BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+  "reviewed_at": "2026-10-11T17:08:50+07:00",
+  "reviewer": "PM/Codex provisional sequence reviewer",
+  "schema_version": 1,
+  "status": "PM_REVIEWED_AWAITING_INDEPENDENT_QA"
+}

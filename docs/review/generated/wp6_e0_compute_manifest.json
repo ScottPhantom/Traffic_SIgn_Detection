@@ -1,0 +1,157 @@
+{
+  "artifact_count": 3,
+  "artifact_count_semantics": "EXCLUDES_MANIFEST_FILE",
+  "artifacts": [
+    {
+      "id": "readiness_evidence",
+      "path": "docs/review/generated/wp6_e0_compute_readiness.json",
+      "sha256": "0558b59be66bcb81e6b1f49f7a21b3fd72d563f0722d4c684beae0cfd1ad7fa3",
+      "size": 28633
+    },
+    {
+      "id": "benchmark_attestation",
+      "path": "docs/review/generated/wp6_e0_compute_attestation.json",
+      "sha256": "5102dc7493cd32f0f958430b3d0dd25b0e288ba10052b81ee17236b4acfb3c56",
+      "size": 3234
+    },
+    {
+      "id": "human_report",
+      "path": "docs/review/wp6_e0_compute_readiness_report.md",
+      "sha256": "93c1373e26c4df44a015db089cb202fe383d88b3099259522a93ffec9486c9a6",
+      "size": 4873
+    }
+  ],
+  "evidence_boundary": "FROZEN_E0_LOCAL_PREFLIGHT_ONLY_NO_D05_APPROVAL_NO_CALIBRATION_NO_OOD_CLAIM_NO_VIETNAM_VALIDATION_NO_TRAINING",
+  "gate0": "BLOCKED",
+  "manifest_path": "docs/review/generated/wp6_e0_compute_manifest.json",
+  "manifest_self_in_artifact_count": false,
+  "package": "M0-WP6",
+  "schema_version": 2,
+  "source_count": 20,
+  "sources": [
+    {
+      "id": "model",
+      "path": "models/VGG16_model.h5",
+      "sha256": "745cf3f6e9f5edfe32954866d93f07d9504f6bc2d4f3667c8b8f99f1c924b565",
+      "size": 17593732
+    },
+    {
+      "id": "gtsrb_train",
+      "path": "data/processed/train.p",
+      "sha256": "5c319e00df7f45a18761e65dfd47341779c310798a71ea3f371659cc4a63da44",
+      "size": 107146452
+    },
+    {
+      "id": "gtsrb_valid",
+      "path": "data/processed/valid.p",
+      "sha256": "7d92b991f95cf3bfcc6e35b88bad506b89e562992c1eb6c1034462a9604b6948",
+      "size": 13578712
+    },
+    {
+      "id": "gtsrb_test",
+      "path": "data/processed/test.p",
+      "sha256": "60b6450ffdb227042eb32f28d15fe77f98ad24dd550cc85eb445b8c0e502e470",
+      "size": 38888118
+    },
+    {
+      "id": "uv_lock",
+      "path": "uv.lock",
+      "sha256": "0562d2fdda3a3a9173973df132bac3f7f88df7ac4fab589b2d2eacc9538a518e",
+      "size": 252175
+    },
+    {
+      "id": "pyproject",
+      "path": "pyproject.toml",
+      "sha256": "e0f45811a0e963d7163cd7f9c0f48a0f719b895c4c8e4c2d9b61d49b383cafe6",
+      "size": 1152
+    },
+    {
+      "id": "e0_manifest",
+      "path": "results/experiments/E0_GTSRB_baseline/manifest.json",
+      "sha256": "24fd31868abb048794e1c656efc3b12dad4f0194e4c54e2b667644565c7d41d4",
+      "size": 1907
+    },
+    {
+      "id": "evaluation_summary",
+      "path": "results/evaluation/gtsrb_test_baseline/summary.json",
+      "sha256": "99884485b8762c89a48feb1194a150f062963ffa64e3444acc27026b99a6864e",
+      "size": 3018
+    },
+    {
+      "id": "evaluation_per_class",
+      "path": "results/evaluation/gtsrb_test_baseline/per_class_metrics.csv",
+      "sha256": "7ba35ccdadbc16416e1987ccfb71541d189608e9a5371f0a68e3370bf52341f8",
+      "size": 3501
+    },
+    {
+      "id": "evaluation_confusion",
+      "path": "results/evaluation/gtsrb_test_baseline/confusion_matrix.csv",
+      "sha256": "8a8daf2ca019177c8605684048c6a06bc07a407c87ed1bdc57e2043317e0d801",
+      "size": 4114
+    },
+    {
+      "id": "evaluation_mistakes",
+      "path": "results/evaluation/gtsrb_test_baseline/high_confidence_mistakes.csv",
+      "sha256": "b42f3463ad2748759fe5ace869815d595afaff167974350408cbfbdbbfa4055f",
+      "size": 114694
+    },
+    {
+      "id": "decision_status",
+      "path": "docs/review/decision_status.json",
+      "sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+      "size": 7864
+    },
+    {
+      "id": "experiment_acceptance",
+      "path": "docs/review/experiment_acceptance_template.md",
+      "sha256": "4d126725dea7464004c60da370eaf84a9ba16dc83b716c04db9d0344e086a4c8",
+      "size": 3836
+    },
+    {
+      "id": "drive_inventory",
+      "path": "docs/drive_inventory.md",
+      "sha256": "35feb56fddc3cc2f9d037643fe0fc6ff8b43b0de651952a9168e006c58577c3f",
+      "size": 2773
+    },
+    {
+      "id": "model_provenance",
+      "path": "docs/model_provenance.md",
+      "sha256": "a13a6b895ef1e51e2fa82a7ae32c1afe4a85f6ff1de3470a2211b01ac1ea8712",
+      "size": 3156
+    },
+    {
+      "id": "initial_assessment",
+      "path": "docs/initial_model_assessment.md",
+      "sha256": "e9e51d90db6b844f4cf51b86bd4c4914dd2b59bb1ccdf1b22d39ca347d6088a0",
+      "size": 5309
+    },
+    {
+      "id": "wp6_script",
+      "path": "scripts/audit_e0_compute_readiness.py",
+      "sha256": "1383f3c4980946ddce20e6239555d8bb797d5a1307735432cc3e1da12d82c81f",
+      "size": 69146
+    },
+    {
+      "id": "inference_source",
+      "path": "src/cpv301_autodrive/inference.py",
+      "sha256": "319401fe57e43108be984caf7d7b199fff3bfbb9937531490000d019db2a7736",
+      "size": 2038
+    },
+    {
+      "id": "evaluation_source",
+      "path": "src/cpv301_autodrive/evaluation.py",
+      "sha256": "3bb62e655dfa3c5dc16a44758031dfc555e1a0cd2d0676f7423014478875cc79",
+      "size": 8654
+    },
+    {
+      "id": "labels_source",
+      "path": "src/cpv301_autodrive/labels.py",
+      "sha256": "e2b1ca7850fc98000cd2048b715d32b9b5302f2f2412ee81a942b169301d6732",
+      "size": 1200
+    }
+  ],
+  "status": "WP6_AWAITING_QA_READ_ONLY_PREFLIGHT",
+  "total_artifact_bytes": 36740,
+  "training_authorized": false,
+  "trusted_attestation_sha256": "5102dc7493cd32f0f958430b3d0dd25b0e288ba10052b81ee17236b4acfb3c56"
+}

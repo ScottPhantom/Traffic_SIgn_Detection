@@ -1,0 +1,81 @@
+{
+  "benchmark_contract": {
+    "batch_size": 1,
+    "excluded_operations": [
+      "pickle file read/deserialization",
+      "source hash verification",
+      "model file load/deserialization",
+      "PIL image object construction from the already-loaded array",
+      "sample selection",
+      "JSON/report serialization"
+    ],
+    "interpretation_boundary": "Observed latency on this local host/backend only. D-05 is unapproved/inactive, so this measurement is not a pass/fail acceptance decision and cannot be generalized to another device, GPU backend, Vietnamese data or end-to-end camera latency.",
+    "iterations_per_repeat": 100,
+    "measured_iterations": 300,
+    "measured_repeats": 3,
+    "split": "gtsrb_test",
+    "timed_operations": [
+      "PIL RGB conversion/check and bilinear resize to 32x32",
+      "NumPy float32 conversion and division by 255",
+      "Keras model.predict with batch_size=1 and output materialization"
+    ],
+    "timing_method": "time.perf_counter_ns around preprocess_image plus keras model.predict",
+    "warmup_iterations": 20
+  },
+  "evidence_boundary": "FROZEN_E0_LOCAL_PREFLIGHT_ONLY_NO_D05_APPROVAL_NO_CALIBRATION_NO_OOD_CLAIM_NO_VIETNAM_VALIDATION_NO_TRAINING",
+  "latency_observation_count": 300,
+  "latency_observations_sha256": "c01ce409b094fa46b76117ea2833c95241e737b219967561618eb450bf3b3887",
+  "latency_statistics": {
+    "max": 106.983,
+    "mean": 22.438574983333336,
+    "min": 19.76825,
+    "p50": 21.739041999999998,
+    "p95": 25.099160750000003,
+    "repeat_mean_cv": 0.03446764592287569,
+    "repeat_means": [
+      21.834103730000002,
+      23.53023666,
+      21.95138456
+    ],
+    "std_population": 5.325001385937912
+  },
+  "model_sha256": "745cf3f6e9f5edfe32954866d93f07d9504f6bc2d4f3667c8b8f99f1c924b565",
+  "package": "M0-WP6",
+  "prediction_trace_sha256": "ecfdc3d7c76d8f8eb7208ec431b6bb1b45104e1bcd0e3e0e5e134e9d31044a1d",
+  "runtime_attestation": {
+    "execution_backend": "TENSORFLOW_CPU_ONLY",
+    "gpu_visible_to_tensorflow": false,
+    "keras_version": "3.15.1",
+    "logical_devices": [
+      {
+        "name": "/device:CPU:0",
+        "type": "CPU"
+      }
+    ],
+    "physical_devices": [
+      {
+        "name": "/physical_device:CPU:0",
+        "type": "CPU"
+      }
+    ],
+    "python_implementation": "CPython",
+    "python_version": "3.12.13",
+    "tensorflow_built_with_cuda": false,
+    "tensorflow_macos_version": null,
+    "tensorflow_metal_version": null,
+    "tensorflow_version": "2.20.0",
+    "uv_version": "uv 0.11.14 (3fdfdc7d4 2026-05-12 aarch64-apple-darwin)"
+  },
+  "runtime_attestation_sha256": "1b901217ddb2f75818fc417e3a87e383fffebc762c1a0bb8c8e90e66b7f2b15e",
+  "sample_selection": {
+    "measured_indices_sha256": "500654064bcfa89e7b1a822ba902fb109826f9763441c2a90db9aa070ddef2b7",
+    "measured_observed_classes": 41,
+    "measured_unique_samples": 300,
+    "method": "numpy.default_rng(seed).permutation; warm-up first, measured next",
+    "seed": 20261010,
+    "warmup_indices_sha256": "f00b5e7d616d43017a5410e5096ba14ab881b4bb6f1cc00e3664bfae1e467f51"
+  },
+  "schema_version": 1,
+  "status": "WP6_CLEAN_BUILD_BENCHMARK_ATTESTATION",
+  "test_split_sha256": "60b6450ffdb227042eb32f28d15fe77f98ad24dd550cc85eb445b8c0e502e470"
+}

@@ -1,0 +1,102 @@
+box_id,raw_class,height_value_m,confidence,note
+0551:1,16,2.0,MEDIUM,value read by sequence continuity
+0552:1,16,2.0,MEDIUM,value read by sequence continuity
+0553:1,16,2.0,MEDIUM,value read by sequence continuity
+0554:1,16,2.0,MEDIUM,value read by sequence continuity
+0555:1,16,2.0,MEDIUM,value read by sequence continuity
+0556:1,16,2.0,MEDIUM,value read by sequence continuity
+0557:1,16,2.0,MEDIUM,value read by sequence continuity
+0558:1,16,2.0,MEDIUM,value read by sequence continuity
+0559:1,16,2.0,MEDIUM,value read by sequence continuity
+0560:1,16,2.0,MEDIUM,value read by sequence continuity
+0561:1,16,2.0,MEDIUM,value read by sequence continuity
+0562:1,16,2.0,MEDIUM,value read by sequence continuity
+0563:1,16,2.0,MEDIUM,value read by sequence continuity
+0564:1,16,2.0,MEDIUM,value read by sequence continuity
+0565:1,16,2.0,MEDIUM,value read by sequence continuity
+0566:1,16,2.0,MEDIUM,value read by sequence continuity
+0567:1,16,2.0,MEDIUM,value read by sequence continuity
+0568:1,16,2.0,MEDIUM,value read by sequence continuity
+0569:1,16,2.0,HIGH,value read directly
+0570:1,16,2.0,HIGH,value read directly
+0571:1,16,2.0,HIGH,value read directly
+0572:1,16,2.0,HIGH,value read directly
+0573:1,16,2.0,HIGH,value read directly
+0574:1,16,2.0,HIGH,value read directly
+0575:1,16,2.0,HIGH,value read directly
+0576:1,16,2.0,HIGH,value read directly
+0577:1,16,2.0,HIGH,value read directly
+0578:1,16,2.0,HIGH,value read directly
+0579:1,16,2.0,HIGH,value read directly
+0580:1,16,2.0,HIGH,value read directly
+0581:1,16,2.0,HIGH,value read directly
+0582:1,16,2.0,HIGH,value read directly
+0583:1,16,2.0,HIGH,value read directly
+0584:1,16,2.0,HIGH,value read directly
+0585:1,16,2.0,HIGH,value read directly
+0586:1,16,2.0,HIGH,value read directly
+0587:1,16,2.0,HIGH,value read directly
+0588:1,16,2.0,HIGH,value read directly
+0589:1,16,2.0,HIGH,value read directly
+0590:2,16,2.0,HIGH,value read directly
+0591:2,16,2.0,HIGH,value read directly
+0592:2,16,2.0,HIGH,value read directly
+0593:1,16,2.0,HIGH,value read directly
+0595:2,16,2.5,HIGH,value read directly
+0596:2,16,2.5,HIGH,value read directly
+0597:2,16,2.5,HIGH,value read directly
+0598:2,16,2.5,HIGH,value read directly
+0599:2,16,2.5,HIGH,value read directly
+0600:2,16,2.5,HIGH,value read directly
+0601:2,16,2.5,HIGH,value read directly
+0602:2,16,2.5,HIGH,value read directly
+0603:2,16,2.5,HIGH,value read directly
+0797:3,16,2.2,HIGH,value read directly
+0798:3,16,2.2,HIGH,value read directly
+0799:3,16,2.2,HIGH,value read directly
+0800:3,16,2.2,HIGH,value read directly
+0801:3,16,2.2,HIGH,value read directly
+0802:4,16,2.2,HIGH,value read directly
+0803:4,16,2.2,HIGH,value read directly
+0804:4,16,2.2,HIGH,value read directly
+0805:3,16,2.2,HIGH,value read directly
+0806:4,16,2.2,HIGH,value read directly
+0807:4,16,2.2,HIGH,value read directly
+0808:4,16,2.2,HIGH,value read directly
+0809:4,16,2.2,HIGH,value read directly
+0810:4,16,2.2,HIGH,value read directly
+0811:4,16,2.2,HIGH,value read directly
+0812:4,16,2.2,HIGH,value read directly
+0813:3,16,2.2,HIGH,value read directly
+0814:4,16,2.2,HIGH,value read directly
+2088:2,16,UNREADABLE,LOW,sign cut off at image edge
+2278:2,16,UNREADABLE,LOW,very blurry
+2279:2,16,UNREADABLE,LOW,very blurry
+0571:7,43,2.5,MEDIUM,value read by sequence continuity
+0572:7,43,2.5,MEDIUM,value read by sequence continuity
+0573:7,43,2.5,MEDIUM,value read by sequence continuity
+0574:7,43,2.5,MEDIUM,value read by sequence continuity
+0575:7,43,2.5,MEDIUM,value read by sequence continuity
+0576:7,43,2.5,MEDIUM,value read by sequence continuity
+0577:7,43,2.5,MEDIUM,value read by sequence continuity
+0578:7,43,2.5,MEDIUM,value read by sequence continuity
+0579:7,43,2.5,MEDIUM,value read by sequence continuity
+0580:7,43,2.5,MEDIUM,value read by sequence continuity
+0581:7,43,2.5,MEDIUM,value read by sequence continuity
+0582:7,43,2.5,MEDIUM,value read by sequence continuity
+0583:7,43,2.5,HIGH,value read directly
+0584:7,43,2.5,HIGH,value read directly
+0585:7,43,2.5,HIGH,value read directly
+0586:7,43,2.5,HIGH,value read directly
+0587:7,43,2.5,HIGH,value read directly
+0588:7,43,2.5,HIGH,value read directly
+0589:7,43,2.5,HIGH,value read directly
+0590:1,43,2.5,HIGH,value read directly
+0591:1,43,2.5,HIGH,value read directly
+0592:1,43,2.5,HIGH,value read directly
+0751:8,43,2.7,HIGH,value read directly
+0752:11,43,2.7,HIGH,value read directly
+0753:10,43,2.7,HIGH,value read directly
+0756:10,43,2.7,HIGH,value read directly
+0757:10,43,2.7,HIGH,value read directly
+0776:7,18,UNREADABLE,LOW,raw class 18 is a mislabelled height-limit sign; value unreadable

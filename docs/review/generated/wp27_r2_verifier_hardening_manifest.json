@@ -1,0 +1,110 @@
+{
+  "all_wp5_sequences_pending": 589,
+  "artifact_count": 2,
+  "artifact_count_semantics": "EXCLUDES_MANIFEST_FILE",
+  "artifacts": [
+    {
+      "id": "type_strict_layout_audit",
+      "path": "docs/review/generated/wp27_r2_type_strict_layout_audit.json",
+      "sha256": "d04e74dd7d9d412b7d2108d044e7c4aac3e438f3ffaddd2a58f572217c6924f0",
+      "size": 3192
+    },
+    {
+      "id": "hardening_report",
+      "path": "docs/review/wp27_r2_verifier_hardening_report.md",
+      "sha256": "2d6c60231193a7806bf4a00979874171b8d015bbfaa370113593a74b3d076a30",
+      "size": 2336
+    }
+  ],
+  "canonical_wp5_pending_unchanged": 3172,
+  "changed_predecessor_bytes": 0,
+  "d02_status": "PENDING",
+  "effective_layout_reused_unchanged_from_r1": true,
+  "effective_layout_sha256": "d7af4b260985215ff70ca8567369f75f96bc63f4bfe8b58f6d5849b77e00e7f3",
+  "evidence_boundary": "WP27_R2_VERIFIER_HARDENING_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+  "final_group_truth_created": false,
+  "gate0": "BLOCKED",
+  "manifest_path": "docs/review/generated/wp27_r2_verifier_hardening_manifest.json",
+  "manifest_self_in_artifact_count": false,
+  "package": "M0-WP27-R2-TYPE-STRICT-VERIFIER-HARDENING",
+  "quarantined_residual_edges": 2,
+  "r1_manifest_sha256": "6992625b062649ba979a39eb7e4ef8fd00eadad666558fb40886d520390d96fc",
+  "residual_pending_edges": 646,
+  "review_eligible_residual_edges": 644,
+  "schema_version": 1,
+  "source_count": 11,
+  "sources": [
+    {
+      "id": "wp27_initial_layout_audit",
+      "path": "docs/review/generated/wp27_remaining_edge_batch_f_layout_audit.json",
+      "sha256": "5b0c938465b5af1c44cf276f0633692a2769b8db49eaac9cd9dbc221dc19c506",
+      "size": 171529
+    },
+    {
+      "id": "wp27_r1_manifest",
+      "path": "docs/review/generated/wp27_r1_layout_correction_manifest.json",
+      "sha256": "6992625b062649ba979a39eb7e4ef8fd00eadad666558fb40886d520390d96fc",
+      "size": 38873
+    },
+    {
+      "id": "wp27_r1_corrected_layout_audit",
+      "path": "docs/review/generated/wp27_r1_remaining_edge_batch_f_layout_audit.json",
+      "sha256": "d7af4b260985215ff70ca8567369f75f96bc63f4bfe8b58f6d5849b77e00e7f3",
+      "size": 171529
+    },
+    {
+      "id": "wp27_r1_layout_semantic_delta",
+      "path": "docs/review/generated/wp27_r1_layout_semantic_delta.csv",
+      "sha256": "a3bb4ced80bae9b3c4124af7e53e16fe1673ca3f1794fdd249f9218accc8fe6e",
+      "size": 237
+    },
+    {
+      "id": "wp27_r1_effective_artifact_roster",
+      "path": "docs/review/generated/wp27_r1_effective_artifact_roster.csv",
+      "sha256": "c4b25036ea12820f7d0a9434d93bcea1b2e0461f7dc83878964a69255c8bc741",
+      "size": 17271
+    },
+    {
+      "id": "wp27_r1_correction_report",
+      "path": "docs/review/wp27_r1_layout_correction_report.md",
+      "sha256": "b20719298e8efe95d136f38b3024f0b4edb3bb1ee6bff22d601687b3385c1e44",
+      "size": 2477
+    },
+    {
+      "id": "wp27_r1_builder",
+      "path": "scripts/build_wp27_r1_layout_correction.py",
+      "sha256": "9bfc963f207876cbd431e48e2184252e962a8f473182a70148e026033314cdd7",
+      "size": 33496
+    },
+    {
+      "id": "wp27_r1_test",
+      "path": "tests/test_wp27_r1_layout_correction.py",
+      "sha256": "f406d316b6068d28f724a4e9f5e19ee2b61364b362cf647902760952f310f36e",
+      "size": 16745
+    },
+    {
+      "id": "wp27_r2_qa_record",
+      "path": "docs/review/wp27_r2_qa_correction_record.md",
+      "sha256": "6a7fecffe0e09d5c82ceeb24ab5da3fe6f5f618ef83782d60ff4434011d8e2c1",
+      "size": 3342
+    },
+    {
+      "id": "wp27_r2_builder",
+      "path": "scripts/build_wp27_r2_verifier_hardening.py",
+      "sha256": "aa907050661df91842a1db96360a034326548ee03dd601e066917a79fb03ab05",
+      "size": 23161
+    },
+    {
+      "id": "wp27_r2_test",
+      "path": "tests/test_wp27_r2_verifier_hardening.py",
+      "sha256": "94e1739ae6b194e532f1e823eb03a7f31168be82c87b7ed6c4fa0c955c9355c7",
+      "size": 14383
+    }
+  ],
+  "split_authorized": false,
+  "status": "WP27_R2_AWAITING_INDEPENDENT_QA",
+  "total_artifact_bytes": 5528,
+  "training_authorized": false,
+  "transitive_grouping_created": false,
+  "wp28_started": false
+}

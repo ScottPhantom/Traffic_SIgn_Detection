@@ -1,0 +1,66 @@
+{
+  "artifacts": [
+    {
+      "path": "assets/bbox_0248_review.png",
+      "sha256": "3c3e3b872e7afa189d0307e2b9e3e637e275f6295ad1e793c0d797fd4325f598",
+      "size": 573211
+    },
+    {
+      "path": "decision_status.json",
+      "sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+      "size": 7864
+    },
+    {
+      "path": "experiment_acceptance_template.md",
+      "sha256": "4d126725dea7464004c60da370eaf84a9ba16dc83b716c04db9d0344e086a4c8",
+      "size": 3836
+    },
+    {
+      "path": "generated/bbox_0248_review.json",
+      "sha256": "e1b8cc2c3a6d16e8dbff847b43e33450272e4dda21f46e6708e3aff5b1dba25f",
+      "size": 2016
+    },
+    {
+      "path": "generated/d04_rare_class_decision_template.json",
+      "sha256": "72996afea9e096b1ead82b5d36b250bb48d216e0f9b8539753339c8158cc6700",
+      "size": 7496
+    },
+    {
+      "path": "generated/decision_status.schema.json",
+      "sha256": "1d1ce2d636304ba0e3c76d6cc55cfb1cf051a2b11c93e9436a075d285f832ad2",
+      "size": 348470
+    },
+    {
+      "path": "generated/grouping_proxy_clusters.csv",
+      "sha256": "0dd732a5791383bedbb1aa499bc6c64bf401c5af72b64d3ceb08cc97d8ec5092",
+      "size": 49260
+    },
+    {
+      "path": "generated/grouping_proxy_edges.csv",
+      "sha256": "801e89db137154086496f37bc38b9659596c61e4a881734e80731aeaf2ded15c",
+      "size": 287375
+    },
+    {
+      "path": "generated/grouping_proxy_summary.json",
+      "sha256": "bcb9d566d52d227434f0d9d7f0c06c027942f41901b586c9b8bd4892947be4c8",
+      "size": 2114
+    },
+    {
+      "path": "generated/rare_class_risk.csv",
+      "sha256": "5e410d855d9b15803dc1adcc0f57fd79cf9e9f392690732aeaac2e3f4bea14b7",
+      "size": 11426
+    },
+    {
+      "path": "generated/taxonomy_review.csv",
+      "sha256": "4d27209e9f381a6991cd21f7ee6521553495eb6771422a5889536ae12003bad1",
+      "size": 12616
+    },
+    {
+      "path": "m0_wp2_decision_packet.md",
+      "sha256": "3614e91719c337ee794b057e1cfbbe51a74940a19df604ef647117530c14da7d",
+      "size": 17498
+    }
+  ],
+  "schema_version": 1,
+  "status": "REVIEW_EVIDENCE_ONLY_NO_TRAINING_AUTHORIZATION"
+}

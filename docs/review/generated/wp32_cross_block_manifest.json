@@ -1,0 +1,124 @@
+{
+  "artifacts": [
+    {
+      "path": "docs/review/generated/wp32_cross_block_candidates.csv",
+      "sha256": "ccb57c68c239b0f76e582ebe096ad36f07559cc00347695f74185bbbf13ccc18"
+    },
+    {
+      "path": "docs/review/generated/wp32_cross_block_decisions.csv",
+      "sha256": "8d05013175ce4898195648acbb696153d35a55a9a43ed39c683d696f4b3ec6df"
+    },
+    {
+      "path": "docs/review/generated/wp32_cross_block_links.csv",
+      "sha256": "3cc0157e2b9df0f3f832edfc9a95dfd14a378a18fccdc983b8e0a9c2b7efb813"
+    },
+    {
+      "path": "docs/review/wp32_cross_block_review_report.md",
+      "sha256": "6c638f98a04086e98b5e30c5bf8b7819a8bb569746fca37b349206871aef9ca4"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_001.jpg",
+      "sha256": "61e02f27c7fb42080fa1b2744dcbbbb92d80897b27921712a5cd371a23d3e1bf"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_002.jpg",
+      "sha256": "1236458244065efce42792ae8e67cc721f6a87a92b007d550a760cb06502ffd5"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_003.jpg",
+      "sha256": "bad1bc267b27f038b82d902234bbbfd0113196d5406458bbf83f8c390facf715"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_004.jpg",
+      "sha256": "703376d9df3c12f8cb14a9b0a69c3a0205283cb36ed12295e4e40a71e2a4b213"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_005.jpg",
+      "sha256": "6d0dd0f024f1a880a2ea15480a4c3da687b6e960c343b78cd4c8864d6640504b"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_006.jpg",
+      "sha256": "d65a576c9ba99c36f8f8cd4f3ed7c7bef129b719b2568f9c2cba4d31fa947d74"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_007.jpg",
+      "sha256": "206a656558054f3bbadec167edb6c6dba9cfade4d4d68ef938745ba9a53f9a3b"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_008.jpg",
+      "sha256": "ad8eb9ccb74d66cdda594fde0ea37bb5594e2701644eb6e8b0b6305fb4d72ffc"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_009.jpg",
+      "sha256": "8297eed0cfbe612e3bc08e881e9ad6890529c045c720afb3b3ae4a6443e47b86"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_010.jpg",
+      "sha256": "64ef8189598e7ee8f183b6374be79485648b91819f2facc17c89f8b1a2d517bf"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_011.jpg",
+      "sha256": "d155eddce2c015b6a548f7400785a9958250602a276483e5ad80eec160f918f1"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_012.jpg",
+      "sha256": "c1bbe8abcb1eae64dbcc9c972811a8d54c393b575d73f4bcddea324ccf58c3e3"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_013.jpg",
+      "sha256": "00af9a7cd43e95a9a3678dbd7dac27ebcac642e1f308f7eecc41af0cf1d0abf8"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_014.jpg",
+      "sha256": "2d31456687e75cc8657be5f9d3be88cd116b7fe572dd408fec1146b2b9c8278f"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_015.jpg",
+      "sha256": "a3b904545d3ee9e8c30dd1c9416efe4a2dddeb69693366f4a37278e86a368871"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_016.jpg",
+      "sha256": "935c6c66bab813a264217c0c531181050c5b68e048acadfaa1b5fd47b0aaaa18"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_017.jpg",
+      "sha256": "cefb367cc3f9bba310a25d25b7f0ae866863143fb9afa138364148f1494b834c"
+    },
+    {
+      "path": "docs/review/assets/wp32/cross_block/page_018.jpg",
+      "sha256": "78bd9e8d5f975f8f8e4f917c7c27c63eb9f29e2c67817615bcb50958a5cabb7a"
+    }
+  ],
+  "candidate_rows": 71,
+  "d02_status": "PENDING",
+  "evidence_boundary": "CROSS_BLOCK_LINK_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_SPLIT_NO_TRAINING",
+  "final_group_truth_created": false,
+  "gate0": "BLOCKED",
+  "package": "M0-WP32",
+  "schema_version": 1,
+  "sources": [
+    {
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv",
+      "sha256": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022"
+    },
+    {
+      "path": "docs/review/generated/wp31_group_id_frames.csv",
+      "sha256": "5ec635d891b95848a4b1fd246ca3ecd3d1c344b8408135d79997cb42c4fb319c"
+    },
+    {
+      "path": "docs/review/wp31_independent_qa_record.md",
+      "sha256": "5639265731217e77dc7b04cecb0133a1f43c78497e18f11ae412b7a160f9d4d9"
+    },
+    {
+      "path": "docs/review/wp32_cross_block_review_notes.csv",
+      "sha256": "2dd0d8a9931eede639b470511cb8badcb0c64904e809cee55b0b27ea3efc38a2"
+    },
+    {
+      "path": "scripts/build_wp32_cross_block_link_review.py",
+      "sha256": "92720010624230494a2ed5a65204cf1453f98624f3052eb762ffcfec0a55941c"
+    }
+  ],
+  "split_authorized": false,
+  "status": "WP32_AWAITING_QA_REVIEW",
+  "training_authorized": false
+}

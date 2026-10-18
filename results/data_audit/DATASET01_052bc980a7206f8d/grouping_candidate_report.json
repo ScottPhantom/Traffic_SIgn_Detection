@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-10-10",
+  "status": "PROXY_ONLY_NOT_APPROVED_FOR_SPLITTING",
+  "current_split": {
+    "train": 2552,
+    "test": 639,
+    "validation": 0,
+    "direct_filename_overlap": 0
+  },
+  "numeric_adjacency_proxy": {
+    "definition": "Two present numeric stems n and n+1.",
+    "pair_count": 3178,
+    "cross_split_pair_count": 1031,
+    "cross_split_percent": 32.44178728760227,
+    "artifact": "adjacent_pair_leakage.csv",
+    "is_group_ground_truth": false
+  },
+  "missing_evidence": [
+    "source video or frame sequence identifiers",
+    "capture session, route, date and time",
+    "scene identifiers",
+    "physical traffic-sign identifiers",
+    "EXIF or GPS metadata",
+    "creator-provided grouping manifest"
+  ],
+  "proposed_procedure": [
+    "Request creator-provided video, scene, capture-session and physical-sign metadata.",
+    "Generate candidate clusters using numeric adjacency and visual near-duplicate similarity.",
+    "Require manual domain review of every candidate cluster.",
+    "Record stem, proposed group_id, evidence type, reviewer, review date and confidence.",
+    "Create stratified group-aware train, validation and quarantined test manifests only after adjudication.",
+    "Verify zero group overlap and report per-class support before authorizing experiments."
+  ],
+  "forbidden_shortcuts": [
+    "Do not treat numeric adjacency as ground truth.",
+    "Do not use stem divided by a fixed window size as final group_id.",
+    "Do not reuse the current train/test split as an independent holdout.",
+    "Do not train before Gate 0 passes."
+  ]
+}

@@ -1,0 +1,739 @@
+{
+  "artifact_count": 56,
+  "artifact_count_semantics": "EXCLUDES_MANIFEST_FILE",
+  "artifacts": [
+    {
+      "id": "annotations",
+      "path": "docs/review/wp23_r1_remaining_edge_review_annotations_batch_b.json",
+      "sha256": "8d87586a8f7fa47449b57c0b4aab2e92a0c198523b4e516bac8b8fefebeeb6cb",
+      "size": 296996
+    },
+    {
+      "id": "selection",
+      "path": "docs/review/generated/wp23_r1_remaining_edge_batch_b_selection.csv",
+      "sha256": "050656d63d74d2645dd994e7903700d9420a4947b4b9e18f16d18a2c8c0e2a26",
+      "size": 214336
+    },
+    {
+      "id": "source_lineage",
+      "path": "docs/review/generated/wp23_r1_remaining_edge_batch_b_source_lineage.csv",
+      "sha256": "f4f9f692b9934f11c2986864a23d4ca7f8da4b8d0b57adaf932f9d16ef783d61",
+      "size": 231472
+    },
+    {
+      "id": "layout_audit",
+      "path": "docs/review/generated/wp23_r1_remaining_edge_batch_b_layout_audit.json",
+      "sha256": "631031fca68c67956270f06bc482866461c39364a8406cc7f63584e8f88f08c2",
+      "size": 171676
+    },
+    {
+      "id": "report",
+      "path": "docs/review/wp23_r1_remaining_edge_batch_b_report.md",
+      "sha256": "4f90aaabca6a1d631a475c8bc7c509a9bd5ca230be19c6cd3eb47f84a342d0dd",
+      "size": 3210
+    },
+    {
+      "id": "atlas_index",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/index.html",
+      "sha256": "f14c5c7f6acc6da6f92d2f88d1cfea5e4e08814d8a1ac72620077105afa38de6",
+      "size": 51413
+    },
+    {
+      "id": "atlas_page_001",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_001.jpg",
+      "sha256": "666e7b1574f5a84679f925ea879e4aab47dfade5aae97b7c1b4fbf0aa08f599d",
+      "size": 1070563
+    },
+    {
+      "id": "atlas_page_002",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_002.jpg",
+      "sha256": "5bdfbd7e66f675bbe4a7c12f20d6014ea181e41c23604e992dc6a3c6cabe5d5f",
+      "size": 1147894
+    },
+    {
+      "id": "atlas_page_003",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_003.jpg",
+      "sha256": "58bc67e2208b07aad0267c0e2561f79fe697e4aa4c42a3e1c41f4dcf692ca29e",
+      "size": 1146827
+    },
+    {
+      "id": "atlas_page_004",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_004.jpg",
+      "sha256": "bcbee342d80ecc782405b7bacaf5f76295e70ebe05016a4d7514ba51f0dd7d60",
+      "size": 1034754
+    },
+    {
+      "id": "atlas_page_005",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_005.jpg",
+      "sha256": "3c347af8f84578887a6b69efe634523849e846d619dbdc012ab4eb4bedaf66b9",
+      "size": 1053761
+    },
+    {
+      "id": "atlas_page_006",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_006.jpg",
+      "sha256": "9f97a57b3498b1a39e2e14e7d806c0512c5093b83c31af61fa2f1e49cfc69dc6",
+      "size": 1076791
+    },
+    {
+      "id": "atlas_page_007",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_007.jpg",
+      "sha256": "17417a7d5c3eb43df9e20a3096239d801b3d7d8a8e448251efb33092224b80e3",
+      "size": 1191578
+    },
+    {
+      "id": "atlas_page_008",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_008.jpg",
+      "sha256": "fb21ddf9a09841f48a34a766f35f61180a0590b56b3ef1f09818cb0b8ff72662",
+      "size": 1118030
+    },
+    {
+      "id": "atlas_page_009",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_009.jpg",
+      "sha256": "8e8e07bbb6d1dffa9ebe5e0b11575764b2c0533949181055edb756c43ca5007e",
+      "size": 1049312
+    },
+    {
+      "id": "atlas_page_010",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_010.jpg",
+      "sha256": "81cc701279cf6ef1dc1d3c43e206a37903fdf3e483f01aa794d00755206b1c52",
+      "size": 1040601
+    },
+    {
+      "id": "atlas_page_011",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_011.jpg",
+      "sha256": "52844b84b51761696315b2ad338cfe152908f425313b40066ab7658ef091cb8d",
+      "size": 1072621
+    },
+    {
+      "id": "atlas_page_012",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_012.jpg",
+      "sha256": "70345167dc1f0794b13d281f56bec37268ffab6ed2596c10c07a5577f87a9657",
+      "size": 1006411
+    },
+    {
+      "id": "atlas_page_013",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_013.jpg",
+      "sha256": "598536e5cfa640f4100a5046758854a3ea6da05dfe7bce6280b5893b8f50a318",
+      "size": 986191
+    },
+    {
+      "id": "atlas_page_014",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_014.jpg",
+      "sha256": "8ad8a954fe6cb5f40bc2e9375ed0b4a216f82b48406fc90f9791555c56fae6b3",
+      "size": 1010522
+    },
+    {
+      "id": "atlas_page_015",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_015.jpg",
+      "sha256": "8073a899fe73c9f9a2e1a1d7aa6d1265a39426d1ef326def6bbe0e17c278d0d6",
+      "size": 1025227
+    },
+    {
+      "id": "atlas_page_016",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_016.jpg",
+      "sha256": "f86eca0ad4e2f6bfb4c14c5e026b4b14461a8e2dec3d3415e12cd3fd3358eed8",
+      "size": 1135110
+    },
+    {
+      "id": "atlas_page_017",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_017.jpg",
+      "sha256": "5c2107d7c4175aa7971d59766fbbddc5cbf5edaba1c926460dc2f840d78077a6",
+      "size": 1132678
+    },
+    {
+      "id": "atlas_page_018",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_018.jpg",
+      "sha256": "56bbfa08c3fbd49b2244a656e4608cef59285614a240dbc8d25361ac9cafc391",
+      "size": 1112070
+    },
+    {
+      "id": "atlas_page_019",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_019.jpg",
+      "sha256": "a329d631f5f82b85dac07264fde37acd7f36454304a5986b1221510b8d44cb5c",
+      "size": 990208
+    },
+    {
+      "id": "atlas_page_020",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_020.jpg",
+      "sha256": "453c550a2d6253cc7b97f9ef4b6b891a18d7d5245f9e9acd83046aca47f726ed",
+      "size": 902808
+    },
+    {
+      "id": "atlas_page_021",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_021.jpg",
+      "sha256": "42dd3706f77aa088c3189ef5353aff0db1e15cc01da83900293efdbf4d14a1e0",
+      "size": 868905
+    },
+    {
+      "id": "atlas_page_022",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_022.jpg",
+      "sha256": "e93f7d3adf514c58a225acefbd4a07a1c7cea16bce43b80a7a270413001c9bb5",
+      "size": 1015169
+    },
+    {
+      "id": "atlas_page_023",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_023.jpg",
+      "sha256": "73efa762d75517dd4329973db734b2aeb22d6bdf6913bcf08578c554911900b1",
+      "size": 1057411
+    },
+    {
+      "id": "atlas_page_024",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_024.jpg",
+      "sha256": "04ae74aa0242818cac02f06828b3704da33fa410bfa33c87e68ad4107c61c8eb",
+      "size": 1073391
+    },
+    {
+      "id": "atlas_page_025",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_025.jpg",
+      "sha256": "3b48ed4ce0b8c758325eec1edc8607988c4e78a42c1b29469ec018f086ae975f",
+      "size": 1053281
+    },
+    {
+      "id": "atlas_page_026",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_026.jpg",
+      "sha256": "dd2a29d070ead896e471d96132b1a524bb025ed1b8484d9a1eca0bca8b81ca1b",
+      "size": 1040850
+    },
+    {
+      "id": "atlas_page_027",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_027.jpg",
+      "sha256": "3e0ec00d74161c3aa855b0872cebf284a2c274087525ef3dd0defef4dcbd39ab",
+      "size": 1091256
+    },
+    {
+      "id": "atlas_page_028",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_028.jpg",
+      "sha256": "61e9ec277eae2af4a34bc1999feb0dfa12e4d567b3271920b3e972e4c46124cb",
+      "size": 1078628
+    },
+    {
+      "id": "atlas_page_029",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_029.jpg",
+      "sha256": "64b3cc826447d2cb738da2a16a4060d5cccce1e0e6c5d1052bd173ef64d11ccc",
+      "size": 938715
+    },
+    {
+      "id": "atlas_page_030",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_030.jpg",
+      "sha256": "e861e9a4661ec0496dbf677ee2bc072ec988e643e781782b7bbb64d8b654ed3e",
+      "size": 1097094
+    },
+    {
+      "id": "atlas_page_031",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_031.jpg",
+      "sha256": "6b1d0e85a9ce71a500f5db8759438a5d6c5499bdbac12edac8dfc3a3a8f63829",
+      "size": 1106712
+    },
+    {
+      "id": "atlas_page_032",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_032.jpg",
+      "sha256": "b1616e844cf10753f410cdf3be7bf01c420f405d88a6992d6e0e4c48896e69f8",
+      "size": 1132006
+    },
+    {
+      "id": "atlas_page_033",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_033.jpg",
+      "sha256": "c9e3db1d21d17c021941f5d339494fb112f6af5eeb86d8ec874c93c4c32304df",
+      "size": 1089864
+    },
+    {
+      "id": "atlas_page_034",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_034.jpg",
+      "sha256": "6786138fbb3d5e1a2e146d2ccbf30c9066638d6d0a9d5697855c5fadc4822433",
+      "size": 1070927
+    },
+    {
+      "id": "atlas_page_035",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_035.jpg",
+      "sha256": "e3c3e36117d3840fe7f1c366d3226f56fbacd93c661f9a3c7cab4c0cfd2a0ef9",
+      "size": 1102755
+    },
+    {
+      "id": "atlas_page_036",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_036.jpg",
+      "sha256": "f078de8003d740cd778a1e896b30aaa7ab9a95127adebb40240a2303cbab0285",
+      "size": 1100816
+    },
+    {
+      "id": "atlas_page_037",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_037.jpg",
+      "sha256": "5679ce89b55edc98eece2ef53ccb1840f39990ae3158331829f5e913cac983e2",
+      "size": 1125945
+    },
+    {
+      "id": "atlas_page_038",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_038.jpg",
+      "sha256": "acd957df9b7e413611ee146486990033409dbe9fde8b5593bd6b40b7610859b4",
+      "size": 1188863
+    },
+    {
+      "id": "atlas_page_039",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_039.jpg",
+      "sha256": "7d48ca6372f4457cc562eb0f40f28d7e305fd4ff3c44f5080f44012b15ea2065",
+      "size": 1090615
+    },
+    {
+      "id": "atlas_page_040",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_040.jpg",
+      "sha256": "ba7d0f45096a74c8caec84aea0a520dcb5a275705cd0d606e03b9f459c053967",
+      "size": 1106722
+    },
+    {
+      "id": "atlas_page_041",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_041.jpg",
+      "sha256": "648f63c81a69195873d15e3fa4f681e796452605da7446d2f96012143ff4afd4",
+      "size": 1106863
+    },
+    {
+      "id": "atlas_page_042",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_042.jpg",
+      "sha256": "6fc2fe4cbd4987361f3740ff7c7ca794108faab4aa7d13721343c83779041d81",
+      "size": 1124297
+    },
+    {
+      "id": "atlas_page_043",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_043.jpg",
+      "sha256": "731379c2803fbdc3a8becd758b15eb671d4781d39b096a9b8e4b6aabc591c2e1",
+      "size": 1071990
+    },
+    {
+      "id": "atlas_page_044",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_044.jpg",
+      "sha256": "6833dcdfd8446d6cc2c7920d0b3f7283a587c54b6da915ab2dd45429bfcb8386",
+      "size": 1072859
+    },
+    {
+      "id": "atlas_page_045",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_045.jpg",
+      "sha256": "aaf09ce4e1a5637e2f2a6412bde4ac8025221b7e006a796a576a33bb083ed4b0",
+      "size": 1041877
+    },
+    {
+      "id": "atlas_page_046",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_046.jpg",
+      "sha256": "29aa7e791185ec5c7cebdef277923943d024749b96d411bb05cda5a664e03558",
+      "size": 994135
+    },
+    {
+      "id": "atlas_page_047",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_047.jpg",
+      "sha256": "daf497e6272334ad019fa829639f093fb03e7ab4c88a49109d57dd545dd51049",
+      "size": 1096347
+    },
+    {
+      "id": "atlas_page_048",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_048.jpg",
+      "sha256": "e58351808cc3195d295b42a8b0f1b27e1248f063a984f17a6d92008cf18ed3ed",
+      "size": 1063114
+    },
+    {
+      "id": "atlas_page_049",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_049.jpg",
+      "sha256": "ea2bbd8b50f8a401433c234d8345bb1fab40765e6d081c10969d4f090f38ce5e",
+      "size": 1018178
+    },
+    {
+      "id": "atlas_page_050",
+      "path": "docs/review/assets/wp23_r1/remaining_edge_batch_b/page_050.jpg",
+      "sha256": "c9946c5b75e746426afeb938ef54cbf830e494a07dd511127d297f65a485f8ac",
+      "size": 1013574
+    }
+  ],
+  "atlas_page_count": 50,
+  "canonical_wp5_mutated": false,
+  "canonical_wp7_mutated": false,
+  "d02_a_preferred": true,
+  "d02_b_budget_approved": false,
+  "d02_status": "PENDING",
+  "evidence_boundary": "REMAINING_EDGE_BATCH_B_R1_ONE_EDGE_QA_CORRECTION_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+  "final_group_truth_created": false,
+  "gate0": "BLOCKED",
+  "lineage_record_count": 500,
+  "manifest_path": "docs/review/generated/wp23_r1_remaining_edge_batch_b_manifest.json",
+  "manifest_self_in_artifact_count": false,
+  "package": "M0-WP23-R1-REMAINING-EDGE-BATCH-B",
+  "quarantined_stem_0248_selected": false,
+  "schema_version": 1,
+  "selected_endpoint_box_count": 1556,
+  "selection_count": 250,
+  "source_count": 62,
+  "sources": [
+    {
+      "id": "wp5_manifest",
+      "path": "docs/review/generated/wp5_evidence_manifest.json",
+      "sha256": "f8d620a3cbb3b500153f6685b94a9936a8f83eb6f5399ce0a2e8be77982d4b80",
+      "size": 31694
+    },
+    {
+      "id": "wp5_decisions",
+      "path": "docs/review/generated/wp5_provisional_edge_decisions.csv",
+      "sha256": "3f4cda85d10ea3dbcb9d9c83bbe2d5651991c00fb98b5e0fffbf28716e34fa1a",
+      "size": 1750136
+    },
+    {
+      "id": "wp5_layout",
+      "path": "docs/review/generated/wp5_pair_layout_audit.json",
+      "sha256": "8e9da4db09b1a175fd258b1704dbb6d70c66190864a1ec91b7f3e9bc8ad070a9",
+      "size": 1655437
+    },
+    {
+      "id": "image_inventory",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv",
+      "sha256": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022",
+      "size": 733242
+    },
+    {
+      "id": "source_preservation",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/source_preservation_proof.json",
+      "sha256": "5ca3e769b9197cad19bcb75f553dd59fee6e3035e0cc86cd9693737f84a713d7",
+      "size": 783
+    },
+    {
+      "id": "decision_status",
+      "path": "docs/review/decision_status.json",
+      "sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+      "size": 7864
+    },
+    {
+      "id": "wp6_manifest",
+      "path": "docs/review/generated/wp6_e0_compute_manifest.json",
+      "sha256": "656afe56bf342a0d4d0110dcd6b1d601f9f35633d03c65c98d54d3d454760bb0",
+      "size": 5321
+    },
+    {
+      "id": "wp7_manifest",
+      "path": "docs/review/generated/wp7_batch_a_manifest.json",
+      "sha256": "73ed4095a1f59b72f010fd87b63c4a7f0b16bcf8e0c667ec77576ec827e5d7f2",
+      "size": 7932
+    },
+    {
+      "id": "wp7_selection",
+      "path": "docs/review/generated/wp7_batch_a_selection.csv",
+      "sha256": "1779ac973fad5f1de54c019cdb87dc77cd7228b9d3b15be923d9d6b4d243fdcf",
+      "size": 71558
+    },
+    {
+      "id": "wp7_annotations",
+      "path": "docs/review/wp7_visual_review_annotations_batch_a.json",
+      "sha256": "f38e63e8c60ca043de97fb1d82ace4fe8acefb5be260f6500cf1c57f898b2d4d",
+      "size": 98241
+    },
+    {
+      "id": "wp12_manifest",
+      "path": "docs/review/generated/wp12_batch_b_manifest.json",
+      "sha256": "8e576954bc3de456704aecdb67e8625d8621ca017fb08e3b866635db6afcc0f0",
+      "size": 15438
+    },
+    {
+      "id": "wp12_selection",
+      "path": "docs/review/generated/wp12_batch_b_selection.csv",
+      "sha256": "3e46ff57c5e99107254c742922010865cf2659495cef7ad8c2b662dcef06e062",
+      "size": 180324
+    },
+    {
+      "id": "wp12_annotations",
+      "path": "docs/review/wp12_visual_review_annotations_batch_b.json",
+      "sha256": "44e3b181bb277c07851da44ea3ed6659241bd3048438964ad60472380f2f85c0",
+      "size": 282053
+    },
+    {
+      "id": "wp12_builder",
+      "path": "scripts/build_wp12_cross_split_review_batch.py",
+      "sha256": "f2569636e26a48984e432bbfc35735f2099e855db27b2b3ce76f001c33c197df",
+      "size": 65902
+    },
+    {
+      "id": "wp13_manifest",
+      "path": "docs/review/generated/wp13_batch_c_manifest.json",
+      "sha256": "5db80e215f318a6b782d813b4560c20e35e4f3e51ef0423d7298f4818ea3db65",
+      "size": 16273
+    },
+    {
+      "id": "wp13_selection",
+      "path": "docs/review/generated/wp13_batch_c_selection.csv",
+      "sha256": "e551ea02758deef02af1db6ad5e9da4de91ce84b5c06d38616265dbb55e86a22",
+      "size": 179792
+    },
+    {
+      "id": "wp13_annotations",
+      "path": "docs/review/wp13_visual_review_annotations_batch_c.json",
+      "sha256": "47361b9a9c2c0f837c9d82393a3128de7639c4458fe28b76bd78966a4a03e603",
+      "size": 282138
+    },
+    {
+      "id": "wp13_builder",
+      "path": "scripts/build_wp13_cross_split_review_batch.py",
+      "sha256": "970dd17ae0483fe2d096862c09342c7f4792fd2e102cf0c133a94d9d48107680",
+      "size": 18191
+    },
+    {
+      "id": "wp14_manifest",
+      "path": "docs/review/generated/wp14_batch_d_manifest.json",
+      "sha256": "ea4667c2ea18bc6fff23ce23beffe5b27372e494160fa9d6ffbc86c3cb3f2dc5",
+      "size": 17130
+    },
+    {
+      "id": "wp14_selection",
+      "path": "docs/review/generated/wp14_batch_d_selection.csv",
+      "sha256": "2fa132127980d9546869d628a1610c21184ebdf1c6d988772dae421a4df16a1a",
+      "size": 180977
+    },
+    {
+      "id": "wp14_annotations",
+      "path": "docs/review/wp14_visual_review_annotations_batch_d.json",
+      "sha256": "2fd5a2e8d9336fb42b07250f06bdbfcf5392d1db9788a69a7d42da6dbd56e0cb",
+      "size": 282204
+    },
+    {
+      "id": "wp14_builder",
+      "path": "scripts/build_wp14_cross_split_review_batch.py",
+      "sha256": "4df862458d00428f0d9c286b028988f04856d04c75451a785f9a0890cd182bb5",
+      "size": 22117
+    },
+    {
+      "id": "wp15_manifest",
+      "path": "docs/review/generated/wp15_batch_e_manifest.json",
+      "sha256": "032aee9da985c5dcb772ddd1c73fa9e4e6794e1beb5107fdb49b0168948a241d",
+      "size": 15045
+    },
+    {
+      "id": "wp15_selection",
+      "path": "docs/review/generated/wp15_batch_e_selection.csv",
+      "sha256": "86cb9918d40e2308d03f318bc806a7c9b7bf75e8531123d5f2b170500bd24165",
+      "size": 127657
+    },
+    {
+      "id": "wp15_annotations",
+      "path": "docs/review/wp15_visual_review_annotations_batch_e.json",
+      "sha256": "af09c7b3d589c1665d8c7349098cfc722a3cce6ea47f433dc9a7b221c650f603",
+      "size": 198988
+    },
+    {
+      "id": "wp15_builder",
+      "path": "scripts/build_wp15_cross_split_review_batch.py",
+      "sha256": "b3b6c054ba5e826b824e158ffc18bd83aa65d6c0d4b96ce5ea202c486f11a94a",
+      "size": 31045
+    },
+    {
+      "id": "wp16_manifest",
+      "path": "docs/review/generated/wp16_sequence_batch_a_manifest.json",
+      "sha256": "f3e3fb7a13631ef60b9046f745c07cb39ff3df501c18d5e15e79ee2e505964bc",
+      "size": 28751
+    },
+    {
+      "id": "wp16_selection",
+      "path": "docs/review/generated/wp16_sequence_batch_a_selection.csv",
+      "sha256": "962b6eccbee8601f86cfaa02aa61df6623f42a58508d08120b9d7b2cf2201bea",
+      "size": 35720
+    },
+    {
+      "id": "wp16_annotations",
+      "path": "docs/review/wp16_sequence_review_annotations_batch_a.json",
+      "sha256": "47346e5857d6d2cde8e462a61f9164adc660c51c6a325c91810e4e70eaa77027",
+      "size": 91994
+    },
+    {
+      "id": "wp16_builder",
+      "path": "scripts/build_wp16_sequence_review_batch.py",
+      "sha256": "109018764af5460ac5f21770b6bff11589bd49fcba9babd5cbc40e145a6b617d",
+      "size": 50212
+    },
+    {
+      "id": "wp17_manifest",
+      "path": "docs/review/generated/wp17_sequence_batch_b_manifest.json",
+      "sha256": "374ada61066f70f8ff3ba282dba41229ad2c161303146edd83aba583591b144b",
+      "size": 29194
+    },
+    {
+      "id": "wp17_selection",
+      "path": "docs/review/generated/wp17_sequence_batch_b_selection.csv",
+      "sha256": "2479e7b53c6622a120c3897aae84acab23365d8bbda69de1f6c4bcacc48458c4",
+      "size": 35750
+    },
+    {
+      "id": "wp17_annotations",
+      "path": "docs/review/wp17_sequence_review_annotations_batch_b.json",
+      "sha256": "c1f97520debbc56bf138bf71cb7a83e2cffc298df83eb6435fc1e6e7c2c86ef0",
+      "size": 95575
+    },
+    {
+      "id": "wp17_builder",
+      "path": "scripts/build_wp17_sequence_review_batch.py",
+      "sha256": "495cbe0450d245e3cadd7c20102951018ca94e66a5b63ae6ac18067b1fe7709a",
+      "size": 23855
+    },
+    {
+      "id": "wp18_manifest",
+      "path": "docs/review/generated/wp18_sequence_batch_c_manifest.json",
+      "sha256": "35bf843db7eb626404c81477efb509b2e4881a2cc7ea81fcee3187fcfab93649",
+      "size": 29637
+    },
+    {
+      "id": "wp18_selection",
+      "path": "docs/review/generated/wp18_sequence_batch_c_selection.csv",
+      "sha256": "faa55ac074b29da0dd61a33ba8e6a46401785f9ebead48130168598d5885ef01",
+      "size": 36030
+    },
+    {
+      "id": "wp18_annotations",
+      "path": "docs/review/wp18_sequence_review_annotations_batch_c.json",
+      "sha256": "637f3e5324eed7ae5af308a4baa67476e8bc5ab465129b1b19939e807b1c9de8",
+      "size": 97436
+    },
+    {
+      "id": "wp18_builder",
+      "path": "scripts/build_wp18_sequence_review_batch.py",
+      "sha256": "e9a232bf2945c04abccc92665b0726d450e7091b2057c5fd5c71e43b22ea5146",
+      "size": 24984
+    },
+    {
+      "id": "wp19_manifest",
+      "path": "docs/review/generated/wp19_sequence_batch_d_manifest.json",
+      "sha256": "6796c3a16b2af347f0a74a06cde4477b214d97233d0d38848d9077933c7f712f",
+      "size": 30080
+    },
+    {
+      "id": "wp19_selection",
+      "path": "docs/review/generated/wp19_sequence_batch_d_selection.csv",
+      "sha256": "a63c8125fd570d19af5719bf11800d6b9ea70e3a03596cf195c63753e0c0296f",
+      "size": 36151
+    },
+    {
+      "id": "wp19_annotations",
+      "path": "docs/review/wp19_sequence_review_annotations_batch_d.json",
+      "sha256": "1d30f4f71b856c74addaf46d197c118eaa1ebd3488315b3a6ca6a23554135e46",
+      "size": 98910
+    },
+    {
+      "id": "wp19_builder",
+      "path": "scripts/build_wp19_sequence_review_batch.py",
+      "sha256": "4a434d670c7da9e76cf3d0972f2ae3a8e36ba5fd86596741596cff175401508f",
+      "size": 25711
+    },
+    {
+      "id": "wp20_manifest",
+      "path": "docs/review/generated/wp20_sequence_batch_e_manifest.json",
+      "sha256": "4523c698ff948ee2adaf879195662caec25ac80280cceb0aaaf91ae72fe89a6c",
+      "size": 30523
+    },
+    {
+      "id": "wp20_selection",
+      "path": "docs/review/generated/wp20_sequence_batch_e_selection.csv",
+      "sha256": "b99abd53de497e74e42a75396be9f565c391977c4f35f633975cba3081c3bfc3",
+      "size": 36065
+    },
+    {
+      "id": "wp20_annotations",
+      "path": "docs/review/wp20_sequence_review_annotations_batch_e.json",
+      "sha256": "e567e3cceb92b7545c8751a6a67d7b29a61dd0ec15ce92cffdbf8e91cc1e23b4",
+      "size": 98171
+    },
+    {
+      "id": "wp20_builder",
+      "path": "scripts/build_wp20_sequence_review_batch.py",
+      "sha256": "699d76a3378f89af5b23bb328fc2d381c15c1544cbfc4c1d6cf6c87b1514af7f",
+      "size": 26439
+    },
+    {
+      "id": "wp21_manifest",
+      "path": "docs/review/generated/wp21_final_eligible_sequence_batch_manifest.json",
+      "sha256": "7ed7e1355ae1dfc88ec81b7f580aad3bf0874b59832708652ad1ba02265d4e4c",
+      "size": 29614
+    },
+    {
+      "id": "wp21_selection",
+      "path": "docs/review/generated/wp21_final_eligible_sequence_batch_selection.csv",
+      "sha256": "40c7c7d9c94767b2b6d82bd9d2d134aa74af0afd7f62ce5ed470e55ab9efbc68",
+      "size": 34172
+    },
+    {
+      "id": "wp21_annotations",
+      "path": "docs/review/wp21_final_eligible_sequence_review_annotations.json",
+      "sha256": "4264b2c58f6b7943986e03551ace876eaa0e744305b904aae91b0b191c6ff902",
+      "size": 89116
+    },
+    {
+      "id": "wp21_builder",
+      "path": "scripts/build_wp21_sequence_review_batch.py",
+      "sha256": "7a3184f94c2b5f77b075069bec50a8354898f08bd6dad6eb3d4424a1ab8b7761",
+      "size": 24711
+    },
+    {
+      "id": "wp22_manifest",
+      "path": "docs/review/generated/wp22_remaining_edge_batch_a_manifest.json",
+      "sha256": "7086371d65d1389c26541a3621745e0eadb9df7bfe62ca3dab34ffbb45e3b487",
+      "size": 25036
+    },
+    {
+      "id": "wp22_selection",
+      "path": "docs/review/generated/wp22_remaining_edge_batch_a_selection.csv",
+      "sha256": "af70edc35a2a925f4e23bd8ce2e481c7fdf6e18f1c904c963561c412ac74d6aa",
+      "size": 217347
+    },
+    {
+      "id": "wp22_annotations",
+      "path": "docs/review/wp22_remaining_edge_review_annotations_batch_a.json",
+      "sha256": "f00bdbcf28139c3f27716aaaa035948512313e88a5efb7b9b4be53d5cc50a0ac",
+      "size": 297040
+    },
+    {
+      "id": "wp22_builder",
+      "path": "scripts/build_wp22_remaining_edge_review_batch.py",
+      "sha256": "7f9310334e640226d70f968c4c00630b1e77e3a7a763222b9e591a2b22a0ba61",
+      "size": 26918
+    },
+    {
+      "id": "wp23_failed_manifest",
+      "path": "docs/review/generated/wp23_remaining_edge_batch_b_manifest.json",
+      "sha256": "dec19a75bb2def4d29afabe36963f7cdfd474b5c2bdd556e8c40ec198a8f09dd",
+      "size": 25935
+    },
+    {
+      "id": "wp23_failed_selection",
+      "path": "docs/review/generated/wp23_remaining_edge_batch_b_selection.csv",
+      "sha256": "e6913b2eeba22c990cef393490f8d8cb2caaa6745b2045e6edf64c3a6f9973a6",
+      "size": 214336
+    },
+    {
+      "id": "wp23_failed_annotations",
+      "path": "docs/review/wp23_remaining_edge_review_annotations_batch_b.json",
+      "sha256": "2720ac892a9f0ebe46dc027a722702031a8519aaa856965d560da99d85e2c7be",
+      "size": 296797
+    },
+    {
+      "id": "wp23_failed_review_notes",
+      "path": "docs/review/wp23_remaining_edge_review_notes_batch_b.csv",
+      "sha256": "c9159a36096f11c409e1c88ad49d15947ed052db7d5e4fddb310647f47a113c8",
+      "size": 60667
+    },
+    {
+      "id": "wp23_failed_builder",
+      "path": "scripts/build_wp23_remaining_edge_review_batch.py",
+      "sha256": "f71b2d239fa35288f8c82a0648329f4e9609f1ad79409576e077554f43c8050e",
+      "size": 24938
+    },
+    {
+      "id": "wp23_r1_qa_record",
+      "path": "docs/review/wp23_r1_qa_correction_record.md",
+      "sha256": "de28a2b8cd272a359c7886037756421e416618485c36de35e77b77d1a6e88326",
+      "size": 2132
+    },
+    {
+      "id": "wp23_r1_correction_overlay",
+      "path": "docs/review/wp23_r1_edge_decision_correction.csv",
+      "sha256": "f12ce41c8290bab9808522b24fa96e460f53ff81ba0b466240c21635b77994b8",
+      "size": 789
+    },
+    {
+      "id": "wp23_r1_builder",
+      "path": "scripts/build_wp23_r1_remaining_edge_review_batch.py",
+      "sha256": "e8df83006d62c72aa16c0a611b9e7833acd16fb94dbfa84c1da0385ae7c35f9d",
+      "size": 20732
+    }
+  ],
+  "split_authorized": false,
+  "status": "WP23_R1_AWAITING_QA_REVIEW",
+  "total_artifact_bytes": 54306219,
+  "training_authorized": false,
+  "transitive_grouping_created": false
+}

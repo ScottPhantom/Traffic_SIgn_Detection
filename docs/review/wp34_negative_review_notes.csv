@@ -1,0 +1,26 @@
+stem,decision,visible_classes_if_any,confidence,rationale
+0060,UNLABELLED_SIGN_PRESENT,46,MEDIUM,Blurred frame of the same HALO street as 0059/0062; the small cls46 no-parking disc beside the traffic light is still visible but unlabelled.
+0061,UNLABELLED_SIGN_PRESENT,46,MEDIUM,Blurred frame between 0059 and 0062; the same cls46 disc near the traffic light is visible but unlabelled.
+0187,UNLABELLED_SIGN_PRESENT,49,HIGH,Same gantry junction as 0186/0188; both cls49 signs on the gantry and pole are clearly visible but unlabelled.
+0544,TRUE_NEGATIVE,,HIGH,Open junction after 0543; the cls2/3 sign of 0543 has left the frame at the right edge and no other sign is visible.
+1514,UNLABELLED_SIGN_PRESENT,29 39 40,HIGH,Same highway as 1516: the cls29 sign under the 80/60 speed plates beside the alcohol billboard is clearly visible but unlabelled.
+1515,UNLABELLED_SIGN_PRESENT,29 39 40,HIGH,Same highway as 1516: the cls29 sign and the 80/60 speed plates are clearly visible but unlabelled.
+1703,UNLABELLED_SIGN_PRESENT,10,MEDIUM,Same red car 51G 502.98 and riders as 1709; the small distant cls10 sign labelled in 1709 is visible at the same spot but unlabelled.
+1704,UNLABELLED_SIGN_PRESENT,10,MEDIUM,Same red car 51G 502.98 and riders as 1709; the small distant cls10 sign labelled in 1709 is visible at the same spot but unlabelled.
+1705,UNLABELLED_SIGN_PRESENT,10,MEDIUM,Same red car 51G 502.98 and riders as 1709; the small distant cls10 sign labelled in 1709 is visible at the same spot but unlabelled.
+1706,UNLABELLED_SIGN_PRESENT,10,MEDIUM,Same red car 51G 502.98 and riders as 1709; the small distant cls10 sign labelled in 1709 is visible at the same spot but unlabelled.
+1707,UNLABELLED_SIGN_PRESENT,10,MEDIUM,Same red car 51G 502.98 and riders as 1709; the small distant cls10 sign labelled in 1709 is visible at the same spot but unlabelled.
+1708,UNLABELLED_SIGN_PRESENT,10,MEDIUM,Same red car 51G 502.98 and riders as 1709; the small distant cls10 sign labelled in 1709 is visible at the same spot but unlabelled.
+2015,TRUE_NEGATIVE,,MEDIUM,Highway lane with guide panels only; the cls3 sign labelled in 2018 is not yet in view and no regulatory sign is visible.
+2016,TRUE_NEGATIVE,,MEDIUM,"Same highway as 2015; only blue guide panels and billboards, no regulatory or warning sign visible."
+2017,TRUE_NEGATIVE,,MEDIUM,"Same highway as 2015; only blue guide panels and billboards, no regulatory or warning sign visible."
+2031,TRUE_NEGATIVE,,MEDIUM,Same highway view as 2030; the cls3 sign cut at the right edge of 2030 is out of frame and only guide panels remain.
+2051,TRUE_NEGATIVE,,MEDIUM,Same highway view as 2052; the cls3 sign at the right edge of 2052 is not visible here and only guide panels remain.
+2723,TRUE_NEGATIVE,,MEDIUM,Street with crosswalk after the cls41 pole of 2722 has passed; the cls46 sign of 2724 is not yet visible.
+2766,UNLABELLED_SIGN_PRESENT,18,MEDIUM,Same tree-lined road as 2767; the small red/yellow sign cluster labelled cls18 in 2767 is visible at the same place but unlabelled.
+2793,UNCLEAR,50?,MEDIUM,"Same road and riders as 2798; a tiny distant red sign may be visible where 2798 labels cls50, too small to confirm."
+2794,UNCLEAR,50?,MEDIUM,"Same road and riders as 2798; a tiny distant red sign may be visible where 2798 labels cls50, too small to confirm."
+2795,UNCLEAR,50?,MEDIUM,"Same road and riders as 2798; a tiny distant red sign may be visible where 2798 labels cls50, too small to confirm."
+2796,UNCLEAR,50?,MEDIUM,"Same road and riders as 2798; a tiny distant red sign may be visible where 2798 labels cls50, too small to confirm."
+2797,UNCLEAR,50?,MEDIUM,"Same road and riders as 2798; a tiny distant red sign may be visible where 2798 labels cls50, too small to confirm."
+2999,UNLABELLED_SIGN_PRESENT,13,HIGH,"Bridge approach between 2998 and 3000; the DI CHAM cls13 triangle and its plate are visible but cut at the right edge, unlabelled."

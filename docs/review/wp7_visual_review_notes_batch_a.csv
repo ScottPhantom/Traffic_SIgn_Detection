@@ -1,0 +1,101 @@
+batch_position,edge_id,provisional_outcome,capture_hypothesis,physical_sign_hypothesis,confidence,rationale
+1,edge_000006,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Both frames show the same HALO sign and matching pink-backpack rider with only slight traffic motion.
+2,edge_000007,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The HALO sign and surrounding riders retain the same viewpoint while vehicles shift only slightly.
+3,edge_000008,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same storefront sign tree line and foreground riders appear in near-consecutive positions.
+4,edge_000009,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The sign box traffic light and pink-backpack rider align across a minimal viewpoint change.
+5,edge_000014,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Both images retain the same HALO sign and dense motorbike group from an adjacent viewpoint.
+6,edge_000017,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching sign storefront and riders remain fixed while the camera advances slightly.
+7,edge_000022,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same HALO sign pink backpack and black vehicle appear with small inter-frame motion.
+8,edge_000024,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Both show the same sign and traffic queue despite a modest lateral camera shift.
+9,edge_000031,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Identical storefront sign black vehicle and foreground riders indicate adjacent frames.
+10,edge_000032,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The same sign and vehicles persist with only subtle forward motion.
+11,edge_000044,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same HALO sign pink backpack and intersection traffic occupy matching positions.
+12,edge_000045,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The sign and surrounding street details match while the camera viewpoint changes slightly.
+13,edge_000058,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same illuminated HALO frontage traffic light and foreground riders are visible in both.
+14,edge_000063,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The HALO sign and green traffic light remain the same as traffic moves incrementally.
+15,edge_000064,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching sign light storefronts and riders support an adjacent-frame relation.
+16,edge_000071,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Both frames show the same two restriction signs gantry and pink-backpack rider.
+17,edge_000072,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The paired restriction signs and foreground traffic align almost exactly.
+18,edge_000073,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same two signs blue billboard and riders persist with minimal motion.
+19,edge_000074,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Identical intersection landmarks and sign pair appear from a slightly advanced viewpoint.
+20,edge_000077,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The same sign pair gantry and foreground helmet remain visually continuous.
+21,edge_000079,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching restriction signs billboard and traffic queue show only incremental movement.
+22,edge_000086,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same signs blue billboard black vehicle and riders remain in corresponding positions.
+23,edge_000087,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The two restriction signs and foreground helmet align across adjacent views.
+24,edge_000090,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same gantry signs traffic light and motorbike queue remain visually continuous.
+25,edge_000091,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching signs billboard and pink backpack support the same capture sequence.
+26,edge_000094,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The sign pair and identical queue geometry persist with slight camera advance.
+27,edge_000096,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same two signs blue billboard and riders appear in near-identical framing.
+28,edge_000098,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The restriction signs and foreground rider remain fixed relative to the gantry.
+29,edge_000099,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same intersection sign pair and traffic cluster differ only by small motion.
+30,edge_000104,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Both frames show the same stacked roadside signs tree-lined curve and vehicles.
+31,edge_000105,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The stacked signs red-white pole and road curve align across adjacent views.
+32,edge_000108,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same sign stack trees and moving vehicles appear with a small camera shift.
+33,edge_000122,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The same yellow warning sign pole and motorbikes remain in matching positions.
+34,edge_000123,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching warning sign red-white pole and tree canopy show slight forward motion.
+35,edge_000127,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same warning sign road junction and riders persist across adjacent frames.
+36,edge_000128,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The warning sign and pole enlarge slightly while the full scene remains continuous.
+37,edge_000135,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same paired restriction signs billboard and traffic queue are visible in both.
+38,edge_000136,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The sign pair and foreground riders retain matching positions with minor motion.
+39,edge_000144,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Both frames show the same bus-stop sign shelter white car and tree.
+40,edge_000145,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The bus-stop sign and shelter remain fixed while the camera advances slightly.
+41,edge_000146,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same bus-stop pole white sedan and curved road appear in continuous framing.
+42,edge_000147,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The bus-stop sign shelter and white car align across near-consecutive views.
+43,edge_000149,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same bus-stop sign and green shelter persist with a small viewpoint shift.
+44,edge_000150,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching bus-stop pole shelter white car and tree line indicate adjacent frames.
+45,edge_000151,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The same bus-stop sign and roadside furniture remain visually continuous.
+46,edge_000153,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,NOT_RELATED,MEDIUM,The white sedan shelter and curve continue but annotated targets change from bus stop to different warning signs.
+47,edge_000163,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same multi-sign cluster white sedan trees and curb appear with slight motion.
+48,edge_000164,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The clustered signs and white car remain aligned across adjacent road views.
+49,edge_000171,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same warning and regulatory signs white sedan and tree trunks appear in both.
+50,edge_000172,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching sign cluster car and roadside benches support a continuous capture.
+51,edge_000174,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The same signs white car and tree-lined curve persist with small motion.
+52,edge_000175,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same sign poles car and curb geometry appear from a slightly advanced viewpoint.
+53,edge_000184,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Both frames show the same restriction signs gantry traffic light and riders.
+54,edge_000186,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The two signs black vehicle and pink backpack align across adjacent views.
+55,edge_000187,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same intersection signs and traffic queue remain visually continuous.
+56,edge_000188,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching sign pair billboard and riders differ only by slight motion.
+57,edge_000199,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The same no-stopping sign elevated rail verge and rider appear in both frames.
+58,edge_000200,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same no-stopping sign and emerging U-turn sign appear along the identical viaduct scene.
+59,edge_000201,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The U-turn sign rider viaduct and verge persist while the first sign leaves frame.
+60,edge_000202,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same U-turn sign rider and elevated rail align across a minor viewpoint change.
+61,edge_000206,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Both frames show the same two restriction signs traffic light and packed queue.
+62,edge_000207,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The paired signs gantry and foreground riders remain nearly identical.
+63,edge_000208,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same intersection signs black vehicle and pink backpack persist with slight motion.
+64,edge_000209,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching sign pair and traffic geometry support adjacent frames.
+65,edge_000215,NOT_RELATED,NOT_RELATED,NOT_RELATED,HIGH,Left is the HALO intersection while right is a viaduct-side road with a U-turn sign.
+66,edge_000216,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same U-turn sign viaduct blue bus shops and foreground helmet appear in both.
+67,edge_000217,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The U-turn sign bus and roadside storefronts retain matching positions.
+68,edge_000218,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same sign viaduct bus and foreground helmet persist across adjacent views.
+69,edge_000220,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The U-turn sign shop boards and rider scene align with only small motion.
+70,edge_000221,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching sign viaduct bus and storefronts indicate a continuous capture.
+71,edge_000228,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same U-turn sign blue bus viaduct and foreground helmet appear in both frames.
+72,edge_000230,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The U-turn sign and surrounding viaduct traffic retain near-identical geometry.
+73,edge_000233,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same sign bus rider and shopfronts persist with a slight camera advance.
+74,edge_000235,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The enlarged U-turn sign viaduct and foreground helmet remain visually continuous.
+75,edge_000237,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Both show the same restriction signs intersection queue and pink-backpack rider.
+76,edge_000238,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The paired signs traffic light and foreground vehicles align across adjacent views.
+77,edge_000240,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same two signs red signal and traffic queue persist with small motion.
+78,edge_000241,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching sign pair black vehicle and riders indicate adjacent frames.
+79,edge_000245,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The same intersection sign and stopped traffic remain in continuous framing.
+80,edge_000246,NOT_RELATED,NOT_RELATED,NOT_RELATED,HIGH,Left is the crowded restriction-sign intersection while right is a different viaduct-side direction-sign road.
+81,edge_000251,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same blue direction sign warning sign viaduct shops and riders appear in both.
+82,edge_000252,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The direction and warning signs remain aligned with the same road and traffic.
+83,edge_000267,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Both show the same intersection restriction sign red light and traffic queue.
+84,edge_000268,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The sign blue billboard red signal and riders persist with slight motion.
+85,edge_000270,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same restriction sign stopped vehicles and pink backpack appear in adjacent views.
+86,edge_000271,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Matching sign traffic light and queue geometry indicate a continuous capture.
+87,edge_000277,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same viaduct grassy verge three signs bus and central rider appear in both.
+88,edge_000278,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The same three roadside signs bus and rider persist with slight forward motion.
+89,edge_000284,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same sign cluster viaduct blue bus and foreground rider remain aligned.
+90,edge_000286,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The warning signs grass verge bus and rider show only incremental movement.
+91,edge_000290,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same curve warning sign bus grassy verge and helmet edge appear in both frames.
+92,edge_000291,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The warning sign bus and road furniture retain matching positions.
+93,edge_000294,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same roadside signs bus excavators grass and helmet edge persist across views.
+94,edge_000296,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The paired signs blue bus and excavators remain visually continuous.
+95,edge_000297,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same sign pair grassy verge and construction equipment appear with small motion.
+96,edge_000298,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The roadside signs and excavators align while the camera advances slightly.
+97,edge_000299,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same signs construction equipment and helmet edge persist in adjacent framing.
+98,edge_000300,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The shared class-7 sign excavators and grassy verge remain in the same continuous scene.
+99,edge_000306,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,Same two signs blue bus excavators and roadside grass appear in both frames.
+100,edge_000307,SAME_CAPTURE_CANDIDATE,SAME_CAPTURE_CANDIDATE,SAME_PHYSICAL_SIGN_CANDIDATE,HIGH,The sign pair bus construction equipment and road layout align across adjacent views.

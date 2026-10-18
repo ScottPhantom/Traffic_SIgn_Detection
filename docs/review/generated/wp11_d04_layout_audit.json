@@ -1,0 +1,253 @@
+{
+  "all_bounds_fit": true,
+  "all_instances_rendered": true,
+  "effective_independent_support": "UNKNOWN_PENDING_D02",
+  "evidence_boundary": "D04_DECISION_SUPPORT_ONLY_NO_OWNER_APPROVAL_NO_SEMANTIC_MERGE_NO_RAW_MUTATION_NO_SPLIT_NO_TRAINING",
+  "extreme_class_ids": [
+    44,
+    51
+  ],
+  "extreme_instance_count": 8,
+  "page_count": 2,
+  "pages": [
+    {
+      "all_bounds_fit": true,
+      "all_instances_rendered": true,
+      "class_id": 44,
+      "dataset_code": "W.233",
+      "expected_all_instances": 3,
+      "height": 1042,
+      "path": "docs/review/assets/wp11/d04_extreme_atlas/class_044.png",
+      "render_sha256": "6ea42cdf71809c8627c32980e109e285200ce666d2c2b191f1e32fca55486c5e",
+      "row_count": 3,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "bbox_visible": true,
+          "class_id": 44,
+          "crop_bounds": [
+            530,
+            127,
+            850,
+            347
+          ],
+          "full_image_bounds": [
+            20,
+            104,
+            500,
+            374
+          ],
+          "hashes_visible": true,
+          "slot": 1,
+          "stem": "0670",
+          "text_bounds": [
+            880,
+            114,
+            1570,
+            270
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "bbox_visible": true,
+          "class_id": 44,
+          "crop_bounds": [
+            530,
+            427,
+            850,
+            647
+          ],
+          "full_image_bounds": [
+            20,
+            404,
+            500,
+            674
+          ],
+          "hashes_visible": true,
+          "slot": 2,
+          "stem": "0671",
+          "text_bounds": [
+            880,
+            414,
+            1570,
+            570
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "bbox_visible": true,
+          "class_id": 44,
+          "crop_bounds": [
+            530,
+            727,
+            850,
+            947
+          ],
+          "full_image_bounds": [
+            20,
+            704,
+            500,
+            974
+          ],
+          "hashes_visible": true,
+          "slot": 3,
+          "stem": "0672",
+          "text_bounds": [
+            880,
+            714,
+            1570,
+            870
+          ]
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "all_bounds_fit": true,
+      "all_instances_rendered": true,
+      "class_id": 51,
+      "dataset_code": "W.246c",
+      "expected_all_instances": 5,
+      "height": 1642,
+      "path": "docs/review/assets/wp11/d04_extreme_atlas/class_051.png",
+      "render_sha256": "f787d1a4b882f5fb14a3e51073944444fb61c4afec04a0ef1ef5575eb1edbc78",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "bbox_visible": true,
+          "class_id": 51,
+          "crop_bounds": [
+            530,
+            127,
+            850,
+            347
+          ],
+          "full_image_bounds": [
+            20,
+            104,
+            500,
+            374
+          ],
+          "hashes_visible": true,
+          "slot": 1,
+          "stem": "0530",
+          "text_bounds": [
+            880,
+            114,
+            1570,
+            270
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "bbox_visible": true,
+          "class_id": 51,
+          "crop_bounds": [
+            530,
+            427,
+            850,
+            647
+          ],
+          "full_image_bounds": [
+            20,
+            404,
+            500,
+            674
+          ],
+          "hashes_visible": true,
+          "slot": 2,
+          "stem": "0531",
+          "text_bounds": [
+            880,
+            414,
+            1570,
+            570
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "bbox_visible": true,
+          "class_id": 51,
+          "crop_bounds": [
+            530,
+            727,
+            850,
+            947
+          ],
+          "full_image_bounds": [
+            20,
+            704,
+            500,
+            974
+          ],
+          "hashes_visible": true,
+          "slot": 3,
+          "stem": "0532",
+          "text_bounds": [
+            880,
+            714,
+            1570,
+            870
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "bbox_visible": true,
+          "class_id": 51,
+          "crop_bounds": [
+            530,
+            1027,
+            850,
+            1247
+          ],
+          "full_image_bounds": [
+            20,
+            1004,
+            500,
+            1274
+          ],
+          "hashes_visible": true,
+          "slot": 4,
+          "stem": "0533",
+          "text_bounds": [
+            880,
+            1014,
+            1570,
+            1170
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "bbox_visible": true,
+          "class_id": 51,
+          "crop_bounds": [
+            530,
+            1327,
+            850,
+            1547
+          ],
+          "full_image_bounds": [
+            20,
+            1304,
+            500,
+            1574
+          ],
+          "hashes_visible": true,
+          "slot": 5,
+          "stem": "0534",
+          "text_bounds": [
+            880,
+            1314,
+            1570,
+            1470
+          ]
+        }
+      ],
+      "width": 1600
+    }
+  ],
+  "raw_split_descriptive_only": true,
+  "schema_version": 1,
+  "status": "PASS_ALL_EXTREME_INSTANCES_RENDERED_WITH_HASH_AND_BBOX_LINEAGE"
+}

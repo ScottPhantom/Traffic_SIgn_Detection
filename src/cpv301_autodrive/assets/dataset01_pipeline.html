@@ -1,0 +1,192 @@
+<style>
+/* Layout: one canvas stage with a step rail above it and a narration panel below. */
+:root {
+  --bg: #ffffff; --ink: #18202b; --muted: #5b6676; --rule: #dfe3ea;
+  --train: #1f5fbf; --test: #d99a00; --neg: #9aa4b2; --same: #1e8a4a; --diff: #d0342c;
+  --quar: #8a5cd1; --b1: #1e8a4a; --b2: #2f6fd0; --b3: #d98a00; --b4: #d0342c; --hl: #00a37a;
+  --font: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font); font-size: 14px; }
+.wrap { display: grid; gap: 10px; padding: 4px 2px 12px; }
+.rail { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 6px; }
+.rail button { font: inherit; font-size: 12px; text-align: left; border: 1px solid var(--rule); background: #f6f7f9;
+  border-radius: 8px; padding: 6px 8px; cursor: pointer; color: var(--muted); line-height: 1.3; min-width: 0; }
+.rail button b { display: block; color: var(--ink); font-size: 12.5px; }
+.rail button[aria-current="step"] { border-color: var(--hl); background: #e6f6f0; color: var(--ink); }
+.rail button:focus-visible, .ctl button:focus-visible { outline: 2px solid var(--hl); outline-offset: 2px; }
+canvas { width: 100%; display: block; border: 1px solid var(--rule); border-radius: 10px; background: #fbfcfd; }
+.ctl { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.ctl button { font: inherit; border: 1px solid var(--rule); background: var(--ink); color: #fff; border-radius: 8px; padding: 6px 14px; cursor: pointer; }
+.ctl button.ghost { background: #fff; color: var(--ink); }
+.narr { border-left: 3px solid var(--hl); padding: 6px 12px; background: #f6f7f9; border-radius: 0 8px 8px 0; }
+.narr h3 { margin: 0 0 4px; font-size: 16px; }
+.narr p { margin: 0; color: var(--muted); max-width: 90ch; }
+@media (max-width: 900px) { .rail { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+<div class="wrap">
+  <div class="rail" id="rail" role="tablist" aria-label="Các bước xử lý DATASET01"></div>
+  <canvas id="cv" width="1200" height="560" aria-label="Hoạt hình quá trình dựng đồ thị, chỉnh nhãn, chia nhóm và làm giàu dữ liệu"></canvas>
+  <div class="ctl">
+    <button type="button" id="prev" class="ghost">◀ Bước trước</button>
+    <button type="button" id="play">⏸ Tạm dừng</button>
+    <button type="button" id="next" class="ghost">Bước sau ▶</button>
+    <span id="pos" style="color:var(--muted)"></span>
+  </div>
+  <div class="narr"><h3 id="nt"></h3><p id="nb"></p></div>
+</div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(() => {
+  const D = JSON.parse(document.getElementById("data").textContent);
+  const S = D.stats, fmt = n => n.toLocaleString("vi-VN");
+  const cv = document.getElementById("cv"), ctx = cv.getContext("2d");
+  const W = cv.width, H = cv.height;
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const C = Object.fromEntries(["train","test","neg","same","diff","quar","b1","b2","b3","b4","ink","muted","rule","hl"].map(k => [k, css("--" + k)]));
+  const ease = t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const rnd = (i, s = 1) => { const x = Math.sin(i * 12.9898 + s * 78.233) * 43758.5453; return x - Math.floor(x); };
+
+  const STEPS = [
+    ["1. Ảnh gốc", "Khung hình theo tên file", `${fmt(S.frames)} khung hình dashcam, xếp theo số thứ tự tên file. Màu là split gốc của nhà cung cấp: xanh = train, vàng = test, xám = ảnh âm chưa xếp. Mỗi chấm ở đây đại diện ${D.step} khung hình.`],
+    ["2. Cạnh proxy", "Nối ảnh liền kề", `${fmt(S.edges)} cạnh nối mỗi cặp ảnh có số liền nhau (WP2/WP5). Đây chỉ là giả thuyết "có thể cùng lần chụp", chưa phải sự thật.`],
+    ["3. Review cạnh", "Cùng chụp hay không", `Mỗi cạnh được xem bằng mắt (WP5–WP30-R1) và QA độc lập: ${fmt(S.same)} cùng lần chụp (xanh lá), ${fmt(S.notRelated)} không liên quan (đỏ), ${S.unresolved} chưa kết luận, ${S.quarantined} cách ly quanh ảnh 0248.`],
+    ["4. Nối chéo khối", "WP32", "Các chuyến đi nằm xen kẽ trong tên file. WP32 tìm cặp ảnh gần trùng ở hai khối xa nhau rồi review bằng mắt, nối lại những khối thuộc cùng một chuyến đi (cung tím)."],
+    ["5. Gom nhóm D-02", `${S.groups} nhóm`, `Gom cạnh "cùng lần chụp" thành ${S.groups} nhóm group_id (owner duyệt D02-P1). Cả ${S.mixedGroups}/${S.groups} nhóm đều bị split gốc chia chéo train/test, nên split gốc không dùng làm holdout được.`],
+    ["6. Chỉnh nhãn", "D-03 → WP33", `Áp dụng taxonomy đã duyệt lên ${fmt(S.boxes)} box: lớp 23 thành biển ghép P.111a+P.111b, biển chiều cao tách theo giá trị (2,0 / 2,2 / 2,5 / 2,7 m), lớp 31 camera chuyển sang UNKNOWN, 4 box không đọc được bị loại. Kết quả ${S.trainClasses} lớp train, ${fmt(S.trainBoxes)} box.`],
+    ["7. Chia 4 nhóm lớp", "D-04", `Mỗi lớp được xếp theo số nhóm D-02 độc lập chứa nó: ≥ 3 nhóm (đủ train/val/test), 2 nhóm (không có val), 1 nhóm ≥ 30 ảnh (chỉ train), 1 nhóm < 30 ảnh (ít ảnh nhất).`],
+    ["8. Làm giàu dữ liệu", "WP35", `Nhóm cuối đi qua bước làm giàu: chỉ biến đổi ảnh thật (xoay ±5°, zoom/crop lệch, độ sáng, tương phản, màu, mờ, nhòe, nhiễu, nén JPEG), không dán biển. Tạo ${fmt(S.augmented)} ảnh train, 150 ảnh mỗi lớp; vẫn cần ảnh thật độc lập để đánh giá.`],
+  ];
+  const DUR = [3200, 3600, 4200, 4200, 4800, 5200, 5200, 6400];
+
+  // Layout of dots: a filename-ordered strip, then cluster circles per D-02 group.
+  const dots = D.dots.map(([stem, split, group], i) => ({ stem, split, group, i }));
+  const cols = 24, gx = 46, gy = 38, ox = 50, oy = 90;
+  dots.forEach(d => { d.sx = ox + (d.i % cols) * gx; d.sy = oy + Math.floor(d.i / cols) * gy; });
+  const groupDots = new Map();
+  dots.forEach(d => { if (!groupDots.has(d.group)) groupDots.set(d.group, []); groupDots.get(d.group).push(d); });
+  const groupsShown = [...groupDots.keys()].filter(g => g >= 0).sort((a, b) => a - b);
+  const gcols = 11;
+  groupsShown.forEach((g, k) => {
+    const cx = 70 + (k % gcols) * 102, cy = 80 + Math.floor(k / gcols) * 92;
+    groupDots.get(g).forEach((d, j) => {
+      const a = j * 2.39996, r = 5 + 5.2 * Math.sqrt(j);
+      d.cx = cx + r * Math.cos(a); d.cy = cy + r * Math.sin(a); d.gcx = cx; d.gcy = cy;
+    });
+  });
+  (groupDots.get(-1) || []).forEach(d => { d.cx = W - 30; d.cy = H - 30; d.gcx = d.cx; d.gcy = d.cy; });
+  const groupColor = g => g < 0 ? C.quar : `hsl(${(g * 137.508) % 360} 62% 52%)`;
+  const splitColor = s => [C.train, C.test, C.neg][s];
+  // Edge state between consecutive dots: same group → same capture; group change → not related.
+  const links = dots.slice(1).map((d, k) => ({ a: dots[k], b: d, same: d.group === dots[k].group }));
+  const cross = [];
+  for (const [g, list] of groupDots) {
+    if (g < 0) continue;
+    for (let k = 1; k < list.length; k++) if (list[k].i - list[k - 1].i > 3) cross.push([list[k - 1], list[k]]);
+  }
+  // Class chips and bins.
+  const BCOL = { KEEP_FULL: C.b1, KEEP_TRAIN_AND_TEST_NO_VAL: C.b2, KEEP_TRAIN_ONLY_UNVERIFIED: C.b3, DROP_FROM_V1_COLLECT_MORE: C.b4 };
+  const bins = D.buckets.map(([id, label], k) => ({ id, label, x: 30 + k * 292, y: 300, w: 276, h: 236, items: [] }));
+  const chips = D.classes.map((c, k) => ({ ...c, k, sx: 40 + (k % 18) * 64, sy: 120 + Math.floor(k / 18) * 40 }));
+  chips.forEach(c => { const bin = bins.find(b => b.id === c.bucket); c.slot = bin.items.length; bin.items.push(c); });
+  chips.forEach(c => { const bin = bins.find(b => b.id === c.bucket); c.bx = bin.x + 10 + (c.slot % 4) * 66; c.by = bin.y + 34 + Math.floor(c.slot / 4) * 30; });
+
+  function title(text, sub) {
+    ctx.fillStyle = C.ink; ctx.font = "600 20px " + css("--font"); ctx.fillText(text, 24, 34);
+    if (sub) { ctx.fillStyle = C.muted; ctx.font = "13px " + css("--font"); ctx.fillText(sub, 24, 54); }
+  }
+  function dot(x, y, r, color) { ctx.fillStyle = color; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill(); }
+  function chip(c, x, y, alpha = 1) {
+    ctx.globalAlpha = alpha; ctx.fillStyle = BCOL[c.bucket]; ctx.beginPath();
+    ctx.roundRect(x, y, 60, 24, 6); ctx.fill();
+    ctx.fillStyle = "#fff"; ctx.font = "600 11px " + css("--font"); ctx.fillText(c.code.slice(0, 9), x + 5, y + 16); ctx.globalAlpha = 1;
+  }
+
+  function strip(t, edges, review, crossT) {
+    for (const l of links) {
+      if (edges <= 0) break;
+      const k = l.a.i / dots.length; if (k > edges) continue;
+      if (l.a.i % cols === cols - 1) continue; // row wrap: the next frame starts a new row
+      ctx.strokeStyle = review > k ? (l.same ? C.same : C.diff) : "#b7bfcb"; ctx.lineWidth = review > k && !l.same ? 5 : 3;
+      ctx.beginPath(); ctx.moveTo(l.a.sx, l.a.sy); ctx.lineTo(l.b.sx, l.b.sy); ctx.stroke();
+    }
+    if (crossT > 0) {
+      ctx.strokeStyle = C.quar; ctx.lineWidth = 1.5; ctx.globalAlpha = 0.7;
+      cross.forEach(([a, b], k) => { if (k / cross.length > crossT) return;
+        ctx.beginPath(); ctx.moveTo(a.sx, a.sy); ctx.quadraticCurveTo((a.sx + b.sx) / 2 + 40, Math.min(a.sy, b.sy) - 30, b.sx, b.sy); ctx.stroke(); });
+      ctx.globalAlpha = 1;
+    }
+    dots.forEach(d => dot(d.sx, d.sy, 8, splitColor(d.split)));
+    dots.filter(d => d.group < 0).forEach(d => { ctx.strokeStyle = C.quar; ctx.lineWidth = 2; ctx.strokeRect(d.sx - 8, d.sy - 8, 16, 16); });
+  }
+
+  const scenes = [
+    t => { title(STEPS[0][0] + " — " + fmt(S.frames) + " khung hình", "Mỗi chấm đại diện " + D.step + " khung hình liên tiếp");
+      dots.forEach(d => { const k = Math.min(1, Math.max(0, t * 1.4 - d.i / dots.length * 0.6)); if (k > 0) dot(d.sx, d.sy, 8 * ease(k), splitColor(d.split)); }); },
+    t => { title(STEPS[1][0], fmt(S.edges) + " cạnh nối các ảnh có số tên file liền nhau"); strip(t, ease(t), 0, 0); },
+    t => { title(STEPS[2][0], "Xanh lá = cùng lần chụp · Đỏ = không liên quan"); strip(t, 1, ease(t), 0); },
+    t => { title(STEPS[3][0], "Cung tím nối những khối xa nhau thuộc cùng một chuyến đi"); strip(t, 1, 1, ease(t)); },
+    t => { const k = ease(t); title(STEPS[4][0] + " — " + S.groups + " nhóm group_id", "Màu chấm chuyển từ split gốc sang màu nhóm D-02");
+      groupsShown.forEach(g => { if (k > 0.6) { const d0 = groupDots.get(g)[0]; ctx.globalAlpha = (k - 0.6) * 2.5; ctx.strokeStyle = groupColor(g); ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(d0.gcx, d0.gcy, 8 + 5.2 * Math.sqrt(groupDots.get(g).length), 0, Math.PI * 2); ctx.stroke(); ctx.globalAlpha = 1; } });
+      dots.forEach(d => dot(lerp(d.sx, d.cx, k), lerp(d.sy, d.cy, k), 5.5, k > 0.5 ? groupColor(d.group) : splitColor(d.split))); },
+    t => { title(STEPS[5][0] + " — taxonomy D-03 áp lên " + fmt(S.boxes) + " box", "Nhãn thô → nhãn dẫn xuất WP33");
+      const rows = [["Lớp 23  P.111", "P.111a+P.111b (biển ghép)"], ["Lớp 16  P.117", "P.117 · 2,0 m | 2,2 m | 2,5 m"], ["Lớp 43  W.239b", "W.239b · 2,5 m | 2,7 m"], ["Lớp 31  Camera", "UNKNOWN (chỉ để đánh giá)"], ["4 box không đọc được", "loại khỏi train"], ["0776:7 gán nhầm lớp 18", "loại khỏi train"]];
+      rows.forEach(([a, b], k) => { const p = ease(Math.min(1, Math.max(0, t * 1.6 - k * 0.12))); const y = 100 + k * 66;
+        ctx.fillStyle = "#eef1f5"; ctx.beginPath(); ctx.roundRect(60, y, 300, 44, 8); ctx.fill(); ctx.fillStyle = C.ink; ctx.font = "15px " + css("--font"); ctx.fillText(a, 76, y + 28);
+        ctx.strokeStyle = C.hl; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(370, y + 22); ctx.lineTo(370 + 200 * p, y + 22); ctx.stroke();
+        if (p > 0.95) { ctx.fillStyle = k >= 3 ? "#fde8e7" : "#e6f6f0"; ctx.beginPath(); ctx.roundRect(590, y, 420, 44, 8); ctx.fill(); ctx.fillStyle = C.ink; ctx.fillText(b, 606, y + 28); } });
+      ctx.fillStyle = C.muted; ctx.font = "14px " + css("--font"); ctx.fillText(`→ ${S.trainClasses} lớp train · ${fmt(S.trainBoxes)} box · raw label giữ nguyên`, 60, 510); },
+    t => { const k = ease(Math.min(1, t * 1.2)); title(STEPS[6][0] + " — theo số nhóm D-02 độc lập", "Một lớp cần ≥ 3 nhóm để có mặt ở cả train, val và test");
+      bins.forEach((b, i) => { ctx.fillStyle = "#f6f7f9"; ctx.strokeStyle = BCOL[b.id]; ctx.lineWidth = 2; ctx.beginPath(); ctx.roundRect(b.x, b.y, b.w, b.h, 10); ctx.fill(); ctx.stroke();
+        ctx.fillStyle = BCOL[b.id]; ctx.font = "600 12.5px " + css("--font"); ctx.fillText(b.label.slice(0, 40), b.x + 10, b.y + 20);
+        ctx.fillStyle = C.ink; ctx.font = "600 22px " + css("--font"); ctx.fillText(String(b.items.length), b.x + b.w - 40, b.y + b.h - 14); });
+      chips.forEach(c => { const p = ease(Math.min(1, Math.max(0, k * 1.5 - c.k / chips.length * 0.5))); chip(c, lerp(c.sx, c.bx, p), lerp(c.sy - 40, c.by, p)); }); },
+    t => { title(STEPS[7][0] + " — chỉ biến đổi ảnh thật", "Nhóm cuối: ×150 ảnh mỗi lớp, không dán biển");
+      const bin = bins[3], mx = 520, my = 200;
+      ctx.fillStyle = "#f6f7f9"; ctx.strokeStyle = C.b4; ctx.lineWidth = 2; ctx.beginPath(); ctx.roundRect(30, 120, 300, 300, 10); ctx.fill(); ctx.stroke();
+      ctx.fillStyle = C.b4; ctx.font = "600 13px " + css("--font"); ctx.fillText(bin.label, 40, 142);
+      bin.items.forEach((c, j) => chip(c, 44 + (j % 4) * 68, 160 + Math.floor(j / 4) * 34));
+      ctx.fillStyle = C.ink; ctx.beginPath(); ctx.roundRect(mx - 110, my, 220, 150, 14); ctx.fill();
+      ctx.fillStyle = "#fff"; ctx.font = "600 14px " + css("--font"); ctx.fillText("Làm giàu WP35", mx - 56, my + 26);
+      const ops = ["xoay ±5°", "zoom / crop lệch", "sáng · tương phản", "màu · gamma", "mờ · nhòe", "nhiễu · JPEG"];
+      ops.forEach((o, j) => { ctx.globalAlpha = 0.5 + 0.5 * Math.abs(Math.sin(t * 8 + j)); ctx.fillStyle = "#cfe9df"; ctx.font = "12px " + css("--font"); ctx.fillText(o, mx - 96 + (j % 2) * 104, my + 56 + Math.floor(j / 2) * 28); });
+      ctx.globalAlpha = 1;
+      bin.items.forEach((c, j) => { const p = (t * 3 + j / bin.items.length) % 1; const x = lerp(330, mx - 110, ease(Math.min(1, p * 2))); const y = lerp(180 + j * 18, my + 70, ease(Math.min(1, p * 2)));
+        if (p < 0.5) chip(c, x, y, 0.9); });
+      const total = Math.round(S.augmented * ease(Math.min(1, t * 1.1)));
+      for (let j = 0; j < 60; j++) { const p = (t * 2.2 + j / 60) % 1; if (t * 60 < j) continue;
+        const x = lerp(mx + 110, 900 + (j % 10) * 26, ease(p)); const y = lerp(my + 75, 130 + Math.floor(j / 10) * 46 + 8 * Math.sin(j), ease(p));
+        ctx.fillStyle = BCOL.DROP_FROM_V1_COLLECT_MORE; ctx.globalAlpha = 0.35 + 0.65 * rnd(j); ctx.fillRect(x, y, 22, 14); ctx.globalAlpha = 1; }
+      ctx.fillStyle = C.ink; ctx.font = "600 26px " + css("--font"); ctx.fillText(fmt(total) + " ảnh train", 900, 450);
+      ctx.fillStyle = C.muted; ctx.font = "13px " + css("--font"); ctx.fillText("Chỉ để train · chưa kiểm chứng · không kích hoạt hành vi xe", 820, 476); },
+  ];
+
+  const rail = document.getElementById("rail");
+  rail.innerHTML = STEPS.map(([a, b], k) => `<button type="button" data-k="${k}"><b>${a}</b>${b}</button>`).join("");
+  let step = 0, start = performance.now(), playing = !matchMedia("(prefers-reduced-motion: reduce)").matches, frozen = 0;
+  function go(k) { step = (k + STEPS.length) % STEPS.length; start = performance.now(); frozen = playing ? 0 : 1; show(); }
+  function show() {
+    [...rail.children].forEach((b, k) => k === step ? b.setAttribute("aria-current", "step") : b.removeAttribute("aria-current"));
+    document.getElementById("nt").textContent = STEPS[step][0] + " — " + STEPS[step][1];
+    document.getElementById("nb").textContent = STEPS[step][2];
+    document.getElementById("pos").textContent = `Bước ${step + 1}/${STEPS.length}`;
+  }
+  function frame(now) {
+    let t = playing ? (now - start) / DUR[step] : frozen;
+    if (playing && t >= 1.25) { go(step + 1); t = 0; }
+    ctx.clearRect(0, 0, W, H);
+    scenes[step](Math.min(1, t));
+    requestAnimationFrame(frame);
+  }
+  rail.addEventListener("click", e => { const b = e.target.closest("button"); if (b) go(Number(b.dataset.k)); });
+  document.getElementById("prev").onclick = () => go(step - 1);
+  document.getElementById("next").onclick = () => go(step + 1);
+  const playBtn = document.getElementById("play");
+  const syncPlay = () => { playBtn.textContent = playing ? "⏸ Tạm dừng" : "▶ Phát"; };
+  playBtn.onclick = () => { playing = !playing; if (playing) start = performance.now(); else frozen = 1; syncPlay(); };
+  syncPlay(); show(); requestAnimationFrame(frame);
+})();
+</script>

@@ -1,0 +1,5443 @@
+{
+  "all_bbox_context_rendered": true,
+  "all_bounds_fit": true,
+  "all_decisions_recorded": true,
+  "all_headers_complete": true,
+  "all_text_complete": true,
+  "evidence_boundary": "BATCH_E_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+  "page_count": 36,
+  "pages": [
+    {
+      "height": 2372,
+      "page": 1,
+      "path": "docs/review/assets/wp15/batch_e/page_001.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 1,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002665",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2690",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2691",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 2,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002674",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2699",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2700",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 3,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002675",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2700",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2701",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 4,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002679",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2704",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2705",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 5,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002680",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2705",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2706",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 2,
+      "path": "docs/review/assets/wp15/batch_e/page_002.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 6,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002683",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2708",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2709",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 7,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002684",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2709",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2710",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 8,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002688",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2713",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2714",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 9,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002689",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2714",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2715",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 10,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002691",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2716",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2717",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 3,
+      "path": "docs/review/assets/wp15/batch_e/page_003.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 11,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002692",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2717",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2718",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 12,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002695",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2720",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2721",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 13,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002696",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2721",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2722",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 14,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002699",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2726",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2727",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 15,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002700",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2727",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2728",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 4,
+      "path": "docs/review/assets/wp15/batch_e/page_004.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 16,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002701",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2728",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2729",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 17,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002702",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2729",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2730",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 18,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002722",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2749",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2750",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 19,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002723",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2750",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2751",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 20,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002729",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2756",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2757",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 5,
+      "path": "docs/review/assets/wp15/batch_e/page_005.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 21,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002730",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2757",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2758",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 22,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002731",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2758",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2759",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 23,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002732",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2759",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2760",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 24,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002743",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2772",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2773",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 25,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002744",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2773",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2774",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 6,
+      "path": "docs/review/assets/wp15/batch_e/page_006.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 26,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002745",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2774",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2775",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 27,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002747",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2776",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2777",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 28,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002749",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2778",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2779",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 29,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002750",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2779",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2780",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 30,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002755",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2784",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2785",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 7,
+      "path": "docs/review/assets/wp15/batch_e/page_007.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 31,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002756",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2785",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2786",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 32,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002761",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2790",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2791",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 33,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002762",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2791",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2792",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 34,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002764",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2799",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2800",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 35,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002765",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2800",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2801",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 8,
+      "path": "docs/review/assets/wp15/batch_e/page_008.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 36,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002766",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2801",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2802",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 37,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002768",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2803",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2804",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 38,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002770",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2805",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2806",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 39,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002774",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2809",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2810",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 40,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002775",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2810",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2811",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 9,
+      "path": "docs/review/assets/wp15/batch_e/page_009.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 41,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002778",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2813",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2814",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 42,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002780",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2815",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2816",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 43,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002786",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2821",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2822",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 44,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002787",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2822",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2823",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 45,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002791",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2826",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2827",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 10,
+      "path": "docs/review/assets/wp15/batch_e/page_010.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 46,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002792",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2827",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2828",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 47,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002793",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2828",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2829",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 48,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002794",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2829",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2830",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 49,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002798",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2833",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2834",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 50,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002799",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2834",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2835",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 11,
+      "path": "docs/review/assets/wp15/batch_e/page_011.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 51,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002804",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2839",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2840",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 52,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002805",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2840",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2841",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 53,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002817",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2852",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2853",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 54,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002818",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2853",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2854",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 55,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002821",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2856",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2857",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 12,
+      "path": "docs/review/assets/wp15/batch_e/page_012.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 56,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002822",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2857",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2858",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 57,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002823",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2858",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2859",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 58,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002824",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2859",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2860",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 59,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002836",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2871",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2872",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 60,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002837",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2872",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2873",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 13,
+      "path": "docs/review/assets/wp15/batch_e/page_013.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 61,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002838",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2873",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2874",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 62,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002839",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2874",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2875",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 63,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002844",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2879",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2880",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 64,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002845",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2880",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2881",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 65,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002847",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2882",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2883",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 14,
+      "path": "docs/review/assets/wp15/batch_e/page_014.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 66,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002848",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2883",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2884",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 67,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002853",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2888",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2889",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 68,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002854",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2889",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2890",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 69,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002858",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2893",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2894",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 70,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002859",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2894",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2895",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 15,
+      "path": "docs/review/assets/wp15/batch_e/page_015.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 71,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002864",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2899",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2900",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 72,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002866",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2901",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2902",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 73,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002870",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2905",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2906",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 74,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002871",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2906",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2907",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 75,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002874",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2909",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2910",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 16,
+      "path": "docs/review/assets/wp15/batch_e/page_016.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 76,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002876",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2911",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2912",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 77,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002877",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2912",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2913",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 78,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002878",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2913",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2914",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 79,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002887",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2922",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2923",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 80,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002889",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2924",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2925",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 17,
+      "path": "docs/review/assets/wp15/batch_e/page_017.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 81,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002890",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2925",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2926",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 82,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002891",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2926",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2927",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 83,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002894",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2929",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2930",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 84,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002895",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2930",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2931",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 85,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002898",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2933",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2934",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 18,
+      "path": "docs/review/assets/wp15/batch_e/page_018.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 86,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002899",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2934",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2935",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 87,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002900",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2935",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2936",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 88,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002901",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2936",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2937",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 89,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002912",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2947",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2948",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 90,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002913",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2948",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2949",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 19,
+      "path": "docs/review/assets/wp15/batch_e/page_019.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 91,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002914",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2949",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2950",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 92,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002917",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2952",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2953",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 93,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002926",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2961",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2962",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 94,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002927",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2962",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2963",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 95,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002929",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2964",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2965",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 20,
+      "path": "docs/review/assets/wp15/batch_e/page_020.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 96,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002930",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2965",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2966",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 97,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002931",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2966",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2967",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 98,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002932",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2967",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2968",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 99,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002933",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2968",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2969",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 100,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002935",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2970",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2971",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 21,
+      "path": "docs/review/assets/wp15/batch_e/page_021.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 101,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002936",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2971",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2972",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 102,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002937",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2972",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2973",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 103,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002938",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2973",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2974",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 104,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002939",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2974",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2975",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 105,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002949",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2984",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2985",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 22,
+      "path": "docs/review/assets/wp15/batch_e/page_022.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 106,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002950",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2985",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2986",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 107,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002951",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2986",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2987",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 108,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002952",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "2987",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "2988",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 109,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002955",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "2990",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "2991",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 110,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002958",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "2993",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "2994",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 23,
+      "path": "docs/review/assets/wp15/batch_e/page_023.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 111,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002961",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "2996",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "2997",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 112,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002962",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "2997",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "2998",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 113,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002965",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3002",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3003",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 114,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002966",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3003",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3004",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 115,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002975",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3012",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3013",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 24,
+      "path": "docs/review/assets/wp15/batch_e/page_024.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 116,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002976",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3013",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3014",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 117,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002982",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3019",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3020",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 118,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002984",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3021",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3022",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 119,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002987",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3024",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3025",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 120,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002988",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3025",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3026",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 25,
+      "path": "docs/review/assets/wp15/batch_e/page_025.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 121,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002990",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3027",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3028",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 122,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002991",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3028",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3029",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 123,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002995",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3032",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3033",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 124,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_002996",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3033",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3034",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 125,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003000",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3037",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3038",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 26,
+      "path": "docs/review/assets/wp15/batch_e/page_026.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 126,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003001",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3038",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3039",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 127,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003011",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3048",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3049",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 128,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003013",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3050",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3051",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 129,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003023",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3060",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3061",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 130,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003024",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3061",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3062",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 27,
+      "path": "docs/review/assets/wp15/batch_e/page_027.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 131,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003027",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3064",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3065",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 132,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003028",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3065",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3066",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 133,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003029",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3066",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3067",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 134,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003030",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3067",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3068",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 135,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003039",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3076",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3077",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 28,
+      "path": "docs/review/assets/wp15/batch_e/page_028.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 136,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003040",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3077",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3078",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 137,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003054",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3091",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3092",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 138,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003055",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3092",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3093",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 139,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003057",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3094",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3095",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 140,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003058",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3095",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3096",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 29,
+      "path": "docs/review/assets/wp15/batch_e/page_029.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 141,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003059",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3096",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3097",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 142,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003060",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3097",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3098",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 143,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003068",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3105",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3106",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 144,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003069",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3106",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3107",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 145,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003083",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3120",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3121",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 30,
+      "path": "docs/review/assets/wp15/batch_e/page_030.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 146,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003084",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3121",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3122",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 147,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003085",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3122",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3123",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 148,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003086",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3123",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3124",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 149,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003100",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3137",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3138",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 150,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003101",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3138",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3139",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 31,
+      "path": "docs/review/assets/wp15/batch_e/page_031.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 151,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003102",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3139",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3140",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 152,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003103",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3140",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3141",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 153,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003113",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3150",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3151",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 154,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003114",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3151",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3152",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 155,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003115",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3152",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3153",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 32,
+      "path": "docs/review/assets/wp15/batch_e/page_032.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 156,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003117",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3154",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3155",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 157,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003121",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3158",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3159",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 158,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003123",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3160",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3161",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 159,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003129",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3166",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3167",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 160,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003130",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3167",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3168",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 33,
+      "path": "docs/review/assets/wp15/batch_e/page_033.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 161,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003138",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3175",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3176",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 162,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003139",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3176",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3177",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 163,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003143",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3180",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3181",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 164,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003144",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3181",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3182",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 165,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003147",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3184",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3185",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 34,
+      "path": "docs/review/assets/wp15/batch_e/page_034.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 166,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003148",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3185",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3186",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 167,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003149",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3186",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3187",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 168,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003150",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3187",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3188",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 169,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003151",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3188",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3189",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 170,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003152",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3189",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3190",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 2372,
+      "page": 35,
+      "path": "docs/review/assets/wp15/batch_e/page_035.jpg",
+      "row_count": 5,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 171,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003156",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3193",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3194",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 172,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003157",
+          "left_bounds": [
+            18,
+            584,
+            618,
+            921
+          ],
+          "left_stem": "3194",
+          "right_bounds": [
+            628,
+            584,
+            1228,
+            921
+          ],
+          "right_stem": "3195",
+          "slot": 2,
+          "text_bounds": [
+            1245,
+            544,
+            1580,
+            836
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 173,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003160",
+          "left_bounds": [
+            18,
+            1044,
+            618,
+            1381
+          ],
+          "left_stem": "3197",
+          "right_bounds": [
+            628,
+            1044,
+            1228,
+            1381
+          ],
+          "right_stem": "3198",
+          "slot": 3,
+          "text_bounds": [
+            1245,
+            1004,
+            1580,
+            1296
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 174,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003161",
+          "left_bounds": [
+            18,
+            1504,
+            618,
+            1841
+          ],
+          "left_stem": "3198",
+          "right_bounds": [
+            628,
+            1504,
+            1228,
+            1841
+          ],
+          "right_stem": "3199",
+          "slot": 4,
+          "text_bounds": [
+            1245,
+            1464,
+            1580,
+            1756
+          ],
+          "text_complete": true
+        },
+        {
+          "all_bounds_fit": true,
+          "batch_position": 175,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003177",
+          "left_bounds": [
+            18,
+            1964,
+            618,
+            2301
+          ],
+          "left_stem": "3214",
+          "right_bounds": [
+            628,
+            1964,
+            1228,
+            2301
+          ],
+          "right_stem": "3215",
+          "slot": 5,
+          "text_bounds": [
+            1245,
+            1924,
+            1580,
+            2216
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    },
+    {
+      "height": 532,
+      "page": 36,
+      "path": "docs/review/assets/wp15/batch_e/page_036.jpg",
+      "row_count": 1,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "batch_position": 176,
+          "bbox_overlay_rendered": true,
+          "decision_recorded": true,
+          "edge_id": "edge_003178",
+          "left_bounds": [
+            18,
+            124,
+            618,
+            461
+          ],
+          "left_stem": "3215",
+          "right_bounds": [
+            628,
+            124,
+            1228,
+            461
+          ],
+          "right_stem": "3216",
+          "slot": 1,
+          "text_bounds": [
+            1245,
+            84,
+            1580,
+            376
+          ],
+          "text_complete": true
+        }
+      ],
+      "width": 1600
+    }
+  ],
+  "pair_count": 176,
+  "pairs_per_page": 5,
+  "schema_version": 1,
+  "status": "PASS_COMPLETE_176_PAIR_COVERAGE_TEXT_BOUNDS_AND_BBOX_CONTEXT"
+}

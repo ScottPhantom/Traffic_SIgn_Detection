@@ -1,0 +1,53 @@
+{
+  "all_bounds_fit": true,
+  "all_three_options_visible": true,
+  "boundary_zoom_visible": true,
+  "canvas": {
+    "height": 1500,
+    "width": 1900
+  },
+  "clipped_box_full_canvas_xyxy": [
+    987.00048,
+    278.99976000000004,
+    1020.0,
+    333.99984
+  ],
+  "context_0247_visible": true,
+  "context_0249_visible": true,
+  "context_is_proxy_only": true,
+  "full_frame_visible": true,
+  "governance_boundary_visible": true,
+  "image_right_boundary_canvas_x": 1020,
+  "raw_box_extends_beyond_image_boundary": true,
+  "raw_box_full_canvas_xyxy": [
+    987.00048,
+    278.99976000000004,
+    1038.0004800000002,
+    333.99984
+  ],
+  "raw_box_stays_within_canvas": true,
+  "recommendation_visible": true,
+  "render_sha256": "31030eb464cd8944576cbb0528156aa5cc7df048505bde1fe5ecaceb36fe99aa",
+  "schema_version": 1,
+  "semantic_digest": "c7c28c7e5739addc5205c2fe4e66a805fdf06ef7ff2e8555690f7ac79374aa11",
+  "source_image_bounds": [
+    60,
+    120,
+    1020,
+    660
+  ],
+  "status": "PASS_ALL_PANELS_AND_OVERLAYS_WITHIN_CANVAS",
+  "zoom_clipped_box_canvas_xyxy": [
+    321.0014400000001,
+    936.99928,
+    420,
+    1101.99952
+  ],
+  "zoom_raw_box_canvas_xyxy": [
+    321.0014400000001,
+    936.99928,
+    474.0014400000001,
+    1101.99952
+  ],
+  "zoom_virtual_outside_area_visible": true
+}

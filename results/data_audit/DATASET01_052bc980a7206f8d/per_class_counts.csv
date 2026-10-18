@@ -1,0 +1,53 @@
+class_id,sign_code,name_en,name_vi,image_count,box_count,train_image_count,test_image_count,unsplit_image_count
+0,W.224,Pedestrian Crossing,Đường người đi bộ cắt ngang,312,312,251,61,0
+1,W.205c,Equal-level Intersection,Đường giao nhau (ngã ba bên phải),22,22,17,5,0
+2,P.102,No Entry,Cấm đi ngược chiều,467,470,380,87,0
+3,R.302a,Right Turn Only,Phải đi vòng sang bên phải,454,454,367,87,0
+4,W.205a,Intersection,Giao nhau với đường đồng cấp,33,33,23,10,0
+5,W.207,Intersection with a non-priority road,Giao nhau với đường không ưu tiên,256,256,212,44,0
+6,W.201a,Danger zone on the left,Chỗ ngoặt nguy hiểm vòng bên trái,163,182,135,28,0
+7,P.123a,No Left Turn,Cấm rẽ trái,247,247,194,53,0
+8,I.434a,Bus Stop,Bến xe buýt,213,213,167,46,0
+9,R.303,Roundabout,Nơi giao nhau chạy theo vòng xuyến,43,43,35,8,0
+10,P.130,No Stopping and No Parking,Cấm dừng và đỗ xe,1030,1071,824,206,0
+11,I.409,U-Turn Allowed,Chỗ quay xe,26,26,18,8,0
+12,R.415a,Lane Allocation,Biển gộp làn đường theo phương tiện,279,280,228,51,0
+13,W.245a,Slow Down,Đi chậm,371,372,288,83,0
+14,P.106a*Xe tải,No Trucks Allowed,Cấm xe tải,47,85,37,10,0
+15,W.203c,Narrow Road on the Right,Đường bị thu hẹp về phía phải,29,29,18,11,0
+16,P.117*,Height Limit,Giới hạn chiều cao,73,73,57,16,0
+17,P.124a*,No U-Turn,Cấm quay đầu,105,105,84,21,0
+18,P.107,No Passenger Cars and Trucks,Cấm ô tô khách và ô tô tải,154,214,127,27,0
+19,P.124d,No U-Turn and No Right Turn,Cấm rẽ phải và quay đầu,29,29,22,7,0
+20,P.103a,No Cars Allowed,Cấm ô tô,52,52,45,7,0
+21,W.203b,Narrow Road on the Left,Đường bị thu hẹp về phía trái,11,11,8,3,0
+22,W.221b,Uneven Road,Gồ giảm tốc phía trước,92,131,76,16,0
+23,P.111,No Two or Three-wheeled Vehicles,Cấm xe hai và ba bánh,465,465,375,90,0
+24,P.129,Customs Checkpoint,Kiểm tra,56,56,43,13,0
+25,S.505a*Xe máy,Motorcycles Only,Chỉ dành cho xe máy*,25,25,21,4,0
+26,W.246a,Obstacle on the Road,Chướng ngoại vật phía trước,80,80,61,19,0
+27,W.225,Children Present,Trẻ em,36,36,28,8,0
+28,S.505a*Xe tải và công,Trucks and Containers,Xe tải và xe công*,27,27,19,8,0
+29,P.104,No Motorcycles Allowed,Cấm mô tô và xe máy,45,45,39,6,0
+30,S.505a*Xe tải,Trucks Only,Chỉ dành cho xe tải*,138,138,120,18,0
+31,Camera,Road with Surveillance Camera,Đường có camera giám sát,38,38,30,8,0
+32,P.123b,No Right Turn,Cấm rẽ phải,186,186,141,45,0
+33,W.202b,Double curve first to right,"Nhiều chỗ ngoặt nguy hiểm liên tiếp, chỗ đầu tiên sang phải",19,19,14,5,0
+34,B.8a,No Containers Allowed,Cấm xe sơ-mi rơ-moóc,82,82,67,15,0
+35,P.137,No Left or Right Turn,Cấm rẽ trái và phải,87,87,72,15,0
+36,P.139,No Straight and Right Turn,Cấm đi thẳng và rẽ phải,75,75,67,8,0
+37,W.205b,Intersection with T-Junction,Đường giao nhau (ngã ba bên trái),47,47,42,5,0
+38,P.127*50,Speed limit (50km/h),Giới hạn tốc độ (50km/h),114,189,92,22,0
+39,P.127*60,Speed limit (60km/h),Giới hạn tốc độ (60km/h),342,459,279,63,0
+40,P.127*80,Speed limit (80km/h),Giới hạn tốc độ (80km/h),210,210,176,34,0
+41,P.127*40,Speed limit (40km/h),Giới hạn tốc độ (40km/h),274,275,214,60,0
+42,R.301e,Left Turn,Các xe chỉ được rẽ trái,21,21,17,4,0
+43,W.239b*,Low Clearance,Chiều cao tĩnh không thực tế,27,27,20,7,0
+44,W.233,Other Danger,Nguy hiểm khác,3,3,2,1,0
+45,I.407a,One-way street,Đường một chiều,190,195,155,35,0
+46,P.131a,No Parking,Cấm đỗ xe,423,435,341,82,0
+47,P.124b1,No U-Turn for Cars,Cấm ô tô quay đầu xe (được rẽ trái),16,16,11,5,0
+48,W.210,Level Crossing with Barriers,Giao nhau với đường sắt có rào chắn,41,41,35,6,0
+49,P.124c,No U-Turn and No Left Turn,Cấm rẽ trái và quay đầu xe,120,221,95,25,0
+50,W.201b,Danger zone on the right,Chỗ ngoặt nguy hiểm vòng bên phải,105,121,79,26,0
+51,W.246c,Warning: Obstacle ahead – pass on the right,Chú ý chướng ngại vật – vòng tránh sang bên phải,5,5,4,1,0

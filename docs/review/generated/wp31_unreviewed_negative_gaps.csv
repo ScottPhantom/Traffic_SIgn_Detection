@@ -1,0 +1,13 @@
+left_stem,right_stem,left_class_ids,right_class_ids,negative_stems,capture_joined,scene_joined
+0059,0062,46,46,0060 0061,True,True
+0186,0188,49,49,0187,True,True
+0543,0545,2 3,0 1,0544,True,False
+1513,1516,10,29,1514 1515,True,False
+1702,1709,29,10,1703 1704 1705 1706 1707 1708,True,False
+2014,2018,0,32,2015 2016 2017,True,False
+2030,2032,32,6,2031,True,False
+2050,2052,41,32,2051,True,False
+2722,2724,3,46,2723,True,False
+2765,2767,6,13,2766,True,False
+2792,2798,8,50,2793 2794 2795 2796 2797,True,False
+2998,3000,13,6 38,2999,True,False

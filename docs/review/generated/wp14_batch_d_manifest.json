@@ -1,0 +1,487 @@
+{
+  "artifact_count": 56,
+  "artifact_count_semantics": "EXCLUDES_MANIFEST_FILE",
+  "artifacts": [
+    {
+      "id": "annotations",
+      "path": "docs/review/wp14_visual_review_annotations_batch_d.json",
+      "sha256": "2fd5a2e8d9336fb42b07250f06bdbfcf5392d1db9788a69a7d42da6dbd56e0cb",
+      "size": 282204
+    },
+    {
+      "id": "selection",
+      "path": "docs/review/generated/wp14_batch_d_selection.csv",
+      "sha256": "2fa132127980d9546869d628a1610c21184ebdf1c6d988772dae421a4df16a1a",
+      "size": 180977
+    },
+    {
+      "id": "source_lineage",
+      "path": "docs/review/generated/wp14_batch_d_source_lineage.csv",
+      "sha256": "527ac52a093f562463b1fa73704ad994f7fa0a933d761db522a8df2f59af6ecd",
+      "size": 216416
+    },
+    {
+      "id": "layout_audit",
+      "path": "docs/review/generated/wp14_batch_d_layout_audit.json",
+      "sha256": "8f5a87afcd87edab4e5198fbb5be62d67faf5f5d7de2c234597d922052ee1221",
+      "size": 170764
+    },
+    {
+      "id": "report",
+      "path": "docs/review/wp14_cross_split_review_batch_d_report.md",
+      "sha256": "5200f84bfd0987e0046b14b329f9497340128bda74beb14d848b5665c13f3b10",
+      "size": 2569
+    },
+    {
+      "id": "atlas_index",
+      "path": "docs/review/assets/wp14/batch_d/index.html",
+      "sha256": "016708278d599c6bdfc45a39f5640b798fd5cd7cd1d477d6ae0ede85ba85f308",
+      "size": 51039
+    },
+    {
+      "id": "atlas_page_001",
+      "path": "docs/review/assets/wp14/batch_d/page_001.jpg",
+      "sha256": "43193bac7aa6926929fab97d86de5ffd6001a923c5a8b1659876596feca0e3d3",
+      "size": 880997
+    },
+    {
+      "id": "atlas_page_002",
+      "path": "docs/review/assets/wp14/batch_d/page_002.jpg",
+      "sha256": "ad72b9925cfed14c56d7b208e77d2e7605c39a2899a0efb2da03222bf2809e4b",
+      "size": 981068
+    },
+    {
+      "id": "atlas_page_003",
+      "path": "docs/review/assets/wp14/batch_d/page_003.jpg",
+      "sha256": "bdd52da0cf81495d50228165f3a051b889dc8aa7d455a9754c7ff9fd449146b1",
+      "size": 1114159
+    },
+    {
+      "id": "atlas_page_004",
+      "path": "docs/review/assets/wp14/batch_d/page_004.jpg",
+      "sha256": "958d9bebd4e6b1488b67ecf90cc31ef05a6755a8980a40d06d17ff99daf008ca",
+      "size": 942711
+    },
+    {
+      "id": "atlas_page_005",
+      "path": "docs/review/assets/wp14/batch_d/page_005.jpg",
+      "sha256": "f88118b0c803afe59bc28de25e6cc4e81d783e68a85b3189d277eb4c20ff0538",
+      "size": 936674
+    },
+    {
+      "id": "atlas_page_006",
+      "path": "docs/review/assets/wp14/batch_d/page_006.jpg",
+      "sha256": "050ee4357df4f69fddccf8b3c038cb9394d3fcadc9158c807ae7574128e51f71",
+      "size": 931246
+    },
+    {
+      "id": "atlas_page_007",
+      "path": "docs/review/assets/wp14/batch_d/page_007.jpg",
+      "sha256": "3a2e97c7655aa5b0ea215744bc1bd9be801a48cbaf7d1b83aae06d2b53dedc5e",
+      "size": 1100965
+    },
+    {
+      "id": "atlas_page_008",
+      "path": "docs/review/assets/wp14/batch_d/page_008.jpg",
+      "sha256": "df534586218e86bde648fc1f0ff5ab29b8a1e0ef5014abab0aaccc4e5510724a",
+      "size": 886113
+    },
+    {
+      "id": "atlas_page_009",
+      "path": "docs/review/assets/wp14/batch_d/page_009.jpg",
+      "sha256": "c60861f1f652664c1e88914e971709958e395ccd61bdaee7c44635e354640652",
+      "size": 866716
+    },
+    {
+      "id": "atlas_page_010",
+      "path": "docs/review/assets/wp14/batch_d/page_010.jpg",
+      "sha256": "203ade185f87426e1c177d50e46d60faa62784e3e05b4f9cdbd697b9dbadc582",
+      "size": 1013018
+    },
+    {
+      "id": "atlas_page_011",
+      "path": "docs/review/assets/wp14/batch_d/page_011.jpg",
+      "sha256": "b058c9c896c5e76ebcc8f37c2b28b2f977c08fa394dd05333dac730c6597d4b4",
+      "size": 876695
+    },
+    {
+      "id": "atlas_page_012",
+      "path": "docs/review/assets/wp14/batch_d/page_012.jpg",
+      "sha256": "0739637699010accb147617107847e0817b5186b33c614977d75881b7ae06e62",
+      "size": 1088523
+    },
+    {
+      "id": "atlas_page_013",
+      "path": "docs/review/assets/wp14/batch_d/page_013.jpg",
+      "sha256": "0961c5407ab1062aa8c3f530cdb78118ba4199b09f3657dd44f833f0c30ed312",
+      "size": 928309
+    },
+    {
+      "id": "atlas_page_014",
+      "path": "docs/review/assets/wp14/batch_d/page_014.jpg",
+      "sha256": "a0fd82e6a50f972c99d408382c4a700a59c755a47d7ccb8d6c2a44997903fb88",
+      "size": 923426
+    },
+    {
+      "id": "atlas_page_015",
+      "path": "docs/review/assets/wp14/batch_d/page_015.jpg",
+      "sha256": "3915ed6efe6d47217b34af1a5515e56438d4b91011f10386400dfb3162d531fc",
+      "size": 897766
+    },
+    {
+      "id": "atlas_page_016",
+      "path": "docs/review/assets/wp14/batch_d/page_016.jpg",
+      "sha256": "4d69ad0c5990c604ac84bb1d72072647a3f68e46382fc66c2de593db65431037",
+      "size": 891401
+    },
+    {
+      "id": "atlas_page_017",
+      "path": "docs/review/assets/wp14/batch_d/page_017.jpg",
+      "sha256": "9a3e39366a497b99eff8e6259711cbbc29064631ca5ef18095e5bc73933d158a",
+      "size": 921191
+    },
+    {
+      "id": "atlas_page_018",
+      "path": "docs/review/assets/wp14/batch_d/page_018.jpg",
+      "sha256": "59f1d56fb3375fc8a0f9fdbca1e3d034483ad303b51be864325cf0cc2f28e292",
+      "size": 905377
+    },
+    {
+      "id": "atlas_page_019",
+      "path": "docs/review/assets/wp14/batch_d/page_019.jpg",
+      "sha256": "a92c33ebd4839a1352d8046ff2be9d9ccaa36e61a82db3183992a0d54843924d",
+      "size": 927372
+    },
+    {
+      "id": "atlas_page_020",
+      "path": "docs/review/assets/wp14/batch_d/page_020.jpg",
+      "sha256": "708c02edb8fb70a9470061636f2d2bac2a737181d10d1cfbb519f5a092045c1e",
+      "size": 935677
+    },
+    {
+      "id": "atlas_page_021",
+      "path": "docs/review/assets/wp14/batch_d/page_021.jpg",
+      "sha256": "6e96cb0f6064dd4ae1e8fe1f49c9eb66c232b616f1b2cc5b34c5e3b4df50e176",
+      "size": 956334
+    },
+    {
+      "id": "atlas_page_022",
+      "path": "docs/review/assets/wp14/batch_d/page_022.jpg",
+      "sha256": "4f55017ca958321cc3ea1fda5221d06465a44bd609fa86122bd58bae29d1a649",
+      "size": 982484
+    },
+    {
+      "id": "atlas_page_023",
+      "path": "docs/review/assets/wp14/batch_d/page_023.jpg",
+      "sha256": "f32feeadecbb12c47bbda627f41688aa9c3a8070fe4b3c0b24e6457a1d3a8cf2",
+      "size": 877996
+    },
+    {
+      "id": "atlas_page_024",
+      "path": "docs/review/assets/wp14/batch_d/page_024.jpg",
+      "sha256": "e8376ac9d11d0f79c200ec3936b93bd087ddb7d4234aa42d1a03b26b88b4ed9d",
+      "size": 871696
+    },
+    {
+      "id": "atlas_page_025",
+      "path": "docs/review/assets/wp14/batch_d/page_025.jpg",
+      "sha256": "468bd4336fc013680636f074016909975b4424e641a4cf96477e0f57750f0e6f",
+      "size": 908058
+    },
+    {
+      "id": "atlas_page_026",
+      "path": "docs/review/assets/wp14/batch_d/page_026.jpg",
+      "sha256": "4702ae98d18921a7723c45a71aa310852ddc567bf4c63ef7ea858c42757f792b",
+      "size": 918525
+    },
+    {
+      "id": "atlas_page_027",
+      "path": "docs/review/assets/wp14/batch_d/page_027.jpg",
+      "sha256": "d5a0bcccff85c2601450a9b64e69bacd9a00ad3f790254de7cf3462aa574e6cc",
+      "size": 921482
+    },
+    {
+      "id": "atlas_page_028",
+      "path": "docs/review/assets/wp14/batch_d/page_028.jpg",
+      "sha256": "d8985c6ef696b3b3119e9d7b9cc91bc11c8fb0ddb88d5f3b1bff11be96c26872",
+      "size": 894994
+    },
+    {
+      "id": "atlas_page_029",
+      "path": "docs/review/assets/wp14/batch_d/page_029.jpg",
+      "sha256": "a9d7c3841e4579b4fbf1d38b1826422cbcfc42e3ed7d850487d0f04379d9fc35",
+      "size": 898841
+    },
+    {
+      "id": "atlas_page_030",
+      "path": "docs/review/assets/wp14/batch_d/page_030.jpg",
+      "sha256": "211c3ea1c5823525da843853327e7687f78efccf3d234ee31d2c973c3b23e6e8",
+      "size": 893243
+    },
+    {
+      "id": "atlas_page_031",
+      "path": "docs/review/assets/wp14/batch_d/page_031.jpg",
+      "sha256": "9b4bc41d9612d32b5fab183e7f62b70ad569de40e5a7981d70d55b8d0023dfca",
+      "size": 882643
+    },
+    {
+      "id": "atlas_page_032",
+      "path": "docs/review/assets/wp14/batch_d/page_032.jpg",
+      "sha256": "21364132f572e632d1cfdba31fbc47c7b5ffa31478121b390401ed8ce9cbb160",
+      "size": 856328
+    },
+    {
+      "id": "atlas_page_033",
+      "path": "docs/review/assets/wp14/batch_d/page_033.jpg",
+      "sha256": "faefc1a6a897ba639669a9648866c732b9f27c94d0eee8a4944767d57a4784ed",
+      "size": 835895
+    },
+    {
+      "id": "atlas_page_034",
+      "path": "docs/review/assets/wp14/batch_d/page_034.jpg",
+      "sha256": "ea137640e1ddd68335580c42a6554318edce167ff214a7bcf882b0415b5a25c3",
+      "size": 840334
+    },
+    {
+      "id": "atlas_page_035",
+      "path": "docs/review/assets/wp14/batch_d/page_035.jpg",
+      "sha256": "4e8bb26b0a21fd32f195e373abd4f7d5bdff9219c3870405fb5dd7f3078315c3",
+      "size": 817254
+    },
+    {
+      "id": "atlas_page_036",
+      "path": "docs/review/assets/wp14/batch_d/page_036.jpg",
+      "sha256": "d450803e17cda37d77fd1dacd6472adcdfa405a7c1c8cfa302baff057bc5e374",
+      "size": 802557
+    },
+    {
+      "id": "atlas_page_037",
+      "path": "docs/review/assets/wp14/batch_d/page_037.jpg",
+      "sha256": "e87c69f57927e187644907e087ef41d7c13044a73feb82db9916ee0858612012",
+      "size": 833307
+    },
+    {
+      "id": "atlas_page_038",
+      "path": "docs/review/assets/wp14/batch_d/page_038.jpg",
+      "sha256": "44776dab567fb6ecb918d6572aab43488132b920a9089e40b8138ee534391fe7",
+      "size": 1033725
+    },
+    {
+      "id": "atlas_page_039",
+      "path": "docs/review/assets/wp14/batch_d/page_039.jpg",
+      "sha256": "b665e1ce445eaeaf376a687ac3680db234f4f2aac4e5b451fba64386fca535a8",
+      "size": 1231849
+    },
+    {
+      "id": "atlas_page_040",
+      "path": "docs/review/assets/wp14/batch_d/page_040.jpg",
+      "sha256": "bada3d59d0148f7affb8c1b5a7dfb3ca009069365d9ad9a0e966190e3e512265",
+      "size": 1220802
+    },
+    {
+      "id": "atlas_page_041",
+      "path": "docs/review/assets/wp14/batch_d/page_041.jpg",
+      "sha256": "3b1af7bbd128b3e2e60557ff0ead70a79ca16d2166b1a35ae432368a5d1892eb",
+      "size": 1058569
+    },
+    {
+      "id": "atlas_page_042",
+      "path": "docs/review/assets/wp14/batch_d/page_042.jpg",
+      "sha256": "1eda8d2b50740e94b59674ba3a862c5e1563d319bc75c5cfd6c016723a213a42",
+      "size": 940160
+    },
+    {
+      "id": "atlas_page_043",
+      "path": "docs/review/assets/wp14/batch_d/page_043.jpg",
+      "sha256": "d2001dbcbff54900924a4ef5a664071a4169381541fa9ce361a98ec440c7da3b",
+      "size": 922369
+    },
+    {
+      "id": "atlas_page_044",
+      "path": "docs/review/assets/wp14/batch_d/page_044.jpg",
+      "sha256": "6cb9cb67ba6bc1863e6ea74ddedae855441ee4d7c94158ae517e5a48a353820f",
+      "size": 884169
+    },
+    {
+      "id": "atlas_page_045",
+      "path": "docs/review/assets/wp14/batch_d/page_045.jpg",
+      "sha256": "d1c368cec9652c9dc882419e1c8d9120190671de8274f607c35486ac236c4565",
+      "size": 951655
+    },
+    {
+      "id": "atlas_page_046",
+      "path": "docs/review/assets/wp14/batch_d/page_046.jpg",
+      "sha256": "742f8510557e3f428a39fe4f54b38b831d2da9f15d77697c4b054cf675f94f77",
+      "size": 1037521
+    },
+    {
+      "id": "atlas_page_047",
+      "path": "docs/review/assets/wp14/batch_d/page_047.jpg",
+      "sha256": "0a2189c0ff4e0f6565e64ccd55fef134156bd8309b53ced2495f215f9deee355",
+      "size": 979996
+    },
+    {
+      "id": "atlas_page_048",
+      "path": "docs/review/assets/wp14/batch_d/page_048.jpg",
+      "sha256": "c4e93a29ef242534cd44def57f373c6cb06692b5b80d95f80118518e6bae56ab",
+      "size": 983316
+    },
+    {
+      "id": "atlas_page_049",
+      "path": "docs/review/assets/wp14/batch_d/page_049.jpg",
+      "sha256": "b3de593c8ef95f9390032073a1d34b3cf5a649c9cc2f28394ad8bed82250b747",
+      "size": 995296
+    },
+    {
+      "id": "atlas_page_050",
+      "path": "docs/review/assets/wp14/batch_d/page_050.jpg",
+      "sha256": "c91eae1adc8595607c12dac02b10c09b6146a76781eebd4629cc68e6e84b66be",
+      "size": 1008675
+    }
+  ],
+  "atlas_page_count": 50,
+  "canonical_wp5_mutated": false,
+  "canonical_wp7_mutated": false,
+  "d02_a_preferred": true,
+  "d02_b_budget_approved": false,
+  "d02_status": "PENDING",
+  "evidence_boundary": "BATCH_D_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+  "final_group_truth_created": false,
+  "gate0": "BLOCKED",
+  "lineage_record_count": 500,
+  "manifest_path": "docs/review/generated/wp14_batch_d_manifest.json",
+  "manifest_self_in_artifact_count": false,
+  "package": "M0-WP14-BATCH-D",
+  "quarantined_stem_0248_selected": false,
+  "schema_version": 1,
+  "selected_endpoint_box_count": 1413,
+  "selection_count": 250,
+  "source_count": 20,
+  "sources": [
+    {
+      "id": "wp5_manifest",
+      "path": "docs/review/generated/wp5_evidence_manifest.json",
+      "sha256": "f8d620a3cbb3b500153f6685b94a9936a8f83eb6f5399ce0a2e8be77982d4b80",
+      "size": 31694
+    },
+    {
+      "id": "wp5_decisions",
+      "path": "docs/review/generated/wp5_provisional_edge_decisions.csv",
+      "sha256": "3f4cda85d10ea3dbcb9d9c83bbe2d5651991c00fb98b5e0fffbf28716e34fa1a",
+      "size": 1750136
+    },
+    {
+      "id": "wp5_layout",
+      "path": "docs/review/generated/wp5_pair_layout_audit.json",
+      "sha256": "8e9da4db09b1a175fd258b1704dbb6d70c66190864a1ec91b7f3e9bc8ad070a9",
+      "size": 1655437
+    },
+    {
+      "id": "image_inventory",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv",
+      "sha256": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022",
+      "size": 733242
+    },
+    {
+      "id": "source_preservation",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/source_preservation_proof.json",
+      "sha256": "5ca3e769b9197cad19bcb75f553dd59fee6e3035e0cc86cd9693737f84a713d7",
+      "size": 783
+    },
+    {
+      "id": "decision_status",
+      "path": "docs/review/decision_status.json",
+      "sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+      "size": 7864
+    },
+    {
+      "id": "wp6_manifest",
+      "path": "docs/review/generated/wp6_e0_compute_manifest.json",
+      "sha256": "656afe56bf342a0d4d0110dcd6b1d601f9f35633d03c65c98d54d3d454760bb0",
+      "size": 5321
+    },
+    {
+      "id": "wp7_manifest",
+      "path": "docs/review/generated/wp7_batch_a_manifest.json",
+      "sha256": "73ed4095a1f59b72f010fd87b63c4a7f0b16bcf8e0c667ec77576ec827e5d7f2",
+      "size": 7932
+    },
+    {
+      "id": "wp7_selection",
+      "path": "docs/review/generated/wp7_batch_a_selection.csv",
+      "sha256": "1779ac973fad5f1de54c019cdb87dc77cd7228b9d3b15be923d9d6b4d243fdcf",
+      "size": 71558
+    },
+    {
+      "id": "wp7_annotations",
+      "path": "docs/review/wp7_visual_review_annotations_batch_a.json",
+      "sha256": "f38e63e8c60ca043de97fb1d82ace4fe8acefb5be260f6500cf1c57f898b2d4d",
+      "size": 98241
+    },
+    {
+      "id": "wp12_manifest",
+      "path": "docs/review/generated/wp12_batch_b_manifest.json",
+      "sha256": "8e576954bc3de456704aecdb67e8625d8621ca017fb08e3b866635db6afcc0f0",
+      "size": 15438
+    },
+    {
+      "id": "wp12_selection",
+      "path": "docs/review/generated/wp12_batch_b_selection.csv",
+      "sha256": "3e46ff57c5e99107254c742922010865cf2659495cef7ad8c2b662dcef06e062",
+      "size": 180324
+    },
+    {
+      "id": "wp12_annotations",
+      "path": "docs/review/wp12_visual_review_annotations_batch_b.json",
+      "sha256": "44e3b181bb277c07851da44ea3ed6659241bd3048438964ad60472380f2f85c0",
+      "size": 282053
+    },
+    {
+      "id": "wp12_builder",
+      "path": "scripts/build_wp12_cross_split_review_batch.py",
+      "sha256": "f2569636e26a48984e432bbfc35735f2099e855db27b2b3ce76f001c33c197df",
+      "size": 65902
+    },
+    {
+      "id": "wp13_manifest",
+      "path": "docs/review/generated/wp13_batch_c_manifest.json",
+      "sha256": "5db80e215f318a6b782d813b4560c20e35e4f3e51ef0423d7298f4818ea3db65",
+      "size": 16273
+    },
+    {
+      "id": "wp13_selection",
+      "path": "docs/review/generated/wp13_batch_c_selection.csv",
+      "sha256": "e551ea02758deef02af1db6ad5e9da4de91ce84b5c06d38616265dbb55e86a22",
+      "size": 179792
+    },
+    {
+      "id": "wp13_annotations",
+      "path": "docs/review/wp13_visual_review_annotations_batch_c.json",
+      "sha256": "47361b9a9c2c0f837c9d82393a3128de7639c4458fe28b76bd78966a4a03e603",
+      "size": 282138
+    },
+    {
+      "id": "wp13_builder",
+      "path": "scripts/build_wp13_cross_split_review_batch.py",
+      "sha256": "970dd17ae0483fe2d096862c09342c7f4792fd2e102cf0c133a94d9d48107680",
+      "size": 18191
+    },
+    {
+      "id": "wp14_review_notes",
+      "path": "docs/review/wp14_visual_review_notes_batch_d.csv",
+      "sha256": "ac63ad6fafc767a81263ad181fa3a96a19d8c493e648d145abedc641bc09b84e",
+      "size": 53604
+    },
+    {
+      "id": "wp14_builder",
+      "path": "scripts/build_wp14_cross_split_review_batch.py",
+      "sha256": "4df862458d00428f0d9c286b028988f04856d04c75451a785f9a0890cd182bb5",
+      "size": 22117
+    }
+  ],
+  "split_authorized": false,
+  "status": "WP14_AWAITING_QA_BATCH_D_PM_PROVISIONAL_REVIEW",
+  "total_artifact_bytes": 48093446,
+  "training_authorized": false,
+  "transitive_grouping_created": false
+}

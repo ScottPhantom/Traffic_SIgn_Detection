@@ -1,0 +1,70 @@
+{
+  "artifacts": {
+    "docs/review/generated/wp36_class_coverage.csv": "00216563b1c78d94070ea166287a016ea99f5803d02fd4fcf423a868286015e1",
+    "docs/review/generated/wp36_split_candidate.json": "964b447715aa4c95facf05dc50999539417b65dc1e4dc7129cd2caad6b64be04",
+    "docs/review/generated/wp36_split_frames.csv": "1bbc0218af9085e4749965138175c61ff7cbafdae8bd3878d72fb685fbbef97d",
+    "docs/review/generated/wp36_split_groups.csv": "27f81e6c317dc3396c89cb3d0d5edfe3c24c8272d71f2215cbf7e2fb3ae34530"
+  },
+  "boundary": "G07_SPLIT_PROPOSAL_NOT_OWNER_ACCEPTED_NO_TRAINING",
+  "excluded": {
+    "quarantined_negatives": 24,
+    "stem_0248": "absent"
+  },
+  "forced_train_groups": 15,
+  "groups": {
+    "test": 10,
+    "train": 33,
+    "val": 11
+  },
+  "objective": {
+    "band_violation": 0.048569,
+    "box_balance_deviation": 0.146321,
+    "classes_with_2plus_test_groups": 7,
+    "ratio_deviation": 0.138569,
+    "unmet_requirements": 1
+  },
+  "package": "M0-WP36",
+  "pinned_sources": {
+    "docs/review/d04_owner_decision_part1_record.md": "0b8ff5b9b73e1aaf8d4efc78ab2eeab83d7d5a87d891988f687656771c854230",
+    "docs/review/d04_owner_decision_part2_record.md": "984ce4d758483e5996443b0c25b0c391ca0cd11b1607ae501393b68e6c72562e",
+    "docs/review/g07_owner_decision_record.md": "5cab1825f11cdd63ed2cd81576fe01a00bd21d2240ab0def11178771bc0afc0b",
+    "docs/review/generated/d02_group_id_registry.csv": "c3b11f4c143627fd777270b34e40486bf92fd6e82e4c306187165fef4f7155d3",
+    "docs/review/generated/d04_owner_decisions_part1.csv": "62de39245a22292a9404702427d8b6bf3a9f746e081163d12198263815bc5409",
+    "docs/review/generated/d04_owner_decisions_part2.csv": "8030f4fd7098b971009dd86831b877701dedbc24c8901fe938a352615f959c6d",
+    "docs/review/generated/d04_owner_negative_frames.csv": "af1bd4eb314a33ef94a40f1efb01a4c5ac3ef550fbde183fb3d08861d4aa17cb",
+    "docs/review/generated/wp33_derived_boxes.csv": "4b9307003ce8fd3c1d50763a5950d3d57cf6b2ee6df3aeef74621707067501c0",
+    "docs/review/generated/wp35_enrichment_lineage.csv": "e802fc264feff5168c28b531801af04051a36accc3c893ad5ab2e72975d38fed",
+    "docs/review/wp36_g07_split_plan.md": "05e93ec7ee474a955bbf2e000cbc17d43d963e0104617db3404721fdb8955a53",
+    "scripts/build_d02_owner_decision.py": "b91af3a6abe70341bdc49d2b87787a43535628d701e8cd7430caadd189939e76"
+  },
+  "restarts": 120,
+  "seed": 20261018,
+  "split_authorized": false,
+  "split_list_sha256": {
+    "test": "01bdb9890036a44659e809af88d465c5ae67aefbd39f39d770e5ba4bcd575681",
+    "train": "3f5ebbb44547d9283c6c71512e2bb75bf1667a0727c53b9f1fc6378423651916",
+    "val": "d9915120f2fef2218b25933349b873301fd25865818e5aeac3142d55830c2f01"
+  },
+  "status": "WP36_AWAITING_QA_REVIEW",
+  "target": {
+    "test": 0.15,
+    "train": 0.7,
+    "val": 0.15
+  },
+  "test_seal_sha256": "01bdb9890036a44659e809af88d465c5ae67aefbd39f39d770e5ba4bcd575681",
+  "tolerance": 0.03,
+  "training_authorized": false,
+  "unmet_class_requirements": [
+    "25"
+  ],
+  "usable_frames": {
+    "test": 705,
+    "train": 2114,
+    "val": 372
+  },
+  "usable_share": {
+    "test": 0.2209,
+    "train": 0.6625,
+    "val": 0.1166
+  }
+}

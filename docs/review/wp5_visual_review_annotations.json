@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "evidence_boundary": "PROVISIONAL_REVIEW_ONLY_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT",
+  "reviewer": "Codex visual review (provisional)",
+  "reviewed_at": "2026-10-10T23:17:18+07:00",
+  "decisions": [
+    {
+      "edge_id": "edge_000001",
+      "left_stem": "0001",
+      "right_stem": "0002",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "physical_sign_hypothesis": "VISUALLY_RELATED_UNCERTAIN",
+      "confidence": "HIGH",
+      "rationale": "Hai anh cho thay cung mot goc duong, bo cuc nen va cac doi tuong giao thong gan nhu lien tiep; sai khac nho phu hop voi hai khung hinh lien ke. Khong co metadata nguoi tao de ket luan phien chup hay danh tinh bien vat ly."
+    },
+    {
+      "edge_id": "edge_000003",
+      "left_stem": "0003",
+      "right_stem": "0004",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "physical_sign_hypothesis": "VISUALLY_RELATED_UNCERTAIN",
+      "confidence": "HIGH",
+      "rationale": "Hai anh co cung goc may, cung bo cuc canh duong va thay doi nho cua giao thong, phu hop voi cac khung hinh lien ke. Khong co metadata nguoi tao de nang cap gia thuyet thanh su that nhom."
+    },
+    {
+      "edge_id": "edge_000100",
+      "left_stem": "0103",
+      "right_stem": "0104",
+      "provisional_outcome": "NOT_RELATED",
+      "capture_hypothesis": "NOT_RELATED",
+      "physical_sign_hypothesis": "NOT_RELATED",
+      "confidence": "HIGH",
+      "rationale": "Anh 0103 la canh do thi dong xe, trong khi 0104 la doan duong cong nhieu cay; goc nhin, boi canh va cum bien khong khop. Day la ket luan thi giac cho cap anh, khong phai metadata phien chup."
+    },
+    {
+      "edge_id": "edge_000109",
+      "left_stem": "0112",
+      "right_stem": "0113",
+      "provisional_outcome": "NOT_RELATED",
+      "capture_hypothesis": "NOT_RELATED",
+      "physical_sign_hypothesis": "NOT_RELATED",
+      "confidence": "HIGH",
+      "rationale": "Hai anh the hien hai doan duong va bo cuc canh quan khac nhau ro rang; khong thay moc thi giac chung de ung ho cung lan chup hoac cung bien vat ly."
+    },
+    {
+      "edge_id": "edge_000527",
+      "left_stem": "0532",
+      "right_stem": "0533",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "confidence": "HIGH",
+      "rationale": "Hai anh co cung giao lo nong thon, cung goc may va cung cum bien ben phai, voi thay doi chuyen dong rat nho. Day la ung vien cung lan chup va cung bien vat ly, van can metadata nguoi tao de xac nhan."
+    },
+    {
+      "edge_id": "edge_000663",
+      "left_stem": "0670",
+      "right_stem": "0671",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "confidence": "HIGH",
+      "rationale": "Hai anh giu nguyen goc nhin duong tren cao, ket cau nen va cum bien phia truoc; sai khac nho phu hop voi khung hinh lien ke. Gia thuyet cung bien vat ly chi la tam thoi."
+    }
+  ]
+}

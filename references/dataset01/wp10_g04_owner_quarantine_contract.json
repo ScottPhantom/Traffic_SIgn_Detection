@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "package": "M0-WP10",
+  "status": "OWNER_APPROVED_QUARANTINE_AWAITING_WP10_QA",
+  "decision": {
+    "decision_id": "G0.4-bbox-0248",
+    "status": "OWNER_APPROVED",
+    "selected_option": "APPROVED_QUARANTINE",
+    "decision_date": "2026-10-11",
+    "decision_timezone": "Asia/Saigon",
+    "authority": "DIRECT_OWNER_APPROVAL_ROUTED_QA_PM"
+  },
+  "scope": {
+    "scope_type": "ENTIRE_IMAGE_STEM",
+    "stem": "0248",
+    "image_path": "archive/images/0248.jpg",
+    "image_sha256": "07eab2035dc10b7b08be71d76c3c32ffdb960722839414f1e474da20c3ad0cbd",
+    "label_path": "archive/labels/0248.txt",
+    "label_sha256": "f4ec410f7bff3ee03f6110308e8e95f57c92bcc7ebf45ff3affcfd885b419c77",
+    "label_row_count": 2,
+    "label_rows": [
+      1,
+      2
+    ],
+    "class_ids_present": [
+      49
+    ],
+    "class_49_taxonomy_excluded": false,
+    "only_sample_0248_quarantined": true
+  },
+  "enforcement": {
+    "raw_immutable": true,
+    "exclude_entire_stem_from_split_generation": true,
+    "exclude_entire_stem_from_training": true,
+    "derived_clip_usage": "REVIEW_EVIDENCE_ONLY_NOT_TRAINING_LABEL",
+    "missing_or_invalid_overlay_policy": "FAIL_CLOSED",
+    "missing_or_invalid_registry_policy": "FAIL_CLOSED"
+  },
+  "reason": "The class-49 sign at the right image edge is genuinely truncated and its raw line-1 bbox extends 18.00048 px beyond x=960. Quarantine the whole stem rather than silently training on either raw or clipped coordinates.",
+  "decision_lineage": {
+    "historical_decision_status_sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+    "wp8_manifest_sha256": "9d8fc460b8162874b4082940b0e7f3ceb174c068a92378974ebd93b55da20348",
+    "wp9_manifest_sha256": "cea9423616de0bf4649d71e40f395b4cdc18ff3ea2f80e9829ea4063f009656f",
+    "wp9_adjudication_sha256": "b600597496d5fbd2f16f554d320d84cf60928e909245a622dc34790ac5d954aa",
+    "wp9_derived_candidate_sha256": "8fcdd25dce463d7c57ef5f9f95ce1810db056d7d02e260e2126e3656c4a691b6"
+  },
+  "governance": {
+    "g04_closure": "PENDING_WP10_QA_PASS",
+    "remaining_pending_decisions": [
+      "D-01",
+      "D-02",
+      "D-03",
+      "D-04",
+      "D-05"
+    ],
+    "gate0": "BLOCKED",
+    "relabel_authorized": false,
+    "split_authorized": false,
+    "training_authorized": false
+  },
+  "evidence_boundary": "OWNER_APPROVAL_OVERLAY_AND_FAIL_CLOSED_QUARANTINE_ONLY_NO_RAW_MUTATION_NO_FINAL_SPLIT_NO_TRAINING"
+}

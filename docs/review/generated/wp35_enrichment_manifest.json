@@ -1,0 +1,34 @@
+{
+  "builder_sha256": "be194e3d397d8294b693aa0b9638daedb5af3ff42b055b187d1de3bc9c05559f",
+  "evidence_boundary": "TRAIN_ONLY_AUGMENTED_REAL_FRAMES_NOT_EVALUATION_EVIDENCE_NO_SPLIT_NO_TRAINING_RUN",
+  "gate0": "BLOCKED",
+  "images_per_class": 150,
+  "lineage_sha256": "e802fc264feff5168c28b531801af04051a36accc3c893ad5ab2e72975d38fed",
+  "method": "REAL_FRAME_AUGMENTATION_ONLY_NO_SIGN_INSERTION",
+  "package": "M0-WP35",
+  "pinned_sources": {
+    "docs/review/d04_owner_decision_part1_record.md": "0b8ff5b9b73e1aaf8d4efc78ab2eeab83d7d5a87d891988f687656771c854230",
+    "docs/review/generated/d02_group_id_registry.csv": "c3b11f4c143627fd777270b34e40486bf92fd6e82e4c306187165fef4f7155d3",
+    "docs/review/generated/d04_owner_decisions_part1.csv": "62de39245a22292a9404702427d8b6bf3a9f746e081163d12198263815bc5409",
+    "docs/review/generated/wp33_derived_boxes.csv": "4b9307003ce8fd3c1d50763a5950d3d57cf6b2ee6df3aeef74621707067501c0",
+    "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022"
+  },
+  "schema_version": 2,
+  "seed": 20261017,
+  "source_groups": [
+    "D02-C0010",
+    "D02-C0013",
+    "D02-C0014",
+    "D02-C0015",
+    "D02-C0016",
+    "D02-C0019",
+    "D02-C0021",
+    "D02-C0022",
+    "D02-C0049",
+    "D02-C0053"
+  ],
+  "split_authorized": false,
+  "status": "WP35_REAL_FRAME_AUGMENTATION_AWAITING_QA",
+  "training_authorized": false,
+  "training_only": true
+}

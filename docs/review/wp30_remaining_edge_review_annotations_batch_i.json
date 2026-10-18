@@ -1,0 +1,2891 @@
+{
+  "batch": "M0-WP30-REMAINING-EDGE-BATCH-I-FINAL",
+  "decisions": [
+    {
+      "batch_position": 1,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002973",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3010.jpg#sha256=f78e7ef30b9165acb055c5cfbc2b479e2c987bff2bb759f648355ee35fbb4a15",
+        "archive/images/3011.jpg#sha256=404e1ccb36fb195d14344304f175a635ce78fad23e8a03fd09448884c2a56108",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_001.jpg#slot=1"
+      ],
+      "left_stem": "3010",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3010/3011; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3011"
+    },
+    {
+      "batch_position": 2,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002974",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3011.jpg#sha256=404e1ccb36fb195d14344304f175a635ce78fad23e8a03fd09448884c2a56108",
+        "archive/images/3012.jpg#sha256=018c1665ce4202319443f811a99628f950957ec1ca4a8dc66b854b522a20d43c",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_001.jpg#slot=2"
+      ],
+      "left_stem": "3011",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3011/3012; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3012"
+    },
+    {
+      "batch_position": 3,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "MEDIUM",
+      "edge_id": "edge_002977",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3014.jpg#sha256=c2c4acaff15347cded10e69cf20a5d835907bfc658423045fa8a1d209f4ee13e",
+        "archive/images/3015.jpg#sha256=a1b1704a73361d146a14b73fbd0e5af94dad9a51b43d3a51b3bdfb1c4a528cac",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_001.jpg#slot=3"
+      ],
+      "left_stem": "3014",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "NOT_RELATED",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas and raw full-frame review: stem 3014 is the bridge-approach segment (plaid-shirt and cream-helmet riders, cls13 DI CHAM sign) while stem 3015 matches the earlier stem 3000-3004 road segment (cls6/10/23/38 signs), so frames are out of order within one ride session as in WP29 edge_002967; same capture likely but labeled signs differ; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3015"
+    },
+    {
+      "batch_position": 4,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002978",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3015.jpg#sha256=a1b1704a73361d146a14b73fbd0e5af94dad9a51b43d3a51b3bdfb1c4a528cac",
+        "archive/images/3016.jpg#sha256=de69e63a735d93c36afd862a4c54aae66822a947247477b59f203fd3140490b4",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_001.jpg#slot=4"
+      ],
+      "left_stem": "3015",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3015/3016; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3016"
+    },
+    {
+      "batch_position": 5,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002979",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3016.jpg#sha256=de69e63a735d93c36afd862a4c54aae66822a947247477b59f203fd3140490b4",
+        "archive/images/3017.jpg#sha256=eb4cf1e4659c855318131ac310d4fa76d4b4134928462838c850e6266ccb97a4",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_001.jpg#slot=5"
+      ],
+      "left_stem": "3016",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3016/3017; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3017"
+    },
+    {
+      "batch_position": 6,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002980",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3017.jpg#sha256=eb4cf1e4659c855318131ac310d4fa76d4b4134928462838c850e6266ccb97a4",
+        "archive/images/3018.jpg#sha256=6b1ed5d9f9f685e11d8cbeab0bcc5ee97a7a05ca920bd2f8b80afe7e66fa79b9",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_002.jpg#slot=1"
+      ],
+      "left_stem": "3017",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3017/3018; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3018"
+    },
+    {
+      "batch_position": 7,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002981",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3018.jpg#sha256=6b1ed5d9f9f685e11d8cbeab0bcc5ee97a7a05ca920bd2f8b80afe7e66fa79b9",
+        "archive/images/3019.jpg#sha256=6ca4299feb8be887d906d7283e6bd6929ce92fa95194da18e7f5d7ad5adbd0e8",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_002.jpg#slot=2"
+      ],
+      "left_stem": "3018",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3018/3019; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3019"
+    },
+    {
+      "batch_position": 8,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002983",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3020.jpg#sha256=ad7f3655c7359a5293d826727722ba06ad7a7d5a70be786baceedd69e45ac781",
+        "archive/images/3021.jpg#sha256=090c02323aca4400420e38a257644206b24d4854433dfed99fb6966cb944fbaf",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_002.jpg#slot=3"
+      ],
+      "left_stem": "3020",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3020/3021; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3021"
+    },
+    {
+      "batch_position": 9,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002985",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3022.jpg#sha256=d92225ecf0cf578961852d6945578b0ff5f802059db335e3ef80baa5bae62678",
+        "archive/images/3023.jpg#sha256=3adc046be7847b0262c5b229b8e3f3f2f546a9e000e5de2e046588d37acd743c",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_002.jpg#slot=4"
+      ],
+      "left_stem": "3022",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3022/3023; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3023"
+    },
+    {
+      "batch_position": 10,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002986",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3023.jpg#sha256=3adc046be7847b0262c5b229b8e3f3f2f546a9e000e5de2e046588d37acd743c",
+        "archive/images/3024.jpg#sha256=03a709cfa89bd6131d94faa34ffb3fe65ad1a0dcf034d1576e0c9a5fc4bd4a76",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_002.jpg#slot=5"
+      ],
+      "left_stem": "3023",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3023/3024; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3024"
+    },
+    {
+      "batch_position": 11,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002989",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3026.jpg#sha256=0e0d43f47bf503453fb561884119f2f5d87728add9e77f29a8f79d09565208e4",
+        "archive/images/3027.jpg#sha256=0d86fbfcc6f0c13b71c63c1e164a7a144d901252d5c2c4733fead719a4ecc75c",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_003.jpg#slot=1"
+      ],
+      "left_stem": "3026",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3026/3027; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3027"
+    },
+    {
+      "batch_position": 12,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002992",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3029.jpg#sha256=97571684bbd5da121232204f207393683fc7ac727f6df6c5f5f87509bfd66548",
+        "archive/images/3030.jpg#sha256=0a9ded3c884f288671d34340d16d409bc71eb08760a78bf8c7e5d8dfc6e3ae35",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_003.jpg#slot=2"
+      ],
+      "left_stem": "3029",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3029/3030; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3030"
+    },
+    {
+      "batch_position": 13,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002993",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3030.jpg#sha256=0a9ded3c884f288671d34340d16d409bc71eb08760a78bf8c7e5d8dfc6e3ae35",
+        "archive/images/3031.jpg#sha256=1167dc46523644ce1c53ce9feda920fb3d442a1ea3205d0df22e972c826212b9",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_003.jpg#slot=3"
+      ],
+      "left_stem": "3030",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3030/3031; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3031"
+    },
+    {
+      "batch_position": 14,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002994",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3031.jpg#sha256=1167dc46523644ce1c53ce9feda920fb3d442a1ea3205d0df22e972c826212b9",
+        "archive/images/3032.jpg#sha256=e4be3fb8b8b7389d4ce473ca11c3b0596e3143a58d0cd60ba9f13fa0d50274ad",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_003.jpg#slot=4"
+      ],
+      "left_stem": "3031",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3031/3032; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3032"
+    },
+    {
+      "batch_position": 15,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002997",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3034.jpg#sha256=67ee1fcff09ced3c462587ee885829f2b6429346c70df6605f6ce88b6896b01e",
+        "archive/images/3035.jpg#sha256=a0f5f583fe20b19e232f1a82e445ec4820a19e1afc169b9e8e2bcedbd886e507",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_003.jpg#slot=5"
+      ],
+      "left_stem": "3034",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3034/3035; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3035"
+    },
+    {
+      "batch_position": 16,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002998",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3035.jpg#sha256=a0f5f583fe20b19e232f1a82e445ec4820a19e1afc169b9e8e2bcedbd886e507",
+        "archive/images/3036.jpg#sha256=5cc4f56e5e36d2a95be2669176ed70f05b720601650c8aa8a83832af255a1b20",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_004.jpg#slot=1"
+      ],
+      "left_stem": "3035",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3035/3036; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3036"
+    },
+    {
+      "batch_position": 17,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_002999",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3036.jpg#sha256=5cc4f56e5e36d2a95be2669176ed70f05b720601650c8aa8a83832af255a1b20",
+        "archive/images/3037.jpg#sha256=1c8f08034c26db88f434d3cb578e6d36d1fbc1806faf55be70319394c7959f1a",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_004.jpg#slot=2"
+      ],
+      "left_stem": "3036",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3036/3037; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3037"
+    },
+    {
+      "batch_position": 18,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003002",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3039.jpg#sha256=eda5c3873c38e9d0f161183c82f3986c20c02d773c349b313027f5f7a8674ffd",
+        "archive/images/3040.jpg#sha256=127b47fe390a2a40976d5a517e437e1195b83ee0df22a3d331fa070c551060d4",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_004.jpg#slot=3"
+      ],
+      "left_stem": "3039",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3039/3040; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3040"
+    },
+    {
+      "batch_position": 19,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003003",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3040.jpg#sha256=127b47fe390a2a40976d5a517e437e1195b83ee0df22a3d331fa070c551060d4",
+        "archive/images/3041.jpg#sha256=d76cbb1a989214e5b3c17628ee1cb266c31b1ff177e9b852c263d2ad707c49ea",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_004.jpg#slot=4"
+      ],
+      "left_stem": "3040",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3040/3041; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3041"
+    },
+    {
+      "batch_position": 20,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003004",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3041.jpg#sha256=d76cbb1a989214e5b3c17628ee1cb266c31b1ff177e9b852c263d2ad707c49ea",
+        "archive/images/3042.jpg#sha256=c135328d4bf9e9e8fabcbdb8f588401a63017a69c4bf13f663276b0f31e3a37a",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_004.jpg#slot=5"
+      ],
+      "left_stem": "3041",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3041/3042; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3042"
+    },
+    {
+      "batch_position": 21,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003005",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3042.jpg#sha256=c135328d4bf9e9e8fabcbdb8f588401a63017a69c4bf13f663276b0f31e3a37a",
+        "archive/images/3043.jpg#sha256=dc6cf5e18ba9f0ea6da32a4a7feacf1ef5c588ce6c72570a472e6ef62d57b766",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_005.jpg#slot=1"
+      ],
+      "left_stem": "3042",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3042/3043; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3043"
+    },
+    {
+      "batch_position": 22,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003006",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3043.jpg#sha256=dc6cf5e18ba9f0ea6da32a4a7feacf1ef5c588ce6c72570a472e6ef62d57b766",
+        "archive/images/3044.jpg#sha256=fd549bac8da55b77935f841477fda55737d854863faee455e04d46d487f66c75",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_005.jpg#slot=2"
+      ],
+      "left_stem": "3043",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3043/3044; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3044"
+    },
+    {
+      "batch_position": 23,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003007",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3044.jpg#sha256=fd549bac8da55b77935f841477fda55737d854863faee455e04d46d487f66c75",
+        "archive/images/3045.jpg#sha256=7688f01f23047a8a1bed6ab488942d9b8e1299867676ad404f3fba2816cda053",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_005.jpg#slot=3"
+      ],
+      "left_stem": "3044",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3044/3045; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3045"
+    },
+    {
+      "batch_position": 24,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003008",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3045.jpg#sha256=7688f01f23047a8a1bed6ab488942d9b8e1299867676ad404f3fba2816cda053",
+        "archive/images/3046.jpg#sha256=09d6b527563257b1a74d48931e32470a01416753e4afd2d3ab9c4c43bd88182b",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_005.jpg#slot=4"
+      ],
+      "left_stem": "3045",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3045/3046; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3046"
+    },
+    {
+      "batch_position": 25,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003009",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3046.jpg#sha256=09d6b527563257b1a74d48931e32470a01416753e4afd2d3ab9c4c43bd88182b",
+        "archive/images/3047.jpg#sha256=e9d0cc9a91d71bd0fc17843520357c0b0a7346c3a07bdffb0ebb635672c51b6a",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_005.jpg#slot=5"
+      ],
+      "left_stem": "3046",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3046/3047; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3047"
+    },
+    {
+      "batch_position": 26,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003010",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3047.jpg#sha256=e9d0cc9a91d71bd0fc17843520357c0b0a7346c3a07bdffb0ebb635672c51b6a",
+        "archive/images/3048.jpg#sha256=60e03ad18654b2bfdf40ae8e7289595499eb971bd3f89216cd44833915dbfaa8",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_006.jpg#slot=1"
+      ],
+      "left_stem": "3047",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3047/3048; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3048"
+    },
+    {
+      "batch_position": 27,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003012",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3049.jpg#sha256=870b0a2b89df735da2eba3669e153fc24c34decf2fa04ee3ae45228891f60997",
+        "archive/images/3050.jpg#sha256=58645a006f09a97d1e4f0df4c6b4e8e1acf819ab96d16e6fa0377eeabcd8536b",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_006.jpg#slot=2"
+      ],
+      "left_stem": "3049",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3049/3050; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3050"
+    },
+    {
+      "batch_position": 28,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003014",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3051.jpg#sha256=6b4e593d7927f97e9753185935070f43418b2901b18f57ad8d8e795f7667b811",
+        "archive/images/3052.jpg#sha256=a9980358892f4507b05b3de2232f01b755e8b59022acca252abb936884b4e859",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_006.jpg#slot=3"
+      ],
+      "left_stem": "3051",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3051/3052; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3052"
+    },
+    {
+      "batch_position": 29,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003015",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3052.jpg#sha256=a9980358892f4507b05b3de2232f01b755e8b59022acca252abb936884b4e859",
+        "archive/images/3053.jpg#sha256=366fb8dcc6b4ab470c493c61301da9b273daad597b471f2e1841277594c64dd6",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_006.jpg#slot=4"
+      ],
+      "left_stem": "3052",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3052/3053; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3053"
+    },
+    {
+      "batch_position": 30,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003016",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3053.jpg#sha256=366fb8dcc6b4ab470c493c61301da9b273daad597b471f2e1841277594c64dd6",
+        "archive/images/3054.jpg#sha256=2a8791deac16c87418714b79fd628c9d4881e64d14b58ff46755a34001311931",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_006.jpg#slot=5"
+      ],
+      "left_stem": "3053",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3053/3054; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3054"
+    },
+    {
+      "batch_position": 31,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003017",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3054.jpg#sha256=2a8791deac16c87418714b79fd628c9d4881e64d14b58ff46755a34001311931",
+        "archive/images/3055.jpg#sha256=85631577dd2d78fe3de807f9a2740458aa6b813843e57caf1f7d9d70b32bd478",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_007.jpg#slot=1"
+      ],
+      "left_stem": "3054",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3054/3055; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3055"
+    },
+    {
+      "batch_position": 32,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003018",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3055.jpg#sha256=85631577dd2d78fe3de807f9a2740458aa6b813843e57caf1f7d9d70b32bd478",
+        "archive/images/3056.jpg#sha256=c97ff56998b97d3d2e01c0b47e02677c7375ec5339648664467ab007d663d971",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_007.jpg#slot=2"
+      ],
+      "left_stem": "3055",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3055/3056; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3056"
+    },
+    {
+      "batch_position": 33,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003019",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3056.jpg#sha256=c97ff56998b97d3d2e01c0b47e02677c7375ec5339648664467ab007d663d971",
+        "archive/images/3057.jpg#sha256=bdaba5e0ec3e0b1e91c4fd22366ad56727671e787b8e49803c0c93acc0e20da5",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_007.jpg#slot=3"
+      ],
+      "left_stem": "3056",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3056/3057; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3057"
+    },
+    {
+      "batch_position": 34,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003020",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3057.jpg#sha256=bdaba5e0ec3e0b1e91c4fd22366ad56727671e787b8e49803c0c93acc0e20da5",
+        "archive/images/3058.jpg#sha256=f154ed49b74c61e9e225be044debd89dcd087daaba2ad673068399d48932129a",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_007.jpg#slot=4"
+      ],
+      "left_stem": "3057",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3057/3058; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3058"
+    },
+    {
+      "batch_position": 35,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003021",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3058.jpg#sha256=f154ed49b74c61e9e225be044debd89dcd087daaba2ad673068399d48932129a",
+        "archive/images/3059.jpg#sha256=08d9e3534dcb5cc2c976779f43026aa3c81b474039299c3334aa3a84ec033efe",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_007.jpg#slot=5"
+      ],
+      "left_stem": "3058",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3058/3059; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3059"
+    },
+    {
+      "batch_position": 36,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003022",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3059.jpg#sha256=08d9e3534dcb5cc2c976779f43026aa3c81b474039299c3334aa3a84ec033efe",
+        "archive/images/3060.jpg#sha256=97f61d5b345f68f37ca9309d270fcbdd7246b3bd1b7ba8e514a2b1062cd7450d",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_008.jpg#slot=1"
+      ],
+      "left_stem": "3059",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3059/3060; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3060"
+    },
+    {
+      "batch_position": 37,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003025",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3062.jpg#sha256=eeeaf774256ae415b6ac790c62c5318f49603453984c7a8a76d573da8aa28a78",
+        "archive/images/3063.jpg#sha256=096422cfa329982b1d688465ba987725c08a07b103e0a8a9ef9090e1d3489478",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_008.jpg#slot=2"
+      ],
+      "left_stem": "3062",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3062/3063; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3063"
+    },
+    {
+      "batch_position": 38,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003026",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3063.jpg#sha256=096422cfa329982b1d688465ba987725c08a07b103e0a8a9ef9090e1d3489478",
+        "archive/images/3064.jpg#sha256=135ed3c563c051fd6d9d1625f602c11255a3f4ad7176782412aaf77084e90eed",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_008.jpg#slot=3"
+      ],
+      "left_stem": "3063",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3063/3064; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3064"
+    },
+    {
+      "batch_position": 39,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003031",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3068.jpg#sha256=71e102fd3a1fdf5f11cbc931957b9c816cef13325bc1bad0e69c2e6bf0a11ec5",
+        "archive/images/3069.jpg#sha256=1cee9c949cb204054f79f172398ec735be087a3005ccaf79ce72f24da9925ddf",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_008.jpg#slot=4"
+      ],
+      "left_stem": "3068",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3068/3069; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3069"
+    },
+    {
+      "batch_position": 40,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003032",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3069.jpg#sha256=1cee9c949cb204054f79f172398ec735be087a3005ccaf79ce72f24da9925ddf",
+        "archive/images/3070.jpg#sha256=db764b693e1de509f78a4bde58cea357647199f15219978ba781a0d7e14cb537",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_008.jpg#slot=5"
+      ],
+      "left_stem": "3069",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3069/3070; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3070"
+    },
+    {
+      "batch_position": 41,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003033",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3070.jpg#sha256=db764b693e1de509f78a4bde58cea357647199f15219978ba781a0d7e14cb537",
+        "archive/images/3071.jpg#sha256=5db6841dc485ce5cd9acef45f967e35296114ff6cf5b7e6c14d584d545de63af",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_009.jpg#slot=1"
+      ],
+      "left_stem": "3070",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3070/3071; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3071"
+    },
+    {
+      "batch_position": 42,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003034",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3071.jpg#sha256=5db6841dc485ce5cd9acef45f967e35296114ff6cf5b7e6c14d584d545de63af",
+        "archive/images/3072.jpg#sha256=7f45b118a32c00ee3501857d15c5665f69f20afd923a46636226fe3c0822b72c",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_009.jpg#slot=2"
+      ],
+      "left_stem": "3071",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3071/3072; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3072"
+    },
+    {
+      "batch_position": 43,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003035",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3072.jpg#sha256=7f45b118a32c00ee3501857d15c5665f69f20afd923a46636226fe3c0822b72c",
+        "archive/images/3073.jpg#sha256=5be297547dcee6ce7fa2d1b87adebf060e4e222ab09a6f3ba625227dfda29bd7",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_009.jpg#slot=3"
+      ],
+      "left_stem": "3072",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3072/3073; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3073"
+    },
+    {
+      "batch_position": 44,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003036",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3073.jpg#sha256=5be297547dcee6ce7fa2d1b87adebf060e4e222ab09a6f3ba625227dfda29bd7",
+        "archive/images/3074.jpg#sha256=ecb309a6ed50777193d0a2f04c80c5e3ca68bc3f29e6838b82d41a5d4376d571",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_009.jpg#slot=4"
+      ],
+      "left_stem": "3073",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3073/3074; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3074"
+    },
+    {
+      "batch_position": 45,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003037",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3074.jpg#sha256=ecb309a6ed50777193d0a2f04c80c5e3ca68bc3f29e6838b82d41a5d4376d571",
+        "archive/images/3075.jpg#sha256=a28a22799c73ad57f7eea915a53eae9edd254ddbbf76b35fd91523ba0db885a8",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_009.jpg#slot=5"
+      ],
+      "left_stem": "3074",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3074/3075; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3075"
+    },
+    {
+      "batch_position": 46,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003038",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3075.jpg#sha256=a28a22799c73ad57f7eea915a53eae9edd254ddbbf76b35fd91523ba0db885a8",
+        "archive/images/3076.jpg#sha256=3b976c762ebbb4eec47d272fd72d63b82106154107650b29ff6acfe890419f02",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_010.jpg#slot=1"
+      ],
+      "left_stem": "3075",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3075/3076; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3076"
+    },
+    {
+      "batch_position": 47,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003041",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3078.jpg#sha256=86cd8c7a361faf405842a3bb4902e47f7b15cd5f7c0a4556718cf4f25825a182",
+        "archive/images/3079.jpg#sha256=d8e37c1ba4e2c032ecdae3bbf9fa573a12e9f16f40daaa057d2b5863e9a881be",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_010.jpg#slot=2"
+      ],
+      "left_stem": "3078",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3078/3079; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3079"
+    },
+    {
+      "batch_position": 48,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003042",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3079.jpg#sha256=d8e37c1ba4e2c032ecdae3bbf9fa573a12e9f16f40daaa057d2b5863e9a881be",
+        "archive/images/3080.jpg#sha256=afac3acce52323fd95ccb272d4c6f529c2e8f7db8884166c24950b37bd7e6f6c",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_010.jpg#slot=3"
+      ],
+      "left_stem": "3079",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3079/3080; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3080"
+    },
+    {
+      "batch_position": 49,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003043",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3080.jpg#sha256=afac3acce52323fd95ccb272d4c6f529c2e8f7db8884166c24950b37bd7e6f6c",
+        "archive/images/3081.jpg#sha256=6bd70ba78fde93587fbd9851e4eda828f3dda9c2b53c8aeb6ed6956fdceae3e9",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_010.jpg#slot=4"
+      ],
+      "left_stem": "3080",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3080/3081; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3081"
+    },
+    {
+      "batch_position": 50,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003044",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3081.jpg#sha256=6bd70ba78fde93587fbd9851e4eda828f3dda9c2b53c8aeb6ed6956fdceae3e9",
+        "archive/images/3082.jpg#sha256=ca8106316e5ffdf97f4395a52e0aa457a97ad4b75996d458b9fb469960f5fe8a",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_010.jpg#slot=5"
+      ],
+      "left_stem": "3081",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3081/3082; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3082"
+    },
+    {
+      "batch_position": 51,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003045",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3082.jpg#sha256=ca8106316e5ffdf97f4395a52e0aa457a97ad4b75996d458b9fb469960f5fe8a",
+        "archive/images/3083.jpg#sha256=56a5afe1ff8627d0f799db02c12a1094b2dc2376d3eebf0d77701ab8fe6c5ec5",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_011.jpg#slot=1"
+      ],
+      "left_stem": "3082",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3082/3083; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3083"
+    },
+    {
+      "batch_position": 52,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003046",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3083.jpg#sha256=56a5afe1ff8627d0f799db02c12a1094b2dc2376d3eebf0d77701ab8fe6c5ec5",
+        "archive/images/3084.jpg#sha256=936bb1dd62cc093b4cd47e2da50c6d12b04e38f5f2a02f110e06fd761aa51f41",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_011.jpg#slot=2"
+      ],
+      "left_stem": "3083",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3083/3084; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3084"
+    },
+    {
+      "batch_position": 53,
+      "capture_hypothesis": "NOT_RELATED",
+      "confidence": "HIGH",
+      "edge_id": "edge_003047",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3084.jpg#sha256=936bb1dd62cc093b4cd47e2da50c6d12b04e38f5f2a02f110e06fd761aa51f41",
+        "archive/images/3085.jpg#sha256=8e0aaf6866ed0f9bdb34594f2f8a0a5f1f2671e03a4d7d0127c1a125f54553ba",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_011.jpg#slot=3"
+      ],
+      "left_stem": "3084",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "NOT_RELATED",
+      "provisional_outcome": "NOT_RELATED",
+      "rationale": "Direct PM atlas review shows a discontinuous scene across stems 3084/3085: a close-up cls6 curve-warning sign under red-white and grey pylons versus a tree-lined road with a striped post and a distant cls48 sign; no shared riders, vehicles or physical signs; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3085"
+    },
+    {
+      "batch_position": 54,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003048",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3085.jpg#sha256=8e0aaf6866ed0f9bdb34594f2f8a0a5f1f2671e03a4d7d0127c1a125f54553ba",
+        "archive/images/3086.jpg#sha256=97111c9c12b9e89ac1be83022c23cc6e610b39744833a7cf48bfb56180f4f26e",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_011.jpg#slot=4"
+      ],
+      "left_stem": "3085",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3085/3086; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3086"
+    },
+    {
+      "batch_position": 55,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003049",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3086.jpg#sha256=97111c9c12b9e89ac1be83022c23cc6e610b39744833a7cf48bfb56180f4f26e",
+        "archive/images/3087.jpg#sha256=03f87845b08b3dcaa330bd9876be62f4e6303bb0cce7eed8135dd34b907688cc",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_011.jpg#slot=5"
+      ],
+      "left_stem": "3086",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3086/3087; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3087"
+    },
+    {
+      "batch_position": 56,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003050",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3087.jpg#sha256=03f87845b08b3dcaa330bd9876be62f4e6303bb0cce7eed8135dd34b907688cc",
+        "archive/images/3088.jpg#sha256=5be224d01bb95ce236c5cdcedb91ec0dc2ad8e509372c194c43993fa579722e3",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_012.jpg#slot=1"
+      ],
+      "left_stem": "3087",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3087/3088; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3088"
+    },
+    {
+      "batch_position": 57,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003051",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3088.jpg#sha256=5be224d01bb95ce236c5cdcedb91ec0dc2ad8e509372c194c43993fa579722e3",
+        "archive/images/3089.jpg#sha256=263097c3a5a601350711af4531a7a2094854eac7cffdb4ef8c57fa0876d3d5cb",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_012.jpg#slot=2"
+      ],
+      "left_stem": "3088",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3088/3089; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3089"
+    },
+    {
+      "batch_position": 58,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003052",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3089.jpg#sha256=263097c3a5a601350711af4531a7a2094854eac7cffdb4ef8c57fa0876d3d5cb",
+        "archive/images/3090.jpg#sha256=c796c0f48cb053a99c6a6d3e051399b87ce040617692da946b2513ef62548ae0",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_012.jpg#slot=3"
+      ],
+      "left_stem": "3089",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3089/3090; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3090"
+    },
+    {
+      "batch_position": 59,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003053",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3090.jpg#sha256=c796c0f48cb053a99c6a6d3e051399b87ce040617692da946b2513ef62548ae0",
+        "archive/images/3091.jpg#sha256=f77a73c9fc7e7260eb8a5ca0ca0d1dd49102258cf107cf9f8f62aa7f8d658026",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_012.jpg#slot=4"
+      ],
+      "left_stem": "3090",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3090/3091; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3091"
+    },
+    {
+      "batch_position": 60,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003056",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3093.jpg#sha256=27c88ebb9c2a11538c9d5f8b08b8511138ab7d647448bb7acf2429954037102d",
+        "archive/images/3094.jpg#sha256=e9222b3fcb14e58f64ac6d8a64778023f1f646711d81f792b7acb9f9bbc0ed60",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_012.jpg#slot=5"
+      ],
+      "left_stem": "3093",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3093/3094; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3094"
+    },
+    {
+      "batch_position": 61,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003061",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3098.jpg#sha256=e37bd874c34b1f5456ee3c96956a896ae6fc37073c67c7dea5e2c67af2f92ca4",
+        "archive/images/3099.jpg#sha256=ce7ab1550a98820d37710f9c28944c2832e2396156e518e48e60b6a2fcdaa43e",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_013.jpg#slot=1"
+      ],
+      "left_stem": "3098",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3098/3099; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3099"
+    },
+    {
+      "batch_position": 62,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003062",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3099.jpg#sha256=ce7ab1550a98820d37710f9c28944c2832e2396156e518e48e60b6a2fcdaa43e",
+        "archive/images/3100.jpg#sha256=8224908eda3e1ccaeaedb9e545dbdbe0621c7601794b12bf9702627682d18605",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_013.jpg#slot=2"
+      ],
+      "left_stem": "3099",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3099/3100; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3100"
+    },
+    {
+      "batch_position": 63,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003063",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3100.jpg#sha256=8224908eda3e1ccaeaedb9e545dbdbe0621c7601794b12bf9702627682d18605",
+        "archive/images/3101.jpg#sha256=830bb9fc7c095123ef3a5c911d6b7346215c0de64db63c5aad8ffe4219a88ffc",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_013.jpg#slot=3"
+      ],
+      "left_stem": "3100",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3100/3101; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3101"
+    },
+    {
+      "batch_position": 64,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003064",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3101.jpg#sha256=830bb9fc7c095123ef3a5c911d6b7346215c0de64db63c5aad8ffe4219a88ffc",
+        "archive/images/3102.jpg#sha256=cc305cd96a6292b3be6572065df6c06e3512662eca55268dc37f524a186fe3af",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_013.jpg#slot=4"
+      ],
+      "left_stem": "3101",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3101/3102; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3102"
+    },
+    {
+      "batch_position": 65,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003065",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3102.jpg#sha256=cc305cd96a6292b3be6572065df6c06e3512662eca55268dc37f524a186fe3af",
+        "archive/images/3103.jpg#sha256=e7ba50d5b9520c1c848ccc5d661e72c06579d10d2ec376a8d341ad3b9057f1af",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_013.jpg#slot=5"
+      ],
+      "left_stem": "3102",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3102/3103; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3103"
+    },
+    {
+      "batch_position": 66,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003066",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3103.jpg#sha256=e7ba50d5b9520c1c848ccc5d661e72c06579d10d2ec376a8d341ad3b9057f1af",
+        "archive/images/3104.jpg#sha256=4264c18c3bd5d2b0d2fbc929a7bf4b4500cc0384c8303c8e1d94d8299c3feaf5",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_014.jpg#slot=1"
+      ],
+      "left_stem": "3103",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3103/3104; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3104"
+    },
+    {
+      "batch_position": 67,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003067",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3104.jpg#sha256=4264c18c3bd5d2b0d2fbc929a7bf4b4500cc0384c8303c8e1d94d8299c3feaf5",
+        "archive/images/3105.jpg#sha256=75100146918830ad29933f17007175075986fdd1812f2dfae0260db35e1a8a02",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_014.jpg#slot=2"
+      ],
+      "left_stem": "3104",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3104/3105; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3105"
+    },
+    {
+      "batch_position": 68,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003070",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3107.jpg#sha256=714c1fa0d7286679ec8c541c41210b9385b8de96b280c907d083976cce7efd6f",
+        "archive/images/3108.jpg#sha256=2b91056faa896794f6aa2f64eeb6f15a45eb8b887ad36e2e15dfa0fdc9c2f6a9",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_014.jpg#slot=3"
+      ],
+      "left_stem": "3107",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3107/3108; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3108"
+    },
+    {
+      "batch_position": 69,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003071",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3108.jpg#sha256=2b91056faa896794f6aa2f64eeb6f15a45eb8b887ad36e2e15dfa0fdc9c2f6a9",
+        "archive/images/3109.jpg#sha256=dd024dd8daf06445ff300bff334f2e66b0c70290d03086b21725214c07d5d2e4",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_014.jpg#slot=4"
+      ],
+      "left_stem": "3108",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3108/3109; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3109"
+    },
+    {
+      "batch_position": 70,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003072",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3109.jpg#sha256=dd024dd8daf06445ff300bff334f2e66b0c70290d03086b21725214c07d5d2e4",
+        "archive/images/3110.jpg#sha256=69f506fe557abb6547c50b00150a0baf6ff0d13f2559f94cb263053177f6961b",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_014.jpg#slot=5"
+      ],
+      "left_stem": "3109",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3109/3110; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3110"
+    },
+    {
+      "batch_position": 71,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003073",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3110.jpg#sha256=69f506fe557abb6547c50b00150a0baf6ff0d13f2559f94cb263053177f6961b",
+        "archive/images/3111.jpg#sha256=40b3a719e391149142a27bb91af4dccece73dd68cb68f13c6f6574a34af97329",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_015.jpg#slot=1"
+      ],
+      "left_stem": "3110",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3110/3111; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3111"
+    },
+    {
+      "batch_position": 72,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003074",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3111.jpg#sha256=40b3a719e391149142a27bb91af4dccece73dd68cb68f13c6f6574a34af97329",
+        "archive/images/3112.jpg#sha256=e5467a2ae926600a48458b07b5ec94b0542464e0ae796d0ce19f9294a87fcf63",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_015.jpg#slot=2"
+      ],
+      "left_stem": "3111",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3111/3112; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3112"
+    },
+    {
+      "batch_position": 73,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003075",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3112.jpg#sha256=e5467a2ae926600a48458b07b5ec94b0542464e0ae796d0ce19f9294a87fcf63",
+        "archive/images/3113.jpg#sha256=3fa6dec84ead6fad18fd239a55fe2de5f4239459f0b465c8bb384a347e4c5b9c",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_015.jpg#slot=3"
+      ],
+      "left_stem": "3112",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3112/3113; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3113"
+    },
+    {
+      "batch_position": 74,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003076",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3113.jpg#sha256=3fa6dec84ead6fad18fd239a55fe2de5f4239459f0b465c8bb384a347e4c5b9c",
+        "archive/images/3114.jpg#sha256=263b51cf0cddb05b0856cd9886bcc6f873dee9df365f1b00cae009b58ecd4053",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_015.jpg#slot=4"
+      ],
+      "left_stem": "3113",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3113/3114; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3114"
+    },
+    {
+      "batch_position": 75,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003077",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3114.jpg#sha256=263b51cf0cddb05b0856cd9886bcc6f873dee9df365f1b00cae009b58ecd4053",
+        "archive/images/3115.jpg#sha256=be759cc12cb934c738be1c59c5c011025fe990a9c249529d06b9c2e67ac98d7f",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_015.jpg#slot=5"
+      ],
+      "left_stem": "3114",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3114/3115; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3115"
+    },
+    {
+      "batch_position": 76,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003078",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3115.jpg#sha256=be759cc12cb934c738be1c59c5c011025fe990a9c249529d06b9c2e67ac98d7f",
+        "archive/images/3116.jpg#sha256=e526decd930b167ffe9b66c85c6ff8330352b82d3ba0650dedc48b3fab213ab1",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_016.jpg#slot=1"
+      ],
+      "left_stem": "3115",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3115/3116; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3116"
+    },
+    {
+      "batch_position": 77,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003079",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3116.jpg#sha256=e526decd930b167ffe9b66c85c6ff8330352b82d3ba0650dedc48b3fab213ab1",
+        "archive/images/3117.jpg#sha256=9bc304292c1c2ab14247b3e037ace78c77934baabe7126e582289f8f882ca252",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_016.jpg#slot=2"
+      ],
+      "left_stem": "3116",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3116/3117; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3117"
+    },
+    {
+      "batch_position": 78,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003080",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3117.jpg#sha256=9bc304292c1c2ab14247b3e037ace78c77934baabe7126e582289f8f882ca252",
+        "archive/images/3118.jpg#sha256=19bf4f3df9757040c0835d6bcdfae1aa9772b73b69434187b87ef6595d906387",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_016.jpg#slot=3"
+      ],
+      "left_stem": "3117",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3117/3118; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3118"
+    },
+    {
+      "batch_position": 79,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003081",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3118.jpg#sha256=19bf4f3df9757040c0835d6bcdfae1aa9772b73b69434187b87ef6595d906387",
+        "archive/images/3119.jpg#sha256=de2a9a89ff4a825ab9a060d1d0a251ccbecb9e9edaf581e42da65d24ba4ac35b",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_016.jpg#slot=4"
+      ],
+      "left_stem": "3118",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3118/3119; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3119"
+    },
+    {
+      "batch_position": 80,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003082",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3119.jpg#sha256=de2a9a89ff4a825ab9a060d1d0a251ccbecb9e9edaf581e42da65d24ba4ac35b",
+        "archive/images/3120.jpg#sha256=7c318a2ffa3ddc8a4b42ea969ef7f182d3cf52ff10dca5ac899e829923a438b8",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_016.jpg#slot=5"
+      ],
+      "left_stem": "3119",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3119/3120; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3120"
+    },
+    {
+      "batch_position": 81,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003087",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3124.jpg#sha256=1d450c33fb69a5ea716fddd9c134c83b52a2140faed674c4dcd39aaca413ea1a",
+        "archive/images/3125.jpg#sha256=96873ceaecbaafae3a34d92cda6067de4f703bb7be8d3d3320133108d54138b0",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_017.jpg#slot=1"
+      ],
+      "left_stem": "3124",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3124/3125; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3125"
+    },
+    {
+      "batch_position": 82,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003088",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3125.jpg#sha256=96873ceaecbaafae3a34d92cda6067de4f703bb7be8d3d3320133108d54138b0",
+        "archive/images/3126.jpg#sha256=c3888683f93716d401b0d7c245bc6f1cd7e95a46dfd98bf58b21b92ae5070da2",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_017.jpg#slot=2"
+      ],
+      "left_stem": "3125",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3125/3126; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3126"
+    },
+    {
+      "batch_position": 83,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003089",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3126.jpg#sha256=c3888683f93716d401b0d7c245bc6f1cd7e95a46dfd98bf58b21b92ae5070da2",
+        "archive/images/3127.jpg#sha256=5d195151b2d2ba852cd428366d66aa4bddfd53830ba4152011120e4dfc834205",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_017.jpg#slot=3"
+      ],
+      "left_stem": "3126",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3126/3127; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3127"
+    },
+    {
+      "batch_position": 84,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003090",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3127.jpg#sha256=5d195151b2d2ba852cd428366d66aa4bddfd53830ba4152011120e4dfc834205",
+        "archive/images/3128.jpg#sha256=e2ca9b695e9700cc687db741065079ae7d4d9b7b1117e956bd9d20d04116a5de",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_017.jpg#slot=4"
+      ],
+      "left_stem": "3127",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3127/3128; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3128"
+    },
+    {
+      "batch_position": 85,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003091",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3128.jpg#sha256=e2ca9b695e9700cc687db741065079ae7d4d9b7b1117e956bd9d20d04116a5de",
+        "archive/images/3129.jpg#sha256=6cbca88fc6b64643e9dbbe450e15cb959f6e012f5566d0d655a09c627ac29587",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_017.jpg#slot=5"
+      ],
+      "left_stem": "3128",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3128/3129; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3129"
+    },
+    {
+      "batch_position": 86,
+      "capture_hypothesis": "NOT_RELATED",
+      "confidence": "HIGH",
+      "edge_id": "edge_003092",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3129.jpg#sha256=6cbca88fc6b64643e9dbbe450e15cb959f6e012f5566d0d655a09c627ac29587",
+        "archive/images/3130.jpg#sha256=faa115f04c6dff7919c8ddf68f2f01a2e4a2090607c76743fd795ae31c0b31b9",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_018.jpg#slot=1"
+      ],
+      "left_stem": "3129",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "NOT_RELATED",
+      "provisional_outcome": "NOT_RELATED",
+      "rationale": "Direct PM atlas review shows a discontinuous scene across stems 3129/3130: an overcast pylon road with a CHU Y QUAN SAT plate and cls0/12/13/45 signs versus a rainy city street behind a dark-raincoat rider with plate 59-F1 257.28 and cls14/cls46 signs; no shared riders, vehicles or physical signs; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3130"
+    },
+    {
+      "batch_position": 87,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003093",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3130.jpg#sha256=faa115f04c6dff7919c8ddf68f2f01a2e4a2090607c76743fd795ae31c0b31b9",
+        "archive/images/3131.jpg#sha256=bf69b4d73b2b0ec55898f02d4f9ced0657e0037a16429e41c07889598a53af97",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_018.jpg#slot=2"
+      ],
+      "left_stem": "3130",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3130/3131; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3131"
+    },
+    {
+      "batch_position": 88,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003094",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3131.jpg#sha256=bf69b4d73b2b0ec55898f02d4f9ced0657e0037a16429e41c07889598a53af97",
+        "archive/images/3132.jpg#sha256=aa39f2930de8f51d6b1d1ca1ccda59b14755c9bd2c616abe67fbf2f311e60cfd",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_018.jpg#slot=3"
+      ],
+      "left_stem": "3131",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3131/3132; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3132"
+    },
+    {
+      "batch_position": 89,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003095",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3132.jpg#sha256=aa39f2930de8f51d6b1d1ca1ccda59b14755c9bd2c616abe67fbf2f311e60cfd",
+        "archive/images/3133.jpg#sha256=136970cfdad48c0faee53d4d417a784d6fb62b449e3573fbb0910444f1c6e95e",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_018.jpg#slot=4"
+      ],
+      "left_stem": "3132",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3132/3133; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3133"
+    },
+    {
+      "batch_position": 90,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003096",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3133.jpg#sha256=136970cfdad48c0faee53d4d417a784d6fb62b449e3573fbb0910444f1c6e95e",
+        "archive/images/3134.jpg#sha256=c24c023a5bb1704474a2d8f54e41133cf62e43f5b7c4f1e554f58dd55b2ac7aa",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_018.jpg#slot=5"
+      ],
+      "left_stem": "3133",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3133/3134; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3134"
+    },
+    {
+      "batch_position": 91,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003097",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3134.jpg#sha256=c24c023a5bb1704474a2d8f54e41133cf62e43f5b7c4f1e554f58dd55b2ac7aa",
+        "archive/images/3135.jpg#sha256=905ab06b27357915262fabc5fee59934abc5602287bde55c96a9a76a0804473a",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_019.jpg#slot=1"
+      ],
+      "left_stem": "3134",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3134/3135; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3135"
+    },
+    {
+      "batch_position": 92,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003098",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3135.jpg#sha256=905ab06b27357915262fabc5fee59934abc5602287bde55c96a9a76a0804473a",
+        "archive/images/3136.jpg#sha256=59a79800bdc9e3eb481bc35ce4283d0450f24648626e722357c3dd8fde1ab62c",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_019.jpg#slot=2"
+      ],
+      "left_stem": "3135",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3135/3136; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3136"
+    },
+    {
+      "batch_position": 93,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003099",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3136.jpg#sha256=59a79800bdc9e3eb481bc35ce4283d0450f24648626e722357c3dd8fde1ab62c",
+        "archive/images/3137.jpg#sha256=9763de7ead32501ebbe54f3162a76c7825a7580861eb3e09732dfb26a2623549",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_019.jpg#slot=3"
+      ],
+      "left_stem": "3136",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3136/3137; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3137"
+    },
+    {
+      "batch_position": 94,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003104",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3141.jpg#sha256=239e7418f754bbe5944bd25133cab8768e5df6dd1875ce54fb1581e44e5dff9c",
+        "archive/images/3142.jpg#sha256=c7e881170144051b5d54576b50fc78ec6b19358e5c0b26f7b3361dbdfd6e6265",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_019.jpg#slot=4"
+      ],
+      "left_stem": "3141",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3141/3142; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3142"
+    },
+    {
+      "batch_position": 95,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003105",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3142.jpg#sha256=c7e881170144051b5d54576b50fc78ec6b19358e5c0b26f7b3361dbdfd6e6265",
+        "archive/images/3143.jpg#sha256=6afaf1d9d7ba3ab74d9b41a7cb8082188d3f61ef078e8dccdf3b81f17a1e431a",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_019.jpg#slot=5"
+      ],
+      "left_stem": "3142",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3142/3143; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3143"
+    },
+    {
+      "batch_position": 96,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003106",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3143.jpg#sha256=6afaf1d9d7ba3ab74d9b41a7cb8082188d3f61ef078e8dccdf3b81f17a1e431a",
+        "archive/images/3144.jpg#sha256=547cbb210d846a0b5aafff98a17407a85b3aca4556c6a2652bcfae39c68d1d14",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_020.jpg#slot=1"
+      ],
+      "left_stem": "3143",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3143/3144; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3144"
+    },
+    {
+      "batch_position": 97,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003107",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3144.jpg#sha256=547cbb210d846a0b5aafff98a17407a85b3aca4556c6a2652bcfae39c68d1d14",
+        "archive/images/3145.jpg#sha256=01d3d3ab11a5a5d5b3a969ac884d6e2df1fad7016ff4837a5e6fd3ba9c521440",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_020.jpg#slot=2"
+      ],
+      "left_stem": "3144",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3144/3145; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3145"
+    },
+    {
+      "batch_position": 98,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003108",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3145.jpg#sha256=01d3d3ab11a5a5d5b3a969ac884d6e2df1fad7016ff4837a5e6fd3ba9c521440",
+        "archive/images/3146.jpg#sha256=267946effc729a371d5f1071b32f70769d1a817727b3df7238b3f086d6c68a0f",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_020.jpg#slot=3"
+      ],
+      "left_stem": "3145",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3145/3146; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3146"
+    },
+    {
+      "batch_position": 99,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003109",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3146.jpg#sha256=267946effc729a371d5f1071b32f70769d1a817727b3df7238b3f086d6c68a0f",
+        "archive/images/3147.jpg#sha256=a7cb0a1e5d3d57fc9a33246d51939bb78f22d8c7efc6a58203ed1834b2752adb",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_020.jpg#slot=4"
+      ],
+      "left_stem": "3146",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3146/3147; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3147"
+    },
+    {
+      "batch_position": 100,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003110",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3147.jpg#sha256=a7cb0a1e5d3d57fc9a33246d51939bb78f22d8c7efc6a58203ed1834b2752adb",
+        "archive/images/3148.jpg#sha256=3c0d644b3d05f9b02200419232baae0172e741b34c6d082fa10763d8d381259e",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_020.jpg#slot=5"
+      ],
+      "left_stem": "3147",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3147/3148; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3148"
+    },
+    {
+      "batch_position": 101,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003111",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3148.jpg#sha256=3c0d644b3d05f9b02200419232baae0172e741b34c6d082fa10763d8d381259e",
+        "archive/images/3149.jpg#sha256=6d5c1342c1c91f9bf9d220d9f66a27fe9047e1058eb0060c77570391b6f096d9",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_021.jpg#slot=1"
+      ],
+      "left_stem": "3148",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3148/3149; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3149"
+    },
+    {
+      "batch_position": 102,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003112",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3149.jpg#sha256=6d5c1342c1c91f9bf9d220d9f66a27fe9047e1058eb0060c77570391b6f096d9",
+        "archive/images/3150.jpg#sha256=3f763515bd74d6370d691ef3d3026204d3b64047f8c0d3b591ecec92188ba400",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_021.jpg#slot=2"
+      ],
+      "left_stem": "3149",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3149/3150; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3150"
+    },
+    {
+      "batch_position": 103,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003116",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3153.jpg#sha256=35b83d49bc957b31a115e6f6e14113661b2e308dfe944867efd514bd974091b9",
+        "archive/images/3154.jpg#sha256=4185db7b13fb6c1e164116df8e798af38f008f6321d69d2dce0eebadac9033c0",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_021.jpg#slot=3"
+      ],
+      "left_stem": "3153",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3153/3154; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3154"
+    },
+    {
+      "batch_position": 104,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003118",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3155.jpg#sha256=6e51387f4373943f507cb063a7388191af734be24ba55aa78730c3f2cde695a5",
+        "archive/images/3156.jpg#sha256=de3e75af8316e0909a39cf6af889be25f00c469350fff4941c8710bad5a6048c",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_021.jpg#slot=4"
+      ],
+      "left_stem": "3155",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3155/3156; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3156"
+    },
+    {
+      "batch_position": 105,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003119",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3156.jpg#sha256=de3e75af8316e0909a39cf6af889be25f00c469350fff4941c8710bad5a6048c",
+        "archive/images/3157.jpg#sha256=9741cde0abfd9775b446e0ff08bcd040530f75ac4ff69b41e8012744b6091c31",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_021.jpg#slot=5"
+      ],
+      "left_stem": "3156",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3156/3157; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3157"
+    },
+    {
+      "batch_position": 106,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003120",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3157.jpg#sha256=9741cde0abfd9775b446e0ff08bcd040530f75ac4ff69b41e8012744b6091c31",
+        "archive/images/3158.jpg#sha256=33d971c46d557a28900a614f90549728a71b52f94da783490037ba30a3494e04",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_022.jpg#slot=1"
+      ],
+      "left_stem": "3157",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3157/3158; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3158"
+    },
+    {
+      "batch_position": 107,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003122",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3159.jpg#sha256=3fdcd25e455ca25cec347e888c8ec97726daad19e639ca4822664fb9e301b816",
+        "archive/images/3160.jpg#sha256=526e4e8724bc6dbb64c74c2e25511e63c2f23a37406f33f0eeac3733aecfae67",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_022.jpg#slot=2"
+      ],
+      "left_stem": "3159",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3159/3160; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3160"
+    },
+    {
+      "batch_position": 108,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003124",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3161.jpg#sha256=02431f17a4db92942095ed604f53aecbfe67c03802004b29c2d65896c87050a7",
+        "archive/images/3162.jpg#sha256=5232742a8ea8b683cd646e17b5e98d538c21050642b74de4b316aee1f26d7ae1",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_022.jpg#slot=3"
+      ],
+      "left_stem": "3161",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3161/3162; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3162"
+    },
+    {
+      "batch_position": 109,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003125",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3162.jpg#sha256=5232742a8ea8b683cd646e17b5e98d538c21050642b74de4b316aee1f26d7ae1",
+        "archive/images/3163.jpg#sha256=9bbc3ad77f8dd86148963133af0dd101d8776a06a8552d15600b2421009ea02b",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_022.jpg#slot=4"
+      ],
+      "left_stem": "3162",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3162/3163; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3163"
+    },
+    {
+      "batch_position": 110,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003126",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3163.jpg#sha256=9bbc3ad77f8dd86148963133af0dd101d8776a06a8552d15600b2421009ea02b",
+        "archive/images/3164.jpg#sha256=063b289e91e2af4d0181643cfb3a16d842cd40be21155d0826285609c0da7d3b",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_022.jpg#slot=5"
+      ],
+      "left_stem": "3163",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3163/3164; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3164"
+    },
+    {
+      "batch_position": 111,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003127",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3164.jpg#sha256=063b289e91e2af4d0181643cfb3a16d842cd40be21155d0826285609c0da7d3b",
+        "archive/images/3165.jpg#sha256=ca2506136b0f792ea082c8c4dfc7c2e28bf733737d9f6a1b53c9d803378ced80",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_023.jpg#slot=1"
+      ],
+      "left_stem": "3164",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3164/3165; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3165"
+    },
+    {
+      "batch_position": 112,
+      "capture_hypothesis": "NOT_RELATED",
+      "confidence": "HIGH",
+      "edge_id": "edge_003128",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3165.jpg#sha256=ca2506136b0f792ea082c8c4dfc7c2e28bf733737d9f6a1b53c9d803378ced80",
+        "archive/images/3166.jpg#sha256=4b267160dd06793b0c8f3497d82d8a450c9c4c08897be10fc4f97926492d4eb4",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_023.jpg#slot=2"
+      ],
+      "left_stem": "3165",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "NOT_RELATED",
+      "provisional_outcome": "NOT_RELATED",
+      "rationale": "Direct PM atlas review shows a discontinuous scene across stems 3165/3166: a rainy shop street behind a dark pickup with a cls46 sign versus an overpass approach with yellow/blue raincoat riders, a cls32 sign and a cls45 sign; no shared riders, vehicles or physical signs; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3166"
+    },
+    {
+      "batch_position": 113,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003131",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3168.jpg#sha256=41e8f6977920326f72195a5dff02a5fcd78d8195c0f3d8723e85d961ec1dc8da",
+        "archive/images/3169.jpg#sha256=db88c0fc7f4a4fd1ce2e5964f2967eeccfa76b921085f9a9fd410f591de14c11",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_023.jpg#slot=3"
+      ],
+      "left_stem": "3168",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3168/3169; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3169"
+    },
+    {
+      "batch_position": 114,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003132",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3169.jpg#sha256=db88c0fc7f4a4fd1ce2e5964f2967eeccfa76b921085f9a9fd410f591de14c11",
+        "archive/images/3170.jpg#sha256=fbabb6c66a2f2910fdd8b685614ebc46b56d519eb103d57f9ee19b26d50b5ae5",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_023.jpg#slot=4"
+      ],
+      "left_stem": "3169",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3169/3170; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3170"
+    },
+    {
+      "batch_position": 115,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003133",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3170.jpg#sha256=fbabb6c66a2f2910fdd8b685614ebc46b56d519eb103d57f9ee19b26d50b5ae5",
+        "archive/images/3171.jpg#sha256=8e026b3b7f8a8090c85d753c850bd76dc5d3d725f688c114a0eef6b1ba9820a3",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_023.jpg#slot=5"
+      ],
+      "left_stem": "3170",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3170/3171; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3171"
+    },
+    {
+      "batch_position": 116,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003134",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3171.jpg#sha256=8e026b3b7f8a8090c85d753c850bd76dc5d3d725f688c114a0eef6b1ba9820a3",
+        "archive/images/3172.jpg#sha256=79eca62623fdd8bbee63c53094b20cada754d074b65cd8aedc207fa230c6f724",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_024.jpg#slot=1"
+      ],
+      "left_stem": "3171",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3171/3172; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3172"
+    },
+    {
+      "batch_position": 117,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003135",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3172.jpg#sha256=79eca62623fdd8bbee63c53094b20cada754d074b65cd8aedc207fa230c6f724",
+        "archive/images/3173.jpg#sha256=7265c511cb5575ddcac924e14aa2f6a819f629a7565badc253233b1ff16b9bcf",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_024.jpg#slot=2"
+      ],
+      "left_stem": "3172",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3172/3173; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3173"
+    },
+    {
+      "batch_position": 118,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003136",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3173.jpg#sha256=7265c511cb5575ddcac924e14aa2f6a819f629a7565badc253233b1ff16b9bcf",
+        "archive/images/3174.jpg#sha256=1676500058dcb92dbd425ea2852732bad475905bbec5a5968ca30baf28d0ef1a",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_024.jpg#slot=3"
+      ],
+      "left_stem": "3173",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3173/3174; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3174"
+    },
+    {
+      "batch_position": 119,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003137",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3174.jpg#sha256=1676500058dcb92dbd425ea2852732bad475905bbec5a5968ca30baf28d0ef1a",
+        "archive/images/3175.jpg#sha256=35e41cdc1a4d7f82e471193ddb4b838aab6e14611dc9b47a6590d85e0ca24e7c",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_024.jpg#slot=4"
+      ],
+      "left_stem": "3174",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3174/3175; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3175"
+    },
+    {
+      "batch_position": 120,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003140",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3177.jpg#sha256=7ebb1b316b9189ba7e9314daae329ca340a62c79df15727817175e724185b94b",
+        "archive/images/3178.jpg#sha256=0c87c988138af0a27583b57c06bd317607b7420c3c9d0ad52820154e313edc27",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_024.jpg#slot=5"
+      ],
+      "left_stem": "3177",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3177/3178; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3178"
+    },
+    {
+      "batch_position": 121,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003141",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3178.jpg#sha256=0c87c988138af0a27583b57c06bd317607b7420c3c9d0ad52820154e313edc27",
+        "archive/images/3179.jpg#sha256=86261e7218ef0bd0f5d3117d289a4d2ce5427b2db9433624ef4233d97af39a01",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_025.jpg#slot=1"
+      ],
+      "left_stem": "3178",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3178/3179; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3179"
+    },
+    {
+      "batch_position": 122,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003142",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3179.jpg#sha256=86261e7218ef0bd0f5d3117d289a4d2ce5427b2db9433624ef4233d97af39a01",
+        "archive/images/3180.jpg#sha256=9dd2021ed02fc26e2418169d98751e05181bb6541ab8b2534bbb90cab8d3f5a9",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_025.jpg#slot=2"
+      ],
+      "left_stem": "3179",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3179/3180; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3180"
+    },
+    {
+      "batch_position": 123,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003145",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3182.jpg#sha256=982279bce91ab0cb6246abd12a6a619b2234f814b34902127f0d9e1f9ea8cd09",
+        "archive/images/3183.jpg#sha256=e05dac21291962b18aea1672aa9a9a3294266c13e1252d7c4d4f337808d00ed4",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_025.jpg#slot=3"
+      ],
+      "left_stem": "3182",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3182/3183; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3183"
+    },
+    {
+      "batch_position": 124,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003146",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3183.jpg#sha256=e05dac21291962b18aea1672aa9a9a3294266c13e1252d7c4d4f337808d00ed4",
+        "archive/images/3184.jpg#sha256=aea94de6032e9b3d7648084c262bc39c4a89d9ad8e8092b87d5d889985e6472d",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_025.jpg#slot=4"
+      ],
+      "left_stem": "3183",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3183/3184; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3184"
+    },
+    {
+      "batch_position": 125,
+      "capture_hypothesis": "NOT_RELATED",
+      "confidence": "HIGH",
+      "edge_id": "edge_003153",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3190.jpg#sha256=885791649d0ed45689343da9ac63d8148dba85d7a5e5f68c54c5663b7a48833c",
+        "archive/images/3191.jpg#sha256=f558e3bd64db2e2fe9269de3f710c84963645d1db4e14b76ae96a26cb625af83",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_025.jpg#slot=5"
+      ],
+      "left_stem": "3190",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "NOT_RELATED",
+      "provisional_outcome": "NOT_RELATED",
+      "rationale": "Direct PM atlas review shows a discontinuous scene across stems 3190/3191: a rainy overpass junction with raincoat riders and a cls47 sign versus a sunny empty tree-lined road with distant cls2/cls3 signs; weather, riders and signs all differ; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3191"
+    },
+    {
+      "batch_position": 126,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003154",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3191.jpg#sha256=f558e3bd64db2e2fe9269de3f710c84963645d1db4e14b76ae96a26cb625af83",
+        "archive/images/3192.jpg#sha256=262959f82d72e9b57ca790db0bb720174385485ee8fb11152b86c9995daf3c3e",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_026.jpg#slot=1"
+      ],
+      "left_stem": "3191",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3191/3192; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3192"
+    },
+    {
+      "batch_position": 127,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003155",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3192.jpg#sha256=262959f82d72e9b57ca790db0bb720174385485ee8fb11152b86c9995daf3c3e",
+        "archive/images/3193.jpg#sha256=97ed37faaa0b5f2703a8df94e2bf8acd95db90181800ac508dc64b6c9479aeda",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_026.jpg#slot=2"
+      ],
+      "left_stem": "3192",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3192/3193; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3193"
+    },
+    {
+      "batch_position": 128,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003158",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3195.jpg#sha256=4649d6c6b439ed21023d4f89b710922ce2d72240b6fe7f7f4af7c842c3b7027a",
+        "archive/images/3196.jpg#sha256=ee217a525cfc42124beccc91d2ba034849cd1373620842ae69c522a1a19736d2",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_026.jpg#slot=3"
+      ],
+      "left_stem": "3195",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3195/3196; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3196"
+    },
+    {
+      "batch_position": 129,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003159",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3196.jpg#sha256=ee217a525cfc42124beccc91d2ba034849cd1373620842ae69c522a1a19736d2",
+        "archive/images/3197.jpg#sha256=9315939e839ce30de666c702bd05bd0619652a328453f9c17d3dac9999958115",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_026.jpg#slot=4"
+      ],
+      "left_stem": "3196",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3196/3197; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3197"
+    },
+    {
+      "batch_position": 130,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003162",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3199.jpg#sha256=0f9ba21b47312360fc1ad28108283b7fbe0b1b61d2064c6dd2599b6d1b949cd3",
+        "archive/images/3200.jpg#sha256=13d2790235fa4ba695019a8bc07ce6490947b1a3425df77ac43d1ba14e273e5c",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_026.jpg#slot=5"
+      ],
+      "left_stem": "3199",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3199/3200; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3200"
+    },
+    {
+      "batch_position": 131,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003163",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3200.jpg#sha256=13d2790235fa4ba695019a8bc07ce6490947b1a3425df77ac43d1ba14e273e5c",
+        "archive/images/3201.jpg#sha256=81e09add9b7fbb22d010e8c81d7f3f071f18f0099abd398ea32a526342c0eb45",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_027.jpg#slot=1"
+      ],
+      "left_stem": "3200",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3200/3201; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3201"
+    },
+    {
+      "batch_position": 132,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003164",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3201.jpg#sha256=81e09add9b7fbb22d010e8c81d7f3f071f18f0099abd398ea32a526342c0eb45",
+        "archive/images/3202.jpg#sha256=0900304a192a88dbf61081c692658f63b0a3e9f94fc7df12f2aeadbf544e7c52",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_027.jpg#slot=2"
+      ],
+      "left_stem": "3201",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3201/3202; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3202"
+    },
+    {
+      "batch_position": 133,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003165",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3202.jpg#sha256=0900304a192a88dbf61081c692658f63b0a3e9f94fc7df12f2aeadbf544e7c52",
+        "archive/images/3203.jpg#sha256=51c7ba1de48df35bcc7b79008f792c8c7073d135b75920150ac5f0970d796fa2",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_027.jpg#slot=3"
+      ],
+      "left_stem": "3202",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3202/3203; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3203"
+    },
+    {
+      "batch_position": 134,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003166",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3203.jpg#sha256=51c7ba1de48df35bcc7b79008f792c8c7073d135b75920150ac5f0970d796fa2",
+        "archive/images/3204.jpg#sha256=a0959dce503d3cbf03cd07cc07225d2af988497ea04e8ac3fe218bca15238a16",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_027.jpg#slot=4"
+      ],
+      "left_stem": "3203",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3203/3204; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3204"
+    },
+    {
+      "batch_position": 135,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003167",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3204.jpg#sha256=a0959dce503d3cbf03cd07cc07225d2af988497ea04e8ac3fe218bca15238a16",
+        "archive/images/3205.jpg#sha256=63eaab749694e8148cf733f467e872e5bbd7c5df874d617c02b97aba40c0c489",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_027.jpg#slot=5"
+      ],
+      "left_stem": "3204",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3204/3205; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3205"
+    },
+    {
+      "batch_position": 136,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003168",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3205.jpg#sha256=63eaab749694e8148cf733f467e872e5bbd7c5df874d617c02b97aba40c0c489",
+        "archive/images/3206.jpg#sha256=34f17b5423f2faa5b42970b4c82800bc3ea6c1328d3398248af1e0fc66839666",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_028.jpg#slot=1"
+      ],
+      "left_stem": "3205",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3205/3206; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3206"
+    },
+    {
+      "batch_position": 137,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003169",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3206.jpg#sha256=34f17b5423f2faa5b42970b4c82800bc3ea6c1328d3398248af1e0fc66839666",
+        "archive/images/3207.jpg#sha256=ef8863a2ac86cbb7ed8cbd2932a23c5a8c487c69de6eff7cc41bc169638cbd1e",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_028.jpg#slot=2"
+      ],
+      "left_stem": "3206",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3206/3207; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3207"
+    },
+    {
+      "batch_position": 138,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003170",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3207.jpg#sha256=ef8863a2ac86cbb7ed8cbd2932a23c5a8c487c69de6eff7cc41bc169638cbd1e",
+        "archive/images/3208.jpg#sha256=7a8339d6928d198535e0e6a4c8076af605b33bf672af2aae39e6fcd9d68ad815",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_028.jpg#slot=3"
+      ],
+      "left_stem": "3207",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3207/3208; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3208"
+    },
+    {
+      "batch_position": 139,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003171",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3208.jpg#sha256=7a8339d6928d198535e0e6a4c8076af605b33bf672af2aae39e6fcd9d68ad815",
+        "archive/images/3209.jpg#sha256=bcea132a73d982c17ff7a374854361c3bf80fdc8a5b074d5a639e829e60633a0",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_028.jpg#slot=4"
+      ],
+      "left_stem": "3208",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3208/3209; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3209"
+    },
+    {
+      "batch_position": 140,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003172",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3209.jpg#sha256=bcea132a73d982c17ff7a374854361c3bf80fdc8a5b074d5a639e829e60633a0",
+        "archive/images/3210.jpg#sha256=fc02eb971b0b11ea657767177e4dcffac56a611003c3a165421587d99834d6e3",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_028.jpg#slot=5"
+      ],
+      "left_stem": "3209",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3209/3210; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3210"
+    },
+    {
+      "batch_position": 141,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003173",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3210.jpg#sha256=fc02eb971b0b11ea657767177e4dcffac56a611003c3a165421587d99834d6e3",
+        "archive/images/3211.jpg#sha256=b5637c2114baf9ac0a61307ffcb42c2bb500f75fc104da3ae7c2595b79a5e9b7",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_029.jpg#slot=1"
+      ],
+      "left_stem": "3210",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3210/3211; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3211"
+    },
+    {
+      "batch_position": 142,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003174",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3211.jpg#sha256=b5637c2114baf9ac0a61307ffcb42c2bb500f75fc104da3ae7c2595b79a5e9b7",
+        "archive/images/3212.jpg#sha256=02ff52ccb7f91f7423e0730f6a8d3039f31e9985602ccaef4acc8e892c54a2b2",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_029.jpg#slot=2"
+      ],
+      "left_stem": "3211",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3211/3212; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3212"
+    },
+    {
+      "batch_position": 143,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003175",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3212.jpg#sha256=02ff52ccb7f91f7423e0730f6a8d3039f31e9985602ccaef4acc8e892c54a2b2",
+        "archive/images/3213.jpg#sha256=8bedf722338fa8b789706b78c002b47ea0da9335459f0a47608a7f5d95c6c2d4",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_029.jpg#slot=3"
+      ],
+      "left_stem": "3212",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3212/3213; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3213"
+    },
+    {
+      "batch_position": 144,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_003176",
+      "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/3213.jpg#sha256=8bedf722338fa8b789706b78c002b47ea0da9335459f0a47608a7f5d95c6c2d4",
+        "archive/images/3214.jpg#sha256=4b50f237840cbdd7741575e55613606973adb347448302006111c6efcf47a9ca",
+        "docs/review/assets/wp30/remaining_edge_batch_i/page_029.jpg#slot=4"
+      ],
+      "left_stem": "3213",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Direct PM atlas review shows continuous scene progression and matching annotated physical signs across stems 3213/3214; sequence evidence was context only.",
+      "reviewed_at": "2026-10-17T10:30:00+07:00",
+      "reviewer": "PM/Codex provisional visual reviewer",
+      "right_stem": "3214"
+    }
+  ],
+  "evidence_boundary": "REMAINING_EDGE_BATCH_I_FINAL_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+  "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+  "reviewed_at": "2026-10-17T10:30:00+07:00",
+  "reviewer": "PM/Codex provisional visual reviewer",
+  "schema_version": 1,
+  "status": "PM_REVIEWED_AWAITING_INDEPENDENT_QA"
+}

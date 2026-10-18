@@ -1,0 +1,20 @@
+{
+  "after_captured_utc": "2026-10-10T13:44:58.936939+00:00",
+  "archive_sha256": "052bc980a7206f8ddd1ec2e59098dbd60a42036d3c7f7384ace4fe6416cbaa76",
+  "before_captured_utc": "2026-10-10T13:43:22.602346+00:00",
+  "checks": {
+    "archive_mtime_unchanged": true,
+    "archive_sha256_unchanged": true,
+    "archive_size_unchanged": true,
+    "source_file_count_unchanged": true,
+    "source_image_count_unchanged": true,
+    "source_label_count_unchanged": true,
+    "source_mtime_unchanged": true,
+    "source_total_bytes_unchanged": true,
+    "source_tree_hash_unchanged": true
+  },
+  "compared_utc": "2026-10-10T13:45:15.765483+00:00",
+  "schema_version": 1,
+  "source_tree_manifest_sha256": "05c9955d77862f08f2a43436d9cdea63caa1cb3e56b939000737f93a248c753b",
+  "unchanged": true
+}

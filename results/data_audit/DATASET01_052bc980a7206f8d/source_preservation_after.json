@@ -1,0 +1,20 @@
+{
+  "archive": {
+    "mtime_ns": 1788918594463195563,
+    "path": "/Users/nguyentantai/Library/Mobile Documents/com~apple~CloudDocs/FALL 2026 KỲ 4/CPV301/Data/DATASET01/archive.zip",
+    "sha256": "052bc980a7206f8ddd1ec2e59098dbd60a42036d3c7f7384ace4fe6416cbaa76",
+    "size": 793394914
+  },
+  "captured_utc": "2026-10-10T13:44:58.936939+00:00",
+  "extracted_source": {
+    "file_count": 4267,
+    "image_count": 1046,
+    "label_count": 3216,
+    "mtime_ns": 1789615035000000000,
+    "path": "/Users/nguyentantai/Library/Mobile Documents/com~apple~CloudDocs/FALL 2026 KỲ 4/CPV301/Data/DATASET01/archive",
+    "total_bytes": 271665960,
+    "tree_manifest_sha256": "05c9955d77862f08f2a43436d9cdea63caa1cb3e56b939000737f93a248c753b"
+  },
+  "schema_version": 1,
+  "source_root": "/Users/nguyentantai/Library/Mobile Documents/com~apple~CloudDocs/FALL 2026 KỲ 4/CPV301/Data/DATASET01"
+}

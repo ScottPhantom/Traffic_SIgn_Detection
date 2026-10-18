@@ -1,0 +1,5 @@
+policy,decision,scope,note
+PARAMETERIZED_SPEED,ONE_CLASS_PER_VALUE,"classes 38,39,40,41 (P.127 50/60/80/40 km/h)",Keep four separate classes.
+PARAMETERIZED_HEIGHT,SPLIT_BY_VALUE,classes 16 (P.117) and 43 (W.239b),Owner chose to split by height value; requires reading the value on every box and a derived relabel. Overrides the part-1 note that all height values share one class.
+SUPPLEMENTARY_S505A,KEEP_RENAMED_SUPPLEMENTARY_CLASSES,"classes 25,28,30",Never interpreted alone; behaviour uses the associated main sign.
+UNKNOWN_ROUTING,THRESHOLD_REJECTION_NO_UNKNOWN_CLASS,classifier,No trained UNKNOWN class; reject below a validation-calibrated threshold (M3); out-of-taxonomy signs such as class 31 used only for evaluation.

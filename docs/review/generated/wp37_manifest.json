@@ -1,0 +1,112 @@
+{
+  "artifacts": {
+    "docs/review/generated/wp37_capture_conditions.csv": "ef0932dc736192553e22a229e6bab8978a4357b53d4a539dc9e073528056ec7d",
+    "docs/review/generated/wp37_class_card.csv": "e9909ea5401f239f08077ba41e89488f6bd9c2918bef2befc381405437a34a62",
+    "docs/review/generated/wp37_group_lineage.csv": "91270c9ae9d6d37cd073bce7c20c38b781432e40cfee2452bdaed231605e5b10"
+  },
+  "boundary": "DATASET_CARD_DOCUMENTATION_ONLY_NO_LABEL_CHANGE_NO_TRAINING",
+  "draft_size": [
+    480,
+    270
+  ],
+  "luma_buckets": [
+    [
+      60.0,
+      "DARK"
+    ],
+    [
+      100.0,
+      "DIM"
+    ],
+    [
+      null,
+      "BRIGHT"
+    ]
+  ],
+  "package": "M0-WP37",
+  "pillow_version": "12.3.0",
+  "pinned_sources": {
+    "docs/dataset01_audit.md": "6cb1ccaca832847fe8614f7b86aaca6fc5f8613c807e1d981fd63227bec77478",
+    "docs/review/d01_owner_decision_record.md": "8b400faf68b2805c8116362226c0d1e61e507b8957a8308c552dc6a1accc3d2b",
+    "docs/review/d02_owner_decision_record.md": "2b071cbff4a15c3b1c96b418ad9c8c56a12ec9bbf8ce7155c16baed41a412e85",
+    "docs/review/d03_owner_decision_part1_record.md": "54c2cf2b42a1230e2c66dfef4d9388ed3159ca3dfe077fa77a70751c0c3b96e5",
+    "docs/review/d03_owner_decision_part2_record.md": "93044c877b517ecb063895ed2da0ece9daa8660cba2f662dcc0bd9927944dc7a",
+    "docs/review/d04_owner_decision_part1_record.md": "0b8ff5b9b73e1aaf8d4efc78ab2eeab83d7d5a87d891988f687656771c854230",
+    "docs/review/d04_owner_decision_part2_record.md": "984ce4d758483e5996443b0c25b0c391ca0cd11b1607ae501393b68e6c72562e",
+    "docs/review/g07_owner_acceptance_record.md": "88d5c16e2041b23e43e5381b7107d9de2d4a11635124c876263802abc2dce32a",
+    "docs/review/generated/d02_group_id_registry.csv": "c3b11f4c143627fd777270b34e40486bf92fd6e82e4c306187165fef4f7155d3",
+    "docs/review/generated/d04_owner_decisions_part1.csv": "62de39245a22292a9404702427d8b6bf3a9f746e081163d12198263815bc5409",
+    "docs/review/generated/d04_owner_decisions_part2.csv": "8030f4fd7098b971009dd86831b877701dedbc24c8901fe938a352615f959c6d",
+    "docs/review/generated/wp33_derived_boxes.csv": "4b9307003ce8fd3c1d50763a5950d3d57cf6b2ee6df3aeef74621707067501c0",
+    "docs/review/generated/wp33_derived_taxonomy.csv": "199ddd322aa05d4875af809c1c7c1459198ebf91ada24f406cbf039c406fa5ad",
+    "docs/review/generated/wp35_enrichment_lineage.csv": "e802fc264feff5168c28b531801af04051a36accc3c893ad5ab2e72975d38fed",
+    "docs/review/generated/wp36_r1_class_coverage.csv": "598309eb0c02307c2b19a6846745e2ad840b177dc62008309649b50b3edf5851",
+    "docs/review/generated/wp36_r1_split_frames.csv": "8e197d9c7103ac5dc6b7ffc8a3d1aeb30bb6034048d470e4887dd868df95823a",
+    "docs/review/generated/wp36_r1_split_manifest.json": "064259941895d35054e87a550bf69199c4cae8ffeb4c83b4d7cdf608673438d9",
+    "docs/review/wp36_r1_independent_qa_record.md": "a71d1894093c3a2ca4ff060658596c06458891f9dd4740e7b6c9abf2ef4f9056",
+    "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022"
+  },
+  "status": "WP37_AWAITING_QA_REVIEW",
+  "summary": {
+    "boxes": {
+      "not_trained": "EXCLUDED (raw class 18 is a mislabelled height-limit sign; value unreadable): 1; EXCLUDED (sign cut off at image edge): 1; EXCLUDED (very blurry): 2; QUARANTINED (G0.4 quarantined stem): 2; UNKNOWN_EVAL_ONLY (class 31 routed to UNKNOWN): 38",
+      "total": 8334,
+      "train_eligible": 8290
+    },
+    "exif_frames": 0,
+    "gps_frames": 0,
+    "per_split": {
+      "test": {
+        "edge_quartiles": "22.3 / 24.0 / 29.5",
+        "frames": 903,
+        "luma_buckets": {
+          "BRIGHT": 868,
+          "DIM": 35
+        },
+        "luma_quartiles": "120.3 / 130.0 / 143.1",
+        "resolutions": {
+          "1920x1080": 134,
+          "960x540": 769
+        }
+      },
+      "train": {
+        "edge_quartiles": "19.7 / 23.2 / 27.6",
+        "frames": 1912,
+        "luma_buckets": {
+          "BRIGHT": 1546,
+          "DIM": 366
+        },
+        "luma_quartiles": "103.6 / 118.1 / 131.6",
+        "resolutions": {
+          "1920x1080": 671,
+          "960x540": 1241
+        }
+      },
+      "val": {
+        "edge_quartiles": "20.4 / 29.4 / 33.5",
+        "frames": 376,
+        "luma_buckets": {
+          "BRIGHT": 237,
+          "DARK": 7,
+          "DIM": 132
+        },
+        "luma_quartiles": "94.8 / 106.3 / 124.7",
+        "resolutions": {
+          "540x960": 39,
+          "960x540": 337
+        }
+      }
+    },
+    "quarantined_g04": 1,
+    "quarantined_negatives": 24,
+    "raw_frames": 3216,
+    "split_list_sha256": {
+      "test": "afa03d4b6deb7567c5784b29122966d84599d4eb81fdbad37c3b20adaf7524bc",
+      "train": "6ac767509def899071f6d6dc0da1e98e62a2a19eb0e62292970e8273b4c99372",
+      "val": "ae3f3509319fbb301012e9fbeb7431caacfcd4035c9d2f9167f24e3ed2b8f593"
+    },
+    "test_seal_sha256": "afa03d4b6deb7567c5784b29122966d84599d4eb81fdbad37c3b20adaf7524bc",
+    "usable_frames": 3191
+  },
+  "training_authorized": false
+}

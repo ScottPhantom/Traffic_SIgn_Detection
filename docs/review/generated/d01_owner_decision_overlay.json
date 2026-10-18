@@ -1,0 +1,52 @@
+{
+  "conditions": [
+    "Use DATASET01 for this project's research, coursework and simulation only.",
+    "Attribute the source in every report, dataset card, model card and release: huggingface.co/datasets/thanhhiepvos/vietnam_traffic_sign@d869116, CC-BY-SA, with the archive SHA-256.",
+    "Share-alike: any redistributed derivative of the images or labels (crops, relabels, splits) is released only under CC-BY-SA 4.0, which satisfies both declared versions.",
+    "Do not redistribute the raw images or labels outside the project until ownership is clarified.",
+    "Treat trained model weights as possibly subject to share-alike; attribute the dataset in any model release and re-check before any public or commercial release.",
+    "Re-open D-01 immediately if the author answers, the source changes, or a takedown or ownership claim is received."
+  ],
+  "decision": {
+    "authority": "DIRECT_OWNER_APPROVAL_IN_PM_SESSION",
+    "decision_date": "2026-10-17",
+    "decision_id": "D-01",
+    "decision_timezone": "Asia/Ho_Chi_Minh",
+    "selected_option": "D01-RISK_ACCEPTED_CC_BY_SA_STRICTEST_TERMS",
+    "status": "OWNER_APPROVED_RISK_ACCEPTED",
+    "topic": "Provenance / license"
+  },
+  "governance": {
+    "g01_license": "OWNER_RISK_ACCEPTED",
+    "gate0": "BLOCKED",
+    "public_redistribution_authorized": false,
+    "remaining_pending_decisions": [
+      "D-03",
+      "D-04",
+      "D-05"
+    ],
+    "split_authorized": false,
+    "training_authorized": false
+  },
+  "historical_decision_file_mutated": false,
+  "lineage": {
+    "docs/review/dataset_owner_outreach_draft.md": "1765ea8c0f74e9be93e9e0d073c6f2f4c25a67e4cfea843da1cdd9a0ef5afd25",
+    "docs/review/wp3_provenance_and_fallback_report.md": "02cefe6478da62f0524f74ff3684f0a7d60e05c3e1a23a72516c7febc2b16a26",
+    "results/data_audit/DATASET01_052bc980a7206f8d/provenance_evidence.json": "e61ecf927d0ec13b8a79570c50ee6f4b37dfa11369ee3398054987339814549a"
+  },
+  "overlay_type": "APPEND_ONLY_OWNER_DECISION_RESOLUTION",
+  "residual_risks": [
+    "License version conflict (3.0 metadata vs 4.0 card prose) is unresolved by the author.",
+    "Ownership of the original images and the author's authority to license them are unknown.",
+    "Share-alike scope for trained model weights is legally uncertain."
+  ],
+  "schema_version": 1,
+  "source": {
+    "archive_sha256": "052bc980a7206f8ddd1ec2e59098dbd60a42036d3c7f7384ace4fe6416cbaa76",
+    "candidate": "huggingface.co/datasets/thanhhiepvos/vietnam_traffic_sign@d869116",
+    "declared_licenses": [
+      "CC-BY-SA-3.0",
+      "CC-BY-SA-4.0"
+    ]
+  }
+}

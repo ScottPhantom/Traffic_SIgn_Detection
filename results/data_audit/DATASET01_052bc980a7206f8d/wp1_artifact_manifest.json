@@ -1,0 +1,73 @@
+{
+  "artifact_count": 13,
+  "artifacts": [
+    {
+      "path": "adjacent_pair_leakage.csv",
+      "sha256": "c788f1e68aea170b1d3627f9949c35cc00776dc6f35fbe3589f4d4db77db66ea",
+      "size": 197983
+    },
+    {
+      "path": "audit_summary.json",
+      "sha256": "fe4ea13bff8a000b9e5edba002698989e7d5c67f46806386cf253a6eaaf1f529",
+      "size": 4535
+    },
+    {
+      "path": "box_size_buckets.csv",
+      "sha256": "de59a720713b9f82fc2f8131f986a0bc2970b7ae5a947675859188b62be00efc",
+      "size": 335
+    },
+    {
+      "path": "file_manifest.csv",
+      "sha256": "cc06c6870234fac2ca283f917da2103b898d7f4457dc72c84aeeeb8c54d4a12c",
+      "size": 1250035
+    },
+    {
+      "path": "grouping_candidate_report.json",
+      "sha256": "38967ec03b67388d091c1a56cc690c82abb0926df164edbb642b6aa61c7541fc",
+      "size": 1621
+    },
+    {
+      "path": "image_inventory.csv",
+      "sha256": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022",
+      "size": 733242
+    },
+    {
+      "path": "output_manifest.json",
+      "sha256": "95c29ea938b89993b4a08a6cd742e75c1303db09aa78c8bfa0be46ed85f5a147",
+      "size": 2068
+    },
+    {
+      "path": "per_class_counts.csv",
+      "sha256": "bdff0e3817470757f058b415ee7284d0f1b631ce4454eeb9b158bf6a6a6aa280",
+      "size": 4188
+    },
+    {
+      "path": "provenance_evidence.json",
+      "sha256": "e61ecf927d0ec13b8a79570c50ee6f4b37dfa11369ee3398054987339814549a",
+      "size": 3154
+    },
+    {
+      "path": "source_preservation_after.json",
+      "sha256": "ee156eaf30a2de16a8f7d29b73a7223dd03e3efbd1029e4c96d74585215ae82a",
+      "size": 888
+    },
+    {
+      "path": "source_preservation_before.json",
+      "sha256": "101e541b53f78c36df58e67c7742fba4382a72034b913a64222d4e64d09cd314",
+      "size": 888
+    },
+    {
+      "path": "source_preservation_proof.json",
+      "sha256": "5ca3e769b9197cad19bcb75f553dd59fee6e3035e0cc86cd9693737f84a713d7",
+      "size": 783
+    },
+    {
+      "path": "transformation_manifest.csv",
+      "sha256": "05e4120fdcf4b824df6ec163e1c420b1cae6f90c0ab7027cf04a68a0c7296455",
+      "size": 856984
+    }
+  ],
+  "generated_utc": "2026-10-10T13:47:06.578090+00:00",
+  "root": "/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector/results/data_audit/DATASET01_052bc980a7206f8d",
+  "schema_version": 1
+}

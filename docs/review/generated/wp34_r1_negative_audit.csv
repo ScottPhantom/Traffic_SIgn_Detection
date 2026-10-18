@@ -1,0 +1,26 @@
+stem,group_id,previous_labelled_stem,next_labelled_stem,decision,visible_classes_if_any,confidence,rationale,proposed_use
+0060,D02-C0001,0059,0062,UNLABELLED_SIGN_PRESENT,46,HIGH,Red-rimmed blue cls46 disc left of the HALO shopfront is clearly visible at 1600 px where 0059 and 0062 label it; not a valid background frame,QUARANTINE_UNTIL_RELABELLED
+0061,D02-C0001,0059,0062,UNLABELLED_SIGN_PRESENT,46,HIGH,Same cls46 disc as 0060 remains visible one frame later; quarantine until relabelled,QUARANTINE_UNTIL_RELABELLED
+0187,D02-C0002,0186,0188,UNLABELLED_SIGN_PRESENT,49,MEDIUM,The cls49 sign labelled in the adjacent frame is still in view at small size; quarantine until relabelled,QUARANTINE_UNTIL_RELABELLED
+0544,D02-C0014,0543,0545,TRUE_NEGATIVE,,HIGH,Open junction with a motorbike and a pylon; the 0543 signs have left the frame and the 0545 signs are not yet in view; no sign face visible at 1600 px,DETECTOR_BACKGROUND
+1514,D02-C0038,1513,1516,UNLABELLED_SIGN_PRESENT,29 39 40,MEDIUM,cls29 sign (labelled in 1516) and the 80/60 plates cls39/40 (labelled further along the same chain e.g. 1540) are visible; quarantine until relabelled,QUARANTINE_UNTIL_RELABELLED
+1515,D02-C0038,1513,1516,UNLABELLED_SIGN_PRESENT,29 39 40,MEDIUM,Same cls29 sign and cls39/40 plates as 1514 one frame later; quarantine until relabelled,QUARANTINE_UNTIL_RELABELLED
+1703,D02-C0038,1702,1709,UNLABELLED_SIGN_PRESENT,39 40,MEDIUM,cls39 and cls40 sign faces visible; the cls10 sign of the neighbours is hidden behind the truck so it is not listed (QA P3-1 correction),QUARANTINE_UNTIL_RELABELLED
+1704,D02-C0038,1702,1709,UNLABELLED_SIGN_PRESENT,39 40,MEDIUM,Same occlusion run as 1703; cls39 and cls40 visible and cls10 hidden by the truck,QUARANTINE_UNTIL_RELABELLED
+1705,D02-C0038,1702,1709,UNLABELLED_SIGN_PRESENT,39 40,MEDIUM,Same occlusion run as 1703; cls39 and cls40 visible and cls10 hidden by the truck,QUARANTINE_UNTIL_RELABELLED
+1706,D02-C0038,1702,1709,UNLABELLED_SIGN_PRESENT,39 40,MEDIUM,Same occlusion run as 1703; cls39 and cls40 visible and cls10 hidden by the truck,QUARANTINE_UNTIL_RELABELLED
+1707,D02-C0038,1702,1709,UNLABELLED_SIGN_PRESENT,39 40,MEDIUM,Same occlusion run as 1703; cls39 and cls40 visible and cls10 hidden by the truck,QUARANTINE_UNTIL_RELABELLED
+1708,D02-C0038,1702,1709,UNLABELLED_SIGN_PRESENT,39 40,MEDIUM,End of the occlusion run; cls39 and cls40 visible and cls10 hidden by the truck,QUARANTINE_UNTIL_RELABELLED
+2015,D02-C0046,2014,2018,UNLABELLED_SIGN_PRESENT,32,HIGH,Small red-rimmed cls32 disc visible to the right of the blue board in the 1600 px view (confirms QA P1 finding),QUARANTINE_UNTIL_RELABELLED
+2016,D02-C0046,2014,2018,UNLABELLED_SIGN_PRESENT,32,MEDIUM,Same cls32 disc as 2015 one frame later (QA P1 finding),QUARANTINE_UNTIL_RELABELLED
+2017,D02-C0046,2014,2018,UNLABELLED_SIGN_PRESENT,32,MEDIUM,Same cls32 disc as 2015 two frames later (QA P1 finding),QUARANTINE_UNTIL_RELABELLED
+2031,D02-C0046,2030,2032,UNLABELLED_SIGN_PRESENT,32,MEDIUM,Red-rimmed disc partly cut at the right edge where 2030 has a labelled box; the blue alcohol board is not a traffic-sign class (QA P1 finding),QUARANTINE_UNTIL_RELABELLED
+2051,D02-C0046,2050,2052,UNLABELLED_SIGN_PRESENT,32,MEDIUM,cls32 disc of the neighbouring frames still in view (QA P1 finding),QUARANTINE_UNTIL_RELABELLED
+2723,D02-C0051,2722,2724,UNLABELLED_SIGN_PRESENT,46,LOW,The cls3 sign of 2722 has left the frame (QA P3 rationale correction) but a small distant blue disc is visible down the road where 2724 labels cls46; quarantined conservatively rather than used as background,QUARANTINE_UNTIL_RELABELLED
+2766,D02-C0051,2765,2767,UNLABELLED_SIGN_PRESENT,13,MEDIUM,cls13 sign of the neighbouring frames visible (QA P3-1 class correction),QUARANTINE_UNTIL_RELABELLED
+2793,D02-C0051,2792,2798,UNLABELLED_SIGN_PRESENT,50,MEDIUM,Small yellow cls50 curve-warning triangle visible down the right roadside where 2798 labels cls50 (QA P3-2 finding),QUARANTINE_UNTIL_RELABELLED
+2794,D02-C0051,2792,2798,UNLABELLED_SIGN_PRESENT,50,MEDIUM,Same cls50 triangle as 2793 (QA P3-2 finding),QUARANTINE_UNTIL_RELABELLED
+2795,D02-C0051,2792,2798,UNLABELLED_SIGN_PRESENT,50,MEDIUM,Yellow cls50 triangle visible between the trees at the right roadside in the raw frame (QA P3-2 finding),QUARANTINE_UNTIL_RELABELLED
+2796,D02-C0051,2792,2798,UNLABELLED_SIGN_PRESENT,50,MEDIUM,Same cls50 triangle as 2795 (QA P3-2 finding),QUARANTINE_UNTIL_RELABELLED
+2797,D02-C0051,2792,2798,UNLABELLED_SIGN_PRESENT,50,MEDIUM,Same cls50 triangle as 2795 one frame before the labelled 2798 (QA P3-2 finding),QUARANTINE_UNTIL_RELABELLED
+2999,D02-C0051,2998,3000,UNLABELLED_SIGN_PRESENT,6 13 38,MEDIUM,The cls13 ĐI CHẬM triangle is cut at the right edge and the distant board carrying the cls38 speed discs and the cls6 triangle labelled in 3000 is already visible down the road; quarantine until relabelled,QUARANTINE_UNTIL_RELABELLED

@@ -1,0 +1,84 @@
+{
+  "d02_recommendation": {
+    "current_decision_status": "PENDING",
+    "manual_fallback": "D02-B",
+    "manual_fallback_requirements": "Review all 3178 edges and 589 proxy sequences, resolve all 1031 cross-split pairs, use an independent second reviewer for positive/conflict cases, then approve a separate final grouping artifact.",
+    "preferred": "D02-A",
+    "preferred_reason": "Creator/session metadata is the only available route that can directly establish capture grouping rather than infer it from visual similarity."
+  },
+  "evidence_boundary": "PROVISIONAL_REVIEW_ONLY_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT",
+  "manifest_contract": {
+    "atlas_page_count": 128,
+    "count_semantics": "EXCLUDES_MANIFEST_FILE",
+    "non_manifest_artifact_count": 137,
+    "schema_version": 2,
+    "source_count": 11
+  },
+  "package": "M0-WP5",
+  "provisional_components": {
+    "capture_component_count": 4,
+    "capture_cross_split_component_count": 4,
+    "capture_image_count": 8,
+    "component_label": "PROVISIONAL_COMPONENT_NOT_GROUP_TRUTH",
+    "conflict_count": 0,
+    "physical_sign_component_count": 2,
+    "physical_sign_cross_split_component_count": 2,
+    "physical_sign_image_count": 4
+  },
+  "review_progress": {
+    "cross_split_pending_edge_count": 1026,
+    "cross_split_reviewed_edge_count": 5,
+    "outcome_counts": {
+      "NOT_RELATED": 2,
+      "SAME_CAPTURE_CANDIDATE": 4
+    },
+    "outcomes_by_proxy_status": {
+      "adjacency_only": {
+        "NOT_RELATED": 2
+      },
+      "strong_candidate": {
+        "SAME_CAPTURE_CANDIDATE": 1
+      },
+      "uncertain": {
+        "SAME_CAPTURE_CANDIDATE": 3
+      }
+    },
+    "pending_edge_count": 3172,
+    "pending_sequence_count": 589,
+    "reviewed_edge_count": 6,
+    "reviewed_sequence_count": 0
+  },
+  "safety_boundary": {
+    "final_group_ids_created": false,
+    "gate0": "BLOCKED",
+    "split_assignment_changed": false,
+    "taxonomy_changed": false,
+    "training_authorized": false
+  },
+  "schema_version": 1,
+  "scope": {
+    "cross_split_edge_count": 1031,
+    "cross_split_edges_prioritized_first": true,
+    "edge_count": 3178,
+    "proxy_status_counts": {
+      "adjacency_only": 315,
+      "strong_candidate": 1691,
+      "uncertain": 1172
+    },
+    "sequence_count": 589
+  },
+  "source_reconciliation": {
+    "all_image_hashes_match_inventory": true,
+    "all_label_hashes_match_inventory": true,
+    "edge_endpoint_occurrences_reconciled": 6356,
+    "source_tree_unchanged": true,
+    "unique_inventory_sources_verified": 3216
+  },
+  "status": "WP5_READY_FOR_RE_REVIEW_PARTIAL_VISUAL_REVIEW",
+  "unresolved_workload": {
+    "complete_visual_adjudication_achieved": false,
+    "pending_cross_split_edges": 1026,
+    "pending_edges": 3172,
+    "pending_sequences": 589
+  }
+}

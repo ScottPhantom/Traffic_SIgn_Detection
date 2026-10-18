@@ -1,0 +1,141 @@
+{
+  "classes": 54,
+  "format": {
+    "border": "10% of sign size, min 5px",
+    "coords": "uint16 (N,4) sign x1,y1,x2,y2 in crop",
+    "features": "uint8 (N,32,32,3) RGB",
+    "labels": "uint8 (N,) M1 class map id",
+    "resize": "PIL bilinear to 32x32, aspect not kept",
+    "sizes": "uint16 (N,2) crop w,h"
+  },
+  "package": "DATASET01-GTSRB-STYLE",
+  "pinned_sources": {
+    "docs/review/d05_owner_decision_record.md": "c81f37ed0236c019644914445776632dbe0fbcef0f7d5b964fb5c6d635555702",
+    "docs/review/g07_owner_acceptance_record.md": "88d5c16e2041b23e43e5381b7107d9de2d4a11635124c876263802abc2dce32a",
+    "docs/review/generated/wp33_derived_boxes.csv": "4b9307003ce8fd3c1d50763a5950d3d57cf6b2ee6df3aeef74621707067501c0",
+    "docs/review/generated/wp33_derived_taxonomy.csv": "199ddd322aa05d4875af809c1c7c1459198ebf91ada24f406cbf039c406fa5ad",
+    "docs/review/generated/wp35_enrichment_lineage.csv": "e802fc264feff5168c28b531801af04051a36accc3c893ad5ab2e72975d38fed",
+    "docs/review/generated/wp36_r1_split_frames.csv": "8e197d9c7103ac5dc6b7ffc8a3d1aeb30bb6034048d470e4887dd868df95823a",
+    "docs/review/generated/wp36_r1_split_manifest.json": "064259941895d35054e87a550bf69199c4cae8ffeb4c83b4d7cdf608673438d9"
+  },
+  "signnames_sha256": "cd885b463109d1bec3169ccb9306c7eb46c9f1c26647b527129e1257281affca",
+  "splits": {
+    "train": {
+      "classes": 54,
+      "file": "train.p",
+      "index_sha256": "b873d1d59b9cc24a86458e0abb3989c8d82ac57cdfe4382da6bf0fcdc86d313b",
+      "per_class": {
+        "0": 354,
+        "1": 172,
+        "10": 1431,
+        "11": 21,
+        "12": 165,
+        "13": 674,
+        "14": 159,
+        "15": 179,
+        "16": 193,
+        "17": 168,
+        "18": 159,
+        "19": 245,
+        "2": 649,
+        "20": 592,
+        "21": 307,
+        "22": 30,
+        "23": 161,
+        "24": 453,
+        "25": 517,
+        "26": 263,
+        "27": 7,
+        "28": 47,
+        "29": 36,
+        "3": 648,
+        "30": 26,
+        "31": 45,
+        "32": 93,
+        "33": 138,
+        "34": 169,
+        "35": 23,
+        "36": 87,
+        "37": 75,
+        "38": 47,
+        "39": 189,
+        "4": 12,
+        "40": 415,
+        "41": 67,
+        "42": 610,
+        "43": 171,
+        "44": 172,
+        "45": 155,
+        "46": 153,
+        "47": 251,
+        "48": 427,
+        "49": 166,
+        "5": 128,
+        "50": 41,
+        "51": 219,
+        "52": 263,
+        "53": 155,
+        "6": 160,
+        "7": 228,
+        "8": 292,
+        "9": 14
+      },
+      "samples": 12621,
+      "sha256": {
+        "coords": "ee2cfd26268c658ad69c3da6e1c5c8ec65c70f6fa43be68c4455f23ca3629474",
+        "features": "c37d206249fff8deb30c4cd6ad83213eca825197819dc2b4ee2c2744a3c75da0",
+        "labels": "0324388d56c6026797b3088f6e3bda76f3f4abaaefa1ed2e7d54650da79a70af",
+        "sizes": "30c7c78d58f867aafd92b4db0f6ed34c922afe7aa1bb02294edc39f5b324a14a"
+      },
+      "signs_under_16px": 696,
+      "sources": {
+        "DATASET01": 5415,
+        "WP35": 7206
+      }
+    },
+    "val": {
+      "classes": 19,
+      "file": "valid.p",
+      "index_sha256": "77d23482e2a9b8d8e245fbda79603148926c88c9c0d9682b990b0887a8793e2a",
+      "per_class": {
+        "0": 13,
+        "10": 21,
+        "12": 57,
+        "13": 17,
+        "14": 3,
+        "2": 5,
+        "25": 16,
+        "28": 14,
+        "3": 5,
+        "33": 29,
+        "35": 37,
+        "4": 12,
+        "40": 8,
+        "42": 21,
+        "48": 104,
+        "5": 14,
+        "6": 22,
+        "7": 111,
+        "8": 51
+      },
+      "samples": 560,
+      "sha256": {
+        "coords": "9bd3b992f7ae20cbb34808fbe24b517610920eb8bba327bab974c1245374f020",
+        "features": "ed53587bfa605e30c9b9221e47b38ba70c901dabe74dad149b323b48e1c0c1c8",
+        "labels": "7c973cb370624985b028ee1bc0ccfa476b1217c6b4c47a63b3709aa82e334308",
+        "sizes": "26af5e4c18864bfcdb8db2c85253a487a64627fb058186716c87f8ead673f5a3"
+      },
+      "signs_under_16px": 28,
+      "sources": {
+        "DATASET01": 560
+      }
+    }
+  },
+  "status": "DATASET01_GTSRB_STYLE_CROPS",
+  "test": "sealed: only `export-test --final-eval --reason`, logged in results/experiments/sealed_test_access_log.jsonl",
+  "use_limits": [
+    "WP35 crops are train-only and repeat the same physical signs as their source frames",
+    "22 classes have no test crops; 35 classes have no valid crops",
+    "UNKNOWN (class 31) and EXCLUDED boxes are not included"
+  ]
+}

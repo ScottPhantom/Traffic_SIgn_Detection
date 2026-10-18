@@ -1,0 +1,56 @@
+{
+  "artifacts": {
+    "docs/dataset01_card_r1.md": "8e616bcb808f1e36ac8432a1c4ce4d689890e313bad4646934f9e311a891e17e",
+    "docs/review/generated/wp37_r1_decode_sizes.csv": "5bcba8a4c58e9e5e063d6a70962f79bcc45bf56d44afd023dce7a8ef3ab2c969"
+  },
+  "boundary": "DATASET_CARD_DOCUMENTATION_ONLY_NO_LABEL_CHANGE_NO_TRAINING",
+  "dark_bucket_stems": [
+    "1843",
+    "1844",
+    "1845",
+    "1848",
+    "1849",
+    "1850",
+    "1851"
+  ],
+  "decode_sizes": {
+    "1920x1080": {
+      "480x270": 813
+    },
+    "540x960": {
+      "540x960": 39
+    },
+    "960x540": {
+      "480x270": 2364
+    }
+  },
+  "edge_median_by_resolution_split": {
+    "1920x1080/test": 18.62,
+    "1920x1080/train": 19.84,
+    "540x960/val": 19.92,
+    "960x540/test": 24.37,
+    "960x540/train": 25.9,
+    "960x540/val": 30.24
+  },
+  "package": "M0-WP37-R1",
+  "pinned_sources": {
+    "docs/dataset01_card.md": "564d3cd6e572fa81d5b70b7388c590c78dba2cf411808f8eb7d678d3cb114723",
+    "docs/review/generated/wp37_capture_conditions.csv": "ef0932dc736192553e22a229e6bab8978a4357b53d4a539dc9e073528056ec7d",
+    "docs/review/generated/wp37_class_card.csv": "e9909ea5401f239f08077ba41e89488f6bd9c2918bef2befc381405437a34a62",
+    "docs/review/generated/wp37_group_lineage.csv": "91270c9ae9d6d37cd073bce7c20c38b781432e40cfee2452bdaed231605e5b10",
+    "docs/review/generated/wp37_manifest.json": "f455b32750953a40272524c747cc6c1b3c2a5da7e7a7491a8bab88d7f04010a0",
+    "docs/review/wp37_independent_qa_record.md": "0bedaf5f48cfe36849a6932751654f74c483ae33e8eb6003ca039350ba931fb5",
+    "scripts/build_wp37_dataset_card.py": "e9dbeb40937c64679676e5803b8a20dc482738ba966e7be1cfe17ff56d45dcd5",
+    "tests/test_wp37_dataset_card.py": "ac129231569686dcad7a8233b165962c13fc3695c9535f71df97320b9dae36d6"
+  },
+  "status": "WP37_R1_AWAITING_QA_REVIEW",
+  "supersedes": "M0-WP37 card (QA PASS with P2-1; kept byte-identical)",
+  "training_authorized": false,
+  "wp37_artifacts": {
+    "docs/dataset01_card.md": "564d3cd6e572fa81d5b70b7388c590c78dba2cf411808f8eb7d678d3cb114723",
+    "docs/review/generated/wp37_capture_conditions.csv": "ef0932dc736192553e22a229e6bab8978a4357b53d4a539dc9e073528056ec7d",
+    "docs/review/generated/wp37_class_card.csv": "e9909ea5401f239f08077ba41e89488f6bd9c2918bef2befc381405437a34a62",
+    "docs/review/generated/wp37_group_lineage.csv": "91270c9ae9d6d37cd073bce7c20c38b781432e40cfee2452bdaed231605e5b10",
+    "docs/review/generated/wp37_manifest.json": "f455b32750953a40272524c747cc6c1b3c2a5da7e7a7491a8bab88d7f04010a0"
+  }
+}

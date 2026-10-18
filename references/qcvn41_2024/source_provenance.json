@@ -1,0 +1,37 @@
+{
+  "retrieved_at_utc": "2026-10-10T15:20:09Z",
+  "government_record_url": "https://vanban.chinhphu.vn/?classid=1&docid=211908&orggroupid=4&pageid=27160",
+  "issuing_authority": "Bộ Giao thông vận tải",
+  "circular_number": "51/2024/TT-BGTVT",
+  "issued_date": "2024-11-15",
+  "effective_date": "2025-01-01",
+  "documents": [
+    {
+      "role": "circular",
+      "path": "51-2024-tt-bgtvt.pdf",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/11/51-bgtvt.pdf",
+      "sha256": "dc822815eb51c6674a40ce91127b636f11a7479c76f24d9a00445dcf248b6689",
+      "page_count": 1,
+      "size_bytes": 566925
+    },
+    {
+      "role": "qcvn",
+      "path": "qcvn-41-2024-bgtvt.pdf",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/11/51-bgtvt-kem.pdf",
+      "sha256": "b6b99d0a0aeb13fe79072831857ece15bb254d8fb7817e80e4a2739a0d2145ce",
+      "page_count": 403,
+      "size_bytes": 25535085
+    }
+  ],
+  "evidence_controls": [
+    {
+      "role": "canonical_taxonomy_evidence_index",
+      "path": "qcvn_taxonomy_evidence_index.json",
+      "sha256": "62233e56a47c9c7116805d2b9d38846f2a20696b952507752810a83192abd7aa",
+      "schema_version": 2,
+      "row_count": 52,
+      "fingerprinted_page_count": 39
+    }
+  ],
+  "evidence_boundary": "Official source evidence only; no dataset taxonomy row is approved by this record."
+}

@@ -1,0 +1,402 @@
+{
+  "artifact_count": 47,
+  "artifacts": [
+    {
+      "path": "dataset_owner_outreach_draft.md",
+      "root_id": "review",
+      "sha256": "1765ea8c0f74e9be93e9e0d073c6f2f4c25a67e4cfea843da1cdd9a0ef5afd25",
+      "size": 2757
+    },
+    {
+      "path": "wp3_provenance_and_fallback_report.md",
+      "root_id": "review",
+      "sha256": "02cefe6478da62f0524f74ff3684f0a7d60e05c3e1a23a72516c7febc2b16a26",
+      "size": 9915
+    },
+    {
+      "path": "generated/wp3_fallback_dataset_candidates.csv",
+      "root_id": "review",
+      "sha256": "8a769ffc11bb639636687ca554bb09d88cd61186b97a35aa4eb64b93d7e95517",
+      "size": 2607
+    },
+    {
+      "path": "generated/wp3_grouping_review_index.csv",
+      "root_id": "review",
+      "sha256": "b09542fe373eb86424229ee533a0c40621bcf075d79acd1d4dc1eda1a866d3fe",
+      "size": 93221
+    },
+    {
+      "path": "generated/wp3_provenance_escalation.json",
+      "root_id": "review",
+      "sha256": "cf3fdbab6899f77ac95160110feb8123f8d31a82cddf9a77cbb55c5f7946744d",
+      "size": 4658
+    },
+    {
+      "path": "generated/wp3_render_layout_audit.json",
+      "root_id": "review",
+      "sha256": "6f8c367d59d575e7d232aa17f730d7f431ab296e0e4b6a6a383e70ad301c68c1",
+      "size": 1802749
+    },
+    {
+      "path": "generated/wp3_source_lineage.csv",
+      "root_id": "review",
+      "sha256": "2c9e0bc1bbe0896db5a8dd343997c5dfdb71a156025af9bd37cada615d495ef2",
+      "size": 457095
+    },
+    {
+      "path": "generated/wp3_taxonomy_reviewer_atlas.csv",
+      "root_id": "review",
+      "sha256": "73344813083c67888c103c8880cfebdbc24773615f7bb82eb5e398914f239362",
+      "size": 13803
+    },
+    {
+      "path": "assets/wp3/grouping/batch_001.jpg",
+      "root_id": "review",
+      "sha256": "e03e2774c4c9b3a98ab2d4d6705565ab12bd4b3085e86e4b26424ebc96973243",
+      "size": 687156
+    },
+    {
+      "path": "assets/wp3/grouping/batch_002.jpg",
+      "root_id": "review",
+      "sha256": "95a62ddb4283e8e6c317a74d6484e0fd81cc42b0098e9579ac77588b5c7b6f00",
+      "size": 689268
+    },
+    {
+      "path": "assets/wp3/grouping/batch_003.jpg",
+      "root_id": "review",
+      "sha256": "5517ad1467ef6fd01a6d859d656fd06a8b2f65d9fb15abe24f90814a7841525f",
+      "size": 679853
+    },
+    {
+      "path": "assets/wp3/grouping/batch_004.jpg",
+      "root_id": "review",
+      "sha256": "dac22904084da9a0cafc5d4d331c796976566d10753d5aef315e1199e15964c1",
+      "size": 616209
+    },
+    {
+      "path": "assets/wp3/grouping/batch_005.jpg",
+      "root_id": "review",
+      "sha256": "9bde6656d3e3b2ed3ef6e5d6f975c05722c6c2a23cdeb49c54506aaaec53a22e",
+      "size": 575768
+    },
+    {
+      "path": "assets/wp3/grouping/batch_006.jpg",
+      "root_id": "review",
+      "sha256": "a775a5d6667fdb94e41c3a26035e2ca2b778416530e25f5a5772c69c553de0bc",
+      "size": 634019
+    },
+    {
+      "path": "assets/wp3/grouping/batch_007.jpg",
+      "root_id": "review",
+      "sha256": "bee162c6a51589211db6109038127a30744b3d8cb0094ebfaf854cfb9cc2024a",
+      "size": 720244
+    },
+    {
+      "path": "assets/wp3/grouping/batch_008.jpg",
+      "root_id": "review",
+      "sha256": "28076812db2d057aeccd00155b41c5f7ddd115a78e571a5d51b6c9f5855c7a5a",
+      "size": 649581
+    },
+    {
+      "path": "assets/wp3/grouping/batch_009.jpg",
+      "root_id": "review",
+      "sha256": "14ee499612e39eda30cddfb852db09843a0755d0a562a8529e689656e4d30217",
+      "size": 716862
+    },
+    {
+      "path": "assets/wp3/grouping/batch_010.jpg",
+      "root_id": "review",
+      "sha256": "13eae070bd3d0b5bb33c9db1d3e831c9412cb5f2dca8e71ab59ddfce1e88bca0",
+      "size": 634311
+    },
+    {
+      "path": "assets/wp3/grouping/batch_011.jpg",
+      "root_id": "review",
+      "sha256": "32f0d6fa5d47a929ffda1f9c92b1907d6f02db6ca84ceb31f7f2a2eb99612dfa",
+      "size": 732264
+    },
+    {
+      "path": "assets/wp3/grouping/batch_012.jpg",
+      "root_id": "review",
+      "sha256": "0ef5562ad6c6dc79c3a80200fcfe32fa7eff9c7ac5f47da02d6029c6ac31a50e",
+      "size": 706249
+    },
+    {
+      "path": "assets/wp3/grouping/batch_013.jpg",
+      "root_id": "review",
+      "sha256": "ffc1567740afb62ed1bf2f5019c13bf85bc07a39ac76a1ce03d30b326b0aef48",
+      "size": 762502
+    },
+    {
+      "path": "assets/wp3/grouping/batch_014.jpg",
+      "root_id": "review",
+      "sha256": "054304c169d8a0eedaa5a6f7685aa7a254b7c25cbf8a4cce03679626a8289a39",
+      "size": 698298
+    },
+    {
+      "path": "assets/wp3/grouping/batch_015.jpg",
+      "root_id": "review",
+      "sha256": "d7b2654f1ef39cca84c335f24fea0eaac8281a79fc63ba7f5c7c26de71c2061a",
+      "size": 738698
+    },
+    {
+      "path": "assets/wp3/grouping/batch_016.jpg",
+      "root_id": "review",
+      "sha256": "af3965a7d2dcc00384ab61772393fddecc3f524b0d052d3ddfa323241ab290ae",
+      "size": 676367
+    },
+    {
+      "path": "assets/wp3/grouping/batch_017.jpg",
+      "root_id": "review",
+      "sha256": "008a8cd2f682e1a310fd01c69c9c5e4339761a4e46cdc195c4abdeeb74e67b29",
+      "size": 864161
+    },
+    {
+      "path": "assets/wp3/grouping/batch_018.jpg",
+      "root_id": "review",
+      "sha256": "0fab6165052540bfdfab00fb210f0ea6e4a2606aa53330b7d2087ec84247f2a3",
+      "size": 670274
+    },
+    {
+      "path": "assets/wp3/grouping/batch_019.jpg",
+      "root_id": "review",
+      "sha256": "58cca9e9b827b465b51d122b001c271afb7d8acdc4ca2a768870350e109efb63",
+      "size": 597662
+    },
+    {
+      "path": "assets/wp3/grouping/batch_020.jpg",
+      "root_id": "review",
+      "sha256": "b757e1f7d45c258a0a21bc4f3edd05e2ffb9011accb0ff3772b0a5ef5acb857a",
+      "size": 700808
+    },
+    {
+      "path": "assets/wp3/grouping/batch_021.jpg",
+      "root_id": "review",
+      "sha256": "24789142700f512f66638c3247fdf51d1fa5d0426622f60f3f62e3dd0fb668c1",
+      "size": 653065
+    },
+    {
+      "path": "assets/wp3/grouping/batch_022.jpg",
+      "root_id": "review",
+      "sha256": "271f2febeee0606ecbc807682b64fcd774bc2fb84c3bbebc3169de67dace19d0",
+      "size": 723897
+    },
+    {
+      "path": "assets/wp3/grouping/batch_023.jpg",
+      "root_id": "review",
+      "sha256": "3413ed94ed25ecf278b0a94fc23231752d8d27f92ab39c50a38efd5171ea7335",
+      "size": 757155
+    },
+    {
+      "path": "assets/wp3/grouping/batch_024.jpg",
+      "root_id": "review",
+      "sha256": "f6ca961abe7ba70f5cb4fca8104ece48604ab3e590f50143427164dc0b6eb6d8",
+      "size": 330690
+    },
+    {
+      "path": "assets/wp3/grouping/index.html",
+      "root_id": "review",
+      "sha256": "a02a9033ce50220f739579f49c273416fa4e5c25155694009125ae85c8eb6256",
+      "size": 131168
+    },
+    {
+      "path": "assets/wp3/taxonomy/index.html",
+      "root_id": "review",
+      "sha256": "ceef496bfc77bf77982460fb7f62912f285dbed9d5f3e63124f1813e52c4f2e3",
+      "size": 15562
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_001.jpg",
+      "root_id": "review",
+      "sha256": "d3afb32adc206f3c554bbd423c8049b6d4b40805783cadb2c33b366d338336b3",
+      "size": 223340
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_002.jpg",
+      "root_id": "review",
+      "sha256": "ce949871e3fe9ff219a3f7c44ddb724ae2d16abe69f2854759578191df9e52b5",
+      "size": 219180
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_003.jpg",
+      "root_id": "review",
+      "sha256": "7e2f2f09139f8102e5281ff4fd463ac33a09f1edde331300868ae3a26e411c3a",
+      "size": 213716
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_004.jpg",
+      "root_id": "review",
+      "sha256": "394ad64e7d6855b94091e7112fd8b2febd655cac203f01733804251935bc6169",
+      "size": 224223
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_005.jpg",
+      "root_id": "review",
+      "sha256": "665806302909100d6cd79bf62c507ba918852d03d680659cd5e8c372e452cbdc",
+      "size": 213843
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_006.jpg",
+      "root_id": "review",
+      "sha256": "ffdfb0386cd664475d934950da38361700a66a56562b8727f186d8797a2bd883",
+      "size": 216971
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_007.jpg",
+      "root_id": "review",
+      "sha256": "d734505eca3cf0dd96891d1d1374f03d212b15d2544cda41ba579a594f77dd60",
+      "size": 211516
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_008.jpg",
+      "root_id": "review",
+      "sha256": "3be24f7fd7b7461fc1c0b4c83584869ca869d458b811e7830c81d8d800061e4b",
+      "size": 209544
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_009.jpg",
+      "root_id": "review",
+      "sha256": "57d79047d21bc4cdee856015f9c8729c3e03aa31081bee827b1f8de3558f0869",
+      "size": 229874
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_010.jpg",
+      "root_id": "review",
+      "sha256": "5314dd0d945a75c25c5ac9dd208fbc3e17046777f01b34490b486dd91cbeb99e",
+      "size": 224641
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_011.jpg",
+      "root_id": "review",
+      "sha256": "479dee1b1738b9336d6ee9b64aee1b1d4ebf0ebf4d5e9777fb030141b08a4be5",
+      "size": 219290
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_012.jpg",
+      "root_id": "review",
+      "sha256": "8c27cbdc0dbc6ea5396c6ada4946dc304bb1a38ddc83e3777d0b399cab6b4ec3",
+      "size": 206488
+    },
+    {
+      "path": "assets/wp3/taxonomy/page_013.jpg",
+      "root_id": "review",
+      "sha256": "b5a521039c4a483353fa7f76a760045d66d000957e3f53f03d70c8758347cbce",
+      "size": 214586
+    }
+  ],
+  "controls": [
+    {
+      "control_id": "decision_status",
+      "path": "docs/review/decision_status.json",
+      "root_id": "repo",
+      "sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+      "size": 7864
+    },
+    {
+      "control_id": "source_preservation_proof",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/source_preservation_proof.json",
+      "root_id": "repo",
+      "sha256": "5ca3e769b9197cad19bcb75f553dd59fee6e3035e0cc86cd9693737f84a713d7",
+      "size": 783
+    },
+    {
+      "control_id": "wp1_artifact_manifest",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/wp1_artifact_manifest.json",
+      "root_id": "repo",
+      "sha256": "28adbf21dd2057fe5fc7999daccaa52d1201ea0459ef1bb7475a780ed85c51c6",
+      "size": 2297
+    },
+    {
+      "control_id": "wp2_generated_manifest",
+      "path": "docs/review/generated/wp2_generated_manifest.json",
+      "root_id": "repo",
+      "sha256": "506ec141bef032282f90b3d35741ece49a43fed617c3dea93863d4c32330a505",
+      "size": 2113
+    },
+    {
+      "control_id": "provenance_evidence",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/provenance_evidence.json",
+      "root_id": "repo",
+      "sha256": "e61ecf927d0ec13b8a79570c50ee6f4b37dfa11369ee3398054987339814549a",
+      "size": 3154
+    }
+  ],
+  "decision_status_sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+  "evidence_boundary": "WP3 provides reviewer evidence only. It does not approve provenance, license, taxonomy, group IDs, splits, training or model changes.",
+  "gate0": "BLOCKED",
+  "logical_roots": {
+    "repo": ".",
+    "review": "docs/review"
+  },
+  "schema_version": 2,
+  "source_inputs": [
+    {
+      "input_id": "image_inventory",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv",
+      "root_id": "repo",
+      "sha256": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022",
+      "size": 733242
+    },
+    {
+      "input_id": "source_preservation_proof",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/source_preservation_proof.json",
+      "root_id": "repo",
+      "sha256": "5ca3e769b9197cad19bcb75f553dd59fee6e3035e0cc86cd9693737f84a713d7",
+      "size": 783
+    },
+    {
+      "input_id": "wp1_artifact_manifest",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/wp1_artifact_manifest.json",
+      "root_id": "repo",
+      "sha256": "28adbf21dd2057fe5fc7999daccaa52d1201ea0459ef1bb7475a780ed85c51c6",
+      "size": 2297
+    },
+    {
+      "input_id": "provenance_evidence",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/provenance_evidence.json",
+      "root_id": "repo",
+      "sha256": "e61ecf927d0ec13b8a79570c50ee6f4b37dfa11369ee3398054987339814549a",
+      "size": 3154
+    },
+    {
+      "input_id": "wp2_grouping_clusters",
+      "path": "docs/review/generated/grouping_proxy_clusters.csv",
+      "root_id": "repo",
+      "sha256": "0dd732a5791383bedbb1aa499bc6c64bf401c5af72b64d3ceb08cc97d8ec5092",
+      "size": 49260
+    },
+    {
+      "input_id": "wp2_grouping_edges",
+      "path": "docs/review/generated/grouping_proxy_edges.csv",
+      "root_id": "repo",
+      "sha256": "801e89db137154086496f37bc38b9659596c61e4a881734e80731aeaf2ded15c",
+      "size": 287375
+    },
+    {
+      "input_id": "wp2_taxonomy_review",
+      "path": "docs/review/generated/taxonomy_review.csv",
+      "root_id": "repo",
+      "sha256": "4d27209e9f381a6991cd21f7ee6521553495eb6771422a5889536ae12003bad1",
+      "size": 12616
+    },
+    {
+      "input_id": "wp2_generated_manifest",
+      "path": "docs/review/generated/wp2_generated_manifest.json",
+      "root_id": "repo",
+      "sha256": "506ec141bef032282f90b3d35741ece49a43fed617c3dea93863d4c32330a505",
+      "size": 2113
+    },
+    {
+      "input_id": "decision_status",
+      "path": "docs/review/decision_status.json",
+      "root_id": "repo",
+      "sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+      "size": 7864
+    }
+  ],
+  "source_tree_manifest_sha256": "05c9955d77862f08f2a43436d9cdea63caa1cb3e56b939000737f93a248c753b",
+  "status": "READY_FOR_RE_REVIEW_EVIDENCE_ONLY_NO_DECISION_APPROVAL",
+  "total_artifact_bytes": 21576108,
+  "training_authorized": false,
+  "verified_source_files": 2325
+}

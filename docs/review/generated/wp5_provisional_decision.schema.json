@@ -1,0 +1,225 @@
+{
+  "$id": "wp5_provisional_decision.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "else": {
+        "properties": {
+          "capture_hypothesis": {
+            "enum": [
+              "SAME_CAPTURE_CANDIDATE",
+              "VISUALLY_RELATED_UNCERTAIN",
+              "NOT_RELATED",
+              "INSUFFICIENT_EVIDENCE"
+            ]
+          },
+          "confidence": {
+            "enum": [
+              "HIGH",
+              "MEDIUM",
+              "LOW"
+            ]
+          },
+          "physical_sign_hypothesis": {
+            "enum": [
+              "SAME_PHYSICAL_SIGN_CANDIDATE",
+              "VISUALLY_RELATED_UNCERTAIN",
+              "NOT_RELATED",
+              "INSUFFICIENT_EVIDENCE"
+            ]
+          },
+          "provisional_outcome": {
+            "enum": [
+              "SAME_CAPTURE_CANDIDATE",
+              "SAME_PHYSICAL_SIGN_CANDIDATE",
+              "VISUALLY_RELATED_UNCERTAIN",
+              "NOT_RELATED",
+              "INSUFFICIENT_EVIDENCE"
+            ]
+          },
+          "rationale": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "reviewed_at": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "reviewer": {
+            "minLength": 1,
+            "type": "string"
+          }
+        }
+      },
+      "if": {
+        "properties": {
+          "review_status": {
+            "const": "PENDING"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "capture_hypothesis": {
+            "const": ""
+          },
+          "confidence": {
+            "const": ""
+          },
+          "physical_sign_hypothesis": {
+            "const": ""
+          },
+          "provisional_outcome": {
+            "const": ""
+          },
+          "rationale": {
+            "const": ""
+          },
+          "reviewed_at": {
+            "const": ""
+          },
+          "reviewer": {
+            "const": ""
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "atlas_page": {
+      "type": "string"
+    },
+    "atlas_slot": {
+      "maximum": 25,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "capture_hypothesis": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string"
+    },
+    "cross_split": {
+      "type": "string"
+    },
+    "dhash_distance": {
+      "type": "string"
+    },
+    "edge_id": {
+      "type": "string"
+    },
+    "evidence_boundary": {
+      "const": "PROVISIONAL_REVIEW_ONLY_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT"
+    },
+    "evidence_ref": {
+      "type": "string"
+    },
+    "left_class_ids": {
+      "type": "string"
+    },
+    "left_image_sha256": {
+      "type": "string"
+    },
+    "left_label_sha256": {
+      "type": "string"
+    },
+    "left_split": {
+      "type": "string"
+    },
+    "left_stem": {
+      "type": "string"
+    },
+    "physical_sign_hypothesis": {
+      "type": "string"
+    },
+    "provisional_outcome": {
+      "type": "string"
+    },
+    "proxy_sequence_id": {
+      "type": "string"
+    },
+    "proxy_status": {
+      "type": "string"
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "review_order": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "review_status": {
+      "enum": [
+        "PENDING",
+        "REVIEWED"
+      ]
+    },
+    "reviewed_at": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "rgb_histogram_cosine": {
+      "type": "string"
+    },
+    "right_class_ids": {
+      "type": "string"
+    },
+    "right_image_sha256": {
+      "type": "string"
+    },
+    "right_label_sha256": {
+      "type": "string"
+    },
+    "right_split": {
+      "type": "string"
+    },
+    "right_stem": {
+      "type": "string"
+    },
+    "same_dimensions": {
+      "type": "string"
+    },
+    "thumbnail_mae": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "edge_id",
+    "review_order",
+    "review_status",
+    "left_stem",
+    "left_split",
+    "right_stem",
+    "right_split",
+    "cross_split",
+    "same_dimensions",
+    "thumbnail_mae",
+    "dhash_distance",
+    "rgb_histogram_cosine",
+    "proxy_status",
+    "proxy_sequence_id",
+    "left_class_ids",
+    "right_class_ids",
+    "left_image_sha256",
+    "right_image_sha256",
+    "left_label_sha256",
+    "right_label_sha256",
+    "provisional_outcome",
+    "capture_hypothesis",
+    "physical_sign_hypothesis",
+    "confidence",
+    "reviewer",
+    "reviewed_at",
+    "rationale",
+    "evidence_ref",
+    "atlas_page",
+    "atlas_slot",
+    "evidence_boundary"
+  ],
+  "title": "WP5 fail-closed provisional edge decision",
+  "type": "object"
+}

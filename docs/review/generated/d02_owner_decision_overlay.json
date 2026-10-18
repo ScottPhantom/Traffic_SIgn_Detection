@@ -1,0 +1,61 @@
+{
+  "decision": {
+    "authority": "DIRECT_OWNER_APPROVAL_IN_PM_SESSION",
+    "decision_date": "2026-10-17",
+    "decision_id": "D-02",
+    "decision_timezone": "Asia/Ho_Chi_Minh",
+    "selected_option": "D02-P1_WP31_R2_CAPTURE_GROUPS",
+    "status": "OWNER_APPROVED",
+    "topic": "Group identity"
+  },
+  "enforcement": {
+    "missing_or_invalid_overlay_policy": "FAIL_CLOSED",
+    "quarantined_stem_in_candidate": "REJECT",
+    "same_group_across_splits": "REJECT",
+    "split_unit": "group_id"
+  },
+  "governance": {
+    "g06_group_id": "OWNER_APPROVED_D02_P1",
+    "gate0": "BLOCKED",
+    "remaining_pending_decisions": [
+      "D-01",
+      "D-03",
+      "D-04",
+      "D-05"
+    ],
+    "split_authorized": false,
+    "training_authorized": false
+  },
+  "historical_decision_file_mutated": false,
+  "known_limits": [
+    "Groups come from provisional AI visual review (PM plus independent QA sessions), not human review or creator metadata.",
+    "Cross-block linking covered near-identical views only; neither level is proven leak-free.",
+    "The 12 negative runs are bridged at capture level but were never reviewed visually."
+  ],
+  "lineage": {
+    "docs/review/generated/wp31_r2_group_id_frames.csv": "aea7ea144f4ec389cab8cca70b28ae21d4b21918ef089af16cf3580e828fca7e",
+    "docs/review/generated/wp31_r2_group_id_groups.csv": "dbb0cc1a02d4256856b3cecb4f7d811e15c91951e4888f54aa43e89df3b87f27",
+    "docs/review/generated/wp31_r2_group_id_manifest.json": "c17f794c33dbaf0a5ffaa3433dea1ff5c2353cb0a253420b92a21a3cc918815b",
+    "docs/review/wp31_r2_group_id_proposal_report.md": "2c3db0e17144f198fb58c50835c94a2d3a8300a80ecee997bab2dca01651d0e6",
+    "docs/review/wp31_r2_independent_qa_record.md": "95327e0ad97822d7f5212ef2267a5441848794a5f182f3e00dca8b7f77993c4d",
+    "scripts/build_wp31_r2_group_id_proposal.py": "bde68d64b07a13b82ef07706fb2459ce185c5744a9281cabc7600ac1f7ec3796",
+    "tests/test_wp31_r2_group_id_proposal.py": "0dca3e2b3774c1d7dc7732f45d2e61ef421829e41928ce77f05580d92dee5ea5"
+  },
+  "overlay_type": "APPEND_ONLY_OWNER_DECISION_RESOLUTION",
+  "registry_sha256": "c3b11f4c143627fd777270b34e40486bf92fd6e82e4c306187165fef4f7155d3",
+  "schema_version": 1,
+  "scope": {
+    "group_count": 54,
+    "group_level": "capture",
+    "grouped_stems": 3215,
+    "largest_group_sizes": [
+      513,
+      411,
+      226,
+      190,
+      120
+    ],
+    "quarantined_stem_without_group": "0248",
+    "scene_level_adopted": false
+  }
+}

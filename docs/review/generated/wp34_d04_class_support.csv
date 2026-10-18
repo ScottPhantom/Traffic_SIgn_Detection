@@ -1,0 +1,55 @@
+derived_key,derived_code,derived_name_vi,train_boxes,images,groups,largest_group_share,proposed_option,proposal_reason,owner_status
+0,W.224,Đường người đi bộ cắt ngang,312,312,11,0.30,KEEP_FULL,"11 independent groups allow one group each in train, validation and test",PENDING
+1,W.205c,Đường giao nhau (nhánh phải),22,22,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 22 images: too little independent support; evaluate as UNKNOWN,PENDING
+2,P.102,Cấm đi ngược chiều,470,467,11,0.29,KEEP_FULL,"11 independent groups allow one group each in train, validation and test",PENDING
+3,R.302a,Phải đi vòng sang bên phải,454,454,11,0.30,KEEP_FULL,"11 independent groups allow one group each in train, validation and test",PENDING
+4,W.205a,Đường giao nhau,33,33,3,0.36,KEEP_FULL,"3 independent groups allow one group each in train, validation and test",PENDING
+5,W.207,Giao nhau với đường không ưu tiên,256,256,12,0.17,KEEP_FULL,"12 independent groups allow one group each in train, validation and test",PENDING
+6,W.201a,Chỗ ngoặt nguy hiểm vòng bên trái,182,163,5,0.77,KEEP_FULL,"5 independent groups allow one group each in train, validation and test",PENDING
+7,P.123a,Cấm rẽ trái,247,247,6,0.28,KEEP_FULL,"6 independent groups allow one group each in train, validation and test",PENDING
+8,I.434a,Bến xe buýt,213,213,5,0.40,KEEP_FULL,"5 independent groups allow one group each in train, validation and test",PENDING
+9,R.303,Nơi giao nhau chạy theo vòng xuyến,43,43,2,0.67,KEEP_TRAIN_AND_TEST_NO_VAL,"2 groups: one can train and one can test, none is left for validation",PENDING
+10,P.130,Cấm dừng xe và đỗ xe,1071,1030,19,0.21,KEEP_FULL,"19 independent groups allow one group each in train, validation and test",PENDING
+11,I.409,Chỗ quay xe,26,26,2,0.81,KEEP_TRAIN_AND_TEST_NO_VAL,"2 groups: one can train and one can test, none is left for validation",PENDING
+12,R.415a,Biển gộp làn đường theo phương tiện,280,279,7,0.44,KEEP_FULL,"7 independent groups allow one group each in train, validation and test",PENDING
+13,W.245a,Đi chậm,372,371,12,0.31,KEEP_FULL,"12 independent groups allow one group each in train, validation and test",PENDING
+14,P.106a,Cấm xe ô tô tải,85,47,4,0.86,KEEP_FULL,"4 independent groups allow one group each in train, validation and test",PENDING
+15,W.203c,Đường bị thu hẹp về phía phải,29,29,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 29 images: too little independent support; evaluate as UNKNOWN,PENDING
+16:2.0,P.117*2.0,"Hạn chế chiều cao 2,0 m",43,43,1,1.00,KEEP_TRAIN_ONLY_UNVERIFIED,1 group with 43 images: trainable but cannot be evaluated independently,PENDING
+16:2.2,P.117*2.2,"Hạn chế chiều cao 2,2 m",18,18,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 18 images: too little independent support; evaluate as UNKNOWN,PENDING
+16:2.5,P.117*2.5,"Hạn chế chiều cao 2,5 m",9,9,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 9 images: too little independent support; evaluate as UNKNOWN,PENDING
+17,P.124a,Cấm quay đầu xe,105,105,4,0.44,KEEP_FULL,"4 independent groups allow one group each in train, validation and test",PENDING
+18,P.107,Cấm xe ô tô khách và xe ô tô tải,213,154,3,0.39,KEEP_FULL,"3 independent groups allow one group each in train, validation and test",PENDING
+19,P.124d,Cấm rẽ phải và quay đầu xe,29,29,3,0.45,KEEP_FULL,"3 independent groups allow one group each in train, validation and test",PENDING
+20,P.103a,Cấm xe ô tô,52,52,2,0.58,KEEP_TRAIN_AND_TEST_NO_VAL,"2 groups: one can train and one can test, none is left for validation",PENDING
+21,W.203b,Đường bị thu hẹp về phía trái,11,11,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 11 images: too little independent support; evaluate as UNKNOWN,PENDING
+22,W.221b,Đường có gồ giảm tốc,131,92,3,0.76,KEEP_FULL,"3 independent groups allow one group each in train, validation and test",PENDING
+23,P.111a+P.111b,Cấm xe gắn máy và xe ba bánh có động cơ (biển ghép),465,465,8,0.36,KEEP_FULL,"8 independent groups allow one group each in train, validation and test",PENDING
+24,P.129,Kiểm tra,56,56,1,1.00,KEEP_TRAIN_ONLY_UNVERIFIED,1 group with 56 images: trainable but cannot be evaluated independently,PENDING
+25,S.505a,Biển phụ loại xe: xe máy,25,25,2,0.72,KEEP_TRAIN_AND_TEST_NO_VAL,"2 groups: one can train and one can test, none is left for validation",PENDING
+26,W.246a,Chú ý chướng ngại vật - Vòng tránh ra hai bên,80,80,4,0.59,KEEP_FULL,"4 independent groups allow one group each in train, validation and test",PENDING
+27,W.225,Trẻ em,36,36,1,1.00,KEEP_TRAIN_ONLY_UNVERIFIED,1 group with 36 images: trainable but cannot be evaluated independently,PENDING
+28,S.505a,Biển phụ loại xe: xe tải và xe công,27,27,2,0.96,KEEP_TRAIN_AND_TEST_NO_VAL,"2 groups: one can train and one can test, none is left for validation",PENDING
+29,P.104,Cấm xe máy,45,45,1,1.00,KEEP_TRAIN_ONLY_UNVERIFIED,1 group with 45 images: trainable but cannot be evaluated independently,PENDING
+30,S.505a,Biển phụ loại xe: xe tải,138,138,3,0.54,KEEP_FULL,"3 independent groups allow one group each in train, validation and test",PENDING
+32,P.123b,Cấm rẽ phải,186,186,7,0.28,KEEP_FULL,"7 independent groups allow one group each in train, validation and test",PENDING
+33,W.202b,"Nhiều chỗ ngoặt nguy hiểm liên tiếp, đầu tiên sang phải",19,19,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 19 images: too little independent support; evaluate as UNKNOWN,PENDING
+34,P.108a,Cấm xe sơ-mi rơ-moóc,82,82,5,0.45,KEEP_FULL,"5 independent groups allow one group each in train, validation and test",PENDING
+35,P.137,"Cấm rẽ trái, rẽ phải",87,87,1,1.00,KEEP_TRAIN_ONLY_UNVERIFIED,1 group with 87 images: trainable but cannot be evaluated independently,PENDING
+36,P.139,"Cấm đi thẳng, rẽ phải",75,75,1,1.00,KEEP_TRAIN_ONLY_UNVERIFIED,1 group with 75 images: trainable but cannot be evaluated independently,PENDING
+37,W.205b,Đường giao nhau (nhánh trái),47,47,1,1.00,KEEP_TRAIN_ONLY_UNVERIFIED,1 group with 47 images: trainable but cannot be evaluated independently,PENDING
+38,P.127,Tốc độ tối đa cho phép (50 km/h),189,114,2,0.84,KEEP_TRAIN_AND_TEST_NO_VAL,"2 groups: one can train and one can test, none is left for validation",PENDING
+39,P.127,Tốc độ tối đa cho phép (60 km/h),459,342,7,0.33,KEEP_FULL,"7 independent groups allow one group each in train, validation and test",PENDING
+40,P.127,Tốc độ tối đa cho phép (80 km/h),210,210,3,0.68,KEEP_FULL,"3 independent groups allow one group each in train, validation and test",PENDING
+41,P.127,Tốc độ tối đa cho phép (40 km/h),275,274,13,0.17,KEEP_FULL,"13 independent groups allow one group each in train, validation and test",PENDING
+42,R.301e,Hướng đi phải theo - rẽ trái,21,21,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 21 images: too little independent support; evaluate as UNKNOWN,PENDING
+43:2.5,W.239b*2.5,"Chiều cao tĩnh không thực tế 2,5 m",22,22,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 22 images: too little independent support; evaluate as UNKNOWN,PENDING
+43:2.7,W.239b*2.7,"Chiều cao tĩnh không thực tế 2,7 m",5,5,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 5 images: too little independent support; evaluate as UNKNOWN,PENDING
+44,W.233,Nguy hiểm khác,3,3,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 3 images: too little independent support; evaluate as UNKNOWN,PENDING
+45,I.407a,Đường một chiều,195,190,5,0.36,KEEP_FULL,"5 independent groups allow one group each in train, validation and test",PENDING
+46,P.131a,Cấm đỗ xe,435,423,8,0.31,KEEP_FULL,"8 independent groups allow one group each in train, validation and test",PENDING
+47,P.124b,Cấm ô tô quay đầu xe,16,16,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 16 images: too little independent support; evaluate as UNKNOWN,PENDING
+48,W.210,Giao nhau với đường sắt có rào chắn,41,41,1,1.00,KEEP_TRAIN_ONLY_UNVERIFIED,1 group with 41 images: trainable but cannot be evaluated independently,PENDING
+49,P.124c,Cấm rẽ trái và quay đầu xe,219,119,1,1.00,KEEP_TRAIN_ONLY_UNVERIFIED,1 group with 119 images: trainable but cannot be evaluated independently,PENDING
+50,W.201b,Chỗ ngoặt nguy hiểm vòng bên phải,121,105,3,0.78,KEEP_FULL,"3 independent groups allow one group each in train, validation and test",PENDING
+51,W.246c,Chú ý chướng ngại vật - Vòng tránh sang bên phải,5,5,1,1.00,DROP_FROM_V1_COLLECT_MORE,1 group with only 5 images: too little independent support; evaluate as UNKNOWN,PENDING

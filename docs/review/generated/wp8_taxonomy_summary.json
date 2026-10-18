@@ -1,0 +1,90 @@
+{
+  "all_rows_unapproved": true,
+  "atlas_page_count": 13,
+  "class_count": 52,
+  "conflict_class_ids": [
+    3,
+    22,
+    23,
+    25,
+    28,
+    30,
+    31,
+    34,
+    47,
+    51
+  ],
+  "d03_status": "PENDING",
+  "decision_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+  "gate0": "BLOCKED",
+  "gtsrb_disposition_counts": {
+    "DIRECT_ANALYSIS_ONLY": 11,
+    "NONE": 27,
+    "PARTIAL_ANALYSIS_ONLY": 13,
+    "REVIEW_REQUIRED": 1
+  },
+  "native_recommendation_counts": {
+    "CORRECT_CODE_OR_NAME_PROPOSAL": 19,
+    "KEEP_CURRENT": 23,
+    "OUT_OF_SCOPE_PROPOSAL": 1,
+    "SEMANTIC_REVIEW_REQUIRED": 9
+  },
+  "package": "M0-WP8",
+  "package_recommendation": "VERSION_NATIVE_52_CLASS_TAXONOMY_FIRST_GTSRB_ANALYSIS_ONLY",
+  "rare_class_ids": [
+    1,
+    4,
+    9,
+    11,
+    14,
+    15,
+    16,
+    19,
+    20,
+    21,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    31,
+    33,
+    34,
+    35,
+    36,
+    37,
+    42,
+    43,
+    44,
+    47,
+    48,
+    51
+  ],
+  "rare_definition": "image_count < 100; support never changes semantics",
+  "relabel_authorized": false,
+  "representative_count": 156,
+  "schema_version": 1,
+  "sign_policy_counts": {
+    "ATOMIC_SIGN": 36,
+    "COMPOSITE_SIGN_REVIEW": 5,
+    "PARAMETERIZED_SIGN_REVIEW": 7,
+    "SUPPLEMENTARY_SIGN_REVIEW": 3,
+    "VARIANT_SELECTION_REVIEW": 1
+  },
+  "split_authorized": false,
+  "status": "M0_WP8_AWAITING_QA_PROPOSAL_ONLY",
+  "training_authorized": false,
+  "unknown_policy_counts": {
+    "KEEP_NATIVE_NO_UNKNOWN": 11,
+    "REJECT_CROSSWALK_KEEP_NATIVE_PROVISIONALLY": 31,
+    "REVIEW_NATIVE_OR_UNKNOWN": 10
+  },
+  "wp4_match_status_counts": {
+    "EXACT": 31,
+    "MISMATCH": 6,
+    "NOT_FOUND": 1,
+    "PARTIAL": 14
+  }
+}

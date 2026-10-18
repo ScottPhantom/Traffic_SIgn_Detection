@@ -1,0 +1,1484 @@
+{
+  "fingerprint_contract": {
+    "render": "sha256(RGB|widthxheight|72dpi| + raster pixel bytes)",
+    "text": "sha256(compact_text(pypdf.extract_text))"
+  },
+  "page_fingerprints": {
+    "100": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "16076bdc1d0ec71faa73f0730462ca8edbbeebe2ddde2afc9fa8ac1dc7db4f63",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "66ee1c4b9a10db2c51160d92b5559727dff4317d854f54d183c448788942ffc3"
+    },
+    "101": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "0211840584571c239066647f149071f36a2e6fc6d9960b559c6e13c9a767616e",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "e17b5449e4d07965e80281c96b143f7e1a48e28476eee712ec9743893443c74c"
+    },
+    "102": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "1415c5d99005f24bf6474e56ba208e8e8954fe577157ab8161915ba4855c269a",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "3c2fbdf2446b4e8f2905aa2a9d1cde569e9e18011b2525bf550672b31040be4f"
+    },
+    "103": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "5d22884816afb8c5b94f58e3ea3fc9cf654f4f2174af591757834f9ad14eb097",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "76cda6b5393dcf5e80c99383f77c6decf7b47f8ace1f8de428ecc8e9d6e9da9b"
+    },
+    "106": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "8a3a78d77f522ef05ea885f15860a0ce0008e8dd25e81bbc1ba6e9e233b2706c",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "9a7b32a4a0123d5a7eece9a7e65e142e16f82986bd296d801a9cce5ff61a2a6b"
+    },
+    "107": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "640e83270d37e1d0baf5c3ab75d1b63c76190460f59b9c862f4628b55cb03b42",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "25fa05cb0e1f40ad3d3ad2966aa10dd96840b8a0ade895877e8030be74e06518"
+    },
+    "108": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "b47fb86ad08016b976d81f3ed59e03b6b4c206eaf01ace2c00482002efac9e87",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "66564d8992b005b51f98ece8f5ef6ee30cb00718946a7b97456e25262d62c81f"
+    },
+    "110": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "6c366b5bb1277ab8a20f292aae721c45255b4c7b637c6242cb992ce71f55c347",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "1daf422145f3d61b77b51a5253cfbdd2d07323ef0cfaa0863eb2ccd5cf9de3b4"
+    },
+    "111": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "ca5833fb68016dde9aaac3f1ce94ce3f9ebb2ee3b8a02036c50d29f8702378ff",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "81ceab1f787ce34299c8deecfa69dc13181cbff293e93ac3f12e157f30bef2c4"
+    },
+    "112": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "d02873969df04aa9d231bc5093e6d3760081d0260fe82ac494ae056f827fbf2a",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "1608c8852cd739d3f2bfd656fe87f5545dc6ce3b7c78d563b085a6ceb2952efb"
+    },
+    "113": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "05726f07c512b5798ce251766f382c07517c6cfd76871d7a53155ccf9e4c871e",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "58570a5612f97de439cf4a3f4ded29903d419ea81a0a0a81bb43bb2626ae4aac"
+    },
+    "114": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "e10c0a6507ee246eb12df1e136ff2df28ac3e445e6ff81bcb77efc5cebfed1bf",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "4337d2d61e4c7d347762d23fc2032c5fa0f1734754478b24fca6374fa71b413d"
+    },
+    "115": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "cb9fbf4346f6f6823224e17fd94a936d8098cb47edaced16d0391a6402b41855",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "090226cfd989a3f2fa5c9401707347fd0181d68682e62cf0c49b83abff27d8cc"
+    },
+    "116": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "32151fb31f28b05b32b42871d10cbee14ccf60e7747f59cae125ebd76ca6b0f0",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "5c781949a92a6bbfece08daae55ac086cc29785e8d464ebcd6c771769d36e0d1"
+    },
+    "117": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "6358bb2fed9a8c4806e938ebc9166c58778d1a46ee90a18e9d2a8eef4fdba2ea",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "79160f6376c6627afd550cd55e5b02269b9a1ac0377e23cfd53b430cf838435e"
+    },
+    "126": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "5d66d0516e65c488b2c3acab1c343a50008edc81bb0838934e11b4f9375d9fb6",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "b4e7ac6a8c80eebe5e3b7cbdc4822bf4ce98fe223bf6a42dcf735deb64d345d1"
+    },
+    "131": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "46541b176b517325e83366633224a7c485d6aaeb61e1dec854789f4fb0f3ac85",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "79ca052b28dd6a51542dc9e42e52f6374acc0e09960ac6990f61b0ef9a4c6504"
+    },
+    "132": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "ad82d2a8e7e04dca137e5593a3f5b68cb1448d8106bf5f786e49057ff10d4504",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "8ce33f355d90118ef9c625181820d863546f84493e8ee6a99cc600f07b63030e"
+    },
+    "133": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "554088cd9387e30d5604a251a65a7e1acdd2e348be97d2c43907761450732b11",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "e8b7a27631b3dd0a4167add9f75b39f2a8996b58fd497ade5403dddcb5b1842c"
+    },
+    "142": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "247538b939c822420885914a9a071deb395d231586fd9751cca687d3f027af66",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "f90f410ae2953197b5d6c9291b132ddb405e803c2c91a6fbd6cffe6647e38657"
+    },
+    "143": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "6dbd869cc81a496e634ac6e4777f65a792e650150359322bab7adf253722a009",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "a84102893a580cdfd3877e9f5ff60465f056857992f0261118c416f1a573b4af"
+    },
+    "152": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "bdacb2ce234c5887e62bc49008d16e40a88b515566312be7ebc029226f139401",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "31086e9627c3cfb8fdba5e0da1174dd551a37e244b4050123d148157e4ceabd9"
+    },
+    "80": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "b8bb681207edf17e84b97361d6fe27676b9bab9923d1fb5933084d1bf6142351",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "a2f2fee1e14b25868c315cfd333a5bdf163c58e8edd7f928f13cc6f17865830a"
+    },
+    "81": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "9fe70abbd35dbc62215501162928d89209279a2686cc2802cf3e105a641f1c51",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "ab68bab4a573daca9d272b540530f51ae7147d1ad3a5b8822273b1b29de737ed"
+    },
+    "82": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "85b6aec0b25678658ae050de087eb453bd1dc06283a1760af844910076686188",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "4ac99679991c43eaf911585e7290eb7bf738ce5fdaee8e4ccd9900b9512010ef"
+    },
+    "83": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "10239a42a080e460ae233ff0bd284d8c25c878210120cfcb70d9969a3e13aa85",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "63f35a9ce50d22dcfbae0a73eeb04e88abfa9802dffcdb867d10f8660009e865"
+    },
+    "84": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "37a15927362a0497ea76b6abfb54674a2f6ab2d022c1d042d168c69bd0136340",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "e22a1ba2f9684732979c9ce7eeff7c6b83d9ac6c61d604d3434bf8fb534e7f36"
+    },
+    "85": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "cc2c5ab321280f77853bc172240b617e859ddbab41398874854e4b3367709cd4",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "f6beefb9778728d6b22d4fe9b6f9ef4925e81c70f8610c86a2938b41924c6df6"
+    },
+    "86": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "3470fa85980ae6a12231bad2282667941666f8a89883d510415b6156fe89416c",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "1ab800c9f9c392bb5ad26bd2cebe29d1f5be652abacf0900051b3fd860af79a7"
+    },
+    "87": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "8a6c1cc0a596f5b2785d9e53c7c2f39906d13c9ac466f83e863f26de819d66b2",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "e3423f0c133ddf22de8e4ce50eccda972f238d12d949367efaac60166c127304"
+    },
+    "88": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "d7de785097bf6521c664853181814906bf5dddca1687d32c5dd435b4a39ba98d",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "b723f10002ddff86fa759d3b7bb99ac8270366e99fc8d11ae6bda83127f0f551"
+    },
+    "89": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "cc6659f6660a84ae05505ccf25b256120aa726db7a37cde75789b24c2eea5158",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "22215c05eba2daf25cf9e812bda08b2994961b331e852621c1c45fb8de487558"
+    },
+    "90": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "13ac470d7a9c9633d0b3d69c1172c23efa6f262907c5e05efc36ddfa6ca10cd0",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "1a1512c648cbbc403ca54c3f0ba9e2c2fbac766e9450810584261667efd68788"
+    },
+    "93": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "a60f88e00bb4f2e6526db5302c8ea3c7dfb4356df0efaf0e54601c2dcf00f18e",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "72ba9aad1be282b19cd36057e16d09497d0b2f0a5aed51d343b477580eca9be4"
+    },
+    "94": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "73919629ee76caac4baeb8ca43be21ddaf3328a2f2acea712d7f1c9e0010267f",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "68a96c2253da57438965354ab348d1bf21bcb2300f37614bab80bb2a6bfc4e76"
+    },
+    "96": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "8491f4819142804345778cf03f872d2788969b703734c837b8a2be8cf717384b",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "acefcb7f34539c980e8a5800b08b76b6820694702bb0e7f554987a0b4f8ba9c6"
+    },
+    "97": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "bc3f09d4c555ba64b5a2ceaeb1358c2b5e20db5fe1435f8b708ad103dcd0e638",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "339e4fcaf10cab6d3f4000a0b41d460e90845dd301137d260bdfca7dc07b1045"
+    },
+    "98": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "4db7f0edef097536161fffc61349676625e9ce6592bcfd8592aeccf6c2bef2ea",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "efad0384243c3352977b9a7dc210b43cda10f2dced47b9298025a0fcd371e3de"
+    },
+    "99": {
+      "render_dpi": 72,
+      "render_pixel_sha256": "823db3c4e6eb85f1aaf7332922fe080d614fa607f49c706bd643ee037efc0a2a",
+      "render_size": [
+        596,
+        842
+      ],
+      "text_sha256": "114c480269c29bf5589689b8adc7376676b15e9ad9bf8e5d7df335a95de92a03"
+    }
+  },
+  "qcvn_page_count": 403,
+  "qcvn_pdf_sha256": "b6b99d0a0aeb13fe79072831857ece15bb254d8fb7817e80e4a2739a0d2145ce",
+  "rows": [
+    {
+      "class_id": 0,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.224",
+        "đườngngườiđibộcắtngang",
+        "hìnhc.26"
+      ],
+      "fingerprint_pages": [
+        107
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.224",
+      "official_figure": "C.26",
+      "official_name_vi": "Đường người đi bộ cắt ngang",
+      "official_pdf_page": "107",
+      "official_section": "C.24",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 1,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.205c",
+        "đườnggiaonhau",
+        "hìnhc.5"
+      ],
+      "fingerprint_pages": [
+        100
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.205c",
+      "official_figure": "C.5",
+      "official_name_vi": "Đường giao nhau (nhánh phải)",
+      "official_pdf_page": "100",
+      "official_section": "C.5",
+      "reason": "Đúng biến thể hình W.205c."
+    },
+    {
+      "class_id": 2,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.102",
+        "cấmđingượcchiều",
+        "hìnhb.2"
+      ],
+      "fingerprint_pages": [
+        80
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "P.102",
+      "official_figure": "B.2",
+      "official_name_vi": "Cấm đi ngược chiều",
+      "official_pdf_page": "80",
+      "official_section": "B.2",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 3,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "r.302a",
+        "hướngphảiđivòngchướngngạivật",
+        "hìnhd.4"
+      ],
+      "fingerprint_pages": [
+        117
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "R.302a",
+      "official_figure": "D.4",
+      "official_name_vi": "Hướng phải đi vòng chướng ngại vật",
+      "official_pdf_page": "117",
+      "official_section": "D.2",
+      "reason": "Mã/hình đúng; nhãn EN 'Right Turn Only' làm mất nghĩa vòng chướng ngại vật."
+    },
+    {
+      "class_id": 4,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.205a",
+        "đườnggiaonhau",
+        "hìnhc.5"
+      ],
+      "fingerprint_pages": [
+        100
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.205a",
+      "official_figure": "C.5",
+      "official_name_vi": "Đường giao nhau",
+      "official_pdf_page": "100",
+      "official_section": "C.5",
+      "reason": "Đúng biến thể hình W.205a."
+    },
+    {
+      "class_id": 5,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.207",
+        "giaonhauvớiđườngkhôngưutiên",
+        "hìnhc.7"
+      ],
+      "fingerprint_pages": [
+        100,
+        101,
+        102
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.207",
+      "official_figure": "C.7",
+      "official_name_vi": "Giao nhau với đường không ưu tiên",
+      "official_pdf_page": "100-102",
+      "official_section": "C.7",
+      "reason": "Mã và nghĩa trùng họ biển QCVN."
+    },
+    {
+      "class_id": 6,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.201a",
+        "chỗngoặtnguyhiểmvòngbêntrái",
+        "hìnhc.1"
+      ],
+      "fingerprint_pages": [
+        98
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.201a",
+      "official_figure": "C.1",
+      "official_name_vi": "Chỗ ngoặt nguy hiểm vòng bên trái",
+      "official_pdf_page": "98",
+      "official_section": "C.1",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 7,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.123a",
+        "cấmrẽtrái",
+        "hìnhb.23"
+      ],
+      "fingerprint_pages": [
+        87
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "P.123a",
+      "official_figure": "B.23",
+      "official_name_vi": "Cấm rẽ trái",
+      "official_pdf_page": "87",
+      "official_section": "B.23",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 8,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "i.434a",
+        "bếnxebuýt",
+        "hìnhe.36"
+      ],
+      "fingerprint_pages": [
+        142,
+        143
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "I.434a",
+      "official_figure": "E.36",
+      "official_name_vi": "Bến xe buýt",
+      "official_pdf_page": "142-143",
+      "official_section": "E.36",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 9,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "r.303",
+        "nơigiaonhauchạytheovòngxuyến",
+        "hìnhd.5"
+      ],
+      "fingerprint_pages": [
+        117
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "R.303",
+      "official_figure": "D.5",
+      "official_name_vi": "Nơi giao nhau chạy theo vòng xuyến",
+      "official_pdf_page": "117",
+      "official_section": "D.3",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 10,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.130",
+        "cấmdừngxevàđỗxe",
+        "hìnhb.30"
+      ],
+      "fingerprint_pages": [
+        93,
+        94
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "P.130",
+      "official_figure": "B.30",
+      "official_name_vi": "Cấm dừng xe và đỗ xe",
+      "official_pdf_page": "93-94",
+      "official_section": "B.30",
+      "reason": "Khác rất nhẹ về trật tự từ, không đổi nghĩa."
+    },
+    {
+      "class_id": 11,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "i.409",
+        "chỗquayxe",
+        "hìnhe.9"
+      ],
+      "fingerprint_pages": [
+        132,
+        133
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "I.409",
+      "official_figure": "E.9",
+      "official_name_vi": "Chỗ quay xe",
+      "official_pdf_page": "132-133",
+      "official_section": "E.9",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 12,
+      "composite_or_parameterized": "COMPOSITE",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "r.415a",
+        "biểngộplànđườngtheophươngtiện",
+        "hìnhd.18a"
+      ],
+      "fingerprint_pages": [
+        126
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "R.415a",
+      "official_figure": "D.18a",
+      "official_name_vi": "Biển gộp làn đường theo phương tiện",
+      "official_pdf_page": "126",
+      "official_section": "D.16",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 13,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.245a",
+        "đichậm",
+        "hìnhc.47"
+      ],
+      "fingerprint_pages": [
+        113
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.245a",
+      "official_figure": "C.47",
+      "official_name_vi": "Đi chậm",
+      "official_pdf_page": "113",
+      "official_section": "C.45",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 14,
+      "composite_or_parameterized": "PARAMETERIZED",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.106a",
+        "cấmxeôtôtải",
+        "hìnhb.6"
+      ],
+      "fingerprint_pages": [
+        81,
+        82
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "P.106a",
+      "official_figure": "B.6",
+      "official_name_vi": "Cấm xe ô tô tải",
+      "official_pdf_page": "81-82",
+      "official_section": "B.6",
+      "reason": "Ứng viên chính thức là P.106a; hậu tố '*Xe tải' không phải cú pháp mã QCVN."
+    },
+    {
+      "class_id": 15,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.203c",
+        "đườngbịthuhẹp",
+        "hìnhc.3"
+      ],
+      "fingerprint_pages": [
+        99
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.203c",
+      "official_figure": "C.3",
+      "official_name_vi": "Đường bị thu hẹp về phía phải",
+      "official_pdf_page": "99",
+      "official_section": "C.3",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 16,
+      "composite_or_parameterized": "PARAMETERIZED",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.117",
+        "hạnchếchiềucao",
+        "hìnhb.17"
+      ],
+      "fingerprint_pages": [
+        85,
+        86
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "P.117",
+      "official_figure": "B.17",
+      "official_name_vi": "Hạn chế chiều cao",
+      "official_pdf_page": "85-86",
+      "official_section": "B.17",
+      "reason": "Biển có trị số; dấu '*' trong mã dataset không phải cú pháp QCVN."
+    },
+    {
+      "class_id": 17,
+      "composite_or_parameterized": "PARAMETERIZED",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.124a",
+        "cấmquayđầuxe",
+        "hìnhb.24"
+      ],
+      "fingerprint_pages": [
+        87,
+        88
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "P.124a",
+      "official_figure": "B.24",
+      "official_name_vi": "Cấm quay đầu xe",
+      "official_pdf_page": "87-88",
+      "official_section": "B.24",
+      "reason": "Ứng viên P.124a đúng; dấu '*' trong mã dataset không phải cú pháp QCVN."
+    },
+    {
+      "class_id": 18,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.107",
+        "cấmxeôtôkháchvàxeôtôtải",
+        "hìnhb.7"
+      ],
+      "fingerprint_pages": [
+        82
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "P.107",
+      "official_figure": "B.7",
+      "official_name_vi": "Cấm xe ô tô khách và xe ô tô tải",
+      "official_pdf_page": "82",
+      "official_section": "B.7",
+      "reason": "Nhãn VI gần đúng; 'Passenger Cars' không tương đương 'ô tô khách'."
+    },
+    {
+      "class_id": 19,
+      "composite_or_parameterized": "COMPOSITE",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.124d",
+        "cấmrẽphảivàquayđầuxe",
+        "hìnhb.24"
+      ],
+      "fingerprint_pages": [
+        87,
+        88
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "P.124d",
+      "official_figure": "B.24",
+      "official_name_vi": "Cấm rẽ phải và quay đầu xe",
+      "official_pdf_page": "87-88",
+      "official_section": "B.24",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 20,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.103a",
+        "cấmxeôtô",
+        "hìnhb.3"
+      ],
+      "fingerprint_pages": [
+        80,
+        81
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "P.103a",
+      "official_figure": "B.3",
+      "official_name_vi": "Cấm xe ô tô",
+      "official_pdf_page": "80-81",
+      "official_section": "B.3",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 21,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.203b",
+        "đườngbịthuhẹpvềphíatrái",
+        "hìnhc.3"
+      ],
+      "fingerprint_pages": [
+        99
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.203b",
+      "official_figure": "C.3",
+      "official_name_vi": "Đường bị thu hẹp về phía trái",
+      "official_pdf_page": "99",
+      "official_section": "C.3",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 22,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.221b",
+        "đườngcógồgiảmtốc",
+        "hìnhc.23"
+      ],
+      "fingerprint_pages": [
+        106
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "W.221b",
+      "official_figure": "C.23",
+      "official_name_vi": "Đường có gồ giảm tốc",
+      "official_pdf_page": "106",
+      "official_section": "C.21",
+      "reason": "Mã/hình đúng; nhãn EN 'Uneven Road' rộng hơn gồ giảm tốc."
+    },
+    {
+      "class_id": 23,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.111a",
+        "cấmxegắnmáy",
+        "hìnhb.11"
+      ],
+      "fingerprint_pages": [
+        84
+      ],
+      "match_status": "MISMATCH",
+      "official_code_candidate": "P.111a-d",
+      "official_figure": "B.11",
+      "official_name_vi": "Các biến thể cấm xe gắn máy hoặc xe ba bánh",
+      "official_pdf_page": "84",
+      "official_section": "B.11",
+      "reason": "QCVN không có một biển P.111 chung cho cả xe hai và ba bánh; phải chọn biến thể a-d."
+    },
+    {
+      "class_id": 24,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.129",
+        "kiểmtra",
+        "hìnhb.29"
+      ],
+      "fingerprint_pages": [
+        93
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "P.129",
+      "official_figure": "B.29",
+      "official_name_vi": "Kiểm tra",
+      "official_pdf_page": "93",
+      "official_section": "B.29",
+      "reason": "Mã/VI đúng; 'Customs Checkpoint' hẹp hơn nghĩa kiểm tra chung của QCVN."
+    },
+    {
+      "class_id": 25,
+      "composite_or_parameterized": "SUPPLEMENTARY",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "s.505a",
+        "loạixe",
+        "hìnhf.5"
+      ],
+      "fingerprint_pages": [
+        152
+      ],
+      "match_status": "MISMATCH",
+      "official_code_candidate": "S.505a",
+      "official_figure": "F.5",
+      "official_name_vi": "Loại xe",
+      "official_pdf_page": "152",
+      "official_section": "F.5",
+      "reason": "S.505a là biển phụ chỉ loại xe chịu hiệu lực của biển chính, không có nghĩa 'Motorcycles Only'."
+    },
+    {
+      "class_id": 26,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.246a",
+        "chúýchướngngạivật",
+        "hìnhc.48"
+      ],
+      "fingerprint_pages": [
+        114
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "W.246a",
+      "official_figure": "C.48",
+      "official_name_vi": "Chú ý chướng ngại vật - Vòng tránh ra hai bên",
+      "official_pdf_page": "114",
+      "official_section": "C.46",
+      "reason": "Mã đúng; nhãn dataset có lỗi chính tả và lược bỏ hướng vòng tránh."
+    },
+    {
+      "class_id": 27,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.225",
+        "trẻem",
+        "hìnhc.27"
+      ],
+      "fingerprint_pages": [
+        107,
+        108
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.225",
+      "official_figure": "C.27",
+      "official_name_vi": "Trẻ em",
+      "official_pdf_page": "107-108",
+      "official_section": "C.25",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 28,
+      "composite_or_parameterized": "SUPPLEMENTARY",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "s.505a",
+        "loạixe",
+        "hìnhf.5"
+      ],
+      "fingerprint_pages": [
+        152
+      ],
+      "match_status": "MISMATCH",
+      "official_code_candidate": "S.505a",
+      "official_figure": "F.5",
+      "official_name_vi": "Loại xe",
+      "official_pdf_page": "152",
+      "official_section": "F.5",
+      "reason": "S.505a là biển phụ; nhãn 'Trucks and Containers' không phải tên/nghĩa QCVN."
+    },
+    {
+      "class_id": 29,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.104",
+        "cấmxemáy",
+        "hìnhb.4"
+      ],
+      "fingerprint_pages": [
+        81
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "P.104",
+      "official_figure": "B.4",
+      "official_name_vi": "Cấm xe máy",
+      "official_pdf_page": "81",
+      "official_section": "B.4",
+      "reason": "Mã đúng; nhãn dataset mở rộng thành 'mô tô và xe máy' so với tên QCVN."
+    },
+    {
+      "class_id": 30,
+      "composite_or_parameterized": "SUPPLEMENTARY",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "s.505a",
+        "loạixe",
+        "hìnhf.5"
+      ],
+      "fingerprint_pages": [
+        152
+      ],
+      "match_status": "MISMATCH",
+      "official_code_candidate": "S.505a",
+      "official_figure": "F.5",
+      "official_name_vi": "Loại xe",
+      "official_pdf_page": "152",
+      "official_section": "F.5",
+      "reason": "S.505a là biển phụ chỉ phạm vi của biển chính, không có nghĩa độc lập 'Trucks Only'."
+    },
+    {
+      "class_id": 31,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "MEDIUM",
+      "evidence_method": "TEXT_QUERY_AND_VISUAL_SAMPLE",
+      "evidence_tokens": [],
+      "fingerprint_pages": [],
+      "match_status": "NOT_FOUND",
+      "negative_search_scope": {
+        "description": "QCVN sign appendices B-F; absence is scoped to these pages and queries.",
+        "pages": "80-154",
+        "queries": [
+          "camera",
+          "giám sát",
+          "surveillance"
+        ],
+        "query_hits": [],
+        "scope_text_sha256": "1c82cc1afc8f18826009469b615f9b8aa7b4cdffb8f369a5ad99df5f2f826cd7"
+      },
+      "official_code_candidate": "",
+      "official_figure": "",
+      "official_name_vi": "",
+      "official_pdf_page": "",
+      "official_section": "",
+      "reason": "Không tìm thấy mã/tên camera giám sát tương ứng trong QCVN; kết luận chỉ giới hạn trong nguồn này."
+    },
+    {
+      "class_id": 32,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.123b",
+        "cấmrẽphải",
+        "hìnhb.23"
+      ],
+      "fingerprint_pages": [
+        87
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "P.123b",
+      "official_figure": "B.23",
+      "official_name_vi": "Cấm rẽ phải",
+      "official_pdf_page": "87",
+      "official_section": "B.23",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 33,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.202b",
+        "nhiềuchỗngoặtnguyhiểmliêntiếp",
+        "hìnhc.2"
+      ],
+      "fingerprint_pages": [
+        99
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.202b",
+      "official_figure": "C.2",
+      "official_name_vi": "Nhiều chỗ ngoặt nguy hiểm liên tiếp, đầu tiên sang phải",
+      "official_pdf_page": "99",
+      "official_section": "C.2",
+      "reason": "Mã và hướng biến thể trùng QCVN."
+    },
+    {
+      "class_id": 34,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.108a",
+        "cấmxesơ-mirơ-moóc",
+        "hìnhb.8a"
+      ],
+      "fingerprint_pages": [
+        83
+      ],
+      "match_status": "MISMATCH",
+      "official_code_candidate": "P.108a",
+      "official_figure": "B.8a",
+      "official_name_vi": "Cấm xe sơ-mi rơ-moóc",
+      "official_pdf_page": "83",
+      "official_section": "B.8a",
+      "reason": "B.8a là số mục/hình; mã biển chính thức là P.108a. Nhãn EN 'Containers' cũng sai loại xe."
+    },
+    {
+      "class_id": 35,
+      "composite_or_parameterized": "COMPOSITE",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.137",
+        "cấmrẽtrái,rẽphải",
+        "hìnhb.37"
+      ],
+      "fingerprint_pages": [
+        96
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "P.137",
+      "official_figure": "B.37",
+      "official_name_vi": "Cấm rẽ trái, rẽ phải",
+      "official_pdf_page": "96",
+      "official_section": "B.37",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 36,
+      "composite_or_parameterized": "COMPOSITE",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.139",
+        "cấmđithẳng,rẽphải",
+        "hìnhb.39"
+      ],
+      "fingerprint_pages": [
+        96,
+        97
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "P.139",
+      "official_figure": "B.39",
+      "official_name_vi": "Cấm đi thẳng, rẽ phải",
+      "official_pdf_page": "96-97",
+      "official_section": "B.39",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 37,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.205b",
+        "đườnggiaonhau",
+        "hìnhc.5"
+      ],
+      "fingerprint_pages": [
+        100
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.205b",
+      "official_figure": "C.5",
+      "official_name_vi": "Đường giao nhau (nhánh trái)",
+      "official_pdf_page": "100",
+      "official_section": "C.5",
+      "reason": "Đúng biến thể hình W.205b."
+    },
+    {
+      "class_id": 38,
+      "composite_or_parameterized": "PARAMETERIZED",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.127",
+        "tốcđộtốiđachophép",
+        "hìnhb.27"
+      ],
+      "fingerprint_pages": [
+        89,
+        90
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "P.127",
+      "official_figure": "B.27",
+      "official_name_vi": "Tốc độ tối đa cho phép (50 km/h)",
+      "official_pdf_page": "89-90",
+      "official_section": "B.27",
+      "reason": "Trị số 50 hợp lệ trên biển P.127; '*50' không phải cú pháp mã QCVN."
+    },
+    {
+      "class_id": 39,
+      "composite_or_parameterized": "PARAMETERIZED",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.127",
+        "tốcđộtốiđachophép",
+        "hìnhb.27"
+      ],
+      "fingerprint_pages": [
+        89,
+        90
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "P.127",
+      "official_figure": "B.27",
+      "official_name_vi": "Tốc độ tối đa cho phép (60 km/h)",
+      "official_pdf_page": "89-90",
+      "official_section": "B.27",
+      "reason": "Trị số 60 hợp lệ trên biển P.127; '*60' không phải cú pháp mã QCVN."
+    },
+    {
+      "class_id": 40,
+      "composite_or_parameterized": "PARAMETERIZED",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.127",
+        "tốcđộtốiđachophép",
+        "hìnhb.27"
+      ],
+      "fingerprint_pages": [
+        89,
+        90
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "P.127",
+      "official_figure": "B.27",
+      "official_name_vi": "Tốc độ tối đa cho phép (80 km/h)",
+      "official_pdf_page": "89-90",
+      "official_section": "B.27",
+      "reason": "Trị số 80 hợp lệ trên biển P.127; '*80' không phải cú pháp mã QCVN."
+    },
+    {
+      "class_id": 41,
+      "composite_or_parameterized": "PARAMETERIZED",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.127",
+        "tốcđộtốiđachophép",
+        "hìnhb.27"
+      ],
+      "fingerprint_pages": [
+        89,
+        90
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "P.127",
+      "official_figure": "B.27",
+      "official_name_vi": "Tốc độ tối đa cho phép (40 km/h)",
+      "official_pdf_page": "89-90",
+      "official_section": "B.27",
+      "reason": "Trị số 40 hợp lệ trên biển P.127; '*40' không phải cú pháp mã QCVN."
+    },
+    {
+      "class_id": 42,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "r.301e",
+        "hướngđiphảitheo",
+        "hìnhd.3"
+      ],
+      "fingerprint_pages": [
+        115,
+        116
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "R.301e",
+      "official_figure": "D.3",
+      "official_name_vi": "Hướng đi phải theo - rẽ trái",
+      "official_pdf_page": "115-116",
+      "official_section": "D.1a",
+      "reason": "Mã, hình và hướng trùng QCVN."
+    },
+    {
+      "class_id": 43,
+      "composite_or_parameterized": "PARAMETERIZED",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.239b",
+        "chiềucaotĩnhkhôngthựctế",
+        "hìnhc.41"
+      ],
+      "fingerprint_pages": [
+        111,
+        112
+      ],
+      "match_status": "PARTIAL",
+      "official_code_candidate": "W.239b",
+      "official_figure": "C.41",
+      "official_name_vi": "Chiều cao tĩnh không thực tế",
+      "official_pdf_page": "111-112",
+      "official_section": "C.39",
+      "reason": "Ứng viên đúng; dấu '*' biểu thị tham số nhưng không phải cú pháp mã QCVN."
+    },
+    {
+      "class_id": 44,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.233",
+        "nguyhiểmkhác",
+        "hìnhc.35"
+      ],
+      "fingerprint_pages": [
+        110
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.233",
+      "official_figure": "C.35",
+      "official_name_vi": "Nguy hiểm khác",
+      "official_pdf_page": "110",
+      "official_section": "C.33",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 45,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "i.407a",
+        "đườngmộtchiều",
+        "hìnhe.7"
+      ],
+      "fingerprint_pages": [
+        131,
+        132
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "I.407a",
+      "official_figure": "E.7",
+      "official_name_vi": "Đường một chiều",
+      "official_pdf_page": "131-132",
+      "official_section": "E.7",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 46,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.131a",
+        "cấmđỗxe",
+        "hìnhb.31"
+      ],
+      "fingerprint_pages": [
+        94
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "P.131a",
+      "official_figure": "B.31",
+      "official_name_vi": "Cấm đỗ xe",
+      "official_pdf_page": "94",
+      "official_section": "B.31",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 47,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.124b",
+        "cấmôtôquayđầuxe",
+        "hìnhb.24"
+      ],
+      "fingerprint_pages": [
+        87,
+        88
+      ],
+      "match_status": "MISMATCH",
+      "official_code_candidate": "P.124b",
+      "official_figure": "B.24",
+      "official_name_vi": "Cấm ô tô quay đầu xe",
+      "official_pdf_page": "87-88",
+      "official_section": "B.24",
+      "reason": "Không có mã P.124b1 trong QCVN; ứng viên chính thức theo hình/nghĩa là P.124b."
+    },
+    {
+      "class_id": 48,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.210",
+        "giaonhauvớiđườngsắtcóràochắn",
+        "hìnhc.12"
+      ],
+      "fingerprint_pages": [
+        102,
+        103
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.210",
+      "official_figure": "C.12",
+      "official_name_vi": "Giao nhau với đường sắt có rào chắn",
+      "official_pdf_page": "102-103",
+      "official_section": "C.10",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 49,
+      "composite_or_parameterized": "COMPOSITE",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "p.124c",
+        "cấmrẽtráivàquayđầuxe",
+        "hìnhb.24"
+      ],
+      "fingerprint_pages": [
+        87,
+        88
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "P.124c",
+      "official_figure": "B.24",
+      "official_name_vi": "Cấm rẽ trái và quay đầu xe",
+      "official_pdf_page": "87-88",
+      "official_section": "B.24",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 50,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.201b",
+        "chỗngoặtnguyhiểmvòngbênphải",
+        "hìnhc.1"
+      ],
+      "fingerprint_pages": [
+        98
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.201b",
+      "official_figure": "C.1",
+      "official_name_vi": "Chỗ ngoặt nguy hiểm vòng bên phải",
+      "official_pdf_page": "98",
+      "official_section": "C.1",
+      "reason": "Mã và nghĩa trùng QCVN."
+    },
+    {
+      "class_id": 51,
+      "composite_or_parameterized": "NO",
+      "evidence_confidence": "HIGH",
+      "evidence_method": "TEXT_LAYER_AND_VISUAL",
+      "evidence_tokens": [
+        "w.246c",
+        "chúýchướngngạivật",
+        "hìnhc.48"
+      ],
+      "fingerprint_pages": [
+        114
+      ],
+      "match_status": "EXACT",
+      "official_code_candidate": "W.246c",
+      "official_figure": "C.48",
+      "official_name_vi": "Chú ý chướng ngại vật - Vòng tránh sang bên phải",
+      "official_pdf_page": "114",
+      "official_section": "C.46",
+      "reason": "Mã và nghĩa trùng QCVN; ánh xạ GTSRB vẫn chỉ là đề xuất khác họ warning/mandatory."
+    }
+  ],
+  "schema_version": 2,
+  "status": "CANONICAL_EVIDENCE_INDEX_NOT_TAXONOMY_APPROVAL"
+}

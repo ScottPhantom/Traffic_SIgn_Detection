@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "package": "M0-WP9",
+  "status": "PROPOSAL_ONLY_AWAITING_QA",
+  "target": {
+    "stem": "0248",
+    "split": "train",
+    "class_id": 49,
+    "dataset_code": "P.124c",
+    "image_width": 960,
+    "image_height": 540,
+    "label_line_number": 1,
+    "label_line_index": 0
+  },
+  "raw_annotation": {
+    "yolo": [
+      0.992188,
+      0.34537,
+      0.053125,
+      0.101852
+    ],
+    "pixel_xyxy": [
+      927.00048,
+      158.99976,
+      978.00048,
+      213.99984
+    ],
+    "right_overflow_px": 18.00048
+  },
+  "visual_finding": {
+    "finding": "IMAGE_EDGE_TRUNCATED_OBJECT_WITH_RAW_BOX_EXTENDING_BEYOND_RIGHT_BOUNDARY",
+    "confidence": "HIGH",
+    "interpretation": "The target sign is visibly cut by the right image edge; this is not merely a box overshoot around a fully visible object.",
+    "context_boundary": "Frames 0247 and 0249 are adjacency/context proxies only and are not group ground truth."
+  },
+  "options": [
+    {
+      "id": "keep_raw_as_warning",
+      "effect": "Retain the immutable raw label and continue to surface the boundary warning; this does not make the sample training-approved."
+    },
+    {
+      "id": "create_separate_clipped_derived_annotation",
+      "effect": "Create a separate review-only annotation clipped to the image boundary; never overwrite the raw label and do not treat the derived label as training-approved."
+    },
+    {
+      "id": "quarantine_image_from_approved_dataset",
+      "effect": "Exclude stem 0248 from any approved training dataset until the owner records a decision."
+    }
+  ],
+  "recommendation": {
+    "proposed_disposition": "QUARANTINE_FROM_TRAINING_PENDING_OWNER_DECISION",
+    "raw_handling": "KEEP_RAW_IMMUTABLE_FOR_PROVENANCE",
+    "derived_candidate_role": "REVIEW_ONLY_NOT_APPROVED_TRAINING_LABEL",
+    "rationale": "Clipping makes the coordinates image-valid but cannot restore the portion of the sign that is outside the frame. Quarantine avoids silently training on a truncated object while preserving raw evidence."
+  },
+  "derived_clip_candidate": {
+    "operation": "CLIP_X_MAX_TO_IMAGE_WIDTH_ONLY",
+    "line_1": "49 0.982812750 0.345370000 0.034374500 0.101852000",
+    "line_2": "49 0.333854 0.342593 0.046875 0.088889",
+    "line_1_pixel_xyxy": [
+      927.00048,
+      158.99976,
+      960.0,
+      213.99984
+    ],
+    "source_raw_label_must_remain_unchanged": true
+  },
+  "governance": {
+    "decision_id": "G0.4-bbox-0248",
+    "decision_status": "PENDING",
+    "selected_option": null,
+    "gate0": "BLOCKED",
+    "relabel_authorized": false,
+    "split_authorized": false,
+    "training_authorized": false
+  },
+  "evidence_boundary": "DECISION_SUPPORT_ONLY_NO_RAW_OVERWRITE_NO_RELABEL_NO_SPLIT_NO_TRAINING"
+}

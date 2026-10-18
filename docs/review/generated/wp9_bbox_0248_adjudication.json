@@ -1,0 +1,124 @@
+{
+  "context_proxy_only": [
+    {
+      "image_sha256": "c439730e326465b2a05f8279312581c0890ab8c10a2279289c9daa1e1aa502cc",
+      "role": "ADJACENCY_CONTEXT_PROXY_ONLY_NOT_GROUP_GROUND_TRUTH",
+      "stem": "0247"
+    },
+    {
+      "image_sha256": "7225644c63178646ba5a19a8ff1248ba08b65f792e147613d38deeb0346f230b",
+      "role": "ADJACENCY_CONTEXT_PROXY_ONLY_NOT_GROUP_GROUND_TRUTH",
+      "stem": "0249"
+    }
+  ],
+  "decision_options": [
+    {
+      "effect": "Retain the immutable raw label and continue to surface the boundary warning; this does not make the sample training-approved.",
+      "id": "keep_raw_as_warning"
+    },
+    {
+      "effect": "Create a separate review-only annotation clipped to the image boundary; never overwrite the raw label and do not treat the derived label as training-approved.",
+      "id": "create_separate_clipped_derived_annotation"
+    },
+    {
+      "effect": "Exclude stem 0248 from any approved training dataset until the owner records a decision.",
+      "id": "quarantine_image_from_approved_dataset"
+    }
+  ],
+  "derived_clip_candidate": {
+    "derived_line_1_pixel_xyxy": [
+      927.00048,
+      158.99976,
+      960.0,
+      213.99984
+    ],
+    "lines": [
+      "49 0.982812750 0.345370000 0.034374500 0.101852000",
+      "49 0.333854 0.342593 0.046875 0.088889"
+    ],
+    "raw_line_1_pixel_xyxy": [
+      927.00048,
+      158.99976,
+      978.00048,
+      213.99984
+    ],
+    "right_overflow_removed_px": 18.00048,
+    "source_raw_label_overwritten": false,
+    "status": "REVIEW_ONLY_NOT_APPROVED_TRAINING_LABEL",
+    "transform": "x_max := min(raw_x_max, image_width); y_min/y_max/x_min unchanged; recompute YOLO x_center and width"
+  },
+  "evidence_boundary": "DECISION_SUPPORT_ONLY_NO_RAW_OVERWRITE_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+  "governance": {
+    "gate0": "BLOCKED",
+    "relabel_authorized": false,
+    "split_authorized": false,
+    "training_authorized": false
+  },
+  "owner_decision": {
+    "decision_id": "G0.4-bbox-0248",
+    "recommendation_is_not_owner_approval": true,
+    "selected_option": null,
+    "status": "PENDING"
+  },
+  "package": "M0-WP9",
+  "recommendation": {
+    "derived_candidate_role": "REVIEW_ONLY_NOT_APPROVED_TRAINING_LABEL",
+    "proposed_disposition": "QUARANTINE_FROM_TRAINING_PENDING_OWNER_DECISION",
+    "rationale": "Clipping makes the coordinates image-valid but cannot restore the portion of the sign that is outside the frame. Quarantine avoids silently training on a truncated object while preserving raw evidence.",
+    "raw_handling": "KEEP_RAW_IMMUTABLE_FOR_PROVENANCE"
+  },
+  "schema_version": 1,
+  "source_binding": {
+    "contract_sha256": "0b0a87e1b1b8f4c1c2cac739eb87aa6441ec1cbfbdbad264a0f391231c002da5",
+    "wp1_manifest_sha256": "28adbf21dd2057fe5fc7999daccaa52d1201ea0459ef1bb7475a780ed85c51c6",
+    "wp2_manifest_sha256": "506ec141bef032282f90b3d35741ece49a43fed617c3dea93863d4c32330a505",
+    "wp4_manifest_sha256": "c60c09018900071cc66d8bc01db32300f4efc6a4316bda9f506819026400db1c",
+    "wp8_manifest_sha256": "9d8fc460b8162874b4082940b0e7f3ceb174c068a92378974ebd93b55da20348"
+  },
+  "status": "M0_WP9_AWAITING_QA_DECISION_SUPPORT_ONLY",
+  "target": {
+    "class_id": 49,
+    "dataset_code": "P.124c",
+    "image": {
+      "height": 540,
+      "path": "archive/images/0248.jpg",
+      "sha256": "07eab2035dc10b7b08be71d76c3c32ffdb960722839414f1e474da20c3ad0cbd",
+      "width": 960
+    },
+    "label": {
+      "line_index": 0,
+      "line_number": 1,
+      "path": "archive/labels/0248.txt",
+      "raw_line": "49 0.992188 0.345370 0.053125 0.101852",
+      "sha256": "f4ec410f7bff3ee03f6110308e8e95f57c92bcc7ebf45ff3affcfd885b419c77"
+    },
+    "split": "train",
+    "stem": "0248"
+  },
+  "verified_raw_fact": {
+    "line_2_inside_image": true,
+    "normalized_xywh": [
+      0.992188,
+      0.34537,
+      0.053125,
+      0.101852
+    ],
+    "pixel_xyxy": [
+      927.00048,
+      158.99976,
+      978.00048,
+      213.99984
+    ],
+    "raw_bytes_unchanged": true,
+    "right_overflow_px": 18.00048
+  },
+  "visual_assessment": {
+    "basis": [
+      "The full raw frame shows the rightmost P.124c sign cut by the image boundary.",
+      "The boundary zoom shows the visible sign continuing into the cropped edge while the raw box extends 18.00048 px beyond x=960.",
+      "Adjacent frames 0247 and 0249 support continuity only as proxy context, never as group ground truth."
+    ],
+    "confidence": "HIGH",
+    "finding": "IMAGE_EDGE_TRUNCATED_OBJECT_WITH_RAW_BOX_EXTENDING_BEYOND_RIGHT_BOUNDARY"
+  }
+}

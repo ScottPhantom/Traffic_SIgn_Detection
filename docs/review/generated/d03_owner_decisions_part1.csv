@@ -1,0 +1,43 @@
+class_id,wp8_recommendation,current_code,current_name,approved_code,approved_name_vi,approved_name_en,owner_choice,owner_note,decision_status,decision_date
+0,KEEP_CURRENT,W.224,Đường người đi bộ cắt ngang / Pedestrian Crossing,W.224,Đường người đi bộ cắt ngang,Pedestrian Crossing,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+1,KEEP_CURRENT,W.205c,Đường giao nhau (ngã ba bên phải) / Equal-level Intersection,W.205c,Đường giao nhau (nhánh phải),Equal-level Intersection,ACCEPT_WP8,owner kept English name Equal-level Intersection,OWNER_APPROVED,2026-10-17
+2,KEEP_CURRENT,P.102,Cấm đi ngược chiều / No Entry,P.102,Cấm đi ngược chiều,No Entry,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+3,CORRECT_CODE_OR_NAME_PROPOSAL,R.302a,Phải đi vòng sang bên phải / Right Turn Only,R.302a,Phải đi vòng sang bên phải,Right Turn Only,KEEP_CURRENT_NAME,owner kept current name R.302a Phải đi vòng sang bên phải,OWNER_APPROVED,2026-10-17
+4,KEEP_CURRENT,W.205a,Giao nhau với đường đồng cấp / Intersection,W.205a,Đường giao nhau,Intersection,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+5,KEEP_CURRENT,W.207,Giao nhau với đường không ưu tiên / Intersection with a non-priority road,W.207,Giao nhau với đường không ưu tiên,Intersection with a non-priority road,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+6,CORRECT_CODE_OR_NAME_PROPOSAL,W.201a,Chỗ ngoặt nguy hiểm vòng bên trái / Danger zone on the left,W.201a,Chỗ ngoặt nguy hiểm vòng bên trái,Dangerous Curve to the Left,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+7,KEEP_CURRENT,P.123a,Cấm rẽ trái / No Left Turn,P.123a,Cấm rẽ trái,No Left Turn,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+8,KEEP_CURRENT,I.434a,Bến xe buýt / Bus Stop,I.434a,Bến xe buýt,Bus Stop,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+9,KEEP_CURRENT,R.303,Nơi giao nhau chạy theo vòng xuyến / Roundabout,R.303,Nơi giao nhau chạy theo vòng xuyến,Roundabout,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+10,KEEP_CURRENT,P.130,Cấm dừng và đỗ xe / No Stopping and No Parking,P.130,Cấm dừng xe và đỗ xe,No Stopping and No Parking,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+11,KEEP_CURRENT,I.409,Chỗ quay xe / U-Turn Allowed,I.409,Chỗ quay xe,U-Turn Allowed,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+13,KEEP_CURRENT,W.245a,Đi chậm / Slow Down,W.245a,Đi chậm,Slow Down,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+14,CORRECT_CODE_OR_NAME_PROPOSAL,P.106a*Xe tải,Cấm xe tải / No Trucks Allowed,P.106a,Cấm xe ô tô tải,No Trucks,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+15,KEEP_CURRENT,W.203c,Đường bị thu hẹp về phía phải / Narrow Road on the Right,W.203c,Đường bị thu hẹp về phía phải,Road Narrows on the Right,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+16,CORRECT_CODE_OR_NAME_PROPOSAL,P.117*,Giới hạn chiều cao / Height Limit,P.117,Hạn chế chiều cao,Height Limit (parameterized value),ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+17,CORRECT_CODE_OR_NAME_PROPOSAL,P.124a*,Cấm quay đầu / No U-Turn,P.124a,Cấm quay đầu xe,No U-Turn,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+18,CORRECT_CODE_OR_NAME_PROPOSAL,P.107,Cấm ô tô khách và ô tô tải / No Passenger Cars and Trucks,P.107,Cấm xe ô tô khách và xe ô tô tải,No Passenger Buses and Trucks,ACCEPT_WP8,owner: first sample box is a height-limit sign (P.117) mislabeled as class 18; relabel in a derived label set (raw immutable),OWNER_APPROVED,2026-10-17
+20,KEEP_CURRENT,P.103a,Cấm ô tô / No Cars Allowed,P.103a,Cấm xe ô tô,No Cars,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+21,KEEP_CURRENT,W.203b,Đường bị thu hẹp về phía trái / Narrow Road on the Left,W.203b,Đường bị thu hẹp về phía trái,Road Narrows on the Left,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+22,CORRECT_CODE_OR_NAME_PROPOSAL,W.221b,Gồ giảm tốc phía trước / Uneven Road,W.221b,Đường có gồ giảm tốc,Speed Bump Ahead,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+24,CORRECT_CODE_OR_NAME_PROPOSAL,P.129,Kiểm tra / Customs Checkpoint,P.129,Kiểm tra,Customs Checkpoint,KEEP_CURRENT_NAME,owner kept current name P.129 Kiểm tra / Customs Checkpoint,OWNER_APPROVED,2026-10-17
+26,CORRECT_CODE_OR_NAME_PROPOSAL,W.246a,Chướng ngoại vật phía trước / Obstacle on the Road,W.246a,Chú ý chướng ngại vật - Vòng tránh ra hai bên,Obstacle Ahead - Pass on Either Side,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+27,KEEP_CURRENT,W.225,Trẻ em / Children Present,W.225,Trẻ em,Children,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+29,CORRECT_CODE_OR_NAME_PROPOSAL,P.104,Cấm mô tô và xe máy / No Motorcycles Allowed,P.104,Cấm xe máy,No Motorcycles,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+32,KEEP_CURRENT,P.123b,Cấm rẽ phải / No Right Turn,P.123b,Cấm rẽ phải,No Right Turn,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+33,KEEP_CURRENT,W.202b,"Nhiều chỗ ngoặt, chỗ đầu sang phải / Double curve first to right",W.202b,"Nhiều chỗ ngoặt nguy hiểm liên tiếp, đầu tiên sang phải","Double Curve, First to the Right",ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+34,CORRECT_CODE_OR_NAME_PROPOSAL,B.8a,Cấm xe sơ-mi rơ-moóc / No Containers Allowed,P.108a,Cấm xe sơ-mi rơ-moóc,No Semi-Trailers,ACCEPT_WP8,owner confirmed stem 0689 sample is a genuine P.108a (no relabel),OWNER_APPROVED,2026-10-17
+37,KEEP_CURRENT,W.205b,Đường giao nhau (ngã ba bên trái) / Intersection with T-Junction,W.205b,Đường giao nhau (nhánh trái),Intersection with a left-side branch,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+38,CORRECT_CODE_OR_NAME_PROPOSAL,P.127*50,Giới hạn tốc độ 50 / Speed limit 50,P.127,Tốc độ tối đa cho phép (50 km/h),Maximum Speed 50 km/h,ACCEPT_WP8,speed classes stay separate by value pending parameterized policy,OWNER_APPROVED,2026-10-17
+39,CORRECT_CODE_OR_NAME_PROPOSAL,P.127*60,Giới hạn tốc độ 60 / Speed limit 60,P.127,Tốc độ tối đa cho phép (60 km/h),Maximum Speed 60 km/h,ACCEPT_WP8,speed classes stay separate by value pending parameterized policy,OWNER_APPROVED,2026-10-17
+40,CORRECT_CODE_OR_NAME_PROPOSAL,P.127*80,Giới hạn tốc độ 80 / Speed limit 80,P.127,Tốc độ tối đa cho phép (80 km/h),Maximum Speed 80 km/h,ACCEPT_WP8,speed classes stay separate by value pending parameterized policy; owner confirmed stem 1539 sample is 80 km/h,OWNER_APPROVED,2026-10-17
+41,CORRECT_CODE_OR_NAME_PROPOSAL,P.127*40,Giới hạn tốc độ 40 / Speed limit 40,P.127,Tốc độ tối đa cho phép (40 km/h),Maximum Speed 40 km/h,ACCEPT_WP8,speed classes stay separate by value pending parameterized policy,OWNER_APPROVED,2026-10-17
+42,CORRECT_CODE_OR_NAME_PROPOSAL,R.301e,Các xe chỉ được rẽ trái / Left Turn,R.301e,Hướng đi phải theo - rẽ trái,Mandatory Left Turn,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+43,CORRECT_CODE_OR_NAME_PROPOSAL,W.239b*,Chiều cao tĩnh không thực tế / Low Clearance,W.239b,Chiều cao tĩnh không thực tế,Actual Clearance Height (parameterized value),ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+44,KEEP_CURRENT,W.233,Nguy hiểm khác / Other Danger,W.233,Nguy hiểm khác,Other Danger,ACCEPT_WP8,retention is a D-04 question (3 images),OWNER_APPROVED,2026-10-17
+45,KEEP_CURRENT,I.407a,Đường một chiều / One-way street,I.407a,Đường một chiều,One-Way Street,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+46,KEEP_CURRENT,P.131a,Cấm đỗ xe / No Parking,P.131a,Cấm đỗ xe,No Parking,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+47,CORRECT_CODE_OR_NAME_PROPOSAL,P.124b1,Cấm ô tô quay đầu / No U-Turn for Cars,P.124b,Cấm ô tô quay đầu xe,No U-Turn for Cars,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+48,KEEP_CURRENT,W.210,Giao nhau với đường sắt có rào chắn / Level Crossing with Barriers,W.210,Giao nhau với đường sắt có rào chắn,Level Crossing with Barriers,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+50,CORRECT_CODE_OR_NAME_PROPOSAL,W.201b,Chỗ ngoặt nguy hiểm vòng bên phải / Danger zone on the right,W.201b,Chỗ ngoặt nguy hiểm vòng bên phải,Dangerous Curve to the Right,ACCEPT_WP8,,OWNER_APPROVED,2026-10-17
+51,KEEP_CURRENT,W.246c,Chướng ngại vật – vòng tránh phải / Obstacle ahead – pass right,W.246c,Chú ý chướng ngại vật - Vòng tránh sang bên phải,Obstacle Ahead - Pass Right,ACCEPT_WP8,retention is a D-04 question (5 images),OWNER_APPROVED,2026-10-17

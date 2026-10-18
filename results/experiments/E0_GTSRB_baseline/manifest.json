@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "experiment_id": "E0",
+  "name": "downloaded_gtsrb_vgg_inspired_control",
+  "status": "frozen_control_reference",
+  "frozen_on": "2026-10-10",
+  "scope": "Closed-set classification of cropped GTSRB test images only",
+  "model": {
+    "path": "models/VGG16_model.h5",
+    "sha256": "745cf3f6e9f5edfe32954866d93f07d9504f6bc2d4f3667c8b8f99f1c924b565",
+    "architecture": "Small VGG-inspired Sequential CNN; not canonical keras.applications.VGG16",
+    "input": "RGB 32x32x3, float32 divided by 255",
+    "output": "43-way GTSRB Softmax"
+  },
+  "dataset": {
+    "path": "data/processed/test.p",
+    "sha256": "60b6450ffdb227042eb32f28d15fe77f98ad24dd550cc85eb445b8c0e502e470",
+    "samples": 12630,
+    "classes": 43
+  },
+  "evaluation": {
+    "directory": "results/evaluation/gtsrb_test_baseline",
+    "artifacts_sha256": {
+      "summary.json": "99884485b8762c89a48feb1194a150f062963ffa64e3444acc27026b99a6864e",
+      "per_class_metrics.csv": "7ba35ccdadbc16416e1987ccfb71541d189608e9a5371f0a68e3370bf52341f8",
+      "confusion_matrix.csv": "8a8daf2ca019177c8605684048c6a06bc07a407c87ed1bdc57e2043317e0d801",
+      "high_confidence_mistakes.csv": "b42f3463ad2748759fe5ace869815d595afaff167974350408cbfbdbbfa4055f"
+    },
+    "metrics": {
+      "accuracy": 0.8681710213776722,
+      "macro_f1": 0.7921327842473767,
+      "weighted_f1": 0.8704904173229969,
+      "balanced_accuracy": 0.79492905691844,
+      "negative_log_loss": 0.47991519711470293,
+      "top_label_ece_10_bins": 0.04048761730188699,
+      "wrong_predictions": 1665,
+      "wrong_predictions_confidence_ge_0_90": 324
+    }
+  },
+  "immutability_policy": "Do not overwrite this model or its evaluation artifacts. Every future run must use a new experiment ID and output directory.",
+  "evidence_boundary": "E0 does not establish Vietnamese-domain, full-scene detection, OOD, video, or driving-safety performance."
+}

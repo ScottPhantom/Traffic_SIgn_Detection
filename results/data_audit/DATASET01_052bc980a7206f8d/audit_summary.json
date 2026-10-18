@@ -1,0 +1,160 @@
+{
+  "archive": {
+    "byte_mismatches": [],
+    "extra_in_staging": [],
+    "missing_from_staging": [],
+    "sha256": "052bc980a7206f8ddd1ec2e59098dbd60a42036d3c7f7384ace4fe6416cbaa76",
+    "size": 793394914,
+    "zip_crc_error": null,
+    "zip_member_count": 6437
+  },
+  "blockers": [
+    "Dataset license version conflicts between Hugging Face metadata and card prose.",
+    "No verified video/scene/physical-sign group identifiers.",
+    "Vietnam taxonomy mapping remains draft and requires domain review.",
+    "No approved group-aware train/validation/test split."
+  ],
+  "checks": {
+    "all_class_ids_observed": true,
+    "all_images_decode": true,
+    "all_text_is_utf8": true,
+    "all_yolo_rows_valid": true,
+    "archive_sha256_matches": true,
+    "box_count_matches": true,
+    "class_lists_match_expected": true,
+    "empty_label_count_matches": true,
+    "image_count_matches": true,
+    "image_label_stems_match": true,
+    "label_count_matches": true,
+    "raw_bytes_match_zip": true,
+    "raw_member_set_matches_zip": true,
+    "zip_crc_stream_read_ok": true
+  },
+  "counts": {
+    "boxes": 8334,
+    "classes_expected": 52,
+    "classes_observed": 52,
+    "empty_labels": 25,
+    "image_only_stems": [],
+    "images": 3216,
+    "label_only_stems": [],
+    "labels": 3216,
+    "paired_stems": 3216
+  },
+  "evidence_boundary": "Technical integrity PASS does not approve license, taxonomy, grouping, final splits, training, Vietnamese-domain performance, or deployment.",
+  "exif": {
+    "images_with_exif": 0,
+    "images_with_gps": 0,
+    "selected_values": {},
+    "tag_counts": {}
+  },
+  "generated_utc": "2026-10-10T13:44:55.113588+00:00",
+  "image_decode": {
+    "decoded": 3216,
+    "dimension_counts": {
+      "1920x1080": 813,
+      "540x960": 39,
+      "960x540": 2364
+    },
+    "errors": []
+  },
+  "labels": {
+    "bbox_boundary_warnings": [
+      {
+        "class_id": 49,
+        "height": 0.101852,
+        "line": 1,
+        "stem": "0248",
+        "warning": "bbox extent crosses image boundary; preserve raw and review",
+        "width": 0.053125,
+        "x_center": 0.992188,
+        "y_center": 0.34537
+      }
+    ],
+    "empty_label_stems": [
+      "0060",
+      "0061",
+      "0187",
+      "0544",
+      "1514",
+      "1515",
+      "1703",
+      "1704",
+      "1705",
+      "1706",
+      "1707",
+      "1708",
+      "2015",
+      "2016",
+      "2017",
+      "2031",
+      "2051",
+      "2723",
+      "2766",
+      "2793",
+      "2794",
+      "2795",
+      "2796",
+      "2797",
+      "2999"
+    ],
+    "max_boxes_per_class": 1071,
+    "min_boxes_per_class": 3,
+    "validation_errors": []
+  },
+  "leakage_proxy": {
+    "cross_split_pairs": 1031,
+    "cross_split_percent": 32.44178728760227,
+    "definition": "Pairs of present numeric filename stems n and n+1. This is a proxy, not video/scene/physical-sign ground truth.",
+    "numeric_consecutive_pairs": 3178
+  },
+  "paths": {
+    "archive_zip": "/Users/nguyentantai/Library/Mobile Documents/com~apple~CloudDocs/FALL 2026 KỲ 4/CPV301/Data/DATASET01/archive.zip",
+    "normalized_root": "/Users/nguyentantai/Library/Mobile Documents/com~apple~CloudDocs/FALL 2026 KỲ 4/CPV301/Data/DATASET01/staging/052bc980a7206f8d/generated/normalized",
+    "raw_dataset_root": "/Users/nguyentantai/Library/Mobile Documents/com~apple~CloudDocs/FALL 2026 KỲ 4/CPV301/Data/DATASET01/staging/052bc980a7206f8d/raw/archive",
+    "staging_root": "/Users/nguyentantai/Library/Mobile Documents/com~apple~CloudDocs/FALL 2026 KỲ 4/CPV301/Data/DATASET01/staging/052bc980a7206f8d"
+  },
+  "schema_version": 1,
+  "splits": {
+    "direct_overlap": [],
+    "direct_overlap_count": 0,
+    "negative_excluded": 25,
+    "negative_in_test": 0,
+    "negative_in_train": 0,
+    "negative_total": 25,
+    "split_missing_images": [],
+    "split_missing_labels": [],
+    "test_count": 639,
+    "test_unique": 639,
+    "train_count": 2552,
+    "train_unique": 2552,
+    "validation_present": false
+  },
+  "status": {
+    "gate0": "BLOCKED",
+    "technical_audit": "PASS",
+    "training_authorized": false
+  },
+  "text": {
+    "classes_line_endings": {
+      "classes.txt": "crlf",
+      "classes_en.txt": "crlf",
+      "classes_vie.txt": "crlf"
+    },
+    "label_line_endings": {
+      "crlf": 3069,
+      "none": 147
+    },
+    "normalized_files_written": 3221,
+    "raw_file_line_endings": {
+      "crlf": 3072,
+      "lf": 2,
+      "none": 147
+    },
+    "split_line_endings": {
+      "test_files.txt": "lf",
+      "train_files.txt": "lf"
+    },
+    "utf8_errors": []
+  }
+}

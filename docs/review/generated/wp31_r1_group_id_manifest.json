@@ -1,0 +1,116 @@
+{
+  "artifacts": [
+    {
+      "path": "docs/review/generated/wp31_r1_group_id_frames.csv",
+      "sha256": "e7c1d9308e6b58f2dd4654aae9cd86e8dc5c53be18e16131ef101d37cb001d5c"
+    },
+    {
+      "path": "docs/review/generated/wp31_r1_group_id_groups.csv",
+      "sha256": "433bd7def04abb4e43a2089f467b03eea5115ce7d0099aec3f56cbf4cbf979dd"
+    },
+    {
+      "path": "docs/review/generated/wp31_r1_scene_cut_edges.csv",
+      "sha256": "ccb9b43c942225f21f3709cbeea2c022edcc882d7718120cc5b4ddbc912fd856"
+    },
+    {
+      "path": "docs/review/generated/wp31_r1_unreviewed_negative_gaps.csv",
+      "sha256": "0b96dbcff419c9535f8da172ef849710991974d312a247eea58ddca7fb4923d9"
+    },
+    {
+      "path": "docs/review/generated/wp31_r1_class_group_support.csv",
+      "sha256": "def784f212b2f4c0f3f324492bf04dbc4e38e24c422f1d4c4d1b60e31575934c"
+    },
+    {
+      "path": "docs/review/wp31_r1_group_id_proposal_report.md",
+      "sha256": "0db358481e12b233b89034b39f3afb248d60b467b2e984e1c4cc02d9a210087f"
+    }
+  ],
+  "builder_sha256": "c4e28b32f76e1af8e14299be086dbea0354d3e7e9501ff7f380b6b45646929dd",
+  "cross_capture_merges": 31,
+  "d02_status": "PENDING",
+  "effective_scene_cuts": 4,
+  "evidence_boundary": "PROPOSAL_ONLY_FROM_PROVISIONAL_QA_PASSED_OVERLAYS_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_SPLIT_NO_TRAINING",
+  "final_group_truth_created": false,
+  "gate0": "BLOCKED",
+  "package": "M0-WP31-R1",
+  "pinned_sources": {
+    "docs/review/generated/wp31_group_id_manifest.json": "15a61fcc118414b5499f7fc4b6fd49fd2974a4cac6e989198e548630bc549bd2",
+    "docs/review/generated/wp32_cross_block_links.csv": "3cc0157e2b9df0f3f832edfc9a95dfd14a378a18fccdc983b8e0a9c2b7efb813",
+    "docs/review/generated/wp32_cross_block_manifest.json": "c73206e2388849a2f4d5fa11367f9500711c4eed932bc607a431cda737db4fd9",
+    "docs/review/generated/wp5_provisional_edge_decisions.csv": "3f4cda85d10ea3dbcb9d9c83bbe2d5651991c00fb98b5e0fffbf28716e34fa1a",
+    "docs/review/wp12_visual_review_annotations_batch_b.json": "44e3b181bb277c07851da44ea3ed6659241bd3048438964ad60472380f2f85c0",
+    "docs/review/wp13_visual_review_annotations_batch_c.json": "47361b9a9c2c0f837c9d82393a3128de7639c4458fe28b76bd78966a4a03e603",
+    "docs/review/wp14_visual_review_annotations_batch_d.json": "2fd5a2e8d9336fb42b07250f06bdbfcf5392d1db9788a69a7d42da6dbd56e0cb",
+    "docs/review/wp15_visual_review_annotations_batch_e.json": "af09c7b3d589c1665d8c7349098cfc722a3cce6ea47f433dc9a7b221c650f603",
+    "docs/review/wp16_sequence_review_annotations_batch_a.json": "47346e5857d6d2cde8e462a61f9164adc660c51c6a325c91810e4e70eaa77027",
+    "docs/review/wp17_sequence_review_annotations_batch_b.json": "c1f97520debbc56bf138bf71cb7a83e2cffc298df83eb6435fc1e6e7c2c86ef0",
+    "docs/review/wp18_sequence_review_annotations_batch_c.json": "637f3e5324eed7ae5af308a4baa67476e8bc5ab465129b1b19939e807b1c9de8",
+    "docs/review/wp19_sequence_review_annotations_batch_d.json": "1d30f4f71b856c74addaf46d197c118eaa1ebd3488315b3a6ca6a23554135e46",
+    "docs/review/wp20_sequence_review_annotations_batch_e.json": "e567e3cceb92b7545c8751a6a67d7b29a61dd0ec15ce92cffdbf8e91cc1e23b4",
+    "docs/review/wp21_final_eligible_sequence_review_annotations.json": "4264b2c58f6b7943986e03551ace876eaa0e744305b904aae91b0b191c6ff902",
+    "docs/review/wp22_remaining_edge_review_annotations_batch_a.json": "f00bdbcf28139c3f27716aaaa035948512313e88a5efb7b9b4be53d5cc50a0ac",
+    "docs/review/wp23_r1_remaining_edge_review_annotations_batch_b.json": "8d87586a8f7fa47449b57c0b4aab2e92a0c198523b4e516bac8b8fefebeeb6cb",
+    "docs/review/wp24_remaining_edge_review_annotations_batch_c.json": "82d480a5f0aee86d92236c73a7651b0ed4068385c69a5bdb571ddc071dd10f6f",
+    "docs/review/wp25_r1_remaining_edge_review_annotations_batch_d.json": "90e6016abcbba10df96c32625e84df3284a9c8a55daccae25771fe2159db8807",
+    "docs/review/wp26_remaining_edge_review_annotations_batch_e.json": "be125fcc5b97ad9c0439b09543d00b62edcc1611c0bc750ae6bf7252b6d4ee70",
+    "docs/review/wp27_remaining_edge_review_annotations_batch_f.json": "ce35afc20a4b8ee2f1fefb86210ea61838123dd4a7b9e58969a33e57bb4d4de9",
+    "docs/review/wp28_r2_remaining_edge_review_annotations_batch_g.json": "c03b7cb94fd387a68d80e48ceaf3cacc321c60687c871aa247ae50d135a57424",
+    "docs/review/wp28_r2_wp29_independent_qa_record.md": "d2c0123bfa46d06f38bfd8a74d4ed94de7f274d515d9171f9a6a9af671308e37",
+    "docs/review/wp29_remaining_edge_review_annotations_batch_h.json": "c4ade02295ca6a09f22930a6a413564c0a50822884215ef8b56d679b77fc7490",
+    "docs/review/wp30_independent_qa_record.md": "f9147fd604dbb17c85fb07ea69faad89c1fe188e2554791a52c3eebe86a7136d",
+    "docs/review/wp30_r1_independent_qa_record.md": "87065184f525b2d603255ec404bfca45f2ed3760482c50100b08992063939398",
+    "docs/review/wp30_r1_remaining_edge_review_annotations_batch_i.json": "c58daf352dde321247f60af91df32a42c8f61088a6966fea865205bcb7a05414",
+    "docs/review/wp31_group_id_proposal_report.md": "093ec24c77e227d0d3a0c8f3ba4555bc18d5d5b6180a577028dc3c94a509e1b3",
+    "docs/review/wp31_independent_qa_record.md": "5639265731217e77dc7b04cecb0133a1f43c78497e18f11ae412b7a160f9d4d9",
+    "docs/review/wp7_visual_review_annotations_batch_a.json": "f38e63e8c60ca043de97fb1d82ace4fe8acefb5be260f6500cf1c57f898b2d4d",
+    "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022",
+    "scripts/build_wp31_group_id_proposal.py": "b08a394192a9f0c6d5f3df306cb18b2aef56817e07c5e0fa6f47ca1ce890b08d",
+    "scripts/build_wp32_cross_block_link_review.py": "92720010624230494a2ed5a65204cf1453f98624f3052eb762ffcfec0a55941c",
+    "scripts/wp31_r1_pinned_overlays.json": "2c28eaf3de6d6d57835703df01c5edbbca81031fe9847410bbe5975b37fbedae",
+    "src/cpv301_autodrive/dataset_graph.py": "339972e5bbd6789b7702c0726ac7644f01efb86b514261eb48927289f149f00d",
+    "tests/test_wp31_group_id_proposal.py": "fb383fac5dd9a4f9ea2f01e9531826fd91431ed6fd5dd28703032edb33906efd"
+  },
+  "remerged_scene_pairs": 51,
+  "schema_version": 1,
+  "split_authorized": false,
+  "status": "WP31_R1_GROUP_ID_PROPOSAL_AWAITING_QA_AND_OWNER_D02_DECISION",
+  "summary": {
+    "capture": {
+      "groups": 54,
+      "large_groups": 6,
+      "largest_share": 0.1596,
+      "largest_sizes": [
+        513,
+        411,
+        226,
+        190,
+        120,
+        115,
+        87,
+        83
+      ],
+      "mixed_split_groups": 54,
+      "multi_frame_groups": 54,
+      "singletons": 0
+    },
+    "scene": {
+      "groups": 63,
+      "large_groups": 6,
+      "largest_share": 0.1456,
+      "largest_sizes": [
+        468,
+        411,
+        190,
+        190,
+        120,
+        115,
+        87,
+        75
+      ],
+      "mixed_split_groups": 63,
+      "multi_frame_groups": 63,
+      "singletons": 0
+    }
+  },
+  "training_authorized": false
+}

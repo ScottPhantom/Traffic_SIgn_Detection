@@ -1,0 +1,55 @@
+yolo_id,derived_key,derived_code,name_vi,name
+0,0,W.224,Đường người đi bộ cắt ngang,0 W.224
+1,1,W.205c,Đường giao nhau (nhánh phải),1 W.205c
+2,2,P.102,Cấm đi ngược chiều,2 P.102
+3,3,R.302a,Phải đi vòng sang bên phải,3 R.302a
+4,4,W.205a,Đường giao nhau,4 W.205a
+5,5,W.207,Giao nhau với đường không ưu tiên,5 W.207
+6,6,W.201a,Chỗ ngoặt nguy hiểm vòng bên trái,6 W.201a
+7,7,P.123a,Cấm rẽ trái,7 P.123a
+8,8,I.434a,Bến xe buýt,8 I.434a
+9,9,R.303,Nơi giao nhau chạy theo vòng xuyến,9 R.303
+10,10,P.130,Cấm dừng xe và đỗ xe,10 P.130
+11,11,I.409,Chỗ quay xe,11 I.409
+12,12,R.415a,Biển gộp làn đường theo phương tiện,12 R.415a
+13,13,W.245a,Đi chậm,13 W.245a
+14,14,P.106a,Cấm xe ô tô tải,14 P.106a
+15,15,W.203c,Đường bị thu hẹp về phía phải,15 W.203c
+16,16:2.0,P.117*2.0,"Hạn chế chiều cao 2,0 m",16:2.0 P.117*2.0
+17,16:2.2,P.117*2.2,"Hạn chế chiều cao 2,2 m",16:2.2 P.117*2.2
+18,16:2.5,P.117*2.5,"Hạn chế chiều cao 2,5 m",16:2.5 P.117*2.5
+19,17,P.124a,Cấm quay đầu xe,17 P.124a
+20,18,P.107,Cấm xe ô tô khách và xe ô tô tải,18 P.107
+21,19,P.124d,Cấm rẽ phải và quay đầu xe,19 P.124d
+22,20,P.103a,Cấm xe ô tô,20 P.103a
+23,21,W.203b,Đường bị thu hẹp về phía trái,21 W.203b
+24,22,W.221b,Đường có gồ giảm tốc,22 W.221b
+25,23,P.111a+P.111b,Cấm xe gắn máy và xe ba bánh có động cơ (biển ghép),23 P.111a+P.111b
+26,24,P.129,Kiểm tra,24 P.129
+27,25,S.505a,Biển phụ loại xe: xe máy,25 S.505a
+28,26,W.246a,Chú ý chướng ngại vật - Vòng tránh ra hai bên,26 W.246a
+29,27,W.225,Trẻ em,27 W.225
+30,28,S.505a,Biển phụ loại xe: xe tải và xe công,28 S.505a
+31,29,P.104,Cấm xe máy,29 P.104
+32,30,S.505a,Biển phụ loại xe: xe tải,30 S.505a
+33,32,P.123b,Cấm rẽ phải,32 P.123b
+34,33,W.202b,"Nhiều chỗ ngoặt nguy hiểm liên tiếp, đầu tiên sang phải",33 W.202b
+35,34,P.108a,Cấm xe sơ-mi rơ-moóc,34 P.108a
+36,35,P.137,"Cấm rẽ trái, rẽ phải",35 P.137
+37,36,P.139,"Cấm đi thẳng, rẽ phải",36 P.139
+38,37,W.205b,Đường giao nhau (nhánh trái),37 W.205b
+39,38,P.127,Tốc độ tối đa cho phép (50 km/h),38 P.127
+40,39,P.127,Tốc độ tối đa cho phép (60 km/h),39 P.127
+41,40,P.127,Tốc độ tối đa cho phép (80 km/h),40 P.127
+42,41,P.127,Tốc độ tối đa cho phép (40 km/h),41 P.127
+43,42,R.301e,Hướng đi phải theo - rẽ trái,42 R.301e
+44,43:2.5,W.239b*2.5,"Chiều cao tĩnh không thực tế 2,5 m",43:2.5 W.239b*2.5
+45,43:2.7,W.239b*2.7,"Chiều cao tĩnh không thực tế 2,7 m",43:2.7 W.239b*2.7
+46,44,W.233,Nguy hiểm khác,44 W.233
+47,45,I.407a,Đường một chiều,45 I.407a
+48,46,P.131a,Cấm đỗ xe,46 P.131a
+49,47,P.124b,Cấm ô tô quay đầu xe,47 P.124b
+50,48,W.210,Giao nhau với đường sắt có rào chắn,48 W.210
+51,49,P.124c,Cấm rẽ trái và quay đầu xe,49 P.124c
+52,50,W.201b,Chỗ ngoặt nguy hiểm vòng bên phải,50 W.201b
+53,51,W.246c,Chú ý chướng ngại vật - Vòng tránh sang bên phải,51 W.246c

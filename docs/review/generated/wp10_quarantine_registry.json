@@ -1,0 +1,53 @@
+{
+  "default_policy": "FAIL_CLOSED_IF_OWNER_OVERLAY_OR_REGISTRY_IS_MISSING_INVALID_OR_UNVERIFIED",
+  "entries": [
+    {
+      "class_49_taxonomy_excluded": false,
+      "class_ids_present": [
+        49
+      ],
+      "decision_date": "2026-10-11",
+      "decision_id": "G0.4-bbox-0248",
+      "decision_status": "OWNER_APPROVED",
+      "decision_timezone": "Asia/Saigon",
+      "derived_clip_usage": "REVIEW_EVIDENCE_ONLY_NOT_TRAINING_LABEL",
+      "exclude_entire_stem_from_split_generation": true,
+      "exclude_entire_stem_from_training": true,
+      "image_path": "archive/images/0248.jpg",
+      "image_sha256": "07eab2035dc10b7b08be71d76c3c32ffdb960722839414f1e474da20c3ad0cbd",
+      "label_path": "archive/labels/0248.txt",
+      "label_row_count": 2,
+      "label_rows": [
+        1,
+        2
+      ],
+      "label_sha256": "f4ec410f7bff3ee03f6110308e8e95f57c92bcc7ebf45ff3affcfd885b419c77",
+      "quarantine_id": "G0.4-bbox-0248:stem:0248",
+      "raw_immutable": true,
+      "reason": "The class-49 sign at the right image edge is genuinely truncated and its raw line-1 bbox extends 18.00048 px beyond x=960. Quarantine the whole stem rather than silently training on either raw or clipped coordinates.",
+      "scope_type": "ENTIRE_IMAGE_STEM",
+      "selected_option": "APPROVED_QUARANTINE",
+      "stem": "0248",
+      "wp9_manifest_sha256": "cea9423616de0bf4649d71e40f395b4cdc18ff3ea2f80e9829ea4063f009656f"
+    }
+  ],
+  "entry_count": 1,
+  "evidence_boundary": "OWNER_APPROVAL_OVERLAY_AND_FAIL_CLOSED_QUARANTINE_ONLY_NO_RAW_MUTATION_NO_FINAL_SPLIT_NO_TRAINING",
+  "g04_formal_closure": "PENDING_WP10_QA_PASS",
+  "governance": {
+    "gate0": "BLOCKED",
+    "remaining_pending_decisions": [
+      "D-01",
+      "D-02",
+      "D-03",
+      "D-04",
+      "D-05"
+    ],
+    "split_authorized": false,
+    "training_authorized": false
+  },
+  "package": "M0-WP10",
+  "quarantined_stem_count": 1,
+  "schema_version": 1,
+  "status": "ACTIVE_FAIL_CLOSED_OWNER_APPROVED_QUARANTINE_AWAITING_WP10_QA"
+}

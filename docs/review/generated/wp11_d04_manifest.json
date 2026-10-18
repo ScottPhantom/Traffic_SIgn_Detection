@@ -1,0 +1,294 @@
+{
+  "all_owner_status_pending": true,
+  "artifact_count": 9,
+  "artifact_count_semantics": "EXCLUDES_MANIFEST_FILE",
+  "artifacts": [
+    {
+      "id": "class_matrix_json",
+      "path": "docs/review/generated/wp11_d04_class_matrix.json",
+      "root": "repo",
+      "sha256": "68740745d68ba0fc5eab3a457c4fdf9ce4fec6b9a15d62ab20f567257214bdb0",
+      "size": 213703
+    },
+    {
+      "id": "class_matrix_csv",
+      "path": "docs/review/generated/wp11_d04_class_matrix.csv",
+      "root": "repo",
+      "sha256": "33fb3bd02e4ad98a68003581ec8ac002e5c83c00c5c675cc0fec79e9c5d2ead1",
+      "size": 49865
+    },
+    {
+      "id": "rare_subset_json",
+      "path": "docs/review/generated/wp11_d04_rare_subset.json",
+      "root": "repo",
+      "sha256": "66fff63cb32f58ced913469d075cd882688d29facd104b7f407c718e1d940981",
+      "size": 83034
+    },
+    {
+      "id": "rare_subset_csv",
+      "path": "docs/review/generated/wp11_d04_rare_subset.csv",
+      "root": "repo",
+      "sha256": "04e48352f9ac4002e6b116630920decc45ced418891ad9fdb98cb7f6f96b57f3",
+      "size": 20018
+    },
+    {
+      "id": "extreme_lineage_csv",
+      "path": "docs/review/generated/wp11_d04_extreme_lineage.csv",
+      "root": "repo",
+      "sha256": "e490abe4c9e500d48dde4f58e8bd3d028ce3f091c434c5cb7d66e2f4a44a8a23",
+      "size": 3546
+    },
+    {
+      "id": "layout_audit",
+      "path": "docs/review/generated/wp11_d04_layout_audit.json",
+      "root": "repo",
+      "sha256": "3d152eb3d295a5344209cfea24863d2d41e5c2d797cf3a18f000f9bf1b520885",
+      "size": 5512
+    },
+    {
+      "id": "report",
+      "path": "docs/review/wp11_d04_rare_class_report.md",
+      "root": "repo",
+      "sha256": "9ace791bd004956d74ab00a31235eb11dcab53b1b48f1cca8cf098a7b1526592",
+      "size": 4144
+    },
+    {
+      "id": "atlas_class_044",
+      "path": "docs/review/assets/wp11/d04_extreme_atlas/class_044.png",
+      "root": "repo",
+      "sha256": "6ea42cdf71809c8627c32980e109e285200ce666d2c2b191f1e32fca55486c5e",
+      "size": 1034403
+    },
+    {
+      "id": "atlas_class_051",
+      "path": "docs/review/assets/wp11/d04_extreme_atlas/class_051.png",
+      "root": "repo",
+      "sha256": "f787d1a4b882f5fb14a3e51073944444fb61c4afec04a0ef1ef5575eb1edbc78",
+      "size": 1224953
+    }
+  ],
+  "atlas_page_count": 2,
+  "automatic_semantic_merge_allowed": false,
+  "class_count": 52,
+  "d02_status": "PENDING",
+  "d03_status": "PENDING",
+  "d04_policy": "box_count < 50",
+  "d04_status": "PENDING_OWNER_DECISION",
+  "effective_independent_support": "UNKNOWN_PENDING_D02",
+  "evidence_boundary": "D04_DECISION_SUPPORT_ONLY_NO_OWNER_APPROVAL_NO_SEMANTIC_MERGE_NO_RAW_MUTATION_NO_SPLIT_NO_TRAINING",
+  "extreme_class_ids": [
+    44,
+    51
+  ],
+  "extreme_instance_count": 8,
+  "gate0": "BLOCKED",
+  "manifest_path": "docs/review/generated/wp11_d04_manifest.json",
+  "manifest_self_in_artifact_count": false,
+  "package": "M0-WP11",
+  "rare_class_count": 20,
+  "schema_version": 1,
+  "source_count": 28,
+  "sources": [
+    {
+      "id": "contract",
+      "path": "references/dataset01/wp11_d04_rare_class_contract.json",
+      "root": "repo",
+      "sha256": "c90c4caad941bdc89dd619969c4dbdc248af0bc26e0ae44c678157e29d7e50f6",
+      "size": 4988
+    },
+    {
+      "id": "per_class_counts",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/per_class_counts.csv",
+      "root": "repo",
+      "sha256": "bdff0e3817470757f058b415ee7284d0f1b631ce4454eeb9b158bf6a6a6aa280",
+      "size": 4188
+    },
+    {
+      "id": "image_inventory",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv",
+      "root": "repo",
+      "sha256": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022",
+      "size": 733242
+    },
+    {
+      "id": "source_preservation",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/source_preservation_proof.json",
+      "root": "repo",
+      "sha256": "5ca3e769b9197cad19bcb75f553dd59fee6e3035e0cc86cd9693737f84a713d7",
+      "size": 783
+    },
+    {
+      "id": "wp1_manifest",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/wp1_artifact_manifest.json",
+      "root": "repo",
+      "sha256": "28adbf21dd2057fe5fc7999daccaa52d1201ea0459ef1bb7475a780ed85c51c6",
+      "size": 2297
+    },
+    {
+      "id": "historical_decision_status",
+      "path": "docs/review/decision_status.json",
+      "root": "repo",
+      "sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+      "size": 7864
+    },
+    {
+      "id": "wp8_manifest",
+      "path": "docs/review/generated/wp8_taxonomy_manifest.json",
+      "root": "repo",
+      "sha256": "9d8fc460b8162874b4082940b0e7f3ceb174c068a92378974ebd93b55da20348",
+      "size": 9458
+    },
+    {
+      "id": "wp8_matrix",
+      "path": "docs/review/generated/wp8_taxonomy_recommendation.json",
+      "root": "repo",
+      "sha256": "9a0e918baf61f58692ffd1dd728341fdd2a3457386144c78a54c33a996866efa",
+      "size": 229352
+    },
+    {
+      "id": "wp8_summary",
+      "path": "docs/review/generated/wp8_taxonomy_summary.json",
+      "root": "repo",
+      "sha256": "b608172a6fd78fce07c515d5a4219e441da16dc58ddd5d0aa451e6080d37db53",
+      "size": 1769
+    },
+    {
+      "id": "wp10_manifest",
+      "path": "docs/review/generated/wp10_g04_quarantine_manifest.json",
+      "root": "repo",
+      "sha256": "9c9581e2026f036a79fc1c58bce5f1b87e4c4f0786ee50a49f890e94d0e529e5",
+      "size": 4235
+    },
+    {
+      "id": "wp10_registry",
+      "path": "docs/review/generated/wp10_quarantine_registry.json",
+      "root": "repo",
+      "sha256": "0b79dc0507577d9d69c6cb1ce5164c34470dd4104ac177f3efbbfafd0d2f3fe2",
+      "size": 2010
+    },
+    {
+      "id": "wp10_overlay",
+      "path": "docs/review/generated/wp10_g04_owner_decision_overlay.json",
+      "root": "repo",
+      "sha256": "4e200af3daccc1d89078ee60fefa0164655a9696626effd7feb58e85c583a71e",
+      "size": 2544
+    },
+    {
+      "id": "raw_image_0670",
+      "path": "archive/images/0670.jpg",
+      "root": "raw",
+      "sha256": "67c626badb1d182cca6f1959fda61e081e14b9e66de0ec8e8242cef0f824b095",
+      "size": 172051
+    },
+    {
+      "id": "raw_label_0670",
+      "path": "archive/labels/0670.txt",
+      "root": "raw",
+      "sha256": "c2c3cad0cf7b28464431c124d4a1c3f618d7a3c9fdb6fc5a880b3b05fa90c4cb",
+      "size": 199
+    },
+    {
+      "id": "raw_image_0671",
+      "path": "archive/images/0671.jpg",
+      "root": "raw",
+      "sha256": "ef136cb7bf2df21d1f2fc1a451be15a65a83528da8f4709dcbc26c1213d81d8b",
+      "size": 173875
+    },
+    {
+      "id": "raw_label_0671",
+      "path": "archive/labels/0671.txt",
+      "root": "raw",
+      "sha256": "8d1bdcc1263e72c6c2edb83d3771d980745ce3845ca9ead3f99c9fd882cabd3c",
+      "size": 199
+    },
+    {
+      "id": "raw_image_0672",
+      "path": "archive/images/0672.jpg",
+      "root": "raw",
+      "sha256": "5e25766817091316d971f59ba6a7392e618909583a0729ceeefef785760b7bfd",
+      "size": 174999
+    },
+    {
+      "id": "raw_label_0672",
+      "path": "archive/labels/0672.txt",
+      "root": "raw",
+      "sha256": "0becf97d025a2e6dca9f651c3e7030107a3c8437c915f1d05878274c19d14cfe",
+      "size": 199
+    },
+    {
+      "id": "raw_image_0530",
+      "path": "archive/images/0530.jpg",
+      "root": "raw",
+      "sha256": "74bd8303cbcc9c10a2b3bccecb7bddab2684a6e2e3344941396265409b44e03b",
+      "size": 127858
+    },
+    {
+      "id": "raw_label_0530",
+      "path": "archive/labels/0530.txt",
+      "root": "raw",
+      "sha256": "df1a009a370bd8f39728bb1463a27fa16325ee99cf7b9851636b206bf4e77ea3",
+      "size": 235
+    },
+    {
+      "id": "raw_image_0531",
+      "path": "archive/images/0531.jpg",
+      "root": "raw",
+      "sha256": "5cc052cfb7f78e212864d0b619d5f5e1221fa03713989fb6f5322f2acf904dfb",
+      "size": 121197
+    },
+    {
+      "id": "raw_label_0531",
+      "path": "archive/labels/0531.txt",
+      "root": "raw",
+      "sha256": "d9b10e09728c4e2a3960dfb0d74f364a6bfec43a707c972f4e137798347c9026",
+      "size": 236
+    },
+    {
+      "id": "raw_image_0532",
+      "path": "archive/images/0532.jpg",
+      "root": "raw",
+      "sha256": "131656e687499e61ea9ad02169a1b2b123e657e7015a68419d4e3f8cc3311254",
+      "size": 114845
+    },
+    {
+      "id": "raw_label_0532",
+      "path": "archive/labels/0532.txt",
+      "root": "raw",
+      "sha256": "df8565d9bcc6cabb228ff729b686e414cac0abefd2f0522681538daef3d4ea7e",
+      "size": 233
+    },
+    {
+      "id": "raw_image_0533",
+      "path": "archive/images/0533.jpg",
+      "root": "raw",
+      "sha256": "b55301e7c82e5e64f7bc9ad503135dc9c9c592c7a1e085b94aa9fb713e705dca",
+      "size": 115021
+    },
+    {
+      "id": "raw_label_0533",
+      "path": "archive/labels/0533.txt",
+      "root": "raw",
+      "sha256": "c400b1b1ca2401362820781fe63648d060cae05300dd25d2f4bd7db78685e2a2",
+      "size": 230
+    },
+    {
+      "id": "raw_image_0534",
+      "path": "archive/images/0534.jpg",
+      "root": "raw",
+      "sha256": "1691fec081ca9f40fb08f363c0850e8819d2c8824cea730cad2fab0851da935c",
+      "size": 120586
+    },
+    {
+      "id": "raw_label_0534",
+      "path": "archive/labels/0534.txt",
+      "root": "raw",
+      "sha256": "45c21ca4d33886f8a23f8248d83eb8c07d4bf5a9c39b1b34e71f4e205c016776",
+      "size": 223
+    }
+  ],
+  "split_authorized": false,
+  "status": "M0_WP11_AWAITING_QA_D04_DECISION_SUPPORT_ONLY",
+  "total_artifact_bytes": 2639178,
+  "training_authorized": false,
+  "wp10_g04_quarantine_applied": true
+}

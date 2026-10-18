@@ -1,0 +1,123 @@
+{
+  "artifact_count": 3,
+  "artifact_count_semantics": "EXCLUDES_MANIFEST_FILE",
+  "artifacts": [
+    {
+      "id": "owner_decision_overlay",
+      "path": "docs/review/generated/wp10_g04_owner_decision_overlay.json",
+      "root": "repo",
+      "sha256": "4e200af3daccc1d89078ee60fefa0164655a9696626effd7feb58e85c583a71e",
+      "size": 2544
+    },
+    {
+      "id": "quarantine_registry",
+      "path": "docs/review/generated/wp10_quarantine_registry.json",
+      "root": "repo",
+      "sha256": "0b79dc0507577d9d69c6cb1ce5164c34470dd4104ac177f3efbbfafd0d2f3fe2",
+      "size": 2010
+    },
+    {
+      "id": "report",
+      "path": "docs/review/wp10_g04_quarantine_report.md",
+      "root": "repo",
+      "sha256": "c82fd944e8d9ae56163e160470a4b66fb6fee7052e4a3cac4140e98b0779b223",
+      "size": 2854
+    }
+  ],
+  "class_49_taxonomy_excluded": false,
+  "decision_date": "2026-10-11",
+  "decision_id": "G0.4-bbox-0248",
+  "decision_status": "OWNER_APPROVED",
+  "decision_timezone": "Asia/Saigon",
+  "derived_clip_usage": "REVIEW_EVIDENCE_ONLY_NOT_TRAINING_LABEL",
+  "evidence_boundary": "OWNER_APPROVAL_OVERLAY_AND_FAIL_CLOSED_QUARANTINE_ONLY_NO_RAW_MUTATION_NO_FINAL_SPLIT_NO_TRAINING",
+  "exclude_entire_stem_from_split_generation": true,
+  "exclude_entire_stem_from_training": true,
+  "g04_formal_closure": "PENDING_WP10_QA_PASS",
+  "gate0": "BLOCKED",
+  "manifest_path": "docs/review/generated/wp10_g04_quarantine_manifest.json",
+  "manifest_self_in_artifact_count": false,
+  "package": "M0-WP10",
+  "quarantine_scope": "ENTIRE_IMAGE_STEM_ALL_LABEL_ROWS",
+  "quarantined_stem": "0248",
+  "raw_source_unchanged": true,
+  "schema_version": 1,
+  "selected_option": "APPROVED_QUARANTINE",
+  "source_count": 10,
+  "sources": [
+    {
+      "id": "contract",
+      "path": "references/dataset01/wp10_g04_owner_quarantine_contract.json",
+      "root": "repo",
+      "sha256": "2ebc5ffccc89a395cc7910811762421d7be6a0bb5c88448c550b9ad5146664a1",
+      "size": 2431
+    },
+    {
+      "id": "raw_image_0248",
+      "path": "archive/images/0248.jpg",
+      "root": "raw",
+      "sha256": "07eab2035dc10b7b08be71d76c3c32ffdb960722839414f1e474da20c3ad0cbd",
+      "size": 154205
+    },
+    {
+      "id": "raw_label_0248",
+      "path": "archive/labels/0248.txt",
+      "root": "raw",
+      "sha256": "f4ec410f7bff3ee03f6110308e8e95f57c92bcc7ebf45ff3affcfd885b419c77",
+      "size": 80
+    },
+    {
+      "id": "historical_decision_status",
+      "path": "docs/review/decision_status.json",
+      "root": "repo",
+      "sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+      "size": 7864
+    },
+    {
+      "id": "source_preservation",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/source_preservation_proof.json",
+      "root": "repo",
+      "sha256": "5ca3e769b9197cad19bcb75f553dd59fee6e3035e0cc86cd9693737f84a713d7",
+      "size": 783
+    },
+    {
+      "id": "wp8_manifest",
+      "path": "docs/review/generated/wp8_taxonomy_manifest.json",
+      "root": "repo",
+      "sha256": "9d8fc460b8162874b4082940b0e7f3ceb174c068a92378974ebd93b55da20348",
+      "size": 9458
+    },
+    {
+      "id": "wp9_manifest",
+      "path": "docs/review/generated/wp9_bbox_0248_manifest.json",
+      "root": "repo",
+      "sha256": "cea9423616de0bf4649d71e40f395b4cdc18ff3ea2f80e9829ea4063f009656f",
+      "size": 5978
+    },
+    {
+      "id": "wp9_adjudication",
+      "path": "docs/review/generated/wp9_bbox_0248_adjudication.json",
+      "root": "repo",
+      "sha256": "b600597496d5fbd2f16f554d320d84cf60928e909245a622dc34790ac5d954aa",
+      "size": 4529
+    },
+    {
+      "id": "wp9_derived_candidate",
+      "path": "docs/review/generated/wp9_bbox_0248_derived_candidate.txt",
+      "root": "repo",
+      "sha256": "8fcdd25dce463d7c57ef5f9f95ce1810db056d7d02e260e2126e3656c4a691b6",
+      "size": 90
+    },
+    {
+      "id": "wp9_report",
+      "path": "docs/review/wp9_bbox_0248_adjudication_report.md",
+      "root": "repo",
+      "sha256": "e8af88cf6975d38a28a5f1bb07650a4e0431d479d28313247197ce96d458e81b",
+      "size": 3188
+    }
+  ],
+  "split_authorized": false,
+  "status": "M0_WP10_AWAITING_QA_OWNER_APPROVED_QUARANTINE_ENFORCEMENT",
+  "total_artifact_bytes": 7408,
+  "training_authorized": false
+}

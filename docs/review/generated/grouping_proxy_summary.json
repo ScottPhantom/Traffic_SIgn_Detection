@@ -1,0 +1,55 @@
+{
+  "counts": {
+    "adjacency_only_edges": 315,
+    "adjacent_edges": 3178,
+    "candidate_sequences": 589,
+    "cross_split_adjacency_only_edges": 101,
+    "cross_split_strong_candidate_edges": 539,
+    "cross_split_uncertain_edges": 391,
+    "images_in_candidate_sequences": 2280,
+    "largest_candidate_sequence": 31,
+    "strong_candidate_edges": 1691,
+    "uncertain_edges": 1172
+  },
+  "evidence_boundary": "Candidate sequence IDs are review queue identifiers only. They are not video, scene, capture-session or physical-sign ground truth and cannot authorize a split or training.",
+  "manual_review_workload": {
+    "assumptions": [
+      "1-3 minutes per strong candidate sequence using a contact sheet",
+      "20-45 seconds per uncertain edge",
+      "15-30 seconds per adjacency-only edge",
+      "estimate excludes creator contact and taxonomy adjudication"
+    ],
+    "estimated_hours": {
+      "maximum": 46.7,
+      "minimum": 17.6
+    }
+  },
+  "method": {
+    "candidate_universe": "numeric filename adjacency n -> n+1",
+    "strong_thresholds": {
+      "dhash_distance_max": 8,
+      "rgb_histogram_cosine_min": 0.98,
+      "thumbnail_mae_max": 12.0
+    },
+    "uncertain_thresholds": {
+      "dhash_distance_max": 18,
+      "rgb_histogram_cosine_min": 0.94,
+      "thumbnail_mae_max": 28.0
+    },
+    "visual_cues": [
+      "same image dimensions",
+      "32x18 RGB thumbnail mean absolute error",
+      "64-bit difference-hash Hamming distance",
+      "16-bin-per-channel RGB histogram cosine similarity"
+    ]
+  },
+  "review_workflow": [
+    "Review each strong sequence as a contact sheet and split it when scene/sign identity changes.",
+    "Review every uncertain edge pair and decide join, split, or needs-source-metadata.",
+    "Spot-check adjacency-only boundaries for missed gradual transitions.",
+    "Record reviewer, date, decision, evidence and confidence; never copy proxy IDs into final group_id automatically.",
+    "Create final group-aware split only after all accepted groups are adjudicated."
+  ],
+  "schema_version": 1,
+  "status": "PROXY_ONLY_NOT_APPROVED_FOR_SPLITTING"
+}

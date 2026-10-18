@@ -1,0 +1,180 @@
+{
+  "artifact_count": 5,
+  "artifact_count_semantics": "EXCLUDES_MANIFEST_FILE",
+  "artifacts": [
+    {
+      "id": "adjudication",
+      "path": "docs/review/generated/wp9_bbox_0248_adjudication.json",
+      "root": "repo",
+      "sha256": "b600597496d5fbd2f16f554d320d84cf60928e909245a622dc34790ac5d954aa",
+      "size": 4529
+    },
+    {
+      "id": "derived_label_candidate",
+      "path": "docs/review/generated/wp9_bbox_0248_derived_candidate.txt",
+      "root": "repo",
+      "sha256": "8fcdd25dce463d7c57ef5f9f95ce1810db056d7d02e260e2126e3656c4a691b6",
+      "size": 90
+    },
+    {
+      "id": "layout_audit",
+      "path": "docs/review/generated/wp9_bbox_0248_layout_audit.json",
+      "root": "repo",
+      "sha256": "97c56b4d24ce72d02117bba5cc4f9f08864b6f46d0beceb4a69bb0e6394207d2",
+      "size": 1290
+    },
+    {
+      "id": "report",
+      "path": "docs/review/wp9_bbox_0248_adjudication_report.md",
+      "root": "repo",
+      "sha256": "e8af88cf6975d38a28a5f1bb07650a4e0431d479d28313247197ce96d458e81b",
+      "size": 3188
+    },
+    {
+      "id": "review_visual",
+      "path": "docs/review/assets/wp9/bbox_0248_review.png",
+      "root": "repo",
+      "sha256": "31030eb464cd8944576cbb0528156aa5cc7df048505bde1fe5ecaceb36fe99aa",
+      "size": 1219644
+    }
+  ],
+  "decision_id": "G0.4-bbox-0248",
+  "decision_status": "PENDING",
+  "derived_candidate_training_approved": false,
+  "evidence_boundary": "DECISION_SUPPORT_ONLY_NO_RAW_OVERWRITE_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+  "gate0": "BLOCKED",
+  "manifest_path": "docs/review/generated/wp9_bbox_0248_manifest.json",
+  "manifest_self_in_artifact_count": false,
+  "package": "M0-WP9",
+  "raw_source_unchanged": true,
+  "recommendation": "QUARANTINE_FROM_TRAINING_PENDING_OWNER_DECISION",
+  "relabel_authorized": false,
+  "schema_version": 1,
+  "selected_option": null,
+  "source_count": 17,
+  "sources": [
+    {
+      "id": "contract",
+      "path": "references/dataset01/wp9_bbox_0248_adjudication_contract.json",
+      "root": "repo",
+      "sha256": "0b0a87e1b1b8f4c1c2cac739eb87aa6441ec1cbfbdbad264a0f391231c002da5",
+      "size": 2736
+    },
+    {
+      "id": "raw_image_0247",
+      "path": "archive/images/0247.jpg",
+      "root": "raw",
+      "sha256": "c439730e326465b2a05f8279312581c0890ab8c10a2279289c9daa1e1aa502cc",
+      "size": 156015
+    },
+    {
+      "id": "raw_image_0248",
+      "path": "archive/images/0248.jpg",
+      "root": "raw",
+      "sha256": "07eab2035dc10b7b08be71d76c3c32ffdb960722839414f1e474da20c3ad0cbd",
+      "size": 154205
+    },
+    {
+      "id": "raw_label_0248",
+      "path": "archive/labels/0248.txt",
+      "root": "raw",
+      "sha256": "f4ec410f7bff3ee03f6110308e8e95f57c92bcc7ebf45ff3affcfd885b419c77",
+      "size": 80
+    },
+    {
+      "id": "raw_image_0249",
+      "path": "archive/images/0249.jpg",
+      "root": "raw",
+      "sha256": "7225644c63178646ba5a19a8ff1248ba08b65f792e147613d38deeb0346f230b",
+      "size": 152402
+    },
+    {
+      "id": "wp1_manifest",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/wp1_artifact_manifest.json",
+      "root": "repo",
+      "sha256": "28adbf21dd2057fe5fc7999daccaa52d1201ea0459ef1bb7475a780ed85c51c6",
+      "size": 2297
+    },
+    {
+      "id": "image_inventory",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv",
+      "root": "repo",
+      "sha256": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022",
+      "size": 733242
+    },
+    {
+      "id": "source_preservation",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/source_preservation_proof.json",
+      "root": "repo",
+      "sha256": "5ca3e769b9197cad19bcb75f553dd59fee6e3035e0cc86cd9693737f84a713d7",
+      "size": 783
+    },
+    {
+      "id": "wp2_manifest",
+      "path": "docs/review/generated/wp2_generated_manifest.json",
+      "root": "repo",
+      "sha256": "506ec141bef032282f90b3d35741ece49a43fed617c3dea93863d4c32330a505",
+      "size": 2113
+    },
+    {
+      "id": "wp2_bbox_review",
+      "path": "docs/review/generated/bbox_0248_review.json",
+      "root": "repo",
+      "sha256": "e1b8cc2c3a6d16e8dbff847b43e33450272e4dda21f46e6708e3aff5b1dba25f",
+      "size": 2016
+    },
+    {
+      "id": "wp2_bbox_visual",
+      "path": "docs/review/assets/bbox_0248_review.png",
+      "root": "repo",
+      "sha256": "3c3e3b872e7afa189d0307e2b9e3e637e275f6295ad1e793c0d797fd4325f598",
+      "size": 573211
+    },
+    {
+      "id": "wp4_manifest",
+      "path": "docs/review/generated/wp4_qcvn_manifest.json",
+      "root": "repo",
+      "sha256": "c60c09018900071cc66d8bc01db32300f4efc6a4316bda9f506819026400db1c",
+      "size": 7691
+    },
+    {
+      "id": "wp4_lineage",
+      "path": "docs/review/generated/wp4_qcvn_source_lineage.csv",
+      "root": "repo",
+      "sha256": "c9e90b01ef3be78797b58405d9c7a7fb9f7f8384498b876af23a25b22e0a8d19",
+      "size": 101965
+    },
+    {
+      "id": "wp4_atlas_page_013",
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+      "root": "repo",
+      "sha256": "55d38ab22415a4de5b70048a4e70fb0ec11a3ab6fa789ea957c0f2418f3e4ac4",
+      "size": 268721
+    },
+    {
+      "id": "grouping_proxy_edges",
+      "path": "docs/review/generated/grouping_proxy_edges.csv",
+      "root": "repo",
+      "sha256": "801e89db137154086496f37bc38b9659596c61e4a881734e80731aeaf2ded15c",
+      "size": 287375
+    },
+    {
+      "id": "decision_status",
+      "path": "docs/review/decision_status.json",
+      "root": "repo",
+      "sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+      "size": 7864
+    },
+    {
+      "id": "wp8_manifest",
+      "path": "docs/review/generated/wp8_taxonomy_manifest.json",
+      "root": "repo",
+      "sha256": "9d8fc460b8162874b4082940b0e7f3ceb174c068a92378974ebd93b55da20348",
+      "size": 9458
+    }
+  ],
+  "split_authorized": false,
+  "status": "M0_WP9_AWAITING_QA_DECISION_SUPPORT_ONLY",
+  "total_artifact_bytes": 1228741,
+  "training_authorized": false
+}

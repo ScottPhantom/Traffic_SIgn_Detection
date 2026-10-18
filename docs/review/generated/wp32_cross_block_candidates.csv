@@ -1,0 +1,72 @@
+row_id,kind,left_stem,right_stem,left_capture_group_id,right_capture_group_id,left_class_ids,right_class_ids,signal,thumb_mae,atlas_page,atlas_slot
+x001,CROSS_GROUP,0101,0113,D02-C0002,D02-C0004,49,49,label_geometry+thumbnail,0.2273,docs/review/assets/wp32/cross_block/page_001.jpg,1
+x002,CROSS_GROUP,0103,0137,D02-C0002,D02-C0006,49,49,label_geometry+thumbnail,0.2944,docs/review/assets/wp32/cross_block/page_001.jpg,2
+x003,CROSS_GROUP,0076,0413,D02-C0002,D02-C0020,49,49,label_geometry+thumbnail,0.1923,docs/review/assets/wp32/cross_block/page_001.jpg,3
+x004,CROSS_GROUP,0122,0135,D02-C0004,D02-C0006,49,49,label_geometry+thumbnail,0.1062,docs/review/assets/wp32/cross_block/page_001.jpg,4
+x005,CROSS_GROUP,0122,0186,D02-C0004,D02-C0008,49,49,label_geometry+thumbnail,0.3356,docs/review/assets/wp32/cross_block/page_002.jpg,1
+x006,CROSS_GROUP,0113,0408,D02-C0004,D02-C0020,49,49,label_geometry,0.5826,docs/review/assets/wp32/cross_block/page_002.jpg,2
+x007,CROSS_GROUP,0144,0186,D02-C0006,D02-C0008,49,49,label_geometry+thumbnail,0.1482,docs/review/assets/wp32/cross_block/page_002.jpg,3
+x008,CROSS_GROUP,0195,0212,D02-C0008,D02-C0010,49,49,label_geometry+thumbnail,0.1154,docs/review/assets/wp32/cross_block/page_002.jpg,4
+x009,CROSS_GROUP,0195,0246,D02-C0008,D02-C0012,49,49,thumbnail,0.3337,docs/review/assets/wp32/cross_block/page_003.jpg,1
+x010,CROSS_GROUP,0195,0273,D02-C0008,D02-C0014,49,49,thumbnail,0.3364,docs/review/assets/wp32/cross_block/page_003.jpg,2
+x011,CROSS_GROUP,0194,0347,D02-C0008,D02-C0016,49,49,thumbnail,0.3428,docs/review/assets/wp32/cross_block/page_003.jpg,3
+x012,CROSS_GROUP,0220,0242,D02-C0010,D02-C0012,49,49,label_geometry+thumbnail,0.0548,docs/review/assets/wp32/cross_block/page_003.jpg,4
+x013,CROSS_GROUP,0213,0272,D02-C0010,D02-C0014,49,49,thumbnail,0.3201,docs/review/assets/wp32/cross_block/page_004.jpg,1
+x014,CROSS_GROUP,0251,0269,D02-C0012,D02-C0014,49,49,thumbnail,0.1150,docs/review/assets/wp32/cross_block/page_004.jpg,2
+x015,CROSS_GROUP,0277,0347,D02-C0014,D02-C0016,49,49,thumbnail,0.1758,docs/review/assets/wp32/cross_block/page_004.jpg,3
+x016,CROSS_GROUP,0356,0378,D02-C0016,D02-C0018,49,49,label_geometry+thumbnail,0.1543,docs/review/assets/wp32/cross_block/page_004.jpg,4
+x017,CROSS_GROUP,0387,0405,D02-C0018,D02-C0020,49,49,label_geometry+thumbnail,0.1297,docs/review/assets/wp32/cross_block/page_005.jpg,1
+x018,CROSS_GROUP,0518,0529,D02-C0023,D02-C0024,0 1,0 1,label_geometry+thumbnail,0.1910,docs/review/assets/wp32/cross_block/page_005.jpg,2
+x019,CROSS_GROUP,0528,0530,D02-C0023,D02-C0025,2 3 41 50,2 3 13 41 50 51,label_geometry+thumbnail,0.1342,docs/review/assets/wp32/cross_block/page_005.jpg,3
+x020,CROSS_GROUP,0466,0546,D02-C0023,D02-C0026,0 1,0 1,label_geometry+thumbnail,0.1950,docs/review/assets/wp32/cross_block/page_005.jpg,4
+x021,CROSS_GROUP,0521,1056,D02-C0023,D02-C0044,2 3 41 50,0 2 3 10 17 23,label_geometry,0.5180,docs/review/assets/wp32/cross_block/page_006.jpg,1
+x022,CROSS_GROUP,0529,0540,D02-C0024,D02-C0026,0 1,0 1,label_geometry+thumbnail,0.2148,docs/review/assets/wp32/cross_block/page_006.jpg,2
+x023,CROSS_GROUP,0539,0541,D02-C0025,D02-C0026,2 3,2 3,thumbnail,0.1617,docs/review/assets/wp32/cross_block/page_006.jpg,3
+x024,CROSS_GROUP,0585,0691,D02-C0027,D02-C0031,10 16 18 41 43,10 34 45,label_geometry,0.5696,docs/review/assets/wp32/cross_block/page_006.jpg,4
+x025,CROSS_GROUP,0586,1167,D02-C0027,D02-C0049,10 16 18 41 43,10 30 32,label_geometry,0.5743,docs/review/assets/wp32/cross_block/page_007.jpg,1
+x026,CROSS_GROUP,0685,0718,D02-C0031,D02-C0033,7 10,10 34,label_geometry,0.5962,docs/review/assets/wp32/cross_block/page_007.jpg,2
+x027,CROSS_GROUP,0681,1100,D02-C0031,D02-C0044,7 10,2 3 10,label_geometry,0.5921,docs/review/assets/wp32/cross_block/page_007.jpg,3
+x028,CROSS_GROUP,0711,0720,D02-C0032,D02-C0034,32 46,32 46,label_geometry+thumbnail,0.2471,docs/review/assets/wp32/cross_block/page_007.jpg,4
+x029,CROSS_GROUP,0729,0741,D02-C0034,D02-C0036,32 46,32 46,label_geometry,0.3648,docs/review/assets/wp32/cross_block/page_008.jpg,1
+x030,CROSS_GROUP,0750,0837,D02-C0036,D02-C0039,32 46,32 46,thumbnail,0.2696,docs/review/assets/wp32/cross_block/page_008.jpg,2
+x031,CROSS_GROUP,0751,3043,D02-C0037,D02-C0082,10 14 18 22 23 24 31 39 41 43 46,6 10 23 38 46,label_geometry,0.5335,docs/review/assets/wp32/cross_block/page_008.jpg,3
+x032,CROSS_GROUP,0871,0910,D02-C0041,D02-C0043,7,7,label_geometry+thumbnail,0.1130,docs/review/assets/wp32/cross_block/page_008.jpg,4
+x033,CROSS_GROUP,0871,1111,D02-C0041,D02-C0045,7,7,thumbnail,0.2928,docs/review/assets/wp32/cross_block/page_009.jpg,1
+x034,CROSS_GROUP,0917,1110,D02-C0043,D02-C0045,7,7,label_geometry+thumbnail,0.1946,docs/review/assets/wp32/cross_block/page_009.jpg,2
+x035,CROSS_GROUP,1119,1125,D02-C0045,D02-C0048,7,7,label_geometry+thumbnail,0.3133,docs/review/assets/wp32/cross_block/page_009.jpg,3
+x036,CROSS_GROUP,1144,1246,D02-C0048,D02-C0051,7,7,label_geometry+thumbnail,0.2133,docs/review/assets/wp32/cross_block/page_009.jpg,4
+x037,CROSS_GROUP,1168,2542,D02-C0049,D02-C0080,10 30 32,10 32 45,label_geometry,0.5121,docs/review/assets/wp32/cross_block/page_010.jpg,1
+x038,CROSS_GROUP,1255,1318,D02-C0051,D02-C0055,7,7,label_geometry+thumbnail,0.2936,docs/review/assets/wp32/cross_block/page_010.jpg,2
+x039,CROSS_GROUP,1273,1274,D02-C0052,D02-C0053,23,41,thumbnail,0.2953,docs/review/assets/wp32/cross_block/page_010.jpg,3
+x040,CROSS_GROUP,1361,1427,D02-C0057,D02-C0059,7 10 46,7 10 46,label_geometry+thumbnail,0.2541,docs/review/assets/wp32/cross_block/page_010.jpg,4
+x041,CROSS_GROUP,1436,1450,D02-C0059,D02-C0061,7 10 46,7 10 46,label_geometry+thumbnail,0.1464,docs/review/assets/wp32/cross_block/page_011.jpg,1
+x042,CROSS_GROUP,1518,1537,D02-C0062,D02-C0064,29,29,label_geometry+thumbnail,0.0490,docs/review/assets/wp32/cross_block/page_011.jpg,2
+x043,CROSS_GROUP,1516,1622,D02-C0062,D02-C0066,29,20 29 38 39 40,thumbnail,0.2648,docs/review/assets/wp32/cross_block/page_011.jpg,3
+x044,CROSS_GROUP,1516,1683,D02-C0062,D02-C0068,29,20 29 38 39 40,thumbnail,0.3107,docs/review/assets/wp32/cross_block/page_011.jpg,4
+x045,CROSS_GROUP,1546,1622,D02-C0064,D02-C0066,20 29 38 39 40,20 29 38 39 40,label_geometry+thumbnail,0.0517,docs/review/assets/wp32/cross_block/page_012.jpg,1
+x046,CROSS_GROUP,1546,1681,D02-C0064,D02-C0068,20 29 38 39 40,20 29 38 39 40,thumbnail,0.2810,docs/review/assets/wp32/cross_block/page_012.jpg,2
+x047,CROSS_GROUP,1631,1681,D02-C0066,D02-C0068,20 29 38 39 40,20 29 38 39 40,label_geometry+thumbnail,0.0716,docs/review/assets/wp32/cross_block/page_012.jpg,3
+x048,CROSS_GROUP,1715,1729,D02-C0068,D02-C0070,10,10,label_geometry+thumbnail,0.0449,docs/review/assets/wp32/cross_block/page_012.jpg,4
+x049,CROSS_GROUP,1713,1767,D02-C0068,D02-C0072,10,10,label_geometry+thumbnail,0.3111,docs/review/assets/wp32/cross_block/page_013.jpg,1
+x050,CROSS_GROUP,1706,1903,D02-C0068,D02-C0074,,10 39 40,thumbnail,0.3460,docs/review/assets/wp32/cross_block/page_013.jpg,2
+x051,CROSS_GROUP,1738,1769,D02-C0070,D02-C0072,10,10,label_geometry+thumbnail,0.0924,docs/review/assets/wp32/cross_block/page_013.jpg,3
+x052,CROSS_GROUP,1775,1879,D02-C0072,D02-C0074,10,10,label_geometry+thumbnail,0.3227,docs/review/assets/wp32/cross_block/page_013.jpg,4
+x053,CROSS_GROUP,1937,1952,D02-C0074,D02-C0076,10 23 39,10 39,label_geometry+thumbnail,0.2995,docs/review/assets/wp32/cross_block/page_014.jpg,1
+x054,CROSS_GROUP,2268,3016,D02-C0079,D02-C0082,10,6 10 23 38,label_geometry,0.5711,docs/review/assets/wp32/cross_block/page_014.jpg,2
+x055,C0079_EDGE_edge_002045,2070,2071,D02-C0079,D02-C0079,23,10 18 23,wp31_qa_p1_2_reReview,0.7512,docs/review/assets/wp32/cross_block/page_014.jpg,3
+x056,C0079_EDGE_edge_002055,2080,2081,D02-C0079,D02-C0079,10 18 23,23,wp31_qa_p1_2_reReview,0.7011,docs/review/assets/wp32/cross_block/page_014.jpg,4
+x057,C0079_EDGE_edge_002056,2081,2082,D02-C0079,D02-C0079,23,10 18 23,wp31_qa_p1_2_reReview,0.7399,docs/review/assets/wp32/cross_block/page_015.jpg,1
+x058,C0079_EDGE_edge_002066,2091,2092,D02-C0079,D02-C0079,10 23,23,wp31_qa_p1_2_reReview,0.7821,docs/review/assets/wp32/cross_block/page_015.jpg,2
+x059,C0079_EDGE_edge_002067,2092,2093,D02-C0079,D02-C0079,23,10 23,wp31_qa_p1_2_reReview,0.7649,docs/review/assets/wp32/cross_block/page_015.jpg,3
+x060,C0079_EDGE_edge_002077,2102,2103,D02-C0079,D02-C0079,5 10 23,23,wp31_qa_p1_2_reReview,0.8616,docs/review/assets/wp32/cross_block/page_015.jpg,4
+x061,C0079_EDGE_edge_002078,2103,2104,D02-C0079,D02-C0079,23,5 10 23,wp31_qa_p1_2_reReview,0.8086,docs/review/assets/wp32/cross_block/page_016.jpg,1
+x062,C0079_EDGE_edge_002086,2111,2112,D02-C0079,D02-C0079,5,23,wp31_qa_p1_2_reReview,0.8177,docs/review/assets/wp32/cross_block/page_016.jpg,2
+x063,C0079_EDGE_edge_002087,2112,2113,D02-C0079,D02-C0079,23,5,wp31_qa_p1_2_reReview,0.8449,docs/review/assets/wp32/cross_block/page_016.jpg,3
+x064,C0079_SUBSEQUENCE,2070,2081,D02-C0079,D02-C0079,23,23,wp31_qa_p1_2_subsequence,0.2856,docs/review/assets/wp32/cross_block/page_016.jpg,4
+x065,C0079_SUBSEQUENCE,2081,2092,D02-C0079,D02-C0079,23,23,wp31_qa_p1_2_subsequence,0.2449,docs/review/assets/wp32/cross_block/page_017.jpg,1
+x066,C0079_SUBSEQUENCE,2092,2103,D02-C0079,D02-C0079,23,23,wp31_qa_p1_2_subsequence,0.1592,docs/review/assets/wp32/cross_block/page_017.jpg,2
+x067,C0079_SUBSEQUENCE,2103,2112,D02-C0079,D02-C0079,23,23,wp31_qa_p1_2_subsequence,0.3121,docs/review/assets/wp32/cross_block/page_017.jpg,3
+x068,C0079_SUBSEQUENCE,2112,2122,D02-C0079,D02-C0079,23,23,wp31_qa_p1_2_subsequence,0.2429,docs/review/assets/wp32/cross_block/page_017.jpg,4
+x069,C0079_SUBSEQUENCE,2122,2133,D02-C0079,D02-C0079,23,23,wp31_qa_p1_2_subsequence,0.2209,docs/review/assets/wp32/cross_block/page_018.jpg,1
+x070,C0079_SUBSEQUENCE,2133,2144,D02-C0079,D02-C0079,23,23,wp31_qa_p1_2_subsequence,0.2029,docs/review/assets/wp32/cross_block/page_018.jpg,2
+x071,C0079_SUBSEQUENCE,2144,2155,D02-C0079,D02-C0079,23,23,wp31_qa_p1_2_subsequence,0.2719,docs/review/assets/wp32/cross_block/page_018.jpg,3

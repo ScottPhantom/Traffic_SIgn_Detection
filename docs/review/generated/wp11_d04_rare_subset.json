@@ -1,0 +1,2205 @@
+{
+  "all_owner_status_pending": true,
+  "automatic_semantic_merge_allowed": false,
+  "effective_independent_support": "UNKNOWN_PENDING_D02",
+  "evidence_boundary": "D04_DECISION_SUPPORT_ONLY_NO_OWNER_APPROVAL_NO_SEMANTIC_MERGE_NO_RAW_MUTATION_NO_SPLIT_NO_TRAINING",
+  "extreme_class_ids": [
+    44,
+    51
+  ],
+  "gate0": "BLOCKED",
+  "package": "M0-WP11",
+  "policy": "box_count < 50",
+  "rare_class_ids": [
+    1,
+    4,
+    9,
+    11,
+    15,
+    19,
+    21,
+    25,
+    27,
+    28,
+    29,
+    31,
+    33,
+    37,
+    42,
+    43,
+    44,
+    47,
+    48,
+    51
+  ],
+  "rare_count": 20,
+  "recommendation_counts": {
+    "COLLECT_MORE": 5,
+    "OWNER_REVIEW_REQUIRED": 15
+  },
+  "rows": [
+    {
+      "class_id": 1,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "W.205c",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Equal-level Intersection",
+      "name_vi": "Đường giao nhau (ngã ba bên phải)",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 22,
+        "eligible_image_count": 22,
+        "eligible_train_image_count_descriptive_only": 17,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/0492.jpg",
+          "image_sha256": "e9395abe3c69fd9f7ad05af3eb7ade624ab236b05b2902d8e9c6f1e41ec6035a",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0492.txt",
+          "label_sha256": "4d536de7ca0bf9e9e4d90eb189537a89e2acaacfb020719a8ae5461bd4254438",
+          "source_bbox_xyxy": [
+            480.0,
+            74.99979,
+            550.99968,
+            120.99969
+          ],
+          "split": "train",
+          "stem": "0492",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_001.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/0499.jpg",
+          "image_sha256": "d4a7840dba5d07e22e1458dc9761c46d64606c8c126c88d9290835d7e5b3a327",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0499.txt",
+          "label_sha256": "0551b8e272bb2861b5e29ff73c905e1887d44dd2242d0f2e6ce113101cf601d3",
+          "source_bbox_xyxy": [
+            742.00032,
+            1.000079999999996,
+            837.0000000000001,
+            95.00004
+          ],
+          "split": "train",
+          "stem": "0499",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_001.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/0507.jpg",
+          "image_sha256": "cdc248453d32f069acee6c44414351706c7d4d6c6e01420b640eaf513e40bc1c",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0507.txt",
+          "label_sha256": "7c36bc853a5ddf8a13598619a4f3270d7eac70ebc9e12e76d23a2d3b64b1a10f",
+          "source_bbox_xyxy": [
+            411.99984,
+            116.00009999999999,
+            450.99984,
+            145.00026
+          ],
+          "split": "test",
+          "stem": "0507",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_001.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 5,
+        "train": 17,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 22,
+        "image_count": 22
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "PARTIAL_ANALYSIS_ONLY",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 4,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "W.205a",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Intersection",
+      "name_vi": "Giao nhau với đường đồng cấp",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 33,
+        "eligible_image_count": 33,
+        "eligible_train_image_count_descriptive_only": 23,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/1442.jpg",
+          "image_sha256": "324fb57c6271d51b0e1ca9b80879dc39a602b4eb9a5319e150f4adacd0a45ef5",
+          "label_line_number": 1,
+          "label_path": "archive/labels/1442.txt",
+          "label_sha256": "8595128b90ad716394e45c3313a5d06e9a81c50e62d0bf9d6346407f9839248b",
+          "source_bbox_xyxy": [
+            405.99983999999995,
+            160.99965,
+            449.99951999999996,
+            197.99991
+          ],
+          "split": "train",
+          "stem": "1442",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_002.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/1726.jpg",
+          "image_sha256": "4ddd6a6abb740c6aafc00d34b1e527d11d8bf6a3dc718eda78d8394adae5b6f0",
+          "label_line_number": 1,
+          "label_path": "archive/labels/1726.txt",
+          "label_sha256": "99aec4600ba76c2cd4f45d67bcc354678d4931af81d20d61baa31cda3956e68d",
+          "source_bbox_xyxy": [
+            639.99936,
+            21.999869999999998,
+            736.99968,
+            95.99984999999998
+          ],
+          "split": "test",
+          "stem": "1726",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_002.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/1725.jpg",
+          "image_sha256": "cb7e89d887b11e91db545d939fb5a6cf17ce2c8d2bc31d71fbec0b14ccb7836f",
+          "label_line_number": 1,
+          "label_path": "archive/labels/1725.txt",
+          "label_sha256": "c65cf423ae26f33af37a68d7d1f42b31eecbb0ff7596e2fc779264bd410efe19",
+          "source_bbox_xyxy": [
+            591.0,
+            58.00005000000001,
+            664.0003199999999,
+            119.00007
+          ],
+          "split": "train",
+          "stem": "1725",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_002.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 10,
+        "train": 23,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 33,
+        "image_count": 33
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "PARTIAL_ANALYSIS_ONLY",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 9,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "R.303",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Roundabout",
+      "name_vi": "Nơi giao nhau chạy theo vòng xuyến",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 43,
+        "eligible_image_count": 43,
+        "eligible_train_image_count_descriptive_only": 35,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/0164.jpg",
+          "image_sha256": "9152168a3490903d892abe6ca5987388fe8ded55ef2543465aad4c4fc73f82af",
+          "label_line_number": 4,
+          "label_path": "archive/labels/0164.txt",
+          "label_sha256": "0bfb016b69b521d257e777d89ebdc9211bcc1f57324eb790f6cfc036c66b517a",
+          "source_bbox_xyxy": [
+            329.99951999999996,
+            252.99999,
+            350.99951999999996,
+            269.99973
+          ],
+          "split": "train",
+          "stem": "0164",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/0157.jpg",
+          "image_sha256": "909b10aab31192f1c79c31485bf6543cf1bf43eb26c99b5d768c3edf24e5335b",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0157.txt",
+          "label_sha256": "665ea7325ff767837fc8d0839ec65e73b0a68f6581fab24b90380bc67238a225",
+          "source_bbox_xyxy": [
+            303.99984,
+            260.99982,
+            317.99952,
+            274.99986
+          ],
+          "split": "train",
+          "stem": "0157",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/0172.jpg",
+          "image_sha256": "18b86878250a1089166ea48514434a4df978ad42f2f6bd4614688ba4271a0735",
+          "label_line_number": 4,
+          "label_path": "archive/labels/0172.txt",
+          "label_sha256": "334006580c66753158d5fba5fbdc0596359ed295f746de07cec36aa19ed20ffe",
+          "source_bbox_xyxy": [
+            368.00016,
+            203.00003999999998,
+            401.00016000000005,
+            231.00011999999998
+          ],
+          "split": "train",
+          "stem": "0172",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 8,
+        "train": 35,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 43,
+        "image_count": 43
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "DIRECT_ANALYSIS_ONLY",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 11,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "I.409",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "U-Turn Allowed",
+      "name_vi": "Chỗ quay xe",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 26,
+        "eligible_image_count": 26,
+        "eligible_train_image_count_descriptive_only": 18,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/0223.jpg",
+          "image_sha256": "c2755d2904fe722b3ff06f3cd380a83bf1783f0c6de3d3d38156d71140070615",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0223.txt",
+          "label_sha256": "daf6db396ec1767b961726ffbb410bbede5075722dc2c8c062b04c8e4247cb37",
+          "source_bbox_xyxy": [
+            361.99968,
+            227.99988,
+            385.99968,
+            254.99988000000002
+          ],
+          "split": "test",
+          "stem": "0223",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/0239.jpg",
+          "image_sha256": "e0b77a1624ba2e2a7c730e49b64b3635685c2a1ee9b5929b80d9ba53af4aadfb",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0239.txt",
+          "label_sha256": "0d1c0a1c735dc09808f863ae18254f24b90197ca2eec16bb6e79c32e7e727d6b",
+          "source_bbox_xyxy": [
+            220.99967999999996,
+            120.99996,
+            306.0,
+            212.99976
+          ],
+          "split": "test",
+          "stem": "0239",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/0240.jpg",
+          "image_sha256": "35aa6fc53c70f35770ffd2c24db777c361bead88985056c5c36eeba0f412ba08",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0240.txt",
+          "label_sha256": "c555f2d21c93aee816125c46622f2714c0eb946a45f3515834fa915d633c6f0c",
+          "source_bbox_xyxy": [
+            183.00000000000003,
+            80.00018999999999,
+            277.99968,
+            181.00017000000003
+          ],
+          "split": "test",
+          "stem": "0240",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 8,
+        "train": 18,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 26,
+        "image_count": 26
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "NONE",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 15,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "W.203c",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Narrow Road on the Right",
+      "name_vi": "Đường bị thu hẹp về phía phải",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 29,
+        "eligible_image_count": 29,
+        "eligible_train_image_count_descriptive_only": 18,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/0454.jpg",
+          "image_sha256": "d42a6a319c92ce102e42231a54c57603a68941644af338c56985e8c72599535f",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0454.txt",
+          "label_sha256": "318b88672c69bdfe6a0e0a9ebebf817e99d4f13063210dfca78286e96ed2ee81",
+          "source_bbox_xyxy": [
+            342.99984,
+            179.00028,
+            375.99984,
+            205.00019999999998
+          ],
+          "split": "test",
+          "stem": "0454",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_004.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/0442.jpg",
+          "image_sha256": "1de1073fa7074c05437fae3f910f8bb396154bbe7886f272a51f825d6bc85fe1",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0442.txt",
+          "label_sha256": "efce243833edfe2a2c525d881c8d25c898a20d2b77892be66b565a89c0aa4592",
+          "source_bbox_xyxy": [
+            255.99984000000003,
+            220.99985999999998,
+            275.99952,
+            237.00006000000002
+          ],
+          "split": "train",
+          "stem": "0442",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_004.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/0463.jpg",
+          "image_sha256": "f720481d77ab5797d2521d4ce86dc7bf1b9df8ee786f2a21facc99b3394f0e5e",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0463.txt",
+          "label_sha256": "8a49159ea515225db3a02da2c7eadcea6844badbc2a31dcc5953e6644b814122",
+          "source_bbox_xyxy": [
+            608.00064,
+            4.000049999999999,
+            697.00032,
+            92.00007
+          ],
+          "split": "train",
+          "stem": "0463",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_004.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 11,
+        "train": 18,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 29,
+        "image_count": 29
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "DIRECT_ANALYSIS_ONLY",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 19,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "P.124d",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "No U-Turn and No Right Turn",
+      "name_vi": "Cấm rẽ phải và quay đầu",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 29,
+        "eligible_image_count": 29,
+        "eligible_train_image_count_descriptive_only": 22,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/0601.jpg",
+          "image_sha256": "9d3816a992661dc581681ad124dc6445985e49b931e537e05550c77fc8ed1894",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0601.txt",
+          "label_sha256": "1083bc29e8ccfe24c0e435d1c87bb27f7006d36497a409131763f46ae8b9f7db",
+          "source_bbox_xyxy": [
+            411.99984,
+            132.00003,
+            446.00016000000005,
+            175.99977
+          ],
+          "split": "train",
+          "stem": "0601",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_005.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/0595.jpg",
+          "image_sha256": "59d4db5d55482531e9df24192c9541b4b213bbfb29553db224ce0ade08b12b3c",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0595.txt",
+          "label_sha256": "9d954118c331efeed85c07c11507f9240bc101951083b91ffb793ce990abb8b2",
+          "source_bbox_xyxy": [
+            418.00032,
+            163.99962,
+            441.00000000000006,
+            193.99986000000004
+          ],
+          "split": "train",
+          "stem": "0595",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_005.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/0598.jpg",
+          "image_sha256": "2d85c941f8763674fd0586d860b4927f11ed8779c3f857d7f91b0531ca90c143",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0598.txt",
+          "label_sha256": "5ff6e2d83f5273596fedf58b86c7a491144602e7a4df3e44323d1015a1ecd530",
+          "source_bbox_xyxy": [
+            417.99984,
+            132.00002999999998,
+            446.00016000000005,
+            167.00012999999998
+          ],
+          "split": "train",
+          "stem": "0598",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_005.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 7,
+        "train": 22,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 29,
+        "image_count": 29
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "NONE",
+        "native_recommendation": "SEMANTIC_REVIEW_REQUIRED",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "COMPOSITE_SIGN_REVIEW"
+      }
+    },
+    {
+      "class_id": 21,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "QUARANTINE_FROM_MODEL_COMPARISON_PENDING_DATA",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "Observed support is too small for reliable class-level model comparison; collect more independent-group evidence before evaluation.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "COLLECT_MORE"
+      },
+      "dataset_code": "W.203b",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Narrow Road on the Left",
+      "name_vi": "Đường bị thu hẹp về phía trái",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 11,
+        "eligible_image_count": 11,
+        "eligible_train_image_count_descriptive_only": 8,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/0733.jpg",
+          "image_sha256": "62ab6cfb04368295c0232dd37b077bbe7ee42f107d23f326cf20c6f6b8cb667a",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0733.txt",
+          "label_sha256": "9bc0942e21485b9076af7189d67063912c4dc0e0afb32d8e94f39ee6d507fa1d",
+          "source_bbox_xyxy": [
+            340.00032,
+            149.99985,
+            382.00032,
+            184.99994999999998
+          ],
+          "split": "train",
+          "stem": "0733",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_006.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/0738.jpg",
+          "image_sha256": "a49f9da3c883a06e819e7428501e5d84d8f94040e324afb32585ede2323acf86",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0738.txt",
+          "label_sha256": "8c7c424cf893d2d683d1e4ed7fd2de4f5c72605a7ab4c03b50f0df06d80d91e7",
+          "source_bbox_xyxy": [
+            438.99984,
+            78.00003,
+            515.00016,
+            154.00017
+          ],
+          "split": "test",
+          "stem": "0738",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_006.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/0740.jpg",
+          "image_sha256": "bde0e2c489421e501e1a48954bf4df6ebb5dccc92f10ac61902fa88c541d8450",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0740.txt",
+          "label_sha256": "0a55dcb9afc1fe78702ee7d6eb8ae5b9a3c4ad16db3ea44610b0af1df771bc22",
+          "source_bbox_xyxy": [
+            704.00064,
+            0.9998100000000032,
+            799.00032,
+            100.99971
+          ],
+          "split": "train",
+          "stem": "0740",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_006.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 3,
+        "train": 8,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 11,
+        "image_count": 11
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "NONE",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 25,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "S.505a*Xe máy",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Motorcycles Only",
+      "name_vi": "Chỉ dành cho xe máy*",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 25,
+        "eligible_image_count": 25,
+        "eligible_train_image_count_descriptive_only": 21,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/1277.jpg",
+          "image_sha256": "88e467d5288d8214665b36f0656a1476dbeeb5b26f5ed4f74161342108287ef7",
+          "label_line_number": 2,
+          "label_path": "archive/labels/1277.txt",
+          "label_sha256": "b7f3513dc1e06258dfcd17e1710632d9f5b30b0a7dbb4907bfec2678100b48d8",
+          "source_bbox_xyxy": [
+            809.0001599999999,
+            459.00026999999994,
+            831.00048,
+            476.00001000000003
+          ],
+          "split": "train",
+          "stem": "1277",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/1289.jpg",
+          "image_sha256": "afc3e61179f97c66d6c4933236697bb96b8d8fdfaaf4620000287630089d320d",
+          "label_line_number": 1,
+          "label_path": "archive/labels/1289.txt",
+          "label_sha256": "c4a046f45135c3c7664dd81d8096fa2a96cb7d3712fc0750f09d6b3493ce3336",
+          "source_bbox_xyxy": [
+            785.00016,
+            503.99982,
+            825.0004799999999,
+            530.99982
+          ],
+          "split": "train",
+          "stem": "1289",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/1423.jpg",
+          "image_sha256": "799c6f035580825ed24ca178283f844e1073ddbaf01d26d7084f72ea85084b27",
+          "label_line_number": 3,
+          "label_path": "archive/labels/1423.txt",
+          "label_sha256": "4e49c0bfa044cf1311918c0ac7c524106ffd6aca77c2011839dc27b14f6cba29",
+          "source_bbox_xyxy": [
+            867.9998400000001,
+            292.00014,
+            908.00016,
+            315.99989999999997
+          ],
+          "split": "train",
+          "stem": "1423",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 4,
+        "train": 21,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 25,
+        "image_count": 25
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": true,
+        "gtsrb_disposition": "NONE",
+        "native_recommendation": "SEMANTIC_REVIEW_REQUIRED",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "SUPPLEMENTARY_SIGN_REVIEW"
+      }
+    },
+    {
+      "class_id": 27,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "W.225",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Children Present",
+      "name_vi": "Trẻ em",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 36,
+        "eligible_image_count": 36,
+        "eligible_train_image_count_descriptive_only": 28,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/1064.jpg",
+          "image_sha256": "dea5ff6bde554ad8f9ac6a4c6401b62f6d06032a115a17cd5e46cd7743091fd3",
+          "label_line_number": 4,
+          "label_path": "archive/labels/1064.txt",
+          "label_sha256": "6e855a538145e2d7d61c45ae534f9231e280325dbbb656f8e2c8f061802d75e7",
+          "source_bbox_xyxy": [
+            380.99952,
+            298.00008,
+            395.99952,
+            314.00028000000003
+          ],
+          "split": "train",
+          "stem": "1064",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/1070.jpg",
+          "image_sha256": "b47f30b0bd26ea3ac5725caddfa4af59293893b6d931653f7d404f4dd526043a",
+          "label_line_number": 4,
+          "label_path": "archive/labels/1070.txt",
+          "label_sha256": "325c41e3b303245b85a4d262d096bc1e0b6cd939da1a501cb7486e55b281598f",
+          "source_bbox_xyxy": [
+            436.99968,
+            233.00000999999997,
+            456.00000000000006,
+            251.99991
+          ],
+          "split": "test",
+          "stem": "1070",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/1068.jpg",
+          "image_sha256": "ff3adcbcbea5e7ab223c42851d437ab88b9f848a0525c1fc7e12ee7846fac1dc",
+          "label_line_number": 4,
+          "label_path": "archive/labels/1068.txt",
+          "label_sha256": "05f343adf53fb6d0d82c0777cb2591b931fe6f1e2fc871e2d48773918eaa2ef0",
+          "source_bbox_xyxy": [
+            427.00032,
+            255.99996,
+            444.0,
+            272.00016
+          ],
+          "split": "test",
+          "stem": "1068",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 8,
+        "train": 28,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 36,
+        "image_count": 36
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "DIRECT_ANALYSIS_ONLY",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 28,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "S.505a*Xe tải và công",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Trucks and Containers",
+      "name_vi": "Xe tải và xe công*",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 27,
+        "eligible_image_count": 27,
+        "eligible_train_image_count_descriptive_only": 19,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/2898.jpg",
+          "image_sha256": "7d99f61fe8da0e607cf84b0cd08fe277178f7e4c6a5f4b97ab0f25394960be6d",
+          "label_line_number": 10,
+          "label_path": "archive/labels/2898.txt",
+          "label_sha256": "ea9645da4d41478129a45305dfab0485ce896eb2da2a7ab45ba61e445db131b1",
+          "source_bbox_xyxy": [
+            255.99936000000002,
+            246.00078000000002,
+            289.00032,
+            280.00026
+          ],
+          "split": "train",
+          "stem": "2898",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/2904.jpg",
+          "image_sha256": "8ae4cf7b60210b41f73b932691fdee645a0a4e24211ef6e2246295e0f5d18a98",
+          "label_line_number": 6,
+          "label_path": "archive/labels/2904.txt",
+          "label_sha256": "cf3fb4232f3728eaffb3f24a4bf472cec77237011e805248779fde9f1bde4efb",
+          "source_bbox_xyxy": [
+            152.00064,
+            169.00002,
+            190.00128,
+            208.99998
+          ],
+          "split": "train",
+          "stem": "2904",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/2896.jpg",
+          "image_sha256": "924768bc89ccb7b7aaedf13b2a4b899d2924a6eab7e9317e47ce76b681775b57",
+          "label_line_number": 11,
+          "label_path": "archive/labels/2896.txt",
+          "label_sha256": "cb6d29c7ff50b1653d59514b6b6a98de09fcada58f0bc6034f4df74701bb5b8c",
+          "source_bbox_xyxy": [
+            326.00064,
+            247.00032000000002,
+            360.0,
+            279.00072
+          ],
+          "split": "train",
+          "stem": "2896",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 8,
+        "train": 19,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 27,
+        "image_count": 27
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": true,
+        "gtsrb_disposition": "NONE",
+        "native_recommendation": "SEMANTIC_REVIEW_REQUIRED",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "SUPPLEMENTARY_SIGN_REVIEW"
+      }
+    },
+    {
+      "class_id": 29,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "P.104",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "No Motorcycles Allowed",
+      "name_vi": "Cấm mô tô và xe máy",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 45,
+        "eligible_image_count": 45,
+        "eligible_train_image_count_descriptive_only": 39,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/1538.jpg",
+          "image_sha256": "75eacfbc9ac19fe2d4ca28addd56776404267bec2cc40bec167b3c8ec916d0d5",
+          "label_line_number": 1,
+          "label_path": "archive/labels/1538.txt",
+          "label_sha256": "9714567968a985a3ea08294de383cc306ee60e8290b1ef12592da0217e372db6",
+          "source_bbox_xyxy": [
+            456.77184,
+            218.49129,
+            482.15424,
+            244.87839
+          ],
+          "split": "test",
+          "stem": "1538",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/1544.jpg",
+          "image_sha256": "c3c9b9ff12529ed372f222dba3f5dd1385e155f9781e822d0c4ab883768e8f3d",
+          "label_line_number": 1,
+          "label_path": "archive/labels/1544.txt",
+          "label_sha256": "1c6c5eae0238d2c2a66ea3ec7d561f1cf01b5ca30a768b9601b7befc1edeaace",
+          "source_bbox_xyxy": [
+            473.00016,
+            190.00008,
+            500.00015999999994,
+            214.99992
+          ],
+          "split": "train",
+          "stem": "1544",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/1695.jpg",
+          "image_sha256": "c965b75e0c5d42d24400a6fcfe8d48f45fb6addb37eccd79aece9feefb813199",
+          "label_line_number": 1,
+          "label_path": "archive/labels/1695.txt",
+          "label_sha256": "afe5c6c4c66188a65286e0f558d53ff7488b0aa1ff0c374e670c38b309a23cc2",
+          "source_bbox_xyxy": [
+            310.00032,
+            87.00021,
+            353.00064,
+            135.00026999999997
+          ],
+          "split": "train",
+          "stem": "1695",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 6,
+        "train": 39,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 45,
+        "image_count": 45
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "NONE",
+        "native_recommendation": "CORRECT_CODE_OR_NAME_PROPOSAL",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 31,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "Camera",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Road with Surveillance Camera",
+      "name_vi": "Đường có camera giám sát",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 38,
+        "eligible_image_count": 38,
+        "eligible_train_image_count_descriptive_only": 30,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/1322.jpg",
+          "image_sha256": "1316c496d4476602d929d1691a36ff9bf908c5cbeea93bf59b80e704ef5f71bc",
+          "label_line_number": 1,
+          "label_path": "archive/labels/1322.txt",
+          "label_sha256": "110c2a82bfc2570a6f7fd3302a26c80a5da70d743d3daf3e7eff8028c5bc694d",
+          "source_bbox_xyxy": [
+            350.00019000000003,
+            346.00032,
+            423.00008999999994,
+            419.00064000000003
+          ],
+          "split": "test",
+          "stem": "1322",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/1323.jpg",
+          "image_sha256": "acf5acb6e89097f985959c297a3593ba47f0b5d1e2ca61b21babdba86b84dd52",
+          "label_line_number": 1,
+          "label_path": "archive/labels/1323.txt",
+          "label_sha256": "52867eb9f77ffbaf77818d174f649a9446b825683adde9f880124dc2c4a15a7c",
+          "source_bbox_xyxy": [
+            342.00009,
+            401.99999999999994,
+            427.99995,
+            480.0
+          ],
+          "split": "test",
+          "stem": "1323",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/0771.jpg",
+          "image_sha256": "c047957a73cddc673a23feb3d0d932325a47f9a83a214c39786b78ee03e2fd21",
+          "label_line_number": 10,
+          "label_path": "archive/labels/0771.txt",
+          "label_sha256": "925fdc17aef03cedf23396d856daa84f51b85e65ad8478474343afaf7a0ea4bd",
+          "source_bbox_xyxy": [
+            911.00016,
+            325.99989000000005,
+            945.00048,
+            375.00003000000004
+          ],
+          "split": "train",
+          "stem": "0771",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 8,
+        "train": 30,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 38,
+        "image_count": 38
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": true,
+        "gtsrb_disposition": "NONE",
+        "native_recommendation": "OUT_OF_SCOPE_PROPOSAL",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 33,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "QUARANTINE_FROM_MODEL_COMPARISON_PENDING_DATA",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "Observed support is too small for reliable class-level model comparison; collect more independent-group evidence before evaluation.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "COLLECT_MORE"
+      },
+      "dataset_code": "W.202b",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Double curve first to right",
+      "name_vi": "Nhiều chỗ ngoặt nguy hiểm liên tiếp, chỗ đầu tiên sang phải",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 19,
+        "eligible_image_count": 19,
+        "eligible_train_image_count_descriptive_only": 14,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/2484.jpg",
+          "image_sha256": "e20e5841e221cf1e69c077a46228900b5a44d0b50d5c268e71dacd83592cf6d0",
+          "label_line_number": 2,
+          "label_path": "archive/labels/2484.txt",
+          "label_sha256": "3cbc7ad29e30ac6f9274f0b62d7d75cd1ac3f8dd223dbd7c852a18f9a414426e",
+          "source_bbox_xyxy": [
+            1534.99872,
+            467.0001,
+            1602.99936,
+            527.99958
+          ],
+          "split": "train",
+          "stem": "2484",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_009.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/2495.jpg",
+          "image_sha256": "a542b6fb8c0fc6d11e75f92159d46286a334dc02072f96dd567e2151af6dc9da",
+          "label_line_number": 2,
+          "label_path": "archive/labels/2495.txt",
+          "label_sha256": "639ca938033d6ea94d597c810c368af3707c8608c09b9dbda8747f3b4806f852",
+          "source_bbox_xyxy": [
+            1752.0009599999998,
+            543.00024,
+            1852.00032,
+            630.00072
+          ],
+          "split": "train",
+          "stem": "2495",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_009.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/2493.jpg",
+          "image_sha256": "e9d45756e5a8a49305b082f310d9e453c77e703b6afd1de98cf220a7d47be3d9",
+          "label_line_number": 2,
+          "label_path": "archive/labels/2493.txt",
+          "label_sha256": "d7729008163b9afac3b8d2d35f8df0ff11b6fc12adaa2379cc94a9cd2625c679",
+          "source_bbox_xyxy": [
+            1714.00032,
+            492.99948,
+            1811.0006400000002,
+            574.99956
+          ],
+          "split": "train",
+          "stem": "2493",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_009.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 5,
+        "train": 14,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 19,
+        "image_count": 19
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "PARTIAL_ANALYSIS_ONLY",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 37,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "W.205b",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Intersection with T-Junction",
+      "name_vi": "Đường giao nhau (ngã ba bên trái)",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 47,
+        "eligible_image_count": 47,
+        "eligible_train_image_count_descriptive_only": 42,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/1560.jpg",
+          "image_sha256": "ea58f8c04ccf7c03a4b20b57c4b56d18730dcd233c030eae9a7a197db3ddacfa",
+          "label_line_number": 2,
+          "label_path": "archive/labels/1560.txt",
+          "label_sha256": "520fc25c7b89318ff5958d8e28c851df321fa91c206c8176bc6599217963d034",
+          "source_bbox_xyxy": [
+            381.0,
+            309.00014999999996,
+            429.0,
+            332.00037000000003
+          ],
+          "split": "test",
+          "stem": "1560",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_010.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/1559.jpg",
+          "image_sha256": "9c5564fc85e03b05e7b7321b8ade279b5676ee07f924653a60eb41dc0abf5282",
+          "label_line_number": 2,
+          "label_path": "archive/labels/1559.txt",
+          "label_sha256": "a6ba756ed30994d976ead2dd41a86a038aa7b77d714874f4a6b7d0fdea5b97a9",
+          "source_bbox_xyxy": [
+            387.0,
+            311.99985000000004,
+            442.00032000000004,
+            332.99991
+          ],
+          "split": "test",
+          "stem": "1559",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_010.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/1604.jpg",
+          "image_sha256": "e108b2e30b20236dedb721532fde9beea7c98b5c14e498efcad07471a2f961e9",
+          "label_line_number": 3,
+          "label_path": "archive/labels/1604.txt",
+          "label_sha256": "f4c72d0ab7f5f6d71b198277678c197129e8a10412a4113909fc715e5d1c905a",
+          "source_bbox_xyxy": [
+            342.99984,
+            360.99999,
+            419.00016,
+            432.99980999999997
+          ],
+          "split": "train",
+          "stem": "1604",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_010.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 5,
+        "train": 42,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 47,
+        "image_count": 47
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "PARTIAL_ANALYSIS_ONLY",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 42,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "R.301e",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Left Turn",
+      "name_vi": "Các xe chỉ được rẽ trái",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 21,
+        "eligible_image_count": 21,
+        "eligible_train_image_count_descriptive_only": 17,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/0370.jpg",
+          "image_sha256": "c97eaf05ecd3c2fcca673951557952ee4390c1177d8394140f34365a002f45ac",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0370.txt",
+          "label_sha256": "8947edf43737fc2b3c5912bef999f6da545c8a81044ca2fdc1096861740adcbd",
+          "source_bbox_xyxy": [
+            540.9998400000001,
+            268.99992000000003,
+            579.99984,
+            308.99988
+          ],
+          "split": "test",
+          "stem": "0370",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/0368.jpg",
+          "image_sha256": "56edd6d2b03712b973909eb369baba90270edb1535a425cc6511ee3acba26014",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0368.txt",
+          "label_sha256": "03ff879bcea53b05c59de03435717fcabd4c411aa8fa57442c4149829d8fd770",
+          "source_bbox_xyxy": [
+            509.00016,
+            278.99991,
+            542.00016,
+            310.99977
+          ],
+          "split": "test",
+          "stem": "0368",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/0374.jpg",
+          "image_sha256": "1b368fc1913fcc1089294e5f0731d269fd0745671d58f65012a62a65ea3dd03c",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0374.txt",
+          "label_sha256": "45382624cfd7124c3cf0d20588b6525f3d257b148127986b4fc29b52f9144554",
+          "source_bbox_xyxy": [
+            647.00016,
+            229.99977,
+            705.0004799999999,
+            289.99971
+          ],
+          "split": "train",
+          "stem": "0374",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 4,
+        "train": 17,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 21,
+        "image_count": 21
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "DIRECT_ANALYSIS_ONLY",
+        "native_recommendation": "CORRECT_CODE_OR_NAME_PROPOSAL",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 43,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "W.239b*",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Low Clearance",
+      "name_vi": "Chiều cao tĩnh không thực tế",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 27,
+        "eligible_image_count": 27,
+        "eligible_train_image_count_descriptive_only": 20,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/0591.jpg",
+          "image_sha256": "2a19b006812edadbc860aedef2107c66ba73a163a5c01330d9c77db031ad788e",
+          "label_line_number": 1,
+          "label_path": "archive/labels/0591.txt",
+          "label_sha256": "2e148e3368dcaaf7ec7de0ff22faded6e7b90eef4baeaa90098bf2c572274fd7",
+          "source_bbox_xyxy": [
+            1.0003199999999945,
+            99.00036,
+            67.00031999999999,
+            191.00016000000002
+          ],
+          "split": "train",
+          "stem": "0591",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/0756.jpg",
+          "image_sha256": "0c429e9bee4ae0bd8fff1b7f86a4a35c8a334d73f1f1f9efccc6ac56e801dede",
+          "label_line_number": 10,
+          "label_path": "archive/labels/0756.txt",
+          "label_sha256": "204f6c355775d0ca5a6a5daf1f7a9dd58e0b45f77240844edc52f74c834876ad",
+          "source_bbox_xyxy": [
+            881.00064,
+            216.99981,
+            940.00032,
+            267.00003
+          ],
+          "split": "train",
+          "stem": "0756",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/0577.jpg",
+          "image_sha256": "1e06cb85d19329254c0be828e7a0bd9e79b7905cb4fda5f9109586da19173948",
+          "label_line_number": 7,
+          "label_path": "archive/labels/0577.txt",
+          "label_sha256": "f48840325ae507ef801f9b0046fc8eec9f32db491463088a9c7b7a2633e04c13",
+          "source_bbox_xyxy": [
+            189.99984,
+            206.00028,
+            216.99984,
+            231.00011999999998
+          ],
+          "split": "test",
+          "stem": "0577",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 7,
+        "train": 20,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 27,
+        "image_count": 27
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "NONE",
+        "native_recommendation": "CORRECT_CODE_OR_NAME_PROPOSAL",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "PARAMETERIZED_SIGN_REVIEW"
+      }
+    },
+    {
+      "class_id": 44,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "QUARANTINE_FROM_MODEL_COMPARISON_PENDING_DATA",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "Observed support is too small for reliable class-level model comparison; collect more independent-group evidence before evaluation.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "COLLECT_MORE"
+      },
+      "dataset_code": "W.233",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Other Danger",
+      "name_vi": "Nguy hiểm khác",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 3,
+        "eligible_image_count": 3,
+        "eligible_train_image_count_descriptive_only": 2,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/0672.jpg",
+          "image_sha256": "5e25766817091316d971f59ba6a7392e618909583a0729ceeefef785760b7bfd",
+          "label_line_number": 5,
+          "label_path": "archive/labels/0672.txt",
+          "label_sha256": "0becf97d025a2e6dca9f651c3e7030107a3c8437c915f1d05878274c19d14cfe",
+          "source_bbox_xyxy": [
+            845.0001599999999,
+            203.00003999999998,
+            897.00048,
+            255.99996
+          ],
+          "split": "train",
+          "stem": "0672",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/0671.jpg",
+          "image_sha256": "ef136cb7bf2df21d1f2fc1a451be15a65a83528da8f4709dcbc26c1213d81d8b",
+          "label_line_number": 5,
+          "label_path": "archive/labels/0671.txt",
+          "label_sha256": "8d1bdcc1263e72c6c2edb83d3771d980745ce3845ca9ead3f99c9fd882cabd3c",
+          "source_bbox_xyxy": [
+            778.00032,
+            222.00020999999998,
+            827.00064,
+            269.00019
+          ],
+          "split": "train",
+          "stem": "0671",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/0670.jpg",
+          "image_sha256": "67c626badb1d182cca6f1959fda61e081e14b9e66de0ec8e8242cef0f824b095",
+          "label_line_number": 3,
+          "label_path": "archive/labels/0670.txt",
+          "label_sha256": "c2c3cad0cf7b28464431c124d4a1c3f618d7a3c9fdb6fc5a880b3b05fa90c4cb",
+          "source_bbox_xyxy": [
+            720.9998400000001,
+            235.99998,
+            764.9995200000001,
+            275.99994
+          ],
+          "split": "test",
+          "stem": "0670",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 1,
+        "train": 2,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 3,
+        "image_count": 3
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "REVIEW_REQUIRED",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 47,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "QUARANTINE_FROM_MODEL_COMPARISON_PENDING_DATA",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "Observed support is too small for reliable class-level model comparison; collect more independent-group evidence before evaluation.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "COLLECT_MORE"
+      },
+      "dataset_code": "P.124b1",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "No U-Turn for Cars",
+      "name_vi": "Cấm ô tô quay đầu xe (được rẽ trái)",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 16,
+        "eligible_image_count": 16,
+        "eligible_train_image_count_descriptive_only": 11,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/3188.jpg",
+          "image_sha256": "1140c3bea57a50e73ab0070f2588ebfa9356169b59dca7dc7954d66c6e182554",
+          "label_line_number": 1,
+          "label_path": "archive/labels/3188.txt",
+          "label_sha256": "d7cae571f3f094057222d5b02c80c45232fe1211f850a6bf657f09269f9399a3",
+          "source_bbox_xyxy": [
+            976.00032,
+            686.00034,
+            1011.0000000000001,
+            729.00054
+          ],
+          "split": "train",
+          "stem": "3188",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/3185.jpg",
+          "image_sha256": "f3ac8db69d6933f31d2a18b6af9937c2af8a63b41e03fd366c96fea9943f1258",
+          "label_line_number": 1,
+          "label_path": "archive/labels/3185.txt",
+          "label_sha256": "7b0f23affb44adea209e59f1b00e121629d79fa8a36a21e1701c4c597d8bdde0",
+          "source_bbox_xyxy": [
+            885.00096,
+            698.0002199999999,
+            919.00032,
+            736.00002
+          ],
+          "split": "test",
+          "stem": "3185",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/3190.jpg",
+          "image_sha256": "885791649d0ed45689343da9ac63d8148dba85d7a5e5f68c54c5663b7a48833c",
+          "label_line_number": 1,
+          "label_path": "archive/labels/3190.txt",
+          "label_sha256": "e6a851bac40d25362bcb4cb7b657a0b73886b00b1427be9254fd5773d70a1982",
+          "source_bbox_xyxy": [
+            898.9996799999999,
+            705.99978,
+            934.99968,
+            748.9999799999999
+          ],
+          "split": "train",
+          "stem": "3190",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 5,
+        "train": 11,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 16,
+        "image_count": 16
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": true,
+        "gtsrb_disposition": "NONE",
+        "native_recommendation": "CORRECT_CODE_OR_NAME_PROPOSAL",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 48,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "OWNER_REVIEW_REQUIRED_BEFORE_MODEL_COMPARISON",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "The class is in the current D-04 scope, but effective independent support is unknown until D-02 and a group-aware split are resolved.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "OWNER_REVIEW_REQUIRED"
+      },
+      "dataset_code": "W.210",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Level Crossing with Barriers",
+      "name_vi": "Giao nhau với đường sắt có rào chắn",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 41,
+        "eligible_image_count": 41,
+        "eligible_train_image_count_descriptive_only": 35,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/3111.jpg",
+          "image_sha256": "40b3a719e391149142a27bb91af4dccece73dd68cb68f13c6f6574a34af97329",
+          "label_line_number": 1,
+          "label_path": "archive/labels/3111.txt",
+          "label_sha256": "bee2d80d638e97a75daf2a59932fd10f2c3f6a5660684b8e3ecb0dd4a9b217d8",
+          "source_bbox_xyxy": [
+            1171.9996800000001,
+            696.0006000000001,
+            1261.9996800000001,
+            775.00044
+          ],
+          "split": "train",
+          "stem": "3111",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/3110.jpg",
+          "image_sha256": "69f506fe557abb6547c50b00150a0baf6ff0d13f2559f94cb263053177f6961b",
+          "label_line_number": 1,
+          "label_path": "archive/labels/3110.txt",
+          "label_sha256": "0c288455788bd10c7cbbda7f772a68c7fbb6054d93a7f592dd2a359a919a8562",
+          "source_bbox_xyxy": [
+            1192.9996800000001,
+            701.99946,
+            1272.0,
+            773.99982
+          ],
+          "split": "train",
+          "stem": "3110",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/3097.jpg",
+          "image_sha256": "8004f36ded44e3f684fe2fe1e9eb3db67dfa6cf0a56bfd98ce639acc846ce8e9",
+          "label_line_number": 1,
+          "label_path": "archive/labels/3097.txt",
+          "label_sha256": "9977c8c0ae138b527454de867eb804110e0147a997d9e282086c36e73c21964e",
+          "source_bbox_xyxy": [
+            986.0006400000001,
+            653.9999399999999,
+            1036.9996800000001,
+            700.0003800000001
+          ],
+          "split": "test",
+          "stem": "3097",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 6,
+        "train": 35,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 41,
+        "image_count": 41
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": false,
+        "gtsrb_disposition": "NONE",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    },
+    {
+      "class_id": 51,
+      "d04": {
+        "automatic_semantic_merge": false,
+        "comparison_eligibility": "QUARANTINE_FROM_MODEL_COMPARISON_PENDING_DATA",
+        "in_scope": true,
+        "owner_status": "PENDING",
+        "policy": "box_count < 50",
+        "rationale": "Observed support is too small for reliable class-level model comparison; collect more independent-group evidence before evaluation.",
+        "recommendation_confidence": "HIGH_COUNT_INTEGRITY_LOW_INDEPENDENT_SUPPORT",
+        "recommended_action": "COLLECT_MORE"
+      },
+      "dataset_code": "W.246c",
+      "g04_effect": "NO_DIRECT_COUNT_EFFECT",
+      "governance": {
+        "d03_status": "PENDING",
+        "gate0": "BLOCKED",
+        "split_authorized": false,
+        "training_authorized": false
+      },
+      "group_identity": {
+        "adjacent_or_proxy_sequence_is_group_truth": false,
+        "d02_status": "PENDING",
+        "effective_independent_support": "UNKNOWN_PENDING_D02",
+        "leakage_risk": "UNKNOWN_UNTIL_D02_GROUP_TRUTH_AND_GROUP_AWARE_SPLIT"
+      },
+      "name_en": "Warning: Obstacle ahead – pass on the right",
+      "name_vi": "Chú ý chướng ngại vật – vòng tránh sang bên phải",
+      "post_quarantine_eligibility": {
+        "derived_clip_counted_as_training_sample": false,
+        "eligible_box_count": 5,
+        "eligible_image_count": 5,
+        "eligible_train_image_count_descriptive_only": 4,
+        "excluded_stems": []
+      },
+      "representative_samples": [
+        {
+          "image_path": "archive/images/0530.jpg",
+          "image_sha256": "74bd8303cbcc9c10a2b3bccecb7bddab2684a6e2e3344941396265409b44e03b",
+          "label_line_number": 6,
+          "label_path": "archive/labels/0530.txt",
+          "label_sha256": "df1a009a370bd8f39728bb1463a27fa16325ee99cf7b9851636b206bf4e77ea3",
+          "source_bbox_xyxy": [
+            669.9998400000001,
+            210.99987,
+            696.99984,
+            234.00009
+          ],
+          "split": "train",
+          "stem": "0530",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+          "wp4_atlas_slot": 1
+        },
+        {
+          "image_path": "archive/images/0534.jpg",
+          "image_sha256": "1691fec081ca9f40fb08f363c0850e8819d2c8824cea730cad2fab0851da935c",
+          "label_line_number": 4,
+          "label_path": "archive/labels/0534.txt",
+          "label_sha256": "45c21ca4d33886f8a23f8248d83eb8c07d4bf5a9c39b1b34e71f4e205c016776",
+          "source_bbox_xyxy": [
+            875.00016,
+            200.99988,
+            903.00048,
+            227.99988000000002
+          ],
+          "split": "train",
+          "stem": "0534",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+          "wp4_atlas_slot": 2
+        },
+        {
+          "image_path": "archive/images/0532.jpg",
+          "image_sha256": "131656e687499e61ea9ad02169a1b2b123e657e7015a68419d4e3f8cc3311254",
+          "label_line_number": 6,
+          "label_path": "archive/labels/0532.txt",
+          "label_sha256": "df8565d9bcc6cabb228ff729b686e414cac0abefd2f0522681538daef3d4ea7e",
+          "source_bbox_xyxy": [
+            768.0,
+            206.99982,
+            796.99968,
+            231.99965999999998
+          ],
+          "split": "train",
+          "stem": "0532",
+          "wp4_atlas_page": "assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+          "wp4_atlas_slot": 3
+        }
+      ],
+      "source_split_image_counts": {
+        "test": 1,
+        "train": 4,
+        "unsplit": 0,
+        "usage": "DESCRIPTIVE_ONLY_NOT_INDEPENDENT_EVIDENCE"
+      },
+      "support": {
+        "box_count": 5,
+        "image_count": 5
+      },
+      "wp8_taxonomy": {
+        "approval_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+        "conflict_flag": true,
+        "gtsrb_disposition": "PARTIAL_ANALYSIS_ONLY",
+        "native_recommendation": "KEEP_CURRENT",
+        "rare_flag_image_count_lt_100": true,
+        "reviewer_status": "UNAPPROVED",
+        "sign_policy": "ATOMIC_SIGN"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "status": "M0_WP11_AWAITING_QA_D04_DECISION_SUPPORT_ONLY",
+  "training_authorized": false
+}

@@ -1,0 +1,63 @@
+{
+  "boxes": [
+    {
+      "class_id": 49,
+      "line": 1,
+      "normalized": {
+        "height": 0.101852,
+        "width": 0.053125,
+        "x_center": 0.992188,
+        "y_center": 0.34537
+      },
+      "pixels": {
+        "overflow_bottom_px": 0.0,
+        "overflow_left_px": 0.0,
+        "overflow_right_px": 18.000479999999925,
+        "overflow_top_px": 0.0,
+        "x_max": 978.0004799999999,
+        "x_min": 927.0004799999999,
+        "y_max": 213.99983999999998,
+        "y_min": 158.99976
+      },
+      "review_status": "PENDING"
+    },
+    {
+      "class_id": 49,
+      "line": 2,
+      "normalized": {
+        "height": 0.088889,
+        "width": 0.046875,
+        "x_center": 0.333854,
+        "y_center": 0.342593
+      },
+      "pixels": {
+        "overflow_bottom_px": 0.0,
+        "overflow_left_px": 0.0,
+        "overflow_right_px": 0.0,
+        "overflow_top_px": 0.0,
+        "x_max": 342.99984,
+        "x_min": 297.99984,
+        "y_max": 209.00025,
+        "y_min": 161.00019
+      },
+      "review_status": "PENDING"
+    }
+  ],
+  "decision_options": [
+    "keep_raw_as_warning",
+    "create_separate_clipped_derived_annotation",
+    "quarantine_image_from_approved_dataset"
+  ],
+  "decision_status": "PENDING",
+  "evidence_boundary": "The overlay visualizes original coordinates; it does not alter or approve the raw label.",
+  "schema_version": 1,
+  "source": {
+    "height": 540,
+    "image_path": "/Users/nguyentantai/Library/Mobile Documents/com~apple~CloudDocs/FALL 2026 KỲ 4/CPV301/Data/DATASET01/staging/052bc980a7206f8d/raw/archive/images/0248.jpg",
+    "image_sha256": "07eab2035dc10b7b08be71d76c3c32ffdb960722839414f1e474da20c3ad0cbd",
+    "label_path": "/Users/nguyentantai/Library/Mobile Documents/com~apple~CloudDocs/FALL 2026 KỲ 4/CPV301/Data/DATASET01/staging/052bc980a7206f8d/raw/archive/labels/0248.txt",
+    "label_sha256": "f4ec410f7bff3ee03f6110308e8e95f57c92bcc7ebf45ff3affcfd885b419c77",
+    "width": 960
+  },
+  "status": "REVIEW_REQUIRED_RAW_UNCHANGED"
+}

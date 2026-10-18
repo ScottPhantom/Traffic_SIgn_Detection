@@ -1,0 +1,128 @@
+{
+  "atlas_page_count": 13,
+  "circular_pdf": {
+    "page_count": 1,
+    "sha256": "dc822815eb51c6674a40ce91127b636f11a7479c76f24d9a00445dcf248b6689",
+    "size_bytes": 566925,
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/11/51-bgtvt.pdf"
+  },
+  "class_count": 52,
+  "decision_boundary": {
+    "D-03": "PENDING",
+    "gate0": "BLOCKED",
+    "training_authorized": false
+  },
+  "evidence_index_audit": {
+    "fingerprinted_page_count": 39,
+    "index_sha256": "62233e56a47c9c7116805d2b9d38846f2a20696b952507752810a83192abd7aa",
+    "negative_scope": {
+      "description": "QCVN sign appendices B-F; absence is scoped to these pages and queries.",
+      "pages": "80-154",
+      "queries": [
+        "camera",
+        "giám sát",
+        "surveillance"
+      ]
+    },
+    "not_found_row_count": 1,
+    "positive_row_count": 51,
+    "row_count": 52
+  },
+  "known_conflict_expectations": {
+    "22": "PARTIAL",
+    "25": "MISMATCH",
+    "28": "MISMATCH",
+    "3": "PARTIAL",
+    "30": "MISMATCH",
+    "31": "NOT_FOUND",
+    "34": "MISMATCH",
+    "47": "MISMATCH",
+    "51": "EXACT"
+  },
+  "match_status_counts": {
+    "EXACT": 31,
+    "MISMATCH": 6,
+    "NOT_FOUND": 1,
+    "PARTIAL": 14
+  },
+  "mutation_count": 0,
+  "overlay_audit": {
+    "class_count": 52,
+    "geometry_reconciled_count": 156,
+    "raw_source_hashes_unchanged": true,
+    "required_boundary_case": {
+      "class_id": 49,
+      "label_index": 0,
+      "label_line_number": 1,
+      "raw_hashes_unchanged": true,
+      "right_overflow_px": 18.00048,
+      "slot_index": 1,
+      "source_bbox": [
+        927.00048,
+        158.99976,
+        978.00048,
+        213.99984
+      ],
+      "source_bbox_within_image": false,
+      "stem": "0248"
+    },
+    "slot_count": 156,
+    "visible_overlay_count": 156
+  },
+  "overlay_slot_count": 156,
+  "page_token_audit": {
+    "checked_cited_pages": [
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      87,
+      89,
+      93,
+      94,
+      96,
+      98,
+      99,
+      100,
+      102,
+      106,
+      107,
+      110,
+      111,
+      113,
+      114,
+      115,
+      117,
+      126,
+      131,
+      132,
+      142,
+      152
+    ],
+    "checked_row_count": 51,
+    "not_found_row": 31,
+    "not_found_scope_note": "No positive QCVN candidate asserted; absence is scoped to this source."
+  },
+  "qcvn_pdf": {
+    "page_count": 403,
+    "sha256": "b6b99d0a0aeb13fe79072831857ece15bb254d8fb7817e80e4a2739a0d2145ce",
+    "size_bytes": 25535085,
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/11/51-bgtvt-kem.pdf"
+  },
+  "representative_source_count": 152,
+  "reviewer_status_counts": {
+    "UNAPPROVED": 52
+  },
+  "sampling_policy": {
+    "description": "Known audited boundary case 0248 is reserved first for class 49; remaining slots preserve the existing deterministic WP3 source-stem order after removing duplicates.",
+    "reserved_examples": {
+      "49": [
+        "0248"
+      ]
+    }
+  },
+  "schema_version": 2,
+  "status": "READY_FOR_RE_REVIEW_EVIDENCE_ONLY_NO_APPROVAL"
+}

@@ -1,0 +1,898 @@
+{
+  "all_bounds_fit": true,
+  "all_rows_unapproved": true,
+  "all_text_complete": true,
+  "all_wp4_backgrounds_pinned": true,
+  "class_count": 52,
+  "classes_per_page": 4,
+  "decision_boundary": "NATIVE_52_CLASS_TAXONOMY_RECOMMENDATION_ONLY_NO_D03_APPROVAL_NO_RELABEL_NO_SPLIT_NO_TRAINING",
+  "page_count": 13,
+  "pages": [
+    {
+      "height": 1818,
+      "page": 1,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_001.png",
+      "render_sha256": "39f336ef78a698b7511b5d9de0be4418d4909c96c2f095528eb7a6b0b9cbc8ca",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 0,
+          "panel_text_sha256": "093b114a506e613f451e1b300ccff57595196abf87caab25bb15e485ba8d4df6",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_001.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            284
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 1,
+          "panel_text_sha256": "f4b6fc22b336c6bf28fefbaf6fefea179c1500b34c485bde5fbc42cc9e44c138",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_001.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            723
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 2,
+          "panel_text_sha256": "9212167c2d24a4a5996190f2a4242c1851ecb4fcb4227c72687556883a9b9b55",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_001.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1162
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 3,
+          "panel_text_sha256": "cb8b656cda74a4ac964dc01c3cccb111eeb69701282604ec3b4884ddcf8d2db1",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_001.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1643
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_001.jpg",
+      "source_wp4_sha256": "52661e1348b5a614dda4e90fae7ff0a4df0910a6c97b6d7615fc33e9ec6f4c80",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 2,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_002.png",
+      "render_sha256": "f79f479756aab7ebcb9b7e911247e990d90095a87e737b837345a95655f6b3d5",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 4,
+          "panel_text_sha256": "910b7f0b58618201d91171a7e49771989a2fdde90701d98e8b0a998a55b39554",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_002.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            284
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 5,
+          "panel_text_sha256": "18166ddc99f60b8322fe22167bdffb0501ec476f0df0884f9c46c10c789f0768",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_002.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            723
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 6,
+          "panel_text_sha256": "13ec9fda628b7cb4cb79ddfe728745b3dfdf0657b955528cd5e206abae7dc5f4",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_002.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1204
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 7,
+          "panel_text_sha256": "d1708db3b70d8be8cc0f6ab582cab5431e65c6d6f3f51d1066acc3d489d1e956",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_002.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1601
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_002.jpg",
+      "source_wp4_sha256": "0f87c5358a003443d64900fdaa8364acab83f38f88d9bc76004f35daa4a0b96e",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 3,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_003.png",
+      "render_sha256": "318931c94715acca9209ba6e7e1a9e865d1386b12422f2702a8415fb75742118",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 8,
+          "panel_text_sha256": "839f0c078eb94d7165d241322348d49a98b62bf92f3854515322659c4e680672",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            284
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 9,
+          "panel_text_sha256": "30a8330dff8889e8bc5984f4e020e674227f1d4c6612b5502901dd1019925072",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            723
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 10,
+          "panel_text_sha256": "631a5b3b4d7b233fbfe672f25c7342eab70d4e0eb89b4e1297778d92518ca0e8",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1162
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 11,
+          "panel_text_sha256": "8e19cab640f13d9b26b2bf55da4b5db7cd19f93fa24126f8ba5e2e89f76212cb",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1601
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+      "source_wp4_sha256": "016d460e15ed00de56054da8b1eeb25f4d654ab9c77f15c8dba0f3e5a7679f4e",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 4,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_004.png",
+      "render_sha256": "2a179359e05c8350e3c753db259afac53edb10b61a278884f3a621fcbe4d88ba",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 12,
+          "panel_text_sha256": "f6fa85647e7ccd3b3f3ce56cace41280e8ca803a549a2ede83522123828d287f",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_004.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            305
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 13,
+          "panel_text_sha256": "fce12fb1c64d303cdc2393a6cae698d317872059906f79515722e5e4ca702f96",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_004.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            723
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 14,
+          "panel_text_sha256": "07ceb252072f969fecf058e98f3fae11191358103b0e4482a574d48b2918cc05",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_004.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1225
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 15,
+          "panel_text_sha256": "b6fe3c154d0c17f09ff8c30295acce3fb379af40e06e2c8260346c3a02498d56",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_004.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1601
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_004.jpg",
+      "source_wp4_sha256": "47e7286673418e7be2f7515dd80dfda0d3dc497ab585f2d74c8eb1bfec579041",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 5,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_005.png",
+      "render_sha256": "cbc50b04a5b30b8eeb76c755912485b839fc2e35c811f8fa5a939f562e374871",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 16,
+          "panel_text_sha256": "7742bed0947e9d0b405827624237a1e84be4fa6a7de0bf4e43e237aa9381134c",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_005.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            305
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 17,
+          "panel_text_sha256": "a14781da916f670bdb3b552e63a310aca4a3f55641e4be6229f733314aa7be2b",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_005.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            723
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 18,
+          "panel_text_sha256": "2c5bc62d0a5ddadf0b02bda30b3d4d3a88c66772f718c387d573dcbd0b1d9380",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_005.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1162
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 19,
+          "panel_text_sha256": "df5c47073f1abd3c0d78051e9de3b05f76554e1f75b913b5d869bba9fda8caad",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_005.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1601
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_005.jpg",
+      "source_wp4_sha256": "c88448e0358972d5d0b5c1c9610cffa60ed7c9aaf4ca7dbf626ad28000b70565",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 6,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_006.png",
+      "render_sha256": "944daec703b0ad7da9af85841b8124e024846cad900b80226ca0dc1c9c73948f",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 20,
+          "panel_text_sha256": "d98a5e791fcd8b17b80c77adaaa008a7bd3896042a0f7bb6a842c60e33933b64",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_006.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            284
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 21,
+          "panel_text_sha256": "4e4849f96a87eb593b3ccf70972555381109458db038165bffaea412800d13d9",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_006.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            723
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 22,
+          "panel_text_sha256": "dbb54323d5cda269aeeab9390291ce989951da4f9672073f8bbe99dc3cc3ce35",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_006.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1183
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 23,
+          "panel_text_sha256": "b49bb76f2229d23683953e186314fa23fe162d40a5a1ba2991837fac117eebc2",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_006.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1643
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_006.jpg",
+      "source_wp4_sha256": "47c303f324cb863cb5c52b94ffad19b7649fb0f333f80566a172dbe545b27607",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 7,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_007.png",
+      "render_sha256": "e8ec5c9e4b4aaeefaff4cfd3a84726a51b76cf42de1f66fbb11983d0dc36f259",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 24,
+          "panel_text_sha256": "5196886c35ed6d8bcbdcb2b9df78553c4ca28ea814bac96b17a959d48dd82ec0",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            305
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 25,
+          "panel_text_sha256": "3c3f5739a73e7dc399c3b24a56e85c48f25fc258acb35037d1e368ab40cd6900",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            765
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 26,
+          "panel_text_sha256": "6b6f76acf985a8561ed38d8593fc7900a43c3d41ec8af6cb2c499418d3d5f627",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1162
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 27,
+          "panel_text_sha256": "3cfbd0def114ed3000da751c6f8c1967caef7e3b852dfa46d9d5faa7c57745b0",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1601
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+      "source_wp4_sha256": "ca6a80f65050d36ffc58928a50d91d4d4020ed2ede3b10861aeef9997835553a",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 8,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_008.png",
+      "render_sha256": "11ccc2183f90dffc045ee95ae57bc7f6e26bf6caba4d78aa0efc38955d99d13a",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 28,
+          "panel_text_sha256": "73cfb62107297070d79efb4d519056be010760c65a00aa68384ace275b14db8a",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            326
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 29,
+          "panel_text_sha256": "cca44b916d45d6e73c07730855b28f893602e691847ae6d9aba3c8b40cd53556",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            723
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 30,
+          "panel_text_sha256": "d59626721d2dc51e52e98429ce1c6da139bca32dde4d50a95aa708a330174630",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1183
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 31,
+          "panel_text_sha256": "6d2c782b8e9f9bad6ec4e61cdb1974482aa2527ef226f61b5c9b28618d340779",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1643
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+      "source_wp4_sha256": "c415c479c5281f29ec6238323134f5cda0e0bfc3714a5f522952e1b90b96d1be",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 9,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_009.png",
+      "render_sha256": "2167d31391d2c8096420e89b19f226d0fa4763e8c6896d9fa9d661ea4ff51ff4",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 32,
+          "panel_text_sha256": "1903636edd438e82a6940097b3900a8ddbb2a75cd244da6a69229ae5839de2e2",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_009.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            284
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 33,
+          "panel_text_sha256": "8a17027428a5fc4e0c483117b9d862d2410805bf8d38e04bc37859cc030bff12",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_009.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            744
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 34,
+          "panel_text_sha256": "efe25de5101b2192c2bac2636e7912d5ccd78ac9d5d65cec67b12505ce0738c2",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_009.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1204
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 35,
+          "panel_text_sha256": "c9ea65251555fce51cdc49a38c142f0396976233708a8ccd168e3bf989d5aeea",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_009.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1601
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_009.jpg",
+      "source_wp4_sha256": "856bf3befd914e64c0b40bcb8d313c18fbe08b1624a4e2156bc2807a7789dba0",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 10,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_010.png",
+      "render_sha256": "3de4da3883487ce6f99cff2b712dfa07612d567dce6291bdb63feacd667c156c",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 36,
+          "panel_text_sha256": "6b8193b45aa66cdd0fe427ebc8afbfddab569f06a6065bd828dffbe1c47995f1",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_010.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            284
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 37,
+          "panel_text_sha256": "b50b677f9c614606bd886aae213de1f248a5aac0d7fa1c12ced10db67a506e24",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_010.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            723
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 38,
+          "panel_text_sha256": "2211ee62d9068e3401aa5d9b0a39a77476d03f1a2e3cc69400690259e52a0267",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_010.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1183
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 39,
+          "panel_text_sha256": "c27b38a5098cdc3137494e78b0583fe21f50133d2bd6af77a84b7d366057f243",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_010.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1622
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_010.jpg",
+      "source_wp4_sha256": "6068d5be40d0d1b0342ec8faa7308018ca88987b0ac9430c6bf971334962e4f3",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 11,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_011.png",
+      "render_sha256": "d766c4f0e42a781dc8eff6aa832b0443ae38ec0da9f3e4196fa94f8f6d7a7060",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 40,
+          "panel_text_sha256": "dbb31feb3b6a9c68903ea1094decf363d198ed29bc45e7caa83f497de264c6f1",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            305
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 41,
+          "panel_text_sha256": "cabd572be72bdd0ce3784cf1215d43d00455e448ca870beb4ba28f394b695925",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            765
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 42,
+          "panel_text_sha256": "5069d35dc7c2fda83f101e606370ac29721916811190dd19dc4cb8d0ec698d89",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1183
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 43,
+          "panel_text_sha256": "bbc2fe75668a684aeb855b3eef9d237941c18bec2506065a0fc33df7bce40936",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1622
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+      "source_wp4_sha256": "d84bc8dc96f1c9d21df67906be3943680ad5a3eb246e8388c1b8a621ad3654ca",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 12,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_012.png",
+      "render_sha256": "db2590ef161a0d73267edcd76d4b1347391cddcdcac1b5c1a0a90777be86b388",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 44,
+          "panel_text_sha256": "f6a5dc18943928a681d45ba38fede7b48ca8ce84a96d49afd1a5a4e739c5a1d3",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            305
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 45,
+          "panel_text_sha256": "d0974fcb130718642be06e0602be18b92da45bc7ffb6a557e34a12dbef91ba20",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            723
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 46,
+          "panel_text_sha256": "75649af910a937dc87812595bf6be84e0994077fd850d8bb896598c8199819ea",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1162
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 47,
+          "panel_text_sha256": "62845f9e7ec79eed4a7bd12755173f6297fe1fa0837423ae57d148acf813ac30",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1622
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+      "source_wp4_sha256": "f4f0131c1ddc39db1b268c26f739ebb0c5c6830f130b6d9d0b2da9016af7bd04",
+      "width": 1900
+    },
+    {
+      "height": 1818,
+      "page": 13,
+      "path": "docs/review/assets/wp8/taxonomy_decision_atlas/page_013.png",
+      "render_sha256": "93a744353dd2f6f19a5371044911bdb835940dae11a37d3a37fb92c99ee01f5f",
+      "row_count": 4,
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "class_id": 48,
+          "panel_text_sha256": "aac667552293ec529b9c1422b433fcb46d6abd36f14e7942e4da03af3c3155ef",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 1,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+          "text_bounds": [
+            1220,
+            68,
+            1870,
+            284
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 49,
+          "panel_text_sha256": "7cf8c070732244af090452970b762716922fa52645f222dc52985868aeb29ce3",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 2,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+          "text_bounds": [
+            1220,
+            507,
+            1870,
+            723
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 50,
+          "panel_text_sha256": "02bbafc6c21b5e29d9d716ddca4420db38ca1de504c5c9419cfd4cd91699a2fd",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 3,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+          "text_bounds": [
+            1220,
+            946,
+            1870,
+            1204
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "class_id": 51,
+          "panel_text_sha256": "1eabf4b2e91786d55bc54deef7cca1710ec8a88e9cd15359356f2db7014ae035",
+          "reviewer_status": "UNAPPROVED",
+          "slot": 4,
+          "source_wp4_page": "assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+          "text_bounds": [
+            1220,
+            1385,
+            1870,
+            1643
+          ]
+        }
+      ],
+      "source_wp4_path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+      "source_wp4_sha256": "55d38ab22415a4de5b70048a4e70fb0ec11a3ab6fa789ea957c0f2418f3e4ac4",
+      "width": 1900
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS_52_ROWS_13_PAGES_COMPLETE_TEXT_BOUNDS_AND_PINNED_WP4_BACKGROUND"
+}

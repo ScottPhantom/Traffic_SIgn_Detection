@@ -1,0 +1,54 @@
+{
+  "class_map_sha256": "7cda296a95bd8512a1bb2e85109ce9a1574fb882e692b11d4d0ee6a1cb58d242",
+  "classes": 54,
+  "package": "M1-YOLO-EXPORT",
+  "pinned_sources": {
+    "docs/review/d05_owner_decision_record.md": "c81f37ed0236c019644914445776632dbe0fbcef0f7d5b964fb5c6d635555702",
+    "docs/review/g07_owner_acceptance_record.md": "88d5c16e2041b23e43e5381b7107d9de2d4a11635124c876263802abc2dce32a",
+    "docs/review/generated/wp33_derived_boxes.csv": "4b9307003ce8fd3c1d50763a5950d3d57cf6b2ee6df3aeef74621707067501c0",
+    "docs/review/generated/wp33_derived_taxonomy.csv": "199ddd322aa05d4875af809c1c7c1459198ebf91ada24f406cbf039c406fa5ad",
+    "docs/review/generated/wp35_enrichment_lineage.csv": "e802fc264feff5168c28b531801af04051a36accc3c893ad5ab2e72975d38fed",
+    "docs/review/generated/wp36_r1_split_frames.csv": "8e197d9c7103ac5dc6b7ffc8a3d1aeb30bb6034048d470e4887dd868df95823a",
+    "docs/review/generated/wp36_r1_split_manifest.json": "064259941895d35054e87a550bf69199c4cae8ffeb4c83b4d7cdf608673438d9"
+  },
+  "splits": {
+    "test": {
+      "boxes": 2315,
+      "classes_with_boxes": 32,
+      "empty_label_frames": 1,
+      "frames": 903,
+      "frames_with_untrained_boxes": 5,
+      "labels_sha256": "23c6ed458931577b88fd5996bf31902cd6c9525276e3fd8c3842004c89828123",
+      "stem_list_sha256": "afa03d4b6deb7567c5784b29122966d84599d4eb81fdbad37c3b20adaf7524bc"
+    },
+    "train": {
+      "boxes": 5415,
+      "classes_with_boxes": 54,
+      "empty_label_frames": 3,
+      "frames": 1912,
+      "frames_with_untrained_boxes": 27,
+      "labels_sha256": "d907fb9f82bbcee4bfb0d6f34d9a673c6f7dbe4173967c92b7552c607abb3b49",
+      "stem_list_sha256": "6ac767509def899071f6d6dc0da1e98e62a2a19eb0e62292970e8273b4c99372"
+    },
+    "val": {
+      "boxes": 560,
+      "classes_with_boxes": 19,
+      "empty_label_frames": 10,
+      "frames": 376,
+      "frames_with_untrained_boxes": 10,
+      "labels_sha256": "040926a870a318249c152b712db0b42e70963906e989b1de5e8b3a5a8311b6be",
+      "stem_list_sha256": "ae3f3509319fbb301012e9fbeb7431caacfcd4035c9d2f9167f24e3ed2b8f593"
+    }
+  },
+  "status": "M1_YOLO_EXPORT_CONTRACT",
+  "test_export": "sealed: only `export-test --final-eval`, logged in results/experiments/sealed_test_access_log.jsonl",
+  "training_contract": {
+    "horizontal_flip": 0.0,
+    "labels": "WP33 train_eligible boxes only; UNKNOWN/EXCLUDED boxes stay unlabelled (reported per split)",
+    "selection": "val only (D-05 Q4); 13 no-val classes never drive selection"
+  },
+  "wp35_train_only": {
+    "images": 1800,
+    "lineage_sha256": "e802fc264feff5168c28b531801af04051a36accc3c893ad5ab2e72975d38fed"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "status": "READY_FOR_RE_REVIEW_EVIDENCE_ONLY",
+  "retrieved_utc": "2026-10-10T14:39:52Z",
+  "decision_boundary": {
+    "D-01": "PENDING",
+    "D-02": "PENDING",
+    "D-03": "PENDING",
+    "gate0": "BLOCKED",
+    "training_authorized": false
+  },
+  "control_artifact": {
+    "name": "DATASET01",
+    "archive_sha256": "052bc980a7206f8ddd1ec2e59098dbd60a42036d3c7f7384ace4fe6416cbaa76",
+    "classification": "VERIFIED_ARTIFACT"
+  },
+  "sources": [
+    {
+      "id": "huggingface_dataset_api",
+      "url": "https://huggingface.co/api/datasets/thanhhiepvos/vietnam_traffic_sign",
+      "revision": "d869116a5f89e9ba2aa36b1c0582a39c310e3d0c",
+      "retrieved_utc": "2026-10-10T14:39:52Z",
+      "snapshot_sha256": "40d312e8750a403b6779a1320ec5400f7c3db47916e09414439dbaf0e04ff0e4",
+      "classification": "VERIFIED_PUBLIC_RECORD",
+      "summary": "Public metadata reports author thanhhiepvos, 3216 rows, 6437 siblings, public non-gated access, and cc-by-sa-3.0."
+    },
+    {
+      "id": "huggingface_pinned_commit",
+      "url": "https://huggingface.co/datasets/thanhhiepvos/vietnam_traffic_sign/commit/d869116a5f89e9ba2aa36b1c0582a39c310e3d0c",
+      "revision": "d869116a5f89e9ba2aa36b1c0582a39c310e3d0c",
+      "published_date": "2025-04-04",
+      "readme_sha256": "7c9ae7f21d63e913e2b1e1688a7a702d3e548638e463e145af857620bfe66ec8",
+      "classification": "VERIFIED_PUBLIC_RECORD",
+      "summary": "Commit description claims about 3200 YOLO XYWH images, Data Palpating Team provenance, linked augmentation tooling, and CC BY-SA 4.0 usage. These are uploader claims, not independent authority proof."
+    },
+    {
+      "id": "huggingface_metadata_history",
+      "url": "https://huggingface.co/datasets/thanhhiepvos/vietnam_traffic_sign/commits/main",
+      "revisions": [
+        "a81681ca3e1617a758aa47cff2052c46f6d233b1",
+        "8336ab8f6081c32f123a4aa23c8ba7cc240a7ba0",
+        "b93a4e1ef04af03fab0c25746ae2e4b9795cd0b0",
+        "b8eed8c00f597e00f504c5a260fe747d6939bdd7"
+      ],
+      "classification": "VERIFIED_PUBLIC_RECORD",
+      "summary": "Initial and later inspected metadata retains license cc-by-sa-3.0 while later revisions add dataset descriptors."
+    },
+    {
+      "id": "kaggle_dataset_api",
+      "url": "https://www.kaggle.com/api/v1/datasets/view/maitam/vietnamese-traffic-signs",
+      "retrieved_utc": "2026-10-10T14:39:52Z",
+      "snapshot_sha256": "fa540f5b443c4b9cd1380f2e30e60110280741d35bb2ee15c806404fefa5370b",
+      "classification": "CANDIDATE_UPSTREAM_LINEAGE",
+      "summary": "Version history records Mai Tam for the 2023-11-04 initial release and Thanh Hiep Vo for versions 2 through 8; current public record says CC BY-SA 4.0. Exact local/Hugging Face derivation was not verified without a full download and file-level comparison."
+    },
+    {
+      "id": "augmentation_repository",
+      "url": "https://github.com/nguyenmai333/Image-Augmentation",
+      "revision": "b45abba",
+      "readme_sha256": "7b8a4c5c22212c063581ff629af2db42f181948e150ff9ca1632e8e640a28d12",
+      "classification": "VERIFIED_LINKED_TOOLING_APPLICATION_UNKNOWN",
+      "summary": "Repository documents image and label augmentation operations and has no detected repository license. No per-image manifest ties a transformation to DATASET01."
+    }
+  ],
+  "findings": [
+    {
+      "claim": "local_control_matches_pinned_huggingface_identity_probes",
+      "classification": "VERIFIED",
+      "strength": "byte_level_probe",
+      "limitation": "Does not prove ownership or license authority."
+    },
+    {
+      "claim": "license_metadata_conflicts_between_cc_by_sa_3_0_and_4_0",
+      "classification": "VERIFIED",
+      "strength": "public_record_conflict",
+      "limitation": "Neither field independently proves authority over all components."
+    },
+    {
+      "claim": "kaggle_is_exact_upstream_of_local_dataset",
+      "classification": "CANDIDATE",
+      "strength": "chronology_and_maintainer_overlap",
+      "limitation": "No full cross-platform hash comparison was performed."
+    },
+    {
+      "claim": "licensor_authority_and_image_level_ownership",
+      "classification": "UNKNOWN",
+      "strength": "none",
+      "limitation": "Requires authoritative response and supporting records."
+    },
+    {
+      "claim": "creator_session_video_route_or_augmentation_parent_groups",
+      "classification": "UNKNOWN",
+      "strength": "none",
+      "limitation": "Current metadata cannot support final leakage-safe group IDs."
+    }
+  ],
+  "external_contact": {
+    "performed": false,
+    "draft_path": "docs/review/dataset_owner_outreach_draft.md",
+    "status": "DRAFT_NOT_SENT"
+  }
+}

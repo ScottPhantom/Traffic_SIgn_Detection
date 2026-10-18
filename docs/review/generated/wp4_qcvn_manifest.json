@@ -1,0 +1,215 @@
+{
+  "artifact_count": 20,
+  "artifacts": [
+    {
+      "path": "docs/review/generated/wp4_qcvn_taxonomy_worksheet.csv",
+      "sha256": "03bf19c3756c77bb28193b6d8014d265913d582eaeacbdd31d31d858fccc89ff",
+      "size": 16843
+    },
+    {
+      "path": "docs/review/generated/wp4_qcvn_source_lineage.csv",
+      "sha256": "c9e90b01ef3be78797b58405d9c7a7fb9f7f8384498b876af23a25b22e0a8d19",
+      "size": 101965
+    },
+    {
+      "path": "docs/review/generated/wp4_qcvn_layout_audit.json",
+      "sha256": "e605cbdcea34154de54f088eca4369c338964c927e62e7ac9bd112a781e5c643",
+      "size": 191902
+    },
+    {
+      "path": "docs/review/generated/wp4_qcvn_summary.json",
+      "sha256": "5d4f9c72ae69b387ac5b1cfe85146087e3c8d1eb2bb5e43ed64354d89de04f2c",
+      "size": 3041
+    },
+    {
+      "path": "docs/review/m0_wp4_qcvn_taxonomy_report.md",
+      "sha256": "de8d3567b9cee69501e29c5800e3ada2c8afe98afb8d79326105c7c32e26d168",
+      "size": 4560
+    },
+    {
+      "path": "docs/review/wp4_taxonomy_vnext_proposal.md",
+      "sha256": "96a497d28322c8f1a96f538b7e981ff99c92338d9e97bd407263cd63bc8db0b5",
+      "size": 3737
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/index.html",
+      "sha256": "4e5b48b04b5acd2485629b48cec7defb43de06816ce40061f1e0fe6dd9f17830",
+      "size": 10725
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_001.jpg",
+      "sha256": "52661e1348b5a614dda4e90fae7ff0a4df0910a6c97b6d7615fc33e9ec6f4c80",
+      "size": 269795
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_002.jpg",
+      "sha256": "0f87c5358a003443d64900fdaa8364acab83f38f88d9bc76004f35daa4a0b96e",
+      "size": 281746
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+      "sha256": "016d460e15ed00de56054da8b1eeb25f4d654ab9c77f15c8dba0f3e5a7679f4e",
+      "size": 242556
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_004.jpg",
+      "sha256": "47e7286673418e7be2f7515dd80dfda0d3dc497ab585f2d74c8eb1bfec579041",
+      "size": 277483
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_005.jpg",
+      "sha256": "c88448e0358972d5d0b5c1c9610cffa60ed7c9aaf4ca7dbf626ad28000b70565",
+      "size": 261055
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_006.jpg",
+      "sha256": "47c303f324cb863cb5c52b94ffad19b7649fb0f333f80566a172dbe545b27607",
+      "size": 260486
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+      "sha256": "ca6a80f65050d36ffc58928a50d91d4d4020ed2ede3b10861aeef9997835553a",
+      "size": 260121
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+      "sha256": "c415c479c5281f29ec6238323134f5cda0e0bfc3714a5f522952e1b90b96d1be",
+      "size": 278635
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_009.jpg",
+      "sha256": "856bf3befd914e64c0b40bcb8d313c18fbe08b1624a4e2156bc2807a7789dba0",
+      "size": 267149
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_010.jpg",
+      "sha256": "6068d5be40d0d1b0342ec8faa7308018ca88987b0ac9430c6bf971334962e4f3",
+      "size": 272253
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+      "sha256": "d84bc8dc96f1c9d21df67906be3943680ad5a3eb246e8388c1b8a621ad3654ca",
+      "size": 277821
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+      "sha256": "f4f0131c1ddc39db1b268c26f739ebb0c5c6830f130b6d9d0b2da9016af7bd04",
+      "size": 252179
+    },
+    {
+      "path": "docs/review/assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+      "sha256": "55d38ab22415a4de5b70048a4e70fb0ec11a3ab6fa789ea957c0f2418f3e4ac4",
+      "size": 268721
+    }
+  ],
+  "decision_boundary": {
+    "D-03": "PENDING",
+    "gate0": "BLOCKED",
+    "training_authorized": false
+  },
+  "pdf_sources": {
+    "circular": {
+      "page_count": 1,
+      "sha256": "dc822815eb51c6674a40ce91127b636f11a7479c76f24d9a00445dcf248b6689",
+      "size_bytes": 566925,
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/11/51-bgtvt.pdf"
+    },
+    "evidence_index_control": {
+      "fingerprinted_page_count": 39,
+      "path": "qcvn_taxonomy_evidence_index.json",
+      "role": "canonical_taxonomy_evidence_index",
+      "row_count": 52,
+      "schema_version": 2,
+      "sha256": "62233e56a47c9c7116805d2b9d38846f2a20696b952507752810a83192abd7aa"
+    },
+    "qcvn": {
+      "page_count": 403,
+      "sha256": "b6b99d0a0aeb13fe79072831857ece15bb254d8fb7817e80e4a2739a0d2145ce",
+      "size_bytes": 25535085,
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/11/51-bgtvt-kem.pdf"
+    }
+  },
+  "schema_version": 2,
+  "source_hashes_unchanged": true,
+  "sources": [
+    {
+      "name": "qcvn_pdf",
+      "path": "references/qcvn41_2024/qcvn-41-2024-bgtvt.pdf",
+      "sha256": "b6b99d0a0aeb13fe79072831857ece15bb254d8fb7817e80e4a2739a0d2145ce",
+      "size": 25535085
+    },
+    {
+      "name": "circular_pdf",
+      "path": "references/qcvn41_2024/51-2024-tt-bgtvt.pdf",
+      "sha256": "dc822815eb51c6674a40ce91127b636f11a7479c76f24d9a00445dcf248b6689",
+      "size": 566925
+    },
+    {
+      "name": "source_provenance",
+      "path": "references/qcvn41_2024/source_provenance.json",
+      "sha256": "43b18ee597fb960656527e37c1927574a0ec19d9a171ccaaca9e8484566c425d",
+      "size": 1354
+    },
+    {
+      "name": "evidence_index",
+      "path": "references/qcvn41_2024/qcvn_taxonomy_evidence_index.json",
+      "sha256": "62233e56a47c9c7116805d2b9d38846f2a20696b952507752810a83192abd7aa",
+      "size": 45131
+    },
+    {
+      "name": "taxonomy_review",
+      "path": "docs/review/generated/taxonomy_review.csv",
+      "sha256": "4d27209e9f381a6991cd21f7ee6521553495eb6771422a5889536ae12003bad1",
+      "size": 12616
+    },
+    {
+      "name": "wp3_atlas",
+      "path": "docs/review/generated/wp3_taxonomy_reviewer_atlas.csv",
+      "sha256": "73344813083c67888c103c8880cfebdbc24773615f7bb82eb5e398914f239362",
+      "size": 13803
+    },
+    {
+      "name": "wp3_manifest",
+      "path": "docs/review/generated/wp3_evidence_manifest.json",
+      "sha256": "8b2e9ef3b2418623eb92673f3c58591e29f5ed7479bca2b03582c12ef0191dcd",
+      "size": 13583
+    },
+    {
+      "name": "wp2_manifest",
+      "path": "docs/review/generated/wp2_generated_manifest.json",
+      "sha256": "506ec141bef032282f90b3d35741ece49a43fed617c3dea93863d4c32330a505",
+      "size": 2113
+    },
+    {
+      "name": "wp1_manifest",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/wp1_artifact_manifest.json",
+      "sha256": "28adbf21dd2057fe5fc7999daccaa52d1201ea0459ef1bb7475a780ed85c51c6",
+      "size": 2297
+    },
+    {
+      "name": "source_preservation",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/source_preservation_proof.json",
+      "sha256": "5ca3e769b9197cad19bcb75f553dd59fee6e3035e0cc86cd9693737f84a713d7",
+      "size": 783
+    },
+    {
+      "name": "inventory",
+      "path": "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv",
+      "sha256": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022",
+      "size": 733242
+    },
+    {
+      "name": "decision_status",
+      "path": "docs/review/decision_status.json",
+      "sha256": "87d81262e907bb1c479cfac6535e7b3f67a368c371e96b810aa02f2e92d0d72c",
+      "size": 7864
+    },
+    {
+      "name": "canonical_taxonomy",
+      "path": "docs/vietnam_taxonomy_mapping.md",
+      "sha256": "8ef526772f69af29e62062086accfd57c124247eaf5323c58432490a7055b53b",
+      "size": 11638
+    }
+  ],
+  "status": "READY_FOR_RE_REVIEW_EVIDENCE_ONLY_NO_APPROVAL"
+}

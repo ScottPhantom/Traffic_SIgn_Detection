@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "packet": "M0-WP2",
+  "gate0": "BLOCKED",
+  "training_authorized": false,
+  "default_if_undecided": "BLOCKED_NO_TRAIN",
+  "decisions": {
+    "D-01": {
+      "question": "Which owner evidence and exact license version govern this dataset and its images?",
+      "status": "PENDING",
+      "allowed_options": ["D01-A", "D01-B", "D01-C"],
+      "selected_option": null,
+      "reviewer": null,
+      "decided_at": null,
+      "rationale": null,
+      "evidence_links": []
+    },
+    "D-02": {
+      "question": "Use creator grouping metadata, funded manual adjudication, or exclude the dataset from independent-holdout work?",
+      "status": "PENDING",
+      "allowed_options": ["D02-A", "D02-B", "D02-C"],
+      "selected_option": null,
+      "reviewer": null,
+      "decided_at": null,
+      "rationale": null,
+      "evidence_links": []
+    },
+    "D-03": {
+      "question": "Who reviews and approves every 52-class taxonomy and GTSRB relation row?",
+      "status": "PENDING",
+      "allowed_options": ["D03-A", "D03-B", "D03-C"],
+      "selected_option": null,
+      "reviewer": null,
+      "decided_at": null,
+      "rationale": null,
+      "evidence_links": []
+    },
+    "D-04": {
+      "question": "For each in-scope rare class, collect more, merge after semantic approval, report-only, or out-of-scope?",
+      "status": "PENDING",
+      "scope_rule": {"field": "box_count", "operator": "<", "value": 50},
+      "in_scope_class_ids": [1, 4, 9, 11, 15, 19, 21, 25, 27, 28, 29, 31, 33, 37, 42, 43, 44, 47, 48, 51],
+      "allowed_options": ["collect_more", "merge_after_semantic_approval", "report_only", "out_of_scope"],
+      "aggregation_rule": "D-04 may be RESOLVED only when every in-scope class record is RESOLVED, has an allowed selected_option, trimmed reviewer/rationale, RFC 3339 decided_at with timezone, at least one non-blank evidence link and a structured append-only history transition. Otherwise D-04 must remain PENDING.",
+      "class_decisions": {
+        "1": {"class_id": 1, "sign_code": "W.205c", "image_count": 22, "box_count": 22, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "4": {"class_id": 4, "sign_code": "W.205a", "image_count": 33, "box_count": 33, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "9": {"class_id": 9, "sign_code": "R.303", "image_count": 43, "box_count": 43, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "11": {"class_id": 11, "sign_code": "I.409", "image_count": 26, "box_count": 26, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "15": {"class_id": 15, "sign_code": "W.203c", "image_count": 29, "box_count": 29, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "19": {"class_id": 19, "sign_code": "P.124d", "image_count": 29, "box_count": 29, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "21": {"class_id": 21, "sign_code": "W.203b", "image_count": 11, "box_count": 11, "risk_band": "VERY_LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "25": {"class_id": 25, "sign_code": "S.505a*Xe máy", "image_count": 25, "box_count": 25, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "27": {"class_id": 27, "sign_code": "W.225", "image_count": 36, "box_count": 36, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "28": {"class_id": 28, "sign_code": "S.505a*Xe tải và công", "image_count": 27, "box_count": 27, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "29": {"class_id": 29, "sign_code": "P.104", "image_count": 45, "box_count": 45, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "31": {"class_id": 31, "sign_code": "Camera", "image_count": 38, "box_count": 38, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "33": {"class_id": 33, "sign_code": "W.202b", "image_count": 19, "box_count": 19, "risk_band": "VERY_LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "37": {"class_id": 37, "sign_code": "W.205b", "image_count": 47, "box_count": 47, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "42": {"class_id": 42, "sign_code": "R.301e", "image_count": 21, "box_count": 21, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "43": {"class_id": 43, "sign_code": "W.239b*", "image_count": 27, "box_count": 27, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "44": {"class_id": 44, "sign_code": "W.233", "image_count": 3, "box_count": 3, "risk_band": "CRITICAL_LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "47": {"class_id": 47, "sign_code": "P.124b1", "image_count": 16, "box_count": 16, "risk_band": "VERY_LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "48": {"class_id": 48, "sign_code": "W.210", "image_count": 41, "box_count": 41, "risk_band": "LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []},
+        "51": {"class_id": 51, "sign_code": "W.246c", "image_count": 5, "box_count": 5, "risk_band": "CRITICAL_LOW", "status": "PENDING", "selected_option": null, "reviewer": null, "decided_at": null, "rationale": null, "evidence_links": [], "history": []}
+      },
+      "history": []
+    },
+    "D-05": {
+      "question": "Which metric, latency and seed-budget bundle applies after Gate 0 and split lock?",
+      "status": "PENDING",
+      "allowed_options": ["D05-A", "D05-B", "D05-C"],
+      "selected_option": null,
+      "reviewer": null,
+      "decided_at": null,
+      "rationale": null,
+      "evidence_links": []
+    },
+    "G0.4-bbox-0248": {
+      "question": "Keep as warning, create a clipped derived annotation, or quarantine?",
+      "status": "PENDING",
+      "allowed_options": ["keep_raw_as_warning", "create_separate_clipped_derived_annotation", "quarantine_image_from_approved_dataset"],
+      "selected_option": null,
+      "reviewer": null,
+      "decided_at": null,
+      "rationale": null,
+      "evidence_links": []
+    }
+  }
+}

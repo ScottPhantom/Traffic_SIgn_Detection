@@ -1,0 +1,81 @@
+{
+  "artifacts": [
+    {
+      "path": "docs/review/generated/wp34_d04_class_support.csv",
+      "sha256": "52ad55e363615c958086ec462e1578dc3f3d38e94199cd5a9b2927d000d6ce42"
+    },
+    {
+      "path": "docs/review/generated/wp34_negative_audit.csv",
+      "sha256": "261d8f2de516dd0a1f910c9732807fd1b8eee4a9c797ffcb7a41c27c743f239a"
+    },
+    {
+      "path": "docs/review/wp34_d04_support_and_negative_audit_report.md",
+      "sha256": "d7d65d9d78a9c060e7b7cb313b2fce56e979a83d94abc7781ca4fa32cc68ff17"
+    },
+    {
+      "path": "docs/review/assets/wp34/negatives/page_001.jpg",
+      "sha256": "165de5ed21cdbb861abdb0f6795ce8158c1877a7bce9b1a18cf166bdf13e74d5"
+    },
+    {
+      "path": "docs/review/assets/wp34/negatives/page_002.jpg",
+      "sha256": "a838d131c3cf1a8f31e852ba5680954be60ae5cc7b5d3774965e0da3b164c8c7"
+    },
+    {
+      "path": "docs/review/assets/wp34/negatives/page_003.jpg",
+      "sha256": "1e859745f9aa32ee643eaa69942e42a11b5636566cd9b4abf119b466c1f7b48b"
+    },
+    {
+      "path": "docs/review/assets/wp34/negatives/page_004.jpg",
+      "sha256": "f71a5627d17fd8698683fccacc80e67b25c98cdea8d9cd8f6d666d309c22395a"
+    },
+    {
+      "path": "docs/review/assets/wp34/negatives/page_005.jpg",
+      "sha256": "4dca67f5631f664eb5cafffaedca2cbb88944949c76710e6840b4e9803709217"
+    },
+    {
+      "path": "docs/review/assets/wp34/negatives/page_006.jpg",
+      "sha256": "bd07822566bce22efdababfc26293e20629d7c3d01d37e5fbfd28c9beea0e0ac"
+    },
+    {
+      "path": "docs/review/assets/wp34/negatives/page_007.jpg",
+      "sha256": "4b300d6169062c1f9818058506d3353f7d821165b9cbd863665549a296d260ea"
+    },
+    {
+      "path": "docs/review/assets/wp34/negatives/page_008.jpg",
+      "sha256": "88899f33d64f1d1fd550cf40a085dbd852bb7bc684d5d97c39abfbbd6ca7a58a"
+    },
+    {
+      "path": "docs/review/assets/wp34/negatives/page_009.jpg",
+      "sha256": "8c8df161e8a50bb6f1e9305fc09ff4b4e415d2f5c0e0f01e9df238990df1c03b"
+    }
+  ],
+  "builder_sha256": "3d631195adb20bad6a54b901820e1639e7263ede9ff50eb13a5a2d4eb8839da7",
+  "d04_status": "PENDING_OWNER_DECISION",
+  "evidence_boundary": "D04_DECISION_SUPPORT_AND_NEGATIVE_AUDIT_PROVISIONAL_NOT_OWNER_DECISION_NO_SPLIT_NO_TRAINING",
+  "gate0": "BLOCKED",
+  "negative_decisions": {
+    "TRUE_NEGATIVE": 7,
+    "UNCLEAR": 5,
+    "UNLABELLED_SIGN_PRESENT": 13
+  },
+  "notes_sha256": "5a6dbdb96ad6639c16f5b50934a2e884684201dba323124fc2f3af07cffa8a5f",
+  "package": "M0-WP34",
+  "pinned_sources": {
+    "docs/review/generated/d02_group_id_registry.csv": "c3b11f4c143627fd777270b34e40486bf92fd6e82e4c306187165fef4f7155d3",
+    "docs/review/generated/d02_owner_decision_overlay.json": "e4e6719e223a6081498e144ef69b6239726ef537f41f16286c152e09c5dd197a",
+    "docs/review/generated/wp33_derived_boxes.csv": "4b9307003ce8fd3c1d50763a5950d3d57cf6b2ee6df3aeef74621707067501c0",
+    "docs/review/generated/wp33_derived_taxonomy.csv": "199ddd322aa05d4875af809c1c7c1459198ebf91ada24f406cbf039c406fa5ad",
+    "docs/review/wp33_independent_qa_record.md": "ddc2159f9c3e57e3ba2f61165181bc598d4b5f7b1311822a0065210047ee0f5b",
+    "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022"
+  },
+  "proposed_options": {
+    "DROP_FROM_V1_COLLECT_MORE": 12,
+    "KEEP_FULL": 27,
+    "KEEP_TRAIN_AND_TEST_NO_VAL": 6,
+    "KEEP_TRAIN_ONLY_UNVERIFIED": 9
+  },
+  "schema_version": 1,
+  "split_authorized": false,
+  "status": "WP34_AWAITING_QA_REVIEW",
+  "training_authorized": false
+}

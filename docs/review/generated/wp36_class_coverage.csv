@@ -1,0 +1,55 @@
+derived_key,d04_decision,required_splits,train_groups,val_groups,test_groups,train_boxes,val_boxes,test_boxes,requirement_met,no_val_for_tuning
+0,TRAIN_VAL_TEST,train val test,7,1,3,233,13,66,True,False
+1,TRAIN_WITH_ENRICHMENT,train,1,0,0,22,0,0,True,True
+2,TRAIN_VAL_TEST,train val test,8,1,2,376,4,90,True,False
+3,TRAIN_VAL_TEST,train val test,8,1,2,375,4,75,True,False
+4,TRAIN_VAL_TEST,train val test,1,1,1,12,12,9,True,False
+5,TRAIN_VAL_TEST,train val test,6,2,4,130,27,99,True,False
+6,TRAIN_VAL_TEST,train val test,3,1,1,156,22,4,True,False
+7,TRAIN_VAL_TEST,train val test,3,2,1,126,112,9,True,False
+8,TRAIN_VAL_TEST,train val test,3,1,1,150,51,12,True,False
+9,TRAIN_AND_TEST_NO_VAL,train test,1,0,1,14,0,29,True,True
+10,TRAIN_VAL_TEST,train val test,11,3,5,658,80,333,True,False
+11,TRAIN_AND_TEST_NO_VAL,train test,1,0,1,21,0,5,True,True
+12,TRAIN_VAL_TEST,train val test,3,3,1,166,61,53,True,False
+13,TRAIN_VAL_TEST,train val test,8,1,3,241,11,120,True,False
+14,TRAIN_VAL_TEST,train val test,2,1,1,9,3,73,True,False
+15,TRAIN_WITH_ENRICHMENT,train,1,0,0,29,0,0,True,True
+16:2.0,TRAIN_ONLY_UNVERIFIED,train,1,0,0,43,0,0,True,True
+16:2.2,TRAIN_WITH_ENRICHMENT,train,1,0,0,18,0,0,True,True
+16:2.5,TRAIN_WITH_ENRICHMENT,train,1,0,0,9,0,0,True,True
+17,TRAIN_VAL_TEST,train test,3,0,1,95,0,10,True,True
+18,TRAIN_VAL_TEST,train test,2,0,1,151,0,62,True,True
+19,TRAIN_VAL_TEST,train test,2,0,1,16,0,13,True,True
+20,TRAIN_AND_TEST_NO_VAL,train test,1,0,1,30,0,22,True,True
+21,TRAIN_WITH_ENRICHMENT,train,1,0,0,11,0,0,True,True
+22,TRAIN_VAL_TEST,train val test,1,1,1,100,11,20,True,False
+23,TRAIN_VAL_TEST,train val test,6,1,1,280,18,167,True,False
+24,TRAIN_ONLY_UNVERIFIED,train,1,0,0,56,0,0,True,True
+25,TRAIN_AND_TEST_NO_VAL,train test,1,1,0,7,18,0,False,True
+26,TRAIN_VAL_TEST,train val test,2,1,1,61,1,18,True,False
+27,TRAIN_ONLY_UNVERIFIED,train,1,0,0,36,0,0,True,True
+28,TRAIN_AND_TEST_NO_VAL,train test,1,0,1,26,0,1,True,True
+29,TRAIN_ONLY_UNVERIFIED,train,1,0,0,45,0,0,True,True
+30,TRAIN_VAL_TEST,train test,2,0,1,93,0,45,True,True
+32,TRAIN_VAL_TEST,train val test,5,1,1,105,29,52,True,False
+33,TRAIN_WITH_ENRICHMENT,train,1,0,0,19,0,0,True,True
+34,TRAIN_VAL_TEST,train val test,3,1,1,60,21,1,True,False
+35,TRAIN_ONLY_UNVERIFIED,train,1,0,0,87,0,0,True,True
+36,TRAIN_ONLY_UNVERIFIED,train,1,0,0,75,0,0,True,True
+37,TRAIN_ONLY_UNVERIFIED,train,1,0,0,47,0,0,True,True
+38,TRAIN_ONLY_UNVERIFIED,train,2,0,0,189,0,0,True,True
+39,TRAIN_VAL_TEST,train val test,5,1,1,253,54,152,True,False
+40,TRAIN_VAL_TEST,train test,2,0,1,67,0,143,True,True
+41,TRAIN_VAL_TEST,train val test,10,1,2,210,23,42,True,False
+42,TRAIN_WITH_ENRICHMENT,train,1,0,0,21,0,0,True,True
+43:2.5,TRAIN_WITH_ENRICHMENT,train,1,0,0,22,0,0,True,True
+43:2.7,TRAIN_WITH_ENRICHMENT,train,1,0,0,5,0,0,True,True
+44,TRAIN_WITH_ENRICHMENT,train,1,0,0,3,0,0,True,True
+45,TRAIN_VAL_TEST,train test,4,0,1,125,0,70,True,True
+46,TRAIN_VAL_TEST,train val test,3,4,1,220,168,47,True,False
+47,TRAIN_WITH_ENRICHMENT,train,1,0,0,16,0,0,True,True
+48,TRAIN_ONLY_UNVERIFIED,train,1,0,0,41,0,0,True,True
+49,TRAIN_ONLY_UNVERIFIED,train,1,0,0,219,0,0,True,True
+50,TRAIN_VAL_TEST,train test,2,0,1,113,0,8,True,True
+51,TRAIN_WITH_ENRICHMENT,train,1,0,0,5,0,0,True,True

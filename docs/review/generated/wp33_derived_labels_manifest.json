@@ -1,0 +1,36 @@
+{
+  "artifacts": [
+    {
+      "path": "docs/review/generated/wp33_derived_boxes.csv",
+      "sha256": "4b9307003ce8fd3c1d50763a5950d3d57cf6b2ee6df3aeef74621707067501c0"
+    },
+    {
+      "path": "docs/review/generated/wp33_derived_taxonomy.csv",
+      "sha256": "199ddd322aa05d4875af809c1c7c1459198ebf91ada24f406cbf039c406fa5ad"
+    },
+    {
+      "path": "docs/review/wp33_derived_labels_report.md",
+      "sha256": "63bcf4ff3aba7070103f5dbe13997f4cd7ee152c2c6325d9d84ce32a09786927"
+    }
+  ],
+  "box_count": 8334,
+  "builder_sha256": "720a085fed1d10af73737d643023c682c417ad5ee63824e0953f2b9a8fc14333",
+  "gate0": "BLOCKED",
+  "package": "M0-WP33",
+  "pinned_sources": {
+    "docs/review/d03_owner_decision_part1_record.md": "54c2cf2b42a1230e2c66dfef4d9388ed3159ca3dfe077fa77a70751c0c3b96e5",
+    "docs/review/d03_owner_decision_part2_record.md": "93044c877b517ecb063895ed2da0ece9daa8660cba2f662dcc0bd9927944dc7a",
+    "docs/review/generated/d03_owner_decisions_part1.csv": "24a2695fe3ea39669970179f7b34297e1f0fa686b299e5b901c6f0d5563e7091",
+    "docs/review/generated/d03_owner_decisions_part2.csv": "8d976868108820f8504ccfc96a5a72ac182abbe91288a171a3b3879be3a4e7b9",
+    "docs/review/generated/d03_owner_policies.csv": "f0593804cba228e5f6b30c6fe6fe84de52e34d2384aa38c53a9355220cfd7671",
+    "docs/review/wp33_height_value_decisions.csv": "329ff96518e1a0b8c4702a14a11ad6e8a7446d227e01976cf1a344fac0fdc163",
+    "results/data_audit/DATASET01_052bc980a7206f8d/image_inventory.csv": "d45aa7f398a040c44cbc040f4ec005d7e5a8ef50586e905315f76c792ca29022"
+  },
+  "raw_labels_mutated": false,
+  "schema_version": 1,
+  "split_authorized": false,
+  "status": "WP33_DERIVED_LABELS_AWAITING_QA",
+  "train_eligible_boxes": 8290,
+  "trainable_keys": 54,
+  "training_authorized": false
+}

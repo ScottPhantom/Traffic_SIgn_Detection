@@ -1,0 +1,10 @@
+dimension,bucket,box_count
+bbox_area_ratio,0.001_to_lt_0.005,3634
+bbox_area_ratio,0.005_to_lt_0.02,1337
+bbox_area_ratio,0.02_to_lt_0.1,271
+bbox_area_ratio,ge_0.1,4
+bbox_area_ratio,lt_0.001,3088
+crop_min_side_px,16_to_lt_32px,3233
+crop_min_side_px,32_to_lt_64px,2741
+crop_min_side_px,ge_64px,1474
+crop_min_side_px,lt_16px,886

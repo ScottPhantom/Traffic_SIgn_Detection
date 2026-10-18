@@ -1,0 +1,148 @@
+{
+  "artifacts": [
+    {
+      "path": "docs/review/generated/wp34_r1_d04_class_support.csv",
+      "sha256": "4a6bc278539fe3173b772fea2c81d42d5ff47a4c4d49414a67ca63f3271df892"
+    },
+    {
+      "path": "docs/review/generated/wp34_r1_negative_audit.csv",
+      "sha256": "2d0c47db3f8d2421542aec1b888f33d3d791462fa8b207e69847176a61230d01"
+    },
+    {
+      "path": "docs/review/wp34_r1_d04_support_and_negative_audit_report.md",
+      "sha256": "ba28325fbcb0e99cddd23a55aa6fce1d354da272824838690df19edab3e2e86a"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_0060.jpg",
+      "sha256": "aac581057f14ce182f17d8987ebe95d879e0a916d5cf9dbdd657f1407d9b418d"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_0061.jpg",
+      "sha256": "f186f7fab941e73e74a0ec02999826ffa135ccafe072957cddab3ba2ea8da83c"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_0187.jpg",
+      "sha256": "684fb0763c662fb9ca0c4a8636daffc00b717af75e9723eeeb05c62b82f388ae"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_0544.jpg",
+      "sha256": "5a41fd0762ad5bf80459d77a39914d64c50b61645c5f99ab42419497f2b84780"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_1514.jpg",
+      "sha256": "71a09ad62b15d758f2f66775c7fc167cc3d8f6c4adecebe32ed5f20008d5d237"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_1515.jpg",
+      "sha256": "cde8bb348a75846cf66c2fc66e632b089fbdfe9103627a7acb86d32ca49f3e72"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_1703.jpg",
+      "sha256": "31b74f837929fd260e6a31666022aca590622f09b90b135f56a5a1cb3147b6d2"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_1704.jpg",
+      "sha256": "cb13e758f00d726de9f9d30453c8df5fc101affb0c8b9c169277dceddc09e4aa"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_1705.jpg",
+      "sha256": "8b5aab6c0de840a0024c36a58eed96fd3d5cc0e1279df535bfddb4ae4a496a48"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_1706.jpg",
+      "sha256": "82383b4be3c45295f704b6e4bdcc1a7981a27e0dc734c35a404da7a395cdcf6b"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_1707.jpg",
+      "sha256": "a12f5d0726704ac1aa1ecadd0b22eaf2d1ee1206eda1d4170880018e6168d17f"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_1708.jpg",
+      "sha256": "4537c66cc9e9294c48b1fa384e91c037da5927b59fd981b98be282673aea8f0e"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2015.jpg",
+      "sha256": "8ba445046b4b56fce0e9b3c29c8e4e4c9e190adce39f79bfa039a9b18bcb0da0"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2016.jpg",
+      "sha256": "9d32234baa9110ddbc00e15c92a8892a5119512a9add1966b6c649b15b655100"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2017.jpg",
+      "sha256": "bb03ea6517f06b5e6d28f3f8dff64d454c0666135a6cc7c0553fb101972c6139"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2031.jpg",
+      "sha256": "30ad455873f5b0a40833395da2b1cfe5fb75d1990fa87314ea644d7a268911e0"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2051.jpg",
+      "sha256": "a8ba1068a687c51c555a7730afa9a97c0df17d62696ba7f822009e3acbf1dde7"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2723.jpg",
+      "sha256": "c5dcf9bbed901305f64439c3085d2944d6250fb4eb3051ee305152e3864898c9"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2766.jpg",
+      "sha256": "dd8ec4288d2bd75c73c2a01c8ff1919499863a28cb722321cf17f419912f1ca5"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2793.jpg",
+      "sha256": "b09d3ca0258cdf8b509e7e507be5a9cc8aa1acecc75d61ea76f4b13e049876f2"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2794.jpg",
+      "sha256": "d455fa293cdda60c012d62514d2fbd5fe1acb7d6b3e7b16b210df451737e3fe9"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2795.jpg",
+      "sha256": "c28c8293ef7435179d42d5f2f33a220ec4076402ba64887856ae2d9418fefcaa"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2796.jpg",
+      "sha256": "d7518073f4c2ba4538c7de166392ca944ee38c7e24d307645b3da811fff6c856"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2797.jpg",
+      "sha256": "c4b21c5362c8ea66836ee73cef011ab0d4ca2bbf8bc6062f9012c8dadca0c7f4"
+    },
+    {
+      "path": "docs/review/assets/wp34_r1/negatives/neg_2999.jpg",
+      "sha256": "36cc309caa11f3ec5cf7d099b8577bed3cf08ddb94fbf5e7313016cec5d4661f"
+    }
+  ],
+  "builder_sha256": "5d8e9af3bff07f0b41dd2dcd59c026cdf122886ef6a52d9f6833ba4ae168d206",
+  "d04_status": "PART1_APPROVED_42_CLASSES_PENDING",
+  "evidence_boundary": "D04_DECISION_SUPPORT_AND_NEGATIVE_AUDIT_PROVISIONAL_NOT_OWNER_DECISION_NO_SPLIT_NO_TRAINING",
+  "gate0": "BLOCKED",
+  "negative_decisions": {
+    "TRUE_NEGATIVE": 1,
+    "UNLABELLED_SIGN_PRESENT": 24
+  },
+  "notes_sha256": "487b78e43f4d7374ddbb24799a2928cadd49ca59927a6ab4103b3fd4e537dc4d",
+  "package": "M0-WP34-R1",
+  "pinned_sources": {
+    "docs/review/d04_owner_decision_part1_record.md": "0b8ff5b9b73e1aaf8d4efc78ab2eeab83d7d5a87d891988f687656771c854230",
+    "docs/review/generated/d04_owner_decisions_part1.csv": "62de39245a22292a9404702427d8b6bf3a9f746e081163d12198263815bc5409",
+    "docs/review/generated/wp34_d04_class_support.csv": "52ad55e363615c958086ec462e1578dc3f3d38e94199cd5a9b2927d000d6ce42",
+    "docs/review/generated/wp34_manifest.json": "0bc6d1707273f84b6b79e949e844cc0011a5d7587d1a78fc0062831077acc28c",
+    "docs/review/generated/wp34_negative_audit.csv": "261d8f2de516dd0a1f910c9732807fd1b8eee4a9c797ffcb7a41c27c743f239a",
+    "docs/review/wp34_d04_support_and_negative_audit_report.md": "d7d65d9d78a9c060e7b7cb313b2fce56e979a83d94abc7781ca4fa32cc68ff17",
+    "docs/review/wp34_independent_qa_record.md": "2e9a72b105ef736a0c42a2843ef3acb8172861db1d8f34e7964d5a0ca700b3ff",
+    "docs/review/wp34_negative_review_notes.csv": "5a6dbdb96ad6639c16f5b50934a2e884684201dba323124fc2f3af07cffa8a5f",
+    "scripts/build_wp34_d04_support_and_negatives.py": "3d631195adb20bad6a54b901820e1639e7263ede9ff50eb13a5a2d4eb8839da7",
+    "tests/test_wp34_d04_support_and_negatives.py": "9704f88fac42d765bde327d297b66097b7134ff9718e187e70ee633ca4f4d3d0"
+  },
+  "proposed_options": {
+    "KEEP_FULL": 27,
+    "KEEP_TRAIN_AND_TEST_NO_VAL": 6,
+    "KEEP_TRAIN_ONLY_UNVERIFIED": 9,
+    "OWNER_TRAIN_WITH_ENRICHMENT": 12
+  },
+  "schema_version": 1,
+  "split_authorized": false,
+  "status": "WP34_R1_AWAITING_QA_REVIEW",
+  "training_authorized": false
+}

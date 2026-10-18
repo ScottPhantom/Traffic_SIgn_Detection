@@ -1,0 +1,7617 @@
+{
+  "all_bounds_fit": true,
+  "all_overlays_visible": true,
+  "all_overlays_within_canvas": true,
+  "all_text_complete": true,
+  "overlay_count": 156,
+  "page_count": 13,
+  "pages": [
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_001.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 0,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  197,
+                  432
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                110.00062745098037,
+                308.09845098039216,
+                175.68721568627436,
+                367.9018627450981
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                60.0,
+                263.0,
+                225.68627450980392,
+                413.0
+              ],
+              "stem": "2930",
+              "target_class": 0
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  582,
+                  432
+                ]
+              ],
+              "label_line_number": 6,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                497.00061538461534,
+                312.9998461538462,
+                558.5403076923076,
+                366.84615384615387
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                447.0,
+                263.0,
+                608.5384615384615,
+                413.0
+              ],
+              "stem": "1027",
+              "target_class": 0
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  967,
+                  432
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                879.6132024539877,
+                308.0919509202454,
+                946.7914110429448,
+                367.9077177914111
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                829.0,
+                263.0,
+                997.4049079754601,
+                413.0
+              ],
+              "stem": "1446",
+              "target_class": 0
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              68,
+              808,
+              85
+            ],
+            [
+              18,
+              88,
+              624,
+              104
+            ],
+            [
+              18,
+              111,
+              220,
+              124
+            ],
+            [
+              18,
+              131,
+              403,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 1,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  200,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                96.82758620689656,
+                748.2583491379311,
+                188.63751724137933,
+                807.7409784482759
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                27.0,
+                703.0,
+                258.4655172413793,
+                853.0
+              ],
+              "stem": "0492",
+              "target_class": 1
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  585,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                497.76291525423727,
+                748.1271694915254,
+                558.1440677966102,
+                807.872906779661
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                452.0,
+                747.4915254237288,
+                603.9067796610169,
+                853.0
+              ],
+              "stem": "0499",
+              "target_class": 1
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  967,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                872.6435068493151,
+                748.2056849315069,
+                952.780493150685,
+                807.7950547945205
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                811.0,
+                703.0,
+                1014.4246575342465,
+                853.0
+              ],
+              "stem": "0507",
+              "target_class": 1
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              510,
+              857,
+              525
+            ],
+            [
+              18,
+              531,
+              620,
+              544
+            ],
+            [
+              18,
+              547,
+              231,
+              564
+            ],
+            [
+              18,
+              571,
+              524,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 2,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  200,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                114.07605687203787,
+                1187.7868720379147,
+                172.36944075829376,
+                1247.502682464455
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                70.0,
+                1143.0,
+                216.44549763033174,
+                1293.0
+              ],
+              "stem": "2509",
+              "target_class": 2
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  585,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                499.42857142857144,
+                1194.4288285714285,
+                550.857142857143,
+                1241.5708285714286
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                448.0,
+                1143.0,
+                606.5714285714286,
+                1293.0
+              ],
+              "stem": "1031",
+              "target_class": 2
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  970,
+                  1312
+                ]
+              ],
+              "label_line_number": 5,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                881.1779672131148,
+                1189.7203278688526,
+                945.1139672131145,
+                1248.7361311475408
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                832.0,
+                1143.0,
+                994.2950819672132,
+                1293.0
+              ],
+              "stem": "2844",
+              "target_class": 2
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              948,
+              670,
+              965
+            ],
+            [
+              18,
+              968,
+              546,
+              984
+            ],
+            [
+              18,
+              991,
+              220,
+              1004
+            ],
+            [
+              18,
+              1011,
+              383,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 3,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  197,
+                  1752
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                113.93793939393927,
+                1628.4546363636364,
+                171.5146666666667,
+                1687.5453636363636
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                70.0,
+                1583.0,
+                215.45454545454544,
+                1733.0
+              ],
+              "stem": "2872",
+              "target_class": 3
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  585,
+                  1752
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                497.42857142857144,
+                1638.713042857143,
+                553.1442285714286,
+                1681.5713
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                446.0,
+                1583.0,
+                608.8571428571429,
+                1733.0
+              ],
+              "stem": "1039",
+              "target_class": 3
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  970,
+                  1752
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                879.0657190082646,
+                1627.6283842975206,
+                947.2479338842975,
+                1687.1325909090908
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                827.0,
+                1583.0,
+                999.3140495867768,
+                1733.0
+              ],
+              "stem": "0825",
+              "target_class": 3
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1390,
+              765,
+              1405
+            ],
+            [
+              18,
+              1411,
+              667,
+              1424
+            ],
+            [
+              18,
+              1428,
+              529,
+              1444
+            ],
+            [
+              18,
+              1451,
+              533,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_002.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 4,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  200,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                107.2255483870967,
+                308.16072580645164,
+                178.1927741935483,
+                367.83856451612905
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                54.0,
+                263.0,
+                231.41935483870967,
+                413.0
+              ],
+              "stem": "1442",
+              "target_class": 4
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  582,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                488.87045161290325,
+                308.16118548387095,
+                567.0965161290322,
+                367.8385887096774
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                430.0,
+                290.4193548387097,
+                625.9677419354839,
+                413.0
+              ],
+              "stem": "1726",
+              "target_class": 4
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  970,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                876.9215686274509,
+                308.09808823529414,
+                948.4905098039214,
+                367.9020294117647
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                823.0,
+                263.0,
+                1002.4117647058823,
+                413.0
+              ],
+              "stem": "1725",
+              "target_class": 4
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              68,
+              754,
+              85
+            ],
+            [
+              18,
+              91,
+              545,
+              104
+            ],
+            [
+              18,
+              107,
+              231,
+              124
+            ],
+            [
+              18,
+              131,
+              524,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 5,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  200,
+                  872
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                106.5731428571428,
+                749.4289285714287,
+                178.00057142857142,
+                806.5725000000001
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                53.0,
+                703.0,
+                231.57142857142858,
+                853.0
+              ],
+              "stem": "0160",
+              "target_class": 5
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  582,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                493.61728395061726,
+                748.0616913580247,
+                560.9014320987656,
+                807.9383580246914
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                443.0,
+                703.0,
+                611.5185185185185,
+                853.0
+              ],
+              "stem": "1379",
+              "target_class": 5
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  970,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                881.2140408163266,
+                748.1531377551021,
+                944.7342040816327,
+                807.8468316326531
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                833.0,
+                703.0,
+                992.9489795918367,
+                853.0
+              ],
+              "stem": "1204",
+              "target_class": 5
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              511,
+              943,
+              525
+            ],
+            [
+              18,
+              531,
+              671,
+              544
+            ],
+            [
+              18,
+              547,
+              266,
+              564
+            ],
+            [
+              18,
+              571,
+              524,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 6,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  200,
+                  1312
+                ]
+              ],
+              "label_line_number": 5,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                109.44843049327355,
+                1188.0676816143498,
+                176.03971300448427,
+                1247.9328565022422
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                59.0,
+                1143.0,
+                226.4887892376682,
+                1293.0
+              ],
+              "stem": "3026",
+              "target_class": 6
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  585,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                494.1412351274787,
+                1188.0422719546743,
+                560.8552521246459,
+                1247.957490084986
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                444.0,
+                1143.0,
+                610.9971671388103,
+                1293.0
+              ],
+              "stem": "3079",
+              "target_class": 6
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  970,
+                  1312
+                ]
+              ],
+              "label_line_number": 3,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                878.248808988764,
+                1188.5051797752808,
+                947.349393258427,
+                1247.4932022471912
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                826.0,
+                1143.0,
+                999.5955056179776,
+                1293.0
+              ],
+              "stem": "3064",
+              "target_class": 6
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              947,
+              868,
+              965
+            ],
+            [
+              18,
+              967,
+              639,
+              984
+            ],
+            [
+              18,
+              991,
+              220,
+              1004
+            ],
+            [
+              18,
+              1011,
+              491,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 7,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  200,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                115.09183673469389,
+                1628.1529540816327,
+                170.95942857142856,
+                1687.8466479591837
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                73.0,
+                1583.0,
+                213.05102040816325,
+                1733.0
+              ],
+              "stem": "1468",
+              "target_class": 7
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  582,
+                  1752
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                498.0006000000002,
+                1631.749925,
+                554.2506000000002,
+                1684.250075
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                453.0,
+                1583.0,
+                603.0,
+                1733.0
+              ],
+              "stem": "0296",
+              "target_class": 7
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  970,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                885.3036521739131,
+                1628.6516086956522,
+                939.6521739130435,
+                1687.3472608695652
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                844.0,
+                1583.0,
+                980.9565217391305,
+                1733.0
+              ],
+              "stem": "1782",
+              "target_class": 7
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1388,
+              640,
+              1405
+            ],
+            [
+              18,
+              1408,
+              512,
+              1424
+            ],
+            [
+              18,
+              1431,
+              220,
+              1444
+            ],
+            [
+              18,
+              1451,
+              318,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_003.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 8,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  200,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                121.18562831858401,
+                308.13299557522123,
+                164.9909380530973,
+                367.8672699115044
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                88.0,
+                263.0,
+                198.1769911504425,
+                413.0
+              ],
+              "stem": "1399",
+              "target_class": 8
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  585,
+                  432
+                ]
+              ],
+              "label_line_number": 3,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                501.79787755102035,
+                308.9190102040816,
+                553.8377142857142,
+                367.0819693877551
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                462.0,
+                263.0,
+                593.6326530612245,
+                413.0
+              ],
+              "stem": "0294",
+              "target_class": 8
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  970,
+                  432
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                893.3032727272728,
+                308.4547575757575,
+                932.6967272727272,
+                367.54548484848476
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                863.0,
+                263.0,
+                963.0,
+                413.0
+              ],
+              "stem": "0320",
+              "target_class": 8
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              68,
+              618,
+              85
+            ],
+            [
+              18,
+              88,
+              545,
+              104
+            ],
+            [
+              18,
+              111,
+              220,
+              124
+            ],
+            [
+              18,
+              131,
+              318,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 9,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  200,
+                  872
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                105.8122790697673,
+                748.3488023255813,
+                179.06809302325567,
+                807.6502209302325
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                50.0,
+                703.0,
+                234.88372093023256,
+                853.0
+              ],
+              "stem": "0164",
+              "target_class": 9
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  585,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                502.99938461538466,
+                752.9993076923076,
+                556.8443076923078,
+                806.8456153846155
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                453.0,
+                703.0,
+                603.0,
+                853.0
+              ],
+              "stem": "0157",
+              "target_class": 9
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  970,
+                  872
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                878.0836666666667,
+                748.8334166666666,
+                946.8336666666668,
+                807.1669166666667
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                826.0,
+                703.0,
+                998.9166666666667,
+                853.0
+              ],
+              "stem": "0172",
+              "target_class": 9
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              508,
+              781,
+              525
+            ],
+            [
+              18,
+              528,
+              647,
+              544
+            ],
+            [
+              18,
+              551,
+              220,
+              564
+            ],
+            [
+              18,
+              571,
+              468,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 10,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  200,
+                  1312
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                111.82504347826102,
+                1188.6526956521739,
+                172.69530434782598,
+                1247.348347826087
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                64.0,
+                1143.0,
+                220.52173913043478,
+                1293.0
+              ],
+              "stem": "0776",
+              "target_class": 10
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  585,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                495.7682364532019,
+                1188.0736551724137,
+                560.0532413793104,
+                1247.9258719211823
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                447.0,
+                1143.0,
+                608.8226600985222,
+                1293.0
+              ],
+              "stem": "2468",
+              "target_class": 10
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  970,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                883.1701818181817,
+                1188.1703011363636,
+                942.8287272727274,
+                1247.8295625
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                838.0,
+                1143.0,
+                988.0,
+                1293.0
+              ],
+              "stem": "2484",
+              "target_class": 10
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              948,
+              817,
+              965
+            ],
+            [
+              18,
+              968,
+              592,
+              984
+            ],
+            [
+              18,
+              987,
+              323,
+              1004
+            ],
+            [
+              18,
+              1011,
+              318,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 11,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  197,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                117.30365217391306,
+                1628.6519130434783,
+                169.47756521739132,
+                1687.3475652173913
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                76.0,
+                1583.0,
+                208.6086956521739,
+                1733.0
+              ],
+              "stem": "0223",
+              "target_class": 11
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  582,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                499.73892173913043,
+                1627.9999739130435,
+                555.1739130434783,
+                1687.9998434782608
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                458.0,
+                1583.0,
+                596.9130434782609,
+                1733.0
+              ],
+              "stem": "0239",
+              "target_class": 11
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  967,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                884.6877470355731,
+                1628.0594011857706,
+                941.0116679841897,
+                1687.9408122529644
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                842.0,
+                1583.0,
+                983.699604743083,
+                1733.0
+              ],
+              "stem": "0240",
+              "target_class": 11
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1388,
+              648,
+              1405
+            ],
+            [
+              18,
+              1409,
+              527,
+              1424
+            ],
+            [
+              18,
+              1431,
+              220,
+              1444
+            ],
+            [
+              18,
+              1451,
+              318,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_004.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 12,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  200,
+                  432
+                ]
+              ],
+              "label_line_number": 5,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                114.99979428571432,
+                308.00003,
+                170.7142171428571,
+                367.99996999999996
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                73.0,
+                280.14285714285717,
+                176.71428571428572,
+                413.0
+              ],
+              "stem": "2379",
+              "target_class": 12
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  585,
+                  432
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                479.8755,
+                308.31256249999996,
+                575.1885,
+                367.68725
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                408.0,
+                263.0,
+                647.0625,
+                413.0
+              ],
+              "stem": "2334",
+              "target_class": 12
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  970,
+                  432
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                866.2118787878788,
+                308.4543333333333,
+                960.1507878787879,
+                367.5450606060606
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                795.0,
+                263.0,
+                1031.3636363636365,
+                413.0
+              ],
+              "stem": "1214",
+              "target_class": 12
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              67,
+              837,
+              85
+            ],
+            [
+              18,
+              87,
+              681,
+              104
+            ],
+            [
+              18,
+              111,
+              220,
+              124
+            ],
+            [
+              18,
+              131,
+              540,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 13,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  197,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                107.70356756756753,
+                748.9452162162162,
+                177.97297297297297,
+                808.4050540540538
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                55.0,
+                703.0,
+                230.67567567567568,
+                853.0
+              ],
+              "stem": "2972",
+              "target_class": 13
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  582,
+                  872
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                488.8095135135136,
+                751.6495405405406,
+                565.8378378378378,
+                800.2977027027026
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                428.0,
+                703.0,
+                626.6486486486486,
+                853.0
+              ],
+              "stem": "0436",
+              "target_class": 13
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  970,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                879.3688265682656,
+                747.8341697416975,
+                946.3431734317344,
+                807.6127675276753
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                829.0,
+                703.0,
+                996.7121771217712,
+                853.0
+              ],
+              "stem": "2928",
+              "target_class": 13
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              511,
+              627,
+              525
+            ],
+            [
+              18,
+              531,
+              506,
+              544
+            ],
+            [
+              18,
+              551,
+              220,
+              564
+            ],
+            [
+              18,
+              571,
+              428,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 14,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  200,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                112.15305494505488,
+                1188.3293571428571,
+                173.1425934065935,
+                1247.6703131868132
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                66.0,
+                1143.0,
+                219.2967032967033,
+                1293.0
+              ],
+              "stem": "3136",
+              "target_class": 14
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  582,
+                  1312
+                ]
+              ],
+              "label_line_number": 3,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                501.4499775280901,
+                1188.5066629213484,
+                553.6977078651685,
+                1247.4946853932584
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                461.0,
+                1143.0,
+                594.1460674157304,
+                1293.0
+              ],
+              "stem": "3153",
+              "target_class": 14
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  967,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                883.6231397849463,
+                1188.160946236559,
+                942.7632688172042,
+                1247.8384946236558
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                839.0,
+                1143.0,
+                987.3870967741935,
+                1293.0
+              ],
+              "stem": "3159",
+              "target_class": 14
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              948,
+              716,
+              965
+            ],
+            [
+              18,
+              968,
+              552,
+              984
+            ],
+            [
+              18,
+              988,
+              524,
+              1004
+            ],
+            [
+              18,
+              1011,
+              719,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 15,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  197,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                104.81781818181821,
+                1628.455181818182,
+                179.8178181818182,
+                1687.545909090909
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                48.0,
+                1583.0,
+                236.63636363636365,
+                1733.0
+              ],
+              "stem": "0454",
+              "target_class": 15
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  585,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                491.5708571428573,
+                1629.4280714285715,
+                562.9982857142858,
+                1686.571642857143
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                438.0,
+                1583.0,
+                616.5714285714286,
+                1733.0
+              ],
+              "stem": "0442",
+              "target_class": 15
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  970,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                882.4755475113122,
+                1627.7964140271492,
+                942.8825701357466,
+                1687.5249343891403
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                837.0,
+                1625.0814479638009,
+                988.3574660633484,
+                1733.0
+              ],
+              "stem": "0463",
+              "target_class": 15
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1388,
+              848,
+              1405
+            ],
+            [
+              18,
+              1408,
+              614,
+              1424
+            ],
+            [
+              18,
+              1431,
+              220,
+              1444
+            ],
+            [
+              18,
+              1451,
+              482,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_005.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 16,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  200,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                113.90419512195136,
+                310.56068292682926,
+                168.78224390243918,
+                365.43917073170724
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                70.0,
+                263.0,
+                216.34146341463415,
+                413.0
+              ],
+              "stem": "0566",
+              "target_class": 16
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  585,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                502.99938461538443,
+                309.1543076923076,
+                556.8443076923076,
+                363.00061538461534
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                453.0,
+                263.0,
+                603.0,
+                413.0
+              ],
+              "stem": "0559",
+              "target_class": 16
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  970,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                881.9130434782606,
+                308.65324999999996,
+                943.8706086956521,
+                367.34831521739136
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                833.0,
+                263.0,
+                992.7826086956521,
+                413.0
+              ],
+              "stem": "0568",
+              "target_class": 16
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              68,
+              676,
+              85
+            ],
+            [
+              18,
+              88,
+              578,
+              104
+            ],
+            [
+              18,
+              107,
+              453,
+              124
+            ],
+            [
+              18,
+              131,
+              586,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 17,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  200,
+                  872
+                ]
+              ],
+              "label_line_number": 5,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                107.99959999999987,
+                747.99965,
+                178.00039999999984,
+                807.99905
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                53.0,
+                703.0,
+                233.0,
+                853.0
+              ],
+              "stem": "1044",
+              "target_class": 17
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  585,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                496.7747096774193,
+                748.161,
+                558.0660645161291,
+                807.8379677419355
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                450.0,
+                703.0,
+                604.8387096774193,
+                853.0
+              ],
+              "stem": "2848",
+              "target_class": 17
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  970,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                881.9102902374669,
+                748.1185672823219,
+                942.8599050131926,
+                807.8811794195251
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                836.0,
+                703.0,
+                988.7704485488126,
+                853.0
+              ],
+              "stem": "2867",
+              "target_class": 17
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              508,
+              665,
+              525
+            ],
+            [
+              18,
+              528,
+              579,
+              544
+            ],
+            [
+              18,
+              548,
+              506,
+              564
+            ],
+            [
+              18,
+              571,
+              411,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 18,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  200,
+                  1312
+                ]
+              ],
+              "label_line_number": 7,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                109.32334883720938,
+                1188.348523255814,
+                175.60353488372095,
+                1247.6499418604653
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                57.0,
+                1143.0,
+                227.93023255813952,
+                1293.0
+              ],
+              "stem": "0776",
+              "target_class": 18
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  585,
+                  1312
+                ]
+              ],
+              "label_line_number": 5,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                499.45418867924536,
+                1188.2823679245284,
+                556.0570566037736,
+                1247.7165
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                457.0,
+                1143.0,
+                598.5094339622642,
+                1293.0
+              ],
+              "stem": "0573",
+              "target_class": 18
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  970,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                882.551724137931,
+                1188.2589439655171,
+                943.327172413793,
+                1247.741573275862
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                836.0,
+                1143.0,
+                989.8793103448276,
+                1293.0
+              ],
+              "stem": "2077",
+              "target_class": 18
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              948,
+              865,
+              965
+            ],
+            [
+              18,
+              968,
+              628,
+              984
+            ],
+            [
+              18,
+              988,
+              474,
+              1004
+            ],
+            [
+              18,
+              1011,
+              533,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 19,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  200,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                119.45432727272728,
+                1628.000040909091,
+                165.81840000000005,
+                1687.9996863636363
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                84.0,
+                1583.0,
+                201.27272727272725,
+                1733.0
+              ],
+              "stem": "0601",
+              "target_class": 19
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  585,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                505.526947368421,
+                1628.3939868421053,
+                550.9210526315791,
+                1687.6049868421053
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                470.0,
+                1583.0,
+                586.4473684210526,
+                1733.0
+              ],
+              "stem": "0595",
+              "target_class": 19
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  970,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                889.0783820224719,
+                1628.5056685393258,
+                936.2699325842698,
+                1687.4946011235954
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                852.0,
+                1583.0,
+                973.3483146067415,
+                1733.0
+              ],
+              "stem": "0598",
+              "target_class": 19
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1388,
+              834,
+              1405
+            ],
+            [
+              18,
+              1408,
+              629,
+              1424
+            ],
+            [
+              18,
+              1431,
+              220,
+              1444
+            ],
+            [
+              18,
+              1451,
+              481,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_006.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 20,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  200,
+                  432
+                ]
+              ],
+              "label_line_number": 5,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                114.67149367088605,
+                308.5696392405063,
+                171.63351898734174,
+                367.42998101265823
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                71.0,
+                263.0,
+                215.30379746835442,
+                413.0
+              ],
+              "stem": "1685",
+              "target_class": 20
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  582,
+                  432
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                500.30434782608694,
+                308.6516521739131,
+                554.6528695652173,
+                367.3473043478261
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                459.0,
+                263.0,
+                595.9565217391305,
+                413.0
+              ],
+              "stem": "0654",
+              "target_class": 20
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  970,
+                  432
+                ]
+              ],
+              "label_line_number": 5,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                884.6708860759494,
+                308.5699810126582,
+                941.632911392405,
+                367.4303227848102
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                841.0,
+                263.0,
+                985.3037974683544,
+                413.0
+              ],
+              "stem": "1687",
+              "target_class": 20
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              68,
+              648,
+              85
+            ],
+            [
+              18,
+              88,
+              523,
+              104
+            ],
+            [
+              18,
+              111,
+              220,
+              124
+            ],
+            [
+              18,
+              131,
+              405,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 21,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  200,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                106.93312359550559,
+                748.5053651685394,
+                177.71964044943817,
+                807.494297752809
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                53.0,
+                703.0,
+                231.65168539325842,
+                853.0
+              ],
+              "stem": "0733",
+              "target_class": 21
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  582,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                498.312375,
+                748.3125234375,
+                557.687625,
+                807.6876328124999
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                453.0,
+                703.0,
+                603.0,
+                853.0
+              ],
+              "stem": "0738",
+              "target_class": 21
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  970,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                884.0282709163347,
+                748.4182131474104,
+                940.8009880478087,
+                808.179109561753
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                841.0,
+                747.8207171314741,
+                983.8286852589641,
+                853.0
+              ],
+              "stem": "0740",
+              "target_class": 21
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              508,
+              831,
+              525
+            ],
+            [
+              18,
+              528,
+              608,
+              544
+            ],
+            [
+              18,
+              551,
+              220,
+              564
+            ],
+            [
+              18,
+              571,
+              318,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 22,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  200,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                110.00103225806455,
+                1188.1607903225806,
+                176.12954838709675,
+                1247.838629032258
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                60.0,
+                1143.0,
+                226.1290322580645,
+                1293.0
+              ],
+              "stem": "1175",
+              "target_class": 22
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  582,
+                  1312
+                ]
+              ],
+              "label_line_number": 9,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                497.4781971830986,
+                1187.3664929577465,
+                558.7451267605634,
+                1246.5215915492956
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                451.0,
+                1143.0,
+                605.2253521126761,
+                1293.0
+              ],
+              "stem": "0760",
+              "target_class": 22
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  970,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                879.1746086956523,
+                1188.6526956521739,
+                946.5666086956522,
+                1247.348347826087
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                827.0,
+                1143.0,
+                998.7391304347826,
+                1293.0
+              ],
+              "stem": "1171",
+              "target_class": 22
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              948,
+              733,
+              965
+            ],
+            [
+              18,
+              968,
+              600,
+              984
+            ],
+            [
+              18,
+              988,
+              425,
+              1004
+            ],
+            [
+              18,
+              1011,
+              559,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 23,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  200,
+                  1752
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                119.49654961832059,
+                1628.8013435114503,
+                166.442748091603,
+                1688.343145038168
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                84.0,
+                1583.0,
+                201.93893129770993,
+                1733.0
+              ],
+              "stem": "2099",
+              "target_class": 23
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  585,
+                  1752
+                ]
+              ],
+              "label_line_number": 5,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                498.5352857142856,
+                1628.5351517857143,
+                557.4647142857144,
+                1687.4640982142855
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                453.0,
+                1583.0,
+                603.0,
+                1733.0
+              ],
+              "stem": "0763",
+              "target_class": 23
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  970,
+                  1752
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                884.9322162162161,
+                1628.5188986486487,
+                940.1640000000001,
+                1687.6062094594595
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                843.0,
+                1583.0,
+                982.8648648648649,
+                1733.0
+              ],
+              "stem": "2074",
+              "target_class": 23
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1388,
+              866,
+              1405
+            ],
+            [
+              18,
+              1407,
+              759,
+              1424
+            ],
+            [
+              18,
+              1427,
+              585,
+              1444
+            ],
+            [
+              18,
+              1451,
+              318,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_007.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 24,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  197,
+                  432
+                ]
+              ],
+              "label_line_number": 7,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                113.10539860139863,
+                308.10481118881114,
+                172.89560839160845,
+                367.89527272727275
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                68.0,
+                263.0,
+                172.8951048951049,
+                413.0
+              ],
+              "stem": "0809",
+              "target_class": 24
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  582,
+                  432
+                ]
+              ],
+              "label_line_number": 7,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                489.0,
+                308.00085,
+                566.5008,
+                368.00024999999994
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                429.0,
+                263.0,
+                626.5,
+                413.0
+              ],
+              "stem": "0782",
+              "target_class": 24
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  977,
+                  432
+                ]
+              ],
+              "label_line_number": 10,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                881.7627118644068,
+                308.76177118644074,
+                942.7796610169489,
+                367.2369067796611
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                836.0,
+                263.0,
+                988.542372881356,
+                413.0
+              ],
+              "stem": "0776",
+              "target_class": 24
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              67,
+              663,
+              85
+            ],
+            [
+              18,
+              87,
+              501,
+              104
+            ],
+            [
+              18,
+              107,
+              518,
+              124
+            ],
+            [
+              18,
+              131,
+              318,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 25,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  200,
+                  872
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                104.30288372093001,
+                748.3497790697672,
+                181.04818604651177,
+                807.6511976744187
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                45.0,
+                703.0,
+                240.34883720930233,
+                853.0
+              ],
+              "stem": "1277",
+              "target_class": 25
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  585,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                484.39165217391314,
+                748.6517826086956,
+                571.3488695652172,
+                807.3474347826087
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                417.0,
+                703.0,
+                638.7391304347826,
+                826.9130434782609
+              ],
+              "stem": "1289",
+              "target_class": 25
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  970,
+                  872
+                ]
+              ],
+              "label_line_number": 3,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                863.9800000000001,
+                748.1179901960784,
+                962.0200000000001,
+                806.9409313725489
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                788.0,
+                704.0,
+                1038.0,
+                851.0588235294117
+              ],
+              "stem": "1423",
+              "target_class": 25
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              510,
+              790,
+              525
+            ],
+            [
+              18,
+              531,
+              507,
+              544
+            ],
+            [
+              18,
+              547,
+              620,
+              564
+            ],
+            [
+              18,
+              571,
+              415,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 26,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  200,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                100.21895652173907,
+                1188.6524673913043,
+                185.00052173913022,
+                1247.3475326086955
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                35.0,
+                1143.0,
+                250.2173913043478,
+                1293.0
+              ],
+              "stem": "0984",
+              "target_class": 26
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  582,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                490.14228571428555,
+                1189.4285714285713,
+                565.1422857142859,
+                1246.572142857143
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                433.0,
+                1143.0,
+                622.2857142857143,
+                1293.0
+              ],
+              "stem": "0980",
+              "target_class": 26
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  967,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                880.542695652174,
+                1188.6517989130434,
+                945.7606086956522,
+                1247.3477445652175
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                830.0,
+                1143.0,
+                996.304347826087,
+                1293.0
+              ],
+              "stem": "0995",
+              "target_class": 26
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              951,
+              815,
+              965
+            ],
+            [
+              18,
+              971,
+              739,
+              984
+            ],
+            [
+              18,
+              989,
+              469,
+              1004
+            ],
+            [
+              18,
+              1011,
+              428,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 27,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  200,
+                  1752
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                117.42685714285722,
+                1629.4288571428572,
+                170.99828571428577,
+                1686.5724285714286
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                71.0,
+                1583.0,
+                213.85714285714286,
+                1733.0
+              ],
+              "stem": "1064",
+              "target_class": 27
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  582,
+                  1752
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                498.9173877551021,
+                1628.9183979591835,
+                557.0816326530614,
+                1687.081357142857
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                453.0,
+                1583.0,
+                603.0,
+                1733.0
+              ],
+              "stem": "1070",
+              "target_class": 27
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  967,
+                  1752
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                882.4297142857142,
+                1629.4284285714284,
+                943.1428571428571,
+                1686.572
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                836.0,
+                1583.0,
+                989.5714285714286,
+                1733.0
+              ],
+              "stem": "1068",
+              "target_class": 27
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1390,
+              630,
+              1405
+            ],
+            [
+              18,
+              1411,
+              517,
+              1424
+            ],
+            [
+              18,
+              1431,
+              220,
+              1444
+            ],
+            [
+              18,
+              1451,
+              434,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_008.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 28,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  207,
+                  432
+                ]
+              ],
+              "label_line_number": 10,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                113.60353488372098,
+                308.3501976744186,
+                171.1633488372093,
+                367.6516162790698
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                70.0,
+                263.0,
+                214.7674418604651,
+                413.0
+              ],
+              "stem": "2898",
+              "target_class": 28
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  585,
+                  432
+                ]
+              ],
+              "label_line_number": 6,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                499.50096,
+                308.00003000000004,
+                556.50192,
+                367.99996999999996
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                456.0,
+                263.0,
+                600.0,
+                413.0
+              ],
+              "stem": "2904",
+              "target_class": 28
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  977,
+                  432
+                ]
+              ],
+              "label_line_number": 11,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                881.1493333333333,
+                307.4450370370371,
+                944.1111111111111,
+                366.7050370370371
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                833.0,
+                263.0,
+                992.2592592592592,
+                413.0
+              ],
+              "stem": "2896",
+              "target_class": 28
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              70,
+              839,
+              85
+            ],
+            [
+              18,
+              91,
+              507,
+              104
+            ],
+            [
+              18,
+              107,
+              523,
+              124
+            ],
+            [
+              18,
+              131,
+              586,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 29,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  197,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                114.26531343283581,
+                748.8760223880597,
+                171.09158208955228,
+                807.9516194029851
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                70.0,
+                703.0,
+                215.52238805970148,
+                853.0
+              ],
+              "stem": "1538",
+              "target_class": 29
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  585,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                496.00038095238097,
+                748.2382857142857,
+                560.2860952380951,
+                807.7617142857143
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                446.0,
+                703.0,
+                610.2857142857142,
+                853.0
+              ],
+              "stem": "1544",
+              "target_class": 29
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  970,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                885.9094876033057,
+                747.6283595041323,
+                939.2156694214875,
+                807.1325661157025
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                845.0,
+                703.0,
+                980.1239669421487,
+                853.0
+              ],
+              "stem": "1695",
+              "target_class": 29
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              508,
+              775,
+              525
+            ],
+            [
+              18,
+              528,
+              512,
+              544
+            ],
+            [
+              18,
+              551,
+              506,
+              564
+            ],
+            [
+              18,
+              571,
+              318,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 30,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  200,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                100.71702654867256,
+                1188.1328362831857,
+                184.34534513274343,
+                1247.867110619469
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                37.0,
+                1143.0,
+                248.06194690265488,
+                1293.0
+              ],
+              "stem": "1590",
+              "target_class": 30
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  582,
+                  1312
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                505.00079999999997,
+                1187.99995,
+                550.0008000000001,
+                1247.99935
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                470.0,
+                1143.0,
+                585.0,
+                1293.0
+              ],
+              "stem": "1154",
+              "target_class": 30
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  967,
+                  1312
+                ]
+              ],
+              "label_line_number": 3,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                869.6252999999999,
+                1188.00043125,
+                955.8759,
+                1248.00016875
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                804.0,
+                1143.0,
+                1021.5,
+                1293.0
+              ],
+              "stem": "1554",
+              "target_class": 30
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              950,
+              743,
+              965
+            ],
+            [
+              18,
+              971,
+              507,
+              984
+            ],
+            [
+              18,
+              987,
+              564,
+              1004
+            ],
+            [
+              18,
+              1011,
+              415,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 31,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  197,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                113.0821229508197,
+                1628.0822295081966,
+                172.918106557377,
+                1687.9185573770492
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                68.0,
+                1583.0,
+                218.0,
+                1733.0
+              ],
+              "stem": "1322",
+              "target_class": 31
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  582,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                494.7449668367347,
+                1628.1530612244896,
+                560.5611862244898,
+                1687.8469387755101
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                445.0,
+                1583.0,
+                610.3061224489795,
+                1733.0
+              ],
+              "stem": "1323",
+              "target_class": 31
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  977,
+                  1752
+                ]
+              ],
+              "label_line_number": 10,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                891.707512195122,
+                1628.1218170731709,
+                933.1713170731707,
+                1687.8780853658536
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                860.0,
+                1583.0,
+                951.4634146341464,
+                1733.0
+              ],
+              "stem": "0771",
+              "target_class": 31
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1391,
+              872,
+              1405
+            ],
+            [
+              18,
+              1411,
+              523,
+              1424
+            ],
+            [
+              18,
+              1428,
+              672,
+              1444
+            ],
+            [
+              18,
+              1451,
+              477,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_009.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 32,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  197,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                110.00039999999984,
+                307.9999,
+                174.99959999999987,
+                367.99930000000006
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                60.0,
+                263.0,
+                225.0,
+                413.0
+              ],
+              "stem": "2019",
+              "target_class": 32
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  582,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                499.6029767441859,
+                308.34929069767446,
+                555.4180465116277,
+                367.65070930232554
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                456.0,
+                263.0,
+                599.0232558139535,
+                413.0
+              ],
+              "stem": "2545",
+              "target_class": 32
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  970,
+                  432
+                ]
+              ],
+              "label_line_number": 3,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                883.9164081632653,
+                308.91833673469387,
+                942.0806530612246,
+                367.0812959183674
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                838.0,
+                263.0,
+                988.0,
+                413.0
+              ],
+              "stem": "1169",
+              "target_class": 32
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              68,
+              665,
+              85
+            ],
+            [
+              18,
+              88,
+              518,
+              104
+            ],
+            [
+              18,
+              111,
+              220,
+              124
+            ],
+            [
+              18,
+              131,
+              318,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 33,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  200,
+                  872
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                109.97913725490201,
+                748.098137254902,
+                176.64643137254905,
+                807.9015490196078
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                59.0,
+                703.0,
+                226.6470588235294,
+                853.0
+              ],
+              "stem": "2484",
+              "target_class": 33
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  585,
+                  872
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                493.3705205479451,
+                748.2056438356165,
+                561.8632328767123,
+                807.7950136986301
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                442.0,
+                703.0,
+                608.4383561643835,
+                853.0
+              ],
+              "stem": "2495",
+              "target_class": 33
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  970,
+                  872
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                877.155572815534,
+                748.1452524271845,
+                947.7868737864079,
+                807.8540485436893
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                824.0,
+                703.0,
+                1000.9417475728155,
+                853.0
+              ],
+              "stem": "2493",
+              "target_class": 33
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              508,
+              878,
+              525
+            ],
+            [
+              18,
+              527,
+              758,
+              544
+            ],
+            [
+              18,
+              547,
+              277,
+              564
+            ],
+            [
+              18,
+              571,
+              562,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 34,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  197,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                113.62809917355372,
+                1187.6283347107437,
+                171.89216528925624,
+                1247.1325413223142
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                69.0,
+                1143.0,
+                216.5206611570248,
+                1293.0
+              ],
+              "stem": "0714",
+              "target_class": 34
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  585,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                498.22058823529426,
+                1188.2203235294119,
+                557.7794117647059,
+                1247.7791470588236
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                453.0,
+                1143.0,
+                603.0,
+                1293.0
+              ],
+              "stem": "0694",
+              "target_class": 34
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  970,
+                  1312
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                889.4292571428571,
+                1194.4288285714288,
+                932.2877714285714,
+                1241.5708285714286
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                838.0,
+                1143.0,
+                988.0,
+                1293.0
+              ],
+              "stem": "0689",
+              "target_class": 34
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              948,
+              767,
+              965
+            ],
+            [
+              18,
+              968,
+              610,
+              984
+            ],
+            [
+              18,
+              987,
+              596,
+              1004
+            ],
+            [
+              18,
+              1011,
+              472,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 35,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  200,
+                  1752
+                ]
+              ],
+              "label_line_number": 5,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                113.28301886792453,
+                1628.2827641509434,
+                172.71698113207577,
+                1687.716896226415
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                68.0,
+                1583.0,
+                218.0,
+                1733.0
+              ],
+              "stem": "2656",
+              "target_class": 35
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  585,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                497.8740194174757,
+                1628.1459223300972,
+                558.3106796116504,
+                1687.854718446602
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                452.0,
+                1583.0,
+                604.1844660194174,
+                1733.0
+              ],
+              "stem": "2836",
+              "target_class": 35
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  970,
+                  1752
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                884.0559440559441,
+                1628.1047902097903,
+                942.2732307692306,
+                1687.8952517482517
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                840.0,
+                1583.0,
+                986.3286713286714,
+                1733.0
+              ],
+              "stem": "2845",
+              "target_class": 35
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1388,
+              730,
+              1405
+            ],
+            [
+              18,
+              1408,
+              552,
+              1424
+            ],
+            [
+              18,
+              1431,
+              220,
+              1444
+            ],
+            [
+              18,
+              1451,
+              481,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_010.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 36,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  200,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                111.31559731543618,
+                308.30232550335575,
+                173.73138255033552,
+                367.6981577181208
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                64.0,
+                263.0,
+                221.04697986577182,
+                413.0
+              ],
+              "stem": "1589",
+              "target_class": 36
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  585,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                498.3348571428571,
+                308.0737290640394,
+                557.447921182266,
+                367.92594581280787
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                454.0,
+                263.0,
+                601.7832512315271,
+                413.0
+              ],
+              "stem": "1605",
+              "target_class": 36
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  970,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                881.787610619469,
+                308.13251769911506,
+                944.1765663716815,
+                367.8667920353982
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                834.0,
+                263.0,
+                991.9646017699115,
+                413.0
+              ],
+              "stem": "1569",
+              "target_class": 36
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              67,
+              798,
+              85
+            ],
+            [
+              18,
+              87,
+              583,
+              104
+            ],
+            [
+              18,
+              111,
+              220,
+              124
+            ],
+            [
+              18,
+              131,
+              481,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 37,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  197,
+                  872
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                93.0,
+                753.5003125,
+                193.0,
+                801.4174375000001
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                18.0,
+                716.0,
+                268.0,
+                838.9166666666667
+              ],
+              "stem": "1560",
+              "target_class": 37
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  582,
+                  872
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                478.53956834532374,
+                758.7767086330936,
+                577.4610071942446,
+                796.5466007194244
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                403.0,
+                730.0,
+                653.0,
+                825.3237410071943
+              ],
+              "stem": "1559",
+              "target_class": 37
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  970,
+                  872
+                ]
+              ],
+              "label_line_number": 3,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                881.3332,
+                747.9999916666667,
+                944.6668,
+                807.9998416666666
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                833.0,
+                703.0,
+                993.0,
+                853.0
+              ],
+              "stem": "1604",
+              "target_class": 37
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              511,
+              885,
+              525
+            ],
+            [
+              18,
+              531,
+              614,
+              544
+            ],
+            [
+              18,
+              547,
+              231,
+              564
+            ],
+            [
+              18,
+              571,
+              524,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 38,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  197,
+                  1312
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                112.36842105263158,
+                1188.3942631578948,
+                173.55326315789472,
+                1247.6052631578948
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                65.0,
+                1143.0,
+                220.92105263157893,
+                1293.0
+              ],
+              "stem": "2900",
+              "target_class": 38
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  585,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                502.1304347826087,
+                1188.652108695652,
+                554.3022608695645,
+                1247.3489347826085
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                463.0,
+                1143.0,
+                593.4347826086956,
+                1293.0
+              ],
+              "stem": "3001",
+              "target_class": 38
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  967,
+                  1312
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                884.8927567567569,
+                1188.945054054054,
+                940.2977297297298,
+                1248.4048918918918
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                843.0,
+                1143.0,
+                982.1891891891892,
+                1293.0
+              ],
+              "stem": "2911",
+              "target_class": 38
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              948,
+              720,
+              965
+            ],
+            [
+              18,
+              968,
+              662,
+              984
+            ],
+            [
+              18,
+              987,
+              469,
+              1004
+            ],
+            [
+              18,
+              1011,
+              503,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 39,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  200,
+                  1752
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                111.09302325581396,
+                1628.3487499999999,
+                173.88372093023256,
+                1687.6511104651163
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                64.0,
+                1583.0,
+                220.97674418604652,
+                1733.0
+              ],
+              "stem": "0751",
+              "target_class": 39
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  582,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                498.18101204819277,
+                1628.180704819277,
+                557.8195662650603,
+                1687.8191506024095
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                453.0,
+                1583.0,
+                603.0,
+                1733.0
+              ],
+              "stem": "2213",
+              "target_class": 39
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  970,
+                  1752
+                ]
+              ],
+              "label_line_number": 3,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                883.0974117647058,
+                1628.0978529411764,
+                942.9016470588235,
+                1687.9017941176471
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                838.0,
+                1600.6470588235295,
+                988.0,
+                1733.0
+              ],
+              "stem": "0779",
+              "target_class": 39
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1388,
+              720,
+              1405
+            ],
+            [
+              18,
+              1408,
+              662,
+              1424
+            ],
+            [
+              18,
+              1427,
+              469,
+              1444
+            ],
+            [
+              18,
+              1451,
+              503,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_011.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 40,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  200,
+                  432
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                113.11717647058825,
+                307.11779411764707,
+                171.93976470588223,
+                365.94126470588236
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                69.0,
+                263.0,
+                216.05882352941177,
+                413.0
+              ],
+              "stem": "2169",
+              "target_class": 40
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  585,
+                  432
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                498.2843773584905,
+                308.2836698113208,
+                557.7183396226415,
+                367.7178018867925
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                453.0,
+                263.0,
+                603.0,
+                413.0
+              ],
+              "stem": "1539",
+              "target_class": 40
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  970,
+                  432
+                ]
+              ],
+              "label_line_number": 3,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                875.7517876106194,
+                308.13320796460175,
+                948.7610619469026,
+                367.86748230088494
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                820.0,
+                306.8053097345133,
+                1004.5132743362832,
+                413.0
+              ],
+              "stem": "2245",
+              "target_class": 40
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              68,
+              720,
+              85
+            ],
+            [
+              18,
+              88,
+              662,
+              104
+            ],
+            [
+              18,
+              107,
+              469,
+              124
+            ],
+            [
+              18,
+              131,
+              503,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 41,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  197,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                106.93261016949165,
+                748.7630423728813,
+                178.11986440677947,
+                807.2381779661017
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                51.0,
+                703.0,
+                234.0508474576271,
+                853.0
+              ],
+              "stem": "1276",
+              "target_class": 41
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  585,
+                  872
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                498.8575238095238,
+                748.2381547619048,
+                556.000380952381,
+                807.7622261904762
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                456.0,
+                703.0,
+                600.047619047619,
+                853.0
+              ],
+              "stem": "0771",
+              "target_class": 41
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  967,
+                  872
+                ]
+              ],
+              "label_line_number": 3,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                879.704,
+                748.0704577464788,
+                946.6051830985916,
+                807.9294577464789
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                829.0,
+                703.0,
+                997.3098591549295,
+                853.0
+              ],
+              "stem": "1534",
+              "target_class": 41
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              508,
+              720,
+              525
+            ],
+            [
+              18,
+              528,
+              662,
+              544
+            ],
+            [
+              18,
+              547,
+              469,
+              564
+            ],
+            [
+              18,
+              571,
+              552,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 42,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  197,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                113.55421782178227,
+                1189.0394851485148,
+                171.47500990099002,
+                1248.4453663366337
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                69.0,
+                1143.0,
+                216.02970297029702,
+                1293.0
+              ],
+              "stem": "0370",
+              "target_class": 42
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  582,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                496.8753,
+                1187.99983125,
+                558.7503000000002,
+                1247.99956875
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                450.0,
+                1143.0,
+                605.625,
+                1293.0
+              ],
+              "stem": "0368",
+              "target_class": 42
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  970,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                883.7087682119206,
+                1188.6951357615894,
+                941.3249801324503,
+                1248.297725165563
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                840.0,
+                1143.0,
+                985.0331125827814,
+                1293.0
+              ],
+              "stem": "0374",
+              "target_class": 42
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              950,
+              688,
+              965
+            ],
+            [
+              18,
+              971,
+              630,
+              984
+            ],
+            [
+              18,
+              991,
+              260,
+              1004
+            ],
+            [
+              18,
+              1011,
+              421,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 43,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  200,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                121.46774025974025,
+                1627.8054285714286,
+                164.32488311688311,
+                1687.5455584415586
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                120.81818181818181,
+                1583.0,
+                196.7922077922078,
+                1733.0
+              ],
+              "stem": "0591",
+              "target_class": 43
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  592,
+                  1752
+                ]
+              ],
+              "label_line_number": 10,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                492.5721904761905,
+                1628.2378690476191,
+                562.8099047619048,
+                1687.7619404761904
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                439.0,
+                1583.0,
+                586.6190476190476,
+                1733.0
+              ],
+              "stem": "0756",
+              "target_class": 43
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  967,
+                  1752
+                ]
+              ],
+              "label_line_number": 7,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                880.999619047619,
+                1628.238761904762,
+                945.2853333333334,
+                1687.7621904761904
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                831.0,
+                1583.0,
+                995.2857142857142,
+                1733.0
+              ],
+              "stem": "0577",
+              "target_class": 43
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1388,
+              774,
+              1405
+            ],
+            [
+              18,
+              1408,
+              663,
+              1424
+            ],
+            [
+              18,
+              1427,
+              519,
+              1444
+            ],
+            [
+              18,
+              1451,
+              614,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_012.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 44,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  200,
+                  432
+                ]
+              ],
+              "label_line_number": 5,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                113.11296240601496,
+                308.1128270676692,
+                171.75993984962412,
+                367.8871729323308
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                68.0,
+                263.0,
+                216.87218045112783,
+                413.0
+              ],
+              "stem": "0672",
+              "target_class": 44
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  585,
+                  432
+                ]
+              ],
+              "label_line_number": 5,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                496.6390588235294,
+                308.3784159663865,
+                558.4041680672269,
+                367.6220882352941
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                450.0,
+                263.0,
+                605.0420168067227,
+                413.0
+              ],
+              "stem": "0671",
+              "target_class": 44
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  967,
+                  432
+                ]
+              ],
+              "label_line_number": 3,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                879.4997600000002,
+                307.99996999999996,
+                945.4992800000001,
+                367.99991
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                830.0,
+                263.0,
+                995.0,
+                413.0
+              ],
+              "stem": "0670",
+              "target_class": 44
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              67,
+              654,
+              85
+            ],
+            [
+              18,
+              87,
+              545,
+              104
+            ],
+            [
+              18,
+              111,
+              220,
+              124
+            ],
+            [
+              18,
+              131,
+              473,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 45,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  200,
+                  872
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                110.63959712230218,
+                748.3241294964029,
+                175.3877985611511,
+                807.6767338129497
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                61.0,
+                703.0,
+                223.94964028776977,
+                853.0
+              ],
+              "stem": "2455",
+              "target_class": 45
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  585,
+                  872
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                501.09391780821926,
+                748.2043287671231,
+                554.5198904109587,
+                807.7936986301372
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                460.0,
+                703.0,
+                595.6164383561644,
+                853.0
+              ],
+              "stem": "2539",
+              "target_class": 45
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  970,
+                  872
+                ]
+              ],
+              "label_line_number": 2,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                884.6721012658227,
+                748.5685569620255,
+                941.6341265822784,
+                807.4299240506328
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                841.0,
+                703.0,
+                985.3037974683544,
+                853.0
+              ],
+              "stem": "2429",
+              "target_class": 45
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              508,
+              704,
+              525
+            ],
+            [
+              18,
+              528,
+              563,
+              544
+            ],
+            [
+              18,
+              551,
+              220,
+              564
+            ],
+            [
+              18,
+              571,
+              463,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 46,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  200,
+                  1312
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                111.52800000000008,
+                1188.1385,
+                173.33333333333331,
+                1247.861
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                65.0,
+                1143.0,
+                215.0,
+                1293.0
+              ],
+              "stem": "2702",
+              "target_class": 46
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  585,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                498.7764120171674,
+                1188.0640815450643,
+                556.7163261802575,
+                1247.9352489270386
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                455.0,
+                1143.0,
+                600.4935622317596,
+                1293.0
+              ],
+              "stem": "2739",
+              "target_class": 46
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  970,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                884.0008,
+                1188.0003,
+                941.5000000000001,
+                1247.9997
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                839.0,
+                1143.0,
+                986.5,
+                1293.0
+              ],
+              "stem": "1462",
+              "target_class": 46
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              948,
+              639,
+              965
+            ],
+            [
+              18,
+              968,
+              511,
+              984
+            ],
+            [
+              18,
+              991,
+              220,
+              1004
+            ],
+            [
+              18,
+              1011,
+              318,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 47,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  200,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                119.15640366972475,
+                1628.4133119266055,
+                167.32110091743135,
+                1687.5878990825688
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                82.0,
+                1583.0,
+                204.47706422018348,
+                1733.0
+              ],
+              "stem": "3188",
+              "target_class": 47
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  582,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                501.62649999999996,
+                1628.31284375,
+                554.7505,
+                1687.68753125
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                461.0,
+                1583.0,
+                595.375,
+                1733.0
+              ],
+              "stem": "3185",
+              "target_class": 47
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  970,
+                  1752
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                888.5316697247705,
+                1628.4125412844037,
+                938.0729541284404,
+                1687.587128440367
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                850.0,
+                1583.0,
+                975.2293577981652,
+                1733.0
+              ],
+              "stem": "3190",
+              "target_class": 47
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1388,
+              736,
+              1405
+            ],
+            [
+              18,
+              1408,
+              620,
+              1424
+            ],
+            [
+              18,
+              1431,
+              556,
+              1444
+            ],
+            [
+              18,
+              1451,
+              318,
+              1464
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "canvas_size": [
+        1200,
+        1818
+      ],
+      "page": "assets/wp4/qcvn_taxonomy_atlas/page_013.jpg",
+      "rows": [
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 48,
+          "row_bounds": [
+            8,
+            58,
+            1192,
+            492
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                263,
+                268,
+                413
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  419,
+                  200,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                109.25604020100512,
+                308.22658291457293,
+                177.09523618090464,
+                367.77420100502513
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                58.0,
+                263.0,
+                228.35175879396985,
+                413.0
+              ],
+              "stem": "3111",
+              "target_class": 48
+            },
+            {
+              "image_bounds": [
+                403,
+                263,
+                653,
+                413
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  419,
+                  585,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                495.4502857142858,
+                308.3292252747253,
+                560.5604395604396,
+                367.67018131868133
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                446.0,
+                263.0,
+                610.010989010989,
+                413.0
+              ],
+              "stem": "3110",
+              "target_class": 48
+            },
+            {
+              "image_bounds": [
+                788,
+                263,
+                1038,
+                413
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  419,
+                  967,
+                  432
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                879.4318620689656,
+                308.2585431034482,
+                945.3788965517243,
+                367.74187068965523
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                829.0,
+                263.0,
+                995.8103448275863,
+                413.0
+              ],
+              "stem": "3097",
+              "target_class": 48
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              68,
+              903,
+              85
+            ],
+            [
+              18,
+              88,
+              695,
+              104
+            ],
+            [
+              18,
+              111,
+              220,
+              124
+            ],
+            [
+              18,
+              131,
+              318,
+              144
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 49,
+          "row_bounds": [
+            8,
+            498,
+            1192,
+            932
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                703,
+                268,
+                853
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  859,
+                  200,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                115.08684892086322,
+                748.3234820143884,
+                170.1228201438848,
+                807.6760863309353
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                73.0,
+                703.0,
+                150.69784172661872,
+                853.0
+              ],
+              "stem": "0248",
+              "target_class": 49
+            },
+            {
+              "image_bounds": [
+                403,
+                703,
+                653,
+                853
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  859,
+                  585,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                498.1810120481929,
+                748.1804518072289,
+                557.8195662650603,
+                807.8188975903615
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                453.0,
+                703.0,
+                603.0,
+                853.0
+              ],
+              "stem": "0119",
+              "target_class": 49
+            },
+            {
+              "image_bounds": [
+                788,
+                703,
+                1038,
+                853
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  859,
+                  970,
+                  872
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                883.4549090909093,
+                748.4547272727274,
+                942.545090909091,
+                807.5454545454545
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                838.0,
+                703.0,
+                988.0,
+                853.0
+              ],
+              "stem": "0411",
+              "target_class": 49
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              508,
+              833,
+              525
+            ],
+            [
+              18,
+              528,
+              623,
+              544
+            ],
+            [
+              18,
+              551,
+              220,
+              564
+            ],
+            [
+              18,
+              571,
+              481,
+              584
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 50,
+          "row_bounds": [
+            8,
+            938,
+            1192,
+            1372
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1143,
+                268,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1299,
+                  197,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                114.47756521739157,
+                1188.6512173913045,
+                171.00069565217413,
+                1247.3468695652175
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                71.0,
+                1143.0,
+                214.47826086956522,
+                1293.0
+              ],
+              "stem": "2801",
+              "target_class": 50
+            },
+            {
+              "image_bounds": [
+                403,
+                1143,
+                653,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1299,
+                  585,
+                  1312
+                ]
+              ],
+              "label_line_number": 1,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                492.79890647482,
+                1188.323179856115,
+                561.8629640287768,
+                1247.675784172662
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                441.0,
+                1143.0,
+                613.6618705035971,
+                1293.0
+              ],
+              "stem": "2819",
+              "target_class": 50
+            },
+            {
+              "image_bounds": [
+                788,
+                1143,
+                1038,
+                1293
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1299,
+                  970,
+                  1312
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                882.9995200000001,
+                1188.00003,
+                942.9985599999999,
+                1247.9999699999998
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                838.0,
+                1143.0,
+                988.0,
+                1293.0
+              ],
+              "stem": "0516",
+              "target_class": 50
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              947,
+              892,
+              965
+            ],
+            [
+              18,
+              967,
+              645,
+              984
+            ],
+            [
+              18,
+              991,
+              220,
+              1004
+            ],
+            [
+              18,
+              1011,
+              498,
+              1024
+            ]
+          ]
+        },
+        {
+          "all_bounds_fit": true,
+          "all_text_complete": true,
+          "class_id": 51,
+          "row_bounds": [
+            8,
+            1378,
+            1192,
+            1812
+          ],
+          "sample_bounds": [
+            {
+              "image_bounds": [
+                18,
+                1583,
+                268,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  18,
+                  1739,
+                  200,
+                  1752
+                ]
+              ],
+              "label_line_number": 6,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                108.38942372881371,
+                1628.7623813559321,
+                177.03349152542359,
+                1687.2375169491525
+              ],
+              "overlay_present": true,
+              "slot_index": 1,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                55.0,
+                1583.0,
+                230.4237288135593,
+                1733.0
+              ],
+              "stem": "0530",
+              "target_class": 51
+            },
+            {
+              "image_bounds": [
+                403,
+                1583,
+                653,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  403,
+                  1739,
+                  585,
+                  1752
+                ]
+              ],
+              "label_line_number": 4,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                496.82643478260877,
+                1628.6519130434783,
+                557.696695652174,
+                1687.3475652173913
+              ],
+              "overlay_present": true,
+              "slot_index": 2,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                449.0,
+                1583.0,
+                605.5217391304348,
+                1733.0
+              ],
+              "stem": "0534",
+              "target_class": 51
+            },
+            {
+              "image_bounds": [
+                788,
+                1583,
+                1038,
+                1733
+              ],
+              "label_bounds": [
+                [
+                  788,
+                  1739,
+                  970,
+                  1752
+                ]
+              ],
+              "label_line_number": 6,
+              "out_of_frame_background": "GRAY_HATCH",
+              "overlay_bounds": [
+                878.3809523809524,
+                1628.2376666666667,
+                947.4278095238096,
+                1687.761095238095
+              ],
+              "overlay_present": true,
+              "slot_index": 3,
+              "source_boundary_style": "CYAN_0_205_235_WIDTH_3",
+              "source_frame_bounds": [
+                826.0,
+                1583.0,
+                999.8095238095239,
+                1733.0
+              ],
+              "stem": "0532",
+              "target_class": 51
+            }
+          ],
+          "text_bounds": [
+            [
+              18,
+              1390,
+              875,
+              1405
+            ],
+            [
+              18,
+              1411,
+              752,
+              1424
+            ],
+            [
+              18,
+              1428,
+              586,
+              1444
+            ],
+            [
+              18,
+              1451,
+              708,
+              1464
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "row_count": 52,
+  "schema_version": 2
+}

@@ -1,0 +1,6 @@
+# Generated CSV evidence intentionally preserves source/builder CRLF bytes.
+*.csv whitespace=cr-at-eol
+
+# Historical reports and their hash-pinned builders intentionally render Markdown hard breaks.
+docs/**/*.md whitespace=-blank-at-eol
+scripts/*.py whitespace=-blank-at-eol,-blank-at-eof
