@@ -1,6 +1,6 @@
 # Hướng dẫn smoke checkpoint/resume D1 R1 trên Colab
 
-Trạng thái: `AWAITING_INDEPENDENT_QA_AND_PINNED_CODE_COMMIT`
+Trạng thái: `R2_QA_PASS_CODE_PINNED_READY_FOR_L4_SMOKE`
 
 Phạm vi: chỉ `train`/`val`; không xuất, đọc hoặc đánh giá test niêm phong.
 
@@ -17,15 +17,15 @@ epoch bằng một state directory mới.
 
 ## Trước khi mở Colab
 
-- QA độc lập phải PASS package local.
-- Commit chứa runner phải được Owner cho phép commit/push lên branch hiện tại.
-- Thay `CODE_COMMIT = 'PENDING_AFTER_QA'` trong
-  `detector/colab/d1_train_checkpoint_r1.ipynb` bằng SHA-1 40 ký tự của commit đã review và push.
-- Commit/push notebook đã pin đó, rồi mở đúng notebook từ branch.
+- QA độc lập đã PASS package local với 0 finding.
+- Implementation đã được Owner cho phép commit/push và được push tại commit
+  `891d3eeec39c60a1b203ce9adffae941034f7f5a`.
+- Notebook pin chính xác SHA-1 trên; không đổi sang branch floating hoặc commit khác.
+- Mở đúng notebook đã pin từ branch sau khi commit notebook-pin được push.
 - Không dùng lại `RUN_LABEL` nếu recovery drill đã tạo state trước đó.
 
-Placeholder hiện tại cố ý làm notebook fail closed; không được bỏ assert hoặc chuyển sang branch
-floating.
+Assert 40-ký-tự và readback `git rev-parse HEAD` vẫn bắt buộc; không được bỏ assert hoặc chuyển
+sang branch floating.
 
 ## Chặng 1 — fresh, đúng một epoch
 

@@ -231,6 +231,9 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
   đều PASS. C1–C3 đã mở; C4 chỉ sẵn sàng sau commit/push và pin đúng `CODE_COMMIT`, chưa chạy L4.
   Pilot 100 epoch vẫn NO-GO cho tới khi recovery drill fresh epoch 1 → xóa runtime → resume epoch
   2 và result-package verifier đều PASS.
+  Owner đã xác nhận release step ngày 2026-10-21; implementation R2 đã push tại commit
+  `891d3eeec39c60a1b203ce9adffae941034f7f5a`, và notebook kế nhiệm pin chính xác commit này trong
+  một commit thứ hai. Quyền này chỉ bao phủ recovery drill L4, không mở pilot 100 epoch.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
   DATASET01-derived review renders và raw/processed/model files không được đưa vào checkpoint.
 - Canonical records: `docs/review/m1_pretrained_weights_owner_response_record.md`,

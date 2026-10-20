@@ -1181,6 +1181,10 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      run has occurred. The 100-epoch pilot remains blocked until the two-runtime recovery drill and
      result-package readback pass. Canonical PASS record:
      `docs/review/d1_checkpoint_resume_r2_independent_qa_record.md`.
+     Owner then authorized the release step on 2026-10-21. Reviewed implementation commit
+     `891d3eeec39c60a1b203ce9adffae941034f7f5a` was pushed to `DEV/Rroject_Pineline`; the successor
+     notebook pins that exact commit in a separate notebook-pin commit. This authorizes only the
+     governed L4 recovery drill, not the 100-epoch pilot.
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 
