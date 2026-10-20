@@ -270,6 +270,25 @@ def test_notebook_is_clean_train_val_launcher() -> None:
     assert "export-test" not in code and "--final-eval" not in code
 
 
+def test_cascade_subprocess_environment_forces_headless_backend(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("MPLBACKEND", "module://matplotlib_inline.backend_inline")
+    environment = runner.colab_subprocess_environment()
+    assert environment["MPLBACKEND"] == "Agg"
+    assert environment["WANDB_DISABLED"] == "true"
+    assert environment["DO_NOT_TRACK"] == "1"
+    assert environment["ULTRALYTICS_HUB"] == "false"
+
+
+def test_cascade_uses_the_single_current_primary_runner_pin() -> None:
+    primary = REPO_ROOT / "detector/colab/run_d1_colab.py"
+    assert runner.sha256_file(primary) == runner.M1_RUNNER_SHA256
+    source = (REPO_ROOT / "detector/colab/run_d1_cascade_colab.py").read_text()
+    assert "0d04c869d0181c68a4d60a93b05967c4db5b5e31cfc44cf653bfcbd43f225786" not in source
+    assert source.count("M1_RUNNER_SHA256") >= 4
+
+
 def test_bundle_rejects_unapproved_archive(tmp_path: Path) -> None:
     fake = tmp_path / "bundle.tar.gz"
     fake.write_bytes(b"not approved")

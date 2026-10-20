@@ -177,6 +177,25 @@ def run_command(
         raise RuntimeError(f"command failed with exit code {return_code}: {command}")
 
 
+def colab_subprocess_environment() -> dict[str, str]:
+    """Return a deterministic headless environment for detector subprocesses.
+
+    Colab's notebook kernel can export the inline Matplotlib backend. That backend is not
+    available in the separately locked detector environment and makes Ultralytics fail while
+    checking the dataset before the first epoch.
+    """
+    environment = os.environ.copy()
+    environment.update(
+        {
+            "WANDB_DISABLED": "true",
+            "DO_NOT_TRACK": "1",
+            "ULTRALYTICS_HUB": "false",
+            "MPLBACKEND": "Agg",
+        }
+    )
+    return environment
+
+
 def download_approved_weight(logger: logging.Logger, destination: Path) -> None:
     destination.parent.mkdir(parents=True, exist_ok=True)
     if destination.is_file():
@@ -673,14 +692,7 @@ def main(argv: list[str] | None = None) -> int:
                 "with Owner approval"
             )
         execution["steps_completed"].append("approved_pretrained_weight_verified")
-        process_env = os.environ.copy()
-        process_env.update(
-            {
-                "WANDB_DISABLED": "true",
-                "DO_NOT_TRACK": "1",
-                "ULTRALYTICS_HUB": "false",
-            }
-        )
+        process_env = colab_subprocess_environment()
         run_command(
             logger,
             ["uv", "run", "python", "-m", "m1.cli", "check"],

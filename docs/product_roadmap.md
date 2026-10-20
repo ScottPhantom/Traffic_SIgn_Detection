@@ -203,7 +203,14 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
   confidence/NMS lock duy nhất. R5 nhận **independent QA PASS 2026-10-19 với 0 finding**
   (`docs/review/d1_colab_operator_guide_r5_independent_qa_record.md`, SHA-256
   `d6bb156fa196caf03dfed07eca465748189266ee43a666921e1dae9653632be0`). PASS này chỉ duyệt guide
-  và local controls; chưa có Colab run, training, registry, threshold lock hay sealed-test access.
+  và local controls. Smoke đầu tiên ngày 2026-10-20 đã chạy trên T4 nhưng **FAIL trước epoch 1**:
+  bundle/split/lock/pretrained/check đều PASS, sau đó Ultralytics từ chối backend kế thừa
+  `module://matplotlib_inline.backend_inline`. Không có OOM, checkpoint, result archive hoặc
+  sealed-test access. Backend R1 ép `MPLBACKEND=Agg` cho primary/cascade, pin lại chính xác
+  primary runner và thêm regression test. Independent QA **PASS 2026-10-20 với 0 finding**
+  (`docs/review/d1_colab_backend_r1_independent_qa_record.md`): 56/56 affected tests, 79/79
+  detector và 52/52 verifier PASS. PASS này chỉ duyệt local remediation; vẫn cần successor
+  bundle và label mới trước khi Owner rerun smoke.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
   DATASET01-derived review renders và raw/processed/model files không được đưa vào checkpoint.
 - Canonical records: `docs/review/m1_pretrained_weights_owner_response_record.md`,

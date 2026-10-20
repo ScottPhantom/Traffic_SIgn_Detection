@@ -1130,6 +1130,18 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      This is documentation/control approval only: no Colab cell, smoke, training, run registry,
      threshold lock or sealed-test evaluation has occurred. All earlier FAIL records remain
      immutable.
+     That last sentence was superseded by the first real smoke attempt on 2026-10-20: the T4 run
+     `smoke_seed_20261018` failed before epoch one after bundle/split/lock/pretrained/check passed.
+     Persisted log root cause is an inherited Colab Matplotlib backend
+     `module://matplotlib_inline.backend_inline` rejected inside the locked detector environment;
+     this was not OOM and `sealed_test_accessed=false`. The failed Drive state must remain and must
+     not be reused. Backend R1 forces `MPLBACKEND=Agg` for primary and cascade subprocesses, pins
+     all cascade primary-runner loads to the repaired bytes and adds regression coverage.
+     Independent QA **PASS with 0 findings** on 2026-10-20 after 56/56 affected tests, 79/79
+     detector tests and 52/52 repository verifiers. This approves only the local remediation; a
+     successor bundle and new run label are still required before another smoke. Canonical records:
+     `docs/review/d1_colab_smoke_backend_failure_2026-10-20.md` and
+     `docs/review/d1_colab_backend_r1_independent_qa_record.md`.
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 

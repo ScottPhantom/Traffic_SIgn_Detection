@@ -41,7 +41,7 @@ CASCADE_DATASET = Path("data/processed/d1_cascade_yolo")
 RESULTS_DIR = Path("results/experiments")
 LOGGER_NAME = "CPV_log_record"
 MODEL_ORIGIN = "ultralytics/assets v8.4.0 Owner-approved"
-M1_RUNNER_SHA256 = "0d04c869d0181c68a4d60a93b05967c4db5b5e31cfc44cf653bfcbd43f225786"
+M1_RUNNER_SHA256 = "6a508eebcb83915201569bc74913a3dd546b288caf2331a9b3e4bd7a567500bc"
 REQUIRED_STEPS = (
     "approved_bundle_verified_and_extracted",
     "cascade_train_val_export_regenerated",
@@ -77,6 +77,20 @@ def sha256_file(path: Path) -> str:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def colab_subprocess_environment() -> dict[str, str]:
+    """Return the headless, telemetry-disabled environment used by cascade subprocesses."""
+    environment = os.environ.copy()
+    environment.update(
+        {
+            "WANDB_DISABLED": "true",
+            "DO_NOT_TRACK": "1",
+            "ULTRALYTICS_HUB": "false",
+            "MPLBACKEND": "Agg",
+        }
+    )
+    return environment
 
 
 def absolute_lexical(path: Path) -> Path:
@@ -911,7 +925,7 @@ def run_workflow(args: argparse.Namespace) -> int:
     m1_runner = load_pinned_module(
         "d1_cascade_colab_logging",
         repo_root / "detector/colab/run_d1_colab.py",
-        "0d04c869d0181c68a4d60a93b05967c4db5b5e31cfc44cf653bfcbd43f225786",
+        M1_RUNNER_SHA256,
     )
     logger, text_log, database_log = m1_runner.configure_logging(state_dir)
     execution_path = state_dir / "colab_execution.json"
@@ -969,10 +983,7 @@ def run_workflow(args: argparse.Namespace) -> int:
         execution["steps_completed"].append("approved_pretrained_weight_verified")
         verify_cascade_contract(repo_root)
         execution["steps_completed"].append("cascade_contract_checked")
-        process_env = os.environ.copy()
-        process_env.update(
-            {"WANDB_DISABLED": "true", "DO_NOT_TRACK": "1", "ULTRALYTICS_HUB": "false"}
-        )
+        process_env = colab_subprocess_environment()
         script = repo_root / "detector/colab/run_d1_cascade_colab.py"
         train_command = [
             "uv",

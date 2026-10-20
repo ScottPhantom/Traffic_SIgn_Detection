@@ -155,6 +155,17 @@ def test_runner_has_no_frozen_sync_bypass(tmp_path: Path) -> None:
         runner.parser().parse_args([*required, "--skip-sync"])
 
 
+def test_colab_subprocess_environment_forces_headless_backend(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("MPLBACKEND", "module://matplotlib_inline.backend_inline")
+    environment = runner.colab_subprocess_environment()
+    assert environment["MPLBACKEND"] == "Agg"
+    assert environment["WANDB_DISABLED"] == "true"
+    assert environment["DO_NOT_TRACK"] == "1"
+    assert environment["ULTRALYTICS_HUB"] == "false"
+
+
 def synthetic_run_contract() -> dict[str, object]:
     return {
         "model": {"path": "/repo/models/pretrained/yolo11s.pt"},

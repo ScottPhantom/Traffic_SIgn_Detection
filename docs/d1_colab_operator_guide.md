@@ -274,6 +274,7 @@ SQLite.
 | CUDA/GPU identity không hợp lệ | Chọn lại runtime GPU L4, reconnect, dùng label mới và chạy lại từ đầu |
 | Bundle/hash mismatch | Dừng; không tải gói khác và không bỏ kiểm tra hash |
 | `yolo11s.pt` hash mismatch | Dừng; xóa runtime Colab, dùng runtime mới để runner tải lại file chính thức |
+| Matplotlib báo `module://matplotlib_inline.backend_inline` không hợp lệ | Không phải OOM. Giữ run thất bại; chỉ dùng successor runner đã QA với `MPLBACKEND=Agg`, bundle mới và `RUN_LABEL` mới |
 | CUDA out of memory | Dùng run label mới và giảm `BATCH` từ `8` xuống `4`; giữ `IMGSZ=1280`. Đây là cấu hình candidate mới: phải QA smoke và giữ cùng batch cho pilot/ba seed nếu được duyệt |
 | `status=STARTED` nhưng runtime đã mất | Coi run là thất bại do ngắt đột ngột; dùng label mới, không resume thư mục cũ |
 | `status=FAILED` | Giữ nguyên toàn bộ folder để review; sửa nguyên nhân rồi chạy label mới |
