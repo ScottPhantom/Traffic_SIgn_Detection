@@ -1,9 +1,12 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import importlib.util
+import io
 import json
 import sys
+import tarfile
 from pathlib import Path
 
 import pytest
@@ -85,6 +88,102 @@ def test_successor_runner_does_not_mutate_pinned_primary_runner() -> None:
     assert "source_repo_git_commit" in source
     assert "code_repo_git_commit" in source
     assert "test_included\": False" in source
+
+
+def test_historical_bundle_reads_each_gzip_member_once_in_archive_order(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    repo_root = tmp_path / "repo"
+    repo_root.mkdir()
+    archive_path = tmp_path / "bundle.tar.gz"
+    payloads = {
+        "data/train/a.txt": b"alpha",
+        "data/val/b.txt": b"bravo",
+    }
+    records = [
+        {
+            "path": name,
+            "size": len(payload),
+            "sha256": hashlib.sha256(payload).hexdigest(),
+            "source_split": "train" if "/train/" in name else "val",
+            "kind": "fixture",
+        }
+        for name, payload in payloads.items()
+    ]
+    with tarfile.open(archive_path, "w:gz") as archive:
+        for name, payload in payloads.items():
+            member = tarfile.TarInfo(name)
+            member.size = len(payload)
+            archive.addfile(member, io.BytesIO(payload))
+        manifest_payload = b"{}"
+        manifest_member = tarfile.TarInfo("manifest.json")
+        manifest_member.size = len(manifest_payload)
+        archive.addfile(manifest_member, io.BytesIO(manifest_payload))
+    with tarfile.open(archive_path, "r:gz") as archive:
+        members = {member.name: member for member in archive.getmembers()}
+
+    class FakeBuilder:
+        MANIFEST_MEMBER = "manifest.json"
+
+        @staticmethod
+        def read_archive_manifest(_archive_path: Path):
+            return (
+                {
+                    "repo_git_commit": "historical",
+                    "contract": "train-val-only",
+                    "file_count": len(records),
+                    "files": records,
+                },
+                members,
+            )
+
+        @staticmethod
+        def expected_records(_repo_root: Path):
+            return records, {
+                "repo_git_commit": "successor",
+                "contract": "train-val-only",
+            }
+
+        @staticmethod
+        def _safe_destination(root: Path, name: str) -> Path:
+            return root / name
+
+        @staticmethod
+        def sha256_file(path: Path) -> str:
+            return hashlib.sha256(path.read_bytes()).hexdigest()
+
+    real_open = tarfile.open
+    reads: list[str] = []
+
+    class CountingArchive:
+        def __init__(self, archive):
+            self.archive = archive
+
+        def __enter__(self):
+            self.archive.__enter__()
+            return self
+
+        def __exit__(self, *args):
+            return self.archive.__exit__(*args)
+
+        def extractfile(self, member):
+            reads.append(member.name)
+            return self.archive.extractfile(member)
+
+    monkeypatch.setattr(runner, "load_bundle_builder", lambda _repo_root: FakeBuilder)
+    monkeypatch.setattr(
+        runner.tarfile,
+        "open",
+        lambda path, mode: CountingArchive(real_open(path, mode)),
+    )
+
+    result = runner.extract_historical_bundle(repo_root, archive_path)
+
+    assert result["status"] == "EXTRACTED_FOR_SUCCESSOR"
+    assert reads == list(payloads)
+    for name, payload in payloads.items():
+        assert (repo_root / name).read_bytes() == payload
+        assert not (repo_root / name).with_name(f".{Path(name).name}.partial").exists()
 
 
 @pytest.mark.parametrize(

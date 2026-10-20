@@ -1185,6 +1185,16 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      `891d3eeec39c60a1b203ce9adffae941034f7f5a` was pushed to `DEV/Rroject_Pineline`; the successor
      notebook pins that exact commit in a separate notebook-pin commit. This authorizes only the
      governed L4 recovery drill, not the 100-epoch pilot.
+     The first recovery-drill attempt then passed Drive/bundle and commit preflight but was aborted
+     before training after about eight minutes of CPU-only archive work. The successor extractor
+     called `extractfile` twice per missing gzip member, causing repeated reinflation. R3 now sorts
+     by tar `offset_data`, reads each payload once while hashing/writing, and atomically publishes a
+     verified sibling partial. Independent QA **PASSed R3 with 0 findings**: checkpoint scope 23/23,
+     Colab 66/66, detector 93/93 and verifiers 52/52. The aborted R1 Drive state is preserved; the
+     next run label is `checkpoint_smoke_seed_20261018_r2`. C4 remains incomplete until the R3
+     release is committed/pushed, the notebook pins that commit, and the two-runtime L4 drill passes.
+     Canonical records: `docs/review/d1_checkpoint_resume_r2_l4_smoke_incident.md` and
+     `docs/review/d1_checkpoint_resume_r3_independent_qa_record.md`.
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 

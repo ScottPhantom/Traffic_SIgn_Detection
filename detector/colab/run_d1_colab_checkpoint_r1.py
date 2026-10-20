@@ -115,8 +115,14 @@ def extract_historical_bundle(repo_root: Path, archive_path: Path) -> dict[str, 
         raise RuntimeError("successor bundle roster differs from the governed train/val roster")
     if set(members) != set(expected_by_path) | {builder.MANIFEST_MEMBER}:
         raise RuntimeError("successor bundle archive member roster differs")
+    # Process gzip members in archive order and read each member exactly once.  Reopening
+    # the same member after consuming it makes ``tarfile`` seek backwards in the compressed
+    # stream and re-inflate the archive, which is prohibitively slow for the 5,888-file
+    # Colab bundle.
+    ordered_names = sorted(expected_by_path, key=lambda name: members[name].offset_data)
     with tarfile.open(archive_path, mode="r:gz") as archive:
-        for name, expected_record in expected_by_path.items():
+        for name in ordered_names:
+            expected_record = expected_by_path[name]
             record = manifest_by_path[name]
             record_keys = ("sha256", "source_split", "kind")
             if any(record[key] != expected_record[key] for key in record_keys):
@@ -126,14 +132,14 @@ def extract_historical_bundle(repo_root: Path, archive_path: Path) -> dict[str, 
             if handle is None:
                 raise RuntimeError(f"cannot read successor bundle member: {name}")
             digest = hashlib.sha256()
-            while chunk := handle.read(1024 * 1024):
-                digest.update(chunk)
-            if member.size != record["size"] or digest.hexdigest() != record["sha256"]:
-                raise RuntimeError(f"successor bundle member differs: {name}")
             destination = builder._safe_destination(repo_root, name)
             if destination.is_symlink():
                 raise RuntimeError(f"successor bundle destination is linked: {destination}")
             if destination.exists():
+                while chunk := handle.read(1024 * 1024):
+                    digest.update(chunk)
+                if member.size != record["size"] or digest.hexdigest() != record["sha256"]:
+                    raise RuntimeError(f"successor bundle member differs: {name}")
                 destination_differs = (
                     not destination.is_file()
                     or builder.sha256_file(destination) != record["sha256"]
@@ -142,14 +148,17 @@ def extract_historical_bundle(repo_root: Path, archive_path: Path) -> dict[str, 
                     raise RuntimeError(f"refused to overwrite successor bundle destination: {name}")
                 continue
             destination.parent.mkdir(parents=True, exist_ok=True)
-            handle = archive.extractfile(member)
-            if handle is None:
-                raise RuntimeError(f"cannot extract successor bundle member: {name}")
-            with destination.open("xb") as output:
+            partial = destination.with_name(f".{destination.name}.partial")
+            if partial.exists() or partial.is_symlink():
+                raise RuntimeError(f"successor bundle partial destination exists: {partial}")
+            with partial.open("xb") as output:
                 while chunk := handle.read(1024 * 1024):
+                    digest.update(chunk)
                     output.write(chunk)
-            if builder.sha256_file(destination) != record["sha256"]:
-                raise RuntimeError(f"extracted successor bundle member differs: {name}")
+            if member.size != record["size"] or digest.hexdigest() != record["sha256"]:
+                partial.unlink(missing_ok=True)
+                raise RuntimeError(f"successor bundle member differs: {name}")
+            os.replace(partial, destination)
     return {
         "status": "EXTRACTED_FOR_SUCCESSOR",
         "source_repo_git_commit": manifest["repo_git_commit"],

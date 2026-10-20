@@ -234,6 +234,13 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
   Owner đã xác nhận release step ngày 2026-10-21; implementation R2 đã push tại commit
   `891d3eeec39c60a1b203ce9adffae941034f7f5a`, và notebook kế nhiệm pin chính xác commit này trong
   một commit thứ hai. Quyền này chỉ bao phủ recovery drill L4, không mở pilot 100 epoch.
+  Lượt recovery drill đầu đã PASS mount/hash bundle và checkout nhưng bị dừng trước training sau
+  khoảng 8 phút CPU-only: extractor gzip đọc mỗi payload thiếu hai lần và tái inflate archive.
+  R3 sửa thành archive-order/single-read, hash cùng stream ghi, publish `.partial` nguyên tử; QA
+  độc lập R3 PASS 0 finding (checkpoint 23/23, Colab 66/66, detector 93/93, verifier 52/52).
+  Run R1 bị hủy được giữ làm bằng chứng; rerun dùng `checkpoint_smoke_seed_20261018_r2`. C4 vẫn
+  chưa PASS cho tới khi commit/push R3, pin notebook và hoàn tất fresh epoch 1 → runtime mới →
+  resume epoch 2 với result package đọc lại thành công.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
   DATASET01-derived review renders và raw/processed/model files không được đưa vào checkpoint.
 - Canonical records: `docs/review/m1_pretrained_weights_owner_response_record.md`,
