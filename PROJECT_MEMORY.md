@@ -1163,6 +1163,24 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      `docs/review/d1_colab_backend_r1_successor_bundle_independent_qa_record.md`, plus
      `docs/review/d1_colab_backend_r1_chunked_transport_record.md` and
      `docs/review/d1_colab_backend_r1_chunked_transport_independent_qa_record.md`.
+     Before any long D1 training, checkpoint foundation R1 was added on 2026-10-20 without
+     modifying the pinned runner/notebook: `detector/m1/checkpoint_store.py` mirrors five recovery
+     artifacts after `on_model_save`, verifies SHA-256 before atomically advancing `latest.json`,
+     rejects changed bindings/tampering/symlinks, and retains two complete generations. Targeted
+     Ruff and 5/5 interruption/recovery tests pass. This is **not yet an executable Colab resume
+     path**: successor CLI/runner/notebook integration, independent QA and one-epoch L4 smoke are
+     required before the 100-epoch pilot. Canonical plan:
+     `docs/review/d1_long_train_checkpoint_plan_r1.md`.
+     R1 independent QA then failed with 4 High, 1 Medium and 1 Low; the immutable FAIL record is
+     `docs/review/d1_checkpoint_resume_r1_independent_qa_record.md`. R2 replaced canonical partial
+     writes with attempt-unique staging, constrained results/state paths against symlinks,
+     distinguished normal early stopping and enforced contiguous resume epochs. A new independent
+     QA session **PASSed R2 with 0 findings** on 2026-10-21: targeted 22/22, Colab 65/65,
+     detector 93/93, verifiers 52/52 and Ruff/locks/Graft PASS. C1-C3 are open. C4 is ready only
+     after the reviewed source is committed/pushed and the notebook pins that exact commit; no L4
+     run has occurred. The 100-epoch pilot remains blocked until the two-runtime recovery drill and
+     result-package readback pass. Canonical PASS record:
+     `docs/review/d1_checkpoint_resume_r2_independent_qa_record.md`.
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 

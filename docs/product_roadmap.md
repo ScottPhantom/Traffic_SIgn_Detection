@@ -221,6 +221,16 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
   **PASS 2026-10-20 với 0 finding**: từng part khớp pin, nối lexical tái tạo đúng archive,
   official verifier PASS tại embedded commit và 24/24 targeted tests PASS. Route vẫn cần quyền
   upload mới; chưa rerun smoke và run FAIL cũ vẫn được giữ nguyên.
+  Trước train dài, nền tảng checkpoint R1 cục bộ (`detector/m1/checkpoint_store.py`) đã được thêm:
+  sau mỗi `on_model_save`, năm artifact phục hồi được copy nguyên tử, hash lại và chỉ cập nhật
+  `latest.json` sau khi snapshot hoàn chỉnh; giữ hai thế hệ gần nhất. Mô phỏng interruption,
+  tamper, đổi binding, retention, symlink và callback đạt 5/5 test. Ở mốc foundation ban đầu,
+  successor CLI/runner/notebook, independent QA và one-epoch L4 smoke còn thiếu.
+  Gói R2 sau đó đóng 4 High, 1 Medium và 1 Low của QA R1; independent QA R2 **PASS 2026-10-21
+  với 0 finding**. Targeted 22/22, Colab 65/65, detector 93/93, verifier 52/52, Ruff/locks/Graft
+  đều PASS. C1–C3 đã mở; C4 chỉ sẵn sàng sau commit/push và pin đúng `CODE_COMMIT`, chưa chạy L4.
+  Pilot 100 epoch vẫn NO-GO cho tới khi recovery drill fresh epoch 1 → xóa runtime → resume epoch
+  2 và result-package verifier đều PASS.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
   DATASET01-derived review renders và raw/processed/model files không được đưa vào checkpoint.
 - Canonical records: `docs/review/m1_pretrained_weights_owner_response_record.md`,
