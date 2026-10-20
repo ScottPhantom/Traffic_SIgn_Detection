@@ -135,6 +135,10 @@ def test_colab_notebook_is_unexecuted_and_never_exports_test() -> None:
     assert "7ea344cb1e2c166786d0552f215993969efec9b5f06a9bf49310d4390243d641" in source
     assert "EXPECTED_SIDECAR_BYTES = 1499866" in source
     assert "7e0dc5b0144faa5f0be407224eaf8070dd51199fa8a1d2f164b248fd6a06d5b2" in source
+    assert source.count("m1_colab_train_val_backend_r1.tar.gz.part-") == 8
+    assert "bundle_source = 'verified_drive_parts'" in source
+    assert "BUNDLE.open('xb')" in source
+    assert source.index("sha256_file(part)") < source.index("BUNDLE.open('xb')")
     assert source.index("sha256_file(BUNDLE)") < source.index("tarfile.open(BUNDLE")
     assert "--download-approved-weight" in source
     assert "export-test" not in source

@@ -214,8 +214,13 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
   `7e0dc5b…` và `test_included=false`. Notebook kế nhiệm dùng label mới
   `smoke_seed_20261018_backend_r1` và kiểm size/hash chính bytes mount trên Drive trước khi đọc
   manifest. Successor delivery independent QA **PASS 2026-10-20 với 0 finding** sau official
-  verifier 5.888 file, 24/24 targeted tests và independent archive/notebook readback. Package vẫn
-  local, chưa upload/rerun; run FAIL cũ vẫn được giữ nguyên.
+  verifier 5.888 file, 24/24 targeted tests và independent archive/notebook readback. Sidecar mới
+  đã upload; archive 766 MB thất bại sau nhiều resumable retry và không tạo Drive row. Transport
+  local mới chia đúng archive bất biến thành 8 part <=95 MiB; notebook hash từng part, nối chỉ
+  trong `/content`, rồi hash lại archive gốc trước manifest. Chunked-transport independent QA
+  **PASS 2026-10-20 với 0 finding**: từng part khớp pin, nối lexical tái tạo đúng archive,
+  official verifier PASS tại embedded commit và 24/24 targeted tests PASS. Route vẫn cần quyền
+  upload mới; chưa rerun smoke và run FAIL cũ vẫn được giữ nguyên.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
   DATASET01-derived review renders và raw/processed/model files không được đưa vào checkpoint.
 - Canonical records: `docs/review/m1_pretrained_weights_owner_response_record.md`,

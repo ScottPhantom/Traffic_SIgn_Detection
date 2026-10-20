@@ -66,12 +66,19 @@ ngắt giữa chừng không có nghĩa là có thể resume.
 My Drive/CPV391/M1_D1_Colab/
 ```
 
-Phải có hai file:
+Phải có sidecar và một trong hai dạng vận chuyển được notebook hỗ trợ:
 
 ```text
-m1_colab_train_val_backend_r1.tar.gz
 m1_colab_train_val_backend_r1.tar.gz.manifest.json
 ```
+
+- một archive đầy đủ `m1_colab_train_val_backend_r1.tar.gz`; hoặc
+- tám phần `m1_colab_train_val_backend_r1.tar.gz.part-00` đến `part-07`.
+
+Đường chia phần là phương án vận hành hiện tại vì upload archive 730,7 MiB trực tiếp đã thất bại
+trên Drive sau nhiều lần resumable retry. Bảy phần đầu có `99614720` bytes; `part-07` có
+`68923760` bytes. Hash chính xác được pin trong notebook và
+`tmp/m1_colab_train_val_backend_r1.tar.gz.parts.json` tại máy chuẩn bị.
 
 Thông tin gói đã được QA:
 
@@ -83,45 +90,23 @@ Thông tin gói đã được QA:
 - chỉ có `train` và `val`, tổng cộng `5888` payload files;
 - `test_included=false`.
 
-Không đổi tên hoặc giải nén thủ công archive trên Drive.
+Không đổi tên, nối hoặc giải nén thủ công các file trên Drive. Notebook tự hash từng phần, nối vào
+runtime tạm `/content`, rồi kiểm lại size và SHA-256 của archive hoàn chỉnh trước khi đọc manifest.
 
 ### 3.2. Hash lại chính bản đang mount trên Drive
 
 Upload record chỉ chứng minh source bytes ở máy local và trạng thái UI lúc upload. Trước khi
-notebook đọc manifest bên trong archive, Owner phải hash lại **chính hai file đang mount từ Drive**.
+notebook đọc manifest bên trong archive, notebook phải hash lại **chính sidecar và archive hoặc
+tám phần đang mount từ Drive**.
 
 1. Chạy riêng cell đầu tiên để mount Drive.
-2. Chạy cell preflight có sẵn ngay sau cell mount. Nội dung tương đương:
+2. Chạy cell preflight có sẵn ngay sau cell mount. Không rút gọn hoặc bỏ qua danh sách
+   `PART_SPECS`; đó là contract size/hash của cả tám phần.
 
-```python
-import hashlib
-from pathlib import Path
-
-drive_root = Path('/content/drive/MyDrive/CPV391/M1_D1_Colab')
-archive = drive_root / 'm1_colab_train_val_backend_r1.tar.gz'
-sidecar = drive_root / 'm1_colab_train_val_backend_r1.tar.gz.manifest.json'
-
-def sha256_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open('rb') as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b''):
-            digest.update(chunk)
-    return digest.hexdigest()
-
-assert archive.stat().st_size == 766226800
-assert sha256_file(archive) == (
-    '7ea344cb1e2c166786d0552f215993969efec9b5f06a9bf49310d4390243d641'
-)
-assert sidecar.stat().st_size == 1499866
-assert sha256_file(sidecar) == (
-    '7e0dc5b0144faa5f0be407224eaf8070dd51199fa8a1d2f164b248fd6a06d5b2'
-)
-print('Mounted Drive bundle and sidecar hashes: PASS')
-```
-
-Chỉ tiếp tục khi cell in `PASS`. Giữ cell preflight này trong bản notebook vận hành để mỗi lần
-**Chạy tất cả** đều hash archive và sidecar trước cell đọc manifest/checkout code. Nếu hash hoặc
-kích thước khác, dừng ngay; không sửa expected hash theo file vừa đọc.
+Chỉ tiếp tục khi cell in `mounted_bundle_preflight: PASS`. Nếu dùng các phần, output phải có
+`bundle_source: verified_drive_parts`. Giữ cell preflight này để mỗi lần **Chạy tất cả** đều hash
+từng input, nối đúng thứ tự và hash archive hoàn chỉnh trước cell đọc manifest/checkout code. Nếu
+hash hoặc kích thước khác, dừng ngay; không sửa expected hash theo file vừa đọc.
 
 ### 3.3. Mở notebook đúng phiên bản
 

@@ -1146,12 +1146,23 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      `smoke_seed_20261018_backend_r1` and hashes the mounted archive and sidecar before reading the
      manifest. Successor delivery independent QA **PASS with 0 findings** on 2026-10-20 after the
      official 5,888-file verifier, 24/24 targeted tests and independent archive/notebook readback.
-     This package remains local pending explicit private-upload authorization; no rerun has
-     occurred. Canonical records:
+     The successor sidecar then uploaded successfully, but the 766 MB archive repeatedly restarted
+     in Drive and the first attempt ended unsuccessful; a retry was cancelled after the same
+     near-completion oscillation, with no archive row created. A transport-only alternative now
+     splits the unchanged archive into eight exact parts (seven 99,614,720-byte parts plus one
+     68,923,760-byte part). The notebook verifies each mounted part, rebuilds only under `/content`,
+     then verifies the original archive size/hash before reading its manifest. Chunked-transport
+     independent QA **PASS with 0 findings** on 2026-10-20: every part matched its pin, lexical
+     concatenation reproduced the exact approved archive, the official verifier passed at embedded
+     commit `ffc2b448…`, and 24/24 targeted tests passed. The route still requires explicit upload
+     authorization; no rerun has occurred.
+     Canonical records:
      `docs/review/d1_colab_smoke_backend_failure_2026-10-20.md` and
      `docs/review/d1_colab_backend_r1_independent_qa_record.md`, plus
      `docs/review/d1_colab_backend_r1_successor_bundle_record.md` and
-     `docs/review/d1_colab_backend_r1_successor_bundle_independent_qa_record.md`.
+     `docs/review/d1_colab_backend_r1_successor_bundle_independent_qa_record.md`, plus
+     `docs/review/d1_colab_backend_r1_chunked_transport_record.md` and
+     `docs/review/d1_colab_backend_r1_chunked_transport_independent_qa_record.md`.
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 
