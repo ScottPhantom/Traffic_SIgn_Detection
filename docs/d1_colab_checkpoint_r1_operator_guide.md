@@ -1,6 +1,6 @@
 # Hướng dẫn smoke checkpoint/resume D1 R1 trên Colab
 
-Trạng thái: `R3_QA_PASS_PENDING_RELEASE_PIN_AND_L4_RERUN`
+Trạng thái: `R3_QA_PASS_CODE_PINNED_READY_FOR_L4_RERUN`
 
 Phạm vi: chỉ `train`/`val`; không xuất, đọc hoặc đánh giá test niêm phong.
 

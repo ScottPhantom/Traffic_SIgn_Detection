@@ -66,7 +66,7 @@ def test_successor_notebook_is_unexecuted_fail_closed_and_train_val_only() -> No
     assert all(not cell.get("outputs") for cell in code_cells)
     source = "\n".join("".join(cell["source"]) for cell in notebook["cells"])
     assert "PENDING_AFTER_QA" not in source
-    assert "891d3eeec39c60a1b203ce9adffae941034f7f5a" in source
+    assert "b9ce31f7278e41f51f6bd7430c2f97f653321618" in source
     assert "Wait for QA, commit and push before Colab" in source
     assert "run_d1_colab_checkpoint_r1.py" in source
     assert "--stop-after-epoch" in source
