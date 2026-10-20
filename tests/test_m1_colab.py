@@ -129,10 +129,26 @@ def test_colab_notebook_is_unexecuted_and_never_exports_test() -> None:
     code_cells = [cell for cell in notebook["cells"] if cell["cell_type"] == "code"]
     assert all(cell.get("execution_count") is None for cell in code_cells)
     source = "\n".join("".join(cell["source"]) for cell in notebook["cells"])
-    assert "m1_colab_train_val.tar.gz" in source
+    assert "m1_colab_train_val_backend_r1.tar.gz" in source
+    assert "smoke_seed_20261018_backend_r1" in source
+    assert "EXPECTED_BUNDLE_BYTES = 766226800" in source
+    assert "7ea344cb1e2c166786d0552f215993969efec9b5f06a9bf49310d4390243d641" in source
+    assert "EXPECTED_SIDECAR_BYTES = 1499866" in source
+    assert "7e0dc5b0144faa5f0be407224eaf8070dd51199fa8a1d2f164b248fd6a06d5b2" in source
+    assert source.index("sha256_file(BUNDLE)") < source.index("tarfile.open(BUNDLE")
     assert "--download-approved-weight" in source
     assert "export-test" not in source
     assert "--final-eval" not in source
+
+
+def test_operator_guide_routes_only_to_successor_bundle_commit_and_run_label() -> None:
+    guide = (REPO_ROOT / "docs/d1_colab_operator_guide.md").read_text(encoding="utf-8")
+    assert "m1_colab_train_val_backend_r1.tar.gz" in guide
+    assert "RUN_LABEL = 'smoke_seed_20261018_backend_r1'" in guide
+    assert "ffc2b448f06c45dae597de5b565cab64c0377573" in guide
+    assert "RUN_LABEL = 'smoke_seed_20261018'" not in guide
+    assert "RUN_LABEL = 'smoke_seed_20261018_retry1'" not in guide
+    assert "checkout đúng commit `1842a1b" not in guide
 
 
 def test_runner_cli_requires_explicit_paths() -> None:

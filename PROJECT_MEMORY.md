@@ -1138,10 +1138,20 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      not be reused. Backend R1 forces `MPLBACKEND=Agg` for primary and cascade subprocesses, pins
      all cascade primary-runner loads to the repaired bytes and adds regression coverage.
      Independent QA **PASS with 0 findings** on 2026-10-20 after 56/56 affected tests, 79/79
-     detector tests and 52/52 repository verifiers. This approves only the local remediation; a
-     successor bundle and new run label are still required before another smoke. Canonical records:
+     detector tests and 52/52 repository verifiers. A local successor train/val-only bundle is now
+     built and verifier-PASS: archive `766226800` bytes / SHA-256 `7ea344cb1e2c166786d0552f215993969efec9b5f06a9bf49310d4390243d641`,
+     sidecar `1499866` bytes / SHA-256 `7e0dc5b0144faa5f0be407224eaf8070dd51199fa8a1d2f164b248fd6a06d5b2`,
+     `5888` payload files, embedded commit `ffc2b448f06c45dae597de5b565cab64c0377573`,
+     `test_included=false`. The successor notebook uses the fresh state label
+     `smoke_seed_20261018_backend_r1` and hashes the mounted archive and sidecar before reading the
+     manifest. Successor delivery independent QA **PASS with 0 findings** on 2026-10-20 after the
+     official 5,888-file verifier, 24/24 targeted tests and independent archive/notebook readback.
+     This package remains local pending explicit private-upload authorization; no rerun has
+     occurred. Canonical records:
      `docs/review/d1_colab_smoke_backend_failure_2026-10-20.md` and
-     `docs/review/d1_colab_backend_r1_independent_qa_record.md`.
+     `docs/review/d1_colab_backend_r1_independent_qa_record.md`, plus
+     `docs/review/d1_colab_backend_r1_successor_bundle_record.md` and
+     `docs/review/d1_colab_backend_r1_successor_bundle_independent_qa_record.md`.
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 

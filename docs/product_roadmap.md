@@ -209,8 +209,13 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
   sealed-test access. Backend R1 ép `MPLBACKEND=Agg` cho primary/cascade, pin lại chính xác
   primary runner và thêm regression test. Independent QA **PASS 2026-10-20 với 0 finding**
   (`docs/review/d1_colab_backend_r1_independent_qa_record.md`): 56/56 affected tests, 79/79
-  detector và 52/52 verifier PASS. PASS này chỉ duyệt local remediation; vẫn cần successor
-  bundle và label mới trước khi Owner rerun smoke.
+  detector và 52/52 verifier PASS. Successor bundle local đã build/verify chỉ train/val với
+  `5888` payload, embedded commit `ffc2b448…`, archive SHA-256 `7ea344cb…`, sidecar SHA-256
+  `7e0dc5b…` và `test_included=false`. Notebook kế nhiệm dùng label mới
+  `smoke_seed_20261018_backend_r1` và kiểm size/hash chính bytes mount trên Drive trước khi đọc
+  manifest. Successor delivery independent QA **PASS 2026-10-20 với 0 finding** sau official
+  verifier 5.888 file, 24/24 targeted tests và independent archive/notebook readback. Package vẫn
+  local, chưa upload/rerun; run FAIL cũ vẫn được giữ nguyên.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
   DATASET01-derived review renders và raw/processed/model files không được đưa vào checkpoint.
 - Canonical records: `docs/review/m1_pretrained_weights_owner_response_record.md`,

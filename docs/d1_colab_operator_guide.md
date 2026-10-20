@@ -69,15 +69,17 @@ My Drive/CPV391/M1_D1_Colab/
 Phải có hai file:
 
 ```text
-m1_colab_train_val.tar.gz
-m1_colab_train_val.tar.gz.manifest.json
+m1_colab_train_val_backend_r1.tar.gz
+m1_colab_train_val_backend_r1.tar.gz.manifest.json
 ```
 
 Thông tin gói đã được QA:
 
-- archive size: `766226824` bytes;
-- archive SHA-256: `eb5226e36cf619e271132794c97fd633f7528d72e25463356eb165f36f43e191`;
-- sidecar SHA-256: `2c43d5fdff3de32af3fa3b9621f7f73cf1646c2f51801c5844ae89e8f4ae8d3b`;
+- archive size: `766226800` bytes;
+- archive SHA-256: `7ea344cb1e2c166786d0552f215993969efec9b5f06a9bf49310d4390243d641`;
+- sidecar size: `1499866` bytes;
+- sidecar SHA-256: `7e0dc5b0144faa5f0be407224eaf8070dd51199fa8a1d2f164b248fd6a06d5b2`;
+- embedded repository commit: `ffc2b448f06c45dae597de5b565cab64c0377573`;
 - chỉ có `train` và `val`, tổng cộng `5888` payload files;
 - `test_included=false`.
 
@@ -89,15 +91,15 @@ Upload record chỉ chứng minh source bytes ở máy local và trạng thái U
 notebook đọc manifest bên trong archive, Owner phải hash lại **chính hai file đang mount từ Drive**.
 
 1. Chạy riêng cell đầu tiên để mount Drive.
-2. Chèn một code cell ngay sau cell mount và chạy:
+2. Chạy cell preflight có sẵn ngay sau cell mount. Nội dung tương đương:
 
 ```python
 import hashlib
 from pathlib import Path
 
 drive_root = Path('/content/drive/MyDrive/CPV391/M1_D1_Colab')
-archive = drive_root / 'm1_colab_train_val.tar.gz'
-sidecar = drive_root / 'm1_colab_train_val.tar.gz.manifest.json'
+archive = drive_root / 'm1_colab_train_val_backend_r1.tar.gz'
+sidecar = drive_root / 'm1_colab_train_val_backend_r1.tar.gz.manifest.json'
 
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
@@ -106,13 +108,13 @@ def sha256_file(path: Path) -> str:
             digest.update(chunk)
     return digest.hexdigest()
 
-assert archive.stat().st_size == 766226824
+assert archive.stat().st_size == 766226800
 assert sha256_file(archive) == (
-    'eb5226e36cf619e271132794c97fd633f7528d72e25463356eb165f36f43e191'
+    '7ea344cb1e2c166786d0552f215993969efec9b5f06a9bf49310d4390243d641'
 )
 assert sidecar.stat().st_size == 1499866
 assert sha256_file(sidecar) == (
-    '2c43d5fdff3de32af3fa3b9621f7f73cf1646c2f51801c5844ae89e8f4ae8d3b'
+    '7e0dc5b0144faa5f0be407224eaf8070dd51199fa8a1d2f164b248fd6a06d5b2'
 )
 print('Mounted Drive bundle and sidecar hashes: PASS')
 ```
@@ -126,7 +128,7 @@ kích thước khác, dừng ngay; không sửa expected hash theo file vừa đ
 Mở notebook đã bind với bundle:
 
 ```text
-https://colab.research.google.com/github/ScottPhantom/Traffic_SIgn_Detection/blob/1842a1b77e6448a54fec486937f4c0f0e6ff19f5/detector/colab/d1_train.ipynb?authuser=3
+https://colab.research.google.com/github/ScottPhantom/Traffic_SIgn_Detection/blob/DEV/Rroject_Pineline/detector/colab/d1_train.ipynb?authuser=3
 ```
 
 Có thể nhấn **Sao chép vào Drive** để giữ một bản vận hành riêng. Không thay code của các cell kiểm
@@ -151,7 +153,7 @@ Smoke là lần chạy bắt buộc trước pilot 100 epoch.
 Trong cell cấu hình, giữ nguyên:
 
 ```python
-RUN_LABEL = 'smoke_seed_20261018'
+RUN_LABEL = 'smoke_seed_20261018_backend_r1'
 SMOKE = True
 SEED = 20261018
 EPOCHS = 1 if SMOKE else 100
@@ -160,10 +162,11 @@ BATCH = 8
 DEVICE = '0'
 ```
 
-Nếu `smoke_seed_20261018` đã từng được dùng, đặt label mới, ví dụ:
+Run `smoke_seed_20261018` đã thất bại và là evidence bất biến; tuyệt đối không dùng lại. Notebook
+kế nhiệm đã dùng label mới:
 
 ```python
-RUN_LABEL = 'smoke_seed_20261018_retry1'
+RUN_LABEL = 'smoke_seed_20261018_backend_r1'
 ```
 
 Không tái sử dụng thư mục state cũ.
@@ -180,7 +183,7 @@ Sau đó:
 
 Workflow sẽ tự động:
 
-1. đọc manifest bên trong bundle và checkout đúng commit `1842a1b…`;
+1. đọc manifest bên trong bundle và checkout đúng commit `ffc2b448f06c45dae597de5b565cab64c0377573`;
 2. xác minh bundle chỉ có train/val và stem hashes đúng;
 3. tái tạo dataset YOLO train/val;
 4. chạy `uv sync --frozen` trong môi trường detector;
