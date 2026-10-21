@@ -74,6 +74,6 @@ def test_rendered_html_inlines_safe_payload(payload: dict) -> None:
 def test_webapp_graph_tab_renders_without_exception() -> None:
     app_path = REPO_ROOT / "src" / "cpv301_autodrive" / "web_app.py"
     app = AppTest.from_file(str(app_path)).run(timeout=60)
+    app.switch_page("app_pages/04_du_lieu.py").run(timeout=60)
     assert not app.exception
-    labels = [tab.label for tab in app.tabs]
-    assert any("DATASET01" in label for label in labels)
+    assert any("DATASET01" in header.value for header in app.subheader)

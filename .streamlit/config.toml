@@ -1,9 +1,22 @@
 [theme]
-primaryColor = "#d9782d"
+base = "light"
+primaryColor = "#b4541c"
 backgroundColor = "#f7f8f4"
 secondaryBackgroundColor = "#edf2ef"
 textColor = "#172724"
+linkColor = "#176153"
+borderColor = "#d9e4df"
 font = "sans serif"
+headingFontWeights = [700, 650, 600, 600, 600, 600]
+baseRadius = "0.75rem"
+greenColor = "#176153"
+orangeColor = "#b4541c"
+blueColor = "#2f6690"
+grayColor = "#7a8a84"
+chartCategoricalColors = ["#176153", "#b4541c", "#2f6690", "#7a8a84"]
+
+[client]
+toolbarMode = "minimal"
 
 [server]
 maxUploadSize = 200

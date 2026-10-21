@@ -60,7 +60,7 @@ def test_pipeline_has_all_eight_steps_and_real_numbers() -> None:
 )
 def test_dataset01_sections_render(section: str) -> None:
     app = AppTest.from_file(str(APP_PATH)).run(timeout=60)
-    app.session_state["main_view"] = next(tab.label for tab in app.tabs if "DATASET01" in tab.label)
+    app.switch_page("app_pages/04_du_lieu.py").run(timeout=60)
     app.session_state["dataset01_view"] = section
     app.run(timeout=120)
     assert not app.exception
