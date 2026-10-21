@@ -106,7 +106,8 @@ def test_r6_notebook_is_unexecuted_and_fail_closed() -> None:
     code = [cell for cell in notebook["cells"] if cell["cell_type"] == "code"]
     assert all(cell.get("execution_count") is None and not cell.get("outputs") for cell in code)
     source = "\n".join("".join(cell["source"]) for cell in notebook["cells"])
-    assert 'CODE_COMMIT = "PENDING_AFTER_QA"' in source
+    assert 'CODE_COMMIT = "47c86d17430808ceeee6e1a1a553cf6fef88e5ed"' in source
+    assert "PENDING_AFTER_QA" not in source
     assert "run_d1_colab_checkpoint_r6.py" in source
     assert "checkpoint_smoke_seed_20261018_r4_r6" in source
     assert "export-test" not in source and "--final-eval" not in source
