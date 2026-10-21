@@ -1,19 +1,50 @@
+# Presentation theme (2026-10-21 refresh). Keep the colour values in sync with
+# src/cpv301_autodrive/palette.py, which the Altair charts and Graphviz diagram use.
 [theme]
-base = "light"
-primaryColor = "#b4541c"
-backgroundColor = "#f7f8f4"
-secondaryBackgroundColor = "#edf2ef"
-textColor = "#172724"
-linkColor = "#176153"
-borderColor = "#d9e4df"
-font = "sans serif"
-headingFontWeights = [700, 650, 600, 600, 600, 600]
-baseRadius = "0.75rem"
-greenColor = "#176153"
-orangeColor = "#b4541c"
-blueColor = "#2f6690"
-grayColor = "#7a8a84"
-chartCategoricalColors = ["#176153", "#b4541c", "#2f6690", "#7a8a84"]
+font = "'Be Vietnam Pro':https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+codeFontSize = "0.85rem"
+baseFontSize = 15
+headingFontSizes = ["2.75rem", "1.75rem", "1.35rem", "1.1rem", "1rem", "0.9rem"]
+headingFontWeights = [800, 700, 650, 600, 600, 600]
+baseRadius = "0.9rem"
+buttonRadius = "full"
+showWidgetBorder = true
+linkUnderline = false
+
+[theme.light]
+primaryColor = "#2563eb"
+backgroundColor = "#f8fafc"
+secondaryBackgroundColor = "#eef2f7"
+textColor = "#0f172a"
+linkColor = "#1d4ed8"
+borderColor = "#e2e8f0"
+codeBackgroundColor = "#eef2f7"
+blueColor = "#2563eb"
+greenColor = "#047857"
+orangeColor = "#c2410c"
+redColor = "#dc2626"
+violetColor = "#7c3aed"
+grayColor = "#64748b"
+chartCategoricalColors = ["#2563eb", "#c2410c", "#047857", "#7c3aed", "#64748b"]
+dataframeHeaderBackgroundColor = "#eef2f7"
+
+[theme.dark]
+primaryColor = "#3b82f6"
+backgroundColor = "#0b1220"
+secondaryBackgroundColor = "#151e2e"
+textColor = "#e2e8f0"
+linkColor = "#93c5fd"
+borderColor = "#243045"
+codeBackgroundColor = "#151e2e"
+blueColor = "#60a5fa"
+greenColor = "#34d399"
+orangeColor = "#fb923c"
+redColor = "#f87171"
+violetColor = "#a78bfa"
+grayColor = "#94a3b8"
+chartCategoricalColors = ["#60a5fa", "#fb923c", "#34d399", "#a78bfa", "#94a3b8"]
+dataframeHeaderBackgroundColor = "#151e2e"
 
 [client]
 toolbarMode = "minimal"

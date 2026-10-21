@@ -93,19 +93,33 @@ def slide_header(page_file: str) -> Slide:
     with st.container(
         horizontal=True, vertical_alignment="center", horizontal_alignment="distribute"
     ):
-        st.caption(f"Trang {index + 1}/{len(SLIDES)}")
+        st.caption(f"{slide.icon} Trang {index + 1}/{len(SLIDES)} · CPV301 AutoDrive")
         st.toggle(
             "Trình chiếu",
             key=PRESENT_KEY,
-            value=presenting(),
+            # The default must stay False: a bound param equal to the default is dropped from the
+            # URL, so value=True would erase ?present=true. The binding itself reads the URL.
+            value=False,
             bind="query-params",
             help="Ẩn thanh điều hướng; dùng PageUp/PageDown hoặc nút cuối trang để chuyển slide.",
         )
     if presenting():
         st.progress((index + 1) / len(SLIDES))
     st.title(slide.title, anchor=False)
-    st.markdown(f"**{slide.subtitle}**")
+    st.subheader(f":gray[{slide.subtitle}]", anchor=False)
+    st.space("small")
     return slide
+
+
+def go_to(slide: Slide) -> None:
+    """Switch slide and drop the previous slide's URL params.
+
+    `st.switch_page` without `query_params` calls `QueryParams.clear()`, which raises
+    `StreamlitAPIException` while a widget is bound to a URL param (`?pipeline_stage=...`,
+    `?present=...`); an explicit mapping replaces them without that check. Bound params can't be
+    set here either; the `present` toggle keeps its session state and re-syncs the URL.
+    """
+    st.switch_page(page_path(slide), query_params={})
 
 
 def slide_footer(page_file: str) -> None:
@@ -124,7 +138,7 @@ def slide_footer(page_file: str) -> None:
                 shortcut="PageUp",
                 key="slide_previous",
             ):
-                st.switch_page(page_path(previous))
+                go_to(previous)
         if index < len(SLIDES) - 1:
             following = SLIDES[index + 1]
             if st.button(
@@ -135,4 +149,4 @@ def slide_footer(page_file: str) -> None:
                 shortcut="PageDown",
                 key="slide_next",
             ):
-                st.switch_page(page_path(following))
+                go_to(following)

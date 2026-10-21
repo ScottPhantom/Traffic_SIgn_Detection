@@ -7,9 +7,13 @@ The project is told as an 8-slide talk (`presentation.SLIDES`), one page per sli
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import streamlit as st
 
 from cpv301_autodrive.presentation import SLIDES, page_path, presenting
+
+LOGO = Path(__file__).parent / "assets" / "logo.svg"
 
 
 def render_app() -> None:
@@ -19,6 +23,7 @@ def render_app() -> None:
         layout="wide",
         initial_sidebar_state="auto",
     )
+    st.logo(str(LOGO), size="large")
     pages = [
         st.Page(page_path(slide), title=slide.title, icon=slide.icon, default=index == 0)
         for index, slide in enumerate(SLIDES)

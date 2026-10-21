@@ -3,20 +3,14 @@
 import streamlit as st
 
 from cpv301_autodrive.presentation import SLIDES, page_path, slide_footer, slide_header
-from cpv301_autodrive.project_status import CURRENT_PHASE, GATE0, TRAINING_STATUS
+from cpv301_autodrive.project_status import CURRENT_PHASE
 from cpv301_autodrive.views import render_hero, render_pipeline
 
 slide_header(__file__)
 render_hero()
+st.caption(f":material/schedule: Giai đoạn hiện tại: {CURRENT_PHASE}.")
 
-passed = sum(1 for _, _, status in GATE0 if status == "PASS")
-with st.container(horizontal=True):
-    st.metric("Khung hình DATASET01", "3.216", border=True)
-    st.metric("Lớp biển báo train", "54", border=True)
-    st.metric("Gate 0", f"{passed}/{len(GATE0)} PASS", border=True)
-    st.metric("Huấn luyện", TRAINING_STATUS, border=True)
-st.caption(f"Giai đoạn hiện tại: {CURRENT_PHASE}.")
-
+st.subheader("Pipeline năm bước", anchor=False)
 render_pipeline()
 st.warning(
     "Chưa có model Việt Nam đạt chuẩn: detector đang ở bước chạy thử trên Colab. Demo hiện dùng "

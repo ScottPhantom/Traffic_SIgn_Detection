@@ -449,57 +449,76 @@ ROAD_STYLES = """
 .road-line { position: absolute; height: 100%; left: 50%; border-left: 5px dashed #f8e282; }
 .car { position: absolute; bottom: 14px; left: calc(50% - 34px); font-size: 2.8rem; }
 .car span { color: white; font-size: 1.3rem; margin-left: .3rem; }
-.detected-sign { position: absolute; top: 14px; right: 5%; background: #fff; color: #172724;
-                 border: 4px solid #b4541c; border-radius: 10px; padding: .4rem .65rem;
+.detected-sign { position: absolute; top: 14px; right: 5%; background: #fff; color: #0f172a;
+                 border: 4px solid #c2410c; border-radius: 10px; padding: .4rem .65rem;
                  font-weight: 700; max-width: 60%; }
 </style>
 """
 
 
 def render_hero() -> None:
-    """Project title card of the overview slide (native elements, no custom CSS)."""
-    with st.container(border=True):
-        st.markdown("## :material/traffic: CPV301 AutoDrive")
+    """Project title card of the overview slide: pitch, status badges, calls to action, key figures.
+
+    Native elements only (no custom CSS).
+    """
+    from cpv301_autodrive.presentation import SLIDES, go_to
+
+    passed = sum(1 for _, _, status in GATE0 if status == "PASS")
+    with st.container(border=True, gap="medium"):
         st.markdown(
-            "Nhận diện biển báo giao thông **Việt Nam** trên ảnh toàn cảnh để phục vụ **mô phỏng "
-            "hỗ trợ lái**. Dữ liệu DATASET01 đã qua Gate 0; detector YOLO đang ở bước train."
-        )
-        st.markdown(
-            ":green-badge[:material/check: Gate 0 9/9] :blue-badge[54 lớp QCVN 41:2024] "
+            f":blue-badge[:material/traffic: CPV301 AutoDrive] "
+            f":green-badge[:material/check: Gate 0 {passed}/{len(GATE0)}] "
             ":orange-badge[:material/model_training: Detector đang train] "
             ":gray-badge[Chỉ mô phỏng]"
         )
-
-
-STAGE_COLORS = palette.STAGE_FILLS
+        st.header("Nhận diện biển báo Việt Nam trên ảnh toàn cảnh", anchor=False)
+        st.markdown(
+            ":gray[Từ khung hình camera đến hành vi xe mô phỏng: detector YOLO cho **54 lớp** "
+            "biển theo QCVN 41:2024, dữ liệu chia theo nhóm và test niêm phong.]"
+        )
+        with st.container(horizontal=True):
+            if st.button(
+                "Xem pipeline", icon=":material/account_tree:", type="primary", key="hero_pipeline"
+            ):
+                go_to(SLIDES[2])
+            if st.button("Thử demo", icon=":material/directions_car:", key="hero_demo"):
+                go_to(SLIDES[6])
+        with st.container(horizontal=True):
+            st.metric("Khung hình DATASET01", "3.216", border=True)
+            st.metric("Lớp biển báo train", "54", border=True)
+            st.metric("Gate 0", f"{passed}/{len(GATE0)} PASS", border=True)
+            st.metric("Huấn luyện", TRAINING_STATUS, border=True)
 
 
 def pipeline_dot(selected: str, vertical: bool = False) -> str:
     """Graphviz DOT of the target pipeline plus the current E0 demo path (dashed)."""
     from cpv301_autodrive.project_status import PIPELINE_STAGES, STAGE_STATE_LABEL
 
+    colors = palette.current()
+    font = 'fontname="Be Vietnam Pro,Helvetica"'
     lines = [
         "digraph pipeline {",
         f"  rankdir={'TB' if vertical else 'LR'};",
         '  bgcolor="transparent"; nodesep=0.35; ranksep=0.55;',
-        '  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=12,'
-        ' color="#9fb3ab", penwidth=1.2, margin="0.2,0.12"];',
-        '  edge [color="#56756b", fontname="Helvetica", fontsize=10];',
+        f'  node [shape=box, style="rounded,filled", {font}, fontsize=12,'
+        f' fontcolor="{colors.stage_ink}", color="{colors.border}", penwidth=1.2,'
+        ' margin="0.22,0.14"];',
+        f'  edge [color="{colors.muted}", fontcolor="{colors.muted}", {font}, fontsize=10];',
     ]
     for stage in PIPELINE_STAGES:
         status = STAGE_STATE_LABEL[stage.state][0]
-        border = 'color="#b4541c", penwidth=3' if stage.name == selected else ""
+        border = f'color="{colors.accent}", penwidth=3' if stage.name == selected else ""
         lines.append(
             f'  "{stage.name}" [label="{stage.name}\\n{status}", '
-            f'fillcolor="{STAGE_COLORS[stage.state]}" {("," + border) if border else ""}];'
+            f'fillcolor="{colors.stage_fills[stage.state]}" {("," + border) if border else ""}];'
         )
     lines += [
         '  "Camera" -> "Detector" [label="khung hình"];',
         '  "Detector" -> "Temporal voting" [label="khung + lớp"];',
         '  "Temporal voting" -> "Hành vi" [label="sự kiện"];',
         '  "Detector" -> "Classifier" [style=dotted, label="crop (tùy chọn)"];',
-        '  "Camera" -> "Classifier" [style=dashed, color="#9aa4b2", label="demo E0: ảnh crop"];',
-        '  "Classifier" -> "Hành vi" [style=dashed, color="#9aa4b2", label="demo E0"];',
+        '  "Camera" -> "Classifier" [style=dashed, label="demo E0: ảnh crop"];',
+        '  "Classifier" -> "Hành vi" [style=dashed, label="demo E0"];',
         "}",
     ]
     return "\n".join(lines)
@@ -555,10 +574,6 @@ def render_pipeline_explorer() -> None:
         st.caption("Nguồn: " + " · ".join(f"`{path}`" for path in stage.evidence))
 
 
-BAR_COLOR = palette.GREEN
-GATE_COLOR = palette.ORANGE
-
-
 def render_data_overview() -> None:
     from cpv301_autodrive.project_status import SPLIT_FRAMES
 
@@ -588,8 +603,9 @@ def render_data_overview() -> None:
             x=alt.X("Ảnh:Q", title="Số khung hình dùng được"),
             tooltip=["Split:N", "Ảnh:Q"],
         )
-        bars = base.mark_bar(color=BAR_COLOR, cornerRadiusEnd=4, height=26)
-        labels = base.mark_text(align="left", dx=6, color=palette.INK).encode(text="Ảnh:Q")
+        colors = palette.current()
+        bars = base.mark_bar(color=colors.data, cornerRadiusEnd=6, height=26)
+        labels = base.mark_text(align="left", dx=6, color=colors.ink).encode(text="Ảnh:Q")
         st.altair_chart((bars + labels).properties(height=alt.Step(40)), width="stretch")
     with right:
         st.markdown("**Vì sao chia theo nhóm?**")
@@ -670,20 +686,21 @@ def render_speed_chart() -> None:
         x=alt.X("ms:Q", title="Thời gian mỗi khung hình (ms)", scale=alt.Scale(domain=[0, 130])),
         tooltip=["Pipeline:N", alt.Tooltip("ms:Q", format=".1f"), "FPS:Q"],
     )
-    bars = base.mark_bar(color=BAR_COLOR, cornerRadiusEnd=4, height=22)
+    colors = palette.current()
+    bars = base.mark_bar(color=colors.data, cornerRadiusEnd=6, height=22)
     labels = (
-        base.mark_text(align="left", dx=6, color=palette.INK)
+        base.mark_text(align="left", dx=6, color=colors.ink)
         .encode(text=alt.Text("label:N"))
         .transform_calculate(label="format(datum.ms, '.0f') + ' ms · ' + datum.FPS + ' FPS'")
     )
     gate = (
         alt.Chart(alt.Data(values=[{"ms": 100}]))
-        .mark_rule(color=GATE_COLOR, strokeDash=[5, 4], strokeWidth=2)
+        .mark_rule(color=colors.accent, strokeDash=[5, 4], strokeWidth=2)
         .encode(x="ms:Q")
     )
     gate_label = (
         alt.Chart(alt.Data(values=[{"ms": 100, "t": "Gate D-05: 100 ms"}]))
-        .mark_text(color=GATE_COLOR, align="right", dx=-4, dy=-6, baseline="bottom")
+        .mark_text(color=colors.accent, align="right", dx=-4, dy=-6, baseline="bottom")
         .encode(x="ms:Q", y=alt.value(0), text="t:N")
     )
     st.altair_chart(
@@ -712,7 +729,8 @@ def render_train_time_chart() -> None:
         y=alt.Y("Nơi train:N", sort=None, title=None, axis=alt.Axis(labelLimit=320)),
         tooltip=["Nơi train:N", "label:N", "Loại:N"],
     )
-    bars = base.mark_bar(color=BAR_COLOR, cornerRadiusEnd=4, height=22).encode(
+    colors = palette.current()
+    bars = base.mark_bar(color=colors.data, cornerRadiusEnd=6, height=22).encode(
         x=alt.X("high:Q", title="Giờ cho 100 epoch YOLO11n (1280 px)"),
         opacity=alt.Opacity(
             "Loại:N",
@@ -720,7 +738,7 @@ def render_train_time_chart() -> None:
             legend=alt.Legend(title=None, orient="bottom"),
         ),
     )
-    labels = base.mark_text(align="left", dx=6, color=palette.INK).encode(
+    labels = base.mark_text(align="left", dx=6, color=colors.ink).encode(
         x="high:Q", text="label:N"
     )
     st.altair_chart((bars + labels).properties(height=alt.Step(38)), width="stretch")

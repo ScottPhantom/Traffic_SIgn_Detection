@@ -46,10 +46,11 @@ def test_pipeline_stages_match_overview_cards() -> None:
 
 
 def test_pipeline_dot_highlights_only_the_selected_stage() -> None:
+    from cpv301_autodrive.palette import LIGHT
     from cpv301_autodrive.views import pipeline_dot
 
     dot = pipeline_dot("Classifier")
-    assert dot.count('color="#b4541c", penwidth=3') == 1
+    assert dot.count(f'color="{LIGHT.accent}", penwidth=3') == 1
     highlighted = next(line for line in dot.splitlines() if "penwidth=3" in line)
     assert highlighted.strip().startswith('"Classifier"')
 
@@ -113,3 +114,27 @@ def test_next_button_moves_to_the_following_slide() -> None:
     app.button(key="slide_next").click().run(timeout=30)
     assert not app.exception
     assert app.title[0].value == "Bài toán"
+
+
+@pytest.mark.parametrize("key", ["slide_next", "slide_previous"])
+def test_slide_buttons_switch_page_after_choosing_a_pipeline_stage(key: str) -> None:
+    # A shared link such as /pipeline?pipeline_stage=Classifier binds the param to the widget;
+    # switching pages must not try to clear it (StreamlitAPIException before the fix).
+    app = AppTest.from_file(str(APP_PATH))
+    app.query_params["pipeline_stage"] = "Classifier"
+    app.run(timeout=30)
+    app.switch_page("app_pages/03_pipeline.py").run(timeout=30)
+    app.button(key=key).click().run(timeout=30)
+    assert not app.exception
+    assert app.title[0].value == ("Dữ liệu" if key == "slide_next" else "Bài toán")
+
+
+def test_slide_buttons_keep_presentation_mode() -> None:
+    app = AppTest.from_file(str(APP_PATH))
+    app.query_params["present"] = "true"
+    app.run(timeout=30)
+    app.button(key="slide_next").click().run(timeout=30)
+    assert not app.exception
+    assert app.title[0].value == "Bài toán"
+    assert app.toggle(key="present").value is True
+    assert len(app.get("progress")) == 1
