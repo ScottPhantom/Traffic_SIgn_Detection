@@ -250,6 +250,14 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
   `docs/review/d1_checkpoint_resume_r4_r6_l4_artifact_independent_qa_record.md` (SHA-256
   `fea054ac1667446fc02d0a6fb0d326f1d2689f9693342a28643c448840b7ca14`). C4 mở; pilot D1 một
   seed 100 epoch là **GO**. Sealed test và final evaluation vẫn **NO-GO**.
+  Pilot sau đó đạt checkpoint `epoch-0014` nhưng không resume được vì R2 chỉ cho phép đúng một
+  fresh attempt và một resume attempt. Recovery R3 kế nhiệm đã QA độc lập PASS 0 finding; source
+  commit `e20a69541e3a6327739238fc71691109ce8f51d0` và notebook-pin commit
+  `904ba8083cfc6cdf7e5aa0fc3c01319efc519d99` đã push. Lượt L4 mới bắt đầu resume lúc
+  `2026-10-21T08:05:38Z` và Drive đã xác nhận checkpoint tăng đúng tới `epoch-0016`, không quay lại
+  epoch 1; `status=STARTED`, không có terminal error, `sealed_test_accessed=false`. Đây là tiến độ
+  đang chạy, chưa phải model hoàn tất hay được chấp nhận; còn chờ epoch 100, result package và QA
+  artifact độc lập.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
   DATASET01-derived review renders và raw/processed/model files không được đưa vào checkpoint.
 - Canonical records: `docs/review/m1_pretrained_weights_owner_response_record.md`,

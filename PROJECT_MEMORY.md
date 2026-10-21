@@ -1,6 +1,6 @@
 # Project Memory — CPV301 AutoDrive
 
-Last updated: 2026-10-19 (Asia/Ho_Chi_Minh)
+Last updated: 2026-10-21 (Asia/Ho_Chi_Minh)
 Checkout: `/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector`  
 Role: PM — Project Management and Structure
 
@@ -1234,6 +1234,17 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      `docs/review/d1_checkpoint_resume_r4_r6_l4_smoke_report.md`, and
      `docs/review/d1_checkpoint_resume_r4_r6_l4_artifact_independent_qa_record.md` (SHA-256
      `fea054ac1667446fc02d0a6fb0d326f1d2689f9693342a28643c448840b7ca14`).
+     The authorized 100-epoch pilot later reached a verified `epoch-0014` checkpoint, but three
+     failed resume attempts exposed an overly strict R2 guard that accepted only one fresh attempt
+     and one resume. Append-only recovery R3 now accepts one fresh attempt, zero or more failed
+     resumes and one active/final resume while retaining chronology, runtime identity, binding and
+     sealed-test checks. Independent source and notebook QA both **PASSed with 0 findings**.
+     Implementation commit `e20a69541e3a6327739238fc71691109ce8f51d0` and notebook-pin commit
+     `904ba8083cfc6cdf7e5aa0fc3c01319efc519d99` were pushed. A new NVIDIA L4 resume started at
+     `2026-10-21T08:05:38Z`; direct Colab and Drive readback confirmed advancement without restart
+     through `epoch-0016`, binding `fc81808e...`, execution status `STARTED`, no terminal error and
+     `sealed_test_accessed=false`. The pilot is still running and is not a completed/accepted model;
+     final result packaging, evaluation and independent artifact QA remain pending.
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 
