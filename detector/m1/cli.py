@@ -18,6 +18,7 @@ import argparse
 import json
 import sys
 import time
+from collections.abc import Iterator, Sequence
 from pathlib import Path
 from typing import Any
 
@@ -127,6 +128,40 @@ def cmd_train(args: argparse.Namespace) -> dict[str, Any]:
     return {"run": name, "dir": str(out)}
 
 
+def iter_image_predictions(
+    model: Any,
+    images: Sequence[Path],
+    *,
+    imgsz: int,
+    device: str,
+    nms_iou: float,
+) -> Iterator[tuple[Path, Any]]:
+    """Predict one path at a time so full-resolution validation images are never preloaded."""
+    for path in images:
+        results = iter(
+            model.predict(
+                source=str(path),
+                conf=0.001,
+                iou=nms_iou,
+                imgsz=imgsz,
+                device=device,
+                max_det=300,
+                stream=True,
+                verbose=False,
+            )
+        )
+        try:
+            result = next(results)
+        except StopIteration as error:
+            raise RuntimeError(f"prediction returned no result for {path}") from error
+        try:
+            next(results)
+        except StopIteration:
+            yield path, result
+            continue
+        raise RuntimeError(f"prediction returned multiple results for one image: {path}")
+
+
 def load_frames(
     split: str, weights: str, imgsz: int, device: str, nms_iou: float
 ) -> list[Frame]:
@@ -142,17 +177,13 @@ def load_frames(
     unknown = contract.unknown_boxes()
     model = YOLO(weights)
     frames = []
-    results = model.predict(
-        source=[str(p) for p in images],
-        conf=0.001,
-        iou=nms_iou,
+    for path, result in iter_image_predictions(
+        model,
+        images,
         imgsz=imgsz,
         device=device,
-        max_det=300,
-        stream=True,
-        verbose=False,
-    )
-    for path, result in zip(images, results, strict=True):
+        nms_iou=nms_iou,
+    ):
         with Image.open(path) as image:
             width, height = image.size
         rows = [

@@ -62,6 +62,45 @@ def test_latency_stats() -> None:
     assert stats["n"] == 100 and stats["p95_ms"] == pytest.approx(95.05)
 
 
+def test_validation_predictions_are_streamed_one_image_at_a_time(tmp_path: Path) -> None:
+    images = [tmp_path / "a.jpg", tmp_path / "b.jpg"]
+    sentinel = [object(), object()]
+
+    class FakeModel:
+        def __init__(self) -> None:
+            self.calls: list[dict[str, object]] = []
+
+        def predict(self, **kwargs: object):
+            self.calls.append(kwargs)
+            yield sentinel[len(self.calls) - 1]
+
+    model = FakeModel()
+    observed = list(
+        cli.iter_image_predictions(model, images, imgsz=1280, device="mps", nms_iou=0.7)
+    )
+    assert observed == list(zip(images, sentinel, strict=True))
+    assert [call["source"] for call in model.calls] == [str(path) for path in images]
+    assert all(call["stream"] is True for call in model.calls)
+    assert all(call["max_det"] == 300 for call in model.calls)
+    assert all(not isinstance(call["source"], list) for call in model.calls)
+
+
+@pytest.mark.parametrize("results", [[], [object(), object()]])
+def test_validation_prediction_requires_exactly_one_result(
+    tmp_path: Path, results: list[object]
+) -> None:
+    class FakeModel:
+        def predict(self, **_kwargs: object):
+            return iter(results)
+
+    with pytest.raises(RuntimeError, match=r"returned (no result|multiple results)"):
+        list(
+            cli.iter_image_predictions(
+                FakeModel(), [tmp_path / "a.jpg"], imgsz=1280, device="cpu", nms_iou=0.7
+            )
+        )
+
+
 def test_contract_binds_d05_and_export() -> None:
     bound = contract.check_contract()
     assert bound["split_stem_sha256"]["test"].startswith("afa03d4b")
