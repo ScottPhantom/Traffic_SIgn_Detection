@@ -1,0 +1,188 @@
+"""Build the verification-only D1 Pilot R5 packaged-state notebook."""
+
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+OUTPUT = REPO_ROOT / "detector/colab/d1_train_pilot_r5.ipynb"
+TRAINING_COMMIT = "939f6bbce9f5c955b13ebcc84addd5083d242355"
+R3_COMMIT = "e20a69541e3a6327739238fc71691109ce8f51d0"
+R3_SHA256 = "8c9b23472091f6c677d635a54e4f4e8b896e1fcf204d627ba56eb208db00c49c"
+R4_COMMIT = "2cc45b467456e9300df613839d94c5cb0bbdcbba"
+R4_SHA256 = "ffcc88e2339b349775ca34e5e30531a102d0bcab1d45fa0dff9b1ea8bead25ad"
+R5_COMMIT = "6acc47f08dba385b730ac86d591cb55248d104d2"
+R5_SHA256 = "d4c7ab9b96fe92dd3eb6034fd1fb1144df7de35fbda88138f9b1d938f167d13b"
+
+
+def markdown_cell(source: str) -> dict:
+    return {
+        "cell_type": "markdown",
+        "metadata": {},
+        "source": source.splitlines(keepends=True),
+    }
+
+
+def code_cell(source: str) -> dict:
+    return {
+        "cell_type": "code",
+        "execution_count": None,
+        "metadata": {},
+        "outputs": [],
+        "source": source.splitlines(keepends=True),
+    }
+
+
+def build() -> dict:
+    notebook = {
+        "cells": [
+            markdown_cell(
+                "# CPV301 D1 Pilot R5 packaged-state finalizer\n\n"
+                "Verification-only successor for the already packaged `epoch-0100` pilot. "
+                "It does not train, resume training, rebuild a result archive, export the "
+                "sealed test, or evaluate model quality. It authenticates the exact Drive "
+                "artifacts and retry history through independently QA-passed R5 source.\n"
+            ),
+            code_cell(
+                "from google.colab import drive\n\n"
+                'drive.mount("/content/drive")\n'
+            ),
+            code_cell(
+                "import hashlib\n"
+                "import os\n"
+                "import stat\n"
+                "from pathlib import Path\n\n"
+                f'TRAINING_COMMIT = "{TRAINING_COMMIT}"\n'
+                f'R3_COMMIT = "{R3_COMMIT}"\n'
+                f'R3_SHA256 = "{R3_SHA256}"\n'
+                f'R4_COMMIT = "{R4_COMMIT}"\n'
+                f'R4_SHA256 = "{R4_SHA256}"\n'
+                f'R5_COMMIT = "{R5_COMMIT}"\n'
+                f'R5_SHA256 = "{R5_SHA256}"\n'
+                'REPO_URL = "https://github.com/ScottPhantom/Traffic_SIgn_Detection.git"\n'
+                'REPO_DIR = Path("/content/Traffic_Sign_Detector")\n'
+                "STATE_DIR = Path(\n"
+                '    "/content/drive/MyDrive/CPV301/Traffic_Sign_Detector/"\n'
+                '    "M1_D1_Colab/runs/pilot_seed_20261018_r2"\n'
+                ")\n"
+                'R3_RUNNER = Path("/content/run_d1_colab_pilot_r3.py")\n'
+                'R4_RUNNER = Path("/content/run_d1_colab_pilot_r4.py")\n'
+                'R5_RUNNER = Path("/content/run_d1_colab_pilot_r5.py")\n\n'
+                "def verified_bytes(path, expected_sha256):\n"
+                "    fd = os.open(path, os.O_RDONLY | os.O_NOFOLLOW)\n"
+                "    try:\n"
+                "        info = os.fstat(fd)\n"
+                '        assert stat.S_ISREG(info.st_mode), "Runner is not regular"\n'
+                "        chunks = []\n"
+                "        while True:\n"
+                "            chunk = os.read(fd, 1024 * 1024)\n"
+                "            if not chunk:\n"
+                "                break\n"
+                "            chunks.append(chunk)\n"
+                "    finally:\n"
+                "        os.close(fd)\n"
+                '    payload = b"".join(chunks)\n'
+                "    assert hashlib.sha256(payload).hexdigest() == expected_sha256\n"
+                "    return payload\n"
+            ),
+            code_cell(
+                "import json\n"
+                "import subprocess\n"
+                "import urllib.request\n\n"
+                'latest = json.loads((STATE_DIR / "recovery/latest.json").read_text())\n'
+                'execution = json.loads((STATE_DIR / "colab_execution.json").read_text())\n'
+                'assert latest["generation"] == "epoch-0100", latest\n'
+                'assert execution["status"] == "SUCCEEDED", execution\n'
+                'assert execution["sealed_test_accessed"] is False\n\n'
+                "if not REPO_DIR.exists():\n"
+                "    subprocess.run(\n"
+                '        ["git", "clone", "--filter=blob:none", REPO_URL, str(REPO_DIR)],\n'
+                "        check=True,\n"
+                "    )\n"
+                "subprocess.run(\n"
+                '    ["git", "checkout", "--detach", TRAINING_COMMIT],\n'
+                "    cwd=REPO_DIR,\n"
+                "    check=True,\n"
+                ")\n"
+                "observed = subprocess.run(\n"
+                '    ["git", "rev-parse", "HEAD"],\n'
+                "    cwd=REPO_DIR,\n"
+                "    check=True,\n"
+                "    capture_output=True,\n"
+                "    text=True,\n"
+                ").stdout.strip()\n"
+                "assert observed == TRAINING_COMMIT\n\n"
+                "def download_verified(path, commit, expected_sha256):\n"
+                "    url = (\n"
+                '        "https://raw.githubusercontent.com/ScottPhantom/"\n'
+                '        "Traffic_SIgn_Detection/"\n'
+                '        f"{commit}/detector/colab/{path.name}"\n'
+                "    )\n"
+                "    payload = urllib.request.urlopen(url, timeout=60).read()\n"
+                "    assert hashlib.sha256(payload).hexdigest() == expected_sha256\n"
+                "    if os.path.lexists(path):\n"
+                "        assert verified_bytes(path, expected_sha256) == payload\n"
+                "    else:\n"
+                "        flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW\n"
+                "        fd = os.open(path, flags, 0o600)\n"
+                '        with os.fdopen(fd, "wb") as handle:\n'
+                "            handle.write(payload)\n"
+                "        assert verified_bytes(path, expected_sha256) == payload\n"
+                "    return payload\n\n"
+                "download_verified(R3_RUNNER, R3_COMMIT, R3_SHA256)\n"
+                "download_verified(R4_RUNNER, R4_COMMIT, R4_SHA256)\n"
+                "r5_bytes = download_verified(R5_RUNNER, R5_COMMIT, R5_SHA256)\n"
+                "print({\n"
+                '    "training_commit": observed,\n'
+                '    "r5_commit": R5_COMMIT,\n'
+                '    "r5_sha256": R5_SHA256,\n'
+                '    "latest_generation": latest["generation"],\n'
+                '    "sealed_test_accessed": False,\n'
+                "})\n"
+            ),
+            code_cell(
+                "import json\n"
+                "import subprocess\n"
+                "import sys\n\n"
+                "command = [\n"
+                "    sys.executable,\n"
+                '    "-",\n'
+                '    "--repo-root",\n'
+                "    str(REPO_DIR),\n"
+                '    "--state-dir",\n'
+                "    str(STATE_DIR),\n"
+                "]\n"
+                "completed = subprocess.run(command, input=r5_bytes, capture_output=True)\n"
+                'print(completed.stdout.decode("utf-8"))\n'
+                "if completed.stderr:\n"
+                '    print(completed.stderr.decode("utf-8"), file=sys.stderr)\n'
+                "completed.check_returncode()\n"
+                'result = json.loads(completed.stdout.decode("utf-8"))\n'
+                'assert result["status"] == "D1_PILOT_R5_PACKAGED_STATE_VERIFIED"\n'
+                'assert result["latest_generation"] == "epoch-0100"\n'
+                'assert result["runtime_evidence"]["attempt_count"] == 6\n'
+                'assert result["runtime_evidence"]["failed_resume_count"] == 4\n'
+                'assert result["runtime_evidence"]["distinct_runtime_digests"] is True\n'
+                'assert result["sealed_test_accessed"] is False\n'
+                'print("D1_PILOT_R5_COLAB_FINALIZER_PASS")\n'
+            ),
+        ],
+        "metadata": {
+            "accelerator": "GPU",
+            "colab": {"gpuType": "L4", "provenance": []},
+            "kernelspec": {"display_name": "Python 3", "name": "python3"},
+            "language_info": {"name": "python"},
+            "pilot_r5_status": "PENDING_INDEPENDENT_QA",
+        },
+        "nbformat": 4,
+        "nbformat_minor": 5,
+    }
+    OUTPUT.write_text(
+        json.dumps(notebook, indent=1, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    return notebook
+
+
+if __name__ == "__main__":
+    build()
