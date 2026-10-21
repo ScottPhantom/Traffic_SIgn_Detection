@@ -27,7 +27,8 @@ REPLACEMENTS = (
     (
         'CODE_COMMIT = "47c86d17430808ceeee6e1a1a553cf6fef88e5ed"  '
         "# QA-passed R4-R6 implementation",
-        'CODE_COMMIT = "PENDING_AFTER_QA"  # replace only after Pilot R2 source QA PASS',
+        'CODE_COMMIT = "939f6bbce9f5c955b13ebcc84addd5083d242355"  '
+        "# QA-passed Pilot R2 implementation",
         1,
     ),
     (

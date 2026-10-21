@@ -151,7 +151,8 @@ def test_pilot_r2_notebook_is_unexecuted_and_fail_closed() -> None:
     code = [cell for cell in notebook["cells"] if cell["cell_type"] == "code"]
     assert all(cell.get("execution_count") is None and not cell.get("outputs") for cell in code)
     text = source()
-    assert 'CODE_COMMIT = "PENDING_AFTER_QA"' in text
+    assert 'CODE_COMMIT = "939f6bbce9f5c955b13ebcc84addd5083d242355"' in text
+    assert "PENDING_AFTER_QA" not in text
     assert 'RUN_LABEL = "pilot_seed_20261018_r2"' in text
     assert "run_d1_colab_pilot_r2.py" in text
     assert '    "--epochs",\n    "100",' in text
