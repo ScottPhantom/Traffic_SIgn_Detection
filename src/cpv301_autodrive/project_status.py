@@ -8,13 +8,13 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-STATUS_AS_OF = "2026-10-18"
-CURRENT_PHASE = "M4/D1 — chạy thử train detector trên Colab L4; pilot chưa chạy"
+STATUS_AS_OF = "2026-10-21"
+CURRENT_PHASE = "M4/D1 — recovery L4 đã QA PASS; pilot một seed 100 epoch được GO"
 # Short D1 status shown on the Model and Next-steps slides (see PROJECT_MEMORY.md, M4/D1).
 D1_STATUS = (
-    "Gói train M1 đã QA PASS; trọng số pretrained `yolo11s.pt` đã pin hash. Lần chạy thử 2 epoch "
-    "trên Colab L4 (tạm dừng rồi khôi phục ở runtime mới) đã chạy, đang sửa theo QA. Pilot 100 "
-    "epoch chưa chạy, chưa có model Việt Nam đạt chuẩn và test niêm phong chưa được mở."
+    "Gói train M1 và recovery hai runtime L4 đã QA PASS; checkpoint Drive khôi phục đúng từ "
+    "epoch 1 sang epoch 2. Pilot một seed 100 epoch đã được GO nhưng chưa chạy; chưa có model "
+    "Việt Nam đạt chuẩn và test niêm phong chưa được mở."
 )
 TRAINING_STATUS = "Được phép (D-05)"
 

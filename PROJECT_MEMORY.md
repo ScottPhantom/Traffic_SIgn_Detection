@@ -1197,10 +1197,43 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      by tar `offset_data`, reads each payload once while hashing/writing, and atomically publishes a
      verified sibling partial. Independent QA **PASSed R3 with 0 findings**: checkpoint scope 23/23,
      Colab 66/66, detector 93/93 and verifiers 52/52. The aborted R1 Drive state is preserved; the
-     next run label is `checkpoint_smoke_seed_20261018_r2`. C4 remains incomplete until the R3
-     release is committed/pushed, the notebook pins that commit, and the two-runtime L4 drill passes.
-     Canonical records: `docs/review/d1_checkpoint_resume_r2_l4_smoke_incident.md` and
-     `docs/review/d1_checkpoint_resume_r3_independent_qa_record.md`.
+     next run label is `checkpoint_smoke_seed_20261018_r2`. The R3 implementation and notebook pin
+     were pushed as `b9ce31f...` and `1d7054e...`. The live two-runtime NVIDIA L4 drill then PM
+     PASSed on 2026-10-21: fresh paused at `epoch-0001`; a newly allocated runtime found the Drive
+     recovery pointer and resumed to `epoch-0002`; `colab_execution.json` ended `SUCCEEDED` with
+     `sealed_test_accessed=false`; the 35,686,597-byte result archive hash matched its eight-file
+     manifest; SQLite/text logs were non-empty and validated. Independent QA directly re-hashed
+     both checkpoint generations, verified true epoch-2 resume, the complete result package,
+     SQLite/text logs, the L4/CUDA contract and the sealed-test boundary, but returned
+     **CONDITIONAL FAIL** because neither attempt retained a privacy-preserving runtime/session
+     identity. The UI observation alone cannot independently prove that fresh and resume used
+     distinct runtimes. C4 therefore remains closed and the 100-epoch pilot is **NO-GO** pending
+     an append-only R4 runtime-digest repair, a new two-runtime smoke and a new QA PASS. Canonical
+     records:
+     `docs/review/d1_checkpoint_resume_r2_l4_smoke_incident.md`,
+     `docs/review/d1_checkpoint_resume_r3_independent_qa_record.md`,
+     `docs/review/d1_checkpoint_resume_r3_l4_smoke_report.md`, and
+     `docs/review/d1_checkpoint_resume_r3_l4_smoke_independent_qa_record.md`.
+     Append-only runtime evidence then progressed through R4-R6. R4-R6 source received independent
+     QA PASS with 0 findings; implementation commit
+     `47c86d17430808ceeee6e1a1a553cf6fef88e5ed` and notebook-pin commit
+     `f674946a15f7035a656404df05ee1bf23e6323e4` were pushed to `DEV/Rroject_Pineline`. A new live
+     NVIDIA L4 drill ran on 2026-10-21 under label `checkpoint_smoke_seed_20261018_r4_r6`: fresh
+     runtime digest `f9479825...` persisted `epoch-0001` and ended `PAUSED_FOR_RESUME`; after that
+     runtime was disconnected and deleted, a new L4 digest `6da5caba...` loaded the same
+     run/checkpoint bindings, used `--resume`, continued only epoch 2, persisted `epoch-0002` and
+     ended `SUCCEEDED`. The final eight-member archive SHA-256 is `3c640d75...`; SQLite has 2,475
+     rows covering both legs; `sealed_test_accessed=false` and no sealed-test access log exists.
+     Independent artifact QA **PASSed with 0 findings** and directly re-hashed both checkpoints and
+     every archive member, deserialized optimizer/EMA resume state, and verified zero epoch-1
+     progress records after the resume command. C4 is open and the D1 **single-seed 100-epoch pilot
+     is GO**. Sealed-test access, final evaluation, model acceptance and deployment remain NO-GO.
+     Canonical records:
+     `docs/review/d1_checkpoint_resume_r4_implementation_record.md`,
+     `docs/review/d1_checkpoint_resume_r4_r6_source_independent_qa_record.md`,
+     `docs/review/d1_checkpoint_resume_r4_r6_l4_smoke_report.md`, and
+     `docs/review/d1_checkpoint_resume_r4_r6_l4_artifact_independent_qa_record.md` (SHA-256
+     `fea054ac1667446fc02d0a6fb0d326f1d2689f9693342a28643c448840b7ca14`).
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 

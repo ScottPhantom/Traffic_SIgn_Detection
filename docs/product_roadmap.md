@@ -148,7 +148,7 @@ sample nhỏ hoặc class hiếm, báo confidence interval/repeated seeds và su
 | Milestone | Phạm vi/deliverable | Gate hoàn thành | Trạng thái |
 | --- | --- | --- | --- |
 | M0 — Data governance | WP1–WP37-R1 (chi tiết từng WP trong `PROJECT_MEMORY.md`). Đã duyệt D-01…D-04; split WP36-R1 được owner chấp nhận (test niêm phong `afa03d4b…`); dataset card WP37-R1. D-05 đã duyệt (`docs/review/d05_owner_decision_record.md`) | Gate 0 PASS | **GATE 0 MỞ (2026-10-18): G0.1–G0.9 PASS + D-05 ĐÃ DUYỆT** |
-| M1 — Training package | dataset loader crop, config/seed/logging, corrected augmentation, reproducible train/eval CLI. Track detector: loader YOLO kiểm hash split WP36-R1, nhãn WP33, ảnh WP35 chỉ train, không lật ngang; Colab train/val-only bundle + SQLite/text logging + hashed result package | Clean rerun tạo cùng artifact class/metric tolerance; không còn input-exhaust warning | **M1-R4 + M1-Colab-R3 QA PASS (2026-10-19, 0 findings)** — R4 khóa metric/evaluation contract. Colab-R3 khóa exact 8 result artifacts, cả hai checkpoint, token-exact train command, frozen sync, CUDA identity và sealed-test exclusion. QA matrix Colab: 13 positive + 86 adversarial đúng kỳ vọng; gates: root targeted 38/38, detector 54/54, verifier 51/51, Ruff/locks/Graft PASS. Bundle chỉ train/val đã được upload riêng tư và đọc lại trên Drive; chưa chạy Colab, train hoặc mở test. Bước tiếp theo là one-epoch smoke |
+| M1 — Training package | dataset loader crop, config/seed/logging, corrected augmentation, reproducible train/eval CLI. Track detector: loader YOLO kiểm hash split WP36-R1, nhãn WP33, ảnh WP35 chỉ train, không lật ngang; Colab train/val-only bundle + SQLite/text logging + hashed result package | Clean rerun tạo cùng artifact class/metric tolerance; không còn input-exhaust warning | **M1 package + recovery gate PASS (2026-10-21)** — M1-R4/M1-Colab-R3 package QA PASS; R4-R6 source QA PASS; live L4 fresh epoch 1 → xoá runtime → runtime mới resume epoch 2 kết thúc `SUCCEEDED`; artifact QA PASS 0 finding. Hai runtime digest khác nhau, checkpoint/archive/SQLite/text log khớp hash, `sealed_test_accessed=false`. D1 pilot một seed 100 epoch: **GO**; sealed test/final evaluation: **NO-GO** |
 | M2 — Classifier study | E1, E2, E3 theo experiment matrix | Independent classifier holdout + toàn bộ metrics/artifacts | PROPOSAL |
 | M3 — Calibration/OOD | E4 MSP/temperature baseline và ablation OOD | Selective/OOD report; threshold được chọn trên validation, không trên test | PROPOSAL |
 | M4 — Full-scene detector | D1 bbox training/evaluation, detector -> crop contract | Detector metrics pass ngưỡng được duyệt; error analysis hoàn chỉnh | PROPOSAL — **ƯU TIÊN KẾ TIẾP** (owner 2026-10-17: detector VN trước, prototype sau) |
@@ -241,6 +241,15 @@ evaluation) vẫn được giữ; nó không làm Gate 0 tự động PASS.
   Run R1 bị hủy được giữ làm bằng chứng; rerun dùng `checkpoint_smoke_seed_20261018_r2`. C4 vẫn
   chưa PASS cho tới khi commit/push R3, pin notebook và hoàn tất fresh epoch 1 → runtime mới →
   resume epoch 2 với result package đọc lại thành công.
+  R4-R6 sau đó bổ sung runtime identity digest và harden schema/archive/live-state. Source QA R4-R6
+  PASS 0 finding; implementation commit `47c86d17430808ceeee6e1a1a553cf6fef88e5ed` và notebook-pin
+  commit `f674946a15f7035a656404df05ee1bf23e6323e4` đã push. Live smoke mới trên hai L4 khác nhau PASS:
+  fresh digest `f9479825...` dừng ở `epoch-0001`; sau khi xoá runtime, resume digest `6da5caba...`
+  tiếp tục đúng epoch 2 và tạo `epoch-0002`, archive 8 member, SQLite 2.475 dòng và text log; mọi
+  binding/hash khớp, `sealed_test_accessed=false`. Independent artifact QA PASS 0 finding tại
+  `docs/review/d1_checkpoint_resume_r4_r6_l4_artifact_independent_qa_record.md` (SHA-256
+  `fea054ac1667446fc02d0a6fb0d326f1d2689f9693342a28643c448840b7ca14`). C4 mở; pilot D1 một
+  seed 100 epoch là **GO**. Sealed test và final evaluation vẫn **NO-GO**.
 - Owner cho phép commit và push source checkpoint lên branch hiện tại. Vì remote là public,
   DATASET01-derived review renders và raw/processed/model files không được đưa vào checkpoint.
 - Canonical records: `docs/review/m1_pretrained_weights_owner_response_record.md`,
@@ -1329,6 +1338,37 @@ template giữ toàn bộ quyết định ở `PENDING`. Packet không mở Gate
   Nên chuyển các test đó sang tmp copy trong một package tương lai.
 - PASS này chỉ phê duyệt WP27-R2 correction ở provisional-evidence boundary. Không phê duyệt
   D-02, group truth, split, Gate 0 hay training. WP28 được phép bắt đầu.
+
+## D1 checkpoint/resume R3 live L4 smoke — PM PASS / independent QA conditional FAIL
+
+- On 2026-10-21 the governed two-runtime smoke ran in the Owner's Colab account using only
+  train/val. The fresh leg finished epoch 1 as `PAUSED_FOR_RESUME`, advanced the Drive recovery
+  pointer to `epoch-0001`, and exited cleanly. Colab later showed that runtime absent and explicitly
+  allocated a new NVIDIA L4 runtime for the resume leg.
+- Only `MODE = "fresh"` changed to `MODE = "resume"`. The new runtime verified the Drive bundle,
+  found `recovery/latest.json`, checked out clean R3 commit `b9ce31f...`, and ran the successor with
+  `--mode resume --epochs 2`. `training_outcome.json` reported `resumed=true`,
+  `completed_epoch=2`, `status=COMPLETED`; `latest.json` advanced to `epoch-0002`.
+- Final execution readback was `SUCCEEDED`, `mode=resume`, `error=null`, and
+  `sealed_test_accessed=false`. The published result archive is 35,686,597 bytes at SHA-256
+  `eae79b0dbf808be95d74b6d119c6e5e42a122fb40daf334700acf92283c186ba`; its hash matched the
+  manifest, which binds exact best/last weights, results, args, run contract, execution JSON,
+  text log and SQLite log. Runtime identity is NVIDIA L4 / CUDA 13.0 / driver 580.82.07.
+- PM verdict is PASS for the observed recovery behavior. Independent QA directly verified the two
+  checkpoint generations, true epoch-2 resume, the result archive and manifest, SQLite/text logs,
+  L4/CUDA contract, and `sealed_test_accessed=false`, but returned **CONDITIONAL FAIL** because the
+  retained attempts do not contain a privacy-preserving runtime/session digest. The UI observation
+  therefore cannot independently prove the fresh and resume legs used distinct runtimes. C4 stays
+  closed: the 100-epoch D1 pilot is **NO-GO** until an append-only R4 adds fail-closed runtime
+  identity evidence, a new two-runtime smoke passes, and a new independent QA session returns PASS.
+  Canonical evidence: `docs/review/d1_checkpoint_resume_r3_l4_smoke_report.md` and
+  `docs/review/d1_checkpoint_resume_r3_l4_smoke_independent_qa_record.md`.
+- This R3 conditional failure was superseded by the append-only R4-R6 repair recorded above. The
+  repair stores a privacy-preserving runtime digest, fails closed on same-runtime resume, and binds
+  the ordered fresh/resume attempts into the result archive. Source QA and the replacement live
+  two-runtime smoke both PASSed; C4 is now closed and the single-seed 100-epoch pilot is GO. The R3
+  record remains here as immutable incident history, not current gate status. Canonical repair
+  record: `docs/review/d1_checkpoint_resume_r4_implementation_record.md`.
 
 ## Technical backlog — nonblocking
 
