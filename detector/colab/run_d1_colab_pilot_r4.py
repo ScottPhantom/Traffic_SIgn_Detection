@@ -12,6 +12,7 @@ validation during a resume from the already-complete epoch-0100 checkpoint.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import importlib.util
 import json
 import re
@@ -23,6 +24,7 @@ from typing import Any
 
 EXPECTED_TRAINING_COMMIT = "939f6bbce9f5c955b13ebcc84addd5083d242355"
 EXPECTED_FINAL_GENERATION = "epoch-0100"
+PILOT_R3_SHA256 = "8c9b23472091f6c677d635a54e4f4e8b896e1fcf204d627ba56eb208db00c49c"
 LOGGER_NAME = "CPV_log_record"
 EXPECTED_COLUMNS = ["id", "timestamp", "level", "logger", "message"]
 KNOWN_HISTORICAL_ERROR = "D1 resumable Colab workflow failed"
@@ -45,11 +47,22 @@ def _repo_root_from_argv(argv: list[str] | None) -> Path:
     return known.repo_root.expanduser().absolute()
 
 
+def _sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def load_pilot_r3(repo_root: Path) -> Any:
-    runner = repo_root / "detector/colab/run_d1_colab_pilot_r3.py"
+    del repo_root
+    runner = Path(__file__).absolute().with_name("run_d1_colab_pilot_r3.py")
     if runner.is_symlink() or not runner.is_file():
         raise RuntimeError("pinned Pilot R3 predecessor is missing or linked")
-    return _load("d1_pilot_r4_training_commit_pilot_r3", runner)
+    if _sha256_file(runner) != PILOT_R3_SHA256:
+        raise RuntimeError("pinned Pilot R3 predecessor hash differs")
+    return _load("d1_pilot_r4_sidecar_pilot_r3", runner)
 
 
 def _last_index(messages: list[str], token: str) -> int:

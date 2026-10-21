@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import importlib.util
 import json
 import sqlite3
@@ -22,6 +23,46 @@ def load_runner():
 
 
 runner = load_runner()
+
+
+def test_load_pilot_r3_uses_hash_pinned_sibling_not_training_checkout(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    sidecar_dir = tmp_path / "sidecars"
+    sidecar_dir.mkdir()
+    r4_path = sidecar_dir / "run_d1_colab_pilot_r4.py"
+    r4_path.write_text("# test R4 sidecar\n", encoding="utf-8")
+    r3_path = sidecar_dir / "run_d1_colab_pilot_r3.py"
+    r3_bytes = b"# hash-pinned R3 sidecar\n"
+    r3_path.write_bytes(r3_bytes)
+    empty_training_checkout = tmp_path / "training-checkout"
+    empty_training_checkout.mkdir()
+    captured: dict[str, object] = {}
+
+    def fake_load(name: str, path: Path) -> object:
+        captured.update(name=name, path=path)
+        return "pilot-r3"
+
+    monkeypatch.setattr(runner, "__file__", str(r4_path))
+    monkeypatch.setattr(runner, "PILOT_R3_SHA256", hashlib.sha256(r3_bytes).hexdigest())
+    monkeypatch.setattr(runner, "_load", fake_load)
+
+    assert runner.load_pilot_r3(empty_training_checkout) == "pilot-r3"
+    assert captured == {"name": "d1_pilot_r4_sidecar_pilot_r3", "path": r3_path}
+
+
+def test_load_pilot_r3_rejects_unpinned_sibling(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    r4_path = tmp_path / "run_d1_colab_pilot_r4.py"
+    r4_path.write_text("# test R4 sidecar\n", encoding="utf-8")
+    (tmp_path / "run_d1_colab_pilot_r3.py").write_text(
+        "# tampered R3 sidecar\n", encoding="utf-8"
+    )
+    monkeypatch.setattr(runner, "__file__", str(r4_path))
+
+    with pytest.raises(RuntimeError, match="hash differs"):
+        runner.load_pilot_r3(tmp_path / "training-checkout")
 
 
 def write_log_db(path: Path, rows: list[tuple[str, str]]) -> None:
