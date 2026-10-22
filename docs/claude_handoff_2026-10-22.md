@@ -70,3 +70,20 @@ caches, `tmp/` or `.DS_Store`.
 
 No commit, push, upload, training, inference or sealed-test access. Gate 0 status and D-05 are as
 recorded in `PROJECT_MEMORY.md`.
+
+## Addendum: group B inventory (read-only, 2026-10-22)
+
+The paths below were searched in `scripts/`, `detector/`, `src/` and `tests/` Python code. A path
+with code references is read by a builder, verifier or test.
+
+| Item | Size | Code refs | Recommendation |
+| --- | ---: | ---: | --- |
+| `tmp/m1_colab_train_val.tar.gz` (+ manifest) | 731 MB | 2 (bundle builders) | **Can delete.** It is superseded by the backend R1 bundle, the upload is recorded with QA PASS, and the builder can regenerate it. |
+| `tmp/m1_colab_train_val_backend_r1.tar.gz` + `.part-00…07` | 731 MB + 731 MB | 2 | **Can delete the parts** once you confirm the Drive copy. The parts duplicate the tarball; keep one of the two until the next Colab upload. |
+| `tmp/pdfs/`, `tmp/wp6_candidate/`, screenshots in `tmp/` | 7 MB | 0–1 | Can delete; the QCVN PDF is in `references/`. |
+| `data/raw/archive.zip` | 612 MB | 2 (audit) | **Keep.** It is the hashed DATASET01 source archive, and `audit_dataset01.py` checks it. |
+| `data/raw/traffic-signs-data.zip`, `data/processed/{train,valid,test}.p` | 270 MB | 0 / 3 | Keep while the E0 GTSRB baseline is used (the `.p` files are read by E0 evaluation). |
+| `data/processed/*` (m1_yolo, wp38, wp35, crops, cascade) | 380 MB | 1–12 each | **Keep.** Their verifiers rebuild and compare them (for example `verify_materialised`). |
+
+Estimated safe saving: about 1.5–2.2 GB, all inside `tmp/` and all git-ignored. Nothing in this
+table has been deleted.

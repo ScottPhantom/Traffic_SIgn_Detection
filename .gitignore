@@ -42,3 +42,6 @@ tmp/
 
 # Large source PDFs stay local; provenance metadata and exact hashes remain versioned.
 /references/qcvn41_2024/*.pdf
+
+# Trained model weights stay local (D-01 public-checkpoint boundary); run JSON/CSV evidence is versioned.
+results/experiments/**/weights/

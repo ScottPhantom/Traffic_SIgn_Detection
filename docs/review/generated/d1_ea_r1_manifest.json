@@ -1,0 +1,60 @@
+{
+  "artifacts": {
+    "docs/review/assets/d1_ea_r1/background_fp_page_01.jpg": "5be12e3b411916870eb76df51a421348f509d2cc171637825ebd6bb630f29926",
+    "docs/review/assets/d1_ea_r1/background_fp_page_02.jpg": "a5d727d7b140d9e76df4f7aa994a26413dc3455fe8125b29109b42a0609726ff",
+    "docs/review/assets/d1_ea_r1/background_fp_page_03.jpg": "59a137d06298a47fd1a40d295bcc8a1c8a53e2abbbee13d54707a01b81e2c184",
+    "docs/review/assets/d1_ea_r1/background_fp_page_04.jpg": "f4726f33474b9c85aaa4fe06aacd1e603a542b576a271bc4dbdd116f29d57ef0",
+    "docs/review/assets/d1_ea_r1/background_fp_page_05.jpg": "945dba1d7a10cfd7509b150cda36a5b6210084bac8220879c537f5ff23af93be",
+    "docs/review/assets/d1_ea_r1/background_fp_page_06.jpg": "0a40d63301fb22df660bdf255885c4e25a3b7c7f4cc3277928a6fdd9f5f477eb",
+    "docs/review/assets/d1_ea_r1/background_fp_page_07.jpg": "c96c416c9fee959343d970e8460d8f83e90217e176a55e3bb5b7bf3747b5d443",
+    "docs/review/assets/d1_ea_r1/background_fp_page_08.jpg": "0ec83fa0ec3d379aa9e5abb2d95824787eb1ae5d813101303ce515c5187a64f9",
+    "docs/review/assets/d1_ea_r1/critical_32_page_01.jpg": "4cf8af840d363e251a329ee50f9345a5287e7fe24e10fc8fbe3b4958adb6b0a9",
+    "docs/review/assets/d1_ea_r1/critical_41_page_01.jpg": "a9fe5df0b0249c9cedda2dfa45a77dc6e5390cd6b616e97d3aa1611b133b6710",
+    "docs/review/assets/d1_ea_r1/critical_7_page_01.jpg": "598fda97b91b274e8a5455c8edb0e14c8f052b11c89cfdf0985cf05b4cbba461",
+    "docs/review/assets/d1_ea_r1/critical_7_page_02.jpg": "a3a458c5e70330b8ed44343a4d52a23f0fa4a5be1aa6a5f297240b0d5ce89c08",
+    "docs/review/assets/d1_ea_r1/pair_46_to_10_page_01.jpg": "9e6103036286e9bf9298d52c774a5283ddff2eca3b7b9524e209008916a5dcbe",
+    "docs/review/assets/d1_ea_r1/pair_46_to_10_page_02.jpg": "a71e735e4347676711221714f8fb8f56731da6f0d9bc57cb913bd06ac2ad3a58",
+    "docs/review/assets/d1_ea_r1/pair_8_to_12_page_01.jpg": "f88d70467f18f1f93cd8c29f9b41c5819361a720f22908cb76add18531466516",
+    "docs/review/d1_ea_r1_evidence_report.md": "981f3c09355550cf97f221a26a3344416b3188d219c161ad04820692abc395df",
+    "docs/review/generated/d1_ea_r1_atlas_index.csv": "63d2f7baa403958e673c66048b40ff9279a1caf470ba25311606023d74b871c7",
+    "docs/review/generated/d1_ea_r1_missed_gt.csv": "9343a5b5772bccb36251ba7b361571632cb3337a31adfeecfd7f801be6439b92",
+    "docs/review/generated/d1_ea_r1_predictions.csv": "cb3cb05f0cadc7d2c3e077120d5b1311648247f74a9648e287da1c4be915f1dd"
+  },
+  "atlas_pages": 15,
+  "boundary": "VALIDATION_ONLY_DIAGNOSIS_NO_TRAINING_NO_SEALED_TEST_NO_VAL_PIXELS_IN_TRAIN",
+  "diagnostic_point": {
+    "conf": 0.2,
+    "device": "mps",
+    "imgsz": 1280,
+    "nms_iou": 0.7
+  },
+  "package": "D1-EA-R1",
+  "pillow_version": "13.0.0",
+  "pinned_sources": {
+    "detector/m1/corrected_val_r1.py": "0e56949d4a8e01b01a3de509f982ecbb4d0fd4ec1b44ef51975b47621289b8e5",
+    "detector/m1/corrected_val_r10.py": "5897e951244a5e8761bda7202779fe30acb0d5da085686d49c96a04f69e5dfd3",
+    "detector/m1/metrics.py": "d24570f85795e3bc5a2e754ace80a8081c510ff4a78833f2ab5316953a017f9f",
+    "docs/review/d1_corrected_val_r10_error_analysis_and_improvement_packet_r1.md": "9ec8dd0d9e2866ef098ca3afada624ea5562837531f9b077981c45940ed0f78f",
+    "docs/review/d1_corrected_val_r10_error_analysis_r1_independent_qa_record.md": "c4b8fa62bd158ba4f300b28cf14bb9c4d8f1147dbf410e4a57582f70fb565942",
+    "docs/review/d1_corrected_val_r10_result_independent_qa_record.md": "9940b31c344e9e683d0bd3d6ddc25b8a31053bbeb83398801637be08df2d06a2",
+    "docs/review/generated/m1_yolo_classes.csv": "7cda296a95bd8512a1bb2e85109ce9a1574fb882e692b11d4d0ee6a1cb58d242",
+    "results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/eval_val_wp38_r1_r4_r10.json": "b33e247038c237d059207f75ad8ff33e0b5d6d00e4380826cd35ae85aefa02d5",
+    "results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/weights/best.pt": "5d5815a96218759e93cd9bc51261ed55778da5397dfe7fe25c1f78908b10b633"
+  },
+  "run": "D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2",
+  "sealed_test_accessed": false,
+  "status": "D1_EA_R1_AWAITING_INDEPENDENT_QA",
+  "summary": {
+    "background_false_positives": 214,
+    "confusion_matrix_sha256": "6f932feb6741eb8014c8ee5213d5cf38a4a122f4ec839e61ef0f0df0a76cf665",
+    "ground_truth": 560,
+    "images": 376,
+    "paired_predictions": 483,
+    "reproduces_r10": true,
+    "retained_predictions": 697,
+    "unmatched_ground_truth": 77
+  },
+  "test_included": false,
+  "training_authorized": false,
+  "validation_pixels_in_training": false
+}
