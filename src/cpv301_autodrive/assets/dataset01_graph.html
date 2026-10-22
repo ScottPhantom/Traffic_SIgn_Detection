@@ -11,8 +11,9 @@
   --muted: #5b6676;
   --rule: #dfe3ea;
   --train: #1f5fbf;      /* regulatory-sign blue */
-  --test: #d99a00;       /* warning-sign amber */
-  --neg: #9aa4b2;
+  --val: #d99a00;        /* warning-sign amber */
+  --test: #8a5cd1;
+  --neg: #9aa4b2;        /* quarantined */
   --same: #18202b;
   --diff: #d0342c;       /* prohibition red */
   --unres: #8a5cd1;
@@ -26,13 +27,13 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0f141b; --surface: #161d27; --ink: #e8edf4; --muted: #9aa6b6; --rule: #2a3442;
-    --train: #5b95f0; --test: #f2b62e; --neg: #5d6878; --same: #e8edf4; --diff: #ff6a5f;
+    --train: #5b95f0; --val: #f2b62e; --test: #b48cff; --neg: #5d6878; --same: #e8edf4; --diff: #ff6a5f;
     --unres: #b48cff; --pending: #455163; --quar: #ff6a5f; --hl: #2fd3a3; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0f141b; --surface: #161d27; --ink: #e8edf4; --muted: #9aa6b6; --rule: #2a3442;
-  --train: #5b95f0; --test: #f2b62e; --neg: #5d6878; --same: #e8edf4; --diff: #ff6a5f;
+  --train: #5b95f0; --val: #f2b62e; --test: #b48cff; --neg: #5d6878; --same: #e8edf4; --diff: #ff6a5f;
   --unres: #b48cff; --pending: #455163; --quar: #ff6a5f; --hl: #2fd3a3; color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -119,7 +120,7 @@ canvas { display: block; width: 100%; touch-action: manipulation; cursor: crossh
         <button type="button" id="m-src" aria-pressed="false">Trạng thái QA</button>
         <button type="button" id="m-grp" aria-pressed="false">Nhóm D-02</button>
       </div>
-      <label class="chk"><input type="checkbox" id="only-cross"> Chỉ cạnh chéo train/test</label>
+      <label class="chk"><input type="checkbox" id="only-cross"> Chỉ cạnh chéo split WP36-R1</label>
       <label class="find" for="stem-in">Tìm stem <input id="stem-in" inputmode="numeric" maxlength="4" placeholder="0248"></label>
     </div>
     <div class="legend" id="legend"></div>
@@ -135,7 +136,7 @@ canvas { display: block; width: 100%; touch-action: manipulation; cursor: crossh
   <section class="charts">
     <div class="panel">
       <h2>Kích thước 54 nhóm D-02</h2>
-      <p class="hint">Nhóm <code>group_id</code> owner đã duyệt (D02-P1). Phần màu vàng là số ảnh mà split gốc của nhà cung cấp xếp vào test.</p>
+      <p class="hint">Nhóm <code>group_id</code> owner đã duyệt (D02-P1). Thanh màu dùng split group-aware WP36-R1; không có nhóm nào bị chia chéo train/val/test.</p>
       <div class="bars" id="sizes"></div>
     </div>
     <div class="panel">
@@ -145,7 +146,7 @@ canvas { display: block; width: 100%; touch-action: manipulation; cursor: crossh
     </div>
   </section>
 
-  <p class="note"><b>Ranh giới bằng chứng.</b> Kết quả review cạnh là bằng chứng tạm thời do AI review và QA độc lập. Owner đã duyệt D-02 (D02-P1): 54 nhóm capture của WP31-R2 là <code>group_id</code>. Split gốc của nhà cung cấp chia chéo mọi nhóm nên không dùng làm holdout. Stem 0248 bị cách ly. Gate 0 vẫn BLOCKED, chưa train.</p>
+  <p class="note"><b>Ranh giới bằng chứng.</b> Owner đã duyệt 54 nhóm D-02 và split group-aware WP36-R1; 25 frame bị cách ly. WP38-R1 đã QA PASS cho 39 derivative validation của D02-C0034, raw không đổi. Gate 0 đã mở, nhưng cấu hình pilot hiện vẫn NO-GO cho seed tiếp theo và test niêm phong chưa được mở.</p>
 </div>
 
 <script id="data" type="application/json">__DATA__</script>
@@ -163,24 +164,28 @@ canvas { display: block; width: 100%; touch-action: manipulation; cursor: crossh
   const rightEdge = new Array(N.length).fill(null), leftEdge = new Array(N.length).fill(null);
   E.forEach(e => { rightEdge[e[0]] = e; leftEdge[e[1]] = e; });
 
-  // provisional capture components
+  const SPLIT = ["train", "val", "test", "cách ly"];
+  // D-02 groups under the accepted WP36-R1 split
   const compMembers = new Map();
   D.comp.forEach((c, i) => { if (!compMembers.has(c)) compMembers.set(c, []); compMembers.get(c).push(i); });
   const compInfo = new Map();
   for (const [c, m] of compMembers) {
-    const test = m.filter(i => N[i][1] === 1).length, train = m.filter(i => N[i][1] === 0).length;
-    compInfo.set(c, { size: m.length, test, train, unassigned: m.length - test - train, mixed: test > 0 && train > 0, name: c >= 0 ? D.groups[c] : "cách ly" });
+    const train = m.filter(i => N[i][1] === 0).length, val = m.filter(i => N[i][1] === 1).length;
+    const test = m.filter(i => N[i][1] === 2).length, quarantined = m.filter(i => N[i][1] === 3).length;
+    const active = [train, val, test].filter(Boolean).length;
+    compInfo.set(c, { size: m.length, train, val, test, quarantined, mixed: active > 1, name: c >= 0 ? D.groups[c] : "cách ly" });
   }
 
   // ---- KPIs
   const pending = (S.cap.P || 0);
   const kpis = [
-    [fmt(S.nodes), `ảnh · ${fmt(S.train)} train, ${fmt(S.test)} test, ${fmt(S.unassigned)} chưa xếp (ảnh âm)`],
-    [fmt(S.edges), `cạnh proxy liền kề · ${fmt(S.cross)} cạnh chéo split`],
+    [fmt(S.nodes), `ảnh · ${fmt(S.train)} train, ${fmt(S.val)} val, ${fmt(S.test)} test, ${fmt(S.quarantined)} cách ly`],
+    [fmt(S.edges), `cạnh proxy liền kề · ${fmt(S.cross)} cạnh chéo split WP36-R1`],
     [fmt(S.cap.S), "cạnh cùng lần chụp (tạm thời)"],
     [fmt(pending), "cạnh chưa review, cộng 2 cạnh bị cách ly"],
     [fmt(S.groups), "nhóm group_id D-02 (owner duyệt D02-P1)"],
-    [`${S.mixedGroups}/${S.groups}`, "nhóm bị split gốc chia chéo train/test", true],
+    [`${S.mixedGroups}/${S.groups}`, "nhóm bị chia chéo train/val/test", S.mixedGroups > 0],
+    [fmt(S.orientationCorrected), `${S.correctionAuthority} · ${S.orientationGroup}`],
   ];
   document.getElementById("kpis").innerHTML = kpis.map(([v, l, a]) => `<div class="kpi${a ? " alert" : ""}"><b>${v}</b><span>${l}</span></div>`).join("");
 
@@ -192,7 +197,7 @@ canvas { display: block; width: 100%; touch-action: manipulation; cursor: crossh
     src: [["ln", "--hl", "Review đã QA PASS"], ["ln", "--test", "Review chờ QA"], ["ln dash", "--pending", "Chưa review"], ["ln", "--quar", "Cách ly (0248)", "q"]],
     grp: [["ln", "--same", "Cạnh trong cùng nhóm"], ["ln", "--diff", "Ranh giới giữa hai nhóm"], ["ln", "--quar", "Cách ly (0248)", "q"]],
   };
-  const nodeLeg = [["sw", "--train", "Ảnh train (split gốc)"], ["sw", "--test", "Ảnh test (split gốc)"], ["sw", "--neg", "Ảnh âm, chưa xếp split"]];
+  const nodeLeg = [["sw", "--train", "Train WP36-R1"], ["sw", "--val", "Validation WP36-R1"], ["sw", "--test", "Test niêm phong"], ["sw", "--neg", "Cách ly"]];
   const groupColor = c => c < 0 ? css("--quar") : `hsl(${(c * 137.508) % 360} 62% 52%)`;
   function drawLegend() {
     const nodes = mode === "grp" ? [["sw", "--pending", "Màu ô = nhóm D-02 (54 màu)"]] : nodeLeg;
@@ -234,7 +239,8 @@ canvas { display: block; width: 100%; touch-action: manipulation; cursor: crossh
     const hlSize = hlComp != null ? compInfo.get(hlComp).size : 0;
     ctx.font = `10px ${css("--font-mono")}`; ctx.fillStyle = css("--muted"); ctx.textBaseline = "middle";
     for (let r = 0; r < rows; r += (cell < 11 ? 4 : 2)) ctx.fillText(N[r * cols][0], 0, r * cell + 2 + sq / 2);
-    const cTrain = css("--train"), cTest = css("--test"), cNeg = css("--neg"), cHl = css("--hl"), cPend = css("--pending"), cQ = css("--quar");
+    const splitColors = [css("--train"), css("--val"), css("--test"), css("--neg")];
+    const cNeg = css("--neg"), cHl = css("--hl"), cPend = css("--pending"), cQ = css("--quar");
     // nodes
     for (let i = 0; i < N.length; i++) {
       const [x, y] = pos(i);
@@ -242,7 +248,8 @@ canvas { display: block; width: 100%; touch-action: manipulation; cursor: crossh
       const dim = onlyCross && !((rightEdge[i] && rightEdge[i][4]) || (leftEdge[i] && leftEdge[i][4]));
       ctx.globalAlpha = dim ? 0.18 : (hlComp != null && hlSize > 1 && D.comp[i] !== hlComp ? 0.35 : 1);
       if (n[3] === 0) { ctx.strokeStyle = cNeg; ctx.lineWidth = 1.2; ctx.strokeRect(x + 0.6, y + 0.6, sq - 1.2, sq - 1.2); }
-      else { ctx.fillStyle = mode === "grp" ? groupColor(D.comp[i]) : (n[1] === 0 ? cTrain : cTest); ctx.fillRect(x, y, sq, sq); }
+      else { ctx.fillStyle = mode === "grp" ? groupColor(D.comp[i]) : splitColors[n[1]]; ctx.fillRect(x, y, sq, sq); }
+      if (n[4]) { ctx.strokeStyle = cHl; ctx.lineWidth = 1.2; ctx.strokeRect(x + 1, y + 1, sq - 2, sq - 2); }
       if (n[0] === QUAR) { ctx.strokeStyle = cQ; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + sq, y + sq); ctx.moveTo(x + sq, y); ctx.lineTo(x, y + sq); ctx.stroke(); }
     }
     ctx.globalAlpha = 1;
@@ -278,7 +285,7 @@ canvas { display: block; width: 100%; touch-action: manipulation; cursor: crossh
     if (i == null) { tip.hidden = true; return; }
     const [x, y] = pos(i);
     const ci = compInfo.get(D.comp[i]);
-    tip.textContent = `${N[i][0]} · ${["train", "test", "chưa xếp"][N[i][1]]} · lớp ${N[i][2] || "—"} · ${ci.name} (${ci.size} ảnh)`;
+    tip.textContent = `${N[i][0]} · ${SPLIT[N[i][1]]} · lớp ${N[i][2] || "—"} · ${ci.name} (${ci.size} ảnh)${N[i][4] ? " · WP38-R1" : ""}`;
     tip.style.left = (x + cell / 2) + "px"; tip.style.top = y + "px"; tip.hidden = false;
   });
   cv.addEventListener("mouseleave", () => { hover = null; tip.hidden = true; draw(); });
@@ -306,14 +313,15 @@ canvas { display: block; width: 100%; touch-action: manipulation; cursor: crossh
     const el = document.getElementById("detail");
     if (i == null) {
       el.innerHTML = `<p class="hint">Rê chuột lên một ô để xem nhanh. Bấm vào ô để xem chi tiết và làm nổi bật cả nhóm D-02 chứa ảnh đó.</p>
-        <p class="hint">Khối liền màu càng dài nghĩa là chuỗi khung hình liên tục càng dài. Các ô vàng xen giữa ô xanh cho thấy ảnh test và ảnh train nằm chung một chuỗi chụp, tức là có rò rỉ.</p>`;
+        <p class="hint">Màu ô thể hiện split group-aware WP36-R1. Viền xanh bên trong đánh dấu 39 derivative validation đã sửa hướng theo WP38-R1.</p>`;
       return;
     }
     const n = N[i], ci = compInfo.get(D.comp[i]);
     el.innerHTML = `<div class="stem">${n[0]}${n[0] === QUAR ? ' <span class="pill bad">quarantine</span>' : ""}</div>
-      <dl><dt>Split gốc</dt><dd>${["train", "test", "chưa xếp"][n[1]]}${n[3] === 0 ? " · ảnh âm" : ""}</dd>
+      <dl><dt>Split WP36-R1</dt><dd>${SPLIT[n[1]]}${n[3] === 0 ? " · không có box train" : ""}</dd>
+      <dt>Orientation</dt><dd>${n[4] ? '<span class="pill ok">WP38-R1 · CCW 90° derivative</span>' : "raw orientation"}</dd>
       <dt>Lớp</dt><dd>${n[2] || "—"}</dd><dt>Số box</dt><dd>${n[3]}</dd>
-      <dt>Nhóm D-02</dt><dd><b>${ci.name}</b> · ${ci.size} ảnh · ${ci.train} train / ${ci.test} test ${ci.mixed ? '<span class="pill bad">split gốc chia chéo</span>' : ""}</dd></dl>
+      <dt>Nhóm D-02</dt><dd><b>${ci.name}</b> · ${ci.size} ảnh · ${ci.train} train / ${ci.val} val / ${ci.test} test ${ci.mixed ? '<span class="pill bad">chia chéo split</span>' : ""}</dd></dl>
       ${edgeCard("Cạnh trái", leftEdge[i])}${edgeCard("Cạnh phải", rightEdge[i])}`;
   }
 
@@ -334,10 +342,10 @@ canvas { display: block; width: 100%; touch-action: manipulation; cursor: crossh
 
   // ---- charts
   const buckets = [["≤ 10", s => s <= 10], ["11–25", s => s >= 11 && s <= 25], ["26–50", s => s >= 26 && s <= 50], ["51–100", s => s >= 51 && s <= 100], ["101–200", s => s >= 101 && s <= 200], ["> 200", s => s > 200]];
-  const rowsB = buckets.map(([k, f]) => { let img = 0, test = 0, comps = 0; for (const [k, c] of compInfo) if (k >= 0 && f(c.size)) { img += c.size; test += c.test; comps++; } return [k, img, test, comps]; });
-  const maxImg = Math.max(...rowsB.map(r => r[1]));
+  const rowsB = buckets.map(([k, f]) => { let train = 0, val = 0, test = 0, comps = 0; for (const [g, c] of compInfo) if (g >= 0 && f(c.size)) { train += c.train; val += c.val; test += c.test; comps++; } return [k, train, val, test, comps]; });
+  const maxImg = Math.max(...rowsB.map(r => r[1] + r[2] + r[3]));
   document.getElementById("sizes").innerHTML = `<div class="bar"><span class="hint">ảnh/nhóm</span><span class="hint">số ảnh</span><span class="n">nhóm</span></div>` +
-    rowsB.map(([k, img, test, comps]) => `<div class="bar"><span class="k">${k}</span><span class="tr" title="${fmt(img)} ảnh, ${fmt(test)} test"><span style="width:${(img - test) / maxImg * 100}%;background:var(--train)"></span><span style="width:${test / maxImg * 100}%;background:var(--test)"></span></span><span class="n">${comps}</span></div>`).join("");
+    rowsB.map(([k, train, val, test, comps]) => `<div class="bar"><span class="k">${k}</span><span class="tr" title="${fmt(train)} train, ${fmt(val)} val, ${fmt(test)} test"><span style="width:${train / maxImg * 100}%;background:var(--train)"></span><span style="width:${val / maxImg * 100}%;background:var(--val)"></span><span style="width:${test / maxImg * 100}%;background:var(--test)"></span></span><span class="n">${comps}</span></div>`).join("");
   const srcRows = SRC.map((s, i) => [s, S.bySource[s] || 0, D.qa[s]]);
   srcRows.push(["Chưa", S.cap.P || 0, "none"], ["Cách ly", S.cap.Q || 0, "q"]);
   const maxS = Math.max(...srcRows.map(r => r[1]));

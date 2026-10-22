@@ -1,10 +1,9 @@
-"""Read-only DATASET01 views for the Streamlit app: graph with D-02 groups, class and group tables,
-and the data for the animated pipeline.
+"""Read-only DATASET01 views for the Streamlit app.
 
 `dataset_graph.py` is hash-pinned by WP31-R1/R2 and stays unchanged; this module wraps it. Every
-number comes from files already in the repository (inventory, WP5 edges and overlays, WP33 labels,
-D-02 registry, WP34 support, D-04 part 1 decisions, WP35 lineage). Nothing here is an owner
-decision, a split or a training run.
+number comes from governed files already in the repository.  The graph presents the accepted
+WP36-R1 group-aware split and marks the 39 QA-passed WP38-R1 validation derivatives, while the
+historical pipeline animation retains the original vendor split for its before/after narrative.
 """
 
 from __future__ import annotations
@@ -27,7 +26,11 @@ WP33_TAXONOMY = Path("docs/review/generated/wp33_derived_taxonomy.csv")
 WP34_SUPPORT = Path("docs/review/generated/wp34_d04_class_support.csv")
 D04_PART1 = Path("docs/review/generated/d04_owner_decisions_part1.csv")
 WP35_LINEAGE = Path("docs/review/generated/wp35_enrichment_lineage.csv")
-SPLIT_CODE = {"train": 0, "test": 1, "unassigned": 2}
+WP36_SPLIT = Path("docs/review/generated/wp36_r1_split_frames.csv")
+WP38_MANIFEST = Path("docs/review/generated/wp38_r1_orientation_correction_manifest.json")
+SPLIT_CODE = {"train": 0, "val": 1, "test": 2}
+QUARANTINED_CODE = 3
+VENDOR_SPLIT_CODE = {"train": 0, "test": 1, "unassigned": 2}
 
 # The four D-04 buckets in display order, with the owner decision applied to the last one.
 BUCKETS = (
@@ -43,14 +46,31 @@ def _json(payload: Any) -> str:
 
 
 def graph_payload(repo_root: Path = PROJECT_ROOT) -> dict[str, Any]:
-    """Graph payload with vendor splits from the inventory and components = D-02 groups."""
+    """Graph payload with the accepted WP36-R1 split and D-02 group identities."""
     payload = build_graph_payload(repo_root)
-    split = {row["stem"]: row["split"] for row in _read_csv(repo_root / INVENTORY)}
+    split_rows = _read_csv(repo_root / WP36_SPLIT)
+    split = {row["stem"]: row for row in split_rows}
+    corrected = set(
+        json.loads((repo_root / WP38_MANIFEST).read_text(encoding="utf-8"))["stems"]
+    )
     group_of = {row["stem"]: row["group_id"] for row in _read_csv(repo_root / D02_REGISTRY)}
     groups = sorted(set(group_of.values()))
     index = {name: position for position, name in enumerate(groups)}
     for node in payload["nodes"]:
-        node[1] = SPLIT_CODE[split[node[0]]]
+        row = split.get(node[0])
+        node[1] = (
+            QUARANTINED_CODE
+            if row is None or row["use"] == "QUARANTINED"
+            else SPLIT_CODE[row["split"]]
+        )
+        node.append(node[0] in corrected)
+    for edge in payload["edges"]:
+        left, right = payload["nodes"][edge[0]], payload["nodes"][edge[1]]
+        edge[4] = int(
+            left[1] != QUARANTINED_CODE
+            and right[1] != QUARANTINED_CODE
+            and left[1] != right[1]
+        )
     payload["comp"] = [index.get(group_of.get(node[0], ""), -1) for node in payload["nodes"]]
     payload["groups"] = groups
     members: dict[int, set[int]] = defaultdict(set)
@@ -61,10 +81,16 @@ def graph_payload(repo_root: Path = PROJECT_ROOT) -> dict[str, Any]:
     counts = Counter(node[1] for node in payload["nodes"])
     summary.update(
         train=counts[0],
-        test=counts[1],
-        unassigned=counts[2],
+        val=counts[1],
+        test=counts[2],
+        quarantined=counts[3],
         groups=len(groups),
-        mixedGroups=sum(1 for splits in members.values() if {0, 1} <= splits),
+        mixedGroups=sum(1 for splits in members.values() if len(splits - {3}) > 1),
+        cross=sum(edge[4] for edge in payload["edges"]),
+        orientationCorrected=len(corrected),
+        orientationGroup="D02-C0034",
+        splitAuthority="WP36-R1",
+        correctionAuthority="WP38-R1 QA PASS",
     )
     return payload
 
@@ -103,6 +129,10 @@ def class_rows(repo_root: Path = PROJECT_ROOT) -> list[dict[str, Any]]:
 
 def group_rows(repo_root: Path = PROJECT_ROOT) -> list[dict[str, Any]]:
     registry = _read_csv(repo_root / D02_REGISTRY)
+    split = {row["stem"]: row for row in _read_csv(repo_root / WP36_SPLIT)}
+    corrected = set(
+        json.loads((repo_root / WP38_MANIFEST).read_text(encoding="utf-8"))["stems"]
+    )
     classes_of: dict[str, Counter[str]] = defaultdict(Counter)
     for box in _read_csv(repo_root / WP33_BOXES):
         if box["train_eligible"] == "True":
@@ -113,7 +143,12 @@ def group_rows(repo_root: Path = PROJECT_ROOT) -> list[dict[str, Any]]:
     rows = []
     for group_id in sorted(grouped):
         frames = grouped[group_id]
-        splits = Counter(frame["vendor_split"] for frame in frames)
+        splits = Counter(
+            "quarantined"
+            if split[frame["stem"]]["use"] == "QUARANTINED"
+            else split[frame["stem"]]["split"]
+            for frame in frames
+        )
         codes: Counter[str] = Counter()
         for frame in frames:
             codes.update(classes_of[frame["stem"]])
@@ -122,12 +157,17 @@ def group_rows(repo_root: Path = PROJECT_ROOT) -> list[dict[str, Any]]:
                 "Nhóm": group_id,
                 "Ảnh": len(frames),
                 "Train": splits["train"],
+                "Val": splits["val"],
                 "Test": splits["test"],
-                "Unassigned": splits["unassigned"],
+                "Cách ly": splits["quarantined"],
                 "Stem": f"{frames[0]['stem']}–{frames[-1]['stem']}",
                 "Số lớp": len(codes),
                 "Biển nhiều nhất": ", ".join(code for code, _n in codes.most_common(3)),
-                "Chéo split gốc": splits["train"] > 0 and splits["test"] > 0,
+                "Chéo split WP36-R1": sum(
+                    bool(splits[name]) for name in ("train", "val", "test")
+                )
+                > 1,
+                "Ảnh sửa hướng": sum(frame["stem"] in corrected for frame in frames),
             }
         )
     return rows
@@ -136,8 +176,16 @@ def group_rows(repo_root: Path = PROJECT_ROOT) -> list[dict[str, Any]]:
 def pipeline_payload(repo_root: Path = PROJECT_ROOT) -> dict[str, Any]:
     graph = graph_payload(repo_root)
     nodes, comp = graph["nodes"], graph["comp"]
+    vendor_split = {
+        row["stem"]: VENDOR_SPLIT_CODE[row["split"]]
+        for row in _read_csv(repo_root / INVENTORY)
+    }
     step = 12  # one dot per 12 frames keeps the animation readable
-    dots = [[node[0], node[1], comp[i]] for i, node in enumerate(nodes) if i % step == 0]
+    dots = [
+        [node[0], vendor_split[node[0]], comp[i]]
+        for i, node in enumerate(nodes)
+        if i % step == 0
+    ]
     sizes = Counter(c for c in comp if c >= 0)
     taxonomy = _read_csv(repo_root / WP33_TAXONOMY)
     classes = [
@@ -152,6 +200,10 @@ def pipeline_payload(repo_root: Path = PROJECT_ROOT) -> dict[str, Any]:
         for row in class_rows(repo_root)
     ]
     summary = graph["summary"]
+    vendor_members: dict[int, set[int]] = defaultdict(set)
+    for node, group in zip(nodes, comp, strict=True):
+        if group >= 0:
+            vendor_members[group].add(vendor_split[node[0]])
     return {
         "dots": dots,
         "step": step,
@@ -166,11 +218,12 @@ def pipeline_payload(repo_root: Path = PROJECT_ROOT) -> dict[str, Any]:
             "unresolved": summary["cap"].get("U", 0),
             "quarantined": summary["cap"].get("Q", 0),
             "groups": summary["groups"],
-            "mixedGroups": summary["mixedGroups"],
+            "mixedGroups": sum(1 for splits in vendor_members.values() if {0, 1} <= splits),
             "boxes": sum(int(row["train_boxes"]) + int(row["excluded_boxes"]) for row in taxonomy),
             "trainBoxes": sum(int(row["train_boxes"]) for row in taxonomy),
             "trainClasses": sum(1 for row in taxonomy if row["role"] == "CLASS"),
             "augmented": sum(c["aug"] for c in classes),
+            "orientationCorrected": summary["orientationCorrected"],
         },
     }
 

@@ -13,14 +13,25 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 APP_PATH = REPO_ROOT / "src" / "cpv301_autodrive" / "web_app.py"
 
 
-def test_graph_uses_vendor_splits_and_d02_groups() -> None:
+def test_graph_uses_wp36_r1_splits_wp38_r1_corrections_and_d02_groups() -> None:
     payload = view.graph_payload(REPO_ROOT)
     summary = payload["summary"]
-    assert (summary["train"], summary["test"], summary["unassigned"]) == (2552, 639, 25)
+    assert (
+        summary["train"],
+        summary["val"],
+        summary["test"],
+        summary["quarantined"],
+    ) == (1912, 376, 903, 25)
     assert summary["groups"] == len(payload["groups"]) == 54
+    assert summary["mixedGroups"] == 0
+    assert summary["orientationCorrected"] == 39
+    assert summary["orientationGroup"] == "D02-C0034"
     stems = [node[0] for node in payload["nodes"]]
     assert payload["comp"][stems.index("0248")] == -1
     assert payload["comp"][stems.index("0247")] == payload["comp"][stems.index("0249")]
+    assert payload["nodes"][stems.index("1319")][1:] == [1, "31", 1, True]
+    assert payload["nodes"][stems.index("1357")][4] is True
+    assert payload["nodes"][stems.index("1318")][4] is False
 
 
 def test_class_table_matches_buckets_and_enrichment() -> None:
@@ -36,6 +47,10 @@ def test_group_table_covers_every_grouped_frame() -> None:
     rows = view.group_rows(REPO_ROOT)
     assert len(rows) == 54
     assert sum(row["Ảnh"] for row in rows) == 3215
+    assert sum(row["Ảnh sửa hướng"] for row in rows) == 39
+    assert all(row["Chéo split WP36-R1"] is False for row in rows)
+    corrected = next(row for row in rows if row["Nhóm"] == "D02-C0034")
+    assert corrected["Val"] == corrected["Ảnh"] == 39
 
 
 @pytest.mark.parametrize("render", [view.render_graph_html, view.render_pipeline_html])
@@ -51,6 +66,8 @@ def test_pipeline_has_all_eight_steps_and_real_numbers() -> None:
     payload = view.pipeline_payload(REPO_ROOT)
     assert payload["stats"]["augmented"] == 1800
     assert payload["stats"]["groups"] == 54
+    assert payload["stats"]["mixedGroups"] == 54
+    assert payload["stats"]["orientationCorrected"] == 39
     assert len(payload["buckets"]) == 4
     assert view.PIPELINE_TEMPLATE.read_text(encoding="utf-8").count('["') >= 8
 

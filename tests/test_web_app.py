@@ -16,7 +16,7 @@ def test_webapp_opens_on_overview_slide() -> None:
     labels = [metric.label for metric in app.metric]
     assert "Gate 0" in labels and "Huấn luyện" in labels
     training = next(metric for metric in app.metric if metric.label == "Huấn luyện")
-    assert training.value == "Được phép (D-05)"
+    assert training.value == "NO-GO; cần error analysis + experiment contract mới qua QA"
 
 
 @pytest.mark.parametrize("slide", SLIDES, ids=[slide.file for slide in SLIDES])

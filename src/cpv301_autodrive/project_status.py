@@ -8,15 +8,17 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-STATUS_AS_OF = "2026-10-21"
-CURRENT_PHASE = "M4/D1 — recovery L4 đã QA PASS; pilot một seed 100 epoch được GO"
+STATUS_AS_OF = "2026-10-22"
+CURRENT_PHASE = "M4/D1 — corrected validation R10 QA PASS; cấu hình hiện tại NO-GO"
 # Short D1 status shown on the Model and Next-steps slides (see PROJECT_MEMORY.md, M4/D1).
 D1_STATUS = (
-    "Gói train M1 và recovery hai runtime L4 đã QA PASS; checkpoint Drive khôi phục đúng từ "
-    "epoch 1 sang epoch 2. Pilot một seed 100 epoch đã được GO nhưng chưa chạy; chưa có model "
-    "Việt Nam đạt chuẩn và test niêm phong chưa được mở."
+    "Corrected validation R10 của pilot YOLO11s seed 20261018 đã QA PASS: mAP50 0,8689, "
+    "mAP50-95 0,6253 và recall 0,8625; nhưng FP/ảnh 0,5691 vượt gate 0,30, các lớp quan "
+    "trọng 7/32/41 chưa đạt. WP38-R1 sửa đúng 39 ảnh val; raw và split không đổi. "
+    "Cấu hình hiện tại NO-GO cho hai seed còn lại; bước kế tiếp là error analysis trên val. "
+    "Test niêm phong chưa được mở."
 )
-TRAINING_STATUS = "Được phép (D-05)"
+TRAINING_STATUS = "NO-GO; cần error analysis + experiment contract mới qua QA"
 
 # (stage, what it does, status)
 PIPELINE: tuple[tuple[str, str, str], ...] = (
@@ -74,15 +76,19 @@ PIPELINE_STAGES: tuple[StageDetail, ...] = (
         method=(
             "YOLO11s 54 lớp từ trọng số pretrained COCO, PyTorch + Ultralytics (`detector/`)",
             "Train trên Colab GPU L4, có checkpoint để khôi phục khi runtime bị ngắt",
-            "Không lật ngang ảnh; train trên split WP36-R1; test niêm phong",
+            "Không lật ngang ảnh; split WP36-R1; WP38-R1 sửa 39 ảnh val; test niêm phong",
         ),
         numbers=(
             ("Dữ liệu train / val", "3.712 / 376 ảnh", "1.912 ảnh thật + 1.800 ảnh WP35"),
             ("Test niêm phong", "903 ảnh", "chỉ mở một lần ở đánh giá cuối"),
-            ("Tốc độ YOLO11n", "~23 ms (~43 FPS)", "đo trên M1 Pro, trọng số ngẫu nhiên"),
-            ("Gate D-05", "mAP50 ≥ 0,60 · recall ≥ 0,85", "p95 ≤ 100 ms"),
+            ("Corrected mAP50 / mAP50-95", "0,8689 / 0,6253", "R10, seed 20261018"),
+            ("Recall / FP trên ảnh", "0,8625 / 0,5691", "FP gate ≤ 0,30: FAIL"),
+            ("Latency p95", "47,30 ms", "M1 Pro; gate ≤ 100 ms: PASS"),
         ),
-        evidence=("docs/review/d05_owner_decision_record.md", "detector/m1/cli.py"),
+        evidence=(
+            "docs/review/d1_corrected_val_r10_evaluation_report.md",
+            "docs/review/d05_owner_decision_record.md",
+        ),
     ),
     StageDetail(
         name="Classifier",
@@ -181,7 +187,7 @@ MILESTONES: tuple[tuple[str, str, str], ...] = (
     ("M1", "Gói train tái lập (PyTorch/Ultralytics), loader kiểm hash split", "QA PASS"),
     ("M2", "E1 retrain, E2 VGG16 transfer, E3 xử lý mất cân bằng", "Đề xuất"),
     ("M3", "E4 calibration và phát hiện ảnh lạ (OOD)", "Đề xuất"),
-    ("M4", "Detector VN trên khung hình đầy đủ (D1)", "Đang làm · chạy thử Colab"),
+    ("M4", "Detector VN trên khung hình đầy đủ (D1)", "Pilot QA PASS · remediation NO-GO"),
     ("M5", "Detector + classifier + tracking trên video", "Đề xuất"),
     ("M6", "Hoàn thiện Streamlit, E2E, hiệu năng", "Một phần"),
 )
@@ -207,6 +213,11 @@ GOVERNANCE_TIMELINE: tuple[tuple[str, str, tuple[str, ...]], ...] = (
     ("2026-10-18", "Chấp nhận split train/val/test WP36-R1, test niêm phong", ("G0.7",)),
     ("2026-10-18", "Dataset card WP37-R1 QA PASS", ("G0.9",)),
     ("2026-10-18", "Duyệt ngưỡng nghiệm thu D-05 → Gate 0 mở", ("D-05",)),
+    (
+        "2026-10-22",
+        "WP38-R1 + corrected validation R10 QA PASS; cấu hình detector vẫn NO-GO",
+        ("G0.9",),
+    ),
 )
 
 # WP36-R1 usable frames per split.

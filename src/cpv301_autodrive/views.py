@@ -17,7 +17,8 @@ import altair as alt
 import streamlit as st
 from PIL import Image, UnidentifiedImageError
 
-from cpv301_autodrive import dataset01_view, palette
+from cpv301_autodrive import dataset01_view_r1 as dataset01_view
+from cpv301_autodrive import palette
 from cpv301_autodrive.behavior import VehicleCommand, plan_behavior
 from cpv301_autodrive.config import get_settings
 from cpv301_autodrive.inference import ModelService, Prediction
@@ -183,7 +184,7 @@ def render_history() -> None:
 
 @st.cache_data(show_spinner="Đang dựng đồ thị DATASET01...", ttl=600, max_entries=1)
 def load_dataset01_graph_html() -> str:
-    """Graph with vendor splits and D-02 groups, rebuilt at most once per 10 minutes."""
+    """Graph with WP36-R1 splits, WP38-R1 markers and D-02 groups."""
     return dataset01_view.render_graph_html()
 
 
@@ -201,8 +202,8 @@ def render_dataset01() -> None:
     st.subheader("DATASET01 — biển báo Việt Nam")
     st.caption(
         "3.216 khung hình đường phố, 52 lớp gốc. Mọi số liệu đọc trực tiếp từ các gói review "
-        "trong repo (WP5–WP37-R1, D-01–D-04, split WP36-R1). Gate 0 đã mở (D-05 "
-        "duyệt 2026-10-18); chưa có model VN nào được train."
+        "trong repo (WP5–WP38-R1, D-01–D-05, split WP36-R1). Gate 0 đã mở; pilot "
+        "YOLO11s một seed đã QA PASS nhưng cấu hình cũ vẫn NO-GO cho seed tiếp theo."
     )
     view = st.segmented_control(
         "Phần",
@@ -226,7 +227,8 @@ def render_dataset01() -> None:
         elif view == ":material/hub: Đồ thị":
             st.caption(
                 "Mỗi ô là một ảnh theo thứ tự stem; vạch nối là cạnh proxy WP5 tô theo kết "
-                "quả review. Chọn **Nhóm D-02** để tô màu theo 54 nhóm group_id owner đã duyệt."
+                "quả review. Màu ô là split WP36-R1; viền xanh đánh dấu 39 ảnh validation "
+                "có derivative sửa hướng WP38-R1. Chọn **Nhóm D-02** để tô theo 54 group_id."
             )
             st.iframe(
                 load_dataset01_graph_html(), height="content", alt="Đồ thị nhóm ảnh DATASET01"
