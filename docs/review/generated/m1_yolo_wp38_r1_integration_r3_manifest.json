@@ -1,0 +1,77 @@
+{
+  "base_export_manifest_sha256": "8a8df5f242829277fb86cfd55490dd4284e42a6c09f7ace6a509e42feb179d71",
+  "class_map_sha256": "7cda296a95bd8512a1bb2e85109ce9a1574fb882e692b11d4d0ee6a1cb58d242",
+  "completion_marker_schema": {
+    "package": "M1-YOLO-WP38-R1-INTEGRATION-R3",
+    "sealed_test_accessed": false,
+    "status": "COMPLETE",
+    "test_included": false,
+    "written": {
+      "train": 1912,
+      "train_wp35": 1800,
+      "val": 376
+    }
+  },
+  "descriptor_cleanup": "close every opened descendant descriptor on partial tree failure",
+  "materialisation_policy": "new output only; lexical parent lstat; root identity pin; all descendant writes relative to no-follow directory descriptors; complete marker written last",
+  "note": "Append-only R2 marker/descriptor remediation candidate; independent QA required.",
+  "orientation_correction": {
+    "boxes": 29,
+    "frames": 39,
+    "group_id": "D02-C0034",
+    "raw_mutated": false,
+    "rotation": "CCW_90",
+    "split": "val"
+  },
+  "package": "M1-YOLO-WP38-R1-INTEGRATION-R3",
+  "pinned_sources": {
+    "docs/review/generated/wp38_r1_orientation_correction_lineage.csv": "459fbb8990713b2d63b112ac4561f8509c2dfa07a295bf711fe1bad98ed7304d",
+    "docs/review/generated/wp38_r1_orientation_correction_manifest.json": "d88f5eae525a4aa6d77cdf3f581b60328a441aec0ff091cd907af20e8405385a",
+    "docs/review/wp38_r1_orientation_correction_independent_qa_record.md": "2dbc362408895f2d7a53c68748d12cadbb58604bee14f99a8d329b404a5a7a0a",
+    "scripts/build_m1_yolo_dataset.py": "3b52c63f2aeeea9e93f779ebe4102715def96a1f176e809cfd0dc12fbe9cef93",
+    "scripts/build_wp38_r1_orientation_correction.py": "f54ca45ba46269f2ebbf459a856de307cd77403aaefb5503ce58485b086da2e0"
+  },
+  "predecessor_exporter_sha256": "a26f1ee3a778086cef35fcd56df7df508dbdaee58d23ba34decba49de264ae4c",
+  "predecessor_manifest_sha256": "7538697ba4fcdf59d86f62b7ce867ee0c609042a1d25922d2ff959607bc6f9de",
+  "predecessor_package": "M1-YOLO-WP38-R1-INTEGRATION-R2",
+  "predecessor_qa_record_sha256": "b37c7bf34e6160b496dd28cd56993e7a786689ac7733968513aac09c0464f7eb",
+  "predecessor_qa_status": "INDEPENDENT_QA_FAIL",
+  "schema_version": 1,
+  "sealed_test_accessed": false,
+  "splits": {
+    "test": {
+      "boxes": 2315,
+      "classes_with_boxes": 32,
+      "empty_label_frames": 1,
+      "frames": 903,
+      "labels_sha256": "23c6ed458931577b88fd5996bf31902cd6c9525276e3fd8c3842004c89828123",
+      "stem_list_sha256": "afa03d4b6deb7567c5784b29122966d84599d4eb81fdbad37c3b20adaf7524bc"
+    },
+    "train": {
+      "boxes": 5415,
+      "classes_with_boxes": 54,
+      "empty_label_frames": 3,
+      "frames": 1912,
+      "labels_sha256": "d907fb9f82bbcee4bfb0d6f34d9a673c6f7dbe4173967c92b7552c607abb3b49",
+      "stem_list_sha256": "6ac767509def899071f6d6dc0da1e98e62a2a19eb0e62292970e8273b4c99372"
+    },
+    "val": {
+      "boxes": 560,
+      "classes_with_boxes": 19,
+      "empty_label_frames": 10,
+      "frames": 376,
+      "labels_sha256": "e64345bb3a618187d10828ccc135172736ff45956570359da4fa99d441f320cc",
+      "stem_list_sha256": "ae3f3509319fbb301012e9fbeb7431caacfcd4035c9d2f9167f24e3ed2b8f593"
+    }
+  },
+  "status": "AWAITING_INDEPENDENT_QA",
+  "test_included": false,
+  "test_policy": "stem/hash metadata only; this successor exposes no test export command",
+  "training_authorized": false,
+  "wp35_train_only": {
+    "images": 1800,
+    "lineage_sha256": "e802fc264feff5168c28b531801af04051a36accc3c893ad5ab2e72975d38fed"
+  },
+  "wp38_r1_manifest_sha256": "d88f5eae525a4aa6d77cdf3f581b60328a441aec0ff091cd907af20e8405385a",
+  "wp38_r1_qa_record_sha256": "2dbc362408895f2d7a53c68748d12cadbb58604bee14f99a8d329b404a5a7a0a"
+}
