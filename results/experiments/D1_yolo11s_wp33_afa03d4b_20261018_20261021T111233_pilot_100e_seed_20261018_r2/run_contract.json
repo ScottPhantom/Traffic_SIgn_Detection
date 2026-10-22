@@ -1,0 +1,78 @@
+{
+  "artifacts": {
+    "weights": {
+      "best.pt": {
+        "path": "/content/Traffic_Sign_Detector/results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/weights/best.pt",
+        "sha256": "5d5815a96218759e93cd9bc51261ed55778da5397dfe7fe25c1f78908b10b633"
+      },
+      "last.pt": {
+        "path": "/content/Traffic_Sign_Detector/results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/weights/last.pt",
+        "sha256": "75ada6ba44804252c65e6ec76660511e0cc6ea69ee164c766055033dac11ea25"
+      }
+    }
+  },
+  "contract": {
+    "class_map_sha256": "7cda296a95bd8512a1bb2e85109ce9a1574fb882e692b11d4d0ee6a1cb58d242",
+    "data_yaml": "/content/Traffic_Sign_Detector/data/processed/m1_yolo/data.yaml",
+    "export_manifest_sha256": "8a8df5f242829277fb86cfd55490dd4284e42a6c09f7ace6a509e42feb179d71",
+    "split_stem_sha256": {
+      "test": "afa03d4b6deb7567c5784b29122966d84599d4eb81fdbad37c3b20adaf7524bc",
+      "train": "6ac767509def899071f6d6dc0da1e98e62a2a19eb0e62292970e8273b4c99372",
+      "val": "ae3f3509319fbb301012e9fbeb7431caacfcd4035c9d2f9167f24e3ed2b8f593"
+    }
+  },
+  "d05_gates": {
+    "agnostic_recall": 0.85,
+    "critical_class_recall": 0.7,
+    "fp_per_image": 0.3,
+    "latency_p95_ms": 100.0,
+    "map50": 0.6,
+    "map50_95": 0.4,
+    "min_support_for_class_gate": 20,
+    "other_class_recall": 0.5
+  },
+  "environment": {
+    "cuda_available": true,
+    "cuda_version": "13.0",
+    "detector_lock_sha256": "5d56642af267bdff63f7d2a627ccf97a8f04cbf848a673a5d65988a471baaec5",
+    "git_commit": "939f6bbce9f5c955b13ebcc84addd5083d242355",
+    "git_dirty_files": 0,
+    "gpu_name": "NVIDIA L4",
+    "hardware_chip": "UNKNOWN",
+    "machine": "x86_64",
+    "mps_available": false,
+    "nvidia_driver": "580.82.07",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "runtime_backend": "cuda",
+    "torch": "2.14.1+cu130",
+    "ultralytics": "8.4.172"
+  },
+  "experiment": "D1",
+  "model": {
+    "origin": "ultralytics/assets v8.4.0",
+    "path": "/content/Traffic_Sign_Detector/models/pretrained/yolo11s.pt",
+    "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5"
+  },
+  "run": "D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2",
+  "seed": 20261018,
+  "status": "TRAINED",
+  "train_args": {
+    "batch": 4,
+    "data": "/content/Traffic_Sign_Detector/data/processed/m1_yolo/data.yaml",
+    "deterministic": true,
+    "device": "0",
+    "epochs": 100,
+    "exist_ok": true,
+    "fliplr": 0.0,
+    "fraction": 1.0,
+    "imgsz": 1280,
+    "name": "D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2",
+    "patience": 0,
+    "plots": false,
+    "pretrained": true,
+    "project": "/content/Traffic_Sign_Detector/results/experiments",
+    "seed": 20261018,
+    "workers": 4
+  }
+}

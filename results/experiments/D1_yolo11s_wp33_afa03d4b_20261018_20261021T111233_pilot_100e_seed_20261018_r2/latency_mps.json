@@ -1,0 +1,57 @@
+{
+  "batch": 1,
+  "conf": 0.15,
+  "device": "mps",
+  "environment": {
+    "cuda_available": false,
+    "cuda_version": null,
+    "detector_lock_sha256": "5d56642af267bdff63f7d2a627ccf97a8f04cbf848a673a5d65988a471baaec5",
+    "git_commit": "0f5ddb174beba8678430cf2329d124fde6cfa2b8",
+    "git_dirty_files": 54,
+    "gpu_name": "Apple M1 Pro",
+    "hardware_chip": "Apple M1 Pro",
+    "machine": "arm64",
+    "mps_available": true,
+    "nvidia_driver": null,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.12.13",
+    "runtime_backend": "mps",
+    "torch": "2.14.1",
+    "ultralytics": "8.4.172"
+  },
+  "imgsz": 1280,
+  "max_ms": 207.66262500546873,
+  "mean_ms": 45.30183278092105,
+  "n": 300,
+  "nms_iou": 0.7,
+  "p50_ms": 44.44508352025878,
+  "p95_ms": 47.300456547236536,
+  "passed": true,
+  "seed": 20261018,
+  "threshold_lock": null,
+  "warmup": 50,
+  "weights": {
+    "attestation": {
+      "approved_pretrained_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+      "detector_lock_sha256": "5d56642af267bdff63f7d2a627ccf97a8f04cbf848a673a5d65988a471baaec5",
+      "export_manifest_sha256": "8a8df5f242829277fb86cfd55490dd4284e42a6c09f7ace6a509e42feb179d71",
+      "run": "D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2",
+      "run_contract_sha256": "9f8fc94c471addcd540b9efded730e1dcfb0ce9da820b820343ecc44d0810b88",
+      "seed": 20261018,
+      "weights": {
+        "best.pt": "5d5815a96218759e93cd9bc51261ed55778da5397dfe7fe25c1f78908b10b633",
+        "last.pt": "75ada6ba44804252c65e6ec76660511e0cc6ea69ee164c766055033dac11ea25"
+      }
+    },
+    "path": "/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector/results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/weights/best.pt",
+    "run": "D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2",
+    "run_attestation_sha256": "7fa5df339676adaae220e1963916b2e48e2525455713d500db5d76343e2fc9fc",
+    "run_contract": "/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector/results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/run_contract.json",
+    "run_contract_sha256": "9f8fc94c471addcd540b9efded730e1dcfb0ce9da820b820343ecc44d0810b88",
+    "run_dir": "/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector/results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2",
+    "run_registry": "/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector/docs/review/generated/d1_run_registry.json",
+    "run_registry_sha256": "ba5ab04fd6e28e849a6b1aaf345bb5e284eb2a7aa1ee9c7cee0714209ed2b0c9",
+    "seed": 20261018,
+    "sha256": "5d5815a96218759e93cd9bc51261ed55778da5397dfe7fe25c1f78908b10b633"
+  }
+}
