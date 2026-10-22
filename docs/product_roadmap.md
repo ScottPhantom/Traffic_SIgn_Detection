@@ -1,6 +1,6 @@
 # CPV301 AutoDrive — Product roadmap
 
-Ngày kiểm tra gần nhất: 2026-10-16 (Asia/Ho_Chi_Minh).
+Ngày kiểm tra gần nhất: 2026-10-22 (Asia/Ho_Chi_Minh).
 
 Mục tiêu dài hạn là một pipeline nghiên cứu có thể tái lập cho biển báo Việt Nam và một
 webapp mô phỏng phản ứng của xe. Mọi đầu ra hành vi hiện tại chỉ là mô phỏng; dự án chưa có
@@ -89,6 +89,52 @@ Không được train E1–E4 hoặc detector trước khi toàn bộ tiêu chí
 | G0.8 | D-04 dựa trên nhãn WP33 và nhóm D-02 (WP34: 27 lớp ≥ 3 nhóm, 6 lớp 2 nhóm, 9 lớp 1 nhóm ≥ 30 ảnh, 12 lớp 1 nhóm < 30 ảnh). Owner đã duyệt D-04 part 1 (2026-10-17): 12 lớp hiếm được train kèm làm giàu bằng biến đổi ảnh thật (WP35, QA PASS), trạng thái `EVAL_PENDING_REAL_INDEPENDENT_DATA`, không kích hoạt hành vi xe. WP34 QA FAIL → WP34-R1 QA PASS (2026-10-18): chỉ ảnh 0544 là nền thật, 24 ảnh âm khác có biển chưa gán nhãn và bị cách ly; họ P.117/W.239b gộp theo họ. Owner duyệt D-04 part 2 (2026-10-18, `docs/review/d04_owner_decision_part2_record.md`): 27 TRAIN_VAL_TEST, 6 TRAIN_AND_TEST_NO_VAL, 9 TRAIN_ONLY_UNVERIFIED; lớp 11/14/28/38 bị một nhóm chi phối | PASS — D-04 PART 1 + PART 2 APPROVED |
 | G0.9 | WP37 dataset card: license + ghi công (D-01), lineage 54 nhóm (D-02), bảng lớp (D-03/D-04) theo split, hash split WP36-R1, điều kiện chụp đo được (độ phân giải, độ sáng, độ nét; EXIF/GPS = 0 nên địa điểm/thời gian UNKNOWN). Phát hiện: val lệch điều kiện chụp (toàn bộ ảnh dọc và ảnh tối nằm ở val) WP37 QA PASS với 1 P2 (gọi nhầm 7 ảnh ban ngày ngược tán cây là ảnh tối) → WP37-R1 `docs/dataset01_card_r1.md` sửa P2 + 4 P3 WP37-R1 QA PASS (0 finding, 2026-10-18) | PASS — WP37-R1 QA PASS |
 
+### WP38-R1 — sửa hướng 39 frame validation
+
+**VERIFIED, INDEPENDENT QA PASS (2026-10-22):** 39 frame `1319..1357` thuộc đúng group
+`D02-C0034` không phải cảnh quay dọc tự nhiên; đây là cảnh ngang được lưu xoay 90° theo chiều kim
+đồng hồ. Gói append-only WP38-R1 giữ raw và split bất biến, tạo bản dẫn xuất PNG 960x540 bằng
+`CCW_90`, đồng thời biến đổi 29 box theo `x'=y`, `y'=1-x`, `w'=h`, `h'=w`.
+
+- 8/8 trang và 39/39 panel đã được QA xem ở độ chi tiết gốc: ảnh thẳng, box bám đúng biển.
+- Ảnh nguồn được neo từng stem vào inventory WP1 đã pin; label val được tái tạo từ WP33 đã pin.
+- Hai attack từng qua được WP38 ban đầu (sửa JPEG 1319 và đổi x label 1329 thêm 0,001) nay bị
+  từ chối trước khi ghi output; path/output attacks cũng fail closed.
+- QA record: `docs/review/wp38_r1_orientation_correction_independent_qa_record.md`, SHA-256
+  `2dbc362408895f2d7a53c68748d12cadbb58604bee14f99a8d329b404a5a7a0a`.
+- WP38 ban đầu vẫn là QA FAIL và được giữ nguyên. WP38-R1 hiện chỉ là evidence package: chưa được
+  phép thay dữ liệu validation trong evaluator/exporter, không đưa vào training, không đổi split
+  và không mở test niêm phong. Muốn tích hợp phải có successor riêng qua review.
+
+### M1-WP38-R1 integration successor — R4/R2 QA PASS local
+
+**INDEPENDENT QA PASS LOCALLY (2026-10-22):** successor append-only
+`scripts/build_m1_yolo_dataset_wp38_r1_integration_r4.py` giữ nguyên 1.912 stem train, 376 stem val
+và seal 903 stem test của WP36-R1; chỉ thay nguồn ảnh/label của đúng 39 stem val `1319..1357` bằng
+derivative WP38-R1. Local export có 3.712 ảnh train (1.912 raw + 1.800 WP35), 376 ảnh val (337 raw
++ 39 corrected), không chứa test và luôn ghi `sealed_test_accessed=false`. QA record:
+`docs/review/m1_wp38_r1_integration_r4_independent_qa_record.md` (SHA-256 `27425608…`).
+
+Bundle successor `scripts/build_m1_colab_bundle_wp38_r1_r2.py` cũng QA PASS với roster train/val-only
+đúng 5.927 file; QA record SHA-256 `436a0f18…`. Bundle corrected mới chỉ tồn tại local, chưa tạo
+official archive, chưa commit/push và chưa upload Drive. Drive vẫn là bundle backend R1 cũ.
+
+Dataset Graph wrapper đã chuyển từ vendor split sang split group-aware WP36-R1 (1.912/376/903,
+25 cách ly), đánh dấu 39 frame WP38-R1 và báo 0/54 nhóm bị chia chéo train/val/test. File graph lõi
+`dataset_graph.py` được giữ nguyên theo pin; animation lịch sử vẫn dùng vendor split để giải thích
+quá trình trước/sau.
+
+Evaluator corrected-validation R1–R8 được giữ bất biến dưới các QA FAIL tương ứng. R9 source QA
+PASS nhưng lần chạy thật đầu tiên thất bại an toàn sau inference vì so sánh parsed JSON trực tiếp
+với Python object trước serialization. Append-only R10 chuẩn hóa phép so sánh trong JSON space,
+giữ exact intended bytes + descriptor/content binding, rồi source QA PASS và result QA PASS.
+
+Corrected single-seed baseline hiện là mAP50 `0,8689`, mAP50-95 `0,6253`, recall `0,8625` và
+FP/ảnh `0,5691` tại confidence `0,20`. AP và overall recall đạt, nhưng FP/ảnh vẫn fail gate `0,30`;
+ba lớp quan trọng đủ support 7/32/41 vẫn fail recall. Vì vậy cấu hình không đổi vẫn **NO-GO** cho
+seed `20261019`/`20261020`; bước kế tiếp là error analysis validation-only và experiment contract
+cải thiện qua QA. Test niêm phong vẫn đóng (`sealed_test_accessed=false`).
+
 ### Exit criteria Gate 0
 
 - G0.1–G0.9 đều PASS và có đường dẫn artifact.
@@ -147,11 +193,11 @@ sample nhỏ hoặc class hiếm, báo confidence interval/repeated seeds và su
 
 | Milestone | Phạm vi/deliverable | Gate hoàn thành | Trạng thái |
 | --- | --- | --- | --- |
-| M0 — Data governance | WP1–WP37-R1 (chi tiết từng WP trong `PROJECT_MEMORY.md`). Đã duyệt D-01…D-04; split WP36-R1 được owner chấp nhận (test niêm phong `afa03d4b…`); dataset card WP37-R1. D-05 đã duyệt (`docs/review/d05_owner_decision_record.md`) | Gate 0 PASS | **GATE 0 MỞ (2026-10-18): G0.1–G0.9 PASS + D-05 ĐÃ DUYỆT** |
-| M1 — Training package | dataset loader crop, config/seed/logging, corrected augmentation, reproducible train/eval CLI. Track detector: loader YOLO kiểm hash split WP36-R1, nhãn WP33, ảnh WP35 chỉ train, không lật ngang; Colab train/val-only bundle + SQLite/text logging + hashed result package | Clean rerun tạo cùng artifact class/metric tolerance; không còn input-exhaust warning | **M1 package + recovery gate PASS (2026-10-21)** — M1-R4/M1-Colab-R3 package QA PASS; R4-R6 source QA PASS; live recovery và pilot 100 epoch đều tạo đủ checkpoint/archive/SQLite/text log với `sealed_test_accessed=false`. Pilot seed `20261018` hoàn tất và báo cáo QA PASS, nhưng cấu hình không đổi là **NO-GO** cho seed `20261019`/`20261020`; sealed test/final evaluation vẫn **NO-GO** |
+| M0 — Data governance | WP1–WP38-R1 (chi tiết từng WP trong `PROJECT_MEMORY.md`). Đã duyệt D-01…D-04; split WP36-R1 được owner chấp nhận (test niêm phong `afa03d4b…`); dataset card WP37-R1; WP38-R1 sửa hướng dẫn xuất 39 frame val đã QA PASS. D-05 đã duyệt (`docs/review/d05_owner_decision_record.md`) | Gate 0 PASS | **GATE 0 MỞ (2026-10-18): G0.1–G0.9 PASS + D-05 ĐÃ DUYỆT; WP38-R1 EVIDENCE QA PASS 2026-10-22** |
+| M1 — Training package | dataset loader crop, config/seed/logging, corrected augmentation, reproducible train/eval CLI. Track detector: loader YOLO kiểm hash split WP36-R1, nhãn WP33, ảnh WP35 chỉ train, không lật ngang; Colab train/val-only bundle + SQLite/text logging + hashed result package | Clean rerun tạo cùng artifact class/metric tolerance; không còn input-exhaust warning | **M1 package + recovery gate PASS; WP38-R1 integration R4, bundle R2 và evaluator R10 QA PASS local (2026-10-22)** — successor thay đúng 39 ảnh val, giữ test seal và không có test payload. Corrected bundle chưa commit/upload; Drive vẫn dùng bundle R1 cũ. Corrected result content-bound/QA PASS; unchanged training remains NO-GO. Sealed test/final evaluation vẫn **NO-GO** |
 | M2 — Classifier study | E1, E2, E3 theo experiment matrix | Independent classifier holdout + toàn bộ metrics/artifacts | PROPOSAL |
 | M3 — Calibration/OOD | E4 MSP/temperature baseline và ablation OOD | Selective/OOD report; threshold được chọn trên validation, không trên test | PROPOSAL |
-| M4 — Full-scene detector | D1 bbox training/evaluation, detector -> crop contract | Detector metrics pass ngưỡng được duyệt; error analysis hoàn chỉnh | **PILOT QA PASS / NO-GO cấu hình không đổi** — seed `20261018` đạt mAP/overall recall/latency nhưng fail FP/image, ba critical-class gate có support và ảnh dọc; NMS chưa được chọn trên val. Chưa chạy seed `20261019`/`20261020`; chờ Owner chọn hướng remediation/cascade/hiệu chỉnh D-05 |
+| M4 — Full-scene detector | D1 bbox training/evaluation, detector -> crop contract | Detector metrics pass ngưỡng được duyệt; error analysis hoàn chỉnh | **CORRECTED SINGLE-SEED QA PASS / NO-GO cấu hình không đổi** — R10 đạt mAP50 `0,8689`, mAP50-95 `0,6253`, recall `0,8625`, latency cũ p95 `47,30 ms`, nhưng FP/image `0,5691` và critical classes 7/32/41 fail. Chưa chạy seed `20261019`/`20261020`; tiếp theo là validation-only error analysis + governed improvement contract, không mở test |
 | M5 — End-to-end/video | detector + classifier + tracking/temporal voting | Exact-label/failure taxonomy theo điều kiện; latency report | PROPOSAL |
 | M6 — Product integration | Streamlit evidence UI, simulation-only behavior, packaging/hardening. 2026-10-21: owner duyệt đại tu giao diện thành app thuyết trình 8 trang (phương án A, 4 giai đoạn); giai đoạn 1 (khung nhiều trang + điều hướng slide), giai đoạn 2 (slide Pipeline tương tác) và giai đoạn 3 (slide Dữ liệu, Quản trị dạng timeline Gate 0, Mô hình với biểu đồ tốc độ và gate D-05) và giai đoạn 4 (bảng màu thống nhất, bỏ CSS tự viết, chế độ trình chiếu với PageUp/PageDown, kiểm tra màn hình điện thoại) đã xong. Đã có: tab "DATASET01" (2026-10-17) gồm hoạt hình 8 bước xử lý dữ liệu, đồ thị theo nhóm D-02, bảng lớp và bảng nhóm; trước đó là tab "Đồ thị DATASET01" hiển thị read-only cạnh proxy WP5 và kết quả review WP5–WP29 ở mức PROVISIONAL, không tạo group truth | Browser E2E, performance gate, user guide; không có safety claim | PROPOSAL (evidence graph tab đã có) |
 
@@ -1379,6 +1425,70 @@ template giữ toàn bộ quyết định ở `PENDING`. Packet không mở Gate
   record: `docs/review/d1_checkpoint_resume_r4_implementation_record.md`.
 
 ## Technical backlog — nonblocking
+
+### D1 L4 capacity successor — R1–R7 QA FAIL; R8 source QA PASS
+
+- A separate append-only capacity package has been implemented without changing or competing with
+  the live 100-epoch Pilot R3. The eventual L4 run is train/val-only and cannot start until the
+  pilot releases the GPU.
+- The frozen matrix is `batch ∈ {4,8,12,16}` × `workers ∈ {4,8}` × three repetitions: 24 isolated
+  one-epoch subprocesses at `imgsz=1280`, `fraction=0.25`, AMP and deterministic seed `20261018`.
+- Eligibility requires three successful repetitions, throughput CV ≤5% and peak VRAM ≤80%.
+  Candidates within 95% of best median images/second are resolved by smaller batch, fewer workers,
+  then lower VRAM. OOM and generic failure remain distinct.
+- Raw step timing and L4 telemetry, exact environment/model/data/commit bindings, SQLite/text and
+  append-only execution records, evidence archive/manifest and a standalone replay verifier are
+  implemented. Output is only `PROPOSAL_NOT_OWNER_APPROVED`; it is not model-quality evidence.
+- Next gates: Owner commit/push authorization → clean commit-pinned notebook and notebook QA →
+  Owner-authorized idle-L4 capacity run → artifact QA → Owner selection approval → new
+  configuration-bound two-runtime checkpoint/resume smoke. Sealed test remains closed.
+- Canonical detail: `docs/review/d1_l4_capacity_r1_implementation_record.md`.
+- Independent R1 QA returned **FAIL (1 Critical, 5 High)**. R1 is immutable NO-GO; canonical
+  verdict: `docs/review/d1_l4_capacity_r1_independent_qa_record.md`.
+- Append-only R2 closed the original six reported attack classes: binds effective/planned batch, includes
+  inter-batch loader wait, anchors source/Git/model/data/lock independently, uses a closed OOM
+  predicate, protects every SQLite write from symlink/hardlink replacement and strictly validates
+  execution JSONL schema/timestamps/chronology. Independent QA nevertheless returned **R2 FAIL
+  (0 Critical, 1 High, 1 Medium)** because mixed non-final partial batches and boolean-as-integer
+  schema versions still passed. Canonical verdict:
+  `docs/review/d1_l4_capacity_r2_independent_qa_record.md`.
+- Append-only R3 requires every non-final measured step to be a full planned batch and exact Python
+  integer/boolean types for execution schema/governance markers. It extends the source-at-commit
+  roster. Independent QA returned **R3 FAIL (0 Critical, 0 High, 1 Medium)** because nested plan
+  `repeat:true` and telemetry schema value `2` could still pass. Canonical verdict:
+  `docs/review/d1_l4_capacity_r3_independent_qa_record.md`.
+- Append-only R4 now requires exact plan/telemetry identity schemas and telemetry schema value `1`;
+  independent QA returned **R4 FAIL (0 Critical, 0 High, 1 Medium)** because report
+  `not_model_quality_evidence=1` still passed as boolean `true`. Canonical verdict:
+  `docs/review/d1_l4_capacity_r4_independent_qa_record.md`.
+- Append-only R5 now applies exact type/value checks to the remaining boolean governance surface
+  across plan/report/proposal/manifest/environments/results/telemetry. Independent QA returned
+  **R5 FAIL (0 Critical, 1 High, 2 Medium, 1 Low)** for environment identity/schema, raw telemetry
+  types, manifest status/schema and bounded boolean-zero aggregates. Canonical verdict:
+  `docs/review/d1_l4_capacity_r5_independent_qa_record.md`.
+- Append-only R6 added exact pinned environment/version anchors, raw timing/GPU sample schemas,
+  exact evidence-manifest governance and non-boolean aggregate types. Independent QA returned
+  **R6 FAIL (0 Critical, 1 High, 1 Medium)** because valid Colab Torch `2.14.1+cu130` was coupled
+  to the M1 verifier host's wheel metadata, while invalid batch/GPU chronology and negative
+  physical telemetry passed. Canonical verdict:
+  `docs/review/d1_l4_capacity_r6_independent_qa_record.md`.
+- Append-only R7 validated the pinned Torch public version plus CUDA build suffix independently of
+  the verifier host, and enforced batch/sample chronology, attempt time bounds, frozen GPU identity
+  and physical telemetry ranges. Independent QA returned **R7 FAIL (0 Critical, 1 High, 0 Medium,
+  2 Low)** because malformed/self-consistent CUDA and arbitrary driver strings passed, direct type
+  helper behavior depended on caller patching and total VRAM used approximate equality. Canonical
+  verdict: `docs/review/d1_l4_capacity_r7_independent_qa_record.md`.
+- Append-only R8 binds the exact previously verified CUDA `13.0`, driver `580.82.07`, Torch
+  `2.14.1+cu130` and Ultralytics `8.4.172` runtime, makes helper verification self-contained and
+  compares total-VRAM identity exactly. Independent QA returned **R8 PASS (0 findings)**. This is a
+  source-candidate PASS only; it does not authorize commit/push, notebook pin or Colab execution.
+  Canonical verdict: `docs/review/d1_l4_capacity_r8_independent_qa_record.md`. Remediation detail:
+  `docs/review/d1_l4_capacity_r8_qa_remediation_report.md`. Prior detail:
+  `docs/review/d1_l4_capacity_r7_qa_remediation_report.md` and
+  `docs/review/d1_l4_capacity_r6_qa_remediation_report.md` and
+  `docs/review/d1_l4_capacity_r5_qa_remediation_report.md` and
+  `docs/review/d1_l4_capacity_r4_qa_remediation_report.md` and
+  `docs/review/d1_l4_capacity_r3_qa_remediation_report.md`.
 
 ### Legacy successor-test compatibility R1 — independent QA FAIL; R2 QA PASS
 

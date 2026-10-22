@@ -1,6 +1,6 @@
 # Project Memory — CPV301 AutoDrive
 
-Last updated: 2026-10-21 (Asia/Ho_Chi_Minh)
+Last updated: 2026-10-22 (Asia/Ho_Chi_Minh)
 Checkout: `/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector`  
 Role: PM — Project Management and Structure
 
@@ -37,9 +37,13 @@ camera/frame
 ```
 
 The product runtime still contains only the cropped-image classifier and a simulated behavior/UI
-shell. An M1 detector training package now exists in the separate `detector/` project, but no VN
-detector checkpoint has been trained or accepted. Detector runtime integration, temporal
-voting/tracking, lane/PID, and CARLA integration remain roadmap work.
+shell. A VN YOLO11s pilot checkpoint has been trained for 100 epochs and QA-passed as experiment
+evidence, but it is **not accepted** because FP/image and supported critical classes fail D-05.
+The 39 incorrectly oriented validation frames now have a QA-passed correction, local integration
+and R10 corrected-validation result. R10 raises mAP50/mAP50-95 to `0.8689`/`0.6253`, but FP/image
+is `0.5691` and supported critical classes 7/32/41 still fail, so the unchanged configuration and
+additional seeds remain NO-GO. Detector runtime integration, temporal voting/tracking, lane/PID,
+and CARLA integration remain roadmap work.
 
 ## Current implementation map
 
@@ -60,7 +64,7 @@ voting/tracking, lane/PID, and CARLA integration remain roadmap work.
   - Footer buttons use the PageUp/PageDown shortcuts (presentation clickers); they do not fire while focus is in an input.
   - The pipeline diagram turns vertical on phone user agents.
   - Checked at 1366×900 and 375×812. |
-| DATASET01 view | `src/cpv301_autodrive/dataset01_view.py` + `assets/dataset01_graph.html`, `assets/dataset01_pipeline.html` | Streamlit tab "DATASET01" with four sections: 8-step animated pipeline (frames → proxy edges → review → WP32 cross-block → 54 D-02 groups → D-03/WP33 relabel → 4 D-04 buckets → WP35 enrichment), graph (vendor split, D-02 group colour mode), class table/chart and group table/chart. Wraps the pinned `dataset_graph.py` without changing it. |
+| DATASET01 view | `src/cpv301_autodrive/dataset01_view.py` + `assets/dataset01_graph.html`, `assets/dataset01_pipeline.html` | Streamlit tab "DATASET01" with four sections. The graph now shows accepted WP36-R1 train/val/test/quarantine membership, 54 D-02 groups and 39 WP38-R1 corrected-val markers; the historical 8-step animation retains vendor split for its before/after narrative. Wraps the pinned `dataset_graph.py` without changing it. |
 | Dataset graph | `src/cpv301_autodrive/dataset_graph.py` + `assets/dataset_graph.html` | Read-only payload from the WP1 inventory, WP5 edge CSV and edge/sequence overlay annotations; fails closed on overlapping overlays or unknown outcomes. `EDGE_OVERLAYS` is a hand-maintained list: add each new edge WP (and flip `qa_passed` after independent QA). WP28-R2/WP29 are shown as awaiting QA. |
 | Tests | `tests/` | Inference, API, evaluation, behavior, and initial web rendering coverage. |
 
@@ -884,6 +888,50 @@ this prose map.
   pinned `3b0e9bca…`). Authorizes M1 package + 1-seed pilot. Not authorized: PyTorch/Ultralytics
   lock change (separate owner approval), opening the sealed test before final evaluation,
   classifier/OOD gates, deployment. Earlier entry:
+- **M0-WP38-R1 orientation correction is INDEPENDENT QA PASS (2026-10-22, 0 findings)** at the
+  evidence-only boundary (`docs/review/wp38_r1_orientation_correction_independent_qa_record.md`,
+  SHA-256 `2dbc362408895f2d7a53c68748d12cadbb58604bee14f99a8d329b404a5a7a0a`). Exact scope:
+  validation capture group `D02-C0034`, stems `1319..1357`, 39 frames stored as 540x960 JPEGs
+  whose landscape scene content is rotated clockwise. R1 keeps raw bytes and WP36-R1 membership
+  unchanged, creates lossless decoded-pixel 960x540 PNG derivatives by `CCW_90`, and transforms
+  29 YOLO boxes with `x'=y`, `y'=1-x`, `w'=h`, `h'=w` (class IDs 12 and 14). All 8 review
+  pages/39 panels passed visual QA. Image bytes are independently anchored to the pinned WP1
+  inventory; val-label bytes are regenerated from pinned WP33 boxes/taxonomy. Raw-image and label
+  tamper attacks, noncanonical/symlink source roots, and output tamper/missing/extra/symlink/
+  hardlink/partial attacks fail closed. Initial WP38 remains an immutable QA FAIL because its
+  source hashes were self-recorded. R1 PASS does **not** authorize training, evaluator/exporter
+  consumption, split changes or sealed-test access; downstream use needs a separately reviewed
+  integration. Canonical builder/manifest are
+  `scripts/build_wp38_r1_orientation_correction.py` and
+  `docs/review/generated/wp38_r1_orientation_correction_manifest.json`.
+- **M1-WP38-R1 downstream integration R4 and Colab bundle R2 are INDEPENDENT QA PASS locally
+  (2026-10-22).** Append-only `scripts/build_m1_yolo_dataset_wp38_r1_integration_r4.py` keeps all
+  WP36-R1 memberships unchanged and substitutes only stems `1319..1357` in validation with the
+  QA-passed 960x540 PNG/rotated-label pairs. The materialized local export has 3,712 train images
+  (1,912 raw + 1,800 WP35), 376 val images (337 raw + 39 corrected), no test payload and
+  `sealed_test_accessed=false`. Independent QA PASS record SHA-256 is `27425608…`.
+  `scripts/build_m1_colab_bundle_wp38_r1_r2.py` defines and verifies an exact 5,927-file
+  train/val-only roster; independent QA PASS record SHA-256 is `436a0f18…`. The official archive
+  remains unbuilt because it requires a clean committed checkout; the corrected bundle is not on
+  Drive. Drive still contains the earlier `m1_colab_train_val_backend_r1` bundle. Dataset Graph now
+  reads WP36-R1, reports 1,912/376/903 usable train/val/test, 25 quarantined raw frames, 54 groups,
+  zero mixed groups and all 39 corrected markers while leaving pinned `dataset_graph.py` unchanged.
+- **Corrected-validation R10 result is independently QA PASS / unchanged configuration NO-GO
+  (2026-10-22).** Evaluators R1–R8 remain immutable QA FAIL. R9 source QA passed its exact attack
+  suite but its first live run failed closed after inference because it compared parsed JSON with
+  the pre-serialization Python object; the preserved failure record SHA-256 is `35c9e218…` and its
+  preview metrics are not accepted. Append-only R10 compares in canonical JSON-normalized space
+  while retaining exact intended-byte, content binding, descriptor/inode/mode/link and sealed-safe
+  checks. Source QA PASS record SHA-256 is `7cd42e92…`; the real result and report then received
+  independent QA PASS with record SHA-256 `9940b31c…`. On 376 val frames/560 boxes, R10 reports
+  mAP50 `0.8689177`, mAP50-95 `0.6253165`, recall `0.8625`, FP/image `0.5691489`, precision
+  `0.6929699` at confidence `0.20`, and unknown false recognition `4/10`. mAP and overall recall
+  pass D-05 single-seed checks, but FP/image fails and supported critical classes 7 (`0.5946`), 32
+  (`0.6207`) and 41 (`0.5714`) fail. The authoritative result is content URI
+  `sha256:b33e247038c237d059207f75ad8ff33e0b5d6d00e4380826cd35ae85aefa02d5`;
+  `test_included=false` and `sealed_test_accessed=false`. Preserve this corrected single-seed
+  baseline, but do not run seeds 20261019/20261020 or retrain unchanged. Next work is validation-only
+  FP/critical-class error analysis and a governed, QA-passed improvement experiment contract.
 - **D-05 PROPOSAL (2026-10-18)**: `docs/review/d05_proposal.md`, detector-first, awaiting owner.
   Recommends D05-B (pilot 1 seed, final 3 seeds), test gates mAP50 ≥ 0.60, mAP50-95 ≥ 0.40,
   class-agnostic recall ≥ 0.85, FP/image ≤ 0.30, per-class recall ≥ 0.70 for 10 critical classes
@@ -1234,17 +1282,64 @@ Snapshot 2026-10-18 (details in the dated entries under "Verified current state"
      `docs/review/d1_checkpoint_resume_r4_r6_l4_smoke_report.md`, and
      `docs/review/d1_checkpoint_resume_r4_r6_l4_artifact_independent_qa_record.md` (SHA-256
      `fea054ac1667446fc02d0a6fb0d326f1d2689f9693342a28643c448840b7ca14`).
-     The authorized 100-epoch pilot later reached a verified `epoch-0014` checkpoint, but three
-     failed resume attempts exposed an overly strict R2 guard that accepted only one fresh attempt
-     and one resume. Append-only recovery R3 now accepts one fresh attempt, zero or more failed
-     resumes and one active/final resume while retaining chronology, runtime identity, binding and
-     sealed-test checks. Independent source and notebook QA both **PASSed with 0 findings**.
-     Implementation commit `e20a69541e3a6327739238fc71691109ce8f51d0` and notebook-pin commit
-     `904ba8083cfc6cdf7e5aa0fc3c01319efc519d99` were pushed. A new NVIDIA L4 resume started at
-     `2026-10-21T08:05:38Z`; direct Colab and Drive readback confirmed advancement without restart
-     through `epoch-0016`, binding `fc81808e...`, execution status `STARTED`, no terminal error and
-     `sealed_test_accessed=false`. The pilot is still running and is not a completed/accepted model;
-     final result packaging, evaluation and independent artifact QA remain pending.
+     The authorized 100-epoch pilot later exposed an overly strict R2 resume guard; append-only R3
+     repaired the retry-aware chronology and source/notebook QA PASSed. The recovered pilot then
+     completed `epoch-0100` on NVIDIA L4. R5 live verification and append-only Drive receipts bind
+     `status=SUCCEEDED`, the eight-member result package, SQLite/text logs, five distinct runtime
+     digests and `sealed_test_accessed=false`; independent artifact QA PASSed. The registered
+     `best.pt` was evaluated on validation only after the bounded-memory evaluation repair passed
+     source QA. Measured pilot results are mAP50 `0.8292`, mAP50-95 `0.5888`, recall `0.8571`,
+     FP/image `0.5505`, and M1 Pro/MPS latency p95 `47.30 ms` at confidence `0.15` with caller-fixed
+     NMS IoU `0.70`. Critical supported classes `7`, `32`, and `41` fail their recall gates and the
+     540x960 subset has recall `0.2414`. The exact pilot report SHA-256 `62a33ea...` received
+     append-only independent QA PASS in `docs/review/d1_pilot_report_r1_independent_qa_record.md`.
+     The unchanged configuration is **NO-GO** for seeds `20261019`/`20261020`; NMS selection on val,
+     remediation/Owner direction, three-seed threshold lock and sealed-test evaluation remain
+     unfinished. No sealed-test access log exists.
+     In parallel, D1 L4 capacity successor R1 received **INDEPENDENT QA FAIL (1 Critical, 5 High)**:
+     silent Ultralytics auto-batch reduction, throughput excluding loader wait, forgeable verifier
+     trust roots/extra train args, generic-failure-as-OOM, SQLite symlink write and permissive JSONL.
+     R1 remains NO-GO and hash-pinned by
+     `docs/review/d1_l4_capacity_r1_independent_qa_record.md` (SHA-256 `37ce181c…`). Append-only R2
+     implemented the six initial remediations but received **INDEPENDENT QA FAIL (0 Critical,
+     1 High, 1 Medium)** because multiple non-final partial batches still passed replay and JSON
+     boolean `true` passed as integer schema version `1`. R2 is now immutable NO-GO at
+     `docs/review/d1_l4_capacity_r2_independent_qa_record.md` (SHA-256 `94c9c2a0…`). Append-only R3
+     adds exact non-final full-batch sequencing plus type-strict schema/governance markers and is
+     independently reviewed **FAIL (0 Critical, 0 High, 1 Medium)** because nested plan
+     `repeat:true` and telemetry schema value `2` could still pass inherited equality/replay.
+     R3 is immutable NO-GO at `docs/review/d1_l4_capacity_r3_independent_qa_record.md` (SHA-256
+     `46cedced…`). Append-only R4 enforced exact plan/telemetry identity schemas and exact telemetry
+     schema value `1`, but received **INDEPENDENT QA FAIL (0 Critical, 0 High, 1 Medium)** because report field
+     `not_model_quality_evidence=1` passed as boolean `true`; it is immutable NO-GO at
+     `docs/review/d1_l4_capacity_r4_independent_qa_record.md` (SHA-256 `a928b901…`). Append-only R5
+     type/value-checked the complete remaining governance-boolean surface but independent review
+     returned **FAIL (0 Critical, 1 High, 2 Medium, 1 Low)**: environment schema
+     and runtime identities remained forgeable, raw timing/GPU telemetry was type-loose, manifest
+     status/schema was not exact, and boolean zeros passed bounded aggregates. R5 is immutable
+     NO-GO at `docs/review/d1_l4_capacity_r5_independent_qa_record.md` (SHA-256 `895d1903…`).
+     Append-only R6 added exact environment/version anchors, exact raw telemetry/manifest schemas
+     and non-boolean aggregate types, but independent QA returned **FAIL (0 Critical, 1 High,
+     1 Medium)**: valid Colab Torch `2.14.1+cu130` was incorrectly compared with the verifier
+     host's local wheel metadata, while invalid batch-index/GPU chronology and negative physical
+     telemetry still passed. R6 is immutable NO-GO at
+     `docs/review/d1_l4_capacity_r6_independent_qa_record.md` (SHA-256 `05220777…`). Append-only R7
+     validated the pinned Torch public version and CUDA build suffix independently of the QA host,
+     and replayed batch/sample chronology, frozen GPU identity and physical ranges. Independent QA
+     returned **R7 FAIL (0 Critical, 1 High, 0 Medium, 2 Low)** because malformed/self-consistent
+     CUDA and arbitrary driver strings passed, direct type-helper behavior still depended on caller
+     patching, and total VRAM used approximate equality. R7 is immutable NO-GO at
+     `docs/review/d1_l4_capacity_r7_independent_qa_record.md` (SHA-256 `8efc7c0b…`). Append-only R8
+     binds the exact previously verified L4 runtime, makes helper verification self-contained and
+     enforces exact total-VRAM identity. Independent QA returned **R8 PASS with 0 findings** at
+     `docs/review/d1_l4_capacity_r8_independent_qa_record.md` (SHA-256 `f5593c1d…`). This is a
+     source-candidate PASS only: commit/push and a clean commit-pinned notebook still require an
+     explicit Owner decision, and the capacity run must wait until the current pilot releases L4.
+     The fixed 24-attempt train/val-only design, 20% VRAM headroom, 5% throughput-CV gate and
+     `PROPOSAL_NOT_OWNER_APPROVED` boundary remain. No Colab capacity run is authorized; it must wait
+     for an idle L4 after the pilot, then still requires artifact QA, Owner selection approval and a
+     configuration-bound two-runtime resume smoke. Canonical source verdict:
+     `docs/review/d1_l4_capacity_r8_independent_qa_record.md`.
   5. The detector prototype in the app comes after that. The classifier track (E1–E4), video and CARLA come later.
 - Existing MVP is unchanged: UV environment, Streamlit (project status, DATASET01 tab and E0 simulation), cropped GTSRB classifier E0 (frozen control) and simulated behaviour.
 
