@@ -1,0 +1,73 @@
+{
+  "artifacts": {
+    "docs/review/assets/d1_vla_r1/review_page_01.jpg": "cf710a2dfb8ec321ccd673f45e9026e649c0de21410e7300b21b770c3406c577",
+    "docs/review/assets/d1_vla_r1/review_page_02.jpg": "5831a495c55c7ec9e1c81a74e6c43cb0eb8dd0e27da06a2584332cf32d5f5125",
+    "docs/review/assets/d1_vla_r1/review_page_03.jpg": "43612bb0a08609f42752ae8f9b5f5c37d11130a5aca4096c208eeb8b91f1cec0",
+    "docs/review/assets/d1_vla_r1/review_page_04.jpg": "ac2afb43e02ce4cd915e14eca37847df8f5f2639a8adb4772e65b58cd5f294c4",
+    "docs/review/assets/d1_vla_r1/review_page_05.jpg": "c15545f40e1da9ea010a058f529be36d94dde808b573942f87c2937e9dfc32fe",
+    "docs/review/assets/d1_vla_r1/review_page_06.jpg": "e22578344802ff9021b218e032569e3d9e58f35e4144e13e43aed1180821c3dc",
+    "docs/review/assets/d1_vla_r1/review_page_07.jpg": "ea691a4603a6968b9b914bceb9b085002db49c043448273c307b9999042a7da9",
+    "docs/review/assets/d1_vla_r1/review_page_08.jpg": "5d41f01950d0a0763db0697691cf57eb9b4f6985315cb78925dc323648578951",
+    "docs/review/assets/d1_vla_r1/review_page_09.jpg": "f495120a56059e7084159458b00ef368d0659aa0a6cd4463ba2712a1ec470d52",
+    "docs/review/assets/d1_vla_r1/review_page_10.jpg": "968469f982c1ea5862ec96448e5f3c751659796f73043cbd841f6d267af0c3c9",
+    "docs/review/assets/d1_vla_r1/review_page_11.jpg": "1e30e055116fbc578e22b2986d87f656b689051f6749dcb643d9e7ae1354b69d",
+    "docs/review/assets/d1_vla_r1/review_page_12.jpg": "12c75b26afdc500eddc47919f9b97a741103ecdb758c5b2cc89511ae8fdb6623",
+    "docs/review/d1_vla_r1_report.md": "93ee9566e7b237e7bc61ab7e858a2b17db76cebf0865ae178a7017022b8d0e9f",
+    "docs/review/generated/d1_vla_r1_background_fp_strata.csv": "ee49a5c1456b0ca2476da7cd9b0173f94194137e6962d150bb4313e4580569c2",
+    "docs/review/generated/d1_vla_r1_decisions.csv": "5051241fdb11b6150756c3c2bcf1521d33147e7a86c445a554d782cd3567611b",
+    "docs/review/generated/d1_vla_r1_proposed_val_labels.csv": "70773b4be23e223ae149e616098d7d91d1042cdcfd689f220030fa83fbd32356"
+  },
+  "boundary": "VALIDATION_LABEL_AUDIT_PROPOSAL_ONLY_NO_RELABEL_NO_GATE_CHANGE_NO_TRAINING_NO_SEALED_TEST",
+  "gates_changed": false,
+  "package": "D1-VLA-R1",
+  "pillow_version": "13.0.0",
+  "pinned_sources": {
+    "detector/m1/error_analysis_r1.py": "6268c3fec6695fa568ed2f7ac59e824b1aad9fc537cf7df729a7040dd38d8192",
+    "docs/review/d1_ea_r1_hypothesis_correction_r1.md": "f0c63f99c92f2ac6f0de6bded72af8b41113a63327aa6f89bad8533e75e0d95c",
+    "docs/review/d1_ea_r1_independent_qa_record.md": "273c63563634d0ba002b9e5e0c9728e66e638477703715d33f2e80967262d65e",
+    "docs/review/d1_vla_r1_review_notes.csv": "7fd81195e50992dcf45c0b4fc22499f3a0104a26a8d46e305a1153a4e8d26cec",
+    "docs/review/generated/d1_ea_r1_manifest.json": "d87f090e11d7acc547fb49eeb76935e2e0bcc743f3bc3fba56ab23a1cd8e07ab",
+    "docs/review/generated/d1_ea_r1_predictions.csv": "cb3cb05f0cadc7d2c3e077120d5b1311648247f74a9648e287da1c4be915f1dd"
+  },
+  "sealed_test_accessed": false,
+  "status": "D1_VLA_R1_AWAITING_INDEPENDENT_QA",
+  "summary": {
+    "background_false_positives": 214,
+    "baseline": {
+      "agnostic_recall": 0.8625,
+      "false_positives": 214,
+      "fp_per_image": 0.569149,
+      "ground_truth": 560,
+      "precision": 0.69297
+    },
+    "decisions": {
+      "NOT_A_SIGN": 7,
+      "OUT_OF_TAXONOMY_LABELLED_UNKNOWN": 4,
+      "OUT_OF_TAXONOMY_UNLABELLED": 9,
+      "UNCLEAR": 2,
+      "UNLABELLED_IN_TAXONOMY": 116
+    },
+    "no_label_candidates": 138,
+    "proposed_boxes": 104,
+    "unique_in_taxonomy_unlabelled": 112,
+    "what_if_all": {
+      "added_boxes": 112,
+      "agnostic_recall": 0.885417,
+      "false_positives": 102,
+      "fp_per_image": 0.271277,
+      "ground_truth": 672,
+      "precision": 0.853659
+    },
+    "what_if_high_medium": {
+      "added_boxes": 104,
+      "agnostic_recall": 0.884036,
+      "false_positives": 110,
+      "fp_per_image": 0.292553,
+      "ground_truth": 664,
+      "precision": 0.842181
+    }
+  },
+  "test_included": false,
+  "training_authorized": false,
+  "validation_relabelled": false
+}

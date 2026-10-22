@@ -1,0 +1,139 @@
+stem,pred_rank,pred_class,decision,proposed_class,class_confidence,note
+0024,1,39,NOT_A_SIGN,,,DB cafe shop logo
+0046,1,39,NOT_A_SIGN,,,DB cafe shop logo
+0048,1,5,NOT_A_SIGN,,,shop signboard
+0070,1,39,NOT_A_SIGN,,,DB cafe shop logo
+0071,1,39,NOT_A_SIGN,,,DB cafe shop logo
+0313,2,12,NOT_A_SIGN,,,bus
+0327,0,12,OUT_OF_TAXONOMY_UNLABELLED,,,"blue directional guide board, not in the 54-class taxonomy"
+0328,2,12,NOT_A_SIGN,,,back of a round sign plate; no sign face visible
+0329,0,12,OUT_OF_TAXONOMY_UNLABELLED,,,"blue directional guide board, not in the 54-class taxonomy"
+0839,1,7,UNCLEAR,,,tiny blurred object above traffic
+1208,0,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1208,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1208,3,12,UNLABELLED_IN_TAXONOMY,12,HIGH,"R.415a lane-allocation board fully visible, unlabelled"
+1208,4,40,UNLABELLED_IN_TAXONOMY,41,MEDIUM,left speed disc reads 40 on sharper frames of the same pole; predicted 80 km/h (40) is the wrong value
+1209,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1209,1,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1209,3,40,UNLABELLED_IN_TAXONOMY,41,MEDIUM,left speed disc reads 40 on sharper frames of the same pole; predicted 80 km/h (40) is the wrong value
+1210,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1210,1,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1210,2,40,UNLABELLED_IN_TAXONOMY,41,MEDIUM,left speed disc reads 40 on sharper frames of the same pole; predicted 80 km/h (40) is the wrong value
+1210,3,12,UNLABELLED_IN_TAXONOMY,12,HIGH,"R.415a lane-allocation board fully visible, unlabelled"
+1210,4,39,UNLABELLED_IN_TAXONOMY,39,MEDIUM,right speed disc reads 60 on sharper frames of the same pole
+1211,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1211,1,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1211,2,12,UNLABELLED_IN_TAXONOMY,12,HIGH,"R.415a lane-allocation board fully visible, unlabelled"
+1211,3,39,UNLABELLED_IN_TAXONOMY,39,MEDIUM,right speed disc reads 60 on sharper frames of the same pole
+1212,0,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1212,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1212,2,40,UNLABELLED_IN_TAXONOMY,41,MEDIUM,left speed disc reads 40 on sharper frames of the same pole; predicted 80 km/h (40) is the wrong value
+1212,3,39,UNLABELLED_IN_TAXONOMY,39,MEDIUM,right speed disc reads 60 on sharper frames of the same pole
+1212,5,12,UNLABELLED_IN_TAXONOMY,12,HIGH,"R.415a lane-allocation board fully visible, unlabelled"
+1213,0,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1213,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1213,2,12,UNLABELLED_IN_TAXONOMY,12,HIGH,"R.415a lane-allocation board fully visible, unlabelled"
+1214,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1214,1,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1215,0,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1215,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1215,3,12,OUT_OF_TAXONOMY_UNLABELLED,,,"camera-surveillance board (class 31 family, routed to UNKNOWN) not labelled in WP33 for this frame"
+1216,0,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1216,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1217,0,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1217,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1217,2,12,OUT_OF_TAXONOMY_UNLABELLED,,,"camera-surveillance board (class 31 family, routed to UNKNOWN) not labelled in WP33 for this frame"
+1217,4,39,UNLABELLED_IN_TAXONOMY,39,MEDIUM,right speed disc reads 60 on sharper frames of the same pole
+1218,0,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1218,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1218,3,12,OUT_OF_TAXONOMY_UNLABELLED,,,"camera-surveillance board (class 31 family, routed to UNKNOWN) not labelled in WP33 for this frame"
+1218,5,39,UNLABELLED_IN_TAXONOMY,39,MEDIUM,right speed disc reads 60 on sharper frames of the same pole
+1219,1,12,OUT_OF_TAXONOMY_UNLABELLED,,,"camera-surveillance board (class 31 family, routed to UNKNOWN) not labelled in WP33 for this frame"
+1219,3,30,OUT_OF_TAXONOMY_UNLABELLED,,,"camera-surveillance board (class 31 family, routed to UNKNOWN) not labelled in WP33 for this frame"
+1220,1,12,OUT_OF_TAXONOMY_UNLABELLED,,,"camera-surveillance board (class 31 family, routed to UNKNOWN) not labelled in WP33 for this frame"
+1221,1,12,UNLABELLED_IN_TAXONOMY,12,MEDIUM,R.415a board partly cut at the left frame edge
+1223,0,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1223,1,39,UNLABELLED_IN_TAXONOMY,39,HIGH,speed disc clearly reads 60
+1223,2,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1224,0,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1224,2,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1225,0,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed motorbike/three-wheeler disc on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26"
+1225,3,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc with red rim on pole 1208-1229: 40/60 P.127 discs, P.130 disc, P.111a+P.111b disc and plate; GT labels only class 26; X visible on sharper frames 1236/1243"
+1228,4,39,UNLABELLED_IN_TAXONOMY,41,HIGH,speed disc clearly reads 40; predicted 60 km/h (39) is the wrong value
+1229,3,39,UNLABELLED_IN_TAXONOMY,39,HIGH,speed disc clearly reads 60
+1236,2,10,UNLABELLED_IN_TAXONOMY,10,HIGH,P.130 blue disc with red X clearly visible
+1242,2,23,UNLABELLED_IN_TAXONOMY,23,HIGH,P.111a+P.111b disc above CAM plate clearly visible
+1243,0,10,UNLABELLED_IN_TAXONOMY,10,HIGH,P.130 blue disc with red X clearly visible
+1243,1,23,UNLABELLED_IN_TAXONOMY,23,HIGH,P.111a+P.111b disc above CAM plate clearly visible
+1244,0,23,UNLABELLED_IN_TAXONOMY,23,HIGH,P.111a+P.111b disc above CAM plate clearly visible
+1245,0,23,UNLABELLED_IN_TAXONOMY,23,HIGH,P.111a+P.111b disc above CAM plate clearly visible
+1321,0,12,OUT_OF_TAXONOMY_UNLABELLED,,,phone/information board
+1324,0,12,OUT_OF_TAXONOMY_LABELLED_UNKNOWN,,,camera-surveillance board already labelled UNKNOWN in WP33 (IoU >= 0.64); counted as FP by design
+1326,0,12,OUT_OF_TAXONOMY_LABELLED_UNKNOWN,,,camera-surveillance board already labelled UNKNOWN in WP33 (IoU >= 0.64); counted as FP by design
+1327,0,12,OUT_OF_TAXONOMY_LABELLED_UNKNOWN,,,camera-surveillance board already labelled UNKNOWN in WP33 (IoU >= 0.64); counted as FP by design
+1328,0,30,OUT_OF_TAXONOMY_LABELLED_UNKNOWN,,,camera-surveillance board already labelled UNKNOWN in WP33 (IoU >= 0.64); counted as FP by design
+1328,1,23,UNLABELLED_IN_TAXONOMY,14,MEDIUM,"red-ring truck prohibition disc with 3.5t; P.106-family, exact QCVN variant to confirm"
+1329,1,12,UNLABELLED_IN_TAXONOMY,12,HIGH,"R.415a lane-allocation board fully visible, unlabelled"
+1330,1,8,UNCLEAR,,,small blue panel with car pictogram; possibly part of an R.415a board
+1331,0,12,UNLABELLED_IN_TAXONOMY,12,HIGH,"R.415a lane-allocation board fully visible, unlabelled"
+1332,1,23,UNLABELLED_IN_TAXONOMY,14,MEDIUM,"red-ring truck prohibition disc with 3.5t; P.106-family, exact QCVN variant to confirm"
+1342,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1342,2,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1343,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1343,2,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1344,1,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1345,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1345,2,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1346,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1346,2,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1347,1,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1347,2,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1348,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1349,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1349,2,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1350,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1350,2,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1351,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1351,2,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1352,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1352,2,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1352,3,5,UNLABELLED_IN_TAXONOMY,0,LOW,"small orange warning triangle with a figure, most likely W.224; predicted 0 and 5 on the same triangle"
+1353,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1353,3,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1353,4,5,UNLABELLED_IN_TAXONOMY,0,LOW,"small orange warning triangle with a figure, most likely W.224; predicted 0 and 5 on the same triangle"
+1354,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1354,3,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1354,4,5,UNLABELLED_IN_TAXONOMY,0,LOW,"small orange warning triangle with a figure, most likely W.224; predicted 0 and 5 on the same triangle"
+1354,5,0,UNLABELLED_IN_TAXONOMY,0,LOW,"small orange warning triangle with a figure, most likely W.224; predicted 0 and 5 on the same triangle"
+1355,1,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1355,2,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1355,4,5,UNLABELLED_IN_TAXONOMY,0,LOW,"small orange warning triangle with a figure, most likely W.224; predicted 0 and 5 on the same triangle"
+1355,5,0,UNLABELLED_IN_TAXONOMY,0,LOW,"small orange warning triangle with a figure, most likely W.224; predicted 0 and 5 on the same triangle"
+1356,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1356,3,0,UNLABELLED_IN_TAXONOMY,0,LOW,"small orange warning triangle with a figure, most likely W.224; predicted 0 and 5 on the same triangle"
+1356,4,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1356,6,5,UNLABELLED_IN_TAXONOMY,0,LOW,"small orange warning triangle with a figure, most likely W.224; predicted 0 and 5 on the same triangle"
+1357,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,"blue disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1357,1,23,UNLABELLED_IN_TAXONOMY,23,MEDIUM,"slashed disc on corrected portrait frames 1342-1357: same pole type, P.130 disc and P.111a+P.111b disc"
+1357,5,5,UNLABELLED_IN_TAXONOMY,0,LOW,"small orange warning triangle with a figure, most likely W.224; predicted 0 and 5 on the same triangle"
+1357,6,0,UNLABELLED_IN_TAXONOMY,0,LOW,"small orange warning triangle with a figure, most likely W.224; predicted 0 and 5 on the same triangle"
+1820,0,2,UNLABELLED_IN_TAXONOMY,2,HIGH,P.102 no-entry disc clearly visible
+1820,1,3,UNLABELLED_IN_TAXONOMY,3,HIGH,R.302a keep-right disc below the no-entry disc
+1821,0,2,UNLABELLED_IN_TAXONOMY,2,HIGH,P.102 no-entry disc clearly visible
+1823,2,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1824,3,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1825,1,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1826,2,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1827,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1827,1,2,UNLABELLED_IN_TAXONOMY,2,LOW,P.102 disc partly cut at the frame edge
+1828,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1829,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1830,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1831,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1832,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1833,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1834,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1834,2,2,UNLABELLED_IN_TAXONOMY,2,LOW,P.102 disc partly cut at the frame edge
+1835,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1836,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
+1837,0,10,UNLABELLED_IN_TAXONOMY,10,MEDIUM,P.130 disc in deep shadow left of a truck-ban sign; confirmed at 3.5x brightness on 1830
