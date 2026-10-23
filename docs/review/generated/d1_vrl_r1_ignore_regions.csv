@@ -1,0 +1,79 @@
+proposal_id,stem,derived_key,x1,y1,x2,y2,reason,source_review_ids
+R001,1208,23,239.36,144.93,262.77,165.63,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V011
+R002,1208,10,239.71,129.80,263.76,150.97,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V012
+R004,1208,41,205.84,89.49,232.71,116.46,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V014
+R005,1209,10,207.91,132.26,232.64,155.15,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V015
+R006,1209,23,207.34,148.31,231.41,169.51,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V016
+R007,1209,41,172.91,91.75,201.01,119.29,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V017
+R008,1210,10,188.08,141.76,213.43,164.00,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V018
+R009,1210,23,187.24,157.43,211.58,179.18,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V019
+R010,1210,41,152.71,99.52,180.76,127.48,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V020
+R012,1210,39,173.14,100.61,204.14,129.37,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V022
+R013,1211,10,185.03,159.07,210.65,183.37,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V023
+R014,1211,23,184.43,175.54,210.03,197.70,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V024
+R016,1211,39,171.17,118.44,199.46,146.68,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V026
+R017,1212,23,156.85,182.24,182.39,204.79,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V027
+R018,1212,10,156.97,165.72,183.64,188.82,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V028
+R019,1212,41,119.13,121.07,149.78,151.10,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V029
+R020,1212,39,142.41,123.15,173.48,152.30,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V030
+R022,1213,23,143.53,181.12,168.92,204.04,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V032
+R023,1213,10,143.76,164.58,170.77,188.06,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V033
+R025,1214,10,126.74,169.86,154.24,194.84,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V035
+R026,1214,23,125.50,186.75,153.00,211.50,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V036
+R027,1215,23,79.79,195.40,107.79,219.95,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V037
+R028,1215,10,81.27,176.96,109.17,202.75,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V038
+R029,1216,23,49.29,191.31,78.32,216.87,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V040
+R030,1216,10,48.74,172.32,79.62,199.50,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V041
+R031,1217,23,28.48,198.00,58.33,225.54,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V042
+R032,1217,10,29.11,178.99,60.08,207.57,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V043
+R033,1217,39,10.74,129.72,49.13,165.70,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V045
+R034,1218,23,8.59,208.00,38.69,234.26,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V046
+R035,1218,10,9.22,187.14,40.27,216.33,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V047
+R036,1218,39,0.00,136.61,27.04,172.53,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V049
+R038,1223,23,18.03,124.06,58.15,159.14,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V054
+R039,1223,39,0.00,34.44,46.21,80.09,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V055
+R040,1223,10,20.41,99.23,60.17,135.65,"refined box covers only the blue centre, not the full disc and rim",V056
+R041,1224,23,74.30,92.33,112.82,126.13,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V057
+R042,1224,10,75.98,66.58,114.95,102.52,"refined box covers only the blue centre, not the full disc and rim",V058
+R043,1225,23,117.51,93.60,157.43,129.73,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V059
+R044,1225,10,120.35,67.85,159.30,104.70,"refined box covers only the blue centre, not the full disc and rim",V060
+R045,1228,41,74.81,0.00,129.14,37.49,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V061
+R046,1229,39,105.85,0.00,164.44,33.04,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V062
+R047,1236,10,13.83,0.00,80.32,43.80,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V063
+R048,1242,23,0.00,59.22,76.66,155.76,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V064
+R049,1243,10,0.00,0.00,91.12,71.64,refined box covers only part of the P.130 disc,V065
+R050,1243,23,0.00,44.29,83.15,149.28,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V066
+R051,1244,23,0.00,13.83,101.52,131.11,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V067
+R052,1245,23,0.00,0.00,78.17,101.49,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V068
+R057,1342,10,293.57,116.67,310.77,132.70,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V079
+R058,1342,23,294.13,128.03,310.26,143.92,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V080
+R059,1343,10,266.93,114.06,286.05,131.85,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V081
+R060,1343,23,267.76,126.58,285.33,143.68,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V082
+R061,1344,23,273.53,129.08,290.86,146.10,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V083
+R062,1345,10,277.67,127.82,296.29,144.66,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V084
+R063,1345,23,278.48,139.79,295.54,156.28,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V085
+R064,1346,10,281.94,153.16,299.30,169.49,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V086
+R065,1346,23,282.12,164.57,299.46,181.58,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V087
+R066,1347,23,272.12,168.64,290.99,185.70,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V088
+R067,1347,10,271.78,155.41,291.22,174.30,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V089
+R068,1348,10,239.09,158.87,258.21,177.55,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V090
+R069,1349,10,209.05,155.00,228.41,174.21,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V091
+R070,1349,23,208.92,168.52,227.44,186.39,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V092
+R071,1350,10,210.47,152.01,231.49,171.32,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V093
+R072,1350,23,210.86,165.66,230.59,183.32,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V094
+R073,1351,10,203.48,152.62,223.92,172.17,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V095
+R074,1351,23,203.26,165.95,222.59,184.06,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V096
+R075,1352,10,189.03,149.57,210.49,170.33,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V097
+R076,1352,23,189.77,164.14,209.45,182.48,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V098
+R077,1353,10,162.59,148.93,185.23,169.41,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V100
+R078,1353,23,162.71,162.83,183.97,181.89,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V101
+R079,1354,10,132.04,143.65,153.42,163.53,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V103
+R080,1354,23,132.05,157.53,151.46,176.79,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V104
+R081,1355,23,112.74,171.17,134.13,190.73,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V107
+R082,1355,10,113.62,156.58,135.30,177.01,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V108
+R083,1356,10,93.61,164.09,115.67,184.83,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V111
+R084,1356,23,93.10,179.01,113.19,198.46,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V113
+R085,1357,10,79.56,159.23,102.45,181.17,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V115
+R086,1357,23,79.12,174.48,100.53,194.45,no reliable colour region: small low-saturation sign (owner decision 2026-10-22),V116
+R090,1823,10,323.56,429.14,373.61,478.38,refined box too narrow for the shadowed disc,V122
+R091,1824,10,314.26,437.18,365.85,488.61,refined box covers only half of the shadowed disc,V123

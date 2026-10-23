@@ -932,6 +932,18 @@ this prose map.
   `test_included=false` and `sealed_test_accessed=false`. Preserve this corrected single-seed
   baseline, but do not run seeds 20261019/20261020 or retrain unchanged. Next work is validation-only
   FP/critical-class error analysis and a governed, QA-passed improvement experiment contract.
+- **D1 validation relabel D1-VRL-R3 is INDEPENDENT QA PASS and OWNER ACCEPTED (2026-10-23) as
+  derived validation labels — not yet the evaluation authority.** Chain: D1-EA-R1 (QA PASS) exported
+  the R10 predictions; D1-VLA-R1 (QA PASS) proposed 104 unlabelled in-taxonomy boxes; D1-VRL-R1
+  failed QA (H1: misstated premise for 72 ignore items); D1-VRL-R2 hand-drew 38 boxes (QA PASS, M1);
+  D1-VRL-R3 fixed R039/R046 and machine-checks eye columns (QA record `33ef3935…`, 0/0/0/4 Low).
+  Accepted: module `34b89e32…`, manifest `87dd0fd9…`, notes `b653abb3…`; derived labels
+  `data/processed/m1_yolo_val_vrl_r3/labels/val/` (git-ignored, roster `dc72ebd9…`) = R4 val labels
+  `e64345bb…` + 64 boxes, plus 40 ignore regions (locator ≤ 17.5 px). Diagnostic at conf 0.20 on
+  the D1-EA-R1 predictions: FP 214 → 150 (independent, 0.399/image, still above the 0.30 gate) →
+  110 (circular ignore part; never cite as a gate result). R10 stays the authoritative baseline
+  until a QA-passed re-evaluation contract runs on these labels. Record:
+  `docs/review/d1_vrl_r3_owner_acceptance_record.md`.
 - **D-05 PROPOSAL (2026-10-18)**: `docs/review/d05_proposal.md`, detector-first, awaiting owner.
   Recommends D05-B (pilot 1 seed, final 3 seeds), test gates mAP50 ≥ 0.60, mAP50-95 ≥ 0.40,
   class-agnostic recall ≥ 0.85, FP/image ≤ 0.30, per-class recall ≥ 0.70 for 10 critical classes

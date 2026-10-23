@@ -61,6 +61,9 @@ Earlier WP3–WP27 packages use `*_report.md` / `*_qa_correction_record.md` name
 | Corrected-val evaluator | `d1_corrected_val_r10_independent_qa_record.md` (R1–R8 FAIL, R9 live run failed) | PASS |
 | Corrected-val result | `d1_corrected_val_r10_result_independent_qa_record.md` | PASS (configuration NO-GO) |
 | Error analysis packet | `d1_corrected_val_r10_error_analysis_r1_independent_qa_record.md` | PASS |
+| D1-EA-R1 error evidence (inference export) | `d1_ea_r1_independent_qa_record.md` (+ `d1_ea_r1_hypothesis_correction_r1.md`) | PASS |
+| D1-VLA-R1 val label-completeness audit | `d1_vla_r1_independent_qa_record.md` (+ `d1_vla_r1_correction_r1.md`) | PASS (proposal only) |
+| D1-VRL val relabel | `d1_vrl_r3_independent_qa_record.md` (R1 FAIL, R2 PASS with M1); owner acceptance `d1_vrl_r3_owner_acceptance_record.md` | PASS — accepted as derived val labels, not yet evaluation authority |
 | Cascade classifier (track B) | `d1_cascade_classifier_r2_independent_qa_record.md` | PASS |
 | Cascade dataset / Colab | `d1_cascade_dataset_r2_…`, `d1_cascade_colab_r2_…` | FAIL (latest) |
 

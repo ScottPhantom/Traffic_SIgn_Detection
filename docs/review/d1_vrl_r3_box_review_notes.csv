@@ -1,0 +1,105 @@
+proposal_id,stem,derived_key,source_review_ids,box_decision,x1,y1,x2,y2,eye_x1,eye_y1,eye_x2,eye_y2,note
+R001,1208,23,V011,IGNORE_REGION,,,,,,,,,locator 16x14 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R002,1208,10,V012,IGNORE_REGION,,,,,,,,,locator 16x14 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R003,1208,12,V013,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R004,1208,41,V014,HAND_DRAWN,211,95,228,112,211,94,228,112,"locator 18x18 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R005,1209,10,V015,IGNORE_REGION,,,,,,,,,locator 16x15 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R006,1209,23,V016,IGNORE_REGION,,,,,,,,,locator 16x14 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R007,1209,41,V017,HAND_DRAWN,179,97,196,115,178,97,196,114,"locator 19x18 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R008,1210,10,V018,IGNORE_REGION,,,,,,,,,locator 17x15 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R009,1210,23,V019,IGNORE_REGION,,,,,,,,,locator 16x14 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R010,1210,41,V020,HAND_DRAWN,158,105,176,123,157,104,175,122,"locator 19x19 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R011,1210,12,V021,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R012,1210,39,V022,HAND_DRAWN,179,107,197,123,179,107,197,123,"locator 21x19 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R013,1211,10,V023,IGNORE_REGION,,,,,,,,,locator 17x16 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R014,1211,23,V024,IGNORE_REGION,,,,,,,,,locator 17x15 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R015,1211,12,V025,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R016,1211,39,V026,HAND_DRAWN,176,124,195,142,177,124,194,141,"locator 19x19 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R017,1212,23,V027,IGNORE_REGION,,,,,,,,,locator 17x15 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R018,1212,10,V028,HAND_DRAWN,164,171,178,185,163,170,178,185,"locator 18x15 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R019,1212,41,V029,HAND_DRAWN,125,127,144,146,125,126,144,145,"locator 20x20 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R020,1212,39,V030,HAND_DRAWN,148,129,167,146,149,129,167,146,"locator 21x19 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R021,1212,12,V031,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R022,1213,23,V032,IGNORE_REGION,,,,,,,,,locator 17x15 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R023,1213,10,V033,HAND_DRAWN,150,169,165,185,150,170,165,185,"locator 18x16 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R024,1213,12,V034,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R025,1214,10,V035,HAND_DRAWN,133,175,148,190,133,176,148,190,"locator 18x17 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R026,1214,23,V036,HAND_DRAWN,131,192,147,207,131,192,147,207,"locator 18x16 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R027,1215,23,V037,HAND_DRAWN,86,200,102,215,86,199,102,215,"locator 19x16 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R028,1215,10,V038,HAND_DRAWN,87,183,103,198,87,183,103,198,"locator 19x17 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R029,1216,23,V040,HAND_DRAWN,55,196,72,212,56,196,72,212,"locator 19x17 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R030,1216,10,V041,HAND_DRAWN,57,179,73,194,56,178,74,195,"locator 21x18 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R031,1217,23,V042,HAND_DRAWN,35,204,52,220,35,203,52,220,"locator 20x18 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R032,1217,10,V043,HAND_DRAWN,36,186,53,202,36,185,54,202,"locator 21x19 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R033,1217,39,V045,HAND_DRAWN,18,138,41,159,18,138,41,159,"locator 26x24 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R034,1218,23,V046,HAND_DRAWN,15,213,32,229,15,213,33,230,"locator 20x18 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R035,1218,10,V047,HAND_DRAWN,16,194,34,211,16,194,34,211,"locator 21x19 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R036,1218,39,V049,HAND_DRAWN,0,144,20,165,0,144,20,165,"locator 22x24 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R037,1221,12,V053,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R038,1223,23,V054,HAND_DRAWN,27,131,49,152,27,131,50,153,"locator 27x23 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R039,1223,39,V055,HAND_DRAWN,6,44,36,70,6,43,37,70,locator 33x30 px; R3 re-draw after D1-VRL-R2 QA M1: left edge 0 -> 6 from luminance row profiles at y = 54/57/60 (sky to rim at x = 6; x = 0 is an adjacent object); other edges as in R2; eye columns record this re-draw
+R040,1223,10,V056,HAND_DRAWN,29,107,52,128,28,107,53,129,"locator 27x24 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept; replaces a partial colour re-fit"
+R041,1224,23,V057,HAND_DRAWN,82,98,105,120,81,98,104,120,"locator 26x23 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R042,1224,10,V058,HAND_DRAWN,84,74,107,96,83,73,107,97,"locator 26x24 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept; replaces a partial colour re-fit"
+R043,1225,23,V059,HAND_DRAWN,125,100,149,123,125,100,149,124,"locator 27x24 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R044,1225,10,V060,HAND_DRAWN,128,75,152,98,128,74,152,98,"locator 26x25 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept; replaces a partial colour re-fit"
+R045,1228,41,V061,HAND_DRAWN,84,0,119,30,84,0,119,29,"locator 36x30 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R046,1229,39,V062,HAND_DRAWN,117,0,153,28,117,0,153,28,"locator 39x26 px; R3 re-draw after D1-VRL-R2 QA L1: bottom edge 23 -> 28 from luminance column profiles at x = 128/135/142 (rim and bracket dark to y = 25-27, bright at 27-28), consistent with R045; other edges as in R2; eye columns record this re-draw"
+R047,1236,10,V063,HAND_DRAWN,26,0,68,37,25,0,67,37,"locator 44x34 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R048,1242,23,V064,HAND_DRAWN,0,77,58,138,0,76,59,138,"locator 61x64 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R049,1243,10,V065,HAND_DRAWN,0,0,71,59,0,0,72,59,"locator 73x55 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept; replaces a partial colour re-fit"
+R050,1243,23,V066,HAND_DRAWN,0,63,65,131,0,64,65,130,"locator 67x70 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R051,1244,23,V067,HAND_DRAWN,0,32,80,110,0,32,81,111,"locator 80x78 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R052,1245,23,V068,HAND_DRAWN,0,0,60,80,0,0,61,81,"locator 63x80 px; drawn by eye on a zoomed tick grid without the model box; each edge snapped to the strongest luminance step within 1 px of the eye estimate, else the eye estimate kept"
+R053,1328,14,V074,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R054,1329,12,V075,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R055,1331,12,V077,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R056,1332,14,V078,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R057,1342,10,V079,IGNORE_REGION,,,,,,,,,locator 11x11 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R058,1342,23,V080,IGNORE_REGION,,,,,,,,,locator 11x11 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R059,1343,10,V081,IGNORE_REGION,,,,,,,,,locator 13x12 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R060,1343,23,V082,IGNORE_REGION,,,,,,,,,locator 12x11 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R061,1344,23,V083,IGNORE_REGION,,,,,,,,,locator 12x11 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R062,1345,10,V084,IGNORE_REGION,,,,,,,,,locator 12x11 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R063,1345,23,V085,IGNORE_REGION,,,,,,,,,locator 11x11 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R064,1346,10,V086,IGNORE_REGION,,,,,,,,,locator 12x11 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R065,1346,23,V087,IGNORE_REGION,,,,,,,,,locator 12x11 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R066,1347,23,V088,IGNORE_REGION,,,,,,,,,locator 13x11 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R067,1347,10,V089,IGNORE_REGION,,,,,,,,,locator 13x13 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R068,1348,10,V090,IGNORE_REGION,,,,,,,,,locator 13x12 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R069,1349,10,V091,IGNORE_REGION,,,,,,,,,locator 13x13 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R070,1349,23,V092,IGNORE_REGION,,,,,,,,,locator 12x12 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R071,1350,10,V093,IGNORE_REGION,,,,,,,,,locator 14x13 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R072,1350,23,V094,IGNORE_REGION,,,,,,,,,locator 13x12 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R073,1351,10,V095,IGNORE_REGION,,,,,,,,,locator 14x13 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R074,1351,23,V096,IGNORE_REGION,,,,,,,,,locator 13x12 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R075,1352,10,V097,IGNORE_REGION,,,,,,,,,locator 14x14 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R076,1352,23,V098,IGNORE_REGION,,,,,,,,,locator 13x12 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R077,1353,10,V100,IGNORE_REGION,,,,,,,,,locator 15x14 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R078,1353,23,V101,IGNORE_REGION,,,,,,,,,locator 14x13 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R079,1354,10,V103,IGNORE_REGION,,,,,,,,,locator 14x13 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R080,1354,23,V104,IGNORE_REGION,,,,,,,,,locator 13x13 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R081,1355,23,V107,IGNORE_REGION,,,,,,,,,locator 14x13 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R082,1355,10,V108,IGNORE_REGION,,,,,,,,,locator 14x14 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R083,1356,10,V111,IGNORE_REGION,,,,,,,,,locator 15x14 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R084,1356,23,V113,IGNORE_REGION,,,,,,,,,locator 13x13 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R085,1357,10,V115,IGNORE_REGION,,,,,,,,,locator 15x15 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R086,1357,23,V116,IGNORE_REGION,,,,,,,,,locator 14x13 px (longer side <= 17.5 px): too small to hand-draw within a 2 px tolerance
+R087,1820,2,V119,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R088,1820,3,V120,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R089,1821,2,V121,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R090,1823,10,V122,HAND_DRAWN,332,439,362,469,332,439,362,469,"locator 33x33 px; drawn by eye on a zoomed tick grid without the model box; dark frame, read on a 3.5x brightened crop, edges not snapped; replaces a partial colour re-fit"
+R091,1824,10,V123,HAND_DRAWN,323,445,355,478,323,445,355,478,"locator 34x34 px; drawn by eye on a zoomed tick grid without the model box; dark frame, read on a 3.5x brightened crop, edges not snapped; replaces a partial colour re-fit"
+R092,1825,10,V124,ACCEPT_REFINED,,,,,,,,,"refined box visually checked: tight around the visible sign; L1 re-check: red-ring column profile peaks at 356-357 and falls at 359-360, so the right edge 360 is kept"
+R093,1826,10,V125,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R094,1827,10,V126,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R095,1828,10,V128,ACCEPT_REFINED_ADJUSTED,312,448,345,485,,,,,L1 of D1-VRL-R1 QA: right edge 348 -> 345; red-ring column profile peaks at 343-344 and falls at 345
+R096,1829,10,V129,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R097,1830,10,V130,ACCEPT_REFINED_ADJUSTED,296,421,331,460,,,,,"L1 of D1-VRL-R1 QA: right edge 335 -> 331; red-ring column profile peaks at 326-327 with a faint tail to 332, and the brightened atlas shows the disc rim reaching 330"
+R098,1831,10,V131,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R099,1832,10,V132,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R100,1833,10,V133,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R101,1834,10,V134,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R102,1835,10,V136,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign
+R103,1836,10,V137,ACCEPT_REFINED_ADJUSTED,348,440,392,485,,,,,L1 of D1-VRL-R1 QA: bottom edge 489 -> 485; red-ring row profile is >= 0.75 to row 484 and falls at 485
+R104,1837,10,V138,ACCEPT_REFINED,,,,,,,,,refined box visually checked: tight around the visible sign

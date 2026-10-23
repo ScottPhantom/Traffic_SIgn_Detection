@@ -1,0 +1,105 @@
+proposal_id,stem,derived_key,source_review_ids,box_decision,note
+R001,1208,23,V011,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R002,1208,10,V012,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R003,1208,12,V013,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R004,1208,41,V014,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R005,1209,10,V015,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R006,1209,23,V016,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R007,1209,41,V017,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R008,1210,10,V018,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R009,1210,23,V019,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R010,1210,41,V020,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R011,1210,12,V021,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R012,1210,39,V022,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R013,1211,10,V023,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R014,1211,23,V024,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R015,1211,12,V025,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R016,1211,39,V026,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R017,1212,23,V027,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R018,1212,10,V028,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R019,1212,41,V029,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R020,1212,39,V030,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R021,1212,12,V031,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R022,1213,23,V032,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R023,1213,10,V033,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R024,1213,12,V034,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R025,1214,10,V035,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R026,1214,23,V036,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R027,1215,23,V037,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R028,1215,10,V038,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R029,1216,23,V040,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R030,1216,10,V041,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R031,1217,23,V042,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R032,1217,10,V043,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R033,1217,39,V045,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R034,1218,23,V046,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R035,1218,10,V047,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R036,1218,39,V049,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R037,1221,12,V053,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R038,1223,23,V054,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R039,1223,39,V055,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R040,1223,10,V056,IGNORE_REGION,"refined box covers only the blue centre, not the full disc and rim"
+R041,1224,23,V057,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R042,1224,10,V058,IGNORE_REGION,"refined box covers only the blue centre, not the full disc and rim"
+R043,1225,23,V059,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R044,1225,10,V060,IGNORE_REGION,"refined box covers only the blue centre, not the full disc and rim"
+R045,1228,41,V061,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R046,1229,39,V062,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R047,1236,10,V063,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R048,1242,23,V064,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R049,1243,10,V065,IGNORE_REGION,refined box covers only part of the P.130 disc
+R050,1243,23,V066,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R051,1244,23,V067,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R052,1245,23,V068,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R053,1328,14,V074,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R054,1329,12,V075,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R055,1331,12,V077,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R056,1332,14,V078,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R057,1342,10,V079,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R058,1342,23,V080,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R059,1343,10,V081,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R060,1343,23,V082,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R061,1344,23,V083,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R062,1345,10,V084,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R063,1345,23,V085,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R064,1346,10,V086,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R065,1346,23,V087,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R066,1347,23,V088,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R067,1347,10,V089,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R068,1348,10,V090,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R069,1349,10,V091,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R070,1349,23,V092,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R071,1350,10,V093,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R072,1350,23,V094,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R073,1351,10,V095,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R074,1351,23,V096,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R075,1352,10,V097,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R076,1352,23,V098,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R077,1353,10,V100,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R078,1353,23,V101,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R079,1354,10,V103,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R080,1354,23,V104,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R081,1355,23,V107,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R082,1355,10,V108,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R083,1356,10,V111,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R084,1356,23,V113,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R085,1357,10,V115,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R086,1357,23,V116,IGNORE_REGION,no reliable colour region: small low-saturation sign (owner decision 2026-10-22)
+R087,1820,2,V119,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R088,1820,3,V120,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R089,1821,2,V121,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R090,1823,10,V122,IGNORE_REGION,refined box too narrow for the shadowed disc
+R091,1824,10,V123,IGNORE_REGION,refined box covers only half of the shadowed disc
+R092,1825,10,V124,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R093,1826,10,V125,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R094,1827,10,V126,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R095,1828,10,V128,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R096,1829,10,V129,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R097,1830,10,V130,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R098,1831,10,V131,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R099,1832,10,V132,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R100,1833,10,V133,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R101,1834,10,V134,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R102,1835,10,V136,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R103,1836,10,V137,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
+R104,1837,10,V138,ACCEPT_REFINED,refined box visually checked: tight around the visible sign
