@@ -5,21 +5,26 @@ full-scene frame with the evaluated settings: 1280 px, NMS IoU 0.70, MPS when av
 are simulation-only. The checkpoint has validation evidence only (R10: mAP50 0.869, FP/image 0.569
 at conf 0.20) and has not passed D-05 acceptance.
 
-Behaviour is triggered only for classes that have sealed-test support (dataset card section 6);
-the other classes are shown as "chưa kiểm chứng" and never change the simulated command.
+Classes without held-out support and classes 7/32/41 failing the current validation checks are
+display-only. Remaining classes can illustrate a command, without a D-05 acceptance claim.
 """
 
 from __future__ import annotations
 
 import csv
 import hashlib
+import math
+import os
 import re
+import threading
 from dataclasses import dataclass
+from html import escape
 from pathlib import Path
 from typing import Any
 
 from PIL import Image, ImageDraw, ImageFont
 
+from cpv301_autodrive import centercam
 from cpv301_autodrive.behavior import VehicleCommand
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -27,6 +32,7 @@ RUN = "D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_2026101
 WEIGHTS = REPO_ROOT / "results/experiments" / RUN / "weights/best.pt"
 WEIGHTS_SHA256 = "5d5815a96218759e93cd9bc51261ed55778da5397dfe7fe25c1f78908b10b633"
 CLASS_MAP = REPO_ROOT / "docs/review/generated/m1_yolo_classes.csv"
+CLASS_MAP_SHA256 = "7cda296a95bd8512a1bb2e85109ce9a1574fb882e692b11d4d0ee6a1cb58d242"
 SAMPLE_DIR = REPO_ROOT / "data/processed/m1_yolo_wp38_r1_integration_r4/images/val"
 # Hand-picked validation frames where D1 is right (multi-sign 1231, 40/60 km/h, no turns, no entry,
 # crossing). They illustrate the pipeline; they are not representative of D1's error rate.
@@ -41,6 +47,7 @@ UNVERIFIED_KEYS = frozenset(
     "1 15 16:2.0 16:2.2 16:2.5 21 24 27 29 33 35 36 37 38 42 43:2.5 43:2.7 44 47 48 49 51".split()
 )
 _SPEED = re.compile(r"\((\d+) km/h\)")
+VALIDATION_FAILED_KEYS = frozenset({"7", "32", "41"})
 
 
 @dataclass(frozen=True)
@@ -52,7 +59,20 @@ class SignClass:
 
     @property
     def verified(self) -> bool:
+        """Historical support flag; support alone is not a quality/acceptance verdict."""
         return self.key not in UNVERIFIED_KEYS
+
+    @property
+    def behavior_eligible(self) -> bool:
+        return self.verified and self.key not in VALIDATION_FAILED_KEYS
+
+    @property
+    def status(self) -> str:
+        if not self.verified:
+            return "Chưa kiểm chứng"
+        if self.key in VALIDATION_FAILED_KEYS:
+            return "Chưa đạt validation"
+        return "Chỉ mô phỏng; chưa nghiệm thu D-05"
 
 
 @dataclass(frozen=True)
@@ -67,6 +87,8 @@ class Detection:
 
 
 def load_classes(path: Path = CLASS_MAP) -> list[SignClass]:
+    if sha256_file(path) != CLASS_MAP_SHA256:
+        raise RuntimeError("D1 class map differs from the governed 54-class map")
     with path.open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
     classes = sorted(
@@ -110,39 +132,73 @@ class D1Detector:
             raise FileNotFoundError(f"D1 weights not found: {weights}")
         if sha256_file(weights) != WEIGHTS_SHA256:
             raise RuntimeError("D1 weights differ from the registered best.pt (5d5815a9…)")
+        # The demo uses a local pinned checkpoint; missing plugins must never trigger installs.
+        os.environ["YOLO_AUTOINSTALL"] = "false"
+        os.environ["YOLO_OFFLINE"] = "true"
         import torch
         from ultralytics import YOLO
+        from ultralytics.utils import checks
+
+        # Also enforce this when another library imported Ultralytics earlier in this process.
+        checks.AUTOINSTALL = False
+        checks.ONLINE = False
 
         self.device = "mps" if torch.backends.mps.is_available() else "cpu"
         self.model = YOLO(str(weights))
         self.classes = load_classes()
+        self._lock = threading.Lock()
 
     def detect(self, image: Image.Image, conf: float = DEFAULT_CONF) -> list[Detection]:
-        result = self.model.predict(
-            source=image.convert("RGB"),
-            conf=conf,
-            iou=NMS_IOU,
-            imgsz=IMGSZ,
-            device=self.device,
-            max_det=300,
-            verbose=False,
-        )[0]
+        if not math.isfinite(conf) or not 0 < conf <= 1:
+            raise ValueError("confidence must be finite and in (0, 1]")
+        with self._lock:
+            result = self.model.predict(
+                source=image.convert("RGB"),
+                conf=conf,
+                iou=NMS_IOU,
+                imgsz=IMGSZ,
+                device=self.device,
+                max_det=300,
+                verbose=False,
+            )[0]
         boxes = result.boxes
-        detections = [
-            Detection(self.classes[int(c)], float(s), tuple(float(v) for v in b))
-            for b, c, s in zip(
-                boxes.xyxy.cpu().numpy(),
-                boxes.cls.cpu().numpy(),
-                boxes.conf.cpu().numpy(),
-                strict=True,
+        detections = []
+        for b, c, s in zip(
+            boxes.xyxy.cpu().numpy(),
+            boxes.cls.cpu().numpy(),
+            boxes.conf.cpu().numpy(),
+            strict=True,
+        ):
+            values = [float(v) for v in b]
+            if not all(math.isfinite(v) for v in [*values, float(c), float(s)]):
+                continue
+            if int(c) != c or not 0 <= int(c) < len(self.classes) or not conf <= s <= 1:
+                continue
+            box = (
+                max(0.0, min(image.width, values[0])),
+                max(0.0, min(image.height, values[1])),
+                max(0.0, min(image.width, values[2])),
+                max(0.0, min(image.height, values[3])),
             )
-        ]
+            try:
+                centercam.image_position(box, image.width, image.height)
+            except ValueError:
+                continue
+            detections.append(Detection(self.classes[int(c)], float(s), box))
         return sorted(detections, key=lambda d: -d.confidence)
 
 
-def draw_detections(image: Image.Image, detections: list[Detection]) -> Image.Image:
+def draw_detections(
+    image: Image.Image, detections: list[Detection], vanish_x: float | None = None
+) -> Image.Image:
     canvas = image.convert("RGB").copy()
     draw = ImageDraw.Draw(canvas)
+    for x in (canvas.width / 3, canvas.width * 2 / 3):
+        for y in range(0, canvas.height, 24):
+            draw.line((x, y, x, min(y + 12, canvas.height)), fill="#64748b", width=2)
+    if vanish_x is not None:  # CenterCam dashed line: left/right of it decides the roadside
+        for y in range(0, canvas.height, 24):
+            draw.line((vanish_x, y, vanish_x, y + 12), fill="#f59e0b", width=3)
     width = max(2, round(canvas.width / 400))
     try:
         font = ImageFont.truetype("Arial.ttf", max(18, canvas.width // 40))
@@ -151,7 +207,7 @@ def draw_detections(image: Image.Image, detections: list[Detection]) -> Image.Im
     # Draw the highest number first so that label 1 (most confident) ends up on top.
     for number, detection in reversed(list(enumerate(detections, start=1))):
         x1, y1, x2, y2 = detection.box
-        colour = "#2563eb" if detection.sign.verified else "#94a3b8"
+        colour = "#2563eb" if detection.sign.behavior_eligible else "#94a3b8"
         draw.rectangle((x1, y1, x2, y2), outline=colour, width=width)
         text = f"{number} · {detection.sign.code} {detection.confidence:.2f}"
         left, top, right, bottom = draw.textbbox((x1, y1), text, font=font)
@@ -164,13 +220,13 @@ def draw_detections(image: Image.Image, detections: list[Detection]) -> Image.Im
 
 
 def plan_vn_behavior(detections: list[Detection], cruise_speed_kmh: int = 30) -> VehicleCommand:
-    """Deterministic simulated command from the verified detections (most restrictive wins)."""
-    verified = [d for d in detections if d.sign.verified]
+    """Deterministic illustrative command; unsupported/failed classes never trigger it."""
+    verified = [d for d in detections if d.sign.behavior_eligible]
     if not verified:
         reason = (
-            "Không có biển đã kiểm chứng trong khung hình; giữ tốc độ hành trình."
+            "Mô phỏng: không có biển trong khung hình; giữ tốc độ hành trình."
             if not detections
-            else "Chỉ thấy lớp chưa kiểm chứng; hiển thị nhưng không đổi hành vi."
+            else "Chỉ thấy lớp chưa kiểm chứng hoặc chưa đạt validation; không đổi hành vi."
         )
         return VehicleCommand("continue", cruise_speed_kmh, "straight", reason)
 
@@ -201,14 +257,26 @@ def plan_vn_behavior(detections: list[Detection], cruise_speed_kmh: int = 30) ->
     return VehicleCommand(action, speed, steering, "Mô phỏng: " + "; ".join(reasons) + ".")
 
 
-def detection_rows(detections: list[Detection]) -> list[dict[str, Any]]:
+def detection_rows(
+    detections: list[Detection], frame_w: int | None = None, frame_h: int | None = None
+) -> list[dict[str, Any]]:
     return [
         {
             "#": number,
             "Mã QCVN": d.sign.code,
             "Biển": d.sign.name_vi,
             "Tin cậy": round(d.confidence, 3),
-            "Kiểm chứng": "Có" if d.sign.verified else "Chưa",
+            "Trạng thái": d.sign.status,
+            **(
+                {
+            "Vị trí trong ảnh": centercam.image_position(d.box, frame_w, frame_h).side,
+                    "Tâm X (%)": round(
+                        centercam.image_position(d.box, frame_w, frame_h).normalized_x * 100, 1
+                    ),
+                }
+                if frame_w is not None and frame_h is not None
+                else {}
+            ),
             "Khung (x1, y1, x2, y2)": ", ".join(f"{v:.0f}" for v in d.box),
         }
         for number, d in enumerate(detections, start=1)
@@ -216,67 +284,35 @@ def detection_rows(detections: list[Detection]) -> list[dict[str, Any]]:
 
 
 # ------------------------------------------------------------------------------------- scene
-
-SCENE_W, SCENE_H = 960, 420
-HORIZON_Y = 70
-CAR_Y = SCENE_H - 70
-NEAR_BOX_FRACTION = 0.18  # a box this tall (fraction of frame height) is drawn at the car line
+# Road heading, roadside side and scene layout live in the model-agnostic `centercam` module;
+# this module only adds the D1 sign codes, numbering and colours.
 
 
-def _half_road(y: float) -> float:
-    """Half the road width at scene height y (matches the drawn trapezoid)."""
-    t = (y - HORIZON_Y) / (SCENE_H - HORIZON_Y)
-    return SCENE_W * (0.05 + 0.42 * t)
-
-
-def scene_positions(
-    detections: list[Detection], frame_w: int, frame_h: int
-) -> list[dict[str, float]]:
-    """Map each box to the perspective scene.
-
-    Depth: a taller box is nearer, so it is drawn lower and larger. Side: a box left or right of
-    the image centre stands on that roadside, further out the further it is from the centre; a box
-    near the centre hangs over the road. Signs that would overlap are stacked on one pole, as
-    combined signs are in reality. A visual cue from the image, not a measured distance.
-    """
-    out = []
-    for detection in detections:
-        x1, y1, x2, y2 = detection.box
-        u = min(1.0, max(0.0, (x1 + x2) / 2 / max(frame_w, 1)))
-        near = min(1.0, max(0.0, (y2 - y1) / max(frame_h, 1) / NEAR_BOX_FRACTION))
-        y = HORIZON_Y + 30 + near * (CAR_Y - HORIZON_Y - 90)
-        r = 12 + 22 * near
-        offset = (u - 0.5) * 2
-        if abs(offset) < 0.15:
-            x = SCENE_W / 2 + offset * _half_road(y)
-        else:
-            side = 1 if offset > 0 else -1
-            x = SCENE_W / 2 + side * (_half_road(y) + r + 8 + abs(offset) * 60 * (0.4 + near))
-        out.append({"x": x, "y": y, "r": r, "u": u, "near": near, "pole_y": y})
-    for i, pos in enumerate(out):  # stack overlapping signs on the earlier sign's pole
-        for other in out[:i]:
-            if (
-                abs(pos["x"] - other["x"]) < pos["r"] + other["r"]
-                and abs(pos["y"] - other["y"]) < pos["r"] + other["r"]
-            ):
-                pos["x"] = other["x"]
-                pos["y"] = other["y"] - other["r"] - pos["r"] - 4
-                pos["pole_y"] = other["pole_y"]
-    for pos in out:
-        pos["x"] = min(SCENE_W - pos["r"] - 4, max(pos["r"] + 4, pos["x"]))
-        pos["y"] = max(pos["r"] + 4, pos["y"])
-    return out
-
-
-def _side(u: float) -> str:
-    return "trái" if u < 0.4 else ("phải" if u > 0.6 else "giữa")
+def _layout(
+    detections: list[Detection],
+    frame_w: int,
+    frame_h: int,
+    heading_x: float | None,
+    *,
+    image_regions: bool = False,
+) -> list[centercam.Placement]:
+    heading = frame_w / 2 if heading_x is None or image_regions else heading_x
+    return centercam.layout(
+        [d.box for d in detections], frame_w, frame_h, heading, image_regions=image_regions
+    )
 
 
 def scene_svg(
-    detections: list[Detection], frame_w: int, frame_h: int, command: VehicleCommand
+    detections: list[Detection],
+    frame_w: int,
+    frame_h: int,
+    command: VehicleCommand,
+    vanish_x: float | None = None,
+    *,
+    image_regions: bool = False,
 ) -> str:
     """Perspective road with each detected sign at its image position (numbered as in the image)."""
-    w, h, hy = SCENE_W, SCENE_H, HORIZON_Y
+    w, h, hy = centercam.SCENE_W, centercam.SCENE_H, centercam.HORIZON_Y
     road = f"{w * 0.45},{hy} {w * 0.55},{hy} {w * 0.97},{h} {w * 0.03},{h}"
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="100%" '
@@ -287,14 +323,19 @@ def scene_svg(
         f'<line x1="{w / 2}" y1="{hy}" x2="{w / 2}" y2="{h}" stroke="#fde68a" '
         'stroke-width="5" stroke-dasharray="18 16"/>',
     ]
-    positions = scene_positions(detections, frame_w, frame_h)
-    order = sorted(range(len(detections)), key=lambda i: positions[i]["y"])  # far first
+    places = _layout(detections, frame_w, frame_h, vanish_x, image_regions=image_regions)
+    order = sorted(range(len(detections)), key=lambda i: places[i].y)  # far first
     for index in order:
-        detection, pos = detections[index], positions[index]
-        x, y, r = pos["x"], pos["y"], pos["r"]
-        colour = "#2563eb" if detection.sign.verified else "#94a3b8"
-        pole = min(h - 10, pos["pole_y"] + pos["r"] * 2.4)
+        detection, place = detections[index], places[index]
+        x, y, r = place.x, place.y, place.r
+        colour = "#2563eb" if detection.sign.behavior_eligible else "#94a3b8"
+        pole = min(h - 10, place.pole_y + places[place.pole_of or index].r * 2.4)
+        label_room = 9 * len(detection.sign.code) + 10
         outer = 1 if x >= w / 2 else -1
+        if outer < 0 and x - r - label_room < 0:
+            outer = 1  # no room on the left edge: label on the right
+        elif outer > 0 and x + r + label_room > w:
+            outer = -1
         anchor = "start" if outer > 0 else "end"
         parts += [
             f'<line x1="{x:.1f}" y1="{y + r:.1f}" x2="{x:.1f}" y2="{pole:.1f}" '
@@ -305,12 +346,13 @@ def scene_svg(
             f'text-anchor="middle" fill="#0f172a" font-family="sans-serif">{index + 1}</text>',
             f'<text x="{x + outer * (r + 6):.1f}" y="{y + 5:.1f}" font-size="15" '
             f'font-weight="600" text-anchor="{anchor}" fill="#0f172a" '
-            f'font-family="sans-serif">{detection.sign.code}</text>',
+            f'font-family="sans-serif">{escape(detection.sign.code)}</text>',
         ]
     arrow = {"left": "↖", "right": "↗", "stop": "■"}.get(command.steering, "↑")
+    car_y = centercam.CAR_Y
     parts += [
-        f'<rect x="{w / 2 - 34}" y="{CAR_Y}" width="68" height="44" rx="10" fill="#f97316"/>',
-        f'<text x="{w / 2}" y="{CAR_Y + 31}" font-size="26" text-anchor="middle" fill="white" '
+        f'<rect x="{w / 2 - 34}" y="{car_y}" width="68" height="44" rx="10" fill="#f97316"/>',
+        f'<text x="{w / 2}" y="{car_y + 31}" font-size="26" text-anchor="middle" fill="white" '
         f'font-family="sans-serif">{arrow}</text>',
         f'<text x="{w - 14}" y="30" font-size="18" text-anchor="end" fill="#0f172a" '
         f'font-family="sans-serif" font-weight="700">{command.target_speed_kmh} km/h</text>',
@@ -337,21 +379,31 @@ def same_board(detections: list[Detection], iou: float = 0.8) -> dict[int, int]:
     return out
 
 
-def scene_rows(detections: list[Detection], frame_w: int, frame_h: int) -> list[dict[str, Any]]:
+def scene_rows(
+    detections: list[Detection],
+    frame_w: int,
+    frame_h: int,
+    vanish_x: float | None = None,
+    *,
+    image_regions: bool = False,
+) -> list[dict[str, Any]]:
     twins = same_board(detections)
-    positions = scene_positions(detections, frame_w, frame_h)
+    places = _layout(detections, frame_w, frame_h, vanish_x, image_regions=image_regions)
     rows = []
-    for index, (d, p) in enumerate(zip(detections, positions, strict=True)):
-        near = p["near"]
+    for index, (d, p) in enumerate(zip(detections, places, strict=True)):
+        near = p.near
         rows.append(
             {
                 "#": index + 1,
                 "Mã QCVN": d.sign.code,
-                "Vị trí": f"bên {_side(p['u'])}",
+                "Vị trí": f"bên {p.side}",
                 "Khoảng cách (ước lượng từ cỡ khung)": (
                     "gần" if near > 0.6 else ("vừa" if near > 0.25 else "xa")
                 ),
-                "Tác động": "có" if d.sign.verified else "không (chưa kiểm chứng)",
+                "Vị trí trong ảnh": centercam.image_position(d.box, frame_w, frame_h).side,
+                "Tác động": "chỉ mô phỏng"
+                if d.sign.behavior_eligible
+                else "không (chưa đạt/chưa kiểm chứng)",
                 "Ghi chú": (
                     f"trùng khung với #{twins[index] + 1}: một bảng, model gán hai lớp"
                     if index in twins

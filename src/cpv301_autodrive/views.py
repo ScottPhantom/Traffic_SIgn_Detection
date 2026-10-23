@@ -15,7 +15,7 @@ from typing import Any
 
 import altair as alt
 import streamlit as st
-from PIL import Image, UnidentifiedImageError
+from PIL import Image, ImageOps, UnidentifiedImageError
 
 from cpv301_autodrive import dataset01_view_r1 as dataset01_view
 from cpv301_autodrive import palette
@@ -44,7 +44,13 @@ def get_model_service(model_path: str) -> ModelService:
 def read_uploaded_image(uploaded_file: Any) -> Image.Image:
     """Read an uploaded or camera file and detach it from Streamlit's buffer."""
 
-    return Image.open(BytesIO(uploaded_file.getvalue())).convert("RGB")
+    try:
+        with Image.open(BytesIO(uploaded_file.getvalue())) as source:
+            return ImageOps.exif_transpose(source).convert("RGB")
+    except ImportError as exc:
+        # Ultralytics patches Pillow and tries the optional HEIF plugin for invalid images.
+        # A corrupt PNG/JPEG must still produce the uploader's normal error, not a traceback.
+        raise UnidentifiedImageError("File ảnh bị hỏng hoặc định dạng không được hỗ trợ.") from exc
 
 
 def predict_frame(image: Image.Image, threshold: float, cruise_speed: int) -> dict[str, Any]:
@@ -756,9 +762,19 @@ def get_d1_detector() -> Any:
     return D1Detector()
 
 
+@st.cache_data(show_spinner=False, max_entries=16)
+def detect_d1_frame(image_bytes: bytes, conf: float) -> Any:
+    """Cache primitive values so a module reload cannot leave unpicklable Detection classes."""
+    with Image.open(BytesIO(image_bytes)) as source:
+        return [
+            (d.sign.yolo_id, d.confidence, d.box)
+            for d in get_d1_detector().detect(source.convert("RGB"), conf=conf)
+        ]
+
+
 def render_d1_demo() -> None:
     """Full-scene Vietnamese sign detection with D1, feeding the simulated vehicle."""
-    from cpv301_autodrive import detector_d1
+    from cpv301_autodrive import centercam, detector_d1
 
     if not detector_d1.weights_available():
         st.error(
@@ -768,7 +784,8 @@ def render_d1_demo() -> None:
         return
     st.caption(
         "D1 · YOLO11s 54 lớp QCVN · seed 20261018 · `best.pt` 5d5815a9… · ảnh 1280 px, NMS 0,70. "
-        "Số liệu validation (mAP50 0,869, báo nhầm 0,57/ảnh ở conf 0,20); "
+        "Validation R3: mAP50 0,884, báo nhầm 0,399/ảnh ở conf 0,20; "
+        "nhãn được bổ sung qua review dự đoán của model. "
         "**chưa nghiệm thu D-05**. "
         "Chỉ mô phỏng."
     )
@@ -783,6 +800,13 @@ def render_d1_demo() -> None:
             "Ngưỡng tin cậy", 0.05, 0.95, detector_d1.DEFAULT_CONF, 0.05, key="d1_conf"
         )
         cruise = st.slider("Tốc độ hành trình (km/h)", 10, 80, 50, 5, key="d1_cruise")
+    road_reference = st.toggle(
+        "Xem thêm hướng đường ước lượng (CenterCam)", value=False, key="d1_road_reference"
+    )
+    st.caption(
+        "Vị trí trong ảnh: tâm khung biển thuộc 1/3 trái, 1/3 giữa hoặc 1/3 phải; "
+        "hai đường xám là ranh giới. Không suy ra làn xe hay hướng áp dụng của biển."
+    )
 
     image: Image.Image | None = None
     name = ""
@@ -795,7 +819,9 @@ def render_d1_demo() -> None:
         if upload is not None:
             try:
                 image, name = read_uploaded_image(upload), upload.name
-            except (UnidentifiedImageError, OSError) as exc:
+            except (
+                UnidentifiedImageError, OSError, ValueError, Image.DecompressionBombError
+            ) as exc:
                 st.error(f"Không thể đọc ảnh: {exc}")
     else:
         samples = detector_d1.sample_images()
@@ -813,45 +839,65 @@ def render_d1_demo() -> None:
                 ),
             )
             path = next((p for p in samples if p.stem == picked), samples[0])
-            image, name = Image.open(path).convert("RGB"), path.name
+            try:
+                with Image.open(path) as source_image:
+                    image, name = source_image.convert("RGB"), path.name
+            except (UnidentifiedImageError, OSError, ValueError) as exc:
+                st.error(f"Không thể đọc ảnh mẫu: {exc}")
     if image is None:
         st.info("Chọn ảnh mẫu hoặc tải ảnh lên để chạy detector.")
         return
 
-    detector = get_d1_detector()
-    with st.spinner("D1 đang nhận diện…"):
-        detections = detector.detect(image, conf=conf)
+    try:
+        with st.spinner("D1 đang nhận diện…"):
+            buffer = BytesIO()
+            image.save(buffer, format="PNG")
+            classes = detector_d1.load_classes()
+            detections = [
+                detector_d1.Detection(classes[index], score, box)
+                for index, score, box in detect_d1_frame(buffer.getvalue(), conf)
+            ]
+            heading = centercam.center_cam(image) if road_reference else None
+            vanish_x = heading.x if heading is not None and heading.estimated else None
+    except (OSError, RuntimeError, ValueError, ImportError) as exc:
+        st.error(f"Không thể chạy detector D1: {exc}")
+        return
     command = detector_d1.plan_vn_behavior(detections, cruise)
 
     left, right = st.columns([1.5, 1], gap="large")
     with left:
         st.image(
-            detector_d1.draw_detections(image, detections),
+            detector_d1.draw_detections(image, detections, vanish_x),
             caption=(
                 f"{name} · {len(detections)} biển ở ngưỡng {conf:.2f} · "
-                "khung xám = lớp chưa kiểm chứng"
+                "khung xám = lớp chưa đạt/chưa kiểm chứng · vạch cam = hướng đường ước lượng"
             ),
             width="stretch",
+            alt="Ảnh đầu vào với box, ID biển và hai ranh giới trái giữa phải",
         )
     with right:
         st.metric("Số biển phát hiện", len(detections), border=True)
         if detections:
             st.dataframe(
-                detector_d1.detection_rows(detections),
+                detector_d1.detection_rows(detections, image.width, image.height),
                 hide_index=True,
+                column_order=[
+                    "#", "Vị trí trong ảnh", "Mã QCVN", "Tin cậy", "Tâm X (%)",
+                    "Trạng thái", "Biển", "Khung (x1, y1, x2, y2)",
+                ],
                 alt="Bảng biển báo D1 phát hiện trong khung hình",
             )
         else:
             st.info("Không có biển nào trên ngưỡng tin cậy.")
-    st.markdown("**Mô phỏng: vị trí từng biển trên đường**")
+    st.markdown("**Minh họa vị trí trái/giữa/phải theo ảnh**")
     st.image(
-        detector_d1.scene_svg(detections, image.width, image.height, command),
+        detector_d1.scene_svg(detections, image.width, image.height, command, image_regions=True),
         width="stretch",
         alt="Cảnh mô phỏng: vị trí từng biển báo theo ảnh",
     )
     if detections:
         st.dataframe(
-            detector_d1.scene_rows(detections, image.width, image.height),
+            detector_d1.scene_rows(detections, image.width, image.height, image_regions=True),
             hide_index=True,
             alt="Vị trí và khoảng cách ước lượng của từng biển trong cảnh mô phỏng",
         )
@@ -861,6 +907,10 @@ def render_d1_demo() -> None:
         st.metric("Góc lái", command.steering, border=True)
     st.caption(
         command.reason
-        + " Vị trí ngang lấy từ tâm khung trong ảnh; độ xa ước lượng từ chiều cao khung, "
-        "không phải khoảng cách đo được."
+        + (
+            f" Hướng đường ước lượng x = {vanish_x:.0f} px; chỉ để tham khảo"
+            if vanish_x is not None
+            else " Vị trí tính theo ba phần bằng nhau của ảnh"
+        )
+        + "; độ xa ước lượng từ chiều cao khung, không phải khoảng cách đo được."
     )
