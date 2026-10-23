@@ -29,9 +29,10 @@ def test_every_slide_renders(slide) -> None:
     assert f"Trang {number}/{len(SLIDES)}" in app.caption[0].value
 
 
-def test_demo_slide_prompts_for_an_image() -> None:
+def test_demo_slide_e0_baseline_prompts_for_an_image() -> None:
     app = AppTest.from_file(str(APP_PATH)).run(timeout=30)
     app.switch_page("app_pages/07_demo.py").run(timeout=30)
+    app.segmented_control(key="demo_model").set_value("E0 · GTSRB (ảnh crop)").run(timeout=30)
     assert not app.exception
     assert any("bắt đầu mô phỏng" in message.value for message in app.info)
 

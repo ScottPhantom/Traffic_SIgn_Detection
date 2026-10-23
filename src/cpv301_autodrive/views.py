@@ -740,11 +740,114 @@ def render_train_time_chart() -> None:
             legend=alt.Legend(title=None, orient="bottom"),
         ),
     )
-    labels = base.mark_text(align="left", dx=6, color=colors.ink).encode(
-        x="high:Q", text="label:N"
-    )
+    labels = base.mark_text(align="left", dx=6, color=colors.ink).encode(x="high:Q", text="label:N")
     st.altair_chart((bars + labels).properties(height=alt.Step(38)), width="stretch")
     st.caption(
         "M1 Pro: đo 5,2 ảnh/giây (batch 4). Colab: ước tính theo thông lượng điển hình của "
         "GPU, chưa đo trên dữ liệu này. Theo D-05 cần 4 lần train (pilot + 3 seed)."
     )
+
+
+@st.cache_resource(show_spinner="Đang nạp detector D1 (YOLO11s)…", max_entries=1)
+def get_d1_detector() -> Any:
+    """Cache the D1 YOLO model across reruns (hash-checked on load)."""
+    from cpv301_autodrive.detector_d1 import D1Detector
+
+    return D1Detector()
+
+
+def render_d1_demo() -> None:
+    """Full-scene Vietnamese sign detection with D1, feeding the simulated vehicle."""
+    from cpv301_autodrive import detector_d1
+
+    if not detector_d1.weights_available():
+        st.error(
+            "Không tìm thấy trọng số D1 (`best.pt`) trên máy này; trọng số không có trong git.",
+            icon=":material/error:",
+        )
+        return
+    st.caption(
+        "D1 · YOLO11s 54 lớp QCVN · seed 20261018 · `best.pt` 5d5815a9… · ảnh 1280 px, NMS 0,70. "
+        "Số liệu validation (mAP50 0,869, báo nhầm 0,57/ảnh ở conf 0,20); "
+        "**chưa nghiệm thu D-05**. "
+        "Chỉ mô phỏng."
+    )
+    with st.container(horizontal=True, vertical_alignment="bottom"):
+        source = st.segmented_control(
+            "Nguồn ảnh",
+            ["Ảnh mẫu (val)", "Tải ảnh lên"],
+            default="Ảnh mẫu (val)",
+            key="d1_source",
+        )
+        conf = st.slider(
+            "Ngưỡng tin cậy", 0.05, 0.95, detector_d1.DEFAULT_CONF, 0.05, key="d1_conf"
+        )
+        cruise = st.slider("Tốc độ hành trình (km/h)", 10, 80, 50, 5, key="d1_cruise")
+
+    image: Image.Image | None = None
+    name = ""
+    if source == "Tải ảnh lên":
+        upload = st.file_uploader(
+            "Chọn một khung hình camera toàn cảnh",
+            type=["png", "jpg", "jpeg", "webp"],
+            key="d1_upload",
+        )
+        if upload is not None:
+            try:
+                image, name = read_uploaded_image(upload), upload.name
+            except (UnidentifiedImageError, OSError) as exc:
+                st.error(f"Không thể đọc ảnh: {exc}")
+    else:
+        samples = detector_d1.sample_images()
+        if not samples:
+            st.info("Không có ảnh mẫu validation trên máy này; hãy tải ảnh lên.")
+        else:
+            picked = st.pills(
+                "Ảnh mẫu",
+                [p.stem for p in samples],
+                default=samples[0].stem,
+                key="d1_sample",
+                help=(
+                    "Ảnh validation chọn tay, là những ca D1 làm đúng; "
+                    "không đại diện cho tỷ lệ lỗi."
+                ),
+            )
+            path = next((p for p in samples if p.stem == picked), samples[0])
+            image, name = Image.open(path).convert("RGB"), path.name
+    if image is None:
+        st.info("Chọn ảnh mẫu hoặc tải ảnh lên để chạy detector.")
+        return
+
+    detector = get_d1_detector()
+    with st.spinner("D1 đang nhận diện…"):
+        detections = detector.detect(image, conf=conf)
+    command = detector_d1.plan_vn_behavior(detections, cruise)
+
+    left, right = st.columns([1.5, 1], gap="large")
+    with left:
+        st.image(
+            detector_d1.draw_detections(image, detections),
+            caption=(
+                f"{name} · {len(detections)} biển ở ngưỡng {conf:.2f} · "
+                "khung xám = lớp chưa kiểm chứng"
+            ),
+            width="stretch",
+        )
+    with right:
+        st.metric("Số biển phát hiện", len(detections), border=True)
+        if detections:
+            st.dataframe(
+                detector_d1.detection_rows(detections),
+                hide_index=True,
+                alt="Bảng biển báo D1 phát hiện trong khung hình",
+            )
+        else:
+            st.info("Không có biển nào trên ngưỡng tin cậy.")
+    top = next((d for d in detections if d.sign.verified), None)
+    shown = Prediction(
+        class_id=top.sign.yolo_id if top else -1,
+        label=top.sign.code if top else "Không có biển",
+        confidence=top.confidence if top else 0.0,
+        accepted=top is not None,
+    )
+    render_road(command, shown)

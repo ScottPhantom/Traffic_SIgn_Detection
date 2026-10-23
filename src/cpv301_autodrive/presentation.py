@@ -61,7 +61,12 @@ SLIDES: tuple[Slide, ...] = (
         ":material/model_training:",
         "Detector YOLO, ngưỡng nghiệm thu D-05 và tốc độ đo được",
     ),
-    Slide("07_demo.py", "Demo", ":material/directions_car:", "Mô phỏng với baseline E0 (GTSRB)"),
+    Slide(
+        "07_demo.py",
+        "Demo",
+        ":material/directions_car:",
+        "Detector D1 nhận diện biển Việt Nam, xe mô phỏng phản ứng",
+    ),
     Slide(
         "08_buoc_tiep.py",
         "Bước tiếp theo",
