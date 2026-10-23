@@ -79,3 +79,27 @@ def test_demo_slide_runs_d1_by_default() -> None:
     assert app.segmented_control(key="demo_model").value.startswith("D1")
     labels = [metric.label for metric in app.metric]
     assert "Số biển phát hiện" in labels and "Tốc độ mục tiêu" in labels
+
+
+def test_scene_places_signs_by_image_position_and_size() -> None:
+    left_far = d1.Detection(d1.SignClass(0, "7", "P.123a", "x"), 0.9, (50, 100, 70, 120))
+    right_near = d1.Detection(d1.SignClass(1, "41", "P.127", "x"), 0.8, (800, 100, 900, 200))
+    centre = d1.Detection(d1.SignClass(2, "2", "P.102", "x"), 0.7, (470, 100, 490, 120))
+    positions = d1.scene_positions([left_far, right_near, centre], 960, 540)
+    assert positions[0]["x"] < positions[2]["x"] < positions[1]["x"]
+    assert positions[1]["y"] > positions[0]["y"] and positions[1]["r"] > positions[0]["r"]
+    rows = d1.scene_rows([left_far, right_near, centre], 960, 540)
+    assert [r["Vị trí"] for r in rows] == ["bên trái", "bên phải", "bên giữa"]
+    assert rows[1]["Khoảng cách (ước lượng từ cỡ khung)"] == "gần"
+    svg = d1.scene_svg([left_far, right_near, centre], 960, 540, d1.plan_vn_behavior([], 30))
+    assert svg.startswith("<svg") and svg.count("<circle") == 3
+    assert all(f">{n}</text>" in svg for n in (1, 2, 3))
+
+
+def test_same_board_twins_are_flagged() -> None:
+    a = d1.Detection(d1.SignClass(0, "12", "R.415a", "x"), 0.9, (312, 149, 426, 223))
+    b = d1.Detection(d1.SignClass(1, "30", "S.505a", "x"), 0.8, (312, 149, 428, 223))
+    c = d1.Detection(d1.SignClass(2, "10", "P.130", "x"), 0.7, (102, 56, 135, 87))
+    assert d1.same_board([a, b, c]) == {1: 0}
+    notes = [row["Ghi chú"] for row in d1.scene_rows([a, b, c], 960, 540)]
+    assert notes[0] == "" and "#1" in notes[1] and notes[2] == ""

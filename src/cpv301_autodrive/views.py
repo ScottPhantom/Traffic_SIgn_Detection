@@ -843,11 +843,24 @@ def render_d1_demo() -> None:
             )
         else:
             st.info("Không có biển nào trên ngưỡng tin cậy.")
-    top = next((d for d in detections if d.sign.verified), None)
-    shown = Prediction(
-        class_id=top.sign.yolo_id if top else -1,
-        label=top.sign.code if top else "Không có biển",
-        confidence=top.confidence if top else 0.0,
-        accepted=top is not None,
+    st.markdown("**Mô phỏng: vị trí từng biển trên đường**")
+    st.image(
+        detector_d1.scene_svg(detections, image.width, image.height, command),
+        width="stretch",
+        alt="Cảnh mô phỏng: vị trí từng biển báo theo ảnh",
     )
-    render_road(command, shown)
+    if detections:
+        st.dataframe(
+            detector_d1.scene_rows(detections, image.width, image.height),
+            hide_index=True,
+            alt="Vị trí và khoảng cách ước lượng của từng biển trong cảnh mô phỏng",
+        )
+    with st.container(horizontal=True):
+        st.metric("Tốc độ mục tiêu", f"{command.target_speed_kmh} km/h", border=True)
+        st.metric("Điều khiển", command.action, border=True)
+        st.metric("Góc lái", command.steering, border=True)
+    st.caption(
+        command.reason
+        + " Vị trí ngang lấy từ tâm khung trong ảnh; độ xa ước lượng từ chiều cao khung, "
+        "không phải khoảng cách đo được."
+    )
