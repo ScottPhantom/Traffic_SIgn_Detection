@@ -1,0 +1,10 @@
+{
+  "package": "VGG16-54-R1-RUNTIME-R1",
+  "reviewed_files": {
+    "detector/colab/run_d1_colab_checkpoint_r2.py": "8041540a1a8872c4c6fe893ab17d9c7facf09e344b31445102fc048273ff7112",
+    "detector/colab/run_vgg16_54_r1_r1.py": "46eddeab153f8c775a44a1cc3e3cae5340c2cd4d4c5e5dc68f47b5ba556b259e",
+    "detector/vgg16_54/contract_r1.py": "93b2b35d10ca253347e7be4f693b1f4af17fa1f578fb54ea2cc0a54bdbaffdd0"
+  },
+  "sealed_test_accessed": false,
+  "verdict": "PASS"
+}
