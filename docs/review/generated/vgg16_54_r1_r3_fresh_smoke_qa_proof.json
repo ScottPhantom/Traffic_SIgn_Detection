@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "verdict": "PASS",
+  "package": "VGG16-54-R1-R3-FRESH-SMOKE",
+  "state_suffix": "M1_D1_Colab/runs/vgg16_54_seed_20261018_r2",
+  "source_commit": "2e1d981e70e02b19d1998fa17be8c8a0de033df0",
+  "launcher_commit": "5af60930242f6ef6d830a8663d755f965ff8b0ab",
+  "launch_notebook_sha256": "d0913e2269c69068faa3f7232c6d5ebcf226ff24a25368a18e3c57ec750d7c86",
+  "launch_qa_record_sha256": "a769b7c3ce38683df1ff3359531eedba29cb174cb180fce94c11dc63fbb4fd1e",
+  "config_sha256": "b5275ca6635859f3eb2ae5d98e480da18f748667a96f92a36d1e2145b197c15a",
+  "bundle_manifest_sha256": "bae147b6f7c6f80ac973923df4b60fd31b6587221fe75eaa2d9ed4b93ee6a51b",
+  "status": "SMOKE_STOP",
+  "event": "SMOKE_STOP",
+  "epoch": 1,
+  "attempt_count": 1,
+  "fresh_attempt": {
+    "mode": "fresh",
+    "completed_epoch": 0
+  },
+  "runtime_identity": {
+    "schema": "sha256:d1-runtime-v1:tag+linux-boot-id",
+    "digest": "15f95cca74680341a2e90aeee1e6679050ddf3974ab525e6ad7366eb1000453f"
+  },
+  "gpu": {
+    "device_name": "NVIDIA L4",
+    "cuda_version": "13.0",
+    "device_count": 1,
+    "capability": [
+      8,
+      9
+    ],
+    "total_memory_bytes": 23659151360
+  },
+  "run_binding_sha256": "fe334b1877454adb608628bde0c1a3287a31b861f5bb7b16635e96a8a1953bbe",
+  "checkpoint_binding_sha256": "fe334b1877454adb608628bde0c1a3287a31b861f5bb7b16635e96a8a1953bbe",
+  "checkpoint_generation": "epoch-0001",
+  "checkpoint_manifest_sha256": "797d8ff42960df888cf96b9e05e55e15dfba294a0637acce796cba3c86e8f855",
+  "snapshot_files": [
+    {
+      "path": "weights/last.pt",
+      "size": 176957339,
+      "sha256": "1d31f6c22fac7d025ac72bde3ac07e3c7f0ba615ce3769555dca934b4df7ce22"
+    },
+    {
+      "path": "weights/best.pt",
+      "size": 176957339,
+      "sha256": "1d31f6c22fac7d025ac72bde3ac07e3c7f0ba615ce3769555dca934b4df7ce22"
+    },
+    {
+      "path": "results.csv",
+      "size": 184,
+      "sha256": "84fedde5a0beb204765d27d384dacc2a9c678d5539026d84b51023df17c8c0b4"
+    },
+    {
+      "path": "args.yaml",
+      "size": 422,
+      "sha256": "ed915cdf09f632af9c2befc3d5d35d369049b8bcfbe3e7b533534328b6904189"
+    },
+    {
+      "path": "run_contract.json",
+      "size": 728,
+      "sha256": "6ac248a26fa213371ee723f5a6c8a79014656a24666a3b7a3cbca465834df45c"
+    }
+  ],
+  "state_artifacts": {
+    "colab_execution.json": {
+      "size": 987,
+      "sha256": "df830ef0bc819b86bc5c099d467e01723adcc87599888ef85ebd9c53ad2539af"
+    },
+    "DB_logger.db": {
+      "size": 8192,
+      "sha256": "e355234ef81fbd930c16f4c2b67b5b18aedcad368af285158afbe89cb275a85a"
+    },
+    "train.log": {
+      "size": 1078,
+      "sha256": "f70eb1e8586e4956f0cb1c944e5c75eb2bc4be3a86d58cad84ba15e840be771a"
+    },
+    "recovery/checkpoint_io.jsonl": {
+      "size": 453,
+      "sha256": "0c8e0b7be7b170b8362a6003904a44c1c1a009cd812085fd6f7f978cf6bd53b7"
+    },
+    "recovery/latest.json": {
+      "size": 233,
+      "sha256": "257676a16fcb488c73f4b4080c718ca2d01fa5d3c36b5c2670f6913bfd34a9a8"
+    }
+  },
+  "sealed_test_accessed": false,
+  "authorization": "RESUME_EPOCH_2_ON_GENUINELY_NEW_L4_ONLY"
+}
