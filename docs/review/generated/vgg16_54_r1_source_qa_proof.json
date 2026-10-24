@@ -1,0 +1,25 @@
+{
+  "config_sha256": "b5275ca6635859f3eb2ae5d98e480da18f748667a96f92a36d1e2145b197c15a",
+  "package": "VGG16-54-R1",
+  "reviewed_files": {
+    "detector/colab/extract_cascade_b0_r1.py": "f67663f42f8904e63f892c0ae5e861b1954c2fe9c12292cc0b607c0e3d64f068",
+    "detector/colab/run_cascade_b0_r1.py": "0ece03891ebe0f8c318efd7a062fdb8d799d4cf9cc357b0cf8840b4103ad876a",
+    "detector/colab/run_vgg16_54_r1.py": "4d6092d1c10e3ae4aca95ab422fd3e9c980bf438a666b91bd6f9f3855cdafaec",
+    "detector/d1_cascade_classifier/__init__.py": "fda3d39a0603c715c111ce2eac8757932d27a0b45104a47b8802331d7336435b",
+    "detector/d1_cascade_classifier/contract.py": "e847db9ae322fe3a7ba11e8e77743ec32440027f5d29222f2c937d746a9cfc94",
+    "detector/d1_cascade_classifier/data.py": "e55fbaddea154131a0ef20f8d2653150b0f2c8eecdc8ff31dbcb16d6a463ed5d",
+    "detector/d1_cascade_classifier/metrics.py": "612259aa52bf8794db3c717b7b6f481532f9bccc572034709cfcefc66d316078",
+    "detector/d1_cascade_classifier/model.py": "fdcbc4156a4bef9b5eed56a8ebc58746408a14f6558cd4b3c38a4e49df47b77a",
+    "detector/m1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "detector/m1/checkpoint_store.py": "e1f8f00c036d6407d327164d907f3641427864cc35cf817336209ae5da76891c",
+    "detector/m1/checkpoint_store_r2.py": "c79c85ccc95376c8922955e16be131dda74ae7b0b4eda65d787d47da1cfab160",
+    "detector/pyproject.toml": "80a60ba75ecf68a33006a9dbb8d32eacb75b7a7dbe87dd952b7b9f9f9ab1fa7e",
+    "detector/uv.lock": "5d56642af267bdff63f7d2a627ccf97a8f04cbf848a673a5d65988a471baaec5",
+    "detector/vgg16_54/__init__.py": "d7db4712604e5f7cbe5aeae892c8a1006b371d7025cdda9e99f261271111e4f5",
+    "detector/vgg16_54/contract.py": "6291e1362e937129f80c91a48468206de717adbb6d6f4da867ee8e3a3f68f539",
+    "detector/vgg16_54/model.py": "e15e6ce2c4329bcebc7252f6af5285567d68d285ea46789b1259dd8f037b0034",
+    "docs/review/vgg16_54_r1_preparation_contract.md": "5668c8d30cefae1efd35d9fa8caae8fcc931e074930fa64f23f4940db074bb32"
+  },
+  "sealed_test_accessed": false,
+  "verdict": "PASS"
+}

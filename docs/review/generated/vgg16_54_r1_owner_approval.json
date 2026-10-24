@@ -1,0 +1,27 @@
+{
+  "config": {
+    "amp": true,
+    "architecture": "vgg16_crop54_scratch",
+    "batch": 256,
+    "classes": 54,
+    "early_stopping_min_epochs": 30,
+    "early_stopping_patience": 15,
+    "epochs": 100,
+    "horizontal_flip": false,
+    "input_shape": [
+      3,
+      32,
+      32
+    ],
+    "learning_rate": 0.0001,
+    "pretrained": false,
+    "sealed_test_accessed": false,
+    "seed": 20261018,
+    "selection_metric": "macro_f1_supported_classes_then_negative_val_loss",
+    "weight_decay": 0.0001,
+    "workers": 2
+  },
+  "decision": "APPROVED_VGG16_54_R1",
+  "experiment": "VGG16-54-R1",
+  "sealed_test_accessed": false
+}
