@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "package": "VGG16-54-R1-LONG-R5",
+  "authorization": "OWNER_APPROVED_LONG_RUN_AFTER_TWO_RUNTIME_QA",
+  "source_commit": "2e1d981e70e02b19d1998fa17be8c8a0de033df0",
+  "runner_module": "colab.run_vgg16_54_r1_r1",
+  "working_directory": "/content/Traffic_Sign_Detector/detector",
+  "input_root": "/content/vgg16_54_input",
+  "state_path": "/content/drive/MyDrive/CPV301/Traffic_Sign_Detector/M1_D1_Colab/runs/vgg16_54_seed_20261018_r2",
+  "mode": "resume",
+  "stop_after": null,
+  "resume_runtime_digest": "648af06dd95af878657f2f041dd78a18cdf3137c27858176454204065a3e1ff5",
+  "config_sha256": "b5275ca6635859f3eb2ae5d98e480da18f748667a96f92a36d1e2145b197c15a",
+  "bundle_manifest_sha256": "bae147b6f7c6f80ac973923df4b60fd31b6587221fe75eaa2d9ed4b93ee6a51b",
+  "owner_approval": {
+    "path": "/content/drive/MyDrive/CPV301/Traffic_Sign_Detector/M1_D1_Colab/vgg16_54_r1_owner_approval.json",
+    "sha256": "f09c7707263b52337957de5dd9ac2bf22712bb9135df8a84880633718ade06af"
+  },
+  "source_qa": {
+    "path": "/content/drive/MyDrive/CPV301/Traffic_Sign_Detector/M1_D1_Colab/vgg16_54_r1_source_qa_proof.json",
+    "sha256": "10f0ca69e32aed906d0bf8cad36aaacf3d40ea069faec51fb084de0d7ecfb216"
+  },
+  "runtime_source_qa": {
+    "path": "/content/drive/MyDrive/CPV301/Traffic_Sign_Detector/M1_D1_Colab/vgg16_54_r1_runtime_r1_source_qa_proof.json",
+    "sha256": "cbd531302429908354858640ac501e8c0d1805c5dec5462bf5e6a1e611b044f5"
+  },
+  "smoke_qa": {
+    "path": "/content/drive/MyDrive/CPV301/Traffic_Sign_Detector/M1_D1_Colab/vgg16_54_r1_r4_two_runtime_smoke_qa_proof.json",
+    "sha256": "898a440709dd477b9ec70569b52464047adb55de8ed48325eeef091f3e759132"
+  },
+  "sealed_test_accessed": false,
+  "command": [
+    "uv",
+    "run",
+    "python",
+    "-m",
+    "colab.run_vgg16_54_r1_r1",
+    "--root",
+    "/content/vgg16_54_input",
+    "--state",
+    "/content/drive/MyDrive/CPV301/Traffic_Sign_Detector/M1_D1_Colab/runs/vgg16_54_seed_20261018_r2",
+    "--bundle-manifest-sha256",
+    "bae147b6f7c6f80ac973923df4b60fd31b6587221fe75eaa2d9ed4b93ee6a51b",
+    "--owner-approval",
+    "/content/drive/MyDrive/CPV301/Traffic_Sign_Detector/M1_D1_Colab/vgg16_54_r1_owner_approval.json",
+    "--owner-approval-sha256",
+    "f09c7707263b52337957de5dd9ac2bf22712bb9135df8a84880633718ade06af",
+    "--source-qa",
+    "/content/drive/MyDrive/CPV301/Traffic_Sign_Detector/M1_D1_Colab/vgg16_54_r1_source_qa_proof.json",
+    "--source-qa-sha256",
+    "10f0ca69e32aed906d0bf8cad36aaacf3d40ea069faec51fb084de0d7ecfb216",
+    "--runtime-source-qa",
+    "/content/drive/MyDrive/CPV301/Traffic_Sign_Detector/M1_D1_Colab/vgg16_54_r1_runtime_r1_source_qa_proof.json",
+    "--runtime-source-qa-sha256",
+    "cbd531302429908354858640ac501e8c0d1805c5dec5462bf5e6a1e611b044f5",
+    "--mode",
+    "resume",
+    "--smoke-qa",
+    "/content/drive/MyDrive/CPV301/Traffic_Sign_Detector/M1_D1_Colab/vgg16_54_r1_r4_two_runtime_smoke_qa_proof.json",
+    "--smoke-qa-sha256",
+    "898a440709dd477b9ec70569b52464047adb55de8ed48325eeef091f3e759132"
+  ]
+}

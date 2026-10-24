@@ -1,0 +1,14 @@
+{
+  "verdict": "PASS",
+  "package": "VGG16-54-R1",
+  "config_sha256": "b5275ca6635859f3eb2ae5d98e480da18f748667a96f92a36d1e2145b197c15a",
+  "bundle_manifest_sha256": "bae147b6f7c6f80ac973923df4b60fd31b6587221fe75eaa2d9ed4b93ee6a51b",
+  "fresh_completed_epoch": 1,
+  "resume_started_epoch": 2,
+  "resume_completed_epoch": 2,
+  "runtime_digests": [
+    "15f95cca74680341a2e90aeee1e6679050ddf3974ab525e6ad7366eb1000453f",
+    "648af06dd95af878657f2f041dd78a18cdf3137c27858176454204065a3e1ff5"
+  ],
+  "sealed_test_accessed": false
+}
