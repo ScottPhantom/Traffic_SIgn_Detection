@@ -1,0 +1,78 @@
+{
+  "schema": "yolo11n-dual-track-plan-v1",
+  "status": "PRECOMMIT_SOURCE_INDEPENDENT_QA_PASS",
+  "date": "2026-10-25",
+  "training_started": false,
+  "sealed_test_accessed": false,
+  "shared": {
+    "seed": 20261018,
+    "imgsz": 1280,
+    "batch": 4,
+    "workers": 4,
+    "device": "NVIDIA_L4_CUDA_0",
+    "fliplr": 0.0,
+    "test_payload_allowed": false,
+    "pretrained_weight": {
+      "name": "yolo11n.pt",
+      "source": "official_ultralytics",
+      "download_authorized": true,
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "git_tracked": false
+    }
+  },
+  "tracks": {
+    "N54": {
+      "role": "direct_detection_and_54_class_classification",
+      "candidate": "YOLO11n",
+      "control": "D1-A3-R2_YOLO11s_54",
+      "classes": 54,
+      "epochs": 100,
+      "cos_lr": true,
+      "fraction": 1.0,
+      "patience": 30,
+      "data_action": "reuse_exact_approved_d1_a3_train_val_bundle",
+      "state_suffix": "M1_D1_Colab/runs/yolo11n_n54_seed_20261018_r1",
+      "classifier_action": "not_applicable"
+    },
+    "N1": {
+      "role": "one_class_detector_for_cascade",
+      "candidate": "YOLO11n",
+      "control": "Cascade_B0_YOLO11s_one_class",
+      "classes": 1,
+      "class_names": [
+        "traffic_sign"
+      ],
+      "epochs": 100,
+      "cos_lr": null,
+      "fraction": 1.0,
+      "patience": 0,
+      "data_action": "append_only_bundle_reusing_exact_cascade_b0_train_val_rosters",
+      "state_suffix": "M1_D1_Colab/runs/yolo11n_n1_seed_20261018_r1",
+      "classifier_action": "reuse_qa_passed_compactcnn_and_vgg16_54_weights_unchanged"
+    }
+  },
+  "required_gates": [
+    "owner_weight_download_and_config_freeze_complete",
+    "exact_weight_hash_and_load_check",
+    "append_only_source_and_contract",
+    "independent_source_qa_pass",
+    "immutable_commit_notebook_and_proof_if_authorized",
+    "train_val_bundle_verification_with_test_absent",
+    "fresh_epoch_1_l4_smoke",
+    "different_runtime_resume_epoch_2",
+    "independent_smoke_artifact_qa_pass",
+    "long_training",
+    "terminal_artifact_verification",
+    "validation_common_method_evaluation",
+    "independent_result_qa",
+    "deployment_device_latency_measurement"
+  ],
+  "comparison_pipelines": [
+    "YOLO11s_54",
+    "YOLO11n_54",
+    "YOLO11s_1_plus_CompactCNN",
+    "YOLO11n_1_plus_CompactCNN",
+    "YOLO11s_1_plus_VGG16_54",
+    "YOLO11n_1_plus_VGG16_54"
+  ]
+}
