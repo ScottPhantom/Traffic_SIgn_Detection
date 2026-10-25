@@ -1,0 +1,17 @@
+{
+  "schema": "yolo11n-n54-r1-smoke-qa-v1",
+  "package": "YOLO11N-N54-R1",
+  "verdict": "PASS",
+  "independent_qa_record": "docs/review/yolo11n_n54_r1_smoke_artifact_independent_qa_record.md",
+  "independent_qa_record_sha256": "1df68b16f6d4014231851f6629aba380ae30ddc9532dd46927710bf5208f4481",
+  "bundle_sha256": "7ea344cb1e2c166786d0552f215993969efec9b5f06a9bf49310d4390243d641",
+  "run_binding_sha256": "2cde4feb9aa3c93a42efa7b0fbaf5253dfd516519e879a346bca978dae8e9432",
+  "state_path_sha256": "641c9789fa64bc455d76ee577281beefca8854c076579df348632a0f5598f76a",
+  "checkpoint_epoch": 2,
+  "checkpoint_latest_sha256": "3e223f7cb010c83da168e239e1b1d9016129e44bffb2a36261b6234f9acc68a3",
+  "runtime_digests": [
+    "ffbc4d2a9c03011e1d7c9f983163de46a646b61873f214d73d937966ad439621",
+    "137c13c7b4893dbeadb02842ab3d21e37be66a7bc30824eaa8a545fff67299e7"
+  ],
+  "sealed_test_accessed": false
+}
