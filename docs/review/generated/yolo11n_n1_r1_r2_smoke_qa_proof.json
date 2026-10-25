@@ -1,0 +1,34 @@
+{
+  "checkpoint_latest_sha256": "ed42322f480030cd05a5f1bffb30731dad9a75eba5e158883535e078c6debb6a",
+  "config": {
+    "architecture": "YOLO11n",
+    "classifier": "reuse_existing_compactcnn_and_vgg16_54",
+    "classifier_batch": 128,
+    "classifier_epochs": 30,
+    "classifier_lr": 0.001,
+    "detector_batch": 4,
+    "detector_epochs": 100,
+    "experiment": "YOLO11N-N1-R1",
+    "fliplr": 0.0,
+    "imgsz": 1280,
+    "nms_iou": 0.7,
+    "owner_decision_sha256": "b2b40c5937e25316c6806d5bcb6babbdcf284860a2305f2fc7b5915a058e2b8c",
+    "pretrained_weight_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "seed": 20261018
+  },
+  "fresh_completed_epoch": 1,
+  "independent_qa_record_sha256": "2c1ab19b14456e75f37c454cb619c2dbad1509e1e8eb63a30bc897e603415eb4",
+  "manifest_sha256": "8e6ffe7761b78ba4e44a86cd2caa9a3a155ba0874cbe39bb20669af3773bb6da",
+  "package": "YOLO11N-N1-R1",
+  "resume_completed_epoch": 2,
+  "resume_started_epoch": 2,
+  "runtime_digests": [
+    "639d59924049977c060b1dddd8d10b140fb0691a604e47c25f3ce735a14cd58f",
+    "c3f1f5a671417276449cc06ecf9db377e76ea22b67e14281e25ad90ceea41517"
+  ],
+  "schema": "yolo11n-n1-r1-r2-smoke-qa-v1",
+  "sealed_test_accessed": false,
+  "stage": "detector",
+  "state_path_sha256": "622ee9e690c827decb829d1f4970455805395b81249e63067f4bb583ce70ea01",
+  "verdict": "PASS"
+}
