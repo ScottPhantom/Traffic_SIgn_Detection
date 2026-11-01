@@ -28,6 +28,7 @@ tmp/
 
 # graft's local graph cache — regenerable, not committed (run `graft build`).
 /graft/
+.ignore
 
 # Streamlit local credentials and per-user state.
 .streamlit/secrets.toml

@@ -4,7 +4,14 @@ Bản phát hành gọn cho demo nhận diện biển báo trên ảnh, video ca
 
 ## Clone và khởi động
 
-Yêu cầu Python 3.12 và [uv](https://docs.astral.sh/uv/). Từ thư mục gốc:
+Yêu cầu Python 3.12 và [uv](https://docs.astral.sh/uv/). Để chỉ tải bản phát hành hiện hành, dùng nhánh mặc định với lịch sử nông:
+
+```bash
+git clone --depth 1 --single-branch https://github.com/ScottPhantom/Traffic_SIgn_Detection.git
+cd Traffic_SIgn_Detection
+```
+
+Từ thư mục gốc:
 
 ```bash
 uv sync --locked --no-dev
