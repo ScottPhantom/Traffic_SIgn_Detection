@@ -17,4 +17,4 @@ Status: local candidate, 2026-11-01. This tree is a clean runtime snapshot deriv
 
 ## Change workflow
 
-Use `rg` for text and local module imports; keep changes scoped. Run `uv lock --check`, `uv run ruff check src tests`, `uv run pytest -q`, then start the app from an isolated clone. Read back the exact files and status before claiming completion.
+Use Graft for source relationships and `rg` for docs/config/generated artifacts; keep changes scoped. Run `uv lock --check`, `uv run ruff check src tests`, `uv run pytest -q`, then start the app from an isolated clone. Read back the exact files and status before claiming completion.
