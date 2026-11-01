@@ -15,5 +15,6 @@ The release package includes 54-class map, DT validation summary and the minimum
 - Streamlit AppTest: 8/8 pages, no unhandled exceptions; expected missing-weight message in D1/S1/E0.
 - `cpv301 web --port 8629 --headless`: health endpoint returned `ok`.
 - Class map: 54 classes; DATASET01 authority reports `sealed_test_accessed=false`; graph builds 3,216 nodes from public evidence.
+- Isolated local clone of commit `6ef4e66` at `/tmp/cpv301-release-clone-r1`: `uv sync --locked --no-dev` PASS; Streamlit AppTest 8/8 pages without exception; class map 54 and seal metadata false; `cpv301 web --port 8630 --headless` returned `ok` at `/_stcore/health`. No private model/video files were copied into that clone.
 
 Still required before public GitHub release: isolated clone replay and independent QA of the renamed app/source and the exact asset set. The owner must authorize push/publication under the repository agent contract. This file does not make a classroom video or safety approval claim.
