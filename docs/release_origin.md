@@ -1,6 +1,6 @@
 # App release R1 provenance and gates
 
-Prepared locally on 2026-11-01 from `/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector`, research branch `codex/yolo11n-dual-track-r1`, HEAD `d4de74d6e2fa0eebc9205639eee02b7fbec3acf6`. The Desktop checkout contained modified tracked files and untracked current app modules. This release candidate copied the live app snapshot without changing or deleting that checkout.
+Prepared locally on 2026-11-01 from `/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector`, research commit `d4de74d6e2fa0eebc9205639eee02b7fbec3acf6` (current branch `yolo11n-dual-track-r1`). The Desktop checkout contained modified tracked files and untracked current app modules. This release candidate copied the live app snapshot without changing or deleting that checkout.
 
 The candidate uses stable module names for the current D1/CenterCam, dataset authority and Review 2 video code. Historical numbered implementations, notebooks, training scripts, model outputs and complete append-only QA records remain in the research checkout. This rename is a source refactor, **not** a new model result or independent QA verdict.
 
@@ -21,3 +21,5 @@ The release package includes 54-class map, DT validation summary and the minimum
 The Owner explicitly authorized pushing this branch and making it the GitHub default. The branch and default were read back on GitHub, and a fresh `--depth 1 --single-branch` clone from the public URL checked out commit `2027e1c`: `uv sync --locked --no-dev` PASS, all eight pages without exceptions, 54-class map, seal metadata false, and `python main.py --port 8631 --headless` returned `ok` at `/_stcore/health`. The next documentation commit supersedes that exact commit without changing runtime code.
 
 Independent QA of the renamed app/source and exact asset set remains pending. This file does not make a classroom video or safety approval claim.
+
+On 2026-11-01, the Owner requested removal of the automation prefix from branch names. GitHub branches are now `app-release-r1` (default), `vgg16-54-r1`, and `yolo11n-dual-track-r1`. Each rename retained its commit SHA; the existing `DEV/Rroject_Pineline` branch was not changed. Local checkouts and upstream references were updated. Historical QA records in the research checkout keep their original branch names as a record of what was reviewed at that time.

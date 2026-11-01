@@ -1,6 +1,6 @@
 # CPV301 AutoDrive — ứng dụng demo
 
-Bản phát hành gọn cho demo nhận diện biển báo trên ảnh, video camera trước và mô phỏng hành vi. Mã nguồn của mỗi chức năng đang dùng nằm trong `src/cpv301_autodrive/`; hồ sơ thí nghiệm/QA đầy đủ vẫn ở nhánh nghiên cứu `codex/yolo11n-dual-track-r1`. Đây là hệ thống **mô phỏng**, chưa đạt tiêu chí nghiệm thu D-05 và không điều khiển xe thật.
+Bản phát hành gọn cho demo nhận diện biển báo trên ảnh, video camera trước và mô phỏng hành vi. Mã nguồn của mỗi chức năng đang dùng nằm trong `src/cpv301_autodrive/`; hồ sơ thí nghiệm/QA đầy đủ vẫn ở nhánh nghiên cứu `yolo11n-dual-track-r1`. Đây là hệ thống **mô phỏng**, chưa đạt tiêu chí nghiệm thu D-05 và không điều khiển xe thật.
 
 ## Clone và khởi động
 

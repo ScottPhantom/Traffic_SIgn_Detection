@@ -1,6 +1,6 @@
 # CPV301 app release memory
 
-Status: GitHub default branch `codex/app-release-r1`, 2026-11-01. This tree is a clean runtime snapshot derived from the Desktop checkout. The full experiment and QA archive remains on the research branch. This release has **not** received independent release QA; source/runtime smoke and clean GitHub clone replay passed.
+Status: GitHub default branch `app-release-r1`, 2026-11-01. This tree is a clean runtime snapshot derived from the Desktop checkout. The full experiment and QA archive remains on research branch `yolo11n-dual-track-r1`. This release has **not** received independent release QA; source/runtime smoke and clean GitHub clone replay passed.
 
 ## Runtime scope
 
