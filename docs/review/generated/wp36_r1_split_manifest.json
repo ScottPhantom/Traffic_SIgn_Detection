@@ -1,0 +1,82 @@
+{
+  "artifacts": {
+    "docs/review/generated/wp36_r1_class_coverage.csv": "598309eb0c02307c2b19a6846745e2ad840b177dc62008309649b50b3edf5851",
+    "docs/review/generated/wp36_r1_split_candidate.json": "869947559c5eda978a64418a662092a4cd86eec17a0c6a12bb9f827aff3f984e",
+    "docs/review/generated/wp36_r1_split_frames.csv": "8e197d9c7103ac5dc6b7ffc8a3d1aeb30bb6034048d470e4887dd868df95823a",
+    "docs/review/generated/wp36_r1_split_groups.csv": "1df5207d571d3736dde296de96cdf77c9c4fe711cc9e9e0bf29d41a126850060"
+  },
+  "background_stems": [
+    "0544"
+  ],
+  "boundary": "G07_SPLIT_PROPOSAL_NOT_OWNER_ACCEPTED_NO_TRAINING",
+  "excluded": {
+    "quarantined_negatives": 24,
+    "stem_0248": "absent"
+  },
+  "forced_train_groups": 15,
+  "groups": {
+    "test": 16,
+    "train": 29,
+    "val": 9
+  },
+  "objective": {
+    "band_violation": 0.175967,
+    "box_balance_deviation": 0.258504,
+    "classes_with_2plus_test_groups": 17,
+    "ratio_deviation": 0.265967,
+    "unmet_requirements": 1
+  },
+  "objective_order": [
+    "unmet_requirements",
+    "classes_with_2plus_test_groups",
+    "band_violation",
+    "ratio_deviation",
+    "box_balance_deviation"
+  ],
+  "package": "M0-WP36-R1",
+  "pinned_sources": {
+    "docs/review/g07_owner_decision_r1_record.md": "ddeae6a55cc819d3f97d68f425e93c20d0051f5e6f3d218f78f5f32fa2a20a29",
+    "docs/review/g07_owner_decision_record.md": "5cab1825f11cdd63ed2cd81576fe01a00bd21d2240ab0def11178771bc0afc0b",
+    "docs/review/generated/wp36_class_coverage.csv": "00216563b1c78d94070ea166287a016ea99f5803d02fd4fcf423a868286015e1",
+    "docs/review/generated/wp36_split_candidate.json": "964b447715aa4c95facf05dc50999539417b65dc1e4dc7129cd2caad6b64be04",
+    "docs/review/generated/wp36_split_frames.csv": "1bbc0218af9085e4749965138175c61ff7cbafdae8bd3878d72fb685fbbef97d",
+    "docs/review/generated/wp36_split_groups.csv": "27f81e6c317dc3396c89cb3d0d5edfe3c24c8272d71f2215cbf7e2fb3ae34530",
+    "docs/review/generated/wp36_split_manifest.json": "1012b223f7f1d9ffdd153b6c980ba7f2252c8e41a301ec9b87a877457fd0cc1e",
+    "docs/review/wp36_group_split_report.md": "8e04ab229c64edd46b31328969b644234df2a2bf42ab94c01509de71f246ea87",
+    "docs/review/wp36_independent_qa_record.md": "116f85c0794bf7ea6de62a54cf48294c19e5302b19a4d3e5fbb241f9d34f551d",
+    "scripts/build_wp36_group_split.py": "5fd5b4c189d0815f794e46bd41f1cef2f34289a3e7acad9388cfb45a50eb2c4a",
+    "tests/test_wp36_group_split.py": "270b9d399c03d9fa38db9595704c2fc4d4cc688b7306fdd5e8cc6bd8ca3e6e53"
+  },
+  "restarts": 120,
+  "seed": 20261018,
+  "split_authorized": false,
+  "split_list_hash_rule": "sha256 of the sorted stems joined by '\\n', no trailing newline",
+  "split_list_sha256": {
+    "test": "afa03d4b6deb7567c5784b29122966d84599d4eb81fdbad37c3b20adaf7524bc",
+    "train": "6ac767509def899071f6d6dc0da1e98e62a2a19eb0e62292970e8273b4c99372",
+    "val": "ae3f3509319fbb301012e9fbeb7431caacfcd4035c9d2f9167f24e3ed2b8f593"
+  },
+  "status": "WP36_R1_AWAITING_QA_REVIEW",
+  "supersedes": "M0-WP36 (QA PASS with P2-1; kept byte-identical)",
+  "target": {
+    "test": 0.15,
+    "train": 0.7,
+    "val": 0.15
+  },
+  "test_seal_sha256": "afa03d4b6deb7567c5784b29122966d84599d4eb81fdbad37c3b20adaf7524bc",
+  "tolerance": 0.03,
+  "training_authorized": false,
+  "unmet_class_requirements": [
+    "22"
+  ],
+  "usable_frames": {
+    "test": 903,
+    "train": 1912,
+    "val": 376
+  },
+  "usable_share": {
+    "test": 0.283,
+    "train": 0.5992,
+    "val": 0.1178
+  }
+}

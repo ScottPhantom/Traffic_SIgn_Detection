@@ -1,0 +1,51 @@
+.DS_Store
+.env
+.idea/
+.vscode/
+.venv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Downloaded datasets and trained artifacts stay local.
+data/raw/*
+data/processed/*
+models/*.h5
+models/*.keras
+models/*.tflite
+/models/pretrained/
+artifacts/*.db
+artifacts/incomplete-downloads/
+
+# Local runtime output.
+logs/
+tmp/
+
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/
+
+# Streamlit local credentials and per-user state.
+.streamlit/secrets.toml
+
+# Local Claude/Graft agent wiring. Codex uses the tracked root AGENTS.md contract.
+/.claude/
+/.agents/skills/
+
+# Review renders contain DATASET01-derived image content. The public repository keeps
+# their manifests, hashes, reports, and builders, but not the rendered pixels themselves.
+/docs/review/assets/
+
+# Large source PDFs stay local; provenance metadata and exact hashes remain versioned.
+/references/qcvn41_2024/*.pdf
+
+# Trained model weights stay local (D-01 public-checkpoint boundary); run JSON/CSV evidence is versioned.
+results/experiments/**/weights/
+
+# Release checkout keeps experiment records in the research branch.
+/results/experiments/
+/docs/review/assets/

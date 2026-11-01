@@ -1,0 +1,2255 @@
+{
+  "batch_id": "M0-WP17-D02-C-SEQUENCE-BATCH-B",
+  "decision_count": 100,
+  "decisions": [
+    {
+      "batch_position": 1,
+      "canonical_review_order": 102,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_001.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0493",
+        "0494"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0102",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 2,
+      "canonical_review_order": 103,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_002.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0495",
+        "0496"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0103",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 3,
+      "canonical_review_order": 104,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_003.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0512",
+        "0513"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0104",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 4,
+      "canonical_review_order": 105,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_004.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "0519",
+        "0520",
+        "0521",
+        "0522",
+        "0523"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0105",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 5,
+      "canonical_review_order": 106,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_005.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0526",
+        "0527",
+        "0528"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0106",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 6,
+      "canonical_review_order": 107,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_006.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0545",
+        "0546"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0107",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 7,
+      "canonical_review_order": 108,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_007.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0555",
+        "0556",
+        "0557",
+        "0558"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0108",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 8,
+      "canonical_review_order": 109,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_008.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0559",
+        "0560",
+        "0561",
+        "0562"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0109",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 9,
+      "canonical_review_order": 110,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_009.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0564",
+        "0565",
+        "0566"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0110",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 10,
+      "canonical_review_order": 111,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_010.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0571",
+        "0572"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0111",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 11,
+      "canonical_review_order": 112,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_011.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0573",
+        "0574",
+        "0575"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0112",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 12,
+      "canonical_review_order": 113,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_012.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0576",
+        "0577",
+        "0578"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0113",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 13,
+      "canonical_review_order": 114,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_013.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0580",
+        "0581"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0114",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 14,
+      "canonical_review_order": 115,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_014.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0582",
+        "0583"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0115",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 15,
+      "canonical_review_order": 116,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_015.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0584",
+        "0585"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0116",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 16,
+      "canonical_review_order": 117,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_016.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0588",
+        "0589"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0117",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 17,
+      "canonical_review_order": 118,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_017.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0595",
+        "0596",
+        "0597"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0118",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 18,
+      "canonical_review_order": 119,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_018.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0598",
+        "0599",
+        "0600"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0119",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 19,
+      "canonical_review_order": 120,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_019.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0603",
+        "0604"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0120",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 20,
+      "canonical_review_order": 121,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_020.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0608",
+        "0609",
+        "0610"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0121",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 21,
+      "canonical_review_order": 122,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_021.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0622",
+        "0623"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0122",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 22,
+      "canonical_review_order": 123,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_022.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0627",
+        "0628"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0123",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 23,
+      "canonical_review_order": 124,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_023.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0629",
+        "0630"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0124",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 24,
+      "canonical_review_order": 125,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_024.jpg",
+        "docs/review/assets/wp3/grouping/batch_005.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0631",
+        "0632",
+        "0633"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0125",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 25,
+      "canonical_review_order": 126,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_025.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0634",
+        "0635"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0126",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 26,
+      "canonical_review_order": 127,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_026.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0637",
+        "0638"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0127",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 27,
+      "canonical_review_order": 128,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_027.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0639",
+        "0640",
+        "0641"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0128",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 28,
+      "canonical_review_order": 129,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_028.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0671",
+        "0672"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0129",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 29,
+      "canonical_review_order": 130,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_029.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0676",
+        "0677",
+        "0678",
+        "0679"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0130",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 30,
+      "canonical_review_order": 131,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_030.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0683",
+        "0684"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0131",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 31,
+      "canonical_review_order": 132,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_031.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0691",
+        "0692"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0132",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 32,
+      "canonical_review_order": 133,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_032.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0693",
+        "0694"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0133",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 33,
+      "canonical_review_order": 134,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_033.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0707",
+        "0708",
+        "0709"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0134",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 34,
+      "canonical_review_order": 135,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_034.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0710",
+        "0711"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0135",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 35,
+      "canonical_review_order": 136,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_035.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0721",
+        "0722"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0136",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 36,
+      "canonical_review_order": 137,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_036.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0723",
+        "0724",
+        "0725"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0137",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 37,
+      "canonical_review_order": 138,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_037.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0727",
+        "0728",
+        "0729"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0138",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 38,
+      "canonical_review_order": 139,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_038.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0732",
+        "0733"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0139",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 39,
+      "canonical_review_order": 140,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_039.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0742",
+        "0743",
+        "0744",
+        "0745"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0140",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 40,
+      "canonical_review_order": 141,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_040.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0746",
+        "0747",
+        "0748",
+        "0749"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0141",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 41,
+      "canonical_review_order": 142,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_041.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0752",
+        "0753"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0142",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 42,
+      "canonical_review_order": 143,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_042.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0754",
+        "0755"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0143",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 43,
+      "canonical_review_order": 144,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_043.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 8,
+      "members": [
+        "0759",
+        "0760",
+        "0761",
+        "0762",
+        "0763",
+        "0764",
+        "0765",
+        "0766"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0144",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 44,
+      "canonical_review_order": 145,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_044.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 6,
+      "members": [
+        "0767",
+        "0768",
+        "0769",
+        "0770",
+        "0771",
+        "0772"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0145",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 45,
+      "canonical_review_order": 146,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_045.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "0773",
+        "0774",
+        "0775",
+        "0776",
+        "0777"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0146",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 46,
+      "canonical_review_order": 147,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_046.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0778",
+        "0779"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0147",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 47,
+      "canonical_review_order": 148,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_047.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0781",
+        "0782",
+        "0783"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0148",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 48,
+      "canonical_review_order": 149,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_048.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 6,
+      "members": [
+        "0785",
+        "0786",
+        "0787",
+        "0788",
+        "0789",
+        "0790"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0149",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 49,
+      "canonical_review_order": 150,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_049.jpg",
+        "docs/review/assets/wp3/grouping/batch_006.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0797",
+        "0798"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0150",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 50,
+      "canonical_review_order": 151,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_050.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0802",
+        "0803",
+        "0804",
+        "0805"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0151",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 51,
+      "canonical_review_order": 152,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_051.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0808",
+        "0809"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0152",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 52,
+      "canonical_review_order": 153,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_052.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0810",
+        "0811"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0153",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 53,
+      "canonical_review_order": 154,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_053.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 9,
+      "members": [
+        "0820",
+        "0821",
+        "0822",
+        "0823",
+        "0824",
+        "0825",
+        "0826",
+        "0827",
+        "0828"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0154",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 54,
+      "canonical_review_order": 155,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_054.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 6,
+      "members": [
+        "0829",
+        "0830",
+        "0831",
+        "0832",
+        "0833",
+        "0834"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0155",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 55,
+      "canonical_review_order": 156,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_055.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0838",
+        "0839",
+        "0840",
+        "0841"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0156",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 56,
+      "canonical_review_order": 157,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_056.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0842",
+        "0843"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0157",
+      "rationale": "Direct inspection of every member frame shows one stable annotated sign across a continuous roadway viewpoint; identity remains provisional.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 57,
+      "canonical_review_order": 158,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_057.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 10,
+      "members": [
+        "0862",
+        "0863",
+        "0864",
+        "0865",
+        "0866",
+        "0867",
+        "0868",
+        "0869",
+        "0870",
+        "0871"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0158",
+      "rationale": "Direct inspection of every member frame shows one stable annotated sign across a continuous roadway viewpoint; identity remains provisional.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 58,
+      "canonical_review_order": 159,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_058.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0872",
+        "0873",
+        "0874"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0159",
+      "rationale": "Direct inspection of every member frame shows one stable annotated sign across a continuous roadway viewpoint; identity remains provisional.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 59,
+      "canonical_review_order": 160,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_059.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0876",
+        "0877"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0160",
+      "rationale": "Direct inspection of every member frame shows one stable annotated sign across a continuous roadway viewpoint; identity remains provisional.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 60,
+      "canonical_review_order": 161,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_060.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0883",
+        "0884",
+        "0885",
+        "0886"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0161",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 61,
+      "canonical_review_order": 162,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_061.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0887",
+        "0888",
+        "0889",
+        "0890"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0162",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 62,
+      "canonical_review_order": 163,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_062.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0893",
+        "0894",
+        "0895",
+        "0896"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0163",
+      "rationale": "Direct inspection of every member frame shows one stable annotated sign across a continuous roadway viewpoint; identity remains provisional.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 63,
+      "canonical_review_order": 164,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_063.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0898",
+        "0899"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0164",
+      "rationale": "Direct inspection of every member frame shows one stable annotated sign across a continuous roadway viewpoint; identity remains provisional.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 64,
+      "canonical_review_order": 165,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_064.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "0900",
+        "0901",
+        "0902"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0165",
+      "rationale": "Direct inspection of every member frame shows one stable annotated sign across a continuous roadway viewpoint; identity remains provisional.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 65,
+      "canonical_review_order": 166,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_065.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0903",
+        "0904",
+        "0905",
+        "0906"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0166",
+      "rationale": "Direct inspection of every member frame shows one stable annotated sign across a continuous roadway viewpoint; identity remains provisional.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 66,
+      "canonical_review_order": 167,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_066.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 10,
+      "members": [
+        "0910",
+        "0911",
+        "0912",
+        "0913",
+        "0914",
+        "0915",
+        "0916",
+        "0917",
+        "0918",
+        "0919"
+      ],
+      "physical_sign_sequence": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "proxy_sequence_id": "proxy_sequence_0167",
+      "rationale": "Direct inspection of every member frame shows one stable annotated sign across a continuous roadway viewpoint; identity remains provisional.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 67,
+      "canonical_review_order": 168,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_067.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0923",
+        "0924"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0168",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 68,
+      "canonical_review_order": 169,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_068.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0925",
+        "0926"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0169",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 69,
+      "canonical_review_order": 170,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_069.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "0929",
+        "0930",
+        "0931",
+        "0932",
+        "0933"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0170",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 70,
+      "canonical_review_order": 171,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_070.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "0936",
+        "0937",
+        "0938",
+        "0939",
+        "0940"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0171",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 71,
+      "canonical_review_order": 172,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_071.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 7,
+      "members": [
+        "0942",
+        "0943",
+        "0944",
+        "0945",
+        "0946",
+        "0947",
+        "0948"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0172",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 72,
+      "canonical_review_order": 173,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_072.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0950",
+        "0951"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0173",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 73,
+      "canonical_review_order": 174,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_073.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 10,
+      "members": [
+        "0952",
+        "0953",
+        "0954",
+        "0955",
+        "0956",
+        "0957",
+        "0958",
+        "0959",
+        "0960",
+        "0961"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0174",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 74,
+      "canonical_review_order": 175,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_074.jpg",
+        "docs/review/assets/wp3/grouping/batch_007.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0966",
+        "0967"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0175",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 75,
+      "canonical_review_order": 176,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_075.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "0969",
+        "0970"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0176",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 76,
+      "canonical_review_order": 177,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_076.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0971",
+        "0972",
+        "0973",
+        "0974"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0177",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 77,
+      "canonical_review_order": 178,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_077.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "0976",
+        "0977",
+        "0978",
+        "0979",
+        "0980"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0178",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 78,
+      "canonical_review_order": 179,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_078.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0981",
+        "0982",
+        "0983",
+        "0984"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0179",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 79,
+      "canonical_review_order": 180,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_079.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "0985",
+        "0986",
+        "0987",
+        "0988",
+        "0989"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0180",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 80,
+      "canonical_review_order": 181,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_080.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "0998",
+        "0999",
+        "1000",
+        "1001"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0181",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 81,
+      "canonical_review_order": 182,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_081.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 4,
+      "members": [
+        "1007",
+        "1008",
+        "1009",
+        "1010"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0182",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 82,
+      "canonical_review_order": 183,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_082.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "1015",
+        "1016"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0183",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 83,
+      "canonical_review_order": 184,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_083.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "1021",
+        "1022",
+        "1023"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0184",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 84,
+      "canonical_review_order": 185,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_084.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "1024",
+        "1025",
+        "1026"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0185",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 85,
+      "canonical_review_order": 186,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_085.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "1029",
+        "1030"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0186",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 86,
+      "canonical_review_order": 187,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_086.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "1031",
+        "1032"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0187",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 87,
+      "canonical_review_order": 188,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_087.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "1033",
+        "1034",
+        "1035"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0188",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 88,
+      "canonical_review_order": 189,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_088.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 7,
+      "members": [
+        "1036",
+        "1037",
+        "1038",
+        "1039",
+        "1040",
+        "1041",
+        "1042"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0189",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 89,
+      "canonical_review_order": 190,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_089.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 9,
+      "members": [
+        "1043",
+        "1044",
+        "1045",
+        "1046",
+        "1047",
+        "1048",
+        "1049",
+        "1050",
+        "1051"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0190",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 90,
+      "canonical_review_order": 191,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_090.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "1053",
+        "1054",
+        "1055"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0191",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 91,
+      "canonical_review_order": 192,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_091.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "1058",
+        "1059"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0192",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 92,
+      "canonical_review_order": 193,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_092.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "1060",
+        "1061"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0193",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 93,
+      "canonical_review_order": 194,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_093.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "1063",
+        "1064"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0194",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 94,
+      "canonical_review_order": 195,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_094.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "1065",
+        "1066"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0195",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 95,
+      "canonical_review_order": 196,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_095.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "1067",
+        "1068",
+        "1069"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0196",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 96,
+      "canonical_review_order": 197,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_096.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "1070",
+        "1071",
+        "1072"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0197",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 97,
+      "canonical_review_order": 198,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_097.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 7,
+      "members": [
+        "1073",
+        "1074",
+        "1075",
+        "1076",
+        "1077",
+        "1078",
+        "1079"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0198",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 98,
+      "canonical_review_order": 199,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_098.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 2,
+      "members": [
+        "1080",
+        "1081"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0199",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 99,
+      "canonical_review_order": 200,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_099.jpg",
+        "docs/review/assets/wp3/grouping/batch_008.jpg"
+      ],
+      "member_count": 3,
+      "members": [
+        "1082",
+        "1083",
+        "1084"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0200",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    },
+    {
+      "batch_position": 100,
+      "canonical_review_order": 201,
+      "capture_sequence": "CONTINUOUS_CANDIDATE",
+      "confidence": "HIGH",
+      "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "docs/review/assets/wp17/sequence_batch_b/page_100.jpg",
+        "docs/review/assets/wp3/grouping/batch_009.jpg"
+      ],
+      "member_count": 5,
+      "members": [
+        "1086",
+        "1087",
+        "1088",
+        "1089",
+        "1090"
+      ],
+      "physical_sign_sequence": "MULTIPLE_SIGNS",
+      "proxy_sequence_id": "proxy_sequence_0201",
+      "rationale": "Direct inspection of every member frame shows continuous roadway motion with multiple annotated signs; no single physical-sign identity is asserted.",
+      "reviewed_at": "2026-10-11T20:30:00+07:00",
+      "reviewer": "PM/Codex provisional sequence reviewer"
+    }
+  ],
+  "evidence_boundary": "SEQUENCE_BATCH_B_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+  "reviewed_at": "2026-10-11T20:30:00+07:00",
+  "reviewer": "PM/Codex provisional sequence reviewer",
+  "schema_version": 1,
+  "status": "PM_REVIEWED_AWAITING_INDEPENDENT_QA"
+}

@@ -1,0 +1,1811 @@
+{
+  "batch": "M0-WP7-BATCH-A",
+  "decisions": [
+    {
+      "batch_position": 1,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000006",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0006.jpg#sha256=7f64f521f09abeacc6161a6e0354a2f9a0ba84cb6421667953149f89ff7f6915",
+        "archive/images/0007.jpg#sha256=7d029ca3584b3776511521efc17141845d541145ee6c8392a688f13a19c42538",
+        "docs/review/assets/wp7/batch_a/page_001.jpg#slot=1"
+      ],
+      "left_stem": "0006",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Both frames show the same HALO sign and matching pink-backpack rider with only slight traffic motion.",
+      "right_stem": "0007"
+    },
+    {
+      "batch_position": 2,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000007",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0007.jpg#sha256=7d029ca3584b3776511521efc17141845d541145ee6c8392a688f13a19c42538",
+        "archive/images/0008.jpg#sha256=b0a1cc4fbdc8ca5befd14b79cb6bea3c251bb6ff75a7f26c2dbe28f68e946650",
+        "docs/review/assets/wp7/batch_a/page_001.jpg#slot=2"
+      ],
+      "left_stem": "0007",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The HALO sign and surrounding riders retain the same viewpoint while vehicles shift only slightly.",
+      "right_stem": "0008"
+    },
+    {
+      "batch_position": 3,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000008",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0008.jpg#sha256=b0a1cc4fbdc8ca5befd14b79cb6bea3c251bb6ff75a7f26c2dbe28f68e946650",
+        "archive/images/0009.jpg#sha256=092540de5a7822ab848ec2e3c446a502227690209e5ffcb80ded5fc8bd8cebc0",
+        "docs/review/assets/wp7/batch_a/page_001.jpg#slot=3"
+      ],
+      "left_stem": "0008",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same storefront sign tree line and foreground riders appear in near-consecutive positions.",
+      "right_stem": "0009"
+    },
+    {
+      "batch_position": 4,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000009",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0009.jpg#sha256=092540de5a7822ab848ec2e3c446a502227690209e5ffcb80ded5fc8bd8cebc0",
+        "archive/images/0010.jpg#sha256=33cbc4d712d088f2d25d0c802bc14f67a43b40c1b36d9f6e5cfba3245fe9032f",
+        "docs/review/assets/wp7/batch_a/page_001.jpg#slot=4"
+      ],
+      "left_stem": "0009",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The sign box traffic light and pink-backpack rider align across a minimal viewpoint change.",
+      "right_stem": "0010"
+    },
+    {
+      "batch_position": 5,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000014",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0014.jpg#sha256=0d97cde3121b74942cdb9b403196e8e9c511a8383a017e5af8dc4e57950d5df0",
+        "archive/images/0015.jpg#sha256=93c3960089e173d00fb62c809ce7f40d343b854004199efd4e04fdd82cb9c87b",
+        "docs/review/assets/wp7/batch_a/page_001.jpg#slot=5"
+      ],
+      "left_stem": "0014",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Both images retain the same HALO sign and dense motorbike group from an adjacent viewpoint.",
+      "right_stem": "0015"
+    },
+    {
+      "batch_position": 6,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000017",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0017.jpg#sha256=5ff6d6275b001f0a1af43603fa02123353e44c88c3fce7f45ac55097a1b895e6",
+        "archive/images/0018.jpg#sha256=616ba4816ecaa14977ff30298ffb48c9afa8eed35024f885483e32515831150b",
+        "docs/review/assets/wp7/batch_a/page_002.jpg#slot=1"
+      ],
+      "left_stem": "0017",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching sign storefront and riders remain fixed while the camera advances slightly.",
+      "right_stem": "0018"
+    },
+    {
+      "batch_position": 7,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000022",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0022.jpg#sha256=ea3959c572200f72d0c026fd17c91b3c57e2754ad84e983aa597d9918b5730c4",
+        "archive/images/0023.jpg#sha256=68c9462771fc2d9a117c20844c49ee2a8db62bde62a4f706ea5462e2b21a6005",
+        "docs/review/assets/wp7/batch_a/page_002.jpg#slot=2"
+      ],
+      "left_stem": "0022",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same HALO sign pink backpack and black vehicle appear with small inter-frame motion.",
+      "right_stem": "0023"
+    },
+    {
+      "batch_position": 8,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000024",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0024.jpg#sha256=f5d656a1a6ccacc4602b557cb80e06bf68a9da6bb89ee3773337a94c949a46fb",
+        "archive/images/0025.jpg#sha256=b391744643d67403655f888cd09c4dcf3abe0b5f28840f2742e9a382dd4ac5f5",
+        "docs/review/assets/wp7/batch_a/page_002.jpg#slot=3"
+      ],
+      "left_stem": "0024",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Both show the same sign and traffic queue despite a modest lateral camera shift.",
+      "right_stem": "0025"
+    },
+    {
+      "batch_position": 9,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000031",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0031.jpg#sha256=8cfad36d0d215487e37c129ff1a077c1cd1f26164b1fa3ee15b8dbb8a1ab7b53",
+        "archive/images/0032.jpg#sha256=2bc37f0baa6da48cd2cd2fdc5542901f8a44670a8362b3c2c3167a2f684592d8",
+        "docs/review/assets/wp7/batch_a/page_002.jpg#slot=4"
+      ],
+      "left_stem": "0031",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Identical storefront sign black vehicle and foreground riders indicate adjacent frames.",
+      "right_stem": "0032"
+    },
+    {
+      "batch_position": 10,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000032",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0032.jpg#sha256=2bc37f0baa6da48cd2cd2fdc5542901f8a44670a8362b3c2c3167a2f684592d8",
+        "archive/images/0033.jpg#sha256=4a0a14b9748773238cf462b13b21a2ac93b43d83aa0275efd709f9b9b0d16173",
+        "docs/review/assets/wp7/batch_a/page_002.jpg#slot=5"
+      ],
+      "left_stem": "0032",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The same sign and vehicles persist with only subtle forward motion.",
+      "right_stem": "0033"
+    },
+    {
+      "batch_position": 11,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000044",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0044.jpg#sha256=ae1c36d55aaad5016b540ba67468b898c44909c7515fb208f5f796d9b5ad34f2",
+        "archive/images/0045.jpg#sha256=1853521c61caf5d98a3f8c67ba1e6230abf6a3c15e2d0643e0db1e65c7c2cf03",
+        "docs/review/assets/wp7/batch_a/page_003.jpg#slot=1"
+      ],
+      "left_stem": "0044",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same HALO sign pink backpack and intersection traffic occupy matching positions.",
+      "right_stem": "0045"
+    },
+    {
+      "batch_position": 12,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000045",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0045.jpg#sha256=1853521c61caf5d98a3f8c67ba1e6230abf6a3c15e2d0643e0db1e65c7c2cf03",
+        "archive/images/0046.jpg#sha256=b7aa63422d1a92eb66068f810baaa6ab51da246a189b3f522fcdd7fb239246a5",
+        "docs/review/assets/wp7/batch_a/page_003.jpg#slot=2"
+      ],
+      "left_stem": "0045",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The sign and surrounding street details match while the camera viewpoint changes slightly.",
+      "right_stem": "0046"
+    },
+    {
+      "batch_position": 13,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000058",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0058.jpg#sha256=cdff08761aa4f2e86214d59bb4fc181cbbad13ecea144a92a6b0b88b14d92b97",
+        "archive/images/0059.jpg#sha256=ad545b13a50f8f20cb5274e07747a34a4da461f177e4abcea76fd7eb0c764278",
+        "docs/review/assets/wp7/batch_a/page_003.jpg#slot=3"
+      ],
+      "left_stem": "0058",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same illuminated HALO frontage traffic light and foreground riders are visible in both.",
+      "right_stem": "0059"
+    },
+    {
+      "batch_position": 14,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000063",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0066.jpg#sha256=b29752a84f96790555c98a87482504ae195cdebc624d5ad041045a65e1d6e728",
+        "archive/images/0067.jpg#sha256=9e96fd926b92ab59fc546937e464c595a00818362ebe3414ecd92a0f0dcb6c14",
+        "docs/review/assets/wp7/batch_a/page_003.jpg#slot=4"
+      ],
+      "left_stem": "0066",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The HALO sign and green traffic light remain the same as traffic moves incrementally.",
+      "right_stem": "0067"
+    },
+    {
+      "batch_position": 15,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000064",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0067.jpg#sha256=9e96fd926b92ab59fc546937e464c595a00818362ebe3414ecd92a0f0dcb6c14",
+        "archive/images/0068.jpg#sha256=fdb778d44bb0f807b22d061e9973f4fabac8ac78df0f8e841d98c705155d67f3",
+        "docs/review/assets/wp7/batch_a/page_003.jpg#slot=5"
+      ],
+      "left_stem": "0067",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching sign light storefronts and riders support an adjacent-frame relation.",
+      "right_stem": "0068"
+    },
+    {
+      "batch_position": 16,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000071",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0074.jpg#sha256=d6bda95cc393fe8b51757ebb6aea897959fd73481386b7edd82099adcca29699",
+        "archive/images/0075.jpg#sha256=3156e4db2a33110337b50365f193d4679d4c2f33e28d433eaa17a827fcfefe60",
+        "docs/review/assets/wp7/batch_a/page_004.jpg#slot=1"
+      ],
+      "left_stem": "0074",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Both frames show the same two restriction signs gantry and pink-backpack rider.",
+      "right_stem": "0075"
+    },
+    {
+      "batch_position": 17,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000072",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0075.jpg#sha256=3156e4db2a33110337b50365f193d4679d4c2f33e28d433eaa17a827fcfefe60",
+        "archive/images/0076.jpg#sha256=219793447d36c4a1069e8d9eb1dabc22758f61a6ef8cc87837daf629b7e343a2",
+        "docs/review/assets/wp7/batch_a/page_004.jpg#slot=2"
+      ],
+      "left_stem": "0075",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The paired restriction signs and foreground traffic align almost exactly.",
+      "right_stem": "0076"
+    },
+    {
+      "batch_position": 18,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000073",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0076.jpg#sha256=219793447d36c4a1069e8d9eb1dabc22758f61a6ef8cc87837daf629b7e343a2",
+        "archive/images/0077.jpg#sha256=d00f64fe1f1a37b517f5ab35ba3c96e954cc01134bc1ca9817d0ff9644a72447",
+        "docs/review/assets/wp7/batch_a/page_004.jpg#slot=3"
+      ],
+      "left_stem": "0076",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same two signs blue billboard and riders persist with minimal motion.",
+      "right_stem": "0077"
+    },
+    {
+      "batch_position": 19,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000074",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0077.jpg#sha256=d00f64fe1f1a37b517f5ab35ba3c96e954cc01134bc1ca9817d0ff9644a72447",
+        "archive/images/0078.jpg#sha256=fa78265e8b5074a471d8f6a303eebc8b7d6541fbb998ca506161f384295e8a1c",
+        "docs/review/assets/wp7/batch_a/page_004.jpg#slot=4"
+      ],
+      "left_stem": "0077",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Identical intersection landmarks and sign pair appear from a slightly advanced viewpoint.",
+      "right_stem": "0078"
+    },
+    {
+      "batch_position": 20,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000077",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0080.jpg#sha256=16377fd51897e6655f8ef62cc669928ad0dd719e16fb43475dca5365516b90b7",
+        "archive/images/0081.jpg#sha256=c2bcc07b73da91d4dba521da0644abd955e84ceaad7c6c561ab03e451dcb616a",
+        "docs/review/assets/wp7/batch_a/page_004.jpg#slot=5"
+      ],
+      "left_stem": "0080",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The same sign pair gantry and foreground helmet remain visually continuous.",
+      "right_stem": "0081"
+    },
+    {
+      "batch_position": 21,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000079",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0082.jpg#sha256=5eef3f36527c29d7c719eab57f911e904194f1dd8ec4472b1e373b12e9183470",
+        "archive/images/0083.jpg#sha256=c3aaca1ad5f134fbaa7ff15263b8711b32ed6d358bb1b395ee41c0b17376e207",
+        "docs/review/assets/wp7/batch_a/page_005.jpg#slot=1"
+      ],
+      "left_stem": "0082",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching restriction signs billboard and traffic queue show only incremental movement.",
+      "right_stem": "0083"
+    },
+    {
+      "batch_position": 22,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000086",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0089.jpg#sha256=56eef91943a304c3991517199008f13ee5a6f1a4035b57ef8cd46530ebfaf7f1",
+        "archive/images/0090.jpg#sha256=df4958e68aa96ba9463d8d07d71a51ce9cfa4d7992a636db855b2c0b2c09f143",
+        "docs/review/assets/wp7/batch_a/page_005.jpg#slot=2"
+      ],
+      "left_stem": "0089",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same signs blue billboard black vehicle and riders remain in corresponding positions.",
+      "right_stem": "0090"
+    },
+    {
+      "batch_position": 23,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000087",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0090.jpg#sha256=df4958e68aa96ba9463d8d07d71a51ce9cfa4d7992a636db855b2c0b2c09f143",
+        "archive/images/0091.jpg#sha256=bb0aa3c65c6529814c3dcbacfe1984ddff31d1eb82c7791249ae9d34b293b1d8",
+        "docs/review/assets/wp7/batch_a/page_005.jpg#slot=3"
+      ],
+      "left_stem": "0090",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The two restriction signs and foreground helmet align across adjacent views.",
+      "right_stem": "0091"
+    },
+    {
+      "batch_position": 24,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000090",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0093.jpg#sha256=4297a268586fbf419f375204d1d4e6f42ed14559d85c94257dcae95eccf135a9",
+        "archive/images/0094.jpg#sha256=def62f3c3383073a0b1296242fc97ca975c7a4611d284626e343aed6ffb9bfe9",
+        "docs/review/assets/wp7/batch_a/page_005.jpg#slot=4"
+      ],
+      "left_stem": "0093",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same gantry signs traffic light and motorbike queue remain visually continuous.",
+      "right_stem": "0094"
+    },
+    {
+      "batch_position": 25,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000091",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0094.jpg#sha256=def62f3c3383073a0b1296242fc97ca975c7a4611d284626e343aed6ffb9bfe9",
+        "archive/images/0095.jpg#sha256=69121992f9f16094922a28c959b97767b9c282a1db3a9438be9988d26a94c615",
+        "docs/review/assets/wp7/batch_a/page_005.jpg#slot=5"
+      ],
+      "left_stem": "0094",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching signs billboard and pink backpack support the same capture sequence.",
+      "right_stem": "0095"
+    },
+    {
+      "batch_position": 26,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000094",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0097.jpg#sha256=75227b84e291457f1e0c1405bb7c70703733d03b61ba948d1eae7bdcf28e4d42",
+        "archive/images/0098.jpg#sha256=04a80578df59b8d70b352637139270bcf2e482fede25a60876d4b25063623211",
+        "docs/review/assets/wp7/batch_a/page_006.jpg#slot=1"
+      ],
+      "left_stem": "0097",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The sign pair and identical queue geometry persist with slight camera advance.",
+      "right_stem": "0098"
+    },
+    {
+      "batch_position": 27,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000096",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0099.jpg#sha256=be79447f226563638cff6a5997035b3ed9181924e5013fc0cf84e1f753ddcb61",
+        "archive/images/0100.jpg#sha256=342ad01c25c71c0a23347f0c8d57eaec252cb9612ebb0ded06ace875e87a5ea7",
+        "docs/review/assets/wp7/batch_a/page_006.jpg#slot=2"
+      ],
+      "left_stem": "0099",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same two signs blue billboard and riders appear in near-identical framing.",
+      "right_stem": "0100"
+    },
+    {
+      "batch_position": 28,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000098",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0101.jpg#sha256=b2a54a5f32a03885ca01b70bf4010402fb76264b5b340abea230ef10299bdc7a",
+        "archive/images/0102.jpg#sha256=5ba5b423a88c57e897069f85b1fdfcfcad4f6d7464762386afec77f638146f6c",
+        "docs/review/assets/wp7/batch_a/page_006.jpg#slot=3"
+      ],
+      "left_stem": "0101",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The restriction signs and foreground rider remain fixed relative to the gantry.",
+      "right_stem": "0102"
+    },
+    {
+      "batch_position": 29,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000099",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0102.jpg#sha256=5ba5b423a88c57e897069f85b1fdfcfcad4f6d7464762386afec77f638146f6c",
+        "archive/images/0103.jpg#sha256=a48c6842e2ac74909ac432e71183145ec51690710e774695b3ef2f2c3bcd0958",
+        "docs/review/assets/wp7/batch_a/page_006.jpg#slot=4"
+      ],
+      "left_stem": "0102",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same intersection sign pair and traffic cluster differ only by small motion.",
+      "right_stem": "0103"
+    },
+    {
+      "batch_position": 30,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000104",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0107.jpg#sha256=a6a81a0143f57d218f4d30d1f22373dbb18cee4f53efebf183fbc3195b6a3afb",
+        "archive/images/0108.jpg#sha256=a30d513b1684d0bcbe1873d6bdb6b5b5405c1005a8872663e789ec8469b83c1b",
+        "docs/review/assets/wp7/batch_a/page_006.jpg#slot=5"
+      ],
+      "left_stem": "0107",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Both frames show the same stacked roadside signs tree-lined curve and vehicles.",
+      "right_stem": "0108"
+    },
+    {
+      "batch_position": 31,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000105",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0108.jpg#sha256=a30d513b1684d0bcbe1873d6bdb6b5b5405c1005a8872663e789ec8469b83c1b",
+        "archive/images/0109.jpg#sha256=749eb74886ac697958899f80c5c9450e590599775c9256e066c621d19c4cad1a",
+        "docs/review/assets/wp7/batch_a/page_007.jpg#slot=1"
+      ],
+      "left_stem": "0108",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The stacked signs red-white pole and road curve align across adjacent views.",
+      "right_stem": "0109"
+    },
+    {
+      "batch_position": 32,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000108",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0111.jpg#sha256=be2a9d116919615026aa98174e15b48e2fc3c235cc124b59aa95015f7ac5a61a",
+        "archive/images/0112.jpg#sha256=b29a052833df0950bd79aa9f9ce558efa636e60f381f7d0403fbd2367aa53ae7",
+        "docs/review/assets/wp7/batch_a/page_007.jpg#slot=2"
+      ],
+      "left_stem": "0111",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same sign stack trees and moving vehicles appear with a small camera shift.",
+      "right_stem": "0112"
+    },
+    {
+      "batch_position": 33,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000122",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0125.jpg#sha256=3c7850e80ac1ad0b5d2b3d72dc161f17dfe5321e16c31021fd18d4264ed75542",
+        "archive/images/0126.jpg#sha256=555463137d48e15193bf8bc732909c6356b6fc6b226e05a2f39959cba24b4cad",
+        "docs/review/assets/wp7/batch_a/page_007.jpg#slot=3"
+      ],
+      "left_stem": "0125",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The same yellow warning sign pole and motorbikes remain in matching positions.",
+      "right_stem": "0126"
+    },
+    {
+      "batch_position": 34,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000123",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0126.jpg#sha256=555463137d48e15193bf8bc732909c6356b6fc6b226e05a2f39959cba24b4cad",
+        "archive/images/0127.jpg#sha256=61d8698537e6cca8647890da7644172ba7a9c92a35b4165fee10ac21badb4d90",
+        "docs/review/assets/wp7/batch_a/page_007.jpg#slot=4"
+      ],
+      "left_stem": "0126",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching warning sign red-white pole and tree canopy show slight forward motion.",
+      "right_stem": "0127"
+    },
+    {
+      "batch_position": 35,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000127",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0130.jpg#sha256=09712b4430ed0f4bedf3f87ad3dc2a1122a9e5ac8d83858ac0af73fff4b443b4",
+        "archive/images/0131.jpg#sha256=6bc2ae86cffe0476379ca5f4d304fbeb23426a6599148698ed91af49cd63187c",
+        "docs/review/assets/wp7/batch_a/page_007.jpg#slot=5"
+      ],
+      "left_stem": "0130",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same warning sign road junction and riders persist across adjacent frames.",
+      "right_stem": "0131"
+    },
+    {
+      "batch_position": 36,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000128",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0131.jpg#sha256=6bc2ae86cffe0476379ca5f4d304fbeb23426a6599148698ed91af49cd63187c",
+        "archive/images/0132.jpg#sha256=9bb499e3d7ace45f96988b12eaa4a34cd6f26e23f4eebb82beb0b96514dfbb76",
+        "docs/review/assets/wp7/batch_a/page_008.jpg#slot=1"
+      ],
+      "left_stem": "0131",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The warning sign and pole enlarge slightly while the full scene remains continuous.",
+      "right_stem": "0132"
+    },
+    {
+      "batch_position": 37,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000135",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0138.jpg#sha256=b342b7ea7fec0af0d445f19df4a598a54ef7f0d254c466bd06933bca7c18dd14",
+        "archive/images/0139.jpg#sha256=0442d42a4b1498612daa1b186758c0642a32fb2ee5198604abb3d735999c7367",
+        "docs/review/assets/wp7/batch_a/page_008.jpg#slot=2"
+      ],
+      "left_stem": "0138",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same paired restriction signs billboard and traffic queue are visible in both.",
+      "right_stem": "0139"
+    },
+    {
+      "batch_position": 38,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000136",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0139.jpg#sha256=0442d42a4b1498612daa1b186758c0642a32fb2ee5198604abb3d735999c7367",
+        "archive/images/0140.jpg#sha256=330980c0362a235d437bfaf6d9a397346bfaa583de677f65aeed103db90d0222",
+        "docs/review/assets/wp7/batch_a/page_008.jpg#slot=3"
+      ],
+      "left_stem": "0139",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The sign pair and foreground riders retain matching positions with minor motion.",
+      "right_stem": "0140"
+    },
+    {
+      "batch_position": 39,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000144",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0147.jpg#sha256=307b80714a0b620aa65c2b57358396150fce85e8d4f4ec93509d7e40fff8eb6c",
+        "archive/images/0148.jpg#sha256=5fd233bb5062c4fea593e00e11243f4583450676c79b406fe415f249cca4fdf3",
+        "docs/review/assets/wp7/batch_a/page_008.jpg#slot=4"
+      ],
+      "left_stem": "0147",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Both frames show the same bus-stop sign shelter white car and tree.",
+      "right_stem": "0148"
+    },
+    {
+      "batch_position": 40,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000145",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0148.jpg#sha256=5fd233bb5062c4fea593e00e11243f4583450676c79b406fe415f249cca4fdf3",
+        "archive/images/0149.jpg#sha256=54bfbe8ca36c800d071bd7d6ebe3be04f3a324789e5f0ff8600398fb48741f1f",
+        "docs/review/assets/wp7/batch_a/page_008.jpg#slot=5"
+      ],
+      "left_stem": "0148",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The bus-stop sign and shelter remain fixed while the camera advances slightly.",
+      "right_stem": "0149"
+    },
+    {
+      "batch_position": 41,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000146",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0149.jpg#sha256=54bfbe8ca36c800d071bd7d6ebe3be04f3a324789e5f0ff8600398fb48741f1f",
+        "archive/images/0150.jpg#sha256=213c91318536baa1ad1a9db7585f32ad4e1b9e693ad08abcbc721fb3f0c396f6",
+        "docs/review/assets/wp7/batch_a/page_009.jpg#slot=1"
+      ],
+      "left_stem": "0149",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same bus-stop pole white sedan and curved road appear in continuous framing.",
+      "right_stem": "0150"
+    },
+    {
+      "batch_position": 42,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000147",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0150.jpg#sha256=213c91318536baa1ad1a9db7585f32ad4e1b9e693ad08abcbc721fb3f0c396f6",
+        "archive/images/0151.jpg#sha256=a2435534fca0245276419f80a76d8385a7abd0246febca7df7d758634cb37f2a",
+        "docs/review/assets/wp7/batch_a/page_009.jpg#slot=2"
+      ],
+      "left_stem": "0150",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The bus-stop sign shelter and white car align across near-consecutive views.",
+      "right_stem": "0151"
+    },
+    {
+      "batch_position": 43,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000149",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0152.jpg#sha256=40321ab2044240c419f49a56447ca7ac1afe575e96f9f32bcab735b9b92a1451",
+        "archive/images/0153.jpg#sha256=de81d74cbe5cfb915ab42db1b1671b87cd9f5f9115b1881dff0c59187211abe7",
+        "docs/review/assets/wp7/batch_a/page_009.jpg#slot=3"
+      ],
+      "left_stem": "0152",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same bus-stop sign and green shelter persist with a small viewpoint shift.",
+      "right_stem": "0153"
+    },
+    {
+      "batch_position": 44,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000150",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0153.jpg#sha256=de81d74cbe5cfb915ab42db1b1671b87cd9f5f9115b1881dff0c59187211abe7",
+        "archive/images/0154.jpg#sha256=2ae4f8b2b10c5f4093e70746cde87bbc77fa3a2d397e6953382abb80fe443025",
+        "docs/review/assets/wp7/batch_a/page_009.jpg#slot=4"
+      ],
+      "left_stem": "0153",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching bus-stop pole shelter white car and tree line indicate adjacent frames.",
+      "right_stem": "0154"
+    },
+    {
+      "batch_position": 45,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000151",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0154.jpg#sha256=2ae4f8b2b10c5f4093e70746cde87bbc77fa3a2d397e6953382abb80fe443025",
+        "archive/images/0155.jpg#sha256=91d9f924d164fcc116aee9891bea8dc03c8fb1d019918d5a015a954f2515491c",
+        "docs/review/assets/wp7/batch_a/page_009.jpg#slot=5"
+      ],
+      "left_stem": "0154",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The same bus-stop sign and roadside furniture remain visually continuous.",
+      "right_stem": "0155"
+    },
+    {
+      "batch_position": 46,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "MEDIUM",
+      "edge_id": "edge_000153",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0156.jpg#sha256=963cf851642aceb917c70bc6bbf4bc5a486a129e3be3f8dbd466fd10cdb4f8f2",
+        "archive/images/0157.jpg#sha256=909b10aab31192f1c79c31485bf6543cf1bf43eb26c99b5d768c3edf24e5335b",
+        "docs/review/assets/wp7/batch_a/page_010.jpg#slot=1"
+      ],
+      "left_stem": "0156",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "NOT_RELATED",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The white sedan shelter and curve continue but annotated targets change from bus stop to different warning signs.",
+      "right_stem": "0157"
+    },
+    {
+      "batch_position": 47,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000163",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0166.jpg#sha256=d4b8fde7e37fedd91d9c1a31bebb7ef2e37bc246c49ec602fa8d476e233b2661",
+        "archive/images/0167.jpg#sha256=2f151ff2e13a2476c17dd397f885eff50e9819c6988fe2ee9b88f0df248c4c79",
+        "docs/review/assets/wp7/batch_a/page_010.jpg#slot=2"
+      ],
+      "left_stem": "0166",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same multi-sign cluster white sedan trees and curb appear with slight motion.",
+      "right_stem": "0167"
+    },
+    {
+      "batch_position": 48,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000164",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0167.jpg#sha256=2f151ff2e13a2476c17dd397f885eff50e9819c6988fe2ee9b88f0df248c4c79",
+        "archive/images/0168.jpg#sha256=12c4602845c567f1eb3cbf45aea9baa621c9a1b1352893adc8dabb4319d04beb",
+        "docs/review/assets/wp7/batch_a/page_010.jpg#slot=3"
+      ],
+      "left_stem": "0167",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The clustered signs and white car remain aligned across adjacent road views.",
+      "right_stem": "0168"
+    },
+    {
+      "batch_position": 49,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000171",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0174.jpg#sha256=c45915060b1c46acd3bfb9395d077c984797157bd46b365dcd56a9a3fdecab7a",
+        "archive/images/0175.jpg#sha256=d347f685997385a480498dff057360cb37f7bf882b3496bbedad0c36da6d2763",
+        "docs/review/assets/wp7/batch_a/page_010.jpg#slot=4"
+      ],
+      "left_stem": "0174",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same warning and regulatory signs white sedan and tree trunks appear in both.",
+      "right_stem": "0175"
+    },
+    {
+      "batch_position": 50,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000172",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0175.jpg#sha256=d347f685997385a480498dff057360cb37f7bf882b3496bbedad0c36da6d2763",
+        "archive/images/0176.jpg#sha256=e0a8fee0b2185861df621568bb3af3d968930c703a8574eee571b018fecb43f9",
+        "docs/review/assets/wp7/batch_a/page_010.jpg#slot=5"
+      ],
+      "left_stem": "0175",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching sign cluster car and roadside benches support a continuous capture.",
+      "right_stem": "0176"
+    },
+    {
+      "batch_position": 51,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000174",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0177.jpg#sha256=156bc8f3d08831c9bfd74bae92396f2c88e6596eed0e34d64a11ae30add5cafa",
+        "archive/images/0178.jpg#sha256=543f427949787b30fc7f2ee5476a9dde9c4027b5ed63cf936018d0d34c1dd658",
+        "docs/review/assets/wp7/batch_a/page_011.jpg#slot=1"
+      ],
+      "left_stem": "0177",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The same signs white car and tree-lined curve persist with small motion.",
+      "right_stem": "0178"
+    },
+    {
+      "batch_position": 52,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000175",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0178.jpg#sha256=543f427949787b30fc7f2ee5476a9dde9c4027b5ed63cf936018d0d34c1dd658",
+        "archive/images/0179.jpg#sha256=63cbdb8ba13d495c99bc53e5a2167edb28dce50e019b9dde72bebea9773a8414",
+        "docs/review/assets/wp7/batch_a/page_011.jpg#slot=2"
+      ],
+      "left_stem": "0178",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same sign poles car and curb geometry appear from a slightly advanced viewpoint.",
+      "right_stem": "0179"
+    },
+    {
+      "batch_position": 53,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000184",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0189.jpg#sha256=c89038194109bf1dc4e1f4d2509fd90d11844bc6d05b1b7f4171f43b326e62f1",
+        "archive/images/0190.jpg#sha256=e1c9d7b583fde25849e4a986263304e2dcff3f8bd3a5ae4598f3073edacc4a6f",
+        "docs/review/assets/wp7/batch_a/page_011.jpg#slot=3"
+      ],
+      "left_stem": "0189",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Both frames show the same restriction signs gantry traffic light and riders.",
+      "right_stem": "0190"
+    },
+    {
+      "batch_position": 54,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000186",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0191.jpg#sha256=8a7707c8086b94ac6790223a73f357498bcf85cfd3e46208d2dd6241957b44b5",
+        "archive/images/0192.jpg#sha256=cd35cebd0a38fa58e19a4611717755bafbc30276dd944cf8779c7247bf1c319a",
+        "docs/review/assets/wp7/batch_a/page_011.jpg#slot=4"
+      ],
+      "left_stem": "0191",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The two signs black vehicle and pink backpack align across adjacent views.",
+      "right_stem": "0192"
+    },
+    {
+      "batch_position": 55,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000187",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0192.jpg#sha256=cd35cebd0a38fa58e19a4611717755bafbc30276dd944cf8779c7247bf1c319a",
+        "archive/images/0193.jpg#sha256=4af440bceb6f1406ec42f693effb7ee6d60594248d4997c0fab5424843ed7735",
+        "docs/review/assets/wp7/batch_a/page_011.jpg#slot=5"
+      ],
+      "left_stem": "0192",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same intersection signs and traffic queue remain visually continuous.",
+      "right_stem": "0193"
+    },
+    {
+      "batch_position": 56,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000188",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0193.jpg#sha256=4af440bceb6f1406ec42f693effb7ee6d60594248d4997c0fab5424843ed7735",
+        "archive/images/0194.jpg#sha256=cdc5c504aa0c733e22d63813d63141fd22a651eb5a2fb81338a440a6c627750c",
+        "docs/review/assets/wp7/batch_a/page_012.jpg#slot=1"
+      ],
+      "left_stem": "0193",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching sign pair billboard and riders differ only by slight motion.",
+      "right_stem": "0194"
+    },
+    {
+      "batch_position": 57,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000199",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0204.jpg#sha256=7ac5fca62b3490f3b9cce479211ba87671e8393ee76be2a94fbdbbfc942ace39",
+        "archive/images/0205.jpg#sha256=4123afd5409d677198fe642721f7fb2b5ee82f8adea2d2bc57a4b3c8a2471ef4",
+        "docs/review/assets/wp7/batch_a/page_012.jpg#slot=2"
+      ],
+      "left_stem": "0204",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The same no-stopping sign elevated rail verge and rider appear in both frames.",
+      "right_stem": "0205"
+    },
+    {
+      "batch_position": 58,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000200",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0205.jpg#sha256=4123afd5409d677198fe642721f7fb2b5ee82f8adea2d2bc57a4b3c8a2471ef4",
+        "archive/images/0206.jpg#sha256=e11aab6b9ade6b3d235787d76cad07947df88632ec22b4b739a859fad59b50e9",
+        "docs/review/assets/wp7/batch_a/page_012.jpg#slot=3"
+      ],
+      "left_stem": "0205",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same no-stopping sign and emerging U-turn sign appear along the identical viaduct scene.",
+      "right_stem": "0206"
+    },
+    {
+      "batch_position": 59,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000201",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0206.jpg#sha256=e11aab6b9ade6b3d235787d76cad07947df88632ec22b4b739a859fad59b50e9",
+        "archive/images/0207.jpg#sha256=71a64668d04f0fe6ec9f713056ea82e8eba85d5fc973963d32e9296db682ecf4",
+        "docs/review/assets/wp7/batch_a/page_012.jpg#slot=4"
+      ],
+      "left_stem": "0206",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The U-turn sign rider viaduct and verge persist while the first sign leaves frame.",
+      "right_stem": "0207"
+    },
+    {
+      "batch_position": 60,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000202",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0207.jpg#sha256=71a64668d04f0fe6ec9f713056ea82e8eba85d5fc973963d32e9296db682ecf4",
+        "archive/images/0208.jpg#sha256=4f2fbe460566fb35839d04219c184e9ecff0472172ae1fb0a851c5a0f916d49c",
+        "docs/review/assets/wp7/batch_a/page_012.jpg#slot=5"
+      ],
+      "left_stem": "0207",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same U-turn sign rider and elevated rail align across a minor viewpoint change.",
+      "right_stem": "0208"
+    },
+    {
+      "batch_position": 61,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000206",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0211.jpg#sha256=bea2d372dd3099f79d8bd08ae43699c0f11ef1753f35144f9738ce0bfbb235f5",
+        "archive/images/0212.jpg#sha256=21073c0c540f9a3085d44efe5acd8a71cd6ec3a8ed0c7d4b04352e3fb8448419",
+        "docs/review/assets/wp7/batch_a/page_013.jpg#slot=1"
+      ],
+      "left_stem": "0211",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Both frames show the same two restriction signs traffic light and packed queue.",
+      "right_stem": "0212"
+    },
+    {
+      "batch_position": 62,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000207",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0212.jpg#sha256=21073c0c540f9a3085d44efe5acd8a71cd6ec3a8ed0c7d4b04352e3fb8448419",
+        "archive/images/0213.jpg#sha256=b13a93d889f81ae959f12bbf5371ffac10798e0ab4055dc0e260bd57d8e98aec",
+        "docs/review/assets/wp7/batch_a/page_013.jpg#slot=2"
+      ],
+      "left_stem": "0212",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The paired signs gantry and foreground riders remain nearly identical.",
+      "right_stem": "0213"
+    },
+    {
+      "batch_position": 63,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000208",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0213.jpg#sha256=b13a93d889f81ae959f12bbf5371ffac10798e0ab4055dc0e260bd57d8e98aec",
+        "archive/images/0214.jpg#sha256=9ff85f02151d1191565fdbe9debb03d1c3d64aeb1d0e7d8977f26d5ce5a4af06",
+        "docs/review/assets/wp7/batch_a/page_013.jpg#slot=3"
+      ],
+      "left_stem": "0213",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same intersection signs black vehicle and pink backpack persist with slight motion.",
+      "right_stem": "0214"
+    },
+    {
+      "batch_position": 64,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000209",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0214.jpg#sha256=9ff85f02151d1191565fdbe9debb03d1c3d64aeb1d0e7d8977f26d5ce5a4af06",
+        "archive/images/0215.jpg#sha256=44c87bd9861386ea25dcd73fb7e254dbdce5c2a1b4300e453f0b820db2267e7b",
+        "docs/review/assets/wp7/batch_a/page_013.jpg#slot=4"
+      ],
+      "left_stem": "0214",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching sign pair and traffic geometry support adjacent frames.",
+      "right_stem": "0215"
+    },
+    {
+      "batch_position": 65,
+      "capture_hypothesis": "NOT_RELATED",
+      "confidence": "HIGH",
+      "edge_id": "edge_000215",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0220.jpg#sha256=0ecb9acd5aefb5234ae95dc49ad63dac356281f66adb867dc17921ab8dcf9a1b",
+        "archive/images/0221.jpg#sha256=776faeea9809eb70dc0e024dda42a3dfb3a1b82fa200317d3087e1aad826dbcd",
+        "docs/review/assets/wp7/batch_a/page_013.jpg#slot=5"
+      ],
+      "left_stem": "0220",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "NOT_RELATED",
+      "provisional_outcome": "NOT_RELATED",
+      "rationale": "Left is the HALO intersection while right is a viaduct-side road with a U-turn sign.",
+      "right_stem": "0221"
+    },
+    {
+      "batch_position": 66,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000216",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0221.jpg#sha256=776faeea9809eb70dc0e024dda42a3dfb3a1b82fa200317d3087e1aad826dbcd",
+        "archive/images/0222.jpg#sha256=e050a519ccf4645783a9fd620a036abab3cb58c7131acc517f2bd4b1cbd0fa35",
+        "docs/review/assets/wp7/batch_a/page_014.jpg#slot=1"
+      ],
+      "left_stem": "0221",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same U-turn sign viaduct blue bus shops and foreground helmet appear in both.",
+      "right_stem": "0222"
+    },
+    {
+      "batch_position": 67,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000217",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0222.jpg#sha256=e050a519ccf4645783a9fd620a036abab3cb58c7131acc517f2bd4b1cbd0fa35",
+        "archive/images/0223.jpg#sha256=c2755d2904fe722b3ff06f3cd380a83bf1783f0c6de3d3d38156d71140070615",
+        "docs/review/assets/wp7/batch_a/page_014.jpg#slot=2"
+      ],
+      "left_stem": "0222",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The U-turn sign bus and roadside storefronts retain matching positions.",
+      "right_stem": "0223"
+    },
+    {
+      "batch_position": 68,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000218",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0223.jpg#sha256=c2755d2904fe722b3ff06f3cd380a83bf1783f0c6de3d3d38156d71140070615",
+        "archive/images/0224.jpg#sha256=5e988f2bad49d50fd1197fc7e69743a9eaf5c0e5573295a10a7993fc67ac5139",
+        "docs/review/assets/wp7/batch_a/page_014.jpg#slot=3"
+      ],
+      "left_stem": "0223",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same sign viaduct bus and foreground helmet persist across adjacent views.",
+      "right_stem": "0224"
+    },
+    {
+      "batch_position": 69,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000220",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0225.jpg#sha256=401297c97396f3c1016795a35e5421c8361eb4e77ee446aa69eaf454365d810c",
+        "archive/images/0226.jpg#sha256=85e320726db7fc372455a6e437fb6ee3d5f4a6b088a07d2dc268dfa67ad4e4cf",
+        "docs/review/assets/wp7/batch_a/page_014.jpg#slot=4"
+      ],
+      "left_stem": "0225",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The U-turn sign shop boards and rider scene align with only small motion.",
+      "right_stem": "0226"
+    },
+    {
+      "batch_position": 70,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000221",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0226.jpg#sha256=85e320726db7fc372455a6e437fb6ee3d5f4a6b088a07d2dc268dfa67ad4e4cf",
+        "archive/images/0227.jpg#sha256=11ea5833e374d3650a75d74e5cc1549db108943b1194b7cd95ccbfc24fcb5127",
+        "docs/review/assets/wp7/batch_a/page_014.jpg#slot=5"
+      ],
+      "left_stem": "0226",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching sign viaduct bus and storefronts indicate a continuous capture.",
+      "right_stem": "0227"
+    },
+    {
+      "batch_position": 71,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000228",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0233.jpg#sha256=39079218ee48949d79673a771f7db6832055567a99d675cdaf21c261920c184b",
+        "archive/images/0234.jpg#sha256=9936f38466456ad5aaba96366c8cd5e8445de327616cc20192e9d2befc7f8276",
+        "docs/review/assets/wp7/batch_a/page_015.jpg#slot=1"
+      ],
+      "left_stem": "0233",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same U-turn sign blue bus viaduct and foreground helmet appear in both frames.",
+      "right_stem": "0234"
+    },
+    {
+      "batch_position": 72,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000230",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0235.jpg#sha256=55d282c0b0885fbec4c20710f1be2e92905e16f85e147f22bcaa1f399d18e7c4",
+        "archive/images/0236.jpg#sha256=709fdb1d6aa9b8988256fa5325ca06c63edca81397912a32abda7f4c762bfaea",
+        "docs/review/assets/wp7/batch_a/page_015.jpg#slot=2"
+      ],
+      "left_stem": "0235",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The U-turn sign and surrounding viaduct traffic retain near-identical geometry.",
+      "right_stem": "0236"
+    },
+    {
+      "batch_position": 73,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000233",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0238.jpg#sha256=b0d5893b1d02ed4bd8703710997c9a93ce9a925ce611cd43dc0b1577b22ac120",
+        "archive/images/0239.jpg#sha256=e0b77a1624ba2e2a7c730e49b64b3635685c2a1ee9b5929b80d9ba53af4aadfb",
+        "docs/review/assets/wp7/batch_a/page_015.jpg#slot=3"
+      ],
+      "left_stem": "0238",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same sign bus rider and shopfronts persist with a slight camera advance.",
+      "right_stem": "0239"
+    },
+    {
+      "batch_position": 74,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000235",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0240.jpg#sha256=35aa6fc53c70f35770ffd2c24db777c361bead88985056c5c36eeba0f412ba08",
+        "archive/images/0241.jpg#sha256=7c2a0215668c1e2656cef350929e825a34c3646446e530a3981f8dbedbec3897",
+        "docs/review/assets/wp7/batch_a/page_015.jpg#slot=4"
+      ],
+      "left_stem": "0240",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The enlarged U-turn sign viaduct and foreground helmet remain visually continuous.",
+      "right_stem": "0241"
+    },
+    {
+      "batch_position": 75,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000237",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0242.jpg#sha256=f0e3198eb21635fee1492f04928642bf8c3be8e4adcc840f6d372c5e3963788e",
+        "archive/images/0243.jpg#sha256=7c69a555c99ccf522e1e48d7a78cf45de34cb2e2fa201f33d41cf58dc38737de",
+        "docs/review/assets/wp7/batch_a/page_015.jpg#slot=5"
+      ],
+      "left_stem": "0242",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Both show the same restriction signs intersection queue and pink-backpack rider.",
+      "right_stem": "0243"
+    },
+    {
+      "batch_position": 76,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000238",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0243.jpg#sha256=7c69a555c99ccf522e1e48d7a78cf45de34cb2e2fa201f33d41cf58dc38737de",
+        "archive/images/0244.jpg#sha256=2fe8544d13d2cda40e9471fcedd2ea4c52997df8a304e8d4ada0225866823f0e",
+        "docs/review/assets/wp7/batch_a/page_016.jpg#slot=1"
+      ],
+      "left_stem": "0243",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The paired signs traffic light and foreground vehicles align across adjacent views.",
+      "right_stem": "0244"
+    },
+    {
+      "batch_position": 77,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000240",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0245.jpg#sha256=84845e68565e5b8b9e88705f09a0d92b3494aa8a8a6452a1c74621256eaf23ad",
+        "archive/images/0246.jpg#sha256=71953f159f62621bc97fa54aa777059fdbc40ac37377d06daf2b17bfa2aa34d9",
+        "docs/review/assets/wp7/batch_a/page_016.jpg#slot=2"
+      ],
+      "left_stem": "0245",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same two signs red signal and traffic queue persist with small motion.",
+      "right_stem": "0246"
+    },
+    {
+      "batch_position": 78,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000241",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0246.jpg#sha256=71953f159f62621bc97fa54aa777059fdbc40ac37377d06daf2b17bfa2aa34d9",
+        "archive/images/0247.jpg#sha256=c439730e326465b2a05f8279312581c0890ab8c10a2279289c9daa1e1aa502cc",
+        "docs/review/assets/wp7/batch_a/page_016.jpg#slot=3"
+      ],
+      "left_stem": "0246",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching sign pair black vehicle and riders indicate adjacent frames.",
+      "right_stem": "0247"
+    },
+    {
+      "batch_position": 79,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000245",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0250.jpg#sha256=6185bf223852c397ddcca82ec0866eb26798c700aedb20044f2bc9712224a707",
+        "archive/images/0251.jpg#sha256=1ba537b58b5918b0ea80fe9017417092c2a96bfc7f872d85ad60caad53a432e3",
+        "docs/review/assets/wp7/batch_a/page_016.jpg#slot=4"
+      ],
+      "left_stem": "0250",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The same intersection sign and stopped traffic remain in continuous framing.",
+      "right_stem": "0251"
+    },
+    {
+      "batch_position": 80,
+      "capture_hypothesis": "NOT_RELATED",
+      "confidence": "HIGH",
+      "edge_id": "edge_000246",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0251.jpg#sha256=1ba537b58b5918b0ea80fe9017417092c2a96bfc7f872d85ad60caad53a432e3",
+        "archive/images/0252.jpg#sha256=c15fc4dbfce3bb7ce8c7075b5ad26043b3a3e458e99a2d359b4a43dfc0c743b3",
+        "docs/review/assets/wp7/batch_a/page_016.jpg#slot=5"
+      ],
+      "left_stem": "0251",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "NOT_RELATED",
+      "provisional_outcome": "NOT_RELATED",
+      "rationale": "Left is the crowded restriction-sign intersection while right is a different viaduct-side direction-sign road.",
+      "right_stem": "0252"
+    },
+    {
+      "batch_position": 81,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000251",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0256.jpg#sha256=4fecd8341ebdcd82f9e22368ba48f0cd9beeebe769b0cc965415c749f2a7e50f",
+        "archive/images/0257.jpg#sha256=365b6b345fb79ee9b1a7b5fd2ee8281ebd153c86e006fb00a9af01eda37583a3",
+        "docs/review/assets/wp7/batch_a/page_017.jpg#slot=1"
+      ],
+      "left_stem": "0256",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same blue direction sign warning sign viaduct shops and riders appear in both.",
+      "right_stem": "0257"
+    },
+    {
+      "batch_position": 82,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000252",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0257.jpg#sha256=365b6b345fb79ee9b1a7b5fd2ee8281ebd153c86e006fb00a9af01eda37583a3",
+        "archive/images/0258.jpg#sha256=88bc5f779cce648b9fdd2aa96261b26c9bb5b42ceaa0b8eabef5d827eef8e76e",
+        "docs/review/assets/wp7/batch_a/page_017.jpg#slot=2"
+      ],
+      "left_stem": "0257",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The direction and warning signs remain aligned with the same road and traffic.",
+      "right_stem": "0258"
+    },
+    {
+      "batch_position": 83,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000267",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0272.jpg#sha256=467acf8b003bbe0eea4a2a24a0b32d3b61da48ae553fc6531930f5e3cdf2d5fb",
+        "archive/images/0273.jpg#sha256=d2b3aff6b2287cd0edec9dcb25a16a9fa327c7ed2b81bff3b53e516633a4e2a2",
+        "docs/review/assets/wp7/batch_a/page_017.jpg#slot=3"
+      ],
+      "left_stem": "0272",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Both show the same intersection restriction sign red light and traffic queue.",
+      "right_stem": "0273"
+    },
+    {
+      "batch_position": 84,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000268",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0273.jpg#sha256=d2b3aff6b2287cd0edec9dcb25a16a9fa327c7ed2b81bff3b53e516633a4e2a2",
+        "archive/images/0274.jpg#sha256=32f2144f4a9e3f7560becc47dada6c43edb1d6c17ba087be722c77cf248b85cb",
+        "docs/review/assets/wp7/batch_a/page_017.jpg#slot=4"
+      ],
+      "left_stem": "0273",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The sign blue billboard red signal and riders persist with slight motion.",
+      "right_stem": "0274"
+    },
+    {
+      "batch_position": 85,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000270",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0275.jpg#sha256=0a7a4a63543d96a61fc4d23ddb2af90aa7f183dbb4eaa98d2cfe87ea2b7433da",
+        "archive/images/0276.jpg#sha256=f13ed563b9a20c48ea5b53aa7e4d37677bd973c24eb34a52349f4037fed6fdd4",
+        "docs/review/assets/wp7/batch_a/page_017.jpg#slot=5"
+      ],
+      "left_stem": "0275",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same restriction sign stopped vehicles and pink backpack appear in adjacent views.",
+      "right_stem": "0276"
+    },
+    {
+      "batch_position": 86,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000271",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0276.jpg#sha256=f13ed563b9a20c48ea5b53aa7e4d37677bd973c24eb34a52349f4037fed6fdd4",
+        "archive/images/0277.jpg#sha256=79e4f121a4c897dad36942e769451dff9d9957bbb76d3e3839fd9d374a07a51b",
+        "docs/review/assets/wp7/batch_a/page_018.jpg#slot=1"
+      ],
+      "left_stem": "0276",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Matching sign traffic light and queue geometry indicate a continuous capture.",
+      "right_stem": "0277"
+    },
+    {
+      "batch_position": 87,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000277",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0282.jpg#sha256=191aa7e7425c35a2ef91c971a326c8da15c57be265c808dd7901a8bdf3abe2f2",
+        "archive/images/0283.jpg#sha256=4546a45c5be2fe103428d02ffdf8faf503e69db79d4083c2a62d35fbc088f84b",
+        "docs/review/assets/wp7/batch_a/page_018.jpg#slot=2"
+      ],
+      "left_stem": "0282",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same viaduct grassy verge three signs bus and central rider appear in both.",
+      "right_stem": "0283"
+    },
+    {
+      "batch_position": 88,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000278",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0283.jpg#sha256=4546a45c5be2fe103428d02ffdf8faf503e69db79d4083c2a62d35fbc088f84b",
+        "archive/images/0284.jpg#sha256=8a887049261ce28fdabdcd704448f597dd7082d53580b66ec7b0921ecca38fde",
+        "docs/review/assets/wp7/batch_a/page_018.jpg#slot=3"
+      ],
+      "left_stem": "0283",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The same three roadside signs bus and rider persist with slight forward motion.",
+      "right_stem": "0284"
+    },
+    {
+      "batch_position": 89,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000284",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0289.jpg#sha256=e1d887e9228a56a42e66440cd0370b9f51b2ebed75a1deeb4c52bde706ec6f0a",
+        "archive/images/0290.jpg#sha256=0e01b0e49f003c693622b10b4b8a0ff6adb70963b4850626d24a43c0f7fb5345",
+        "docs/review/assets/wp7/batch_a/page_018.jpg#slot=4"
+      ],
+      "left_stem": "0289",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same sign cluster viaduct blue bus and foreground rider remain aligned.",
+      "right_stem": "0290"
+    },
+    {
+      "batch_position": 90,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000286",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0291.jpg#sha256=53506b332bfd5a52406623b02531e97ed1942997a95041064aa05bb8553de821",
+        "archive/images/0292.jpg#sha256=8e9c6236b83fad4d9d911262816217723a97319a527d1592111846002ed8bde8",
+        "docs/review/assets/wp7/batch_a/page_018.jpg#slot=5"
+      ],
+      "left_stem": "0291",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The warning signs grass verge bus and rider show only incremental movement.",
+      "right_stem": "0292"
+    },
+    {
+      "batch_position": 91,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000290",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0295.jpg#sha256=73200ca5e86f7cd7194b43e2bb9bb58643404ea7ebd6916062b25e36db696ae9",
+        "archive/images/0296.jpg#sha256=dd4a0dc48e47d5d1c059eaa5daaa28dfeef9a8989c01827f09c69dd5e60b2439",
+        "docs/review/assets/wp7/batch_a/page_019.jpg#slot=1"
+      ],
+      "left_stem": "0295",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same curve warning sign bus grassy verge and helmet edge appear in both frames.",
+      "right_stem": "0296"
+    },
+    {
+      "batch_position": 92,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000291",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0296.jpg#sha256=dd4a0dc48e47d5d1c059eaa5daaa28dfeef9a8989c01827f09c69dd5e60b2439",
+        "archive/images/0297.jpg#sha256=656f92b9ba4f7a07c87c540aa3098efdb893b252c0d3a10b4fa9ac12b7fd80f0",
+        "docs/review/assets/wp7/batch_a/page_019.jpg#slot=2"
+      ],
+      "left_stem": "0296",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The warning sign bus and road furniture retain matching positions.",
+      "right_stem": "0297"
+    },
+    {
+      "batch_position": 93,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000294",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0299.jpg#sha256=d921c3c40ab912b6f3dbad355c06f71d0c2037beeb01ff774322740f3f339129",
+        "archive/images/0300.jpg#sha256=58510333187314b4bbd88332b42658ceab8198049e1c4472938ab82d2322c9d1",
+        "docs/review/assets/wp7/batch_a/page_019.jpg#slot=3"
+      ],
+      "left_stem": "0299",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same roadside signs bus excavators grass and helmet edge persist across views.",
+      "right_stem": "0300"
+    },
+    {
+      "batch_position": 94,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000296",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0301.jpg#sha256=1e311b8e5547b85923a289bc70074fcbdbe1dc0609a6f126f210628efaa774b7",
+        "archive/images/0302.jpg#sha256=bf7eccbaf17882cbb333ba19b227c8979d9feea5f8ff972f83cdf2de1a336cde",
+        "docs/review/assets/wp7/batch_a/page_019.jpg#slot=4"
+      ],
+      "left_stem": "0301",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The paired signs blue bus and excavators remain visually continuous.",
+      "right_stem": "0302"
+    },
+    {
+      "batch_position": 95,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000297",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0302.jpg#sha256=bf7eccbaf17882cbb333ba19b227c8979d9feea5f8ff972f83cdf2de1a336cde",
+        "archive/images/0303.jpg#sha256=2e164e25d041785e46de5937b28808df361b85ca196394f6271348136da98ab6",
+        "docs/review/assets/wp7/batch_a/page_019.jpg#slot=5"
+      ],
+      "left_stem": "0302",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same sign pair grassy verge and construction equipment appear with small motion.",
+      "right_stem": "0303"
+    },
+    {
+      "batch_position": 96,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000298",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0303.jpg#sha256=2e164e25d041785e46de5937b28808df361b85ca196394f6271348136da98ab6",
+        "archive/images/0304.jpg#sha256=6793ec9b533e78c1afb620315aeb6109896e03efc6227b90e20c3e2500b58681",
+        "docs/review/assets/wp7/batch_a/page_020.jpg#slot=1"
+      ],
+      "left_stem": "0303",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The roadside signs and excavators align while the camera advances slightly.",
+      "right_stem": "0304"
+    },
+    {
+      "batch_position": 97,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000299",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0304.jpg#sha256=6793ec9b533e78c1afb620315aeb6109896e03efc6227b90e20c3e2500b58681",
+        "archive/images/0305.jpg#sha256=ff5f5a19cb49e71a9ed270dbe4abe16df8ff3d52c46e376b5926877cdb34cf8c",
+        "docs/review/assets/wp7/batch_a/page_020.jpg#slot=2"
+      ],
+      "left_stem": "0304",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same signs construction equipment and helmet edge persist in adjacent framing.",
+      "right_stem": "0305"
+    },
+    {
+      "batch_position": 98,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000300",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0305.jpg#sha256=ff5f5a19cb49e71a9ed270dbe4abe16df8ff3d52c46e376b5926877cdb34cf8c",
+        "archive/images/0306.jpg#sha256=37fd13f4b180ae73bbef6f4d0dfc54551355ae108ae4839035af51b0c6346909",
+        "docs/review/assets/wp7/batch_a/page_020.jpg#slot=3"
+      ],
+      "left_stem": "0305",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The shared class-7 sign excavators and grassy verge remain in the same continuous scene.",
+      "right_stem": "0306"
+    },
+    {
+      "batch_position": 99,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000306",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0311.jpg#sha256=6fcc4b47a94c9aa52dec98f3bd8b1c06efb5e944b71a457530988eb005d5218e",
+        "archive/images/0312.jpg#sha256=55f599adacb3ea96a2562c228af19bb7577a43b78e84a8598b374face68da555",
+        "docs/review/assets/wp7/batch_a/page_020.jpg#slot=4"
+      ],
+      "left_stem": "0311",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "Same two signs blue bus excavators and roadside grass appear in both frames.",
+      "right_stem": "0312"
+    },
+    {
+      "batch_position": 100,
+      "capture_hypothesis": "SAME_CAPTURE_CANDIDATE",
+      "confidence": "HIGH",
+      "edge_id": "edge_000307",
+      "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+      "evidence_refs": [
+        "archive/images/0312.jpg#sha256=55f599adacb3ea96a2562c228af19bb7577a43b78e84a8598b374face68da555",
+        "archive/images/0313.jpg#sha256=c9e0694c51e96ebcebcbf7ad0f6c20ef004d23adf3338155347aec8d21636bd7",
+        "docs/review/assets/wp7/batch_a/page_020.jpg#slot=5"
+      ],
+      "left_stem": "0312",
+      "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+      "physical_sign_hypothesis": "SAME_PHYSICAL_SIGN_CANDIDATE",
+      "provisional_outcome": "SAME_CAPTURE_CANDIDATE",
+      "rationale": "The sign pair bus construction equipment and road layout align across adjacent views.",
+      "right_stem": "0313"
+    }
+  ],
+  "evidence_boundary": "BATCH_A_PM_PROVISIONAL_VISUAL_REVIEW_ONLY_NOT_D02_APPROVAL_NOT_GROUP_TRUTH_NO_FINAL_GROUP_ID_NO_SPLIT_NO_TRAINING",
+  "metadata_boundary": "NO_CREATOR_SESSION_OR_PHYSICAL_SIGN_IDENTITY_METADATA_AVAILABLE",
+  "reviewed_at": "2026-10-11T06:20:00+07:00",
+  "reviewer": "PM/Codex provisional visual reviewer",
+  "schema_version": 1,
+  "status": "PM_REVIEWED_AWAITING_INDEPENDENT_QA"
+}

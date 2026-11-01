@@ -1,0 +1,38 @@
+{
+  "scope": "D1 validation only; pipeline postprocessing, not YOLO weight accuracy",
+  "policy_status": "RETROSPECTIVE_R2_BASELINE_NEW_ADAPTER_PENDING_QA",
+  "fixed_020": {
+    "images": 376,
+    "ground_truth": 624,
+    "detected_gt": 547,
+    "correct_class_gt": 457,
+    "false_positives": 150,
+    "fp_per_image": 0.39893617021276595,
+    "filtered_by_conf": 1284,
+    "duplicates_suppressed": 0,
+    "total_filter_ms_local": 10.315,
+    "p95_filter_ms_local": 0.053
+  },
+  "dynamic_threshold_r2_baseline": {
+    "images": 376,
+    "ground_truth": 624,
+    "detected_gt": 547,
+    "correct_class_gt": 457,
+    "false_positives": 150,
+    "fp_per_image": 0.39893617021276595,
+    "filtered_by_conf": 1284,
+    "duplicates_suppressed": 0,
+    "total_filter_ms_local": 10.733,
+    "p95_filter_ms_local": 0.055
+  },
+  "pins": {
+    "results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/weights/best.pt": "5d5815a96218759e93cd9bc51261ed55778da5397dfe7fe25c1f78908b10b633",
+    "docs/review/generated/m1_yolo_classes.csv": "7cda296a95bd8512a1bb2e85109ce9a1574fb882e692b11d4d0ee6a1cb58d242",
+    "docs/review/generated/wp36_r1_split_frames.csv": "8e197d9c7103ac5dc6b7ffc8a3d1aeb30bb6034048d470e4887dd868df95823a",
+    "results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/d1_vre_r2/predictions_conf0001.csv": "87884c536e16ac890c11114c85c7c12731571df15d244071a38e3d1db271c893",
+    "validation_image_roster_sha256": "24e2a67d1e176a7e09caf4b1f6daa2bf5240981d00c8e1a535640e6b8066118e"
+  },
+  "invalid_raw_boxes_omitted_before_dt": 18,
+  "sealed_test_accessed": false,
+  "note": "Zero-area raw boxes are omitted like the D1 app adapter. Local filter timing excludes model inference, NMS and rendering; not end-to-end FPS."
+}
