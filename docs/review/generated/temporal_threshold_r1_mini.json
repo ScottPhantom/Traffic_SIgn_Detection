@@ -1,0 +1,236 @@
+{
+  "package": "TEMPORAL_DT_R1_EVAL_B_MINI",
+  "status": "DEMO_ONLY_DIAGNOSTIC_INDEPENDENT_QA_PENDING",
+  "scope": "74 evaluable sampled frames; only W.205c and P.130 (R2 diagnostic labels)",
+  "not_used_for_parameter_selection": true,
+  "params_primary": {
+    "enter": 0.35,
+    "keep": 0.15,
+    "window": 5,
+    "max_miss": 2,
+    "link_iou": 0.3,
+    "predict_motion": true
+  },
+  "inputs_sha256": {
+    "source_clip": "1fab75937ceba286abbc308138a814a7d9548b722184d4735b802f29d4b1f5ac",
+    "labels_r2": "b90710ee30d5d33bf42f751e8774a567b666dae17c3d4570183d1f4f1a2848c1",
+    "prediction_manifest": "8145ef272917893d65b50ab9a1bec6ca7c0f14d0a59cab82d05265c8f0d80b8a",
+    "prediction_csv_conf0001": "67b714a7763a46afb5fa21467dcd8d6f930809b09527d5b66877104cbb9327c0",
+    "class_map": "7cda296a95bd8512a1bb2e85109ce9a1574fb882e692b11d4d0ee6a1cb58d242"
+  },
+  "source_sha256": {
+    "src/cpv301_autodrive/temporal_threshold.py": "a519066abc6106ae0e729d09d846847997a1d9b584efc769c88d4b03308e9fdc",
+    "src/cpv301_autodrive/review2_temporal_r1.py": "83ae6ab57b69ebf8915361e4d2eea24dde8d8a4743e6ef12b7bafd33f040411a",
+    "detector/m1/metrics.py": "d24570f85795e3bc5a2e754ace80a8081c510ff4a78833f2ab5316953a017f9f",
+    "detector/m1/dynamic_threshold_r2_r1.py": "87ec2f6cd25e5521f75818633b5195d3160aacf99c9f528027c083b0105e2d5e",
+    "detector/m1/val_reeval_r2.py": "2a0823faa15f7cb9cecb64a1f21e48e8b5b84f7e7f949683683a6992ee13ccc9",
+    "scripts/evaluate_temporal_threshold_r1.py": "b6f17073c7a27cb38154affc516971241f43245fafd39b57499d43b70dd9881d"
+  },
+  "inference": {
+    "command": "uv run python scripts/evaluate_temporal_threshold_r1.py mini-infer",
+    "device": "mps",
+    "confidence": 0.001,
+    "imgsz": 1280,
+    "nms_iou": 0.7,
+    "prediction_rows": 246,
+    "model_sha256": "5d5815a96218759e93cd9bc51261ed55778da5397dfe7fe25c1f78908b10b633"
+  },
+  "rerun_vs_pinned_conf020_upload": {
+    "pinned_rows": 54,
+    "rerun_rows_ge_020": 54,
+    "frame_code_count_mismatches": 0
+  },
+  "baseline_fixed_020": {
+    "frame_level": {
+      "by_class": {
+        "W.205c": {
+          "gt": 16,
+          "tp": 0,
+          "fp": 0,
+          "fn": 16,
+          "fp_wrong_target_class_or_duplicate": 0
+        },
+        "P.130": {
+          "gt": 17,
+          "tp": 12,
+          "fp": 0,
+          "fn": 5,
+          "fp_wrong_target_class_or_duplicate": 0
+        }
+      },
+      "other_class_on_target": {
+        "P.131a": 7,
+        "W.207": 6,
+        "W.224": 13
+      },
+      "ignored": {
+        "other_class": 11
+      },
+      "unscored_other_class": 0
+    },
+    "event_level": {
+      "gt_events": 2,
+      "gt_events_by_code": {
+        "W.205c": 1,
+        "P.130": 1
+      },
+      "events_with_ge1_correct_frame": {
+        "W.205c": 0,
+        "P.130": 1
+      },
+      "per_event": [
+        {
+          "code": "W.205c",
+          "frames": 16,
+          "correct_code_frames": 0,
+          "matched_code_sequence": [
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.207",
+            "W.207",
+            "W.207",
+            "W.207",
+            "W.207"
+          ],
+          "label_flips": 1,
+          "p130_p131a_flips": 0
+        },
+        {
+          "code": "P.130",
+          "frames": 17,
+          "correct_code_frames": 11,
+          "matched_code_sequence": [
+            "P.130",
+            "P.130",
+            "P.131a",
+            "P.131a",
+            "P.131a",
+            "P.130",
+            "P.131a",
+            "P.131a",
+            "P.130",
+            "P.130",
+            "P.131a",
+            "P.130",
+            "P.130",
+            "P.130",
+            "P.130",
+            "P.130",
+            "P.130"
+          ],
+          "label_flips": 6,
+          "p130_p131a_flips": 6
+        }
+      ]
+    }
+  },
+  "temporal_primary": {
+    "frame_level": {
+      "by_class": {
+        "W.205c": {
+          "gt": 16,
+          "tp": 0,
+          "fp": 0,
+          "fn": 16,
+          "fp_wrong_target_class_or_duplicate": 0
+        },
+        "P.130": {
+          "gt": 17,
+          "tp": 15,
+          "fp": 1,
+          "fn": 2,
+          "fp_wrong_target_class_or_duplicate": 1
+        }
+      },
+      "other_class_on_target": {
+        "P.131a": 3,
+        "W.207": 1,
+        "W.224": 19
+      },
+      "ignored": {
+        "other_class": 12
+      },
+      "unscored_other_class": 0
+    },
+    "event_level": {
+      "gt_events": 2,
+      "gt_events_by_code": {
+        "W.205c": 1,
+        "P.130": 1
+      },
+      "events_with_ge1_correct_frame": {
+        "W.205c": 0,
+        "P.130": 1
+      },
+      "per_event": [
+        {
+          "code": "W.205c",
+          "frames": 16,
+          "correct_code_frames": 0,
+          "matched_code_sequence": [
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224",
+            "W.224"
+          ],
+          "label_flips": 0,
+          "p130_p131a_flips": 0
+        },
+        {
+          "code": "P.130",
+          "frames": 17,
+          "correct_code_frames": 14,
+          "matched_code_sequence": [
+            "P.130",
+            "P.130",
+            "P.130",
+            "P.130",
+            "P.131a",
+            "P.130",
+            "P.131a",
+            "P.131a",
+            "P.130",
+            "P.130",
+            "P.130",
+            "P.130",
+            "P.130",
+            "P.130",
+            "P.130",
+            "P.130",
+            "P.130"
+          ],
+          "label_flips": 4,
+          "p130_p131a_flips": 4
+        }
+      ]
+    },
+    "tracks": {
+      "tracks": 15,
+      "tracks_confirmed": 10,
+      "temporal_label_switches_total": 4
+    }
+  },
+  "sealed_test_accessed": false,
+  "app_activation": false
+}
