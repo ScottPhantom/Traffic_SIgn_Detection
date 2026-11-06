@@ -1,0 +1,94 @@
+# D1 train-label-completeness review R1 — addendum 2 — independent delta QA record
+
+Status: `DELTA_QA_PASS_GIOI_HAN__0_CRITICAL_0_HIGH_0_MEDIUM_6_LOW__M_D1_CLOSED__READY_FOR_OWNER_HOURS_DECISION`
+Boundary: `DOCUMENT_REVIEW_ONLY_NO_PACKET_NO_LABEL_EDIT_NO_INFERENCE_NO_TRAINING_NO_SEALED_TEST`
+Flags: `sealed_test_accessed=false`, `training_authorized=false`, `labels_modified=false`, `inference_run=false`
+Date: 2026-11-05 (Asia/Ho_Chi_Minh).
+Reviewer: independent QA agent spawned by the coordinating Claude session. I did not author addendum 2, addendum 1 or the contract.
+Reviewed file: `tmp/d1_train_label_completeness_review_r1_addendum_2.md` (worktree `centercam-yolo54-r1`), SHA-256
+`1ed8fa32edbd16314962462a6e656e6e1384eeb0c3b44af428499a56e8f5cc28`. It equals the brief at the start, and I rechecked it unchanged at the end. I did not edit it, and I did not write to the main checkout or run git.
+
+Verdict: PASS giới hạn — 0 Critical, 0 High, 0 Medium, 6 Low. M-D1 is fully closed. Every number I could recompute matches: the full §3 trigger table, the n = 6 boundary, the cross-checks with addendum 1 and the earlier delta QA, and the §5 cost. L-D1…L-D7 are all answered as the QA asked or better. Scope, flags, gate bounds, the A1 block and the sealed-test boundary are unchanged. The one relaxation (L-D5, `MISS_REJECTED` can now be eligible) was invited by the earlier QA. It is listed in §2 and under D-2, but it is not called a relaxation. The Low items are wording and specification gaps that can go into the builder/verifier specification or the Owner record.
+
+**Is the package ready for the Owner to decide on the human hours?** **Yes.** The contract plus addenda 1 and 2 are now ready for the Owner to decide on the human hours (central 57.3 h; range 36.6–100.2 h; per-frame inputs unmeasured until W0), together with D-1…D-8, D-A1 and D-A2. The Low items below do not block that decision. They should be written into the Owner record or the builder/verifier specification before the packet build. Nothing here unblocks A1, which stays `A1_BLOCKED_PENDING_TRAIN_LABEL_COMPLETENESS_AND_HUMAN_REVIEW`.
+
+## Checks 1–6 summary
+
+| Check | Result | Basis |
+| --- | --- | --- |
+| 1 Pins (§1, lines 14–19) | PASS | All four pinned files rehash equal: contract `93375fdf…`, contract QA record `7bb3bf89…`, addendum 1 `85434212…`, addendum 1 delta QA record `bbcbbca0…`. The §1 summary of that record (line 21–22: `PASS giới hạn`, 0/0/1/7, ready once M-D1 is adopted) matches the record's lines 11 and 13. **[V]** |
+| 2 M-D1 closed (§3, lines 40–90) | PASS | R-A2.1 (lines 45–50) triggers on `U(k,n) < 0.70` for every `n ≥ 1`. Only `n = 0` is `NOT_EVALUABLE`. This is the stronger of the two options the QA offered (record line 31). My own script (`dqa_add2_check.py`, not the author's) reproduces **every cell** of the 22-row table, for both columns and at U(K) and U(K+1), to 6 decimals. Claims confirmed: (a) the new rule fires at least as often for every `n ≥ 1`. This holds trivially because `U < 0.5 ⇒ U < 0.70`, and I checked it numerically. (b) It fires at strictly more k for every `n ≥ 2`, which I checked for n = 2…500. (c) n = 1 never fires: U(0,1) = 0.793451. (d) The n = 6 boundary: U(2,6) = 0.7000067 at z = 1.959964 and 0.700006685 at the exact quantile 1.959963985, so k = 2 does not trigger under either z. No row changes between the two z values. (e) The new rule agrees with addendum 1 at 9/20, 22/40 and 35/60, and with the QA's old-rule values n = 10 → k ≤ 1, n = 15 → k ≤ 3, n = 19 → k ≤ 5 and n = 40 → 13. Against addendum 1, R-A2.1 is identical for `n ≥ 20` and strictly tighter for `1 ≤ n < 20`, which were previously exempt. The low-power disclosure (line 51–52) meets the QA's "state the effective small-n triggers". **[V]** |
+| 3 Low findings | PASS with L-E1…L-E5 | See the table below. L-D2 and L-D5 adopt exactly what the QA proposed but leave specification gaps (L-E2, L-E3). R-A2.1 (i) widens the re-review scope from W1 to the completed waves, which is stricter. A partial-wave wording gap remains (L-E4). L-D3 adds row 0 without loosening anything, and it adds a reporting count the QA did not ask for. L-D4, L-D6 and L-D7 are clean. |
+| 4 §2 completeness / silent changes | PASS with L-E5 | Unchanged: train-only roster, census, the lists and hashes, crossover, gate bounds (5 %/2 %/2 %, max-x tables), merge rule, privacy, flags (lines 7, 150), the A1 block (line 128), the sealed-test boundary (line 141) and the "nothing authorized" boundary (lines 128–129). No QA-order step is removed. This delta QA sits before the Owner step, as in addendum 1 §13. Changes outside the §2 rows are all tighter or disclosed elsewhere in the same file: the R-M3.5 (i)/(ii) wording, D-2 scope (line 126), the §10 cost claim and the new builder/verifier duties. §2 does not list them (L-E5). |
+| 5 Cost (§5, lines 104–115) | PASS | Recomputed exactly from the addendum 1 §8 inputs with onboarding 6 → 8 h: low 34.640 → 36.640, central 55.295 → 57.295, high 98.150 → 100.150. The high column without the reserve is 93.483 (≈ 93.5). Central per role: A = B 16.935, C 11.865, Q 9.56 + 2 = 11.560 (≈ 11.6); the sum is 57.295. All match. **[V] arithmetic, [U] inputs** |
+| 6 Repo gate (main checkout) | PASS | `ruff check src tests` → `All checks passed!` (exit 0). `uv lock --check` → `Resolved 201 packages in 14ms` (exit 0). See the commands table for the no-write flags used. **[V]** |
+
+### L-D1 … L-D7 and R-A2.1 (i), one by one
+
+| Item | QA asked (addendum 1 delta QA record) | Addendum 2 | Assessment |
+| --- | --- | --- | --- |
+| L-D1 | Do not edit addendum 1. The record supplies the gate. | Line 96: addendum 1 unedited. It cites the QA's gate result and corrects "11" to 10 cited files. | Met. However, line 96 says "This addendum's own gate is in §7", and §7 (lines 131–141) contains no ruff/uv gate. That is the same dangling-reference symptom (**L-E1**). This record supplies the gate. |
+| L-D2 | Count `n_adj` as distinct objects, merging at IoU ≥ 0.1. The builder prints it. Optionally, Q places blind points. | Line 97: exactly that. The verifier also recomputes `n_adj` from the overlay CSV and rejects a mismatch. Blind points are not adopted, which is disclosed. | Met, and the verifier recomputation exceeds the ask. **Can merging hide a real missed sign that overlaps a label?** No. Merging can only lower `n_adj`, so `q_blind_count > n_adj` fires at least as often as with the unmerged count. Take a missed sign that overlaps a label (L-3 row (1)). If the reviewers left it unrecorded, the overlay has one object and Q counts two, so `MISS_FOUND`. If they recorded the row-(1) mask, it merges with its label. Q still counts two, which gives `MISS_FOUND`, and C rejects it as covered. That outcome is correct, because the region is masked. Residual gap: the merge test is IoU only, while L-3 row (1) also uses "≥ 50 % of its area inside". A grossly oversized or undersized `BAD_BOX` label with its true-extent mask nested inside can have IoU < 0.1. For example, a 25×25 mask inside a 100×100 label has IoU 0.0625. That case still counts twice, which is the original L-D2 failure mode (**L-E2**). |
+| L-D3 | Add row 0 (IoU ≥ 0.5, same key, acceptable box → covered). Flag stacked plates for D-2. | Line 98: row 0 as asked, the D-2 flag, plus a required count of row-(1) cases with a different key. | Met and exceeded. Row 0 cannot hide a miss: it needs IoU ≥ 0.5 with a same-key label, and an unacceptable box falls through to row (1) `BAD_BOX` with a mask. This is consistent with R-M3.3's re-find rule. Side note: a distinct nested plate of another class is recorded as `WRONG_CLASS` against a label that is correct. No label changes (contract §4, `labels_modified=false`), but the separate repair decision could be misled (**L-E3**, second part). |
+| L-D4 | Write "0-based". | Line 99: `C150[0::2]` / `C150[1::2]`, 0-based, hashes normative. | Met. |
+| L-D5 | Enumerate the four values, state each one's eligibility, and name the AC-3 re-review scope. | Line 100: four values, eligibility for each, verifier enforces all four. `MISS_REJECTED` is eligible only with reason `NOT_A_SIGN` or `ALREADY_COVERED`. The scope moves into R-A2.1 (i). | Met in form. **Is it a loosening against the literal addendum 1 R-M4.1 (lines 465–469)? Yes.** Literally, a rejected `MISS_FOUND` made a frame ineligible. Now it can be eligible on C's single rejection. The earlier QA called the literal reading "conservative, but probably unintended" and invited the change, so this is within the ask. It is listed in §2 (line 33) and under D-2 (line 126), but the text never calls it a relaxation. Three specification gaps remain: (1) `ALREADY_COVERED` and `NOT_A_SIGN` are not defined. (2) There is no per-frame aggregation rule when a frame has several `MISS_FOUND` rows with mixed outcomes. (3) C rules on a frame C adjudicated, with no second look (**L-E3**). |
+| L-D6 | Disclose for the Owner. | Line 101: disclosed; no rule change; C150 excludes W0. | Met. |
+| L-D7 | About 2 h of onboarding for Q, timed in W0. | Line 102 and §5. | Met. The arithmetic checks out (check 5). |
+| R-A2.1 (i) scope | Name the scope of the AC-3 re-review. | Lines 47–48: blind re-review by A and B of "every overlay-reviewed frame in the waves completed so far (W1, plus W2 if W2 was reviewed)". | Stricter than addendum 1's "W1" (line 441). However, "waves completed so far" leaves frames from a **partially** reviewed W2 outside the re-review (**L-E4**). |
+
+## Findings
+
+No Critical, High or Medium finding. All six findings are Low and non-blocking for the Owner's hours decision.
+
+- **L-E1 — Dangling gate reference (repeats the L-D1 symptom).** Line 96 says "This addendum's own gate is in §7". §7 (lines 133–136) lists only the Wilson script and `shasum`. No `ruff`/`uv lock` result is given. Separately, the author's script `scratchpad/add2/wilson_small_n.py` is not hash-pinned, although addendum 1 §12 pinned its scripts. I hashed it without running it: `d608156636fa1156a044525284b57ac0d0357f057e6ef567e7a2b55a5e9d57e8`. **Fix:** do not edit the frozen file. Take the gate result from this record (check 6) and that hash into the Owner record.
+- **L-E2 — The `n_adj` merge misses nested regions (residual of L-D2).** Line 97 merges only at IoU ≥ 0.1. L-3 row (1) (addendum 1 line 491) also treats "≥ 50 % of its area inside an existing label box" as the same object. When a `BAD_BOX` label is much larger or smaller than the sign, its true-extent mask is nested inside it with IoU < 0.1. The pair counts as two objects, so one such defect plus one real miss elsewhere still passes as `CLEAN`, which is the failure L-D2 described. The merge procedure is also unspecified (pairwise or transitive), and the builder and verifier must agree on it byte for byte. **Fix (builder/verifier specification):** merge two regions when IoU ≥ 0.1 **or** their intersection is ≥ 50 % of the smaller region's area. Define `n_adj` as the number of connected components of that relation. This mirrors row (1) and can only lower `n_adj`, so it cannot hide a miss.
+- **L-E3 — The `MISS_REJECTED` relaxation is not labelled, and its codes are undefined (L-D5).** Line 100 makes rejected findings eligible, which loosens the literal addendum 1 R-M4.1 (lines 465–469). That is acceptable, because the earlier QA invited it and §2 and D-2 list it. Gaps: (a) the text does not say it relaxes R-M4.1. (b) `ALREADY_COVERED` and `NOT_A_SIGN` have no definitions. (c) A frame with several `MISS_FOUND` rows has no aggregation rule. (d) C confirms or rejects findings on frames C adjudicated. That conflict already affects `x_g`, and now it also decides eligibility. (e) Related to L-D3: a nested distinct plate of another class is logged as `WRONG_CLASS` against a correct label. **Fix (Owner record and builder/verifier specification):** state "D-2 relaxes addendum 1 R-M4.1 for C-rejected findings". Define `ALREADY_COVERED` as "the object is inside a label, added box or mask on the adjudicated overlay under L-3 row (0)/(1)" and `NOT_A_SIGN` as "falls under the contract's not-recorded list". Make the frame-level value the worst of its row outcomes, with every row either confirmed + repaired + re-checked or rejected with an allowed code. Require a free-text note on each rejection, and report counts per reason code and per group so that package QA can sample them. Optionally, mark nested distinct signs with `notes="NESTED_DISTINCT_SIGN"` instead of a bare `WRONG_CLASS`.
+- **L-E4 — The AC-3 re-review scope has a partial-wave gap.** In R-A2.1 (i) (lines 47–48), "every overlay-reviewed frame in the waves completed so far" excludes W2 frames already overlay-reviewed when W2 is only partly done. **Fix (Owner record):** read it as "every roster frame overlay-reviewed by A or B before the Owner record, and every frame reviewed after it is reviewed blind". Also state how `n = |B_ref|` is formed if the Owner stops after W1 (D-8). C150 spans W1 and W2, so B_ref should be restricted to C150 frames whose overlay pass has happened. This gap predates addendum 2.
+- **L-E5 — §2 understates what is replaced.** §2 (lines 28–34) names only "the `n < 20` bullet and the `n ≥ 20` condition" of R-M3.5. R-A2.1 replaces all of R-M3.5 (line 42), including the (i) scope and the (ii) wording ("S, its interval and n"). §2 also omits three changes the file makes: the expanded D-2 scope (line 126) against addendum 1 §11 (line 565); the addendum 1 §10 cost claim "35 / 55 / 98 h" (line 554), now superseded; and the new builder/verifier duties of L-D2 and L-D3 (printing `n_adj`, the mismatch rejection, the count of row-(1) cases with a different key). Every one of these is tighter or disclosed in the body, so no loosening is hidden. **Fix:** list them in the Owner record, or in a successor's precedence table.
+- **L-E6 — Note on the C-confirmation estimate (information).** Merging regions and broad masks, such as one `IGNORE_REGION` over a cluster of signs, will produce `MISS_FOUND` rows that C rejects as `ALREADY_COVERED`. The 0.5 h central "C confirmation of Q findings" line (addendum 1 line 513) is then likely low. **Fix:** time it in W0 together with the per-frame inputs. This does not change the hours decision.
+
+## Commands run and results
+
+All commands were read-only. My script is at `/private/tmp/claude-501/-Users-nguyentantai-Desktop-app-Traffic-Sign-Detector/c0d7550b-5da5-44ff-bc50-750b12caaceb/scratchpad/qa_add2/dqa_add2_check.py` and was run with `python3 -I`. It is pure Python (math, statistics, fractions) and reads no file.
+
+| Command | Result |
+| --- | --- |
+| `shasum -a 256` reviewed file, start and end | `1ed8fa32…f5cc28` both times, equal to the brief |
+| `shasum -a 256` contract, contract QA record, addendum 1, addendum 1 delta QA record | `93375fdf…`, `7bb3bf89…`, `85434212…`, `bbcbbca0…`: equal to addendum 2 §1 and the brief |
+| `python3 -I …/qa_add2/dqa_add2_check.py` (SHA-256 below) | Wilson table for n = 1…20, 40, 60, both columns, U(K)/U(K+1): every cell equals addendum 2 §3. The firing sets are prefixes 0..K. "≥ for all n ≥ 1" = True; "strict for every n ≥ 2" = True, and no exception for n = 2…500. U(2,6) = 0.7000067 (exact z: 0.700006685). Results are identical under z = 1.959964 and z = 1.959963985. Old rule: n10 1, n15 3, n19 5, n40 13. New rule: n20 9, n40 22, n60 35. Cost: 36.640 / 57.295 / 100.150; 93.483 without the reserve; per role 16.935 / 16.935 / 11.865 / 11.560. |
+| `shasum -a 256` of the author's `scratchpad/add2/wilson_small_n.py` (not run, not reused) | `d608156636fa1156a044525284b57ac0d0357f057e6ef567e7a2b55a5e9d57e8` |
+| `grep -n` / `sed -n` on the contract (§4 taxonomy, §5.1 AC-3, §5.2) and addendum 1 (§3.5, §4.2, §5.2, §6.2, §7–§13) | Line references cited above |
+| `uv --directory <main checkout> run --no-sync ruff check --no-cache src tests` | `All checks passed!`, exit 0 |
+| `uv --directory <main checkout> lock --check` | `Resolved 201 packages in 14ms`, exit 0 |
+
+The gate deviates from the literal `uv run ruff check src tests` command. `--no-sync` stops `uv run` from refreshing `.venv`, and `--no-cache` stops ruff from writing `.ruff_cache`. Both were used to honour the rule "do not write anything in the main checkout". The lint scope is identical. git was not run anywhere.
+
+**Data-access disclosure.** No image, label file, CSV row, model or test path of any split was opened. The sealed test (`afa03d4b…`) was not accessed. Only the five Markdown documents named above and my own script were read. No inference or training was run.
+
+## SHA-256 summary
+
+| File | SHA-256 |
+| --- | --- |
+| Reviewed addendum 2 (start and end) | `1ed8fa32edbd16314962462a6e656e6e1384eeb0c3b44af428499a56e8f5cc28` |
+| Addendum 1 delta QA record | `bbcbbca0898df9cde0f61ec3f621c22effe693aad3c761ba156bf82f008cc375` |
+| Addendum 1 | `85434212e6fe989b99903534443278f987c55f0110843e73c109f090e81a5275` |
+| Contract | `93375fdf720a094a9db80f6471370d3dc48ed736ef9cc02317a35d3c14f4237f` |
+| Contract QA record | `7bb3bf89350474cc5f01413415ee122c7984880baa196dbcf2ddb169b9c6bfbc` |
+| This QA's script `dqa_add2_check.py` | reported in the hand-over |
+| This record | reported in the hand-over; embedding it here would change it |
+
+## Claim classification
+
+- **Verified [V]:** the four pins; the whole §3 trigger table and the claims attached to it (≥ for n ≥ 1, strict for n ≥ 2, the n = 6 boundary, consistency with addendum 1 and the earlier QA); the §5 cost arithmetic; the repo gate result; that addendum 2 changes no scope, flag, gate bound, A1 block or sealed-test boundary.
+- **Proposal [P]:** R-A2.1, every L-D resolution, and every fix in this record (L-E1…L-E6), until the Owner accepts them.
+- **Unknown [U]:** every per-frame time input, including C's confirmation load (L-E6); Q's sensitivity (U-10); train frame sizes (U-4); the train missing-label rate.
+
+## Required next steps (proposals)
+
+1. **[P] Owner:** decide the human hours (36.6 / 57.3 / 100.2 h) and D-1…D-8, D-A1 and D-A2. D-2 now also covers the L-D3 nested-plate flag and the L-D5 relaxation, labelled as such (L-E3).
+2. **[P] Owner record or builder/verifier specification, before the packet build:** L-E2 (nested merge, connected components), L-E3 (code definitions, frame aggregation, rejection notes and counts), L-E4 (partial-wave scope, B_ref under a W1 stop), L-E5 (full replacement list) and L-E1 (gate result and author script hash from this record).
+3. This record and the addendum 1 delta QA record are to be placed into `docs/review/` byte for byte by the coordinating session. This QA did not write to the main checkout.
+
+No packet, label, inference, training, D-05 or threshold change is authorized by this record. A1 stays `A1_BLOCKED_PENDING_TRAIN_LABEL_COMPLETENESS_AND_HUMAN_REVIEW`.
+
+`sealed_test_accessed=false` · `training_authorized=false` · `labels_modified=false` · `inference_run=false`
