@@ -1,7 +1,9 @@
 # CPV301 AutoDrive — Báo cáo tiến độ: xử lý ảnh, hiệu suất model và các hướng cải tiến
 
 Ngày lập: 2026-11-05 · Mốc nộp: thứ Bảy 2026-11-07 · Kế thừa: `docs/bao_cao_tien_do_2026-10-24.md`
-Trạng thái: `DRAFT_FOR_OWNER_REVIEW`. Mục 7 (A2) đã có kết quả qua QA, cập nhật 06/11.
+Trạng thái: `DRAFT_FOR_OWNER_REVIEW`.
+- Mục 7 (A2) đã có kết quả qua QA, cập nhật 06/11.
+- Mục 8 (ngưỡng NMS × confidence) và mục 11 (bước tiếp theo) cập nhật chiều 06/11.
 
 **Phạm vi bằng chứng:**
 - Chỉ dùng dữ liệu validation của DATASET01 và GTSRB test.
@@ -18,7 +20,9 @@ Trạng thái: `DRAFT_FOR_OWNER_REVIEW`. Mục 7 (A2) đã có kết quả qua Q
 | Đạt D-05 trên val chưa? | **Chưa.** Báo nhầm 0,399 FP/ảnh (mốc ≤ 0,30). Recall ba lớp quan trọng 7/32/41 là 0,595 / 0,621 / 0,462 (mốc ≥ 0,70). |
 | Từ 24/10 đã làm gì? | Đánh giá lại trên nhãn val R3. So sánh 7 cấu hình model trên cùng bộ chấm. Thử 5 hướng cải tiến: A3, SAHI, temporal, dynamic threshold, ghép classifier. **Không hướng nào vượt pilot** khi xét đủ các tiêu chí khóa trước. |
 | A2 (lặp ảnh lớp 7/32/41) thì sao? | Train xong ngày 06/11 và đã qua QA. Báo nhầm giảm (0,245 FP/ảnh) và ba lớp quan trọng tăng, nhưng recall tổng tụt còn 0,761 (mốc 0,85). **Không đạt tiêu chí**, nên giữ pilot. |
-| Khi nào mở test? | Sau khi chốt model, train đủ 3 seed và khóa ngưỡng trên val. Sớm nhất là tuần sau. |
+| Ngưỡng tốt nhất của pilot? | Trên một pilot: confidence 0,20, NMS IoU 0,70 theo lớp. **Trên trung bình 2 seed (tạm thời): confidence 0,19, NMS 0,70 theo lớp**, cho recall 0,855 và báo nhầm 0,380. Không cấu hình nào vừa đạt recall ≥ 0,85, vừa có báo nhầm ≤ 0,30, mà không làm sai nhãn. **Chưa khóa** (mục 8.2). |
+| Seed thứ hai (20261019) cho kết quả thế nào? | Cùng cấu hình pilot, chỉ đổi seed, đã qua QA. mAP50 đúng lớp **0,731** (pilot 0,852); recall đúng lớp 0,607 (pilot 0,732); báo nhầm 0,338 (pilot 0,399, nhưng CI [−0,365; +0,145] chứa 0). Kết quả **dao động lớn giữa các lần train**. Trung bình tạm thời 2 seed ở conf 0,20: recall phát hiện 0,845, báo nhầm 0,368. |
+| Khi nào mở test? | Sau khi đủ 3 seed qua QA, khóa ngưỡng trên dữ liệu gộp 3 seed và chốt contract đánh giá cuối. Seed 20261019 đang train ngày 06/11; seed 20261020 chưa được duyệt. Sớm nhất là tuần sau. |
 
 ## 2. Thay đổi so với báo cáo 24/10
 
@@ -138,7 +142,7 @@ các model với nhau.
 - Một phần báo nhầm là biển thật chưa được gán nhãn. Vì vậy kiểm độ đầy đủ nhãn train là điều kiện
   trước khi đào hard-negative.
 
-## 7. A2 — lặp ảnh train của lớp 7/32/41 (đang chạy)
+## 7. A2 — lặp ảnh train của lớp 7/32/41 (đã xong)
 
 **Thiết kế (khóa trước, đã qua hai QA nguồn độc lập):**
 - Mọi ảnh train có nhãn lớp 7, 32 hoặc 41 được liệt kê hai lần.
@@ -179,7 +183,87 @@ bỏ sót nhiều biển khác hơn. mAP (không phụ thuộc ngưỡng) giảm
   ảnh.
 - Hồ sơ chi tiết: `docs/review/d1_a2_r1_common_validation_report_r1.md`.
 
-## 8. Ứng dụng Streamlit (mô phỏng)
+## 8. Ngưỡng NMS IoU × confidence trên pilot (chẩn đoán, chưa khóa)
+
+**Cách làm:**
+- Chạy lại pilot trên 376 ảnh val R3 với 11 cấu hình NMS:
+  - NMS theo lớp, IoU 0,45 → 0,80;
+  - NMS gộp khác lớp, IoU 0,80 / 0,85 / 0,90.
+- Mỗi cấu hình quét 20 mức confidence 0,05 → 1,00, tổng 220 ô.
+- Cấu hình đang dùng (IoU 0,70) tái tạo đúng số cũ: 547 box đúng vị trí, 150 báo nhầm, 457 đúng lớp.
+- QA nguồn và QA kết quả độc lập đều PASS. QA đã tính lại đủ 220 ô.
+
+| Cấu hình (conf 0,20) | Báo nhầm/ảnh | Đúng lớp | mAP50-95 | Kết luận |
+| --- | ---: | ---: | ---: | --- |
+| **Theo lớp, IoU 0,70 (đang dùng)** | 0,399 | 457 | 0,609 | **Giữ** |
+| Theo lớp, IoU 0,45 | 0,359 | 457 | 0,610 | Kiểm định ghép cặp riêng: **chưa đủ bằng chứng** |
+| Theo lớp, IoU 0,80 | 0,428 | 457 | 0,608 | Tệ hơn |
+| Gộp khác lớp, IoU 0,80 | **0,290** | 433 | 0,539 | Loại: mất 24 box đúng lớp, mAP giảm có ý nghĩa |
+
+**Ba điều rút ra:**
+- **Recall chỉ phụ thuộc confidence, không phụ thuộc NMS IoU** (trong vùng đã thử).
+  - Ở conf 0,20 recall là 0,877; ở 0,25 đã xuống 0,838, dưới mốc 0,85.
+  - Vì vậy, với mọi mức IoU, luật D-05 đều chọn confidence 0,20.
+- **NMS chỉ bớt được box trùng, không bớt được báo nhầm trên nền.** Mức tốt nhất theo lớp (IoU 0,45)
+  vẫn còn 0,359 báo nhầm/ảnh. Kiểm định ghép cặp khóa trước cho thấy:
+  - 15 box bớt đi nằm hết ở 2 trong 9 nhóm chuyến chụp;
+  - CI là [−0,104; 0,000], chạm 0, nên chưa đủ bằng chứng;
+  - không mất box đúng lớp nào, và cả 9 lần cross-validation đều chọn 0,45: tín hiệu nhất quán nhưng
+    quá hẹp.
+- **Rủi ro biển đứng chồng nhau chưa kiểm được.** Val không có cặp biển thật nào chồng lên nhau, nên
+  không đo được cái hại khi hạ IoU.
+
+**Lưới đã quét có hai giới hạn được ghi lại:**
+- Lưới IoU dừng ở 0,45. Mức tốt nhất nằm ngay biên dưới của lưới.
+- Lưới confidence có bước 0,05, nên chưa đo chi tiết giữa 0,20 và 0,25.
+
+Contract khóa ngưỡng 3 seed (mục 11) đã thêm lưới confidence mịn 0,15–0,30 bước 0,01, và được khóa
+trước khi có số của seed mới.
+
+### 8.1 So sánh các model ở cùng mức báo nhầm (quét confidence, QA PASS)
+
+**Cách làm:**
+- Quét 10 cấu hình × 20 mức confidence (0,05 → 1,00), chỉ đọc file dự đoán đã có, không chạy lại model.
+- Hai cột đầu của bảng là recall ở mức báo nhầm 0,30/ảnh, **nội suy tuyến tính** giữa hai mức confidence
+  kề nhau, không phải một lượt chạy mới.
+
+| Cấu hình | Tìm thấy biển | Đúng tên biển | Có mức conf đạt recall ≥ 0,85 và FP ≤ 0,30? | mAP50 (mốc 0,60) |
+| --- | ---: | ---: | --- | ---: |
+| YOLO11s-54 pilot | 0,794 | 0,664 | Không | **0,852** |
+| YOLO11s-54 A2 | 0,791 | 0,671 | Không | 0,764 |
+| YOLO11s-54 A3 | 0,808 | 0,616 | Không | 0,802 |
+| Các Cascade (S1/N1 × CompactCNN, R2, VGG16) | 0,869–0,917 | 0,519–0,569 | Có | 0,332–0,478 |
+
+**Đọc bảng:**
+- Ở cùng mức báo nhầm, Cascade **tìm thấy** biển nhiều hơn pilot, nhưng **gọi đúng tên** ít hơn.
+- Cascade đạt được cặp mốc recall và báo nhầm trên val, nhưng mAP50 nằm dưới mốc 0,60.
+- Chưa cấu hình nào đạt đồng thời cả ba mốc. Pilot vẫn tốt nhất cho nhiệm vụ nhận đúng loại biển.
+- Nguồn: `docs/review/d1_threshold_sweep_r1_report.md` (commit `03303b6`).
+
+### 8.2 Ngưỡng tạm thời trên 2 seed (chưa khóa, QA PASS)
+
+**Cách làm:** áp đúng luật đã khóa trong contract khóa ngưỡng (`9d3f230`) lên trung bình của seed 20261018
+và 20261019. Lưới gồm confidence 0,05–0,95, cộng thêm lưới mịn 0,15–0,30 bước 0,01, nhân với 11 cấu hình
+NMS. Commit `f914d31`; QA nguồn và QA kết quả đều PASS. QA đã tính lại 341 ô, 9 fold và các CI.
+
+| Cấu hình | Recall TB (seed 18 / 19) | FP/ảnh TB | Đúng tên TB | Kết luận |
+| --- | --- | ---: | ---: | --- |
+| Conf 0,20 · NMS 0,70 theo lớp | 0,845 (0,877 / 0,813) | 0,368 | 0,670 | Không hợp lệ: recall < 0,85 |
+| **Conf 0,19 · NMS 0,70 theo lớp** | **0,855** (0,889 / 0,821) | **0,380** | 0,676 | **Chọn tạm thời** |
+| Conf 0,19 · NMS 0,80 gộp lớp | 0,855 (0,889 / 0,821) | 0,247 | 0,645 | Loại: CI hiệu mAP50-95 [−0,131; −0,034] nằm hẳn dưới 0 |
+
+**Đọc bảng:**
+- Muốn giữ recall trung bình ≥ 0,85 thì phải hạ confidence xuống 0,19. Khi đó báo nhầm tăng lên 0,380, vẫn
+  trên mốc 0,30.
+- Riêng seed 19, recall ở ngưỡng này chỉ 0,821.
+- Cấu hình gộp khác lớp đạt cả hai mốc trên val, nhưng làm giảm mAP50-95 có ý nghĩa thống kê, nên bị luật
+  khóa trước loại. Không được gọi đây là cải tiến đã được chấp nhận.
+- Đây **chưa phải ngưỡng khóa**:
+  - chủ dự án đã sửa D-05 Q1 thành 2 seed (record đang QA lại);
+  - ngưỡng chính thức phải do bộ khóa R3 tính lại bằng cùng luật, qua QA và được chủ dự án duyệt trước khi
+    mở test.
+
+## 9. Ứng dụng Streamlit (mô phỏng)
 
 - **Demo ảnh tĩnh D1 + CenterCam.** YOLO11s-54 vẽ khung và mã biển. CenterCam ước lượng hướng
   đường để xác định biển bên phải hay bên trái làn. Đã qua QA tích hợp độc lập.
@@ -191,7 +275,7 @@ bỏ sót nhiều biển khác hơn. mAP (không phụ thuộc ngưỡng) giảm
     hành vi mô phỏng (`vehicle_action=none`).
   - Trạng thái **DEMO_ONLY**: 0/6 gói video đạt gate, chưa có GT video.
 
-## 9. Giới hạn
+## 10. Giới hạn
 
 - Một seed, chỉ trên validation, và val chỉ có 9 nhóm chuyến chụp.
 - Có 13 lớp không có box nào trong val, nên không có số đo cho các lớp này (D-05 Q4).
@@ -200,19 +284,21 @@ bỏ sót nhiều biển khác hơn. mAP (không phụ thuộc ngưỡng) giảm
 - Chưa có kết quả trên test niêm phong.
 - Hành vi xe chỉ là mô phỏng.
 
-## 10. Bước tiếp theo
+## 11. Bước tiếp theo
 
-1. **Chốt ứng viên cuối.** A2 không đạt, nên ứng viên hiện tại là pilot. Pilot vẫn chưa đạt FP/ảnh
-   trên val, nên chủ dự án cần quyết định trước khi train thêm seed 20261019 và 20261020.
-2. **Hướng tiếp theo cho báo nhầm và lớp quan trọng:** hard-negative sau khi rà nhãn train, hoặc một
-   biến thể A2 cân bằng số bước. Mỗi hướng cần contract riêng và được duyệt.
-3. **Khóa ngưỡng confidence/NMS trên val:** chọn mức có recall ≥ 0,85 với ít FP nhất. Nếu cần,
-   hiệu chỉnh mốc D-05 **một lần**, có chủ dự án duyệt, trước khi mở test.
-4. **Đánh giá một lần trên test niêm phong.**
-5. **Song song:** kiểm độ đầy đủ nhãn train (contract đã QA, còn phụ lục 2), rồi đào hard-negative
-   để giảm báo nhầm. Việc này cần khoảng 35–98 giờ công người rà nhãn và cần chủ dự án duyệt.
+| # | Việc | Trạng thái 06/11 chiều |
+| --- | --- | --- |
+| 1 | **Seed 20261019** (pilot, chỉ đổi seed) | **Xong.** Train hết 100 epoch lúc 16:51 ngày 06/11. QA kết quả run và QA kết quả chấm đều PASS. mAP50 0,731 so với 0,852 của pilot. Báo cáo chi tiết: `docs/review/d1_s2_r1_common_validation_report_r1.md`. Tiếp theo là tính ngưỡng **tạm thời** trên 2 seed (không phải khóa). |
+| 2 | **Seed 20261020** | **Bỏ.** Tối 06/11 chủ dự án sửa D-05 Q1: đánh giá cuối dùng trung bình 2 seed (20261018, 20261019) vì không đủ thời gian (`docs/review/d05_q1_two_seed_owner_amendment_2026-11-06.md`). Quyết định ghi sau khi đã biết kết quả seed 19 trên val, trước khi mở test. Các mốc D-05 giữ nguyên. |
+| 3 | **Khóa ngưỡng trên dữ liệu gộp 2 seed** (phụ lục 1 của contract khóa ngưỡng) | Contract đã khóa trước khi có số seed mới, và đã qua QA. Còn phải viết và QA một bộ ghi/kiểm khóa ngưỡng mới cho nhãn R3, vì code cũ không gắn được với roster R3. |
+| 4 | **Hiệu chỉnh mốc D-05 một lần** (nếu cần) | Quyết định riêng của chủ dự án, chỉ được làm trước khi mở test, không bao giờ hạ mốc sau khi đã thấy test |
+| 5 | **Đánh giá một lần trên test niêm phong** | Đã có bản nháp contract qua QA, trạng thái chưa được duyệt |
+| 6 | **Giảm báo nhầm từ dữ liệu train** | Contract rà nhãn train cùng hai phụ lục đều đã qua QA. Chờ duyệt khoảng 57 giờ công (37–100 giờ) và hai quyết định D-A1, D-A2. Sau đó mới đào hard-negative. |
 
-## 11. Nguồn số liệu
+Pilot vẫn chưa đạt mốc báo nhầm trên val, và các hướng hậu xử lý (ngưỡng, NMS) không đưa được về dưới
+0,30 mà không làm sai nhãn. Vì vậy việc 6 là đường cải thiện còn lại có triển vọng nhất trước khi mở test.
+
+## 12. Nguồn số liệu
 
 | Nội dung | File |
 | --- | --- |
@@ -228,4 +314,11 @@ bỏ sót nhiều biển khác hơn. mAP (không phụ thuộc ngưỡng) giảm
 | Dynamic threshold | `docs/review/dynamic_threshold_full_val_overlap_r5_report.md`, `dynamic_threshold_conflict_r6_offline_report.md` |
 | Ghép classifier | `docs/review/d1_yolo54_classifier_fusion_r1_result_independent_qa_record.md` (NO_GO) |
 | A2 | `docs/review/d1_a2_r1_run_contract.md`, `d1_a2_r1_common_validation_report_r1.md`, `d1_a2_r1_result_independent_qa_record.md`, `d1_a2_r1_common_validation_result_independent_qa_record.md` |
+| Quét NMS × confidence | `docs/review/d1_nms_sweep_r1_report.md`, `generated/d1_nms_sweep_r1.json`, hai record QA nguồn và kết quả |
+| Quét confidence 10 cấu hình | `docs/review/d1_threshold_sweep_r1_report.md`, `generated/d1_threshold_sweep_r1.json`, `d1_threshold_sweep_r1_independent_qa_record.md` |
+| Ngưỡng tạm thời 2 seed | `docs/review/d1_two_seed_provisional_threshold_r1_report.md`, `generated/d1_two_seed_provisional_threshold_r1.json`, hai record QA nguồn và kết quả |
+| Kiểm định NMS 0,45 | `docs/review/d1_nms_045_paired_test_r1_report.md`, `d1_nms_045_paired_test_r1_independent_qa_record.md` |
+| Khóa ngưỡng 3 seed (contract) | `docs/review/d1_threshold_lock_r1_contract.md` cùng record QA |
+| Đánh giá cuối (bản nháp) | `docs/review/d1_final_evaluation_r1_contract_draft.md` cùng record QA |
+| Seed 20261019 | `docs/review/d1_s2_r1_run_contract.md`, `d1_s2_r1_execution_record.md`, `d1_s2_r1_result_independent_qa_record.md`, `d1_s2_r1_common_validation_report_r1.md`, `d1_s2_r1_common_validation_result_independent_qa_record.md` |
 | Dữ liệu | `docs/dataset01_card_r1.md`, `docs/review/wp35_rare_class_enrichment_report.md`, báo cáo 24/10 mục 3 |
