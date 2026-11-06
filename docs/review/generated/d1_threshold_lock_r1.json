@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "status": "LOCKED_ON_VAL",
+  "seeds": [
+    20261018,
+    20261019
+  ],
+  "selection": {
+    "conf": 0.19,
+    "nms_iou": 0.7,
+    "agnostic_nms": false
+  },
+  "candidates": [
+    {
+      "seed": 20261018,
+      "weight": {
+        "path": "/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector/results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/weights/best.pt",
+        "sha256": "5d5815a96218759e93cd9bc51261ed55778da5397dfe7fe25c1f78908b10b633"
+      },
+      "run_contract": {
+        "path": "/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector/results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/run_contract.json",
+        "sha256": "9f8fc94c471addcd540b9efded730e1dcfb0ce9da820b820343ecc44d0810b88"
+      },
+      "run_attestation_sha256": "7fa5df339676adaae220e1963916b2e48e2525455713d500db5d76343e2fc9fc",
+      "val_report": {
+        "path": "../tmp/d1_two_seed_lock_r1_inputs/seed_20261018_r3_report.json",
+        "sha256": "926a850f491756fdc72c8f937e2f3433fca058bbe9969501b24a37929fc3ad31"
+      },
+      "conf": 0.19,
+      "nms_iou": 0.7,
+      "agnostic_nms": false
+    },
+    {
+      "seed": 20261019,
+      "weight": {
+        "path": "/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector/tmp/d1_two_seed_lock_r1_inputs/s2/best.pt",
+        "sha256": "046cfea22e6daf45342063b58cd9082aa4b0b0528a3a6d9af7ac23bbac015bce"
+      },
+      "run_contract": {
+        "path": "/Users/nguyentantai/Desktop/app/Traffic_Sign_Detector/tmp/d1_two_seed_lock_r1_inputs/s2/run_contract.json",
+        "sha256": "1f1c3f7f2fdeb15467aa69ddbe012b880b10324b5b505d772058ebd7e96c2050"
+      },
+      "run_attestation_sha256": "807ba02a87da944e804fc61b314618bb77692c727fb577eec5f7a6395442c80c",
+      "val_report": {
+        "path": "../tmp/d1_two_seed_lock_r1_inputs/seed_20261019_r3_report.json",
+        "sha256": "c468357d6ed67aac7e90460f9d40b553db32c2df765078f89ceef7c326bfded1"
+      },
+      "conf": 0.19,
+      "nms_iou": 0.7,
+      "agnostic_nms": false
+    }
+  ],
+  "proof": {
+    "path": "../docs/review/generated/d1_threshold_lock_r1_r3_proof.json",
+    "sha256": "2d2fbd7cf99ee9e8b1349a55cf40b0182764efe9f7d4cd5078c06c5f8aa72e77"
+  },
+  "sealed_test_seen": false
+}
