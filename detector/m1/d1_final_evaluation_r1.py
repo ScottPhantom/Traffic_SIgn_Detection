@@ -46,12 +46,23 @@ SOURCE_PATHS = frozenset(
         "detector/uv.lock",
     }
 )
-CONTRACT_PATH = "docs/review/d1_final_evaluation_r2_contract.md"
+CONTRACT_PATH = "docs/review/d1_final_evaluation_r3_contract.md"
 ACCESS_LOG = "results/experiments/sealed_test_access_log.jsonl"
-ACCESS_ACTION = "d1-final-evaluation-r1-open"
+ACCESS_ACTION = "d1-final-evaluation-r3-open"
 OPEN_MARKER = "OWNER_AUTHORIZES_TEST_OPEN: D1-FINAL-EVALUATION-R1"
 CONTRACT_MARKER = "FINAL_EVALUATION_CONTRACT: APPROVED"
 HEX = re.compile(r"[0-9a-f]{64}\Z")
+ATTEMPT2_ENTRY = {
+    "time": "20261106T231301",
+    "action": "d1-final-evaluation-r1-open",
+    "reason": (
+        "One-time D1 final evaluation of seeds 20261018 and 20261019 under the approved "
+        "R3 lock and D-05 gates. | "
+        "plan_sha256=69f54ee3f6e6d10914d5347fa445d5457df43954dad063dbb0b90bb725b914a0 | "
+        "contract_sha256=0f8bbf104e523f243f5f0e3c6b23b4e9545bf98a353a1f6b560c62cc3cfa86ff"
+    ),
+}
+TEST_EXPORT_NAME = "data_test.yaml"
 
 
 def sha256(path: Path) -> str:
@@ -190,6 +201,19 @@ def _read_access_log(path: Path) -> list[dict[str, Any]]:
     return entries
 
 
+def _check_prior_openings(path: Path) -> None:
+    """Allow only export records and the exact no-payload R2 opening once."""
+    prior_attempts = 0
+    for entry in _read_access_log(path):
+        if entry.get("action") == "export-test":
+            continue
+        if entry == ATTEMPT2_ENTRY:
+            prior_attempts += 1
+            if prior_attempts == 1:
+                continue
+        raise RuntimeError("unapproved or repeated final evaluation opening recorded")
+
+
 @dataclass(frozen=True)
 class Approved:
     plan_sha256: str
@@ -200,6 +224,7 @@ class Approved:
     label_overlay: dict[str, str] | None
     weights: tuple[dict[str, Any], dict[str, Any]]
     reason: str
+    test_export: Path
     access_log: Path
     output_dir: Path
 
@@ -402,10 +427,12 @@ def preflight(
             raise RuntimeError("candidate weight hash differs")
         verified_weights.append({**weight, "path": str(path)})
 
-    # Gate 7: an existing opening attempt for this package consumes the one-time allowance.
+    # Gate 7: export presence and the pinned no-payload attempt precede any new opening.
+    test_export = root / contract.EXPORT_DIR.relative_to(contract.REPO_ROOT) / TEST_EXPORT_NAME
+    if test_export.is_symlink() or not test_export.is_file():
+        raise RuntimeError("test export data_test.yaml is absent")
     access_log = root / ACCESS_LOG
-    if any(entry.get("action") == ACCESS_ACTION for entry in _read_access_log(access_log)):
-        raise RuntimeError("final evaluation was already opened once")
+    _check_prior_openings(access_log)
     output_dir = _relative(root, plan["output_dir"])
     if output_dir.exists() or not output_dir.is_relative_to(root / "results/experiments"):
         raise RuntimeError("final evaluation output is not a new experiment directory")
@@ -418,6 +445,7 @@ def preflight(
         label_overlay,
         tuple(sorted(verified_weights, key=lambda row: row["seed"])),
         plan["reason"],
+        test_export,
         access_log,
         output_dir,
     )
@@ -834,6 +862,8 @@ def _real_latency(
 
 def _open_once(approved: Approved) -> dict[str, Any]:
     """Append the access marker under a process lock before any sealed read."""
+    if approved.test_export.is_symlink() or not approved.test_export.is_file():
+        raise RuntimeError("test export data_test.yaml is absent")
     approved.access_log.parent.mkdir(parents=True, exist_ok=True)
     lock_path = approved.access_log.with_name(approved.access_log.name + ".lock")
     if lock_path.is_symlink():
@@ -841,11 +871,9 @@ def _open_once(approved: Approved) -> dict[str, Any]:
     with lock_path.open("a+") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
         try:
-            if any(
-                entry.get("action") == ACCESS_ACTION
-                for entry in _read_access_log(approved.access_log)
-            ):
-                raise RuntimeError("final evaluation opening already recorded")
+            if approved.test_export.is_symlink() or not approved.test_export.is_file():
+                raise RuntimeError("test export data_test.yaml is absent")
+            _check_prior_openings(approved.access_log)
             contract.log_test_access(
                 ACCESS_ACTION,
                 f"{approved.reason} | plan_sha256={approved.plan_sha256} | "

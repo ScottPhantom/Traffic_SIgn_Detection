@@ -28,6 +28,7 @@ def _json(root: Path, name: str, value: dict) -> dict[str, str]:
 
 
 def _fixture(root: Path) -> tuple[Path, dict]:
+    _write(root, "data/processed/m1_yolo/data_test.yaml", b"synthetic export\n")
     source = {
         name: _write(root, name, f"synthetic source {name}\n".encode())["sha256"]
         for name in final.SOURCE_PATHS
@@ -410,6 +411,9 @@ def test_open_once_logs_before_any_synthetic_roster_load(
 ) -> None:
     seen: list[str] = []
     log = tmp_path / final.ACCESS_LOG
+    test_export = tmp_path / "data/processed/m1_yolo/data_test.yaml"
+    test_export.parent.mkdir(parents=True)
+    test_export.write_text("synthetic export\n")
     approved = final.Approved(
         "0" * 64,
         "1" * 64,
@@ -419,6 +423,7 @@ def test_open_once_logs_before_any_synthetic_roster_load(
         None,
         ({"seed": 20261018}, {"seed": 20261019}),
         "synthetic",
+        test_export,
         log,
         tmp_path / "results/experiments/synthetic",
     )
@@ -432,8 +437,78 @@ def test_open_once_logs_before_any_synthetic_roster_load(
     monkeypatch.setattr(contract, "log_test_access", fake_append)
     assert final._open_once(approved)["action"] == final.ACCESS_ACTION
     assert seen == ["log"]
-    with pytest.raises(RuntimeError, match="already recorded"):
+    with pytest.raises(RuntimeError, match="unapproved or repeated"):
         final._open_once(approved)
+
+
+def test_missing_export_refuses_without_changing_synthetic_access_log(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    plan_path, _plan = _fixture(tmp_path)
+    (tmp_path / "detector").mkdir(exist_ok=True)
+    monkeypatch.chdir(tmp_path / "detector")
+    log = tmp_path / final.ACCESS_LOG
+    log.parent.mkdir(parents=True, exist_ok=True)
+    original = final.canonical(final.ATTEMPT2_ENTRY)
+    log.write_bytes(original)
+    (tmp_path / "data/processed/m1_yolo/data_test.yaml").unlink()
+    with pytest.raises(RuntimeError, match="data_test.yaml is absent"):
+        final.preflight(plan_path, root=tmp_path, reader=_reader, committed=False)
+    assert log.read_bytes() == original
+
+
+@pytest.mark.parametrize(
+    ("entries", "accepted"),
+    [
+        ([{"action": "export-test"}, final.ATTEMPT2_ENTRY], True),
+        ([{**final.ATTEMPT2_ENTRY, "time": "different"}], False),
+        ([final.ATTEMPT2_ENTRY, final.ATTEMPT2_ENTRY], False),
+        ([{"action": final.ACCESS_ACTION}], False),
+        ([{"action": "d1-final-evaluation-r1-open"}], False),
+    ],
+)
+def test_prior_opening_allowlist_in_synthetic_preflight(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    entries: list[dict],
+    accepted: bool,
+) -> None:
+    plan_path, _plan = _fixture(tmp_path)
+    (tmp_path / "detector").mkdir(exist_ok=True)
+    monkeypatch.chdir(tmp_path / "detector")
+    log = tmp_path / final.ACCESS_LOG
+    log.parent.mkdir(parents=True, exist_ok=True)
+    original = b"".join(final.canonical(entry) for entry in entries)
+    log.write_bytes(original)
+    if accepted:
+        assert final.preflight(plan_path, root=tmp_path, reader=_reader, committed=False)
+    else:
+        with pytest.raises(RuntimeError, match="unapproved or repeated"):
+            final.preflight(plan_path, root=tmp_path, reader=_reader, committed=False)
+    assert log.read_bytes() == original
+
+
+def test_open_once_accepts_only_pinned_attempt_2_then_refuses_second_opening(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    plan_path, _plan = _fixture(tmp_path)
+    (tmp_path / "detector").mkdir(exist_ok=True)
+    monkeypatch.chdir(tmp_path / "detector")
+    log = tmp_path / final.ACCESS_LOG
+    log.parent.mkdir(parents=True, exist_ok=True)
+    log.write_bytes(final.canonical(final.ATTEMPT2_ENTRY))
+    approved = final.preflight(plan_path, root=tmp_path, reader=_reader, committed=False)
+
+    def fake_append(action: str, reason: str) -> None:
+        with log.open("ab") as sink:
+            sink.write(final.canonical({"action": action, "reason": reason}))
+
+    monkeypatch.setattr(contract, "log_test_access", fake_append)
+    assert final._open_once(approved)["action"] == final.ACCESS_ACTION
+    before = log.read_bytes()
+    with pytest.raises(RuntimeError, match="unapproved or repeated"):
+        final._open_once(approved)
+    assert log.read_bytes() == before
 
 
 def test_missing_gate_never_reaches_fake_sealed_loader(
