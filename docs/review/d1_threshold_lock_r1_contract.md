@@ -1,0 +1,36 @@
+# D1 three-seed threshold lock R1 — frozen selection contract
+
+Status: `FROZEN_BEFORE_SEED_RESULTS`  
+Frozen: 2026-11-06, before any D1-S2-R1 score on validation roster R3.  
+Scope: **preparation only**. This document is not a threshold-lock record and does not authorize inference, training, test access, or an app change. `sealed_test_accessed=false`.
+
+## Authority and fixed inputs
+
+- D-05 Owner decision Q1/Q2/Q4: `docs/review/d05_owner_decision_record.md`, SHA-256 `c81f37ed0236c019644914445776632dbe0fbcef0f7d5b964fb5c6d635555702`.
+- Pilot NMS diagnostic: `docs/review/d1_nms_sweep_r1_report.md`, SHA-256 `cad83325fccddf31b8c05c7610c33bf008020389e5651b7a56dfa21ba17244e7`; later paired 0.45 test: `docs/review/d1_nms_045_paired_test_r1_report.md`, SHA-256 `af63978a3fc21474c246cb37f5a05d9eccc08ac933e4eb784761fa8347d9c9f5`.
+- Existing lock reader: `detector/m1/contract.py` SHA-256 `901e7e372d9660cd79e6bfcab43684b1693f0a4aafad9f4c331fd8f04ba6bbbf`, `bind_threshold_lock` at line 335. Existing CLI: `detector/m1/cli.py` SHA-256 `3e0c13b3c47fb396429a0d06e16c6e6d98ca063d10d68d81a4c87af42b4cf967`, including final-evaluation preflight and `cmd_lock_thresholds`.
+- Candidate family: **YOLO11s-54 pilot configuration**, seeds `20261018`, `20261019`, `20261020`. Seed `20261020` is not approved to train by this contract. Candidate weights, their run attestations and report hashes remain unknown until each run completes and passes result QA.
+- Selection data: **validation R3**, 376 images, 624 boxes, nine D-02 groups, from the governed train/val bundle with manifest SHA-256 `8e6ffe7761b78ba4e44a86cd2caa9a3a155ba0874cbe39bb20669af3773bb6da`. Use the same common scorer as the pilot. No alternate roster or test-derived value may be substituted.
+
+## R3 binding decision and implementation gate
+
+**Choose a successor binding for R3.** The existing `m1.cli lock-thresholds` reads three `m1.cli evaluate --split val` reports from its original export, picks per-seed operating points, and writes a schema-1 lock. Its `bind_threshold_lock` verifies the original split/export binding and the hashes of `input_val_reports`; it does **not** establish that these reports were scored on the corrected R3 roster, does not enforce a shared threshold across seeds, and does not verify the aggregate selection rule below. The two evaluation paths have not been proven equivalent. Thus the existing lock writer cannot directly implement this contract.
+
+Before any lock is generated, implement and independently QA an append-only **R3 lock writer and verifier**, and a compatible final-evaluation reader. They must bind each report to the exact R3 bundle/roster hash, class map, common-scorer version, candidate weight and run attestation; verify all three seeds have the same 376 frame stems, 624 GT boxes, nine groups and per-frame labels; recompute the selection and uncertainty; require one shared `(confidence, nms_iou, agnostic_nms)` for all three weights; and reject hash drift. Because `bind_threshold_lock` accepts exact JSON keys, any additional R3 proof must be an independently hashed sidecar referenced and checked by the successor reader or embodied in a versioned successor schema. A legacy schema-1 lock alone is insufficient proof of R3 binding. Do not call the current `m1.cli lock-thresholds` or `m1.cli evaluate --split test` to bypass this gate.
+
+## Frozen grid, scoring and selection
+
+- Confidence: `0.05, 0.10, …, 0.95` **union** `0.15, 0.16, …, 0.30`; deduplicate identical values. The fine grid is prespecified, not selected after seeing S2 scores.
+- Per-class NMS IoU: `0.45, 0.50, …, 0.80`. Across-class NMS IoU `0.80/0.85/0.90` is diagnostic only and may be selected only if the three change conditions below all pass.
+- At each `(confidence, NMS mode, IoU)` cell, compute each seed's class-agnostic recall and FP/image on the same R3 images; take the arithmetic **mean across three seeds** for both metrics. Report each seed and sample standard deviation as well as the mean. Compute exact-class mAP50-95 per seed from the full post-NMS candidate set and its three-seed mean; do not compute mAP from confidence-filtered boxes.
+- Eligible cells have **mean** class-agnostic recall ≥ 0.85. Select the cell with the lowest mean FP/image. Ties: higher confidence, then higher mean exact-class mAP50-95, then IoU closer to `0.70`; a remaining mode/IoU tie is resolved deterministically toward per-class NMS and then lower IoU. If no cell is eligible, stop without a lock. Record whether the selected cell also reaches recall ≥ 0.85 in **each** seed; this is reported, not another selection gate.
+- For a proposed change away from per-class IoU `0.70`, compare the proposed NMS configuration with per-class `0.70`, each at its confidence selected by the frozen rule. The change is allowed only if **all** hold: (1) the paired 95% CI for new-minus-reference FP/image lies wholly below zero; (2) the paired 95% CI for new-minus-reference mAP50-95 does **not** lie wholly below zero; (3) leave-one-group-out selection picks the same NMS configuration or adjacent IoU **with the same NMS mode** in ≥7/9 folds. Use 1,000 paired resamples of the nine intact D-02 groups, seed `20261018`, with the **same group draws across all three seeds and both NMS settings**. Compute each draw's three-seed mean before taking the difference. For each held-out group, fit selection on the other eight groups and report the three-seed mean held-out recall and FP/image. If any change condition fails, select per-class `0.70` and its prespecified three-seed confidence point. If no eligible confidence at `0.70`, stop without a lock.
+- Pilot evidence is diagnostic only: across-class `0.80` failed the mAP CI condition; per-class `0.45` failed the FP CI condition in the separate paired test. Neither is preapproved for this three-seed lock.
+
+## Future lock record and gates
+
+Only **after all three runs pass independent result QA** and each NMS × seed inference has its own Owner authorization and source/result QA may the successor writer produce a record with status `LOCKED_ON_VAL`, exactly three candidates, one identical confidence and NMS setting for all three, weight/run/report hashes, R3 roster/scorer binding, and `sealed_test_seen=false`. The successor must validate each candidate's run contract, result archive and weight identity. The final record, its R3 binding proof and the writer/verifier need independent QA, a clean tracked commit, and explicit Owner approval **before** any sealed-test access.
+
+Planned invocation, **not executable yet**: `PYTHONPATH=. uv run --no-sync python -m m1.d1_threshold_lock_r3_successor --reports <seed18-R3> <seed19-R3> <seed20-R3> --out docs/review/generated/d1_threshold_lock_r1.json --proof docs/review/generated/d1_threshold_lock_r1_r3_proof.json`. The named successor module does not yet exist; implementing and QA'ing it is a separate task. The actual executable command must be pinned in that successor's implementation record before use.
+
+D-05 Q4 allows a **single** gate recalibration only by a separate Owner decision before the sealed test opens. This contract proposes no replacement gate values. Gate values must never be lowered after test access. The sealed test remains closed throughout threshold selection. `sealed_test_accessed=false`.
