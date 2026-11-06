@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" role="img" aria-label="Quét ngưỡng yolo11s_54_a3: recall và báo nhầm trên ảnh">
+<rect width="1100" height="520" fill="white"/>
+<text x="50" y="48" font-size="24" font-family="sans-serif">yolo11s_54_a3 · validation R3</text>
+<line x1="40" x2="1080" y1="500.0" y2="500.0" stroke="#cbd5e1"/>
+<text x="42" y="498.0" font-size="22" font-family="sans-serif">0</text>
+<line x1="40" x2="1080" y1="380.0" y2="380.0" stroke="#cbd5e1"/>
+<text x="42" y="404.0" font-size="22" font-family="sans-serif">0.3</text>
+<line x1="40" x2="1080" y1="260.0" y2="260.0" stroke="#cbd5e1"/>
+<text x="42" y="284.0" font-size="22" font-family="sans-serif">0.6</text>
+<line x1="40" x2="1080" y1="160.0" y2="160.0" stroke="#cbd5e1"/>
+<text x="42" y="184.0" font-size="22" font-family="sans-serif">0.85</text>
+<line x1="40" x2="1080" y1="20.0" y2="20.0" stroke="#cbd5e1"/>
+<text x="42" y="44.0" font-size="22" font-family="sans-serif">1.2</text>
+<line x1="40" x2="1080" y1="380.0" y2="380.0" stroke="#94a3b8" stroke-dasharray="8 7"/>
+<line x1="40" x2="1080" y1="160.0" y2="160.0" stroke="#94a3b8" stroke-dasharray="8 7"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="5" points="40.0,153.2 94.7,166.7 149.5,177.6 204.2,186.5 258.9,195.5 313.7,204.5 368.4,216.0 423.2,229.5 477.9,245.5 532.6,260.3 587.4,273.7 642.1,294.9 696.8,309.0 751.6,323.7 806.3,343.6 861.1,359.6 915.8,385.3 970.5,417.3 1025.3,487.8 1080.0,500.0"/>
+<polyline fill="none" stroke="#7c3aed" stroke-width="5" points="40.0,281.9 94.7,339.4 149.5,383.0 204.2,408.5 258.9,419.1 313.7,430.9 368.4,441.5 423.2,446.8 477.9,452.1 532.6,460.6 587.4,464.9 642.1,466.0 696.8,472.3 751.6,475.5 806.3,476.6 861.1,478.7 915.8,490.4 970.5,500.0 1025.3,500.0 1080.0,500.0"/>
+<line x1="40.0" x2="40.0" y1="20" y2="500" stroke="#c2410c" stroke-width="3" stroke-dasharray="9 7"/>
+<circle cx="40.0" cy="153.2" r="7" fill="#2563eb"/>
+<circle cx="40.0" cy="281.9" r="7" fill="#7c3aed"/>
+<text x="50" y="80" font-size="22" fill="#2563eb" font-family="sans-serif">Recall biển</text>
+<text x="275" y="80" font-size="22" fill="#7c3aed" font-family="sans-serif">FP/ảnh</text>
+<text x="450" y="80" font-size="22" fill="#c2410c" font-family="sans-serif">Điểm chọn mô tả</text>
+<text x="850" y="80" font-size="22" font-family="sans-serif">Confidence →</text>
+</svg>
