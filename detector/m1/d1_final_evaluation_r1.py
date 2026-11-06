@@ -11,8 +11,10 @@ import fcntl
 import hashlib
 import json
 import math
+import os
 import re
 import subprocess
+import tempfile
 import time
 from collections.abc import Callable
 from dataclasses import asdict, dataclass, replace
@@ -46,9 +48,9 @@ SOURCE_PATHS = frozenset(
         "detector/uv.lock",
     }
 )
-CONTRACT_PATH = "docs/review/d1_final_evaluation_r3_contract.md"
+CONTRACT_PATH = "docs/review/d1_final_evaluation_r4_contract.md"
 ACCESS_LOG = "results/experiments/sealed_test_access_log.jsonl"
-ACCESS_ACTION = "d1-final-evaluation-r3-open"
+ACCESS_ACTION = "d1-final-evaluation-r4-open"
 OPEN_MARKER = "OWNER_AUTHORIZES_TEST_OPEN: D1-FINAL-EVALUATION-R1"
 CONTRACT_MARKER = "FINAL_EVALUATION_CONTRACT: APPROVED"
 HEX = re.compile(r"[0-9a-f]{64}\Z")
@@ -62,6 +64,11 @@ ATTEMPT2_ENTRY = {
         "contract_sha256=0f8bbf104e523f243f5f0e3c6b23b4e9545bf98a353a1f6b560c62cc3cfa86ff"
     ),
 }
+EXPECTED_ACCESS_LINE_SHA256 = (
+    "ffef1b183ec8b4a20661c4bca71efa3cab64692c445432bc38eb3b3f2773b369",
+    "21750b2d33fae93d3d67e3dfafb80ad239245885dc3fb1d0ef024f652431e23b",
+    "85d4a64c574cd906402a68c2e606d1bd1325c5f835fd212853faf5624d2155d1",
+)
 TEST_EXPORT_NAME = "data_test.yaml"
 
 
@@ -202,16 +209,17 @@ def _read_access_log(path: Path) -> list[dict[str, Any]]:
 
 
 def _check_prior_openings(path: Path) -> None:
-    """Allow only export records and the exact no-payload R2 opening once."""
-    prior_attempts = 0
-    for entry in _read_access_log(path):
-        if entry.get("action") == "export-test":
-            continue
-        if entry == ATTEMPT2_ENTRY:
-            prior_attempts += 1
-            if prior_attempts == 1:
-                continue
-        raise RuntimeError("unapproved or repeated final evaluation opening recorded")
+    """Allow only the exact three recorded prior events, in their original order."""
+    if path.is_symlink() or not path.is_file():
+        raise RuntimeError("pinned final evaluation access history is absent")
+    lines = path.read_bytes().splitlines(keepends=True)
+    if tuple(hashlib.sha256(line).hexdigest() for line in lines) != EXPECTED_ACCESS_LINE_SHA256:
+        raise RuntimeError("final evaluation access history differs from three pinned lines")
+    entries = _read_access_log(path)
+    if [entry.get("action") for entry in entries] != [
+        "d1-final-evaluation-r1-open", "export-test", "d1-final-evaluation-r3-open"
+    ]:
+        raise RuntimeError("final evaluation access action sequence differs")
 
 
 @dataclass(frozen=True)
@@ -629,7 +637,7 @@ def score_two_seeds(
         raise RuntimeError("class support differs between seeds")
     classes = {}
     excluded = []
-    for key, cls in sorted(class_ids.items(), key=lambda row: int(row[0])):
+    for key, cls in sorted(class_ids.items(), key=lambda row: (row[1], row[0])):
         count = support.get(cls, 0)
         critical = key in contract.CRITICAL_KEYS
         gated = count >= gates["min_support_for_class_gate"]
@@ -803,6 +811,227 @@ def _real_predict(
     return frames
 
 
+def _atomic_write(path: Path, payload: bytes) -> None:
+    """Publish one complete output file without exposing partial bytes."""
+    if path.exists():
+        raise RuntimeError(f"output already exists: {path}")
+    temporary: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="wb", dir=path.parent, prefix=f".{path.name}.", suffix=".tmp", delete=False
+        ) as sink:
+            temporary = Path(sink.name)
+            sink.write(payload)
+            sink.flush()
+            os.fsync(sink.fileno())
+        os.replace(temporary, path)
+        temporary = None
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+def _save_predictions(
+    frames: list[Frame], weight: dict[str, Any], selection: dict[str, Any],
+    output_dir: Path, split: str,
+) -> dict[str, Any]:
+    rows = [
+        {
+            "stem": frame.stem,
+            "class": int(cls),
+            "confidence": float(conf),
+            "box": [float(value) for value in box],
+        }
+        for frame in frames
+        for box, cls, conf in zip(
+            frame.pred_boxes, frame.pred_classes, frame.pred_scores, strict=True
+        )
+    ]
+    name = f"predictions_seed_{weight['seed']}.json"
+    payload = {
+        "split": split,
+        "seed": weight["seed"],
+        "weight_sha256": weight["sha256"],
+        "selection": selection,
+        "images": len(frames),
+        "predictions": rows,
+    }
+    prediction_path = output_dir / name
+    _atomic_write(prediction_path, json.dumps(payload, indent=2, allow_nan=False).encode() + b"\n")
+    record = {
+        "path": name,
+        "sha256": sha256(prediction_path),
+        "weight_sha256": weight["sha256"],
+        "images": len(frames),
+        "boxes": len(rows),
+    }
+    _atomic_write(
+        output_dir / f"predictions_seed_{weight['seed']}_manifest.json",
+        json.dumps(record, indent=2, allow_nan=False).encode() + b"\n",
+    )
+    return record
+
+
+def _predict_score_report(
+    roster: list[tuple[Frame, Path]],
+    weights: tuple[dict[str, Any], dict[str, Any]],
+    selection: dict[str, Any],
+    gates: dict[str, float | int],
+    output_dir: Path,
+    *,
+    split: str,
+    label_mode: str,
+    plan_sha256: str,
+    final_contract_sha256: str | None,
+    latency: dict[str, Any] | None,
+    access_event: dict[str, Any] | None,
+    access_log_sha256: str | None,
+) -> dict[str, Any]:
+    """Shared post-opening path; validation rehearsal supplies only validation inputs."""
+    if split not in {"test", "val"} or {row["seed"] for row in weights} != set(SEEDS):
+        raise RuntimeError("post-opening seed or split differs")
+    output_dir.mkdir(parents=True, exist_ok=False)
+    by_seed: dict[int, list[Frame]] = {}
+    prediction_records = []
+    for row in sorted(weights, key=lambda item: item["seed"]):
+        weight_path = Path(row["path"])
+        if not weight_path.is_absolute():
+            weight_path = contract.REPO_ROOT / weight_path
+        frames = _real_predict(roster, weight_path, selection)
+        by_seed[row["seed"]] = frames
+        prediction_records.append(_save_predictions(frames, row, selection, output_dir, split))
+    scored = score_two_seeds(by_seed, selection, gates, contract.class_ids())
+    latency_gate = (
+        latency["two_seed_mean_p95_ms"] <= gates["latency_p95_ms"]
+        if latency is not None else None
+    )
+    scored.update(
+        split=split,
+        label_mode=label_mode,
+        latency=latency,
+        latency_gate_pass=latency_gate,
+        final_gate_pass=(
+            all(scored["gate_checks_excluding_latency"].values()) and latency_gate
+            if latency_gate is not None else None
+        ),
+        plan_sha256=plan_sha256,
+        final_contract_sha256=final_contract_sha256,
+        access_event=access_event,
+        access_log_sha256=access_log_sha256,
+        candidate_weights=[{"seed": row["seed"], "sha256": row["sha256"]} for row in weights],
+        prediction_artifacts=prediction_records,
+        sealed_test_accessed=split == "test",
+    )
+    _atomic_write(
+        output_dir / "d1_final_evaluation_r1.json",
+        json.dumps(scored, indent=2, allow_nan=False).encode() + b"\n",
+    )
+    _atomic_write(output_dir / "d1_final_evaluation_r1.md", _markdown(scored).encode())
+    return scored
+
+
+def _validation_roster_from_manifest(
+    bases: list[Frame], bundle: Path, manifest: dict[str, Any]
+) -> list[tuple[Frame, Path]]:
+    """Bind each validation stem to its verified image member, preserving its suffix."""
+    members = manifest.get("members")
+    if not isinstance(members, dict):
+        raise RuntimeError("validation bundle members are absent")
+    prefix = "data/images/val/"
+    images: dict[str, Path] = {}
+    for name in members:
+        if not name.startswith(prefix):
+            continue
+        filename = name[len(prefix):]
+        candidate = Path(filename)
+        if (
+            not filename
+            or candidate.name != filename
+            or candidate.suffix.lower() not in {".jpg", ".png"}
+            or candidate.stem in images
+        ):
+            raise RuntimeError("validation image member is ambiguous or unsupported")
+        image_path = bundle / name
+        if image_path.is_symlink() or not image_path.is_file():
+            raise RuntimeError("validation image member is absent or a symlink")
+        images[candidate.stem] = image_path
+    stems = [frame.stem for frame in bases]
+    if len(stems) != len(set(stems)) or set(stems) != set(images):
+        raise RuntimeError("validation image roster differs from the pinned manifest")
+    return [(frame, images[frame.stem]) for frame in bases]
+
+
+def rehearse_validation(plan_path: Path) -> dict[str, Any]:
+    """Run the post-opening scoring path on the pinned R3 validation bundle only."""
+    import torch
+
+    from m1.d1_threshold_lock_r3_successor import _bundle, read_for_final
+
+    root = contract.REPO_ROOT
+    if Path.cwd() != root / "detector" or plan_path.as_posix() != (
+        "docs/review/generated/d1_final_evaluation_r4_plan.json"
+    ):
+        raise RuntimeError("validation rehearsal requires detector CWD and the R4 plan")
+    plan_target = _relative(root, plan_path.as_posix())
+    plan = json.loads(plan_target.read_text(encoding="utf-8"))
+    if (
+        plan.get("package") != PACKAGE
+        or plan.get("sealed_test_accessed") is not False
+        or plan.get("bundle", {}).get("path") != "tmp/yolo11n_n1_extract_r2/manifest.json"
+        or plan.get("source_sha256", {}).get("detector/m1/d1_final_evaluation_r1.py")
+        != sha256(Path(__file__))
+        or not torch.backends.mps.is_available()
+    ):
+        raise RuntimeError("R4 validation rehearsal pins or MPS differ")
+    manifest = pinned(root, plan["bundle"], committed=False)
+    bundle = manifest.parent
+    bases, _bundle_proof = _bundle(bundle)
+    bundle_record = json.loads(manifest.read_text(encoding="utf-8"))
+    lock_path = pinned(root, plan["lock_record"], committed=True)
+    proof_path = pinned(root, plan["lock_proof"], committed=True)
+    lock_record = json.loads(lock_path.read_text(encoding="utf-8"))
+    relative_proof = Path(lock_record["proof"]["path"])
+    if (
+        not relative_proof.samefile(proof_path)
+        or sha256(relative_proof) != plan["lock_proof"]["sha256"]
+    ):
+        raise RuntimeError("validation rehearsal proof path differs")
+    lock_qa = {**plan["lock_result_qa"], "path": str(pinned(root, plan["lock_result_qa"]))}
+    owner_lock = {
+        **plan["owner_lock_approval"],
+        "path": str(pinned(root, plan["owner_lock_approval"])),
+    }
+    weights = tuple(sorted(plan["weights"], key=lambda item: item["seed"]))
+    settings = []
+    for row in weights:
+        weight = _relative(root, row["path"])
+        if weight.is_symlink() or sha256(weight) != row["sha256"]:
+            raise RuntimeError("validation rehearsal weight differs")
+        settings.append(read_for_final(
+            Path("..") / plan["lock_record"]["path"], relative_proof, bundle, root,
+            row["sha256"], lock_qa, owner_lock,
+        ))
+    if settings != [
+        {"conf": 0.19, "nms_iou": 0.70, "agnostic_nms": False}
+    ] * 2:
+        raise RuntimeError("validation rehearsal lock setting differs")
+    q4 = json.loads(pinned(root, plan["q4_decision"]).read_text(encoding="utf-8"))
+    gates = _decision_gates(q4)
+    output_dir = root / "results/experiments/d1_final_evaluation_r4_rehearsal_val"
+    roster = _validation_roster_from_manifest(bases, bundle, bundle_record)
+    scored = _predict_score_report(
+        roster, weights, settings[0], gates, output_dir,
+        split="val", label_mode="VALIDATION_R3", plan_sha256=sha256(plan_target),
+        final_contract_sha256=None, latency=None, access_event=None, access_log_sha256=None,
+    )
+    points = [scored["per_seed"][str(seed)]["operating_point"] for seed in SEEDS]
+    expected = ((555, 155), (512, 131))
+    if any(abs(point["true_positives"] - tp) > 2 or abs(point["false_positives"] - fp) > 2
+           for point, (tp, fp) in zip(points, expected, strict=True)):
+        raise RuntimeError("validation rehearsal differs from R3 lock operating point")
+    return scored
+
+
 def _real_latency(
     weights: tuple[dict[str, Any], dict[str, Any]], selection: dict[str, Any]
 ) -> dict[str, Any]:
@@ -889,7 +1118,8 @@ def _open_once(approved: Approved) -> dict[str, Any]:
 
 def _markdown(result: dict[str, Any]) -> str:
     rows = [
-        "# D1 final evaluation R1 — one-time result",
+        "# D1 final evaluation — validation rehearsal" if result["split"] == "val"
+        else "# D1 final evaluation — one-time result",
         "",
         "Two fixed seeds; the same validation-locked confidence and NMS setting was used.",
         "The D-02 group bootstrap keeps both weights fixed and does not estimate "
@@ -904,12 +1134,18 @@ def _markdown(result: dict[str, Any]) -> str:
             f"| {key} | {item['seed_20261018']:.6f} | {item['seed_20261019']:.6f} | "
             f"{item['mean']:.6f} | {result['gate_checks_excluding_latency'][key]} |"
         )
+    if result["latency"] is None:
+        latency_line = "- Q5 latency and final verdict: not measured in validation rehearsal."
+    else:
+        latency_line = (
+            f"- Q5 two-seed mean p95: {result['latency']['two_seed_mean_p95_ms']:.3f} ms; "
+            f"pass: {result['latency_gate_pass']}."
+        )
     rows += [
         "",
         f"- Q2 critical classes pass: "
         f"{result['gate_checks_excluding_latency']['critical_classes']}.",
-        f"- Q5 two-seed mean p95: {result['latency']['two_seed_mean_p95_ms']:.3f} ms; "
-        f"pass: {result['latency_gate_pass']}.",
+        latency_line,
         f"- Overall D-05 gate: {result['final_gate_pass']}.",
         f"- Classes excluded from simulated behavior: "
         f"{', '.join(result['excluded_from_simulated_behavior']) or 'none'}.",
@@ -917,7 +1153,7 @@ def _markdown(result: dict[str, Any]) -> str:
         "per-class AP/recall, errors and CI are in the paired JSON.",
         "- Result QA is required before publication or any acceptance claim.",
         "",
-        "`sealed_test_accessed=true` — this line is written only by a future approved real run.",
+        f"`sealed_test_accessed={str(result['sealed_test_accessed']).lower()}`.",
         "",
     ]
     return "\n".join(rows)
@@ -932,41 +1168,23 @@ def execute(plan_path: Path) -> dict[str, Any]:
         raise RuntimeError("preflight inputs changed during latency measurement")
     event = _open_once(approved)
     roster = _real_test_roster(approved)
-    by_seed = {
-        row["seed"]: _real_predict(roster, Path(row["path"]), approved.selection)
-        for row in approved.weights
-    }
-    scored = score_two_seeds(by_seed, approved.selection, approved.gates, contract.class_ids())
-    latency_gate = latency["two_seed_mean_p95_ms"] <= approved.gates["latency_p95_ms"]
-    scored.update(
-        split="test",
-        label_mode=approved.label_mode,
-        latency=latency,
-        latency_gate_pass=latency_gate,
-        final_gate_pass=all(scored["gate_checks_excluding_latency"].values()) and latency_gate,
-        plan_sha256=approved.plan_sha256,
-        final_contract_sha256=approved.final_contract_sha256,
-        access_event=event,
-        access_log_sha256=sha256(approved.access_log),
-        candidate_weights=[
-            {"seed": row["seed"], "sha256": row["sha256"]} for row in approved.weights
-        ],
-        sealed_test_accessed=True,
+    return _predict_score_report(
+        roster, approved.weights, approved.selection, approved.gates, approved.output_dir,
+        split="test", label_mode=approved.label_mode, plan_sha256=approved.plan_sha256,
+        final_contract_sha256=approved.final_contract_sha256, latency=latency,
+        access_event=event, access_log_sha256=sha256(approved.access_log),
     )
-    approved.output_dir.mkdir(parents=True, exist_ok=False)
-    with (approved.output_dir / "d1_final_evaluation_r1.json").open("x", encoding="utf-8") as sink:
-        json.dump(scored, sink, indent=2, allow_nan=False)
-        sink.write("\n")
-    with (approved.output_dir / "d1_final_evaluation_r1.md").open("x", encoding="utf-8") as sink:
-        sink.write(_markdown(scored))
-    return scored
 
 
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--plan", type=Path, required=True)
+    parser.add_argument("--rehearse-validation", action="store_true")
     args = parser.parse_args(argv)
-    execute(args.plan)
+    if args.rehearse_validation:
+        rehearse_validation(args.plan)
+    else:
+        execute(args.plan)
 
 
 if __name__ == "__main__":

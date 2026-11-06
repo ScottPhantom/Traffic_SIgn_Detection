@@ -15,6 +15,28 @@ from m1 import d1_final_evaluation_r1 as final
 from m1 import d1_threshold_lock_r3_successor as lock_r3
 from m1.metrics import Frame
 
+SYNTHETIC_HISTORY = [
+    {"action": "d1-final-evaluation-r1-open", "time": "synthetic-1"},
+    {"action": "export-test", "time": "synthetic-2"},
+    {"action": "d1-final-evaluation-r3-open", "time": "synthetic-3"},
+]
+
+
+@pytest.fixture(autouse=True)
+def synthetic_access_pins(monkeypatch: pytest.MonkeyPatch) -> None:
+    lines = [final.canonical(entry) for entry in SYNTHETIC_HISTORY]
+    monkeypatch.setattr(
+        final, "EXPECTED_ACCESS_LINE_SHA256",
+        tuple(hashlib.sha256(line).hexdigest() for line in lines),
+    )
+
+
+def _history(root: Path, entries: list[dict] | None = None) -> Path:
+    path = root / final.ACCESS_LOG
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(b"".join(final.canonical(row) for row in (entries or SYNTHETIC_HISTORY)))
+    return path
+
 
 def _write(root: Path, name: str, content: bytes) -> dict[str, str]:
     path = root / name
@@ -29,6 +51,7 @@ def _json(root: Path, name: str, value: dict) -> dict[str, str]:
 
 def _fixture(root: Path) -> tuple[Path, dict]:
     _write(root, "data/processed/m1_yolo/data_test.yaml", b"synthetic export\n")
+    _history(root)
     source = {
         name: _write(root, name, f"synthetic source {name}\n".encode())["sha256"]
         for name in final.SOURCE_PATHS
@@ -410,7 +433,7 @@ def test_open_once_logs_before_any_synthetic_roster_load(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     seen: list[str] = []
-    log = tmp_path / final.ACCESS_LOG
+    log = _history(tmp_path)
     test_export = tmp_path / "data/processed/m1_yolo/data_test.yaml"
     test_export.parent.mkdir(parents=True)
     test_export.write_text("synthetic export\n")
@@ -437,7 +460,7 @@ def test_open_once_logs_before_any_synthetic_roster_load(
     monkeypatch.setattr(contract, "log_test_access", fake_append)
     assert final._open_once(approved)["action"] == final.ACCESS_ACTION
     assert seen == ["log"]
-    with pytest.raises(RuntimeError, match="unapproved or repeated"):
+    with pytest.raises(RuntimeError, match="access history differs"):
         final._open_once(approved)
 
 
@@ -449,8 +472,7 @@ def test_missing_export_refuses_without_changing_synthetic_access_log(
     monkeypatch.chdir(tmp_path / "detector")
     log = tmp_path / final.ACCESS_LOG
     log.parent.mkdir(parents=True, exist_ok=True)
-    original = final.canonical(final.ATTEMPT2_ENTRY)
-    log.write_bytes(original)
+    original = log.read_bytes()
     (tmp_path / "data/processed/m1_yolo/data_test.yaml").unlink()
     with pytest.raises(RuntimeError, match="data_test.yaml is absent"):
         final.preflight(plan_path, root=tmp_path, reader=_reader, committed=False)
@@ -460,11 +482,11 @@ def test_missing_export_refuses_without_changing_synthetic_access_log(
 @pytest.mark.parametrize(
     ("entries", "accepted"),
     [
-        ([{"action": "export-test"}, final.ATTEMPT2_ENTRY], True),
-        ([{**final.ATTEMPT2_ENTRY, "time": "different"}], False),
-        ([final.ATTEMPT2_ENTRY, final.ATTEMPT2_ENTRY], False),
-        ([{"action": final.ACCESS_ACTION}], False),
-        ([{"action": "d1-final-evaluation-r1-open"}], False),
+        (SYNTHETIC_HISTORY, True),
+        (SYNTHETIC_HISTORY[:-1], False),
+        (SYNTHETIC_HISTORY + [{"action": "unapproved"}], False),
+        (SYNTHETIC_HISTORY + [{"action": final.ACCESS_ACTION}], False),
+        ([{**SYNTHETIC_HISTORY[0], "time": "different"}, *SYNTHETIC_HISTORY[1:]], False),
     ],
 )
 def test_prior_opening_allowlist_in_synthetic_preflight(
@@ -483,12 +505,12 @@ def test_prior_opening_allowlist_in_synthetic_preflight(
     if accepted:
         assert final.preflight(plan_path, root=tmp_path, reader=_reader, committed=False)
     else:
-        with pytest.raises(RuntimeError, match="unapproved or repeated"):
+        with pytest.raises(RuntimeError, match="access history differs"):
             final.preflight(plan_path, root=tmp_path, reader=_reader, committed=False)
     assert log.read_bytes() == original
 
 
-def test_open_once_accepts_only_pinned_attempt_2_then_refuses_second_opening(
+def test_open_once_accepts_only_pinned_three_lines_then_refuses_second_opening(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     plan_path, _plan = _fixture(tmp_path)
@@ -496,7 +518,6 @@ def test_open_once_accepts_only_pinned_attempt_2_then_refuses_second_opening(
     monkeypatch.chdir(tmp_path / "detector")
     log = tmp_path / final.ACCESS_LOG
     log.parent.mkdir(parents=True, exist_ok=True)
-    log.write_bytes(final.canonical(final.ATTEMPT2_ENTRY))
     approved = final.preflight(plan_path, root=tmp_path, reader=_reader, committed=False)
 
     def fake_append(action: str, reason: str) -> None:
@@ -506,7 +527,7 @@ def test_open_once_accepts_only_pinned_attempt_2_then_refuses_second_opening(
     monkeypatch.setattr(contract, "log_test_access", fake_append)
     assert final._open_once(approved)["action"] == final.ACCESS_ACTION
     before = log.read_bytes()
-    with pytest.raises(RuntimeError, match="unapproved or repeated"):
+    with pytest.raises(RuntimeError, match="access history differs"):
         final._open_once(approved)
     assert log.read_bytes() == before
 
@@ -532,3 +553,74 @@ def test_missing_gate_never_reaches_fake_sealed_loader(
     with pytest.raises(RuntimeError):
         final.execute(plan_path)
     assert touched == []
+
+
+def test_real_class_map_subclass_keys_are_scored_without_integer_conversion() -> None:
+    classes = contract.class_ids()
+    subclass_keys = ("16:2.0", "16:2.2", "16:2.5", "43:2.5", "43:2.7")
+    assert [classes[key] for key in subclass_keys] == [16, 17, 18, 44, 45]
+    frames = [
+        _frame(f"sub-{index}", f"group-{index % 2}", classes[key], True, classes[key])
+        for index, key in enumerate(subclass_keys)
+    ]
+    result = final.score_two_seeds(
+        {20261018: frames, 20261019: [replace(frame) for frame in frames]},
+        _reader(), contract.GATES, classes, rounds=2,
+    )
+    assert [result["per_class"][key]["yolo_id"] for key in subclass_keys] == [16, 17, 18, 44, 45]
+    assert all(result["per_class"][key]["support"] == 1 for key in subclass_keys)
+
+
+def test_validation_roster_uses_pinned_mixed_image_extensions(tmp_path: Path) -> None:
+    bases = [_frame("0001", "group", 0, False, 0),
+             _frame("1319", "group", 0, False, 0)]
+    names = ("data/images/val/0001.jpg", "data/images/val/1319.png")
+    for name in names:
+        _write(tmp_path, name, b"synthetic image bytes")
+    manifest = {"members": {name: {"sha256": "synthetic"} for name in names}}
+    roster = final._validation_roster_from_manifest(bases, tmp_path, manifest)
+    assert [path.suffix for _, path in roster] == [".jpg", ".png"]
+    assert [frame.stem for frame, _ in roster] == ["0001", "1319"]
+
+    duplicate = "data/images/val/1319.jpg"
+    _write(tmp_path, duplicate, b"synthetic duplicate")
+    manifest["members"][duplicate] = {"sha256": "synthetic"}
+    with pytest.raises(RuntimeError, match="ambiguous"):
+        final._validation_roster_from_manifest(bases, tmp_path, manifest)
+
+
+def test_predictions_survive_scoring_failure_atomically(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    frames = [_frame("synthetic-val", "group", 0, True, 0)]
+    roster = [(frames[0], tmp_path / "synthetic-val.jpg")]
+    weights = ({"seed": 20261018, "path": "fake-a.pt", "sha256": "a" * 64},
+               {"seed": 20261019, "path": "fake-b.pt", "sha256": "b" * 64})
+    seen_weights = []
+
+    def fake_predict(_roster: object, weight: Path, _selection: object) -> list[Frame]:
+        seen_weights.append(weight)
+        return frames
+
+    monkeypatch.setattr(final, "_real_predict", fake_predict)
+    monkeypatch.setattr(final, "score_two_seeds", lambda *_args: (_ for _ in ()).throw(
+        RuntimeError("synthetic score crash")))
+    output = tmp_path / "rehearsal"
+    with pytest.raises(RuntimeError, match="synthetic score crash"):
+        final._predict_score_report(
+            roster, weights, _reader(), contract.GATES, output, split="val",
+            label_mode="VALIDATION_R3", plan_sha256="c" * 64,
+            final_contract_sha256=None, latency=None, access_event=None,
+            access_log_sha256=None,
+        )
+    for row in weights:
+        path = output / f"predictions_seed_{row['seed']}.json"
+        manifest_path = output / f"predictions_seed_{row['seed']}_manifest.json"
+        manifest = json.loads(manifest_path.read_text())
+        payload = json.loads(path.read_text())
+        assert manifest["sha256"] == final.sha256(path)
+        assert payload["weight_sha256"] == row["sha256"]
+        assert payload["predictions"][0]["stem"] == "synthetic-val"
+    assert not (output / "d1_final_evaluation_r1.json").exists()
+    assert not list(output.glob("*.tmp"))
+    assert all(path.is_absolute() for path in seen_weights)

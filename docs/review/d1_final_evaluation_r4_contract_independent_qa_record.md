@@ -1,0 +1,19 @@
+# D1 final evaluation R4 — independent contract QA
+
+Date: 2026-11-07 (`Asia/Ho_Chi_Minh`). Reviewer: separate Codex agent from the R4 scorer implementer, validation rehearsal operator and contract writer. Scope: R4 contract, plan, source pins, validation-only rehearsal evidence and preparation-only preflight. This QA grants no permission to open or score the sealed test.
+
+Verdict: PASS
+
+## Binding and method checks
+
+- The contract SHA-256 is `d241011c21dcc6a56c525f538ec32a3c6d35ac5c78bc56aed6acb3e218b3d38d`. It contains `FINAL_EVALUATION_CONTRACT: APPROVED` and the exact R4 plan SHA-256 `2c463b61bbe73e482e28b1454023db438cc7d363f2ebc3525da942d37e74fc6f`. Its quoted reason matches the plan byte for byte. The plan names this R4 contract and the absent R4 Owner opening approval; the latter was not created.
+- I independently hash-checked all six executable source/lock files, both weights, R3 lock, proof, lock-result QA, Owner lock approval, Q4 decision, label decision and validation bundle manifest against the plan. All pins matched. The scorer SHA-256 is `2be9ad7da62268f418d1138bb01d2f81a2dfb20aa7c711ddcda4237a927ce75a`; the independent source delta QA SHA-256 is `49513374d67ce39d58c68313f2554efaf6c6be7b0389896b3f675601f9ec27c3` with its single PASS verdict.
+- The only executable command fixed in the R4 contract is the scorer invocation from `detector/` with `--plan docs/review/generated/d1_final_evaluation_r4_plan.json`. The contract explicitly says the previous test export is not run again. The scorer's preflight binds the plan hash to the contract and requires a separate opening record containing the contract hash and plan reason before it reaches the export-presence and access-history checks.
+- The contract accurately discloses attempt 1 (preflight refusal), attempt 2 (opening logged, no payload), and attempt 3 (test opened and both weights predicted; in-memory outputs lost unseen after a class-key scoring crash). It requires the future report to show both FP/image verdicts at the original 0.30 marker and the recalibrated 0.40 gate, disclose that the latter was selected after validation, and explain that corrected R3 validation labels and unreviewed current test labels are asymmetric. Independent result QA is required before any test result or acceptance claim is published. Weights, threshold, NMS, Q4 gates and label decision remain fixed.
+- Validation-only rehearsal evidence is present: 376 images, 624 GT boxes, both real weights, 337 `.jpg` and 39 `.png` image members, exit 0, and saved raw predictions before scoring. The JSON reports seed TP/FP `555/155` and `512/131`, mean recall `0.8549679487179487`, FP/image `0.38031914893617025`, `split=val`, and `sealed_test_accessed=false`. Those numbers match the R3 lock sanity target. Raw prediction files match their manifests and seed weight hashes. This does not establish test performance or vehicle safety.
+
+## Preparation-only gate check
+
+From `detector/`, I ran `preflight(Path('docs/review/generated/d1_final_evaluation_r4_plan.json'), committed=False)` without invoking `execute` or `export-test`. It stopped with the exact `RuntimeError: Owner has not approved opening`. The separate Owner opening approval path was absent before and after. The append-only access log remained exactly three lines with SHA-256 `a8f45f5092ff7c7f8dea66bde0620b9108d7f61174d885bb3c424a8cdf477e45`. I did not read, list or hash the sealed test payload or `data_test.yaml`; the historical R3 attempt 3 did access the test and remains disclosed.
+
+The R4 plan, contract, scorer, tests and QA records still require an explicit-path local commit before any separately authorized real run. A new Owner opening approval tied to the committed R4 contract hash and exact plan reason remains mandatory. No push or real test evaluation was performed in this QA.
