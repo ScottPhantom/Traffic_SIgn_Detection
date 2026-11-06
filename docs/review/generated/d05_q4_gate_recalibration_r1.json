@@ -1,0 +1,16 @@
+{
+  "package": "D1-FINAL-EVALUATION-R1",
+  "decision": "RECALIBRATE_ONCE",
+  "gates": {
+    "map50": 0.6,
+    "map50_95": 0.4,
+    "agnostic_recall": 0.85,
+    "fp_per_image": 0.4,
+    "critical_class_recall": 0.7,
+    "other_class_recall": 0.5,
+    "min_support_for_class_gate": 20,
+    "latency_p95_ms": 100.0
+  },
+  "owner_quote": "Có hiệu chỉnh; mốc báo nhầm FP ≤ 0,40; giữ recall 0,85",
+  "sealed_test_accessed": false
+}
