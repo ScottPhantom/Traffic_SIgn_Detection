@@ -1,0 +1,59 @@
+{
+  "package": "D1-FINAL-EVALUATION-R1",
+  "schema_version": 1,
+  "lock_record": {
+    "path": "docs/review/generated/d1_threshold_lock_r1.json",
+    "sha256": "d39b0466a5285979c3da63546ebbd56d26d0030081f4df9fa6c75fc8ee96167d"
+  },
+  "lock_proof": {
+    "path": "docs/review/generated/d1_threshold_lock_r1_r3_proof.json",
+    "sha256": "2d2fbd7cf99ee9e8b1349a55cf40b0182764efe9f7d4cd5078c06c5f8aa72e77"
+  },
+  "lock_result_qa": {
+    "path": "docs/review/d1_threshold_lock_r1_result_independent_qa_record.md",
+    "sha256": "c113a80ef295c3ec43ef86ad07e28ad95d3a6ce2ab61fe30b5cae1392b308261"
+  },
+  "owner_lock_approval": {
+    "path": "docs/review/d1_threshold_lock_r1_owner_approval_2026-11-06.md",
+    "sha256": "1acb4d61e59f6b6a4f504a3e273c69e6fbc2ad6cdb6b15a93db2a1cb42c05edb"
+  },
+  "bundle": {
+    "path": "tmp/yolo11n_n1_extract_r2/manifest.json",
+    "sha256": "8e6ffe7761b78ba4e44a86cd2caa9a3a155ba0874cbe39bb20669af3773bb6da"
+  },
+  "final_contract": "docs/review/d1_final_evaluation_r2_contract.md",
+  "owner_open_approval": "docs/review/d1_final_evaluation_r2_owner_open_approval.md",
+  "q4_decision": {
+    "path": "docs/review/generated/d05_q4_gate_recalibration_r1.json",
+    "sha256": "ba8cfe55349416ad72abfc40fc65297f6c3c2e75844b422365dacfee92e6c9bb"
+  },
+  "label_decision": {
+    "path": "docs/review/generated/d1_final_test_label_decision_r1.json",
+    "sha256": "369399b80c7b4e72757150557e60a8249b96d9da2f3668596d5a50c9b49b2eae"
+  },
+  "weights": [
+    {
+      "seed": 20261018,
+      "path": "results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/weights/best.pt",
+      "sha256": "5d5815a96218759e93cd9bc51261ed55778da5397dfe7fe25c1f78908b10b633"
+    },
+    {
+      "seed": 20261019,
+      "path": "tmp/d1_two_seed_lock_r1_inputs/s2/best.pt",
+      "sha256": "046cfea22e6daf45342063b58cd9082aa4b0b0528a3a6d9af7ac23bbac015bce"
+    }
+  ],
+  "source_sha256": {
+    "detector/m1/d1_final_evaluation_r1.py": "edf4ba5cc7a9aaccb648cf9daad0a9e6343234e55da4065cee50040601238ea3",
+    "detector/m1/d1_threshold_lock_r3_successor.py": "6e15865a7fe4bcbad27cbd5c66ff74eeb0f8d8df9b8070e6777f6ca2a845c454",
+    "detector/m1/contract.py": "901e7e372d9660cd79e6bfcab43684b1693f0a4aafad9f4c331fd8f04ba6bbbf",
+    "detector/m1/metrics.py": "d24570f85795e3bc5a2e754ace80a8081c510ff4a78833f2ab5316953a017f9f",
+    "detector/colab/evaluate_cascade_b0_r1.py": "8bedb4c199f39eafbef240b614511ef8c40a5c7c4794772b0c6691a0df416b42",
+    "detector/uv.lock": "5d56642af267bdff63f7d2a627ccf97a8f04cbf848a673a5d65988a471baaec5"
+  },
+  "output_dir": "results/experiments/d1_final_evaluation_r1",
+  "reason": "One-time D1 final evaluation of seeds 20261018 and 20261019 under the approved R3 lock and D-05 gates.",
+  "imgsz": 1280,
+  "device": "mps",
+  "sealed_test_accessed": false
+}

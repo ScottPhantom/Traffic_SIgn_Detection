@@ -46,7 +46,7 @@ SOURCE_PATHS = frozenset(
         "detector/uv.lock",
     }
 )
-CONTRACT_PATH = "docs/review/d1_final_evaluation_r1_contract.md"
+CONTRACT_PATH = "docs/review/d1_final_evaluation_r2_contract.md"
 ACCESS_LOG = "results/experiments/sealed_test_access_log.jsonl"
 ACCESS_ACTION = "d1-final-evaluation-r1-open"
 OPEN_MARKER = "OWNER_AUTHORIZES_TEST_OPEN: D1-FINAL-EVALUATION-R1"
@@ -213,6 +213,8 @@ def preflight(
 ) -> Approved:
     """Read only approvals, source, weights, validation lock and access log."""
     root = root.resolve()
+    if Path.cwd() != root / "detector":
+        raise RuntimeError("preflight requires CWD at REPO_ROOT/detector")
     if plan_path.is_absolute():
         raise RuntimeError("plan must be repository-relative")
     plan_target = _relative(root, plan_path.as_posix())
@@ -270,6 +272,30 @@ def preflight(
     # Gate 1: the R3 reader re-verifies the lock and its independent QA/approval.
     for key in ("lock_record", "lock_proof", "lock_result_qa", "owner_lock_approval"):
         pinned(root, plan[key], committed=committed)
+    lock_path = _relative(root, plan["lock_record"]["path"])
+    proof_path = _relative(root, plan["lock_proof"]["path"])
+    lock_record = json.loads(lock_path.read_text(encoding="utf-8"))
+    proof_binding = lock_record.get("proof") if isinstance(lock_record, dict) else None
+    if not isinstance(proof_binding, dict) or set(proof_binding) != {"path", "sha256"}:
+        raise RuntimeError("lock proof binding is absent")
+    if not isinstance(proof_binding["path"], str):
+        raise RuntimeError("lock proof path is invalid")
+    bound_proof = Path(proof_binding["path"])
+    if bound_proof.is_absolute() or not bound_proof.as_posix().startswith("../docs/"):
+        raise RuntimeError("lock proof path is not detector-relative")
+    try:
+        same_proof = bound_proof.samefile(proof_path)
+    except (OSError, ValueError, TypeError):
+        same_proof = False
+    if (
+        not same_proof
+        or proof_binding["sha256"] != plan["lock_proof"]["sha256"]
+        or sha256(bound_proof) != plan["lock_proof"]["sha256"]
+    ):
+        raise RuntimeError("lock proof path or hash differs from plan")
+    reader_lock = Path("..") / plan["lock_record"]["path"]
+    if not reader_lock.samefile(lock_path):
+        raise RuntimeError("lock path differs from plan")
     bundle_manifest = pinned(root, plan["bundle"], committed=False)
     bundle_record = json.loads(bundle_manifest.read_text(encoding="utf-8"))
     if (
@@ -293,8 +319,8 @@ def preflight(
     for weight in sorted(weights, key=lambda row: row["seed"]):
         settings.append(
             reader(
-                _relative(root, plan["lock_record"]["path"]),
-                _relative(root, plan["lock_proof"]["path"]),
+                reader_lock,
+                bound_proof,
                 bundle_manifest.parent,
                 root,
                 weight["sha256"],
@@ -304,9 +330,6 @@ def preflight(
         )
     if settings[0] != settings[1] or set(settings[0]) != {"conf", "nms_iou", "agnostic_nms"}:
         raise RuntimeError("both candidates need one verified R3 setting")
-    lock_record = json.loads(
-        _relative(root, plan["lock_record"]["path"]).read_text(encoding="utf-8")
-    )
     candidates = lock_record.get("candidates") if isinstance(lock_record, dict) else None
     if (
         not isinstance(candidates, list)

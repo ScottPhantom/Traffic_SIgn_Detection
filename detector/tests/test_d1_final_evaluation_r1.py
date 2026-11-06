@@ -12,6 +12,7 @@ import pytest
 
 from m1 import contract
 from m1 import d1_final_evaluation_r1 as final
+from m1 import d1_threshold_lock_r3_successor as lock_r3
 from m1.metrics import Frame
 
 
@@ -68,6 +69,7 @@ def _fixture(root: Path) -> tuple[Path, dict]:
         root,
         "docs/review/lock.json",
         {
+            "proof": {"path": "../docs/review/proof.json", "sha256": proof["sha256"]},
             "candidates": [
                 {"seed": weight["seed"], "weight": {"sha256": weight["sha256"]}}
                 for weight in weights
@@ -148,6 +150,8 @@ def test_preflight_refuses_missing_or_changed_gate_before_fake_test_read(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch, mutation: str
 ) -> None:
     plan_path, plan = _fixture(tmp_path)
+    (tmp_path / "detector").mkdir(exist_ok=True)
+    monkeypatch.chdir(tmp_path / "detector")
     forbidden = tmp_path / "sealed_fake"
 
     def reject_access(*_args: object, **_kwargs: object) -> None:
@@ -192,8 +196,12 @@ def test_preflight_refuses_missing_or_changed_gate_before_fake_test_read(
     assert not forbidden.exists()
 
 
-def test_preflight_accepts_only_one_shared_two_seed_setting(tmp_path: Path) -> None:
+def test_preflight_accepts_only_one_shared_two_seed_setting(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     plan_path, _ = _fixture(tmp_path)
+    (tmp_path / "detector").mkdir(exist_ok=True)
+    monkeypatch.chdir(tmp_path / "detector")
     approved = final.preflight(plan_path, root=tmp_path, reader=_reader, committed=False)
     assert approved.selection == {"conf": 0.2, "nms_iou": 0.7, "agnostic_nms": False}
     assert approved.label_mode == "CURRENT_LABELS"
@@ -211,8 +219,12 @@ def test_preflight_accepts_only_one_shared_two_seed_setting(tmp_path: Path) -> N
         )
 
 
-def test_q4_and_label_decisions_refuse_unapproved_or_unsupported_state(tmp_path: Path) -> None:
+def test_q4_and_label_decisions_refuse_unapproved_or_unsupported_state(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     plan_path, plan = _fixture(tmp_path)
+    (tmp_path / "detector").mkdir(exist_ok=True)
+    monkeypatch.chdir(tmp_path / "detector")
     q4 = tmp_path / plan["q4_decision"]["path"]
     decision = json.loads(q4.read_text())
     decision["decision"] = "RECALIBRATE_ONCE"
@@ -244,9 +256,11 @@ def test_q4_and_label_decisions_refuse_unapproved_or_unsupported_state(tmp_path:
 
 
 def test_blind_review_preflight_checks_metadata_without_reading_label_payload(
-    tmp_path: Path,
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     plan_path, plan = _fixture(tmp_path)
+    (tmp_path / "detector").mkdir(exist_ok=True)
+    monkeypatch.chdir(tmp_path / "detector")
     reviewed_hash = "a" * 64
     reviewed_path = "tmp/synthetic_sealed/reviewed_labels.json"
     review_qa = _write(
@@ -272,6 +286,71 @@ def test_blind_review_preflight_checks_metadata_without_reading_label_payload(
     approved = final.preflight(plan_path, root=tmp_path, reader=_reader, committed=False)
     assert approved.label_overlay == {"path": reviewed_path, "sha256": reviewed_hash}
     assert not (tmp_path / reviewed_path).exists()
+
+
+def test_preflight_real_r3_reader_accepts_detector_relative_proof_only_from_detector(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    plan_path, plan = _fixture(tmp_path)
+    detector_dir = tmp_path / "detector"
+    detector_dir.mkdir(exist_ok=True)
+    reports = {}
+    candidates = []
+    for weight in plan["weights"]:
+        seed = weight["seed"]
+        identity = {
+            "weight": {"sha256": weight["sha256"]},
+            "run_contract": {"sha256": "b" * 64},
+            "run_attestation_sha256": "c" * 64,
+        }
+        report = _json(
+            tmp_path, f"docs/review/report_{seed}.json", {"seed": seed, "identity": identity}
+        )
+        report["path"] = str(tmp_path / report["path"])
+        reports[report["path"]] = report["sha256"]
+        candidates.append({
+            "seed": seed,
+            **identity,
+            "val_report": report,
+            "conf": 0.19,
+            "nms_iou": 0.7,
+            "agnostic_nms": False,
+        })
+    proof = {
+        "sealed_test_accessed": False,
+        "report_sha256": reports,
+        "decision": {"selected": {"confidence": 0.19, "iou": 0.7, "agnostic_nms": False}},
+    }
+    proof_file = tmp_path / plan["lock_proof"]["path"]
+    proof_file.write_bytes(lock_r3._canonical(proof))
+    plan["lock_proof"]["sha256"] = final.sha256(proof_file)
+    lock_file = tmp_path / plan["lock_record"]["path"]
+    lock_file.write_bytes(lock_r3._canonical({
+        "schema_version": 2,
+        "status": "LOCKED_ON_VAL",
+        "seeds": list(final.SEEDS),
+        "selection": {"conf": 0.19, "nms_iou": 0.7, "agnostic_nms": False},
+        "candidates": candidates,
+        "proof": {"path": "../docs/review/proof.json", "sha256": plan["lock_proof"]["sha256"]},
+        "sealed_test_seen": False,
+    }))
+    plan["lock_record"]["sha256"] = final.sha256(lock_file)
+    binding = f"{plan['lock_record']['sha256']}\n{plan['lock_proof']['sha256']}\n"
+    plan["lock_result_qa"]["sha256"] = _write(
+        tmp_path, plan["lock_result_qa"]["path"], f"Verdict: PASS\n{binding}".encode()
+    )["sha256"]
+    plan["owner_lock_approval"]["sha256"] = _write(
+        tmp_path, plan["owner_lock_approval"]["path"], binding.encode()
+    )["sha256"]
+    _rebind(tmp_path, plan_path, plan)
+    monkeypatch.setattr(lock_r3, "_proof", lambda *_args: proof)
+    monkeypatch.setattr(lock_r3, "_committed_clean", lambda *_args: None)
+    monkeypatch.chdir(detector_dir)
+    approved = final.preflight(plan_path, root=tmp_path, committed=False)
+    assert approved.selection == {"conf": 0.19, "nms_iou": 0.7, "agnostic_nms": False}
+    monkeypatch.chdir(tmp_path)
+    with pytest.raises(RuntimeError, match="requires CWD"):
+        final.preflight(plan_path, root=tmp_path, committed=False)
 
 
 def _frame(stem: str, group: str, cls: int, predicted: bool, pred_cls: int) -> Frame:
