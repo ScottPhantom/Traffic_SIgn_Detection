@@ -79,3 +79,126 @@ Sau đó QA và anh duyệt."
 - Kết quả không tái tạo được lượt tạm thời.
 - Cần suy luận mới, train, mở test, hay sửa file đã QA.
 - QA kết quả không PASS.
+
+---
+
+## Phụ lục A — bước gắn kết đầu vào (bổ sung 06/11, sau khi bộ khóa R3 được commit `c26e6d4`)
+
+Owner nói trong chat ngày 06/11, nguyên văn: "Bổ sung bàn giao".
+
+Claude đã đọc source của bộ khóa (`detector/m1/d1_threshold_lock_r3_successor.py`, `build_seed_report` và
+`_run_binding`). Lệnh `build-report` sẽ **từ chối** nếu thiếu bất kỳ đầu vào nào dưới đây. Hiện chưa seed nào
+đủ:
+- record cho phép của hai lượt suy luận cũ không ghi `0.001` và hash weight;
+- record QA kết quả của hai lượt đó không chứa hash của record cho phép, hash weight hay hash của 11 CSV (các
+  hash CSV chỉ nằm trong JSON generated);
+- archive kết quả của pilot không có trong checkout;
+- weight và run contract của seed 19 chưa được giải nén ra.
+
+Phụ lục này **thay bước 1** của mục 2. Từ bước 2 trở đi giữ nguyên. Ranh giới ở mục 1 giữ nguyên.
+
+### A0. Điều kiện bắt đầu thêm
+
+Owner phải nói rõ trong chat là cho phép sao chép archive pilot từ thư mục Google Drive đồng bộ vào `tmp/`
+(bước A1). Không có câu đó thì làm A2–A4 cho seed 19 rồi DỪNG ở A1.
+
+### A1. Archive pilot (chỉ sao chép, không sửa trên Drive)
+
+Nguồn (Drive đồng bộ cục bộ của Owner):
+`~/Library/CloudStorage/GoogleDrive-<owner>/Drive của tôi/CPV301/Traffic_Sign_Detector/M1_D1_Colab/runs/pilot_seed_20261018_r2/`
+- `D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2_result.tar.gz` (khoảng 144 MB)
+- `....tar.gz.manifest.json`
+
+Việc cần làm:
+- Sao chép **bản thật**, không dùng symlink (bộ khóa từ chối symlink), vào
+  `tmp/d1_two_seed_lock_r1_inputs/pilot/`.
+- Chạy `run_d1_colab.verify_result_archive` trên bản sao. Phải PASS.
+- `run_attestation_sha256` trong manifest phải bằng
+  `7fa5df339676adaae220e1963916b2e48e2525455713d500db5d76343e2fc9fc`.
+- Không giải nén, không đọc gì khác trong archive.
+
+Weight và run contract của pilot dùng bản đã giải nén sẵn trong
+`results/experiments/D1_yolo11s_wp33_afa03d4b_20261018_20261021T111233_pilot_100e_seed_20261018_r2/`.
+Claude đã kiểm prefix hash:
+- `weights/best.pt` → `5d5815a9…`
+- `run_contract.json` → `9f8fc94c…`
+
+Codex phải kiểm lại bằng full hash so với `RUN_PINS` trong source.
+
+### A2. Weight và run contract của seed 19
+
+- Archive: `tmp/d1_s2_seed_20261019_r1_state/D1_yolo11s_wp33_afa03d4b_20261019_20261106T113001_s2_r1_result.tar.gz`
+  cùng file `.manifest.json` đi kèm. Hash của cả hai đã có trong `docs/review/d1_s2_r1_result_independent_qa_record.md`.
+- Chỉ giải nén 2 member `<run>/weights/best.pt` và `<run>/run_contract.json` vào
+  `tmp/d1_two_seed_lock_r1_inputs/s2/`.
+- Full hash phải bằng `RUN_PINS[20261019]`: weight `046cfea2…`, contract `1f1c3f7f…`.
+- **Không** dùng `tmp/d1_s2_seed_20261019_r1_state/recovery/snapshots/epoch-0100/`: snapshot đó có hash khác.
+
+### A3. Record cho phép gắn kết (mới, append-only)
+
+Tạo `docs/review/d1_two_seed_lock_r1_inference_binding_authorization_2026-11-06.md`. Record này cho phép
+**dùng lại** dự đoán đã có, không cho phép suy luận mới. Nội dung:
+
+1. Trích nguyên văn câu Owner ở đầu bàn giao và câu Owner ở phụ lục này.
+2. Hai lượt suy luận gốc, kèm đường dẫn và full SHA-256 của từng file:
+   - seed 20261018: `d1_nms_sweep_r1_owner_authorization_2026-11-06.md`, contract
+     `d1_nms_sweep_r1_contract.md` (dòng 16 ghi `conf=0.001`), QA kết quả
+     `d1_nms_sweep_r1_result_independent_qa_record.md`, JSON `generated/d1_nms_sweep_r1.json`;
+   - seed 20261019: `d1_two_seed_provisional_threshold_r1_owner_authorization_2026-11-06.md`, contract/report,
+     QA kết quả và JSON `generated/d1_two_seed_provisional_threshold_r1.json`.
+
+   Codex phải tự kiểm và trích dòng ghi `conf=0.001` của lượt seed 19. Nếu không tìm thấy thì DỪNG.
+3. Ngưỡng suy luận ghi đúng chuỗi `conf=0.001` (`inference_conf` 0.001), `imgsz=1280`, `max_det=300`.
+   Claude đã đo confidence nhỏ nhất trong CSV: pilot 0,0010024; seed 19 0,0010004.
+4. Full SHA-256 weight của cả hai seed.
+5. Bảng 22 CSV: tên, đường dẫn, full SHA-256. Hash phải bằng hash trong JSON generated đã QA.
+6. Phạm vi: dùng 22 CSV cho đúng một lần chạy bộ khóa R3. Không suy luận mới, không train, không mở test,
+   không đổi ngưỡng app hay D-05.
+
+Ghi `sealed_test_accessed=false`.
+
+### A4. QA gắn kết độc lập (agent hoặc phiên khác với người viết A3)
+
+Tạo `docs/review/d1_two_seed_lock_r1_inference_binding_independent_qa_record.md`. QA phải tự kiểm:
+- tính lại hash của 22 CSV và so với JSON generated đã QA;
+- confidence nhỏ nhất ≥ 0,001 trong mọi CSV;
+- full hash của 2 weight bằng `RUN_PINS`;
+- bằng chứng `conf=0.001` của cả hai lượt gốc;
+- archive và manifest của 2 seed qua `verify_result_archive`.
+
+Record QA **phải chứa nguyên văn**, vì bộ khóa kiểm bằng cách tìm chuỗi:
+- full SHA-256 của record A3, tính trên bản cuối, nên A3 phải chốt xong trước QA;
+- full SHA-256 của 2 weight;
+- full SHA-256 của cả 22 CSV.
+
+Record có đúng một dòng `Verdict:` ở dạng `Verdict: PASS …` (bộ khóa chấp nhận `PASS` hoặc `**PASS**`).
+Nếu QA không PASS: sửa A3 bằng record mới, không ghi đè, rồi QA lại. Tối đa hai vòng, sau đó DỪNG.
+
+Commit A3 và A4 (chỉ `git add` từng đường dẫn) **trước** khi chạy `build-report`. Không commit `tmp/` hay
+`results/`.
+
+### A5. File identity và predictions cho mỗi seed
+
+Đặt trong `tmp/d1_two_seed_lock_r1_inputs/` (không commit). Định dạng lấy từ `build_seed_report`:
+- identity: đúng 9 khóa `weight`, `run_contract`, `run_attestation_sha256`, `result_archive`,
+  `result_manifest`, `run_result_qa`, `inference_authorization`, `inference_result_qa`, `inference_conf`.
+  Mỗi khóa file là `{"path", "sha256"}` với path thật.
+  - `run_result_qa`: pilot dùng `docs/review/d1_pilot_run_registry_independent_qa_record.md`; seed 19 dùng
+    `docs/review/d1_s2_r1_result_independent_qa_record.md`.
+  - `inference_authorization`: A3.
+  - `inference_result_qa`: A4.
+  - `inference_conf`: số `0.001`.
+- predictions: đúng 11 khóa theo `CONFIGS` trong source, mỗi khóa `{"path", "sha256"}`. Pilot lấy từ
+  `results/experiments/d1_nms_sweep_r1/`; seed 19 lấy từ `results/experiments/d1_two_seed_provisional_threshold_r1/`.
+
+Sau A5, tiếp tục từ bước 2 của mục 2 bằng các lệnh đã pin trong
+`docs/review/d1_threshold_lock_r3_successor_implementation_record.md`. Đường dẫn output:
+- report từng seed: `tmp/d1_two_seed_lock_r1_inputs/`;
+- record khóa và sidecar: `docs/review/generated/` như bước 3.
+
+### A6. Điều kiện DỪNG thêm
+
+- Archive pilot hoặc seed 19 không qua `verify_result_archive`, hoặc hash lệch `RUN_PINS`.
+- Không có bằng chứng `conf=0.001` cho một trong hai lượt gốc.
+- Hash CSV lệch so với JSON generated đã QA.
+- Bộ khóa vẫn từ chối sau khi có đủ A1–A5: ghi nguyên văn lỗi rồi báo Claude. **Không sửa** source bộ khóa đã QA.
