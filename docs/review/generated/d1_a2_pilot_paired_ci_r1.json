@@ -1,0 +1,423 @@
+{
+  "bootstrap": {
+    "interval": "95% percentile (numpy linear), difference = A2 minus pilot",
+    "paired": "both models scored on the same resampled frames in every round",
+    "rounds": 1000,
+    "seed": 20261018,
+    "unit": "intact D-02 validation capture group (9), resampled with replacement"
+  },
+  "claim_scope": "single-seed validation description of A2 (train-list repeat of derived keys 7/32/41) versus the pilot; A2 is not compute-matched (about 26% more optimizer steps), so a difference mixes exposure and step count; not a sealed-test result",
+  "exact_class_map": {
+    "map50": {
+      "a2": 0.7642182507383388,
+      "ci_excludes_zero": true,
+      "difference_a2_minus_pilot": -0.08786531726751312,
+      "paired_ci95": [
+        -0.14498663575944107,
+        -0.008712209722680926
+      ],
+      "pilot": 0.8520835680058519,
+      "share_rounds_difference_gt_0": 0.015,
+      "zero_width_ci": false
+    },
+    "map50_95": {
+      "a2": 0.554730791118686,
+      "ci_excludes_zero": true,
+      "difference_a2_minus_pilot": -0.0541370523714203,
+      "paired_ci95": [
+        -0.09196121390625138,
+        -0.012364012605235527
+      ],
+      "pilot": 0.6088678434901063,
+      "share_rounds_difference_gt_0": 0.005,
+      "zero_width_ci": false
+    },
+    "note": "class set averaged = classes present in each resample (Ultralytics ap_per_class)"
+  },
+  "experiment": "D1-A2-R1",
+  "fixed_conf_020": {
+    "agnostic_recall": {
+      "a2": 0.7612179487179487,
+      "a2_marginal_ci95": [
+        0.6705188587556565,
+        0.9044205182072829
+      ],
+      "ci_degenerate": false,
+      "ci_excludes_zero": false,
+      "difference_a2_minus_pilot": -0.11538461538461542,
+      "paired_ci95": [
+        -0.24132721524745276,
+        4.2087542087505e-05
+      ],
+      "pilot": 0.8766025641025641,
+      "pilot_marginal_ci95": [
+        0.813845612738424,
+        0.9513539753345579
+      ],
+      "share_rounds_difference_gt_0": 0.025,
+      "zero_width_ci": false
+    },
+    "correct_class_recall": {
+      "a2": 0.6506410256410257,
+      "a2_marginal_ci95": [
+        0.5670160371874304,
+        0.8070815081384923
+      ],
+      "ci_degenerate": false,
+      "ci_excludes_zero": false,
+      "difference_a2_minus_pilot": -0.08173076923076916,
+      "paired_ci95": [
+        -0.2153208470396519,
+        0.1301578377629718
+      ],
+      "pilot": 0.7323717948717948,
+      "pilot_marginal_ci95": [
+        0.607003466263402,
+        0.827520156612529
+      ],
+      "share_rounds_difference_gt_0": 0.19,
+      "zero_width_ci": false
+    },
+    "degenerate_ci_flags": [
+      "class_32"
+    ],
+    "degenerate_ci_note": "9 validation groups: a zero-width or single-group interval shows too little group variation, not precision (contract \u00a74 caveat)",
+    "fp_per_image": {
+      "a2": 0.24468085106382978,
+      "a2_marginal_ci95": [
+        0.11206850987825326,
+        0.43934140926905463
+      ],
+      "ci_degenerate": false,
+      "ci_excludes_zero": false,
+      "difference_a2_minus_pilot": -0.15425531914893617,
+      "paired_ci95": [
+        -0.38823915023238287,
+        0.0
+      ],
+      "pilot": 0.39893617021276595,
+      "pilot_marginal_ci95": [
+        0.14486748196118857,
+        0.8158349884144322
+      ],
+      "share_rounds_difference_gt_0": 0.024,
+      "zero_width_ci": false
+    },
+    "per_class_correct_class_recall": {
+      "32": {
+        "a2": 1.0,
+        "a2_criteria_class": true,
+        "ci_degenerate": true,
+        "ci_excludes_zero": true,
+        "ci_interpretable": false,
+        "derived_key": "32",
+        "difference_a2_minus_pilot": 0.3793103448275862,
+        "groups_with_support": 1,
+        "low_support": true,
+        "paired_ci95": [
+          0.3793103448275862,
+          0.3793103448275862
+        ],
+        "pilot": 0.6206896551724138,
+        "rounds_with_support": 647,
+        "status": "DEGENERATE_SINGLE_GROUP_CI_NOT_INFORMATIVE",
+        "support": 29,
+        "yolo_id": 33,
+        "zero_width_ci": true
+      },
+      "41": {
+        "a2": 0.6153846153846154,
+        "a2_criteria_class": true,
+        "ci_degenerate": false,
+        "ci_excludes_zero": true,
+        "ci_interpretable": true,
+        "derived_key": "41",
+        "difference_a2_minus_pilot": 0.15384615384615385,
+        "groups_with_support": 2,
+        "low_support": true,
+        "paired_ci95": [
+          0.1428571428571429,
+          0.16666666666666666
+        ],
+        "pilot": 0.46153846153846156,
+        "rounds_with_support": 874,
+        "status": "ESTIMATED",
+        "support": 26,
+        "yolo_id": 42,
+        "zero_width_ci": false
+      },
+      "46": {
+        "a2": 0.7980769230769231,
+        "a2_criteria_class": false,
+        "ci_degenerate": false,
+        "ci_excludes_zero": true,
+        "ci_interpretable": true,
+        "derived_key": "46",
+        "difference_a2_minus_pilot": 0.2692307692307693,
+        "groups_with_support": 2,
+        "low_support": true,
+        "paired_ci95": [
+          0.05714285714285716,
+          0.37681159420289856
+        ],
+        "pilot": 0.5288461538461539,
+        "rounds_with_support": 906,
+        "status": "ESTIMATED",
+        "support": 104,
+        "yolo_id": 48,
+        "zero_width_ci": false
+      },
+      "7": {
+        "a2": 0.6756756756756757,
+        "a2_criteria_class": true,
+        "ci_degenerate": false,
+        "ci_excludes_zero": true,
+        "ci_interpretable": true,
+        "derived_key": "7",
+        "difference_a2_minus_pilot": 0.08108108108108103,
+        "groups_with_support": 2,
+        "low_support": true,
+        "paired_ci95": [
+          0.014705882352941235,
+          0.18604651162790697
+        ],
+        "pilot": 0.5945945945945946,
+        "rounds_with_support": 892,
+        "status": "ESTIMATED",
+        "support": 111,
+        "yolo_id": 7,
+        "zero_width_ci": false
+      }
+    }
+  },
+  "focus_derived_key_to_yolo_id": {
+    "32": 33,
+    "41": 42,
+    "46": 48,
+    "7": 7
+  },
+  "frames": 376,
+  "groups": 9,
+  "gt_boxes": 624,
+  "inference_run": false,
+  "input_sha256": {
+    "a2_best_weight": "9781f7d840e48a140d6031dc2b388359093a06a2b6f8912ba31b6a300c0ebb0b",
+    "a2_common_evaluator": "c08f5de603037aa3289dfc91d44bb2d67b3a29f7e94eba5f2967815fb0c08317",
+    "a2_prediction_csv": "c45dcf1dd5446b7e5afe3458afcd43f75b8b7b5afc5434d244d80a0e3e1dd7f1",
+    "a2_result_archive": "ea7dba03b0a53cfea41fd876544715d783e56abf4837568df4e74f256a66a609",
+    "a2_result_json": "d7872b872b4db01ec27662a323ad9edcf416cd318345a45a68038ebe2bef641b",
+    "a3_paired_ci_predecessor": "7edb3824a0f69f385fcb07628d4a5720688ee55af5cc4421c7b118165c0bdea4",
+    "a3_prediction_csv": "e6a25b017bc94a3cf75220fcce1acdfd7bfacb088ca375143e3f0e5046b99ada",
+    "a3_result_json": "98b8947e379e2dbf88066884ee4540bc669f8402d459b1891b071b53ee2c2c73",
+    "bundle_manifest": "8e6ffe7761b78ba4e44a86cd2caa9a3a155ba0874cbe39bb20669af3773bb6da",
+    "bundle_val_classes_csv": "7cda296a95bd8512a1bb2e85109ce9a1574fb882e692b11d4d0ee6a1cb58d242",
+    "bundle_val_groups_json": "fdb2ef8ff2cc684970b6330747d7746ccfe6dfd77d60903d10233de66697d682",
+    "common_evaluator": "5d8e49bfafc1343ff1cc3fd4064410914ab6e75c23a1108240b09c36dc3ecca6",
+    "common_validation_report": "2c893e0222275d735dbbafb4d7a8e74146e9906dfa16054e087cc507608e5494",
+    "pilot_prediction_csv": "87884c536e16ac890c11114c85c7c12731571df15d244071a38e3d1db271c893"
+  },
+  "package": "D1-A2-PILOT-PAIRED-CI-R1",
+  "per_group_point_difference_fixed_020": {
+    "D02-C0001": {
+      "agnostic_recall_difference": -0.05797101449275355,
+      "correct_class_recall_difference": 0.37681159420289856,
+      "fp_per_image_difference": -0.14492753623188406,
+      "frames": 69,
+      "gt": 69
+    },
+    "D02-C0009": {
+      "agnostic_recall_difference": -0.08387096774193548,
+      "correct_class_recall_difference": -0.0903225806451613,
+      "fp_per_image_difference": 0.0735294117647059,
+      "frames": 68,
+      "gt": 155
+    },
+    "D02-C0011": {
+      "agnostic_recall_difference": 0.0,
+      "correct_class_recall_difference": 0.0,
+      "fp_per_image_difference": 0.0,
+      "frames": 17,
+      "gt": 17
+    },
+    "D02-C0020": {
+      "agnostic_recall_difference": 0.078125,
+      "correct_class_recall_difference": 0.203125,
+      "fp_per_image_difference": -0.028571428571428553,
+      "frames": 35,
+      "gt": 64
+    },
+    "D02-C0031": {
+      "agnostic_recall_difference": -0.3609022556390977,
+      "correct_class_recall_difference": -0.3157894736842105,
+      "fp_per_image_difference": -0.631578947368421,
+      "frames": 38,
+      "gt": 133
+    },
+    "D02-C0034": {
+      "agnostic_recall_difference": -0.4242424242424243,
+      "correct_class_recall_difference": -0.5151515151515151,
+      "fp_per_image_difference": -0.6923076923076924,
+      "frames": 39,
+      "gt": 33
+    },
+    "D02-C0042": {
+      "agnostic_recall_difference": 0.0,
+      "correct_class_recall_difference": 0.08000000000000007,
+      "fp_per_image_difference": -0.23076923076923078,
+      "frames": 13,
+      "gt": 25
+    },
+    "D02-C0044": {
+      "agnostic_recall_difference": 0.00877192982456143,
+      "correct_class_recall_difference": -0.1842105263157895,
+      "fp_per_image_difference": 0.03614457831325302,
+      "frames": 83,
+      "gt": 114
+    },
+    "D02-C0045": {
+      "agnostic_recall_difference": 0.0714285714285714,
+      "correct_class_recall_difference": 0.1428571428571429,
+      "fp_per_image_difference": -0.07142857142857142,
+      "frames": 14,
+      "gt": 14
+    }
+  },
+  "r3_a2_criteria_fixed_020": {
+    "a2_overall_recall": 0.7612179487179487,
+    "all_point_criteria_met": false,
+    "class_recall_gain_min": 0.05,
+    "conf": 0.2,
+    "fp_per_image_increase": -0.15425531914893617,
+    "fp_per_image_increase_within_0_03": true,
+    "label": "R3_A2_CRITERIA_POINT_READOUT_NOT_ACCEPTANCE",
+    "note": "point estimates only; read with the paired CIs and degenerate flags; does not change D-05 or accept the model",
+    "overall_recall_at_least_0_85": false,
+    "overall_recall_metric": "agnostic_recall (D-05 class-agnostic detection recall)",
+    "paired_cis_reported": true,
+    "per_class": {
+      "32": {
+        "ci_degenerate": true,
+        "difference_a2_minus_pilot": 0.3793103448275862,
+        "meets_gain_0_05": true,
+        "support": 29,
+        "yolo_id": 33
+      },
+      "41": {
+        "ci_degenerate": false,
+        "difference_a2_minus_pilot": 0.15384615384615385,
+        "meets_gain_0_05": true,
+        "support": 26,
+        "yolo_id": 42
+      },
+      "7": {
+        "ci_degenerate": false,
+        "difference_a2_minus_pilot": 0.08108108108108103,
+        "meets_gain_0_05": true,
+        "support": 111,
+        "yolo_id": 7
+      }
+    }
+  },
+  "reproduction_check": {
+    "a2": {
+      "agnostic_recall_020": 0.7612179487179487,
+      "correct_class_hits_020": 406,
+      "exact_class_map50_95_reference": 0.554730791118686,
+      "exact_class_map50_reference": 0.7642182507383388,
+      "exact_class_map_reproduced": true,
+      "false_positives_020": 92,
+      "fp_per_image_020": 0.24468085106382978,
+      "operating_points_reproduced": true,
+      "per_model_bootstrap_reproduced": true,
+      "selected_conf": 0.05,
+      "true_positives_020": 475
+    },
+    "pilot": {
+      "agnostic_recall_020": 0.8766025641025641,
+      "correct_class_hits_020": 457,
+      "exact_class_map50_95_reference": 0.6088678434901063,
+      "exact_class_map50_reference": 0.8520835680058519,
+      "exact_class_map_reproduced": true,
+      "false_positives_020": 150,
+      "fp_per_image_020": 0.39893617021276595,
+      "operating_points_reproduced": true,
+      "per_model_bootstrap_reproduced": true,
+      "selected_conf": 0.2,
+      "true_positives_020": 547
+    }
+  },
+  "sealed_test_accessed": false,
+  "split": "val",
+  "thresholds_changed": false,
+  "training_run": false,
+  "validation_selected_recall_085": {
+    "a2_conf": 0.05,
+    "agnostic_recall": {
+      "a2": 0.8477564102564102,
+      "a2_marginal_ci95": [
+        0.7615474368892277,
+        0.9603992965085982
+      ],
+      "ci_degenerate": false,
+      "ci_excludes_zero": false,
+      "difference_a2_minus_pilot": -0.028846153846153855,
+      "paired_ci95": [
+        -0.16141414325433304,
+        0.07037711552612219
+      ],
+      "pilot": 0.8766025641025641,
+      "pilot_marginal_ci95": [
+        0.813845612738424,
+        0.9513539753345579
+      ],
+      "share_rounds_difference_gt_0": 0.365,
+      "zero_width_ci": false
+    },
+    "correct_class_recall": {
+      "a2": 0.719551282051282,
+      "a2_marginal_ci95": [
+        0.6436851175834678,
+        0.8555374175789002
+      ],
+      "ci_degenerate": false,
+      "ci_excludes_zero": false,
+      "difference_a2_minus_pilot": -0.012820512820512775,
+      "paired_ci95": [
+        -0.15645971451346974,
+        0.21256802187662727
+      ],
+      "pilot": 0.7323717948717948,
+      "pilot_marginal_ci95": [
+        0.607003466263402,
+        0.827520156612529
+      ],
+      "share_rounds_difference_gt_0": 0.426,
+      "zero_width_ci": false
+    },
+    "degenerate_ci_flags": [],
+    "degenerate_ci_note": "9 validation groups: a zero-width or single-group interval shows too little group variation, not precision (contract \u00a74 caveat)",
+    "fp_per_image": {
+      "a2": 0.5664893617021277,
+      "a2_marginal_ci95": [
+        0.36455109666251506,
+        0.841231396172927
+      ],
+      "ci_degenerate": false,
+      "ci_excludes_zero": true,
+      "difference_a2_minus_pilot": 0.16755319148936176,
+      "paired_ci95": [
+        0.004936070500738607,
+        0.273745824298189
+      ],
+      "pilot": 0.39893617021276595,
+      "pilot_marginal_ci95": [
+        0.14486748196118857,
+        0.8158349884144322
+      ],
+      "share_rounds_difference_gt_0": 0.977,
+      "zero_width_ci": false
+    },
+    "label": "VALIDATION_SELECTED_DIAGNOSTIC_ONLY",
+    "pilot_conf": 0.2
+  }
+}
